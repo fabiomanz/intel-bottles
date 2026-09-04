@@ -1,0 +1,126 @@
+name: build stage
+
+# Reusable: builds one stage's root formulae, then publishes everything that stage produced.
+# Called twice by build-bottles.yml -- once for shared/heavy roots, once for the rest, so the
+# second stage pours the first stage's output instead of rebuilding it.
+
+on:
+  workflow_call:
+    inputs:
+      formulae:
+        description: JSON array of root formulae to build
+        required: true
+        type: string
+      stage:
+        description: Stage name, used in job titles and commit messages
+        required: true
+        type: string
+      allow_failure:
+        description: Let a failing formula pass the stage (used for the heavy roots)
+        type: boolean
+        default: false
+    secrets:
+      FORK_TOKEN:
+        description: PAT with contents:write on the homebrew-core fork
+        required: true
+
+env:
+  BOTTLE_ROOT_URL: https://github.com/fabiomanz/intel-bottles/releases/download/bottles
+  RELEASE_TAG: bottles
+  BOTTLES_REPO: fabiomanz/intel-bottles
+  FORK_REPO: fabiomanz/homebrew-core
+  HOMEBREW_CORE_GIT_REMOTE: https://github.com/fabiomanz/homebrew-core
+  HOMEBREW_NO_INSTALL_FROM_API: 1
+  HOMEBREW_NO_ANALYTICS: 1
+  HOMEBREW_NO_ENV_HINTS: 1
+
+jobs:
+  build:
+    name: ${{ inputs.stage }} / ${{ matrix.formula }}
+    runs-on: macos-26-intel
+    timeout-minutes: 350
+    continue-on-error: ${{ inputs.allow_failure }}
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        formula: ${{ fromJSON(inputs.formulae) }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Free disk space
+        # The standard runner has ~14 GB, which is the binding constraint for the Qt tree.
+        run: |
+          echo "before:"; df -h /
+          sudo rm -rf ~/Library/Developer/CoreSimulator/Caches || true
+          sudo rm -rf /Library/Developer/CoreSimulator/Profiles/Runtimes || true
+          KEEP="$(xcode-select -p | sed 's|/Contents/Developer||')"
+          for app in /Applications/Xcode*.app; do
+            [ "$app" = "$KEEP" ] || sudo rm -rf "$app" || true
+          done
+          echo "after:"; df -h /
+
+      - name: Point Homebrew at the fork
+        run: |
+          brew update
+          echo "core tap: $(brew --repo homebrew/core)"
+          git -C "$(brew --repo homebrew/core)" remote -v
+          echo "bottle tag: $(brew ruby -e 'puts Utils::Bottles.tag')"
+
+      - name: Build and bottle
+        env:
+          BOTTLE_OUT_DIR: ${{ github.workspace }}/bottles
+        run: ./scripts/build_root.sh "${{ matrix.formula }}"
+
+      - name: Upload bottles
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bottles-${{ inputs.stage }}-${{ matrix.formula }}
+          path: bottles/
+          if-no-files-found: ignore
+          retention-days: 7
+
+  publish:
+    name: publish ${{ inputs.stage }}
+    needs: build
+    if: always()
+    runs-on: macos-26-intel
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: bottles-${{ inputs.stage }}-*
+          path: bottles/
+          merge-multiple: true
+
+      - name: Point Homebrew at the fork
+        run: brew update
+
+      - name: Authenticate the fork remote
+        run: |
+          git config --global user.name  "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git -C "$(brew --repo homebrew/core)" remote set-url origin \
+            "https://x-access-token:${{ secrets.FORK_TOKEN }}@github.com/${FORK_REPO}.git"
+
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BOTTLE_DIR: ${{ github.workspace }}/bottles
+          STAGE: ${{ inputs.stage }}
+        run: ./scripts/publish.sh
+
+      - name: Record manifest
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if ls bottles/*.bottle.json >/dev/null 2>&1; then
+            cp bottles/*.bottle.json manifest/
+            git add manifest/
+            if [ -n "$(git status --porcelain)" ]; then
+              git commit -m "manifest: ${{ inputs.stage }} ($(date -u +%Y-%m-%d))"
+              git push
+            fi
+          fi

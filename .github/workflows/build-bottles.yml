@@ -1,0 +1,89 @@
+name: build bottles
+
+# Builds Intel (x86_64) bottles for macOS on GitHub's macos-26-intel runner and publishes
+# them for a forked homebrew-core to point at.
+#
+# Two stages, because Homebrew does not inherit --build-bottle into dependencies: stage 1
+# builds the widely-shared and expensive roots and publishes them, so stage 2 pours those
+# rather than rebuilding them inside every job that needs them.
+
+on:
+  workflow_dispatch:
+    inputs:
+      formulae:
+        description: Space-separated formulae to build instead of the computed plan
+        required: false
+        type: string
+  schedule:
+    # Weekly, off the hour. Picks up whatever lost its bottle to an upstream version bump.
+    - cron: "37 5 * * 1"
+
+concurrency:
+  group: build-bottles
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    name: plan
+    runs-on: macos-26-intel
+    outputs:
+      heavy: ${{ steps.plan.outputs.heavy }}
+      rest: ${{ steps.plan.outputs.rest }}
+      missing_count: ${{ steps.plan.outputs.missing_count }}
+    env:
+      HOMEBREW_CORE_GIT_REMOTE: https://github.com/fabiomanz/homebrew-core
+      HOMEBREW_NO_INSTALL_FROM_API: 1
+      HOMEBREW_NO_ANALYTICS: 1
+      HOMEBREW_NO_ENV_HINTS: 1
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Point Homebrew at the fork
+        run: brew update
+
+      - name: Compute the build plan
+        id: plan
+        run: |
+          if [ -n "$OVERRIDE" ]; then
+            # Manual override: treat every named formula as its own root, single stage.
+            python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
+          names = os.environ["OVERRIDE"].split()
+          print(f"heavy={json.dumps([])}")
+          print(f"rest={json.dumps(names)}")
+          print(f"missing_count={len(names)}")
+          PY
+          else
+            python3 scripts/plan_targets.py
+          fi
+        env:
+          OVERRIDE: ${{ inputs.formulae }}
+
+  heavy:
+    name: stage 1
+    needs: plan
+    if: needs.plan.outputs.heavy != '[]' && needs.plan.outputs.heavy != ''
+    uses: ./.github/workflows/_build-stage.yml
+    with:
+      formulae: ${{ needs.plan.outputs.heavy }}
+      stage: heavy
+      # qtwebengine and friends are expected to be able to fail without stopping the run.
+      allow_failure: true
+    secrets:
+      FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
+
+  rest:
+    name: stage 2
+    needs: [plan, heavy]
+    # Runs even if a heavy root failed -- the rest of the tree is still worth publishing.
+    if: always() && needs.plan.outputs.rest != '[]' && needs.plan.outputs.rest != ''
+    uses: ./.github/workflows/_build-stage.yml
+    with:
+      formulae: ${{ needs.plan.outputs.rest }}
+      stage: rest
+      allow_failure: false
+    secrets:
+      FORK_TOKEN: ${{ secrets.FORK_TOKEN }}

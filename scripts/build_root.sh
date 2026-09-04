@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+#
+# Build and bottle one root formula plus everything under it that still needs a bottle.
+#
+# Dependencies are NOT inherited as --build-bottle installs (Homebrew's install_dependency
+# constructs its FormulaInstaller without build_bottle:, so `brew bottle` would refuse them
+# with "Formula was not installed with --build-bottle"). So we walk the chain in topological
+# order and install each formula we intend to bottle explicitly.
+#
+# Anything that already has a usable bottle is left alone and simply poured by brew.
+#
+# Written for bash 3.2 -- macOS runners have no mapfile.
+
+set -euo pipefail
+
+ROOT="${1:?usage: build_root.sh <formula>}"
+: "${BOTTLE_ROOT_URL:?BOTTLE_ROOT_URL must be set}"
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+OUT_DIR="${BOTTLE_OUT_DIR:-$PWD/bottles}"
+mkdir -p "$OUT_DIR"
+
+# Formula names never contain whitespace, so word splitting is safe and keeps this bash-3 clean.
+CHAIN="$(brew deps -n --include-build "$ROOT"; echo "$ROOT")"
+TODO="$(python3 "$SCRIPT_DIR/filter_unbottled.py" $CHAIN)"
+
+if [ -z "$TODO" ]; then
+  echo "==> $ROOT: everything in its chain is already bottled, nothing to do"
+  exit 0
+fi
+
+echo "==> $ROOT: building $(echo "$TODO" | wc -l | tr -d ' ') formula(e) in dependency order"
+echo "$TODO" | sed 's/^/      /'
+
+cd "$OUT_DIR"
+
+for formula in $TODO; do
+  echo "::group::build $formula"
+  df -h / | tail -1
+
+  # `brew reinstall` has no --build-bottle flag, so anything already present (GitHub's
+  # runner image ships a fair few formulae preinstalled) has to be removed first --
+  # otherwise `brew install` no-ops and `brew bottle` then refuses the formula.
+  if brew list --formula --versions "$formula" >/dev/null 2>&1; then
+    echo "    already installed; removing so it can be rebuilt for bottling"
+    brew uninstall --ignore-dependencies --force "$formula"
+  fi
+  brew install --build-bottle --display-times "$formula"
+
+  brew bottle --json --no-rebuild --root-url "$BOTTLE_ROOT_URL" "$formula"
+  echo "::endgroup::"
+done
+
+echo "==> $ROOT: produced"
+ls -la "$OUT_DIR"

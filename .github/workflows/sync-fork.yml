@@ -1,0 +1,42 @@
+name: sync fork
+
+# Keeps fabiomanz/homebrew-core equal to upstream plus our bottle blocks.
+# Runs daily so new formula versions arrive; anything whose version moved loses its stale
+# bottle here and gets picked up by the next build run.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 4 * * *"
+
+concurrency:
+  group: sync-fork
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    runs-on: macos-26-intel
+    env:
+      FORK_REPO: fabiomanz/homebrew-core
+      HOMEBREW_CORE_GIT_REMOTE: https://github.com/fabiomanz/homebrew-core
+      HOMEBREW_NO_INSTALL_FROM_API: 1
+      HOMEBREW_NO_ANALYTICS: 1
+      HOMEBREW_NO_ENV_HINTS: 1
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Point Homebrew at the fork
+        run: brew update
+
+      - name: Authenticate the fork remote
+        run: |
+          git config --global user.name  "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git -C "$(brew --repo homebrew/core)" remote set-url origin \
+            "https://x-access-token:${{ secrets.FORK_TOKEN }}@github.com/${FORK_REPO}.git"
+
+      - name: Sync
+        run: ./scripts/sync_fork.sh

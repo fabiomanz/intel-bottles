@@ -1,0 +1,3 @@
+bottles/
+*.bottle.tar.gz
+.DS_Store

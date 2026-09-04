@@ -1,0 +1,17 @@
+# Formulae forced into stage 1 (built first, on their own job).
+#
+# Two reasons to be here:
+#   - expensive enough that it must not be rebuilt inside every job that needs it
+#   - risky enough that it should fail in isolation (see continue-on-error in the workflow)
+#
+# The planner also auto-promotes anything that >=5 other unbottled formulae depend on,
+# so ordinary shared libraries (openssl@3, pcre2, qtbase ...) do not need listing here.
+
+qtwebengine
+llvm
+llvm@22
+gcc
+ghc
+rust
+node
+boost
