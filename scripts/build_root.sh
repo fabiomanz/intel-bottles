@@ -53,6 +53,25 @@ for formula in $TODO; do
     echo "    already installed; removing so it can be rebuilt for bottling"
     brew uninstall --ignore-dependencies --force "$formula"
   fi
+  # Download sources first, with backoff. Upstream mirrors are flaky -- gmp's primary
+  # (ftpmirror.gnu.org) and its mirror (gmplib.org) can both be unreachable for minutes at
+  # a time. Fetching separately means a network blip costs seconds instead of discarding a
+  # build that may already be hours in, and a successful fetch is cached so the install
+  # below does not re-download.
+  fetched=0
+  for attempt in 1 2 3 4; do
+    if brew fetch --build-bottle --retry "$formula"; then
+      fetched=1
+      break
+    fi
+    echo "    fetch attempt $attempt failed; backing off $((attempt * 30))s"
+    sleep $((attempt * 30))
+  done
+  if [ "$fetched" != 1 ]; then
+    echo "    could not download sources for $formula after 4 attempts" >&2
+    exit 1
+  fi
+
   brew install --build-bottle --display-times "$formula"
 
   brew bottle --json --no-rebuild --root-url "$BOTTLE_ROOT_URL" "$formula"
