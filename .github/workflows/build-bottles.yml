@@ -15,8 +15,9 @@ on:
         required: false
         type: string
   schedule:
-    # Weekly, off the hour. Picks up whatever lost its bottle to an upstream version bump.
-    - cron: "37 5 * * 1"
+    # Daily, ~74 min after sync-fork runs, so a formula upstream bumped is bottled within
+    # a day. The plan job is cheap and builds nothing when nothing has changed.
+    - cron: "37 5 * * *"
 
 concurrency:
   group: build-bottles
