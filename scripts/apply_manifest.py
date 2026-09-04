@@ -11,34 +11,12 @@ Prints the paths of the applicable JSON files on stdout (feed them to
 """
 
 import json
-import subprocess
 import sys
 from pathlib import Path
 
+import brewinfo
+
 MANIFEST = Path(__file__).resolve().parent.parent / "manifest"
-
-
-def chunked(seq, size):
-    for i in range(0, len(seq), size):
-        yield seq[i : i + size]
-
-
-def current_versions(names: list[str]) -> dict[str, str]:
-    """formula -> pkg_version as upstream currently defines it."""
-    versions: dict[str, str] = {}
-    for chunk in chunked(names, 100):
-        proc = subprocess.run(
-            ["brew", "info", "--json=v2", *chunk], capture_output=True, text=True
-        )
-        if proc.returncode != 0:
-            continue
-        for formula in json.loads(proc.stdout)["formulae"]:
-            stable = (formula.get("versions") or {}).get("stable")
-            if not stable:
-                continue
-            revision = formula.get("revision") or 0
-            versions[formula["name"]] = f"{stable}_{revision}" if revision else stable
-    return versions
 
 
 def main() -> None:
@@ -58,7 +36,7 @@ def main() -> None:
         print("manifest is empty", file=sys.stderr)
         return
 
-    versions = current_versions(sorted({name for _, name, _ in entries}))
+    versions = brewinfo.pkg_versions(sorted({name for _, name, _ in entries}))
 
     applicable, stale = [], []
     for path, name, bottled in entries:

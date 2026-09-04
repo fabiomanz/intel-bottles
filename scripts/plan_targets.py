@@ -33,11 +33,6 @@ def brew(*args: str) -> str:
     return proc.stdout
 
 
-def chunked(seq, size):
-    for i in range(0, len(seq), size):
-        yield seq[i : i + size]
-
-
 def read_list(path: Path) -> list[str]:
     if not path.exists():
         return []
@@ -49,16 +44,18 @@ def read_list(path: Path) -> list[str]:
 
 
 def unbottled(targets: list[str]) -> list[str]:
-    """Formulae with no bottle usable on the current platform.
+    """Formulae Homebrew would compile from source on this platform.
 
-    Formulae upstream has retired are reported and dropped rather than aborting the
-    plan -- homebrew-core sheds formulae steadily, and one of them must not be able to
-    take down the whole pipeline.
+    Asks brew directly (Formula#bottled?) rather than inspecting bottle.stable.files --
+    see brewinfo.py for why that field is unusable under HOMEBREW_NO_INSTALL_FROM_API.
     """
-    formulae, gone = brewinfo.info(targets)
-    if gone:
-        print(f"note: no longer in homebrew-core: {', '.join(sorted(gone))}", file=sys.stderr)
-    return [f["name"] for f in formulae if not brewinfo.has_usable_bottle(f)]
+    needs, _bottled, missing = brewinfo.classify(targets)
+    if missing:
+        print(
+            f"note: no longer in homebrew-core: {', '.join(sorted(missing))}",
+            file=sys.stderr,
+        )
+    return needs
 
 
 def dependency_map(formulae: list[str]) -> dict[str, set[str]]:

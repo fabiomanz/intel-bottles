@@ -14,6 +14,14 @@
 set -euo pipefail
 
 ROOT="${1:?usage: build_root.sh <formula>}"
+
+# This script UNINSTALLS and rebuilds formulae, which is destructive on a real machine.
+# It is only ever meant to run on a throwaway CI runner.
+if [ "${CI:-}" != "true" ] && [ "${ALLOW_LOCAL_BUILD:-}" != "1" ]; then
+  echo "refusing to run: build_root.sh uninstalls and rebuilds formulae and is intended" >&2
+  echo "for a disposable CI runner. Set ALLOW_LOCAL_BUILD=1 only if you truly mean it." >&2
+  exit 1
+fi
 : "${BOTTLE_ROOT_URL:?BOTTLE_ROOT_URL must be set}"
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
