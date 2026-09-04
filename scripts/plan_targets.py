@@ -19,6 +19,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+import brewinfo
+
 REPO = Path(__file__).resolve().parent.parent
 # A formula this many unbottled formulae depend on is worth building first, on its own.
 SHARED_DEP_THRESHOLD = 5
@@ -49,18 +51,14 @@ def read_list(path: Path) -> list[str]:
 def unbottled(targets: list[str]) -> list[str]:
     """Formulae with no bottle usable on the current platform.
 
-    `brew info --json=v2` filters bottle.stable.files to bottles this machine can
-    actually use (including older-macOS fallbacks), so an empty dict means "would
-    build from source here".
+    Formulae upstream has retired are reported and dropped rather than aborting the
+    plan -- homebrew-core sheds formulae steadily, and one of them must not be able to
+    take down the whole pipeline.
     """
-    missing = []
-    for chunk in chunked(targets, 100):
-        data = json.loads(brew("info", "--json=v2", *chunk))
-        for formula in data["formulae"]:
-            files = ((formula.get("bottle") or {}).get("stable") or {}).get("files") or {}
-            if not files:
-                missing.append(formula["name"])
-    return missing
+    formulae, gone = brewinfo.info(targets)
+    if gone:
+        print(f"note: no longer in homebrew-core: {', '.join(sorted(gone))}", file=sys.stderr)
+    return [f["name"] for f in formulae if not brewinfo.has_usable_bottle(f)]
 
 
 def dependency_map(formulae: list[str]) -> dict[str, set[str]]:

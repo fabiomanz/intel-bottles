@@ -1,19 +1,13 @@
 #!/usr/bin/env python3
 """Print, in the order given, the formulae that have no bottle usable on this platform.
 
-`brew info --json=v2` filters bottle.stable.files down to bottles this machine can
-actually use (exact tag, an older-macOS fallback, or :all), so an empty dict means
-"this would compile from source here" -- which is exactly what we want to bottle.
+Order matters: callers pass a topologically sorted chain and build in the order printed.
+Formulae upstream has retired are silently dropped -- they cannot be built anyway.
 """
 
-import json
-import subprocess
 import sys
 
-
-def chunked(seq, size):
-    for i in range(0, len(seq), size):
-        yield seq[i : i + size]
+import brewinfo
 
 
 def main() -> None:
@@ -21,23 +15,18 @@ def main() -> None:
     if not names:
         return
 
-    missing = set()
-    for chunk in chunked(names, 100):
-        proc = subprocess.run(
-            ["brew", "info", "--json=v2", *chunk], capture_output=True, text=True
-        )
-        if proc.returncode != 0:
-            sys.exit(f"brew info failed:\n{proc.stderr}")
-        for formula in json.loads(proc.stdout)["formulae"]:
-            files = ((formula.get("bottle") or {}).get("stable") or {}).get("files") or {}
-            if not files:
-                missing.add(formula["name"])
+    formulae, gone = brewinfo.info(names)
+    if gone:
+        print(f"note: skipping, not in homebrew-core: {', '.join(gone)}", file=sys.stderr)
 
-    # Preserve the caller's ordering -- it is topological and we must not disturb it.
+    needs_bottle = {
+        formula["name"] for formula in formulae if not brewinfo.has_usable_bottle(formula)
+    }
+
     seen = set()
     for name in names:
         short = name.split("/")[-1]
-        if short in missing and short not in seen:
+        if short in needs_bottle and short not in seen:
             seen.add(short)
             print(short)
 
