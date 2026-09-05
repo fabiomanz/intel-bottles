@@ -14,8 +14,9 @@ MacPorts cannot fill the gap either: its Tahoe x86_64 builder does not exist
 ([#73230](https://trac.macports.org/ticket/73230) — their build host can't run Tahoe natively).
 Nix drops `x86_64-darwin` binaries at the end of 2026.
 
-But GitHub still offers **`macos-26-intel`**, a GA standard runner (4 cores, 14 GB RAM, 14 GB
-disk), free and unmetered on public repos, **until August 2027**. Homebrew dropped Intel over
+But GitHub still offers **`macos-26-intel`**, a GA standard runner (4 cores, 14 GB RAM, and in
+practice ~160 GB free disk -- the 14 GB in GitHub's docs is not what the runner actually has),
+free and unmetered on public repos, **until August 2027**. Homebrew dropped Intel over
 maintainer burden, not hardware availability. So we build our own.
 
 Bottles built there are tagged `tahoe` — an exact match for macOS 26 Intel.
@@ -92,10 +93,13 @@ jq .poured_from_bottle /usr/local/Cellar/tmux/*/INSTALL_RECEIPT.json
 
 ## Known limits
 
-- **`qtwebengine` is expected to fail.** Chromium-based, against a 14 GB runner disk and a
-  6-hour job ceiling. It is pinned to stage 1 with `allow_failure: true` so it cannot take the
-  run down; `qt`, `pyside` and `qtwebview` stay unbottled until it succeeds. Escalation path is
-  `macos-26-large` (a *larger* runner — billed even on public repos).
+- **`qtwebengine` does not fit in a GitHub job.** Measured, not predicted: it ran **5h50m**
+  before hitting `timeout-minutes: 350`, and GitHub's hard job ceiling is 6 hours, so there
+  was no headroom to give it. Disk was never the problem (~160 GB free throughout) — it is
+  purely CPU time on 4 cores, and a single Chromium build cannot be split across jobs. It is
+  pinned to stage 1 with `allow_failure: true` so it cannot take the run down. `qt`, `pyside`
+  and `qtwebview` depend on it and stay unbottled with it. The only real options are a larger
+  runner (more cores; billed even on public repos) or a self-hosted Intel runner.
 - **One `root_url` per bottle block.** Merging our `tahoe` bottle into a formula that still has
   upstream's `sonoma` bottle rewrites the block's single `root_url` to ours. Harmless here —
   an exact tag match wins, so macOS 26 Intel always picks `tahoe` — but that block's older tags
