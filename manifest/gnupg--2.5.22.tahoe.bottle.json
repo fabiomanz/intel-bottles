@@ -1,0 +1,1078 @@
+{
+  "gnupg": {
+    "formula": {
+      "name": "gnupg",
+      "pkg_version": "2.5.22",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gnupg.rb",
+      "tap_git_path": "Formula/g/gnupg.rb",
+      "tap_git_revision": "d851a773a89eef43f7d026b6ca55e9b5f5e7a1cb",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "GNU Privacy Guard (OpenPGP)",
+      "license": "GPL-3.0-or-later",
+      "homepage": "https://gnupg.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-05T23:22:34Z",
+      "tags": {
+        "tahoe": {
+          "filename": "gnupg-2.5.22.tahoe.bottle.tar.gz",
+          "local_filename": "gnupg--2.5.22.tahoe.bottle.tar.gz",
+          "sha256": "65eb5ba6842e9ed39e6b7f164fe7e948d5a4ffa885d04d38977b51682c970a11",
+          "tab": {
+            "homebrew_version": "6.0.22",
+            "changed_files": [
+              "libexec/gpg-wks-client",
+              "share/man/man1/gpg-wks-client.1"
+            ],
+            "linkage_files": [
+              "bin/dirmngr",
+              "bin/dirmngr-client",
+              "bin/gpg",
+              "bin/gpg-agent",
+              "bin/gpg-card",
+              "bin/gpg-connect-agent",
+              "bin/gpg-mail-tube",
+              "bin/gpg-wks-client",
+              "bin/gpg-wks-server",
+              "bin/gpgconf",
+              "bin/gpgscm",
+              "bin/gpgsm",
+              "bin/gpgsplit",
+              "bin/gpgtar",
+              "bin/gpgv",
+              "bin/kbxutil",
+              "libexec/dirmngr_ldap",
+              "libexec/gpg-auth",
+              "libexec/gpg-check-pattern",
+              "libexec/gpg-pair-tool",
+              "libexec/gpg-preset-passphrase",
+              "libexec/gpg-protect-tool",
+              "libexec/keyboxd",
+              "libexec/scdaemon"
+            ],
+            "binary_relocation_files": [
+              "bin/dirmngr",
+              "bin/dirmngr-client",
+              "bin/gpg",
+              "bin/gpg-agent",
+              "bin/gpg-card",
+              "bin/gpg-connect-agent",
+              "bin/gpg-mail-tube",
+              "bin/gpg-wks-client",
+              "bin/gpg-wks-server",
+              "bin/gpgconf",
+              "bin/gpgscm",
+              "bin/gpgsm",
+              "bin/gpgsplit",
+              "bin/gpgtar",
+              "bin/gpgv",
+              "bin/kbxutil",
+              "libexec/dirmngr_ldap",
+              "libexec/gpg-auth",
+              "libexec/gpg-check-pattern",
+              "libexec/gpg-pair-tool",
+              "libexec/gpg-preset-passphrase",
+              "libexec/gpg-protect-tool",
+              "libexec/keyboxd",
+              "libexec/scdaemon"
+            ],
+            "source_modified_time": 1788169833,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libidn2",
+                "version": "2.3.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.8",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtasn1",
+                "version": "4.21.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.21.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "nettle",
+                "version": "4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "p11-kit",
+                "version": "0.26.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.26.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gnutls",
+                "version": "3.8.13",
+                "revision": 2,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.8.13_2",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "libgpg-error",
+                "version": "1.61",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.61",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libassuan",
+                "version": "3.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.0.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libgcrypt",
+                "version": "1.12.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.12.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libksba",
+                "version": "1.8.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libusb",
+                "version": "1.0.30",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.30",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "npth",
+                "version": "1.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8",
+                "declared_directly": true
+              },
+              {
+                "full_name": "pinentry",
+                "version": "1.3.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/gpgtar",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 74071
+            },
+            {
+              "path": "bin/gpgv",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 387600
+            },
+            {
+              "path": "bin/gpg-card",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 159993
+            },
+            {
+              "path": "bin/gpg-mail-tube",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 69097
+            },
+            {
+              "path": "bin/gpg",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 889640
+            },
+            {
+              "path": "bin/gpgscm",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 133209
+            },
+            {
+              "path": "bin/kbxutil",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 114057
+            },
+            {
+              "path": "bin/gpgsplit",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 45369
+            },
+            {
+              "path": "bin/dirmngr",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 393559
+            },
+            {
+              "path": "bin/gpg-wks-client",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 129601
+            },
+            {
+              "path": "bin/gpgsm",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 406657
+            },
+            {
+              "path": "bin/gpg-agent",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 283332
+            },
+            {
+              "path": "bin/gpg-connect-agent",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 81001
+            },
+            {
+              "path": "bin/gpgconf",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 95153
+            },
+            {
+              "path": "bin/dirmngr-client",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 57897
+            },
+            {
+              "path": "bin/gpg-wks-server",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 114751
+            },
+            {
+              "path": "libexec/gpg-protect-tool",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 110873
+            },
+            {
+              "path": "libexec/gpg-auth",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 61385
+            },
+            {
+              "path": "libexec/keyboxd",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 178134
+            },
+            {
+              "path": "libexec/gpg-preset-passphrase",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 44989
+            },
+            {
+              "path": "libexec/gpg-pair-tool",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 72464
+            },
+            {
+              "path": "libexec/dirmngr_ldap",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 52857
+            },
+            {
+              "path": "libexec/scdaemon",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 374775
+            },
+            {
+              "path": "libexec/gpg-check-pattern",
+              "string": "/usr/local/opt/pinentry/bin/pinentry",
+              "offset": 56009
+            },
+            {
+              "path": "bin/gpgtar",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/bin",
+              "offset": 73669
+            },
+            {
+              "path": "bin/gpgtar",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/libexec",
+              "offset": 73713
+            },
+            {
+              "path": "bin/gpgtar",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/gnupg",
+              "offset": 73817
+            },
+            {
+              "path": "bin/gpgtar",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/locale",
+              "offset": 73874
+            },
+            {
+              "path": "bin/gpgv",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/bin",
+              "offset": 387198
+            },
+            {
+              "path": "bin/gpgv",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/libexec",
+              "offset": 387242
+            },
+            {
+              "path": "bin/gpgv",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/gnupg",
+              "offset": 387346
+            },
+            {
+              "path": "bin/gpgv",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/locale",
+              "offset": 387403
+            },
+            {
+              "path": "bin/gpg-card",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/bin",
+              "offset": 159591
+            },
+            {
+              "path": "bin/gpg-card",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/libexec",
+              "offset": 159635
+            },
+            {
+              "path": "bin/gpg-card",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/gnupg",
+              "offset": 159739
+            },
+            {
+              "path": "bin/gpg-card",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/locale",
+              "offset": 159796
+            },
+            {
+              "path": "bin/gpg-mail-tube",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/bin",
+              "offset": 68695
+            },
+            {
+              "path": "bin/gpg-mail-tube",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/libexec",
+              "offset": 68739
+            },
+            {
+              "path": "bin/gpg-mail-tube",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/gnupg",
+              "offset": 68843
+            },
+            {
+              "path": "bin/gpg-mail-tube",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/locale",
+              "offset": 68900
+            },
+            {
+              "path": "bin/gpg",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/bin",
+              "offset": 889244
+            },
+            {
+              "path": "bin/gpg",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/libexec",
+              "offset": 889288
+            },
+            {
+              "path": "bin/gpg",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/gnupg",
+              "offset": 889386
+            },
+            {
+              "path": "bin/gpg",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/locale",
+              "offset": 889443
+            },
+            {
+              "path": "bin/gpgscm",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/bin",
+              "offset": 132807
+            },
+            {
+              "path": "bin/gpgscm",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/libexec",
+              "offset": 132851
+            },
+            {
+              "path": "bin/gpgscm",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/gnupg",
+              "offset": 132955
+            },
+            {
+              "path": "bin/gpgscm",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/locale",
+              "offset": 133012
+            },
+            {
+              "path": "bin/kbxutil",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/bin",
+              "offset": 113655
+            },
+            {
+              "path": "bin/kbxutil",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/libexec",
+              "offset": 113699
+            },
+            {
+              "path": "bin/kbxutil",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/gnupg",
+              "offset": 113803
+            },
+            {
+              "path": "bin/kbxutil",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/locale",
+              "offset": 113860
+            },
+            {
+              "path": "bin/gpgsplit",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/bin",
+              "offset": 44967
+            },
+            {
+              "path": "bin/gpgsplit",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/libexec",
+              "offset": 45011
+            },
+            {
+              "path": "bin/gpgsplit",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/gnupg",
+              "offset": 45115
+            },
+            {
+              "path": "bin/gpgsplit",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/locale",
+              "offset": 45172
+            },
+            {
+              "path": "bin/dirmngr",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/bin",
+              "offset": 393157
+            },
+            {
+              "path": "bin/dirmngr",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/libexec",
+              "offset": 393201
+            },
+            {
+              "path": "bin/dirmngr",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/gnupg",
+              "offset": 393305
+            },
+            {
+              "path": "bin/dirmngr",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/locale",
+              "offset": 393362
+            },
+            {
+              "path": "bin/gpg-wks-client",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/bin",
+              "offset": 129199
+            },
+            {
+              "path": "bin/gpg-wks-client",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/libexec",
+              "offset": 129243
+            },
+            {
+              "path": "bin/gpg-wks-client",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/gnupg",
+              "offset": 129347
+            },
+            {
+              "path": "bin/gpg-wks-client",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/locale",
+              "offset": 129404
+            },
+            {
+              "path": "bin/gpgsm",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/bin",
+              "offset": 406261
+            },
+            {
+              "path": "bin/gpgsm",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/libexec",
+              "offset": 406305
+            },
+            {
+              "path": "bin/gpgsm",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/gnupg",
+              "offset": 406403
+            },
+            {
+              "path": "bin/gpgsm",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/locale",
+              "offset": 406460
+            },
+            {
+              "path": "bin/gpg-agent",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/bin",
+              "offset": 282942
+            },
+            {
+              "path": "bin/gpg-agent",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/libexec",
+              "offset": 282986
+            },
+            {
+              "path": "bin/gpg-agent",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/gnupg",
+              "offset": 283090
+            },
+            {
+              "path": "bin/gpg-agent",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/locale",
+              "offset": 283147
+            },
+            {
+              "path": "bin/gpg-connect-agent",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/bin",
+              "offset": 80599
+            },
+            {
+              "path": "bin/gpg-connect-agent",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/libexec",
+              "offset": 80643
+            },
+            {
+              "path": "bin/gpg-connect-agent",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/gnupg",
+              "offset": 80747
+            },
+            {
+              "path": "bin/gpg-connect-agent",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/locale",
+              "offset": 80804
+            },
+            {
+              "path": "bin/gpgconf",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/bin",
+              "offset": 94757
+            },
+            {
+              "path": "bin/gpgconf",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/libexec",
+              "offset": 94801
+            },
+            {
+              "path": "bin/gpgconf",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/gnupg",
+              "offset": 94899
+            },
+            {
+              "path": "bin/gpgconf",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/locale",
+              "offset": 94956
+            },
+            {
+              "path": "bin/dirmngr-client",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/bin",
+              "offset": 57495
+            },
+            {
+              "path": "bin/dirmngr-client",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/libexec",
+              "offset": 57539
+            },
+            {
+              "path": "bin/dirmngr-client",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/gnupg",
+              "offset": 57643
+            },
+            {
+              "path": "bin/dirmngr-client",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/locale",
+              "offset": 57700
+            },
+            {
+              "path": "bin/gpg-wks-server",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/bin",
+              "offset": 114349
+            },
+            {
+              "path": "bin/gpg-wks-server",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/libexec",
+              "offset": 114393
+            },
+            {
+              "path": "bin/gpg-wks-server",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/gnupg",
+              "offset": 114497
+            },
+            {
+              "path": "bin/gpg-wks-server",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/locale",
+              "offset": 114554
+            },
+            {
+              "path": "libexec/gpg-protect-tool",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/bin",
+              "offset": 110471
+            },
+            {
+              "path": "libexec/gpg-protect-tool",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/libexec",
+              "offset": 110515
+            },
+            {
+              "path": "libexec/gpg-protect-tool",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/gnupg",
+              "offset": 110619
+            },
+            {
+              "path": "libexec/gpg-protect-tool",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/locale",
+              "offset": 110676
+            },
+            {
+              "path": "libexec/gpg-auth",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/bin",
+              "offset": 60983
+            },
+            {
+              "path": "libexec/gpg-auth",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/libexec",
+              "offset": 61027
+            },
+            {
+              "path": "libexec/gpg-auth",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/gnupg",
+              "offset": 61131
+            },
+            {
+              "path": "libexec/gpg-auth",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/locale",
+              "offset": 61188
+            },
+            {
+              "path": "libexec/keyboxd",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/bin",
+              "offset": 177742
+            },
+            {
+              "path": "libexec/keyboxd",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/libexec",
+              "offset": 177786
+            },
+            {
+              "path": "libexec/keyboxd",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/gnupg",
+              "offset": 177890
+            },
+            {
+              "path": "libexec/keyboxd",
+              "string": "/usr/local/Cellar/gnupg/2.5.22/share/locale",
+              "offset": 177947
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-readline-8.3.3",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gmp-6.3.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b4e672215c05a94e9244d447c8dab3435d4e8a96f6135fdbf8c37ba730c98d65"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "name": "readline",
+                "versionInfo": "8.3.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:67a24889119e6429144cd15fb9b0dc8ae37cf272388605a5780bb734f8e6b093",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "67a24889119e6429144cd15fb9b0dc8ae37cf272388605a5780bb734f8e6b093"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gnupg"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gnupg"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gnupg"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gnupg"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-gnupg-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/gpgtar",
+            "bin/gpgv",
+            "bin/gpg-card",
+            "bin/gpg-mail-tube",
+            "bin/gpg",
+            "bin/gpgscm",
+            "bin/kbxutil",
+            "bin/gpgsplit",
+            "bin/dirmngr",
+            "bin/gpg-wks-client",
+            "bin/gpg-authcode-sign.sh",
+            "bin/gpgsm",
+            "bin/watchgnupg",
+            "bin/gpg-agent",
+            "bin/gpg-connect-agent",
+            "bin/gpgconf",
+            "bin/dirmngr-client",
+            "bin/gpg-wks-server",
+            "bin/gpgparsemail",
+            "sbin/applygnupgdefaults",
+            "sbin/addgnupghome"
+          ],
+          "all_files": [
+            ".brew/gnupg.rb",
+            "AUTHORS",
+            "COPYING",
+            "COPYING.CC0",
+            "COPYING.GPL2",
+            "COPYING.LGPL21",
+            "COPYING.LGPL3",
+            "COPYING.other",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "TODO",
+            "bin/dirmngr",
+            "bin/dirmngr-client",
+            "bin/gpg",
+            "bin/gpg-agent",
+            "bin/gpg-authcode-sign.sh",
+            "bin/gpg-card",
+            "bin/gpg-connect-agent",
+            "bin/gpg-mail-tube",
+            "bin/gpg-wks-client",
+            "bin/gpg-wks-server",
+            "bin/gpgconf",
+            "bin/gpgparsemail",
+            "bin/gpgscm",
+            "bin/gpgsm",
+            "bin/gpgsplit",
+            "bin/gpgtar",
+            "bin/gpgv",
+            "bin/kbxutil",
+            "bin/watchgnupg",
+            "libexec/dirmngr_ldap",
+            "libexec/gpg-auth",
+            "libexec/gpg-check-pattern",
+            "libexec/gpg-pair-tool",
+            "libexec/gpg-preset-passphrase",
+            "libexec/gpg-protect-tool",
+            "libexec/gpg-wks-client",
+            "libexec/keyboxd",
+            "libexec/scdaemon",
+            "sbin/addgnupghome",
+            "sbin/applygnupgdefaults",
+            "sbom.spdx.json",
+            "share/doc/gnupg/DCO",
+            "share/doc/gnupg/DETAILS",
+            "share/doc/gnupg/FAQ",
+            "share/doc/gnupg/HACKING",
+            "share/doc/gnupg/KEYSERVER",
+            "share/doc/gnupg/OpenPGP",
+            "share/doc/gnupg/README",
+            "share/doc/gnupg/TRANSLATE",
+            "share/doc/gnupg/examples/README",
+            "share/doc/gnupg/examples/common.conf",
+            "share/doc/gnupg/examples/gpgconf.conf",
+            "share/doc/gnupg/examples/gpgconf.rnames",
+            "share/doc/gnupg/examples/pwpattern.list",
+            "share/doc/gnupg/examples/qualified.txt",
+            "share/doc/gnupg/examples/scd-event",
+            "share/doc/gnupg/examples/trustlist.txt",
+            "share/gnupg/distsigkey.gpg",
+            "share/gnupg/help.be.txt",
+            "share/gnupg/help.ca.txt",
+            "share/gnupg/help.cs.txt",
+            "share/gnupg/help.da.txt",
+            "share/gnupg/help.de.txt",
+            "share/gnupg/help.el.txt",
+            "share/gnupg/help.eo.txt",
+            "share/gnupg/help.es.txt",
+            "share/gnupg/help.et.txt",
+            "share/gnupg/help.fi.txt",
+            "share/gnupg/help.fr.txt",
+            "share/gnupg/help.gl.txt",
+            "share/gnupg/help.hu.txt",
+            "share/gnupg/help.id.txt",
+            "share/gnupg/help.it.txt",
+            "share/gnupg/help.ja.txt",
+            "share/gnupg/help.nb.txt",
+            "share/gnupg/help.pl.txt",
+            "share/gnupg/help.pt.txt",
+            "share/gnupg/help.pt_BR.txt",
+            "share/gnupg/help.ro.txt",
+            "share/gnupg/help.ru.txt",
+            "share/gnupg/help.sk.txt",
+            "share/gnupg/help.sv.txt",
+            "share/gnupg/help.tr.txt",
+            "share/gnupg/help.txt",
+            "share/gnupg/help.zh_CN.txt",
+            "share/gnupg/help.zh_TW.txt",
+            "share/gnupg/mail-tube.de.txt",
+            "share/gnupg/mail-tube.txt",
+            "share/gnupg/wks-utils.de.txt",
+            "share/gnupg/wks-utils.txt",
+            "share/info/gnupg.info",
+            "share/info/gnupg.info-1",
+            "share/info/gnupg.info-2",
+            "share/info/gnupg.info-3",
+            "share/locale/ca/LC_MESSAGES/gnupg2.mo",
+            "share/locale/cs/LC_MESSAGES/gnupg2.mo",
+            "share/locale/da/LC_MESSAGES/gnupg2.mo",
+            "share/locale/de/LC_MESSAGES/gnupg2.mo",
+            "share/locale/el/LC_MESSAGES/gnupg2.mo",
+            "share/locale/en@boldquot/LC_MESSAGES/gnupg2.mo",
+            "share/locale/en@quot/LC_MESSAGES/gnupg2.mo",
+            "share/locale/eo/LC_MESSAGES/gnupg2.mo",
+            "share/locale/es/LC_MESSAGES/gnupg2.mo",
+            "share/locale/et/LC_MESSAGES/gnupg2.mo",
+            "share/locale/fi/LC_MESSAGES/gnupg2.mo",
+            "share/locale/fr/LC_MESSAGES/gnupg2.mo",
+            "share/locale/gl/LC_MESSAGES/gnupg2.mo",
+            "share/locale/hu/LC_MESSAGES/gnupg2.mo",
+            "share/locale/id/LC_MESSAGES/gnupg2.mo",
+            "share/locale/it/LC_MESSAGES/gnupg2.mo",
+            "share/locale/ja/LC_MESSAGES/gnupg2.mo",
+            "share/locale/ka/LC_MESSAGES/gnupg2.mo",
+            "share/locale/nb/LC_MESSAGES/gnupg2.mo",
+            "share/locale/nl/LC_MESSAGES/gnupg2.mo",
+            "share/locale/pl/LC_MESSAGES/gnupg2.mo",
+            "share/locale/pt/LC_MESSAGES/gnupg2.mo",
+            "share/locale/ro/LC_MESSAGES/gnupg2.mo",
+            "share/locale/ru/LC_MESSAGES/gnupg2.mo",
+            "share/locale/sk/LC_MESSAGES/gnupg2.mo",
+            "share/locale/sv/LC_MESSAGES/gnupg2.mo",
+            "share/locale/tr/LC_MESSAGES/gnupg2.mo",
+            "share/locale/uk/LC_MESSAGES/gnupg2.mo",
+            "share/locale/zh_CN/LC_MESSAGES/gnupg2.mo",
+            "share/locale/zh_TW/LC_MESSAGES/gnupg2.mo",
+            "share/man/man1/dirmngr-client.1",
+            "share/man/man1/gpg-agent.1",
+            "share/man/man1/gpg-card.1",
+            "share/man/man1/gpg-check-pattern.1",
+            "share/man/man1/gpg-connect-agent.1",
+            "share/man/man1/gpg-mail-tube.1",
+            "share/man/man1/gpg-preset-passphrase.1",
+            "share/man/man1/gpg-wks-client.1",
+            "share/man/man1/gpg-wks-server.1",
+            "share/man/man1/gpg.1",
+            "share/man/man1/gpgconf.1",
+            "share/man/man1/gpgparsemail.1",
+            "share/man/man1/gpgsm.1",
+            "share/man/man1/gpgtar.1",
+            "share/man/man1/gpgv.1",
+            "share/man/man1/scdaemon.1",
+            "share/man/man1/watchgnupg.1",
+            "share/man/man7/gnupg.7",
+            "share/man/man8/addgnupghome.8",
+            "share/man/man8/applygnupgdefaults.8",
+            "share/man/man8/dirmngr.8"
+          ],
+          "installed_size": 15144199
+        }
+      }
+    }
+  }
+}
