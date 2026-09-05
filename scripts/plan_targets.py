@@ -90,6 +90,20 @@ def main() -> None:
 
     deps = dependency_map(missing)
 
+    # Drop excluded formulae, and any root that would have to build one on the way.
+    excluded = set(read_list(REPO / "exclude.txt"))
+    if excluded:
+        blocked = {
+            name for name, children in deps.items() if children & excluded
+        } | (excluded & set(missing))
+        if blocked:
+            print(
+                f"note: excluded from building: {', '.join(sorted(blocked))}",
+                file=sys.stderr,
+            )
+        missing = [m for m in missing if m not in blocked]
+        deps = {k: v for k, v in deps.items() if k not in blocked}
+
     # Anything that is a dependency of another unbottled target gets built for free.
     covered: set[str] = set()
     for children in deps.values():

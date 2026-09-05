@@ -1,0 +1,7 @@
+# Formulae never to build, and any root whose chain needs one of them.
+#
+# qtwebengine cannot finish inside GitHub's 6-hour job ceiling (measured: cut off at
+# 5h50m). Excluding it also skips qt, pyside and qtwebview, which depend on it -- without
+# this they would each spend ~6 hours rebuilding it before failing the same way.
+
+qtwebengine

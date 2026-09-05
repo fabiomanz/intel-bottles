@@ -15,7 +15,5 @@
       "timeout": 2880
     }
   },
-  "assign": {
-    "qtwebengine": "selfhosted"
-  }
+  "assign": {}
 }
