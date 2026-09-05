@@ -1,11 +1,12 @@
 name: build bottles
 
-# Builds Intel (x86_64) bottles for macOS on GitHub's macos-26-intel runner and publishes
-# them for a forked homebrew-core to point at.
+# Builds Intel (x86_64) bottles on GitHub's macos-26-intel runner and publishes them for a
+# forked homebrew-core to point at.
 #
-# Two stages, because Homebrew does not inherit --build-bottle into dependencies: stage 1
-# builds the widely-shared and expensive roots and publishes them, so stage 2 pours those
-# rather than rebuilding them inside every job that needs them.
+# Work is scheduled in waves by dependency depth. Ordering matters a lot: when everything
+# ran concurrently, six qt* jobs each spent ~70 minutes rebuilding qtbase before starting
+# their own build. Publishing each wave before the next starts means later jobs pour their
+# dependencies instead.
 
 on:
   workflow_dispatch:
@@ -15,8 +16,8 @@ on:
         required: false
         type: string
   schedule:
-    # Daily, ~74 min after sync-fork runs, so a formula upstream bumped is bottled within
-    # a day. The plan job is cheap and builds nothing when nothing has changed.
+    # Daily, ~74 min after sync-fork, so anything upstream bumped is bottled within a day.
+    # The plan job is cheap and schedules nothing when nothing has changed.
     - cron: "37 5 * * *"
 
 concurrency:
@@ -31,8 +32,11 @@ jobs:
     name: plan
     runs-on: macos-26-intel
     outputs:
-      heavy: ${{ steps.plan.outputs.heavy }}
-      rest: ${{ steps.plan.outputs.rest }}
+      wave0: ${{ steps.plan.outputs.wave0 }}
+      wave1: ${{ steps.plan.outputs.wave1 }}
+      wave2: ${{ steps.plan.outputs.wave2 }}
+      wave3: ${{ steps.plan.outputs.wave3 }}
+      wave4: ${{ steps.plan.outputs.wave4 }}
       missing_count: ${{ steps.plan.outputs.missing_count }}
     env:
       HOMEBREW_CORE_GIT_REMOTE: https://github.com/fabiomanz/homebrew-core
@@ -49,46 +53,82 @@ jobs:
 
       - name: Compute the build plan
         id: plan
+        env:
+          OVERRIDE: ${{ inputs.formulae }}
         run: |
           if [ -n "$OVERRIDE" ]; then
-            # Manual override: treat every named formula as its own root, single stage.
             python3 - <<'PY' >> "$GITHUB_OUTPUT"
           import json, os, sys
           sys.path.insert(0, "scripts")
           from plan_targets import runner_for
           names = os.environ["OVERRIDE"].split()
-          print(f"heavy={json.dumps([])}")
-          print(f"rest={json.dumps([runner_for(n) for n in names])}")
+          print(f"wave0={json.dumps([runner_for(n) for n in names])}")
+          for i in range(1, 5):
+              print(f"wave{i}=[]")
           print(f"missing_count={len(names)}")
           PY
           else
             python3 scripts/plan_targets.py
           fi
-        env:
-          OVERRIDE: ${{ inputs.formulae }}
 
-  heavy:
-    name: stage 1
+  wave0:
+    name: wave 0
     needs: plan
-    if: needs.plan.outputs.heavy != '[]' && needs.plan.outputs.heavy != ''
+    if: needs.plan.outputs.wave0 != '[]' && needs.plan.outputs.wave0 != ''
     uses: ./.github/workflows/_build-stage.yml
     with:
-      formulae: ${{ needs.plan.outputs.heavy }}
-      stage: heavy
-      # qtwebengine and friends are expected to be able to fail without stopping the run.
+      formulae: ${{ needs.plan.outputs.wave0 }}
+      stage: wave0
       allow_failure: true
     secrets:
       FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
 
-  rest:
-    name: stage 2
-    needs: [plan, heavy]
-    # Runs even if a heavy root failed -- the rest of the tree is still worth publishing.
-    if: always() && needs.plan.outputs.rest != '[]' && needs.plan.outputs.rest != ''
+  wave1:
+    name: wave 1
+    needs: [plan, wave0]
+    # always(): a failure in an earlier wave must not strand the rest of the graph. A later
+    # job will simply rebuild whatever it still needs from source.
+    if: always() && needs.plan.outputs.wave1 != '[]' && needs.plan.outputs.wave1 != ''
     uses: ./.github/workflows/_build-stage.yml
     with:
-      formulae: ${{ needs.plan.outputs.rest }}
-      stage: rest
-      allow_failure: false
+      formulae: ${{ needs.plan.outputs.wave1 }}
+      stage: wave1
+      allow_failure: true
+    secrets:
+      FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
+
+  wave2:
+    name: wave 2
+    needs: [plan, wave1]
+    if: always() && needs.plan.outputs.wave2 != '[]' && needs.plan.outputs.wave2 != ''
+    uses: ./.github/workflows/_build-stage.yml
+    with:
+      formulae: ${{ needs.plan.outputs.wave2 }}
+      stage: wave2
+      allow_failure: true
+    secrets:
+      FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
+
+  wave3:
+    name: wave 3
+    needs: [plan, wave2]
+    if: always() && needs.plan.outputs.wave3 != '[]' && needs.plan.outputs.wave3 != ''
+    uses: ./.github/workflows/_build-stage.yml
+    with:
+      formulae: ${{ needs.plan.outputs.wave3 }}
+      stage: wave3
+      allow_failure: true
+    secrets:
+      FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
+
+  wave4:
+    name: wave 4
+    needs: [plan, wave3]
+    if: always() && needs.plan.outputs.wave4 != '[]' && needs.plan.outputs.wave4 != ''
+    uses: ./.github/workflows/_build-stage.yml
+    with:
+      formulae: ${{ needs.plan.outputs.wave4 }}
+      stage: wave4
+      allow_failure: true
     secrets:
       FORK_TOKEN: ${{ secrets.FORK_TOKEN }}

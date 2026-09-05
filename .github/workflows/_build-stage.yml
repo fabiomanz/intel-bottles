@@ -53,17 +53,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Free disk space
-        # The standard runner has ~14 GB, which is the binding constraint for the Qt tree.
-        run: |
-          echo "before:"; df -h /
-          sudo rm -rf ~/Library/Developer/CoreSimulator/Caches || true
-          sudo rm -rf /Library/Developer/CoreSimulator/Profiles/Runtimes || true
-          KEEP="$(xcode-select -p | sed 's|/Contents/Developer||')"
-          for app in /Applications/Xcode*.app; do
-            [ "$app" = "$KEEP" ] || sudo rm -rf "$app" || true
-          done
-          echo "after:"; df -h /
+      - name: Report disk
+        # Kept as one line for diagnostics. There used to be an Xcode-deleting cleanup
+        # step here, added on GitHub's documented 14 GB figure; the runner actually has
+        # ~160 GB free, so it cost ~5 min a job (3.1 h across a full run) for nothing.
+        run: df -h /
 
       - name: Point Homebrew at the fork
         run: |

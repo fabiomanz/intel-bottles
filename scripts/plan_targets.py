@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
-"""Decide which formulae still need an Intel bottle, and group them into root build targets.
+"""Decide which formulae need bottles and schedule them by dependency level.
 
-A "root" is a formula that no other unbottled target depends on. Building a root with
-`brew install --build-bottle` builds its whole dependency chain into one Cellar in the
-right order, so bottling everything the job built covers the dependencies for free --
-no wave orchestration needed.
+Ordering is the whole point. In an earlier design every unbottled formula was built
+concurrently, so six qt* jobs each spent ~70 minutes rebuilding qtbase from source before
+touching their own (tiny) build -- qtquicktimeline took 97 minutes, qtbase itself took 83.
+Publishing qtbase first means those jobs pour it instead.
 
-Heavy formulae (expensive, widely shared -- qtbase, qtwebengine, llvm ...) are forced to
-be roots and built in an earlier stage, so the later stage pours them instead of
-rebuilding them in every job that needs them.
+So formulae are grouped into waves by dependency depth: wave 0 is everything with no
+unbottled dependency, wave 1 is everything whose unbottled dependencies are all in wave 0,
+and so on. Each wave publishes before the next starts, so every job builds exactly one
+formula and pours the rest.
 
-Writes GitHub Actions outputs when $GITHUB_OUTPUT is set; otherwise prints a summary.
+Emits wave0..waveN as GitHub Actions outputs, each a JSON array of matrix entries.
 """
 
 import json
@@ -22,8 +23,7 @@ from pathlib import Path
 import brewinfo
 
 REPO = Path(__file__).resolve().parent.parent
-# A formula this many unbottled formulae depend on is worth building first, on its own.
-SHARED_DEP_THRESHOLD = 5
+MAX_WAVES = 5  # anything deeper folds into the last wave and rebuilds its own deps
 
 
 def brew(*args: str) -> str:
@@ -44,17 +44,14 @@ def read_list(path: Path) -> list[str]:
 
 
 def unbottled(targets: list[str]) -> list[str]:
-    """Formulae Homebrew would compile from source on this platform.
+    """Formulae Homebrew would compile from source here.
 
-    Asks brew directly (Formula#bottled?) rather than inspecting bottle.stable.files --
-    see brewinfo.py for why that field is unusable under HOMEBREW_NO_INSTALL_FROM_API.
+    Asks brew directly (Formula#bottled?); see brewinfo.py for why bottle.stable.files
+    cannot be used under HOMEBREW_NO_INSTALL_FROM_API.
     """
     needs, _bottled, missing = brewinfo.classify(targets)
     if missing:
-        print(
-            f"note: no longer in homebrew-core: {', '.join(sorted(missing))}",
-            file=sys.stderr,
-        )
+        print(f"note: no longer in homebrew-core: {', '.join(sorted(missing))}", file=sys.stderr)
     return needs
 
 
@@ -72,70 +69,12 @@ def dependency_map(formulae: list[str]) -> dict[str, set[str]]:
         name = name.strip().split("/")[-1]
         if name not in interesting:
             continue
-        deps[name] = {
-            d.split("/")[-1] for d in rest.split() if d.split("/")[-1] in interesting
-        }
+        deps[name] = {d.split("/")[-1] for d in rest.split() if d.split("/")[-1] in interesting}
     return deps
 
 
-def main() -> None:
-    targets = read_list(REPO / "targets.txt")
-    if not targets:
-        sys.exit("targets.txt is empty -- nothing to plan")
-
-    missing = unbottled(targets)
-    if not missing:
-        emit([], [], missing, [])
-        return
-
-    deps = dependency_map(missing)
-
-    # Drop excluded formulae, and any root that would have to build one on the way.
-    excluded = set(read_list(REPO / "exclude.txt"))
-    if excluded:
-        blocked = {
-            name for name, children in deps.items() if children & excluded
-        } | (excluded & set(missing))
-        if blocked:
-            print(
-                f"note: excluded from building: {', '.join(sorted(blocked))}",
-                file=sys.stderr,
-            )
-        missing = [m for m in missing if m not in blocked]
-        deps = {k: v for k, v in deps.items() if k not in blocked}
-
-    # Anything that is a dependency of another unbottled target gets built for free.
-    covered: set[str] = set()
-    for children in deps.values():
-        covered |= children
-
-    # Widely shared dependencies are worth their own job in the first stage.
-    dependent_count: dict[str, int] = {}
-    for children in deps.values():
-        for child in children:
-            dependent_count[child] = dependent_count.get(child, 0) + 1
-
-    heavy = set(read_list(REPO / "heavy.txt")) & set(missing)
-    heavy |= {
-        name
-        for name, count in dependent_count.items()
-        if count >= SHARED_DEP_THRESHOLD
-    }
-
-    roots = [f for f in missing if f not in covered or f in heavy]
-    heavy_roots = sorted(f for f in roots if f in heavy)
-    rest_roots = sorted(f for f in roots if f not in heavy)
-
-    emit(heavy_roots, rest_roots, missing, sorted(covered - set(roots)))
-
-
 def runner_for(name: str) -> dict:
-    """Matrix entry for a formula: which runner builds it, and its timeout.
-
-    Everything goes to the default GitHub-hosted runner unless runners.json assigns it
-    elsewhere. Only qtwebengine needs that today -- it cannot finish inside GitHub's hard
-    6-hour job ceiling, so it goes to a self-hosted machine with a much longer timeout.
-    """
+    """Matrix entry for a formula: which runner builds it, and its timeout."""
     config = json.loads((REPO / "runners.json").read_text())
     profile_name = config.get("assign", {}).get(name, "default")
     profile = config["profiles"][profile_name]
@@ -147,29 +86,69 @@ def runner_for(name: str) -> dict:
     }
 
 
-def emit(heavy, rest, missing, free):
-    heavy_entries = [runner_for(n) for n in heavy]
-    rest_entries = [runner_for(n) for n in rest]
+def levels(deps: dict[str, set[str]]) -> dict[str, int]:
+    """Dependency depth per formula. Cycles, if any, land in the final wave."""
+    level: dict[str, int] = {}
+    remaining = dict(deps)
+    while remaining:
+        ready = [n for n, children in remaining.items() if all(c in level for c in children)]
+        if not ready:  # cycle -- schedule the rest last and let them build their own deps
+            for n in remaining:
+                level[n] = MAX_WAVES - 1
+            break
+        for n in ready:
+            level[n] = min(
+                max([level[c] for c in remaining[n]] + [-1]) + 1, MAX_WAVES - 1
+            )
+        for n in ready:
+            remaining.pop(n)
+    return level
 
-    def describe(entries):
-        return ", ".join(
-            e["formula"] + ("" if e["profile"] == "default" else f" [{e['profile']}]")
-            for e in entries
-        ) or "-"
 
-    summary = (
-        f"{len(missing)} formulae still need a bottle\n"
-        f"  stage 1 (shared/heavy): {len(heavy)} -> {describe(heavy_entries)}\n"
-        f"  stage 2 (roots):        {len(rest)} -> {describe(rest_entries)}\n"
-        f"  built as dependencies:  {len(free)}\n"
-    )
+def main() -> None:
+    targets = read_list(REPO / "targets.txt")
+    if not targets:
+        sys.exit("targets.txt is empty -- nothing to plan")
+
+    missing = unbottled(targets)
+    if not missing:
+        emit({}, [])
+        return
+
+    deps = dependency_map(missing)
+
+    excluded = set(read_list(REPO / "exclude.txt"))
+    if excluded:
+        blocked = {n for n, c in deps.items() if c & excluded} | (excluded & set(missing))
+        if blocked:
+            print(f"note: excluded from building: {', '.join(sorted(blocked))}", file=sys.stderr)
+        missing = [m for m in missing if m not in blocked]
+        deps = {k: v - blocked for k, v in deps.items() if k not in blocked}
+
+    depth = levels(deps)
+    waves: dict[int, list[str]] = {}
+    for name in missing:
+        waves.setdefault(depth.get(name, 0), []).append(name)
+
+    emit(waves, missing)
+
+
+def emit(waves: dict[int, list[str]], missing: list[str]) -> None:
+    lines = [f"{len(missing)} formulae need a bottle, in {len(waves)} wave(s)"]
+    for index in range(MAX_WAVES):
+        names = sorted(waves.get(index, []))
+        if names:
+            shown = ", ".join(names[:8]) + (" …" if len(names) > 8 else "")
+            lines.append(f"  wave {index} ({len(names):2d}): {shown}")
+    summary = "\n".join(lines) + "\n"
     print(summary)
 
     github_output = os.environ.get("GITHUB_OUTPUT")
     if github_output:
         with open(github_output, "a") as fh:
-            fh.write(f"heavy={json.dumps(heavy_entries)}\n")
-            fh.write(f"rest={json.dumps(rest_entries)}\n")
+            for index in range(MAX_WAVES):
+                entries = [runner_for(n) for n in sorted(waves.get(index, []))]
+                fh.write(f"wave{index}={json.dumps(entries)}\n")
             fh.write(f"missing_count={len(missing)}\n")
     step_summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if step_summary:
