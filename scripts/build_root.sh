@@ -72,7 +72,18 @@ for formula in $TODO; do
     exit 1
   fi
 
-  brew install --build-bottle --display-times "$formula"
+  # GitHub's macOS image ships its own Python and friends in /usr/local, so pouring a
+  # dependency (python@3.13, say) can fail at the link step with "Target already exists"
+  # -- brew then exits non-zero even though the formula we care about built fine. That is
+  # what killed pygobject3: it printed its own success line and still failed the job.
+  # Force the links and retry once rather than losing a build to a preinstalled file.
+  if ! brew install --build-bottle --display-times "$formula"; then
+    echo "    install failed; forcing dependency links and retrying once"
+    for dep in $(brew deps --include-build "$formula") "$formula"; do
+      brew link --overwrite --force "$dep" >/dev/null 2>&1 || true
+    done
+    brew install --build-bottle --display-times "$formula"
+  fi
 
   brew bottle --json --no-rebuild --root-url "$BOTTLE_ROOT_URL" "$formula"
   echo "::endgroup::"

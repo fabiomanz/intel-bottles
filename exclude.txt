@@ -5,3 +5,11 @@
 # this they would each spend ~6 hours rebuilding it before failing the same way.
 
 qtwebengine
+
+# qtquick3d fails to configure on Intel: the formula deletes Qt's bundled assimp and
+# forces -DFEATURE_system_assimp=ON, but Homebrew's assimp is 6.0.5 and Qt 6.11's probe
+# fails against it (QT_FEATURE_quick3d_assimp=ON, TEST_quick3d_assimp=FALSE).
+# Upstream has an arm64_tahoe bottle for the same version, so this is Intel-only bit-rot
+# -- nothing tests x86_64 since Homebrew moved it to Tier 3. Remove this line once the
+# formula or assimp is fixed.
+qtquick3d
