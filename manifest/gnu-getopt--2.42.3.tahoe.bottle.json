@@ -1,0 +1,104 @@
+{
+  "gnu-getopt": {
+    "formula": {
+      "name": "gnu-getopt",
+      "pkg_version": "2.42.3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gnu-getopt.rb",
+      "tap_git_path": "Formula/g/gnu-getopt.rb",
+      "tap_git_revision": "74ae27082c23f2c3d5690b20ee5a8dcfb2d47e13",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Command-line option parsing utility",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://github.com/util-linux/util-linux"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-04T20:29:05Z",
+      "tags": {
+        "tahoe": {
+          "filename": "gnu-getopt-2.42.3.tahoe.bottle.tar.gz",
+          "local_filename": "gnu-getopt--2.42.3.tahoe.bottle.tar.gz",
+          "sha256": "ab51064dc1312f9efc616d8ba3f15ffc81e3bd5f2de05d1540f439a73bf01ee3",
+          "tab": {
+            "homebrew_version": "6.0.21",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/getopt"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788267840,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-gnu-getopt-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/getopt"
+          ],
+          "all_files": [
+            ".brew/gnu-getopt.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "bin/getopt",
+            "etc/bash_completion.d/getopt",
+            "sbom.spdx.json",
+            "share/doc/gnu-getopt/getopt-example.bash",
+            "share/doc/gnu-getopt/getopt-example.tcsh",
+            "share/man/man1/getopt.1"
+          ],
+          "installed_size": 151629
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "simdjson": {
+    "formula": {
+      "name": "simdjson",
+      "pkg_version": "4.6.10",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/simdjson.rb",
+      "tap_git_path": "Formula/s/simdjson.rb",
+      "tap_git_revision": "74ae27082c23f2c3d5690b20ee5a8dcfb2d47e13",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "SIMD-accelerated C++ JSON parser",
+      "license": "Apache-2.0",
+      "homepage": "https://simdjson.org"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-04T22:35:17Z",
+      "tags": {
+        "tahoe": {
+          "filename": "simdjson-4.6.10.tahoe.bottle.tar.gz",
+          "local_filename": "simdjson--4.6.10.tahoe.bottle.tar.gz",
+          "sha256": "56ef8c02bd9e8875c5e8eb474d368b4dcfda03cd763c88f1178d48ff10b3a2a7",
+          "tab": {
+            "homebrew_version": "6.0.21",
+            "changed_files": [
+              "lib/pkgconfig/simdjson.pc"
+            ],
+            "linkage_files": [
+              "lib/libsimdjson.33.0.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788452266,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-simdjson-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/simdjson.rb",
+            "AUTHORS",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "LICENSE-MIT",
+            "README.md",
+            "include/simdjson.h",
+            "lib/cmake/simdjson/simdjson-config-version.cmake",
+            "lib/cmake/simdjson/simdjson-config.cmake",
+            "lib/cmake/simdjson/simdjsonTargets-release.cmake",
+            "lib/cmake/simdjson/simdjsonTargets.cmake",
+            "lib/cmake/simdjson/simdjson_staticTargets-release.cmake",
+            "lib/cmake/simdjson/simdjson_staticTargets.cmake",
+            "lib/libsimdjson.33.0.0.dylib",
+            "lib/libsimdjson.33.dylib",
+            "lib/libsimdjson.dylib",
+            "lib/libsimdjson_static.a",
+            "lib/pkgconfig/simdjson.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 8119528
+        }
+      }
+    }
+  }
+}

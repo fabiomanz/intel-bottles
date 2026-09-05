@@ -1,0 +1,105 @@
+{
+  "mpdecimal": {
+    "formula": {
+      "name": "mpdecimal",
+      "pkg_version": "4.0.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/m/mpdecimal.rb",
+      "tap_git_path": "Formula/m/mpdecimal.rb",
+      "tap_git_revision": "74ae27082c23f2c3d5690b20ee5a8dcfb2d47e13",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Library for decimal floating point arithmetic",
+      "license": "BSD-2-Clause",
+      "homepage": "https://www.bytereef.org/mpdecimal/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-04T21:47:03Z",
+      "tags": {
+        "tahoe": {
+          "filename": "mpdecimal-4.0.1.tahoe.bottle.tar.gz",
+          "local_filename": "mpdecimal--4.0.1.tahoe.bottle.tar.gz",
+          "sha256": "179d0e83023d47e49687ef897865724dd0bdbc7498459b4428d10bef40c5c1cf",
+          "tab": {
+            "homebrew_version": "6.0.21",
+            "changed_files": [
+              "lib/pkgconfig/libmpdec++.pc",
+              "lib/pkgconfig/libmpdec.pc"
+            ],
+            "linkage_files": [
+              "lib/libmpdec++.4.0.1.dylib",
+              "lib/libmpdec.4.0.1.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1746473798,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-mpdecimal-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/mpdecimal.rb",
+            "CHANGELOG.txt",
+            "COPYRIGHT.txt",
+            "INSTALL_RECEIPT.json",
+            "README.txt",
+            "include/decimal.hh",
+            "include/mpdecimal.h",
+            "lib/libmpdec++.4.0.1.dylib",
+            "lib/libmpdec++.4.dylib",
+            "lib/libmpdec++.a",
+            "lib/libmpdec++.dylib",
+            "lib/libmpdec.4.0.1.dylib",
+            "lib/libmpdec.4.dylib",
+            "lib/libmpdec.a",
+            "lib/libmpdec.dylib",
+            "lib/pkgconfig/libmpdec++.pc",
+            "lib/pkgconfig/libmpdec.pc",
+            "sbom.spdx.json",
+            "share/doc/mpdecimal/COPYRIGHT.txt",
+            "share/man/man3/libmpdec++.3",
+            "share/man/man3/libmpdec.3",
+            "share/man/man3/mpdecimal.3"
+          ],
+          "installed_size": 576247
+        }
+      }
+    }
+  }
+}
