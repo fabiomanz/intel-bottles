@@ -1,0 +1,1451 @@
+{
+  "poppler": {
+    "formula": {
+      "name": "poppler",
+      "pkg_version": "26.09.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/poppler.rb",
+      "tap_git_path": "Formula/p/poppler.rb",
+      "tap_git_revision": "bcbe9198a3b6221cac9010d58ca7b9bc345a75d5",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "PDF rendering library (based on the xpdf-3.0 code base)",
+      "license": "GPL-2.0-only OR GPL-3.0-only",
+      "homepage": "https://poppler.freedesktop.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-05T23:42:02Z",
+      "tags": {
+        "tahoe": {
+          "filename": "poppler-26.09.0.tahoe.bottle.tar.gz",
+          "local_filename": "poppler--26.09.0.tahoe.bottle.tar.gz",
+          "sha256": "c114e1af91cade1736049dca5378c27841033d409e446d9cbb2febd1d7c41f39",
+          "tab": {
+            "homebrew_version": "6.0.22",
+            "changed_files": [
+              "lib/pkgconfig/poppler-cpp.pc",
+              "lib/pkgconfig/poppler-glib.pc",
+              "lib/pkgconfig/poppler.pc",
+              "share/pkgconfig/poppler-data.pc"
+            ],
+            "linkage_files": [
+              "bin/pdfsig",
+              "bin/pdftocairo",
+              "bin/pdftoppm",
+              "bin/pdftops",
+              "lib/libpoppler-cpp.3.1.0.dylib",
+              "lib/libpoppler-glib.8.31.0.dylib",
+              "lib/libpoppler.164.0.0.dylib"
+            ],
+            "binary_relocation_files": [
+              "bin/pdfsig",
+              "lib/libpoppler.164.0.0.dylib",
+              "lib/libpoppler.a"
+            ],
+            "source_modified_time": 1788468498,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libpng",
+                "version": "1.6.58",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.58",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "freetype",
+                "version": "2.14.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.14.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fontconfig",
+                "version": "2.18.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.18.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.88.3",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2.88.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xorgproto",
+                "version": "2025.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2025.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxau",
+                "version": "1.0.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxdmcp",
+                "version": "1.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxcb",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.17.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libx11",
+                "version": "1.8.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxext",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.7",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxrender",
+                "version": "0.9.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.9.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lzo",
+                "version": "2.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.10",
+                "declared_directly": false
+              },
+              {
+                "full_name": "pixman",
+                "version": "0.46.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "0.46.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "cairo",
+                "version": "1.18.4",
+                "revision": 0,
+                "bottle_rebuild": 2,
+                "pkg_version": "1.18.4",
+                "declared_directly": true
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libidn2",
+                "version": "2.3.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.8",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtasn1",
+                "version": "4.21.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.21.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "nettle",
+                "version": "4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "p11-kit",
+                "version": "0.26.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.26.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gnutls",
+                "version": "3.8.13",
+                "revision": 2,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.8.13_2",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "libgpg-error",
+                "version": "1.61",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.61",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libassuan",
+                "version": "3.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.0.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libgcrypt",
+                "version": "1.12.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.12.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libksba",
+                "version": "1.8.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libusb",
+                "version": "1.0.30",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.30",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "npth",
+                "version": "1.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8",
+                "declared_directly": false
+              },
+              {
+                "full_name": "pinentry",
+                "version": "1.3.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gnupg",
+                "version": "2.5.22",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.5.22",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gpgme",
+                "version": "2.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.2.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gpgmepp",
+                "version": "2.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.2.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "graphite2",
+                "version": "1.3.15",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.15",
+                "declared_directly": false
+              },
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "harfbuzz",
+                "version": "14.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "14.4.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "jpeg-turbo",
+                "version": "3.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "giflib",
+                "version": "6.1.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.1.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "webp",
+                "version": "1.6.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtiff",
+                "version": "4.7.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.7.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "little-cms2",
+                "version": "2.19.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.19.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "nspr",
+                "version": "4.40",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.40",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "nss",
+                "version": "3.128",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.128",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openjpeg",
+                "version": "2.5.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.5.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/pdfsig",
+              "string": "/usr/local/Cellar/poppler/26.09.0/share/locale",
+              "offset": 31761
+            },
+            {
+              "path": "lib/libpoppler.a",
+              "string": "/usr/local/Cellar/poppler/26.09.0/share/poppler",
+              "offset": 3618188
+            },
+            {
+              "path": "lib/libpoppler.164.0.0.dylib",
+              "string": "/usr/local/Cellar/poppler/26.09.0/share/poppler",
+              "offset": 2180031
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Package-SPDXRef-readline-8.3.3",
+              "SPDXRef-Package-SPDXRef-gnupg-2.5.22",
+              "SPDXRef-Package-SPDXRef-gpgme-2.2.0",
+              "SPDXRef-Package-SPDXRef-gpgmepp-2.2.0",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.3",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+              "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+              "SPDXRef-Package-SPDXRef-nss-3.128",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gmp-6.3.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b4e672215c05a94e9244d447c8dab3435d4e8a96f6135fdbf8c37ba730c98d65"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "name": "readline",
+                "versionInfo": "8.3.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:67a24889119e6429144cd15fb9b0dc8ae37cf272388605a5780bb734f8e6b093",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "67a24889119e6429144cd15fb9b0dc8ae37cf272388605a5780bb734f8e6b093"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gnupg-2.5.22",
+                "name": "gnupg",
+                "versionInfo": "2.5.22",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gnupg-2.5.22.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "65eb5ba6842e9ed39e6b7f164fe7e948d5a4ffa885d04d38977b51682c970a11"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gnupg@2.5.22",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gpgme-2.2.0",
+                "name": "gpgme",
+                "versionInfo": "2.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gpgme-2.2.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1c27186fe8a0eabc45df6f97a870b3e3d8cf2992d448f30848c20d6df5532c34"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gpgme@2.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gpgmepp-2.2.0",
+                "name": "gpgmepp",
+                "versionInfo": "2.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gpgmepp-2.2.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8bc703ce33a9a7eab9ccfe7bb45cc5d5ae35b2a7e32d4974057b7fa121d7a57e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gpgmepp@2.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "name": "jpeg-turbo",
+                "versionInfo": "3.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5440035b2803de1d43de3c29d0df3816a2546d56fd1e3759add6138aa450820a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "name": "xz",
+                "versionInfo": "5.8.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/xz/blobs/sha256:df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.10.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "name": "libtiff",
+                "versionInfo": "4.7.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libtiff",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libtiff-4.7.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f1abd05915f49c4d07b789fdfab78ad83e78e6a4a61ef7c0ebeab45657b2e51c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libtiff@4.7.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+                "name": "little-cms2",
+                "versionInfo": "2.19.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/little-cms2-2.19.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e1890bcfd1f63598fa537a40b75379b1c930bdbd86164a2ef02a71858cd85185"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/little-cms2@2.19.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-nss-3.128",
+                "name": "nss",
+                "versionInfo": "3.128",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/nss-3.128.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "138c0352e30313e876b2a7196e352971250aff9f2dae571accff7b6ba7142120"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/nss@3.128",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-poppler"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-poppler"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-poppler"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-poppler"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-poppler"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gnupg-2.5.22",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-poppler"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gpgme-2.2.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-poppler"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gpgmepp-2.2.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-poppler"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-poppler"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-poppler"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-poppler"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-poppler"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-poppler"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-poppler"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-nss-3.128",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-poppler"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-poppler-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/pdfinfo",
+            "bin/pdftohtml",
+            "bin/pdfattach",
+            "bin/pdfsig",
+            "bin/pdftocairo",
+            "bin/pdfunite",
+            "bin/pdfseparate",
+            "bin/pdftotext",
+            "bin/pdfimages",
+            "bin/pdffonts",
+            "bin/pdftops",
+            "bin/pdftoppm",
+            "bin/pdfdetach"
+          ],
+          "all_files": [
+            ".brew/poppler.rb",
+            "AUTHORS",
+            "COPYING",
+            "COPYING3",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README-XPDF",
+            "README.md",
+            "bin/pdfattach",
+            "bin/pdfdetach",
+            "bin/pdffonts",
+            "bin/pdfimages",
+            "bin/pdfinfo",
+            "bin/pdfseparate",
+            "bin/pdfsig",
+            "bin/pdftocairo",
+            "bin/pdftohtml",
+            "bin/pdftoppm",
+            "bin/pdftops",
+            "bin/pdftotext",
+            "bin/pdfunite",
+            "include/poppler/Annot.h",
+            "include/poppler/AnnotStampImageHelper.h",
+            "include/poppler/Array.h",
+            "include/poppler/BBoxOutputDev.h",
+            "include/poppler/CachedFile.h",
+            "include/poppler/Catalog.h",
+            "include/poppler/CertificateInfo.h",
+            "include/poppler/CharTypes.h",
+            "include/poppler/CryptoSignBackend.h",
+            "include/poppler/CurlCachedFile.h",
+            "include/poppler/CurlPDFDocBuilder.h",
+            "include/poppler/DateInfo.h",
+            "include/poppler/Dict.h",
+            "include/poppler/Error.h",
+            "include/poppler/ErrorCodes.h",
+            "include/poppler/FILECacheLoader.h",
+            "include/poppler/FileSpec.h",
+            "include/poppler/FontInfo.h",
+            "include/poppler/Form.h",
+            "include/poppler/Function.h",
+            "include/poppler/Gfx.h",
+            "include/poppler/GfxFont.h",
+            "include/poppler/GfxState.h",
+            "include/poppler/GfxState_helpers.h",
+            "include/poppler/GlobalParams.h",
+            "include/poppler/HashAlgorithm.h",
+            "include/poppler/JPEG2000Stream.h",
+            "include/poppler/JSInfo.h",
+            "include/poppler/Lexer.h",
+            "include/poppler/Link.h",
+            "include/poppler/MarkedContentOutputDev.h",
+            "include/poppler/Movie.h",
+            "include/poppler/NameToUnicodeTable.h",
+            "include/poppler/Object.h",
+            "include/poppler/OptionalContent.h",
+            "include/poppler/Outline.h",
+            "include/poppler/OutputDev.h",
+            "include/poppler/PDFDoc.h",
+            "include/poppler/PDFDocBuilder.h",
+            "include/poppler/PDFDocEncoding.h",
+            "include/poppler/PDFDocFactory.h",
+            "include/poppler/PDFRectangle.h",
+            "include/poppler/PSOutputDev.h",
+            "include/poppler/Page.h",
+            "include/poppler/PageTransition.h",
+            "include/poppler/Parser.h",
+            "include/poppler/PopplerCache.h",
+            "include/poppler/ProfileData.h",
+            "include/poppler/Ref.h",
+            "include/poppler/Rendition.h",
+            "include/poppler/SignatureInfo.h",
+            "include/poppler/Sound.h",
+            "include/poppler/SplashOutputDev.h",
+            "include/poppler/Stream-CCITT.h",
+            "include/poppler/Stream.h",
+            "include/poppler/StructElement.h",
+            "include/poppler/StructTreeRoot.h",
+            "include/poppler/TextOutputDev.h",
+            "include/poppler/UTF.h",
+            "include/poppler/UnicodeCClassTables.h",
+            "include/poppler/UnicodeCompTables.h",
+            "include/poppler/UnicodeDecompTables.h",
+            "include/poppler/UnicodeMap.h",
+            "include/poppler/UnicodeMapFuncs.h",
+            "include/poppler/UnicodeMapTables.h",
+            "include/poppler/UnicodeTypeTable.h",
+            "include/poppler/ViewerPreferences.h",
+            "include/poppler/XRef.h",
+            "include/poppler/cpp/poppler-destination.h",
+            "include/poppler/cpp/poppler-document.h",
+            "include/poppler/cpp/poppler-embedded-file.h",
+            "include/poppler/cpp/poppler-font-private.h",
+            "include/poppler/cpp/poppler-font.h",
+            "include/poppler/cpp/poppler-global.h",
+            "include/poppler/cpp/poppler-image.h",
+            "include/poppler/cpp/poppler-page-renderer.h",
+            "include/poppler/cpp/poppler-page-transition.h",
+            "include/poppler/cpp/poppler-page.h",
+            "include/poppler/cpp/poppler-rectangle.h",
+            "include/poppler/cpp/poppler-toc.h",
+            "include/poppler/cpp/poppler-version.h",
+            "include/poppler/cpp/poppler_cpp_export.h",
+            "include/poppler/fofi/FoFiBase.h",
+            "include/poppler/fofi/FoFiEncodings.h",
+            "include/poppler/fofi/FoFiIdentifier.h",
+            "include/poppler/fofi/FoFiTrueType.h",
+            "include/poppler/fofi/FoFiType1C.h",
+            "include/poppler/glib/poppler-action.h",
+            "include/poppler/glib/poppler-annot.h",
+            "include/poppler/glib/poppler-attachment.h",
+            "include/poppler/glib/poppler-date.h",
+            "include/poppler/glib/poppler-document.h",
+            "include/poppler/glib/poppler-enums.h",
+            "include/poppler/glib/poppler-features.h",
+            "include/poppler/glib/poppler-form-field.h",
+            "include/poppler/glib/poppler-layer.h",
+            "include/poppler/glib/poppler-macros.h",
+            "include/poppler/glib/poppler-media.h",
+            "include/poppler/glib/poppler-movie.h",
+            "include/poppler/glib/poppler-page.h",
+            "include/poppler/glib/poppler-structure-element.h",
+            "include/poppler/glib/poppler.h",
+            "include/poppler/goo/GooCheckedOps.h",
+            "include/poppler/goo/GooLikely.h",
+            "include/poppler/goo/GooString.h",
+            "include/poppler/goo/GooTimer.h",
+            "include/poppler/goo/ImgWriter.h",
+            "include/poppler/goo/JpegWriter.h",
+            "include/poppler/goo/PNGWriter.h",
+            "include/poppler/goo/TiffWriter.h",
+            "include/poppler/goo/gfile.h",
+            "include/poppler/goo/gmem.h",
+            "include/poppler/goo/grandom.h",
+            "include/poppler/goo/gstrtod.h",
+            "include/poppler/poppler-config.h",
+            "include/poppler/poppler_private_export.h",
+            "include/poppler/splash/Splash.h",
+            "include/poppler/splash/SplashBitmap.h",
+            "include/poppler/splash/SplashClip.h",
+            "include/poppler/splash/SplashErrorCodes.h",
+            "include/poppler/splash/SplashFont.h",
+            "include/poppler/splash/SplashFontEngine.h",
+            "include/poppler/splash/SplashFontFile.h",
+            "include/poppler/splash/SplashFontFileID.h",
+            "include/poppler/splash/SplashGlyphBitmap.h",
+            "include/poppler/splash/SplashMath.h",
+            "include/poppler/splash/SplashPath.h",
+            "include/poppler/splash/SplashPattern.h",
+            "include/poppler/splash/SplashTypes.h",
+            "lib/girepository-1.0/Poppler-0.18.typelib",
+            "lib/libpoppler-cpp.3.1.0.dylib",
+            "lib/libpoppler-cpp.3.dylib",
+            "lib/libpoppler-cpp.a",
+            "lib/libpoppler-cpp.dylib",
+            "lib/libpoppler-glib.8.31.0.dylib",
+            "lib/libpoppler-glib.8.dylib",
+            "lib/libpoppler-glib.a",
+            "lib/libpoppler-glib.dylib",
+            "lib/libpoppler.164.0.0.dylib",
+            "lib/libpoppler.164.dylib",
+            "lib/libpoppler.a",
+            "lib/libpoppler.dylib",
+            "lib/pkgconfig/poppler-cpp.pc",
+            "lib/pkgconfig/poppler-glib.pc",
+            "lib/pkgconfig/poppler.pc",
+            "sbom.spdx.json",
+            "share/gir-1.0/Poppler-0.18.gir",
+            "share/locale/ca/LC_MESSAGES/pdfsig.mo",
+            "share/man/man1/pdfattach.1",
+            "share/man/man1/pdfdetach.1",
+            "share/man/man1/pdffonts.1",
+            "share/man/man1/pdfimages.1",
+            "share/man/man1/pdfinfo.1",
+            "share/man/man1/pdfseparate.1",
+            "share/man/man1/pdfsig.1",
+            "share/man/man1/pdftocairo.1",
+            "share/man/man1/pdftohtml.1",
+            "share/man/man1/pdftoppm.1",
+            "share/man/man1/pdftops.1",
+            "share/man/man1/pdftotext.1",
+            "share/man/man1/pdfunite.1",
+            "share/pkgconfig/poppler-data.pc",
+            "share/poppler/cMap/Adobe-CNS1/Adobe-CNS1-0",
+            "share/poppler/cMap/Adobe-CNS1/Adobe-CNS1-1",
+            "share/poppler/cMap/Adobe-CNS1/Adobe-CNS1-2",
+            "share/poppler/cMap/Adobe-CNS1/Adobe-CNS1-3",
+            "share/poppler/cMap/Adobe-CNS1/Adobe-CNS1-4",
+            "share/poppler/cMap/Adobe-CNS1/Adobe-CNS1-5",
+            "share/poppler/cMap/Adobe-CNS1/Adobe-CNS1-6",
+            "share/poppler/cMap/Adobe-CNS1/Adobe-CNS1-7",
+            "share/poppler/cMap/Adobe-CNS1/Adobe-CNS1-B5pc",
+            "share/poppler/cMap/Adobe-CNS1/Adobe-CNS1-ETen-B5",
+            "share/poppler/cMap/Adobe-CNS1/Adobe-CNS1-H-CID",
+            "share/poppler/cMap/Adobe-CNS1/Adobe-CNS1-H-Host",
+            "share/poppler/cMap/Adobe-CNS1/Adobe-CNS1-H-Mac",
+            "share/poppler/cMap/Adobe-CNS1/Adobe-CNS1-UCS2",
+            "share/poppler/cMap/Adobe-CNS1/B5-H",
+            "share/poppler/cMap/Adobe-CNS1/B5-V",
+            "share/poppler/cMap/Adobe-CNS1/B5pc-H",
+            "share/poppler/cMap/Adobe-CNS1/B5pc-UCS2",
+            "share/poppler/cMap/Adobe-CNS1/B5pc-UCS2C",
+            "share/poppler/cMap/Adobe-CNS1/B5pc-V",
+            "share/poppler/cMap/Adobe-CNS1/CNS-EUC-H",
+            "share/poppler/cMap/Adobe-CNS1/CNS-EUC-V",
+            "share/poppler/cMap/Adobe-CNS1/CNS1-H",
+            "share/poppler/cMap/Adobe-CNS1/CNS1-V",
+            "share/poppler/cMap/Adobe-CNS1/CNS2-H",
+            "share/poppler/cMap/Adobe-CNS1/CNS2-V",
+            "share/poppler/cMap/Adobe-CNS1/ETHK-B5-H",
+            "share/poppler/cMap/Adobe-CNS1/ETHK-B5-V",
+            "share/poppler/cMap/Adobe-CNS1/ETen-B5-H",
+            "share/poppler/cMap/Adobe-CNS1/ETen-B5-UCS2",
+            "share/poppler/cMap/Adobe-CNS1/ETen-B5-V",
+            "share/poppler/cMap/Adobe-CNS1/ETenms-B5-H",
+            "share/poppler/cMap/Adobe-CNS1/ETenms-B5-V",
+            "share/poppler/cMap/Adobe-CNS1/HKdla-B5-H",
+            "share/poppler/cMap/Adobe-CNS1/HKdla-B5-V",
+            "share/poppler/cMap/Adobe-CNS1/HKdlb-B5-H",
+            "share/poppler/cMap/Adobe-CNS1/HKdlb-B5-V",
+            "share/poppler/cMap/Adobe-CNS1/HKgccs-B5-H",
+            "share/poppler/cMap/Adobe-CNS1/HKgccs-B5-V",
+            "share/poppler/cMap/Adobe-CNS1/HKm314-B5-H",
+            "share/poppler/cMap/Adobe-CNS1/HKm314-B5-V",
+            "share/poppler/cMap/Adobe-CNS1/HKm471-B5-H",
+            "share/poppler/cMap/Adobe-CNS1/HKm471-B5-V",
+            "share/poppler/cMap/Adobe-CNS1/HKscs-B5-H",
+            "share/poppler/cMap/Adobe-CNS1/HKscs-B5-V",
+            "share/poppler/cMap/Adobe-CNS1/UCS2-B5pc",
+            "share/poppler/cMap/Adobe-CNS1/UCS2-ETen-B5",
+            "share/poppler/cMap/Adobe-CNS1/UniCNS-UCS2-H",
+            "share/poppler/cMap/Adobe-CNS1/UniCNS-UCS2-V",
+            "share/poppler/cMap/Adobe-CNS1/UniCNS-UTF16-H",
+            "share/poppler/cMap/Adobe-CNS1/UniCNS-UTF16-V",
+            "share/poppler/cMap/Adobe-CNS1/UniCNS-UTF32-H",
+            "share/poppler/cMap/Adobe-CNS1/UniCNS-UTF32-V",
+            "share/poppler/cMap/Adobe-CNS1/UniCNS-UTF8-H",
+            "share/poppler/cMap/Adobe-CNS1/UniCNS-UTF8-V",
+            "share/poppler/cMap/Adobe-GB1/Adobe-GB1-0",
+            "share/poppler/cMap/Adobe-GB1/Adobe-GB1-1",
+            "share/poppler/cMap/Adobe-GB1/Adobe-GB1-2",
+            "share/poppler/cMap/Adobe-GB1/Adobe-GB1-3",
+            "share/poppler/cMap/Adobe-GB1/Adobe-GB1-4",
+            "share/poppler/cMap/Adobe-GB1/Adobe-GB1-5",
+            "share/poppler/cMap/Adobe-GB1/Adobe-GB1-GBK-EUC",
+            "share/poppler/cMap/Adobe-GB1/Adobe-GB1-GBpc-EUC",
+            "share/poppler/cMap/Adobe-GB1/Adobe-GB1-H-CID",
+            "share/poppler/cMap/Adobe-GB1/Adobe-GB1-H-Host",
+            "share/poppler/cMap/Adobe-GB1/Adobe-GB1-H-Mac",
+            "share/poppler/cMap/Adobe-GB1/Adobe-GB1-UCS2",
+            "share/poppler/cMap/Adobe-GB1/GB-EUC-H",
+            "share/poppler/cMap/Adobe-GB1/GB-EUC-V",
+            "share/poppler/cMap/Adobe-GB1/GB-H",
+            "share/poppler/cMap/Adobe-GB1/GB-V",
+            "share/poppler/cMap/Adobe-GB1/GBK-EUC-H",
+            "share/poppler/cMap/Adobe-GB1/GBK-EUC-UCS2",
+            "share/poppler/cMap/Adobe-GB1/GBK-EUC-V",
+            "share/poppler/cMap/Adobe-GB1/GBK2K-H",
+            "share/poppler/cMap/Adobe-GB1/GBK2K-V",
+            "share/poppler/cMap/Adobe-GB1/GBKp-EUC-H",
+            "share/poppler/cMap/Adobe-GB1/GBKp-EUC-V",
+            "share/poppler/cMap/Adobe-GB1/GBT-EUC-H",
+            "share/poppler/cMap/Adobe-GB1/GBT-EUC-V",
+            "share/poppler/cMap/Adobe-GB1/GBT-H",
+            "share/poppler/cMap/Adobe-GB1/GBT-V",
+            "share/poppler/cMap/Adobe-GB1/GBTpc-EUC-H",
+            "share/poppler/cMap/Adobe-GB1/GBTpc-EUC-V",
+            "share/poppler/cMap/Adobe-GB1/GBpc-EUC-H",
+            "share/poppler/cMap/Adobe-GB1/GBpc-EUC-UCS2",
+            "share/poppler/cMap/Adobe-GB1/GBpc-EUC-UCS2C",
+            "share/poppler/cMap/Adobe-GB1/GBpc-EUC-V",
+            "share/poppler/cMap/Adobe-GB1/UCS2-GBK-EUC",
+            "share/poppler/cMap/Adobe-GB1/UCS2-GBpc-EUC",
+            "share/poppler/cMap/Adobe-GB1/UniGB-UCS2-H",
+            "share/poppler/cMap/Adobe-GB1/UniGB-UCS2-V",
+            "share/poppler/cMap/Adobe-GB1/UniGB-UTF16-H",
+            "share/poppler/cMap/Adobe-GB1/UniGB-UTF16-V",
+            "share/poppler/cMap/Adobe-GB1/UniGB-UTF32-H",
+            "share/poppler/cMap/Adobe-GB1/UniGB-UTF32-V",
+            "share/poppler/cMap/Adobe-GB1/UniGB-UTF8-H",
+            "share/poppler/cMap/Adobe-GB1/UniGB-UTF8-V",
+            "share/poppler/cMap/Adobe-Japan1/78-EUC-H",
+            "share/poppler/cMap/Adobe-Japan1/78-EUC-V",
+            "share/poppler/cMap/Adobe-Japan1/78-H",
+            "share/poppler/cMap/Adobe-Japan1/78-RKSJ-H",
+            "share/poppler/cMap/Adobe-Japan1/78-RKSJ-V",
+            "share/poppler/cMap/Adobe-Japan1/78-V",
+            "share/poppler/cMap/Adobe-Japan1/78ms-RKSJ-H",
+            "share/poppler/cMap/Adobe-Japan1/78ms-RKSJ-V",
+            "share/poppler/cMap/Adobe-Japan1/83pv-RKSJ-H",
+            "share/poppler/cMap/Adobe-Japan1/90ms-RKSJ-H",
+            "share/poppler/cMap/Adobe-Japan1/90ms-RKSJ-UCS2",
+            "share/poppler/cMap/Adobe-Japan1/90ms-RKSJ-V",
+            "share/poppler/cMap/Adobe-Japan1/90msp-RKSJ-H",
+            "share/poppler/cMap/Adobe-Japan1/90msp-RKSJ-V",
+            "share/poppler/cMap/Adobe-Japan1/90pv-RKSJ-H",
+            "share/poppler/cMap/Adobe-Japan1/90pv-RKSJ-UCS2",
+            "share/poppler/cMap/Adobe-Japan1/90pv-RKSJ-UCS2C",
+            "share/poppler/cMap/Adobe-Japan1/90pv-RKSJ-V",
+            "share/poppler/cMap/Adobe-Japan1/Add-H",
+            "share/poppler/cMap/Adobe-Japan1/Add-RKSJ-H",
+            "share/poppler/cMap/Adobe-Japan1/Add-RKSJ-V",
+            "share/poppler/cMap/Adobe-Japan1/Add-V",
+            "share/poppler/cMap/Adobe-Japan1/Adobe-Japan1-0",
+            "share/poppler/cMap/Adobe-Japan1/Adobe-Japan1-1",
+            "share/poppler/cMap/Adobe-Japan1/Adobe-Japan1-2",
+            "share/poppler/cMap/Adobe-Japan1/Adobe-Japan1-3",
+            "share/poppler/cMap/Adobe-Japan1/Adobe-Japan1-4",
+            "share/poppler/cMap/Adobe-Japan1/Adobe-Japan1-5",
+            "share/poppler/cMap/Adobe-Japan1/Adobe-Japan1-6",
+            "share/poppler/cMap/Adobe-Japan1/Adobe-Japan1-7",
+            "share/poppler/cMap/Adobe-Japan1/Adobe-Japan1-90ms-RKSJ",
+            "share/poppler/cMap/Adobe-Japan1/Adobe-Japan1-90pv-RKSJ",
+            "share/poppler/cMap/Adobe-Japan1/Adobe-Japan1-H-CID",
+            "share/poppler/cMap/Adobe-Japan1/Adobe-Japan1-H-Host",
+            "share/poppler/cMap/Adobe-Japan1/Adobe-Japan1-H-Mac",
+            "share/poppler/cMap/Adobe-Japan1/Adobe-Japan1-PS-H",
+            "share/poppler/cMap/Adobe-Japan1/Adobe-Japan1-PS-V",
+            "share/poppler/cMap/Adobe-Japan1/Adobe-Japan1-UCS2",
+            "share/poppler/cMap/Adobe-Japan1/EUC-H",
+            "share/poppler/cMap/Adobe-Japan1/EUC-V",
+            "share/poppler/cMap/Adobe-Japan1/Ext-H",
+            "share/poppler/cMap/Adobe-Japan1/Ext-RKSJ-H",
+            "share/poppler/cMap/Adobe-Japan1/Ext-RKSJ-V",
+            "share/poppler/cMap/Adobe-Japan1/Ext-V",
+            "share/poppler/cMap/Adobe-Japan1/H",
+            "share/poppler/cMap/Adobe-Japan1/Hankaku",
+            "share/poppler/cMap/Adobe-Japan1/Hiragana",
+            "share/poppler/cMap/Adobe-Japan1/Hojo-EUC-H",
+            "share/poppler/cMap/Adobe-Japan1/Hojo-EUC-V",
+            "share/poppler/cMap/Adobe-Japan1/Hojo-H",
+            "share/poppler/cMap/Adobe-Japan1/Hojo-V",
+            "share/poppler/cMap/Adobe-Japan1/Katakana",
+            "share/poppler/cMap/Adobe-Japan1/NWP-H",
+            "share/poppler/cMap/Adobe-Japan1/NWP-V",
+            "share/poppler/cMap/Adobe-Japan1/RKSJ-H",
+            "share/poppler/cMap/Adobe-Japan1/RKSJ-V",
+            "share/poppler/cMap/Adobe-Japan1/Roman",
+            "share/poppler/cMap/Adobe-Japan1/UCS2-90ms-RKSJ",
+            "share/poppler/cMap/Adobe-Japan1/UCS2-90pv-RKSJ",
+            "share/poppler/cMap/Adobe-Japan1/UniHojo-UCS2-H",
+            "share/poppler/cMap/Adobe-Japan1/UniHojo-UCS2-V",
+            "share/poppler/cMap/Adobe-Japan1/UniHojo-UTF16-H",
+            "share/poppler/cMap/Adobe-Japan1/UniHojo-UTF16-V",
+            "share/poppler/cMap/Adobe-Japan1/UniHojo-UTF32-H",
+            "share/poppler/cMap/Adobe-Japan1/UniHojo-UTF32-V",
+            "share/poppler/cMap/Adobe-Japan1/UniHojo-UTF8-H",
+            "share/poppler/cMap/Adobe-Japan1/UniHojo-UTF8-V",
+            "share/poppler/cMap/Adobe-Japan1/UniJIS-UCS2-H",
+            "share/poppler/cMap/Adobe-Japan1/UniJIS-UCS2-HW-H",
+            "share/poppler/cMap/Adobe-Japan1/UniJIS-UCS2-HW-V",
+            "share/poppler/cMap/Adobe-Japan1/UniJIS-UCS2-V",
+            "share/poppler/cMap/Adobe-Japan1/UniJIS-UTF16-H",
+            "share/poppler/cMap/Adobe-Japan1/UniJIS-UTF16-V",
+            "share/poppler/cMap/Adobe-Japan1/UniJIS-UTF32-H",
+            "share/poppler/cMap/Adobe-Japan1/UniJIS-UTF32-V",
+            "share/poppler/cMap/Adobe-Japan1/UniJIS-UTF8-H",
+            "share/poppler/cMap/Adobe-Japan1/UniJIS-UTF8-V",
+            "share/poppler/cMap/Adobe-Japan1/UniJIS2004-UTF16-H",
+            "share/poppler/cMap/Adobe-Japan1/UniJIS2004-UTF16-V",
+            "share/poppler/cMap/Adobe-Japan1/UniJIS2004-UTF32-H",
+            "share/poppler/cMap/Adobe-Japan1/UniJIS2004-UTF32-V",
+            "share/poppler/cMap/Adobe-Japan1/UniJIS2004-UTF8-H",
+            "share/poppler/cMap/Adobe-Japan1/UniJIS2004-UTF8-V",
+            "share/poppler/cMap/Adobe-Japan1/UniJISPro-UCS2-HW-V",
+            "share/poppler/cMap/Adobe-Japan1/UniJISPro-UCS2-V",
+            "share/poppler/cMap/Adobe-Japan1/UniJISPro-UTF8-V",
+            "share/poppler/cMap/Adobe-Japan1/UniJISX0213-UTF32-H",
+            "share/poppler/cMap/Adobe-Japan1/UniJISX0213-UTF32-V",
+            "share/poppler/cMap/Adobe-Japan1/UniJISX02132004-UTF32-H",
+            "share/poppler/cMap/Adobe-Japan1/UniJISX02132004-UTF32-V",
+            "share/poppler/cMap/Adobe-Japan1/V",
+            "share/poppler/cMap/Adobe-Japan1/WP-Symbol",
+            "share/poppler/cMap/Adobe-Japan2/Adobe-Japan2-0",
+            "share/poppler/cMap/Adobe-KR/Adobe-KR-0",
+            "share/poppler/cMap/Adobe-KR/Adobe-KR-1",
+            "share/poppler/cMap/Adobe-KR/Adobe-KR-2",
+            "share/poppler/cMap/Adobe-KR/Adobe-KR-3",
+            "share/poppler/cMap/Adobe-KR/Adobe-KR-4",
+            "share/poppler/cMap/Adobe-KR/Adobe-KR-5",
+            "share/poppler/cMap/Adobe-KR/Adobe-KR-6",
+            "share/poppler/cMap/Adobe-KR/Adobe-KR-7",
+            "share/poppler/cMap/Adobe-KR/Adobe-KR-8",
+            "share/poppler/cMap/Adobe-KR/Adobe-KR-9",
+            "share/poppler/cMap/Adobe-KR/Adobe-KR-UCS2",
+            "share/poppler/cMap/Adobe-KR/UniAKR-UTF16-H",
+            "share/poppler/cMap/Adobe-KR/UniAKR-UTF32-H",
+            "share/poppler/cMap/Adobe-KR/UniAKR-UTF8-H",
+            "share/poppler/cMap/Adobe-Korea1/Adobe-Korea1-0",
+            "share/poppler/cMap/Adobe-Korea1/Adobe-Korea1-1",
+            "share/poppler/cMap/Adobe-Korea1/Adobe-Korea1-2",
+            "share/poppler/cMap/Adobe-Korea1/Adobe-Korea1-H-CID",
+            "share/poppler/cMap/Adobe-Korea1/Adobe-Korea1-H-Host",
+            "share/poppler/cMap/Adobe-Korea1/Adobe-Korea1-H-Mac",
+            "share/poppler/cMap/Adobe-Korea1/Adobe-Korea1-KSCms-UHC",
+            "share/poppler/cMap/Adobe-Korea1/Adobe-Korea1-KSCpc-EUC",
+            "share/poppler/cMap/Adobe-Korea1/Adobe-Korea1-UCS2",
+            "share/poppler/cMap/Adobe-Korea1/KSC-EUC-H",
+            "share/poppler/cMap/Adobe-Korea1/KSC-EUC-V",
+            "share/poppler/cMap/Adobe-Korea1/KSC-H",
+            "share/poppler/cMap/Adobe-Korea1/KSC-Johab-H",
+            "share/poppler/cMap/Adobe-Korea1/KSC-Johab-V",
+            "share/poppler/cMap/Adobe-Korea1/KSC-V",
+            "share/poppler/cMap/Adobe-Korea1/KSCms-UHC-H",
+            "share/poppler/cMap/Adobe-Korea1/KSCms-UHC-HW-H",
+            "share/poppler/cMap/Adobe-Korea1/KSCms-UHC-HW-V",
+            "share/poppler/cMap/Adobe-Korea1/KSCms-UHC-UCS2",
+            "share/poppler/cMap/Adobe-Korea1/KSCms-UHC-V",
+            "share/poppler/cMap/Adobe-Korea1/KSCpc-EUC-H",
+            "share/poppler/cMap/Adobe-Korea1/KSCpc-EUC-UCS2",
+            "share/poppler/cMap/Adobe-Korea1/KSCpc-EUC-UCS2C",
+            "share/poppler/cMap/Adobe-Korea1/KSCpc-EUC-V",
+            "share/poppler/cMap/Adobe-Korea1/UCS2-KSCms-UHC",
+            "share/poppler/cMap/Adobe-Korea1/UCS2-KSCpc-EUC",
+            "share/poppler/cMap/Adobe-Korea1/UniKS-UCS2-H",
+            "share/poppler/cMap/Adobe-Korea1/UniKS-UCS2-V",
+            "share/poppler/cMap/Adobe-Korea1/UniKS-UTF16-H",
+            "share/poppler/cMap/Adobe-Korea1/UniKS-UTF16-V",
+            "share/poppler/cMap/Adobe-Korea1/UniKS-UTF32-H",
+            "share/poppler/cMap/Adobe-Korea1/UniKS-UTF32-V",
+            "share/poppler/cMap/Adobe-Korea1/UniKS-UTF8-H",
+            "share/poppler/cMap/Adobe-Korea1/UniKS-UTF8-V",
+            "share/poppler/cidToUnicode/Adobe-CNS1",
+            "share/poppler/cidToUnicode/Adobe-GB1",
+            "share/poppler/cidToUnicode/Adobe-Japan1",
+            "share/poppler/cidToUnicode/Adobe-Korea1",
+            "share/poppler/nameToUnicode/Bulgarian",
+            "share/poppler/nameToUnicode/Greek",
+            "share/poppler/nameToUnicode/Thai",
+            "share/poppler/unicodeMap/Big5",
+            "share/poppler/unicodeMap/Big5ascii",
+            "share/poppler/unicodeMap/EUC-CN",
+            "share/poppler/unicodeMap/EUC-JP",
+            "share/poppler/unicodeMap/GBK",
+            "share/poppler/unicodeMap/ISO-2022-CN",
+            "share/poppler/unicodeMap/ISO-2022-JP",
+            "share/poppler/unicodeMap/ISO-2022-KR",
+            "share/poppler/unicodeMap/ISO-8859-6",
+            "share/poppler/unicodeMap/ISO-8859-7",
+            "share/poppler/unicodeMap/ISO-8859-8",
+            "share/poppler/unicodeMap/ISO-8859-9",
+            "share/poppler/unicodeMap/KOI8-R",
+            "share/poppler/unicodeMap/Latin2",
+            "share/poppler/unicodeMap/Shift-JIS",
+            "share/poppler/unicodeMap/TIS-620",
+            "share/poppler/unicodeMap/Windows-1255"
+          ],
+          "installed_size": 34010931
+        }
+      }
+    }
+  }
+}
