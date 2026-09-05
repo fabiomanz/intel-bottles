@@ -20,7 +20,7 @@
         "tahoe": {
           "filename": "go-1.27.1.tahoe.bottle.tar.gz",
           "local_filename": "go--1.27.1.tahoe.bottle.tar.gz",
-          "sha256": "93f25477b287ed2e9323fd906343d7af59a0b5a2fe725633e4db53f3b1260224",
+          "sha256": "ab00190a2a3956c24435b35db5ded079fa43ef5e187b6781f5d64e6d62093c1c",
           "tab": {
             "homebrew_version": "6.0.21",
             "changed_files": [],
@@ -13645,8 +13645,8 @@
             "libexec/test/fixedbugs/issue27718.go",
             "libexec/test/fixedbugs/issue27732a.go",
             "libexec/test/fixedbugs/issue27829.go",
-            "libexec/test/fixedbugs/issue27836.dir/Þfoo.go",
-            "libexec/test/fixedbugs/issue27836.dir/Þmain.go",
+            "libexec/test/fixedbugs/issue27836.dir/\u00defoo.go",
+            "libexec/test/fixedbugs/issue27836.dir/\u00demain.go",
             "libexec/test/fixedbugs/issue27836.go",
             "libexec/test/fixedbugs/issue27938.go",
             "libexec/test/fixedbugs/issue27961.go",

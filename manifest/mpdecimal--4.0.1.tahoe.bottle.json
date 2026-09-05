@@ -20,7 +20,7 @@
         "tahoe": {
           "filename": "mpdecimal-4.0.1.tahoe.bottle.tar.gz",
           "local_filename": "mpdecimal--4.0.1.tahoe.bottle.tar.gz",
-          "sha256": "179d0e83023d47e49687ef897865724dd0bdbc7498459b4428d10bef40c5c1cf",
+          "sha256": "49cd2025d6a2f8159d82a50c4720d75f17e01205c59fe057b931b4603d6f822d",
           "tab": {
             "homebrew_version": "6.0.21",
             "changed_files": [

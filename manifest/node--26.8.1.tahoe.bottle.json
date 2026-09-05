@@ -20,7 +20,7 @@
         "tahoe": {
           "filename": "node-26.8.1.tahoe.bottle.tar.gz",
           "local_filename": "node--26.8.1.tahoe.bottle.tar.gz",
-          "sha256": "cfa9aebf36b35aa6e8a125a2abc4474e45511074d9a56f7ddc520b23e305219c",
+          "sha256": "e9eb9b0fdf10691b510bb0cb7474d22ceb060cfdbb6b98a0de5cdd564d8a06e9",
           "tab": {
             "homebrew_version": "6.0.21",
             "changed_files": [

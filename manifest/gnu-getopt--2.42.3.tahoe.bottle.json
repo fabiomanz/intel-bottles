@@ -20,7 +20,7 @@
         "tahoe": {
           "filename": "gnu-getopt-2.42.3.tahoe.bottle.tar.gz",
           "local_filename": "gnu-getopt--2.42.3.tahoe.bottle.tar.gz",
-          "sha256": "ab51064dc1312f9efc616d8ba3f15ffc81e3bd5f2de05d1540f439a73bf01ee3",
+          "sha256": "13c304bda6bba53b3920ced250a44bef907a83a1a2ac23e6318b345865341782",
           "tab": {
             "homebrew_version": "6.0.21",
             "changed_files": [],

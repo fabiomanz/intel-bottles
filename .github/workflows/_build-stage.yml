@@ -95,7 +95,10 @@ jobs:
         with:
           pattern: bottles-${{ inputs.stage }}-*
           path: bottles/
-          merge-multiple: true
+          # Unmerged: one directory per job. Merging collapses same-named bottles from
+          # jobs that each built a shared dependency, which is how a tarball and a
+          # checksum from different builds got published together.
+          merge-multiple: false
 
       - name: Point Homebrew at the fork
         run: |

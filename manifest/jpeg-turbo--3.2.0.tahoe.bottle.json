@@ -20,7 +20,7 @@
         "tahoe": {
           "filename": "jpeg-turbo-3.2.0.tahoe.bottle.tar.gz",
           "local_filename": "jpeg-turbo--3.2.0.tahoe.bottle.tar.gz",
-          "sha256": "5440035b2803de1d43de3c29d0df3816a2546d56fd1e3759add6138aa450820a",
+          "sha256": "3c7d19c475389bbb48a07f78f52473c8f49f458bd45b4453457cfec9c01601ed",
           "tab": {
             "homebrew_version": "6.0.21",
             "changed_files": [
