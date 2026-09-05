@@ -1,0 +1,21 @@
+{
+  "_comment": [
+    "Which runner builds which formula. Everything uses 'default' (GitHub-hosted,",
+    "free, but capped at GitHub's hard 6-hour job ceiling) unless listed in 'assign'.",
+    "Only put a formula on 'selfhosted' if it genuinely cannot finish in 6 hours --",
+    "that machine is slower to schedule and you have to keep it online."
+  ],
+  "profiles": {
+    "default": {
+      "labels": ["macos-26-intel"],
+      "timeout": 350
+    },
+    "selfhosted": {
+      "labels": ["self-hosted", "macOS", "X64"],
+      "timeout": 2880
+    }
+  },
+  "assign": {
+    "qtwebengine": "selfhosted"
+  }
+}

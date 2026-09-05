@@ -53,10 +53,12 @@ jobs:
           if [ -n "$OVERRIDE" ]; then
             # Manual override: treat every named formula as its own root, single stage.
             python3 - <<'PY' >> "$GITHUB_OUTPUT"
-          import json, os
+          import json, os, sys
+          sys.path.insert(0, "scripts")
+          from plan_targets import runner_for
           names = os.environ["OVERRIDE"].split()
           print(f"heavy={json.dumps([])}")
-          print(f"rest={json.dumps(names)}")
+          print(f"rest={json.dumps([runner_for(n) for n in names])}")
           print(f"missing_count={len(names)}")
           PY
           else

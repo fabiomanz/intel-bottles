@@ -38,15 +38,18 @@ env:
 
 jobs:
   build:
-    name: ${{ inputs.stage }} / ${{ matrix.formula }}
-    runs-on: macos-26-intel
-    timeout-minutes: 350
+    # Each matrix entry carries its own runner, so qtwebengine can go to a self-hosted
+    # Intel machine (no 6-hour ceiling) while everything else stays on GitHub's free
+    # macos-26-intel. See runners.json.
+    name: ${{ inputs.stage }} / ${{ matrix.entry.formula }}
+    runs-on: ${{ matrix.entry.labels }}
+    timeout-minutes: ${{ matrix.entry.timeout }}
     continue-on-error: ${{ inputs.allow_failure }}
     strategy:
       fail-fast: false
       max-parallel: 5
       matrix:
-        formula: ${{ fromJSON(inputs.formulae) }}
+        entry: ${{ fromJSON(inputs.formulae) }}
     steps:
       - uses: actions/checkout@v4
 
@@ -73,13 +76,13 @@ jobs:
       - name: Build and bottle
         env:
           BOTTLE_OUT_DIR: ${{ github.workspace }}/bottles
-        run: ./scripts/build_root.sh "${{ matrix.formula }}"
+        run: ./scripts/build_root.sh "${{ matrix.entry.formula }}"
 
       - name: Upload bottles
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: bottles-${{ inputs.stage }}-${{ matrix.formula }}
+          name: bottles-${{ inputs.stage }}-${{ matrix.entry.formula }}
           path: bottles/
           if-no-files-found: ignore
           retention-days: 7

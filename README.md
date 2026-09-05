@@ -62,6 +62,30 @@ via `HOMEBREW_CORE_GIT_REMOTE`. Unqualified `brew install node` then just works,
 | `scripts/sync_fork.sh` | Rebuilds the fork as upstream + our blocks |
 | `manifest/` | `*.bottle.json` — the source of truth for re-applying blocks |
 
+## Runner assignment
+
+`runners.json` decides which machine builds which formula. Everything uses the free
+GitHub-hosted `macos-26-intel` unless listed under `assign`. Today only `qtwebengine` is
+assigned elsewhere, because it cannot finish inside GitHub's hard 6-hour job ceiling.
+
+```json
+"assign": { "qtwebengine": "selfhosted" }
+```
+
+Moving a formula between runners is a one-line edit there; nothing else needs changing.
+
+### Self-hosted runner
+
+Register an Intel Mac with the labels `self-hosted, macOS, X64` (Settings -> Actions ->
+Runners). The `selfhosted` profile gives it a 48-hour timeout, since self-hosted jobs are
+not bound by the 6-hour limit.
+
+**Security note:** GitHub advises against self-hosted runners on public repositories,
+because a fork's pull request could otherwise run arbitrary code on your machine. That
+attack does not apply here — no workflow in this repo has a `pull_request` trigger; they
+are all `workflow_dispatch`, `schedule` or `workflow_call`. Keep it that way, or move the
+repo private (which costs runner minutes for the GitHub-hosted jobs).
+
 ## Setup
 
 1. **Fork homebrew-core** to `fabiomanz/homebrew-core` (keep the default branch `main`).

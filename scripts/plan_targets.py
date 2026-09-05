@@ -115,11 +115,38 @@ def main() -> None:
     emit(heavy_roots, rest_roots, missing, sorted(covered - set(roots)))
 
 
+def runner_for(name: str) -> dict:
+    """Matrix entry for a formula: which runner builds it, and its timeout.
+
+    Everything goes to the default GitHub-hosted runner unless runners.json assigns it
+    elsewhere. Only qtwebengine needs that today -- it cannot finish inside GitHub's hard
+    6-hour job ceiling, so it goes to a self-hosted machine with a much longer timeout.
+    """
+    config = json.loads((REPO / "runners.json").read_text())
+    profile_name = config.get("assign", {}).get(name, "default")
+    profile = config["profiles"][profile_name]
+    return {
+        "formula": name,
+        "labels": profile["labels"],
+        "timeout": profile["timeout"],
+        "profile": profile_name,
+    }
+
+
 def emit(heavy, rest, missing, free):
+    heavy_entries = [runner_for(n) for n in heavy]
+    rest_entries = [runner_for(n) for n in rest]
+
+    def describe(entries):
+        return ", ".join(
+            e["formula"] + ("" if e["profile"] == "default" else f" [{e['profile']}]")
+            for e in entries
+        ) or "-"
+
     summary = (
         f"{len(missing)} formulae still need a bottle\n"
-        f"  stage 1 (shared/heavy): {len(heavy)} -> {', '.join(heavy) or '-'}\n"
-        f"  stage 2 (roots):        {len(rest)} -> {', '.join(rest) or '-'}\n"
+        f"  stage 1 (shared/heavy): {len(heavy)} -> {describe(heavy_entries)}\n"
+        f"  stage 2 (roots):        {len(rest)} -> {describe(rest_entries)}\n"
         f"  built as dependencies:  {len(free)}\n"
     )
     print(summary)
@@ -127,8 +154,8 @@ def emit(heavy, rest, missing, free):
     github_output = os.environ.get("GITHUB_OUTPUT")
     if github_output:
         with open(github_output, "a") as fh:
-            fh.write(f"heavy={json.dumps(heavy)}\n")
-            fh.write(f"rest={json.dumps(rest)}\n")
+            fh.write(f"heavy={json.dumps(heavy_entries)}\n")
+            fh.write(f"rest={json.dumps(rest_entries)}\n")
             fh.write(f"missing_count={len(missing)}\n")
     step_summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if step_summary:
