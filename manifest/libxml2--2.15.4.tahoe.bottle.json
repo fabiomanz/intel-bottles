@@ -1,0 +1,187 @@
+{
+  "libxml2": {
+    "formula": {
+      "name": "libxml2",
+      "pkg_version": "2.15.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libxml2.rb",
+      "tap_git_path": "Formula/lib/libxml2.rb",
+      "tap_git_revision": "de6f29c91962af85b2c94b4f160e208672de22d0",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "GNOME XML library",
+      "license": "MIT",
+      "homepage": "http://xmlsoft.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-05T16:58:14Z",
+      "tags": {
+        "tahoe": {
+          "filename": "libxml2-2.15.4.tahoe.bottle.tar.gz",
+          "local_filename": "libxml2--2.15.4.tahoe.bottle.tar.gz",
+          "sha256": "9449bde74e5da1aaeb165b54394fe98287c9253624dce0b3371b22b1c7657bbc",
+          "tab": {
+            "homebrew_version": "6.0.22",
+            "changed_files": [
+              "bin/xml2-config",
+              "lib/cmake/libxml2/libxml2-config.cmake",
+              "lib/pkgconfig/libxml-2.0.pc"
+            ],
+            "linkage_files": [
+              "bin/xmlcatalog",
+              "bin/xmllint",
+              "lib/libxml2.16.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788539039,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "readline",
+                "version": "8.3.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-readline-8.3.3",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "name": "readline",
+                "versionInfo": "8.3.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:67a24889119e6429144cd15fb9b0dc8ae37cf272388605a5780bb734f8e6b093",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "67a24889119e6429144cd15fb9b0dc8ae37cf272388605a5780bb734f8e6b093"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libxml2"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libxml2-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/xmllint",
+            "bin/xml2-config",
+            "bin/xmlcatalog"
+          ],
+          "all_files": [
+            ".brew/libxml2.rb",
+            "Copyright",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README.md",
+            "bin/xml2-config",
+            "bin/xmlcatalog",
+            "bin/xmllint",
+            "include/libxml2/libxml/HTMLparser.h",
+            "include/libxml2/libxml/HTMLtree.h",
+            "include/libxml2/libxml/SAX.h",
+            "include/libxml2/libxml/SAX2.h",
+            "include/libxml2/libxml/c14n.h",
+            "include/libxml2/libxml/catalog.h",
+            "include/libxml2/libxml/chvalid.h",
+            "include/libxml2/libxml/debugXML.h",
+            "include/libxml2/libxml/dict.h",
+            "include/libxml2/libxml/encoding.h",
+            "include/libxml2/libxml/entities.h",
+            "include/libxml2/libxml/globals.h",
+            "include/libxml2/libxml/hash.h",
+            "include/libxml2/libxml/list.h",
+            "include/libxml2/libxml/nanoftp.h",
+            "include/libxml2/libxml/nanohttp.h",
+            "include/libxml2/libxml/parser.h",
+            "include/libxml2/libxml/parserInternals.h",
+            "include/libxml2/libxml/pattern.h",
+            "include/libxml2/libxml/relaxng.h",
+            "include/libxml2/libxml/schemasInternals.h",
+            "include/libxml2/libxml/schematron.h",
+            "include/libxml2/libxml/threads.h",
+            "include/libxml2/libxml/tree.h",
+            "include/libxml2/libxml/uri.h",
+            "include/libxml2/libxml/valid.h",
+            "include/libxml2/libxml/xinclude.h",
+            "include/libxml2/libxml/xlink.h",
+            "include/libxml2/libxml/xmlIO.h",
+            "include/libxml2/libxml/xmlautomata.h",
+            "include/libxml2/libxml/xmlerror.h",
+            "include/libxml2/libxml/xmlexports.h",
+            "include/libxml2/libxml/xmlmemory.h",
+            "include/libxml2/libxml/xmlmodule.h",
+            "include/libxml2/libxml/xmlreader.h",
+            "include/libxml2/libxml/xmlregexp.h",
+            "include/libxml2/libxml/xmlsave.h",
+            "include/libxml2/libxml/xmlschemas.h",
+            "include/libxml2/libxml/xmlschemastypes.h",
+            "include/libxml2/libxml/xmlstring.h",
+            "include/libxml2/libxml/xmlunicode.h",
+            "include/libxml2/libxml/xmlversion.h",
+            "include/libxml2/libxml/xmlwriter.h",
+            "include/libxml2/libxml/xpath.h",
+            "include/libxml2/libxml/xpathInternals.h",
+            "include/libxml2/libxml/xpointer.h",
+            "lib/cmake/libxml2/libxml2-config.cmake",
+            "lib/libxml2.16.dylib",
+            "lib/libxml2.dylib",
+            "lib/pkgconfig/libxml-2.0.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 1760821
+        }
+      }
+    }
+  }
+}

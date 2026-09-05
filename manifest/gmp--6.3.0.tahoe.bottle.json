@@ -1,0 +1,105 @@
+{
+  "gmp": {
+    "formula": {
+      "name": "gmp",
+      "pkg_version": "6.3.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gmp.rb",
+      "tap_git_path": "Formula/g/gmp.rb",
+      "tap_git_revision": "de6f29c91962af85b2c94b4f160e208672de22d0",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "GNU multiple precision arithmetic library",
+      "license": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+      "homepage": "https://gmplib.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-05T22:45:42Z",
+      "tags": {
+        "tahoe": {
+          "filename": "gmp-6.3.0.tahoe.bottle.tar.gz",
+          "local_filename": "gmp--6.3.0.tahoe.bottle.tar.gz",
+          "sha256": "b4e672215c05a94e9244d447c8dab3435d4e8a96f6135fdbf8c37ba730c98d65",
+          "tab": {
+            "homebrew_version": "6.0.22",
+            "changed_files": [
+              "lib/pkgconfig/gmp.pc",
+              "lib/pkgconfig/gmpxx.pc"
+            ],
+            "linkage_files": [
+              "lib/libgmp.10.dylib",
+              "lib/libgmpxx.4.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1690638162,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-gmp-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/gmp.rb",
+            "AUTHORS",
+            "COPYING",
+            "COPYING.LESSERv3",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "include/gmp.h",
+            "include/gmpxx.h",
+            "lib/libgmp.10.dylib",
+            "lib/libgmp.a",
+            "lib/libgmp.dylib",
+            "lib/libgmpxx.4.dylib",
+            "lib/libgmpxx.a",
+            "lib/libgmpxx.dylib",
+            "lib/pkgconfig/gmp.pc",
+            "lib/pkgconfig/gmpxx.pc",
+            "sbom.spdx.json",
+            "share/info/gmp.info",
+            "share/info/gmp.info-1",
+            "share/info/gmp.info-2"
+          ],
+          "installed_size": 3390335
+        }
+      }
+    }
+  }
+}

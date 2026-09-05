@@ -1,0 +1,921 @@
+{
+  "qtsensors": {
+    "formula": {
+      "name": "qtsensors",
+      "pkg_version": "6.11.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtsensors.rb",
+      "tap_git_path": "Formula/q/qtsensors.rb",
+      "tap_git_revision": "de6f29c91962af85b2c94b4f160e208672de22d0",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Provides access to sensors via QML and C++ interfaces",
+      "license": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
+      "homepage": "https://www.qt.io/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-05T19:17:55Z",
+      "tags": {
+        "tahoe": {
+          "filename": "qtsensors-6.11.2.tahoe.bottle.tar.gz",
+          "local_filename": "qtsensors--6.11.2.tahoe.bottle.tar.gz",
+          "sha256": "a25d3b37767906739a575f9f322961ff4cf187b4105fe20d1cd0481e2ed6da7c",
+          "tab": {
+            "homebrew_version": "6.0.22",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/QtSensors.framework/Versions/A/QtSensors",
+              "lib/QtSensorsQuick.framework/Versions/A/QtSensorsQuick",
+              "share/qt/plugins/sensors/libqtsensors_generic.dylib",
+              "share/qt/qml/QtSensors/libsensorsquickplugin.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1786498419,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "brotli",
+                "version": "1.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "dbus",
+                "version": "1.16.2",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.16.2_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "double-conversion",
+                "version": "3.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.4.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpng",
+                "version": "1.6.58",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.58",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "freetype",
+                "version": "2.14.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.14.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.88.3",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2.88.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fontconfig",
+                "version": "2.18.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.18.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xorgproto",
+                "version": "2025.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2025.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxau",
+                "version": "1.0.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxdmcp",
+                "version": "1.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxcb",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.17.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libx11",
+                "version": "1.8.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxext",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.7",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxrender",
+                "version": "0.9.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.9.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lzo",
+                "version": "2.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.10",
+                "declared_directly": false
+              },
+              {
+                "full_name": "pixman",
+                "version": "0.46.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "0.46.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "cairo",
+                "version": "1.18.4",
+                "revision": 0,
+                "bottle_rebuild": 2,
+                "pkg_version": "1.18.4",
+                "declared_directly": false
+              },
+              {
+                "full_name": "graphite2",
+                "version": "1.3.15",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.15",
+                "declared_directly": false
+              },
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "harfbuzz",
+                "version": "14.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "14.4.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "jpeg-turbo",
+                "version": "3.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libb2",
+                "version": "0.98.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.98.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "md4c",
+                "version": "0.5.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.5.3",
+                "declared_directly": false
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtbase",
+                "version": "6.11.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.11.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtsvg",
+                "version": "6.11.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.11.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtdeclarative",
+                "version": "6.11.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.11.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.3",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+              "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
+              "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "name": "jpeg-turbo",
+                "versionInfo": "3.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5440035b2803de1d43de3c29d0df3816a2546d56fd1e3759add6138aa450820a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13fdc9f3d0d30296056e2685e0c989978a5ed213f34a0de174e19feb72833e73"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.10.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "name": "xz",
+                "versionInfo": "5.8.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/xz/blobs/sha256:df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+                "name": "qtbase",
+                "versionInfo": "6.11.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND GFDL-1.3-no-invariants-only",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.11.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5eb65dad3cdb928010071405fc3d5139e760b32a0a57a79c5d309be6f36f0096"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtbase@6.11.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
+                "name": "qtsvg",
+                "versionInfo": "6.11.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtsvg-6.11.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "db3fad7f3fa66cbbea91b162609e7a97f21d4f3fa33d64b70ac55c0c24022fe9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtsvg@6.11.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+                "name": "qtdeclarative",
+                "versionInfo": "6.11.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-2-Clause AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtdeclarative-6.11.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "abd66f4f1b7624792385c9579280b902d257d5f85a6b77698ca60301dcb33b99"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtdeclarative@6.11.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsensors"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsensors"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsensors"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsensors"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsensors"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsensors"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsensors"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsensors"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsensors"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsensors"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsensors"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-qtsensors-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/qtsensors.rb",
+            "INSTALL_RECEIPT.json",
+            "lib/QtSensors.framework/QtSensors",
+            "lib/QtSensors.framework/Versions/A/Headers/6.11.2/QtSensors/private/qaccelerometer_p.h",
+            "lib/QtSensors.framework/Versions/A/Headers/6.11.2/QtSensors/private/qambientlightsensor_p.h",
+            "lib/QtSensors.framework/Versions/A/Headers/6.11.2/QtSensors/private/qambienttemperaturesensor_p.h",
+            "lib/QtSensors.framework/Versions/A/Headers/6.11.2/QtSensors/private/qcompass_p.h",
+            "lib/QtSensors.framework/Versions/A/Headers/6.11.2/QtSensors/private/qgyroscope_p.h",
+            "lib/QtSensors.framework/Versions/A/Headers/6.11.2/QtSensors/private/qhumiditysensor_p.h",
+            "lib/QtSensors.framework/Versions/A/Headers/6.11.2/QtSensors/private/qirproximitysensor_p.h",
+            "lib/QtSensors.framework/Versions/A/Headers/6.11.2/QtSensors/private/qlidsensor_p.h",
+            "lib/QtSensors.framework/Versions/A/Headers/6.11.2/QtSensors/private/qlightsensor_p.h",
+            "lib/QtSensors.framework/Versions/A/Headers/6.11.2/QtSensors/private/qmagnetometer_p.h",
+            "lib/QtSensors.framework/Versions/A/Headers/6.11.2/QtSensors/private/qorientationsensor_p.h",
+            "lib/QtSensors.framework/Versions/A/Headers/6.11.2/QtSensors/private/qpressuresensor_p.h",
+            "lib/QtSensors.framework/Versions/A/Headers/6.11.2/QtSensors/private/qproximitysensor_p.h",
+            "lib/QtSensors.framework/Versions/A/Headers/6.11.2/QtSensors/private/qrotationsensor_p.h",
+            "lib/QtSensors.framework/Versions/A/Headers/6.11.2/QtSensors/private/qsensor_p.h",
+            "lib/QtSensors.framework/Versions/A/Headers/6.11.2/QtSensors/private/qtapsensor_p.h",
+            "lib/QtSensors.framework/Versions/A/Headers/6.11.2/QtSensors/private/qtiltsensor_p.h",
+            "lib/QtSensors.framework/Versions/A/Headers/6.11.2/QtSensors/private/qtsensors-config_p.h",
+            "lib/QtSensors.framework/Versions/A/Headers/6.11.2/QtSensors/private/sensorlog_p.h",
+            "lib/QtSensors.framework/Versions/A/Headers/QAccelerometer",
+            "lib/QtSensors.framework/Versions/A/Headers/QAccelerometerFilter",
+            "lib/QtSensors.framework/Versions/A/Headers/QAccelerometerReading",
+            "lib/QtSensors.framework/Versions/A/Headers/QAmbientLightFilter",
+            "lib/QtSensors.framework/Versions/A/Headers/QAmbientLightReading",
+            "lib/QtSensors.framework/Versions/A/Headers/QAmbientLightSensor",
+            "lib/QtSensors.framework/Versions/A/Headers/QAmbientTemperatureFilter",
+            "lib/QtSensors.framework/Versions/A/Headers/QAmbientTemperatureReading",
+            "lib/QtSensors.framework/Versions/A/Headers/QAmbientTemperatureSensor",
+            "lib/QtSensors.framework/Versions/A/Headers/QCompass",
+            "lib/QtSensors.framework/Versions/A/Headers/QCompassFilter",
+            "lib/QtSensors.framework/Versions/A/Headers/QCompassReading",
+            "lib/QtSensors.framework/Versions/A/Headers/QGyroscope",
+            "lib/QtSensors.framework/Versions/A/Headers/QGyroscopeFilter",
+            "lib/QtSensors.framework/Versions/A/Headers/QGyroscopeReading",
+            "lib/QtSensors.framework/Versions/A/Headers/QHumidityFilter",
+            "lib/QtSensors.framework/Versions/A/Headers/QHumidityReading",
+            "lib/QtSensors.framework/Versions/A/Headers/QHumiditySensor",
+            "lib/QtSensors.framework/Versions/A/Headers/QIRProximityFilter",
+            "lib/QtSensors.framework/Versions/A/Headers/QIRProximityReading",
+            "lib/QtSensors.framework/Versions/A/Headers/QIRProximitySensor",
+            "lib/QtSensors.framework/Versions/A/Headers/QLidFilter",
+            "lib/QtSensors.framework/Versions/A/Headers/QLidReading",
+            "lib/QtSensors.framework/Versions/A/Headers/QLidSensor",
+            "lib/QtSensors.framework/Versions/A/Headers/QLightFilter",
+            "lib/QtSensors.framework/Versions/A/Headers/QLightReading",
+            "lib/QtSensors.framework/Versions/A/Headers/QLightSensor",
+            "lib/QtSensors.framework/Versions/A/Headers/QMagnetometer",
+            "lib/QtSensors.framework/Versions/A/Headers/QMagnetometerFilter",
+            "lib/QtSensors.framework/Versions/A/Headers/QMagnetometerReading",
+            "lib/QtSensors.framework/Versions/A/Headers/QOrientationFilter",
+            "lib/QtSensors.framework/Versions/A/Headers/QOrientationReading",
+            "lib/QtSensors.framework/Versions/A/Headers/QOrientationSensor",
+            "lib/QtSensors.framework/Versions/A/Headers/QPressureFilter",
+            "lib/QtSensors.framework/Versions/A/Headers/QPressureReading",
+            "lib/QtSensors.framework/Versions/A/Headers/QPressureSensor",
+            "lib/QtSensors.framework/Versions/A/Headers/QProximityFilter",
+            "lib/QtSensors.framework/Versions/A/Headers/QProximityReading",
+            "lib/QtSensors.framework/Versions/A/Headers/QProximitySensor",
+            "lib/QtSensors.framework/Versions/A/Headers/QRotationFilter",
+            "lib/QtSensors.framework/Versions/A/Headers/QRotationReading",
+            "lib/QtSensors.framework/Versions/A/Headers/QRotationSensor",
+            "lib/QtSensors.framework/Versions/A/Headers/QSensor",
+            "lib/QtSensors.framework/Versions/A/Headers/QSensorBackend",
+            "lib/QtSensors.framework/Versions/A/Headers/QSensorBackendFactory",
+            "lib/QtSensors.framework/Versions/A/Headers/QSensorChangesInterface",
+            "lib/QtSensors.framework/Versions/A/Headers/QSensorFilter",
+            "lib/QtSensors.framework/Versions/A/Headers/QSensorManager",
+            "lib/QtSensors.framework/Versions/A/Headers/QSensorPluginInterface",
+            "lib/QtSensors.framework/Versions/A/Headers/QSensorReading",
+            "lib/QtSensors.framework/Versions/A/Headers/QTapFilter",
+            "lib/QtSensors.framework/Versions/A/Headers/QTapReading",
+            "lib/QtSensors.framework/Versions/A/Headers/QTapSensor",
+            "lib/QtSensors.framework/Versions/A/Headers/QTiltFilter",
+            "lib/QtSensors.framework/Versions/A/Headers/QTiltReading",
+            "lib/QtSensors.framework/Versions/A/Headers/QTiltSensor",
+            "lib/QtSensors.framework/Versions/A/Headers/QtSensors",
+            "lib/QtSensors.framework/Versions/A/Headers/QtSensorsDepends",
+            "lib/QtSensors.framework/Versions/A/Headers/QtSensorsVersion",
+            "lib/QtSensors.framework/Versions/A/Headers/qaccelerometer.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qambientlightsensor.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qambienttemperaturesensor.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qcompass.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qgyroscope.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qhumiditysensor.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qirproximitysensor.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qlidsensor.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qlightsensor.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qmagnetometer.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qorientationsensor.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qpressuresensor.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qproximitysensor.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qrotationsensor.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qsensor.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qsensorbackend.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qsensormanager.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qsensorplugin.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qsensorsglobal.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qtapsensor.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qtiltsensor.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qtsensors-config.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qtsensorsexports.h",
+            "lib/QtSensors.framework/Versions/A/Headers/qtsensorsversion.h",
+            "lib/QtSensors.framework/Versions/A/QtSensors",
+            "lib/QtSensors.framework/Versions/A/Resources/Info.plist",
+            "lib/QtSensors.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtSensors.framework/Versions/A/Resources/QtSensors.prl",
+            "lib/QtSensorsQuick.framework/QtSensorsQuick",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qmlaccelerometer_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qmlambientlightsensor_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qmlambienttemperaturesensor_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qmlcompass_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qmlgyroscope_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qmlhumiditysensor_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qmlirproximitysensor_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qmllidsensor_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qmllightsensor_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qmlmagnetometer_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qmlorientationsensor_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qmlpressuresensor_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qmlproximitysensor_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qmlrotationsensor_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qmlsensor_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qmlsensorglobal_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qmlsensorrange_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qmltapsensor_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qmltiltsensor_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/6.11.2/QtSensorsQuick/private/qsensorsquickglobal_p.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/QtSensorsQuick",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/QtSensorsQuickDepends",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/QtSensorsQuickVersion",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/qtsensorsquickexports.h",
+            "lib/QtSensorsQuick.framework/Versions/A/Headers/qtsensorsquickversion.h",
+            "lib/QtSensorsQuick.framework/Versions/A/QtSensorsQuick",
+            "lib/QtSensorsQuick.framework/Versions/A/Resources/Info.plist",
+            "lib/QtSensorsQuick.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtSensorsQuick.framework/Versions/A/Resources/QtSensorsQuick.prl",
+            "lib/cmake/Qt6/FindSensorfw.cmake",
+            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtSensorsTestsConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6SensorsQuickpluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6SensorsQuickpluginConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6SensorsQuickpluginConfigVersion.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6SensorsQuickpluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6SensorsQuickpluginTargets-release.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6SensorsQuickpluginTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6SensorsQuickpluginTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Sensors/Qt6SensorsAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Sensors/Qt6SensorsConfig.cmake",
+            "lib/cmake/Qt6Sensors/Qt6SensorsConfigVersion.cmake",
+            "lib/cmake/Qt6Sensors/Qt6SensorsConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Sensors/Qt6SensorsDependencies.cmake",
+            "lib/cmake/Qt6Sensors/Qt6SensorsPlugins.cmake",
+            "lib/cmake/Qt6Sensors/Qt6SensorsTargets-release.cmake",
+            "lib/cmake/Qt6Sensors/Qt6SensorsTargets.cmake",
+            "lib/cmake/Qt6Sensors/Qt6SensorsTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Sensors/Qt6SensorsVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6Sensors/Qt6SensorsVersionlessTargets.cmake",
+            "lib/cmake/Qt6Sensors/Qt6genericSensorPluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Sensors/Qt6genericSensorPluginConfig.cmake",
+            "lib/cmake/Qt6Sensors/Qt6genericSensorPluginConfigVersion.cmake",
+            "lib/cmake/Qt6Sensors/Qt6genericSensorPluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Sensors/Qt6genericSensorPluginTargets-release.cmake",
+            "lib/cmake/Qt6Sensors/Qt6genericSensorPluginTargets.cmake",
+            "lib/cmake/Qt6Sensors/Qt6genericSensorPluginTargetsPrecheck.cmake",
+            "lib/cmake/Qt6SensorsPrivate/Qt6SensorsPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6SensorsPrivate/Qt6SensorsPrivateConfig.cmake",
+            "lib/cmake/Qt6SensorsPrivate/Qt6SensorsPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6SensorsPrivate/Qt6SensorsPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6SensorsPrivate/Qt6SensorsPrivateDependencies.cmake",
+            "lib/cmake/Qt6SensorsPrivate/Qt6SensorsPrivateTargets.cmake",
+            "lib/cmake/Qt6SensorsPrivate/Qt6SensorsPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6SensorsPrivate/Qt6SensorsPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6SensorsPrivate/Qt6SensorsPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6SensorsQuick/Qt6SensorsQuickAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6SensorsQuick/Qt6SensorsQuickConfig.cmake",
+            "lib/cmake/Qt6SensorsQuick/Qt6SensorsQuickConfigVersion.cmake",
+            "lib/cmake/Qt6SensorsQuick/Qt6SensorsQuickConfigVersionImpl.cmake",
+            "lib/cmake/Qt6SensorsQuick/Qt6SensorsQuickDependencies.cmake",
+            "lib/cmake/Qt6SensorsQuick/Qt6SensorsQuickTargets-release.cmake",
+            "lib/cmake/Qt6SensorsQuick/Qt6SensorsQuickTargets.cmake",
+            "lib/cmake/Qt6SensorsQuick/Qt6SensorsQuickTargetsPrecheck.cmake",
+            "lib/cmake/Qt6SensorsQuick/Qt6SensorsQuickVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6SensorsQuick/Qt6SensorsQuickVersionlessTargets.cmake",
+            "lib/cmake/Qt6SensorsQuickPrivate/Qt6SensorsQuickPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6SensorsQuickPrivate/Qt6SensorsQuickPrivateConfig.cmake",
+            "lib/cmake/Qt6SensorsQuickPrivate/Qt6SensorsQuickPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6SensorsQuickPrivate/Qt6SensorsQuickPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6SensorsQuickPrivate/Qt6SensorsQuickPrivateDependencies.cmake",
+            "lib/cmake/Qt6SensorsQuickPrivate/Qt6SensorsQuickPrivateTargets.cmake",
+            "lib/cmake/Qt6SensorsQuickPrivate/Qt6SensorsQuickPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6SensorsQuickPrivate/Qt6SensorsQuickPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6SensorsQuickPrivate/Qt6SensorsQuickPrivateVersionlessTargets.cmake",
+            "lib/pkgconfig/Qt6Sensors.pc",
+            "lib/pkgconfig/Qt6SensorsQuick.pc",
+            "sbom.spdx.json",
+            "share/qt/metatypes/qt6sensors_metatypes.json",
+            "share/qt/metatypes/qt6sensorsquick_metatypes.json",
+            "share/qt/mkspecs/modules/qt_lib_sensors.pri",
+            "share/qt/mkspecs/modules/qt_lib_sensors_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_sensorsquick.pri",
+            "share/qt/mkspecs/modules/qt_lib_sensorsquick_private.pri",
+            "share/qt/modules/Sensors.json",
+            "share/qt/modules/SensorsQuick.json",
+            "share/qt/plugins/sensors/libqtsensors_generic.dylib",
+            "share/qt/qml/QtSensors/libsensorsquickplugin.dylib",
+            "share/qt/qml/QtSensors/plugins.qmltypes",
+            "share/qt/qml/QtSensors/qmldir",
+            "share/qt/sbom/qtsensors-6.11.2.spdx"
+          ],
+          "installed_size": 1361267
+        }
+      }
+    }
+  }
+}

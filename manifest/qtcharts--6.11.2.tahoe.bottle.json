@@ -1,0 +1,1121 @@
+{
+  "qtcharts": {
+    "formula": {
+      "name": "qtcharts",
+      "pkg_version": "6.11.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtcharts.rb",
+      "tap_git_path": "Formula/q/qtcharts.rb",
+      "tap_git_revision": "de6f29c91962af85b2c94b4f160e208672de22d0",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "UI Components for displaying visually pleasing charts",
+      "license": "GPL-3.0-only AND BSD-3-Clause",
+      "homepage": "https://www.qt.io/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-05T18:18:10Z",
+      "tags": {
+        "tahoe": {
+          "filename": "qtcharts-6.11.2.tahoe.bottle.tar.gz",
+          "local_filename": "qtcharts--6.11.2.tahoe.bottle.tar.gz",
+          "sha256": "b9297189d29f5cb2e6f8bc1915c23b692338f9a0292f01267054dc1a2790f42b",
+          "tab": {
+            "homebrew_version": "6.0.22",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/QtCharts.framework/Versions/A/QtCharts",
+              "lib/QtChartsQml.framework/Versions/A/QtChartsQml",
+              "share/qt/qml/QtCharts/libqtchartsqml2plugin.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1786552502,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "brotli",
+                "version": "1.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "dbus",
+                "version": "1.16.2",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.16.2_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "double-conversion",
+                "version": "3.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.4.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpng",
+                "version": "1.6.58",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.58",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "freetype",
+                "version": "2.14.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.14.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.88.3",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2.88.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fontconfig",
+                "version": "2.18.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.18.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xorgproto",
+                "version": "2025.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2025.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxau",
+                "version": "1.0.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxdmcp",
+                "version": "1.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxcb",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.17.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libx11",
+                "version": "1.8.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxext",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.7",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxrender",
+                "version": "0.9.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.9.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lzo",
+                "version": "2.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.10",
+                "declared_directly": false
+              },
+              {
+                "full_name": "pixman",
+                "version": "0.46.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "0.46.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "cairo",
+                "version": "1.18.4",
+                "revision": 0,
+                "bottle_rebuild": 2,
+                "pkg_version": "1.18.4",
+                "declared_directly": false
+              },
+              {
+                "full_name": "graphite2",
+                "version": "1.3.15",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.15",
+                "declared_directly": false
+              },
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "harfbuzz",
+                "version": "14.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "14.4.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "jpeg-turbo",
+                "version": "3.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libb2",
+                "version": "0.98.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.98.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "md4c",
+                "version": "0.5.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.5.3",
+                "declared_directly": false
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtbase",
+                "version": "6.11.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.11.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtsvg",
+                "version": "6.11.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.11.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtdeclarative",
+                "version": "6.11.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.11.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.3",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+              "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
+              "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "name": "jpeg-turbo",
+                "versionInfo": "3.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5440035b2803de1d43de3c29d0df3816a2546d56fd1e3759add6138aa450820a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13fdc9f3d0d30296056e2685e0c989978a5ed213f34a0de174e19feb72833e73"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.10.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "name": "xz",
+                "versionInfo": "5.8.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/xz/blobs/sha256:df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+                "name": "qtbase",
+                "versionInfo": "6.11.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND GFDL-1.3-no-invariants-only",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.11.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5eb65dad3cdb928010071405fc3d5139e760b32a0a57a79c5d309be6f36f0096"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtbase@6.11.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
+                "name": "qtsvg",
+                "versionInfo": "6.11.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtsvg-6.11.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "db3fad7f3fa66cbbea91b162609e7a97f21d4f3fa33d64b70ac55c0c24022fe9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtsvg@6.11.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+                "name": "qtdeclarative",
+                "versionInfo": "6.11.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-2-Clause AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtdeclarative-6.11.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "abd66f4f1b7624792385c9579280b902d257d5f85a6b77698ca60301dcb33b99"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtdeclarative@6.11.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcharts"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcharts"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcharts"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcharts"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcharts"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcharts"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcharts"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcharts"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcharts"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcharts"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcharts"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-qtcharts-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/qtcharts.rb",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "lib/QtCharts.framework/QtCharts",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/abstractbarchartitem_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/abstractchartlayout_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/abstractdomain_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/areachartitem_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/axisanimation_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/bar_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/baranimation_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/barchartitem_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/boxplotanimation_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/boxplotchartitem_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/boxwhiskers_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/boxwhiskersanimation_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/boxwhiskersdata_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/candlestick_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/candlestickanimation_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/candlestickbodywicksanimation_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/candlestickchartitem_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/candlestickdata_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/cartesianchartaxis_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/cartesianchartlayout_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartanimation_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartaxiselement_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartbackground_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartbarcategoryaxisx_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartbarcategoryaxisy_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartcategoryaxisx_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartcategoryaxisy_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartcoloraxisx_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartcoloraxisy_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartconfig_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartdataset_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartdatetimeaxisx_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartdatetimeaxisy_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartelement_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/charthelpers_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartitem_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartlogvalueaxisx_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartlogvalueaxisy_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartpresenter_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/charttheme_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartthemebluecerulean_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartthemeblueicy_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartthemebluencs_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartthemebrownsand_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartthemedark_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartthemehighcontrast_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartthemelight_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartthememanager_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartthemeqt_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartthemesystem_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/charttitle_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartvalueaxisx_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/chartvalueaxisy_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/datetimeaxislabel_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/editableaxislabel_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/glwidget_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/glxyseriesdata_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/horizontalaxis_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/horizontalbarchartitem_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/horizontalpercentbarchartitem_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/horizontalstackedbarchartitem_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/legendlayout_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/legendmarkeritem_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/legendmoveresizehandler_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/legendscroller_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/linearrowitem_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/linechartitem_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/logxlogydomain_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/logxlogypolardomain_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/logxydomain_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/logxypolardomain_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/percentbarchartitem_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/pieanimation_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/piechartitem_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/piesliceanimation_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/pieslicedata_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/piesliceitem_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/polarchartaxis_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/polarchartaxisangular_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/polarchartaxisradial_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/polarchartcategoryaxisangular_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/polarchartcategoryaxisradial_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/polarchartdatetimeaxisangular_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/polarchartdatetimeaxisradial_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/polarchartlayout_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/polarchartlogvalueaxisangular_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/polarchartlogvalueaxisradial_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/polarchartvalueaxisangular_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/polarchartvalueaxisradial_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/polardomain_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qabstractaxis_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qabstractbarseries_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qabstractseries_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qarealegendmarker_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qareaseries_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qbarcategoryaxis_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qbarlegendmarker_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qbarmodelmapper_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qbarseries_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qbarset_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qboxplotlegendmarker_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qboxplotmodelmapper_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qboxplotseries_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qboxset_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qcandlesticklegendmarker_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qcandlestickmodelmapper_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qcandlestickseries_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qcandlestickset_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qcategoryaxis_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qchart_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qchartglobal_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qchartview_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qcoloraxis_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qdatetimeaxis_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qhorizontalbarseries_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qhorizontalpercentbarseries_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qhorizontalstackedbarseries_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qlegend_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qlegendmarker_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qlineseries_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qlogvalueaxis_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qpercentbarseries_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qpielegendmarker_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qpiemodelmapper_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qpieseries_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qpieslice_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qscatterseries_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qsplineseries_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qstackedbarseries_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qtcharts-config_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qvalueaxis_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qxylegendmarker_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qxymodelmapper_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/qxyseries_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/scatteranimation_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/scatterchartitem_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/scroller_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/splineanimation_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/splinechartitem_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/stackedbarchartitem_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/valueaxislabel_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/verticalaxis_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/xlogydomain_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/xlogypolardomain_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/xyanimation_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/xychart_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/xydomain_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/6.11.2/QtCharts/private/xypolardomain_p.h",
+            "lib/QtCharts.framework/Versions/A/Headers/QAbstractAxis",
+            "lib/QtCharts.framework/Versions/A/Headers/QAbstractBarSeries",
+            "lib/QtCharts.framework/Versions/A/Headers/QAbstractSeries",
+            "lib/QtCharts.framework/Versions/A/Headers/QAreaLegendMarker",
+            "lib/QtCharts.framework/Versions/A/Headers/QAreaSeries",
+            "lib/QtCharts.framework/Versions/A/Headers/QBarCategoryAxis",
+            "lib/QtCharts.framework/Versions/A/Headers/QBarLegendMarker",
+            "lib/QtCharts.framework/Versions/A/Headers/QBarModelMapper",
+            "lib/QtCharts.framework/Versions/A/Headers/QBarSeries",
+            "lib/QtCharts.framework/Versions/A/Headers/QBarSet",
+            "lib/QtCharts.framework/Versions/A/Headers/QBoxPlotLegendMarker",
+            "lib/QtCharts.framework/Versions/A/Headers/QBoxPlotModelMapper",
+            "lib/QtCharts.framework/Versions/A/Headers/QBoxPlotSeries",
+            "lib/QtCharts.framework/Versions/A/Headers/QBoxSet",
+            "lib/QtCharts.framework/Versions/A/Headers/QCandlestickLegendMarker",
+            "lib/QtCharts.framework/Versions/A/Headers/QCandlestickModelMapper",
+            "lib/QtCharts.framework/Versions/A/Headers/QCandlestickSeries",
+            "lib/QtCharts.framework/Versions/A/Headers/QCandlestickSet",
+            "lib/QtCharts.framework/Versions/A/Headers/QCategoryAxis",
+            "lib/QtCharts.framework/Versions/A/Headers/QChart",
+            "lib/QtCharts.framework/Versions/A/Headers/QChartGlobal",
+            "lib/QtCharts.framework/Versions/A/Headers/QChartView",
+            "lib/QtCharts.framework/Versions/A/Headers/QColorAxis",
+            "lib/QtCharts.framework/Versions/A/Headers/QDateTimeAxis",
+            "lib/QtCharts.framework/Versions/A/Headers/QHBarModelMapper",
+            "lib/QtCharts.framework/Versions/A/Headers/QHBoxPlotModelMapper",
+            "lib/QtCharts.framework/Versions/A/Headers/QHCandlestickModelMapper",
+            "lib/QtCharts.framework/Versions/A/Headers/QHPieModelMapper",
+            "lib/QtCharts.framework/Versions/A/Headers/QHXYModelMapper",
+            "lib/QtCharts.framework/Versions/A/Headers/QHorizontalBarSeries",
+            "lib/QtCharts.framework/Versions/A/Headers/QHorizontalPercentBarSeries",
+            "lib/QtCharts.framework/Versions/A/Headers/QHorizontalStackedBarSeries",
+            "lib/QtCharts.framework/Versions/A/Headers/QLegend",
+            "lib/QtCharts.framework/Versions/A/Headers/QLegendMarker",
+            "lib/QtCharts.framework/Versions/A/Headers/QLineSeries",
+            "lib/QtCharts.framework/Versions/A/Headers/QLogValueAxis",
+            "lib/QtCharts.framework/Versions/A/Headers/QPercentBarSeries",
+            "lib/QtCharts.framework/Versions/A/Headers/QPieLegendMarker",
+            "lib/QtCharts.framework/Versions/A/Headers/QPieModelMapper",
+            "lib/QtCharts.framework/Versions/A/Headers/QPieSeries",
+            "lib/QtCharts.framework/Versions/A/Headers/QPieSlice",
+            "lib/QtCharts.framework/Versions/A/Headers/QPolarChart",
+            "lib/QtCharts.framework/Versions/A/Headers/QScatterSeries",
+            "lib/QtCharts.framework/Versions/A/Headers/QSplineSeries",
+            "lib/QtCharts.framework/Versions/A/Headers/QStackedBarSeries",
+            "lib/QtCharts.framework/Versions/A/Headers/QVBarModelMapper",
+            "lib/QtCharts.framework/Versions/A/Headers/QVBoxPlotModelMapper",
+            "lib/QtCharts.framework/Versions/A/Headers/QVCandlestickModelMapper",
+            "lib/QtCharts.framework/Versions/A/Headers/QVPieModelMapper",
+            "lib/QtCharts.framework/Versions/A/Headers/QVXYModelMapper",
+            "lib/QtCharts.framework/Versions/A/Headers/QValueAxis",
+            "lib/QtCharts.framework/Versions/A/Headers/QXYLegendMarker",
+            "lib/QtCharts.framework/Versions/A/Headers/QXYModelMapper",
+            "lib/QtCharts.framework/Versions/A/Headers/QXYSeries",
+            "lib/QtCharts.framework/Versions/A/Headers/QtCharts",
+            "lib/QtCharts.framework/Versions/A/Headers/QtChartsDepends",
+            "lib/QtCharts.framework/Versions/A/Headers/QtChartsVersion",
+            "lib/QtCharts.framework/Versions/A/Headers/qabstractaxis.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qabstractbarseries.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qabstractseries.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qarealegendmarker.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qareaseries.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qbarcategoryaxis.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qbarlegendmarker.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qbarmodelmapper.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qbarseries.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qbarset.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qboxplotlegendmarker.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qboxplotmodelmapper.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qboxplotseries.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qboxset.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qcandlesticklegendmarker.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qcandlestickmodelmapper.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qcandlestickseries.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qcandlestickset.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qcategoryaxis.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qchart.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qchartglobal.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qchartview.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qcoloraxis.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qdatetimeaxis.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qhbarmodelmapper.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qhboxplotmodelmapper.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qhcandlestickmodelmapper.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qhorizontalbarseries.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qhorizontalpercentbarseries.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qhorizontalstackedbarseries.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qhpiemodelmapper.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qhxymodelmapper.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qlegend.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qlegendmarker.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qlineseries.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qlogvalueaxis.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qpercentbarseries.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qpielegendmarker.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qpiemodelmapper.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qpieseries.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qpieslice.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qpolarchart.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qscatterseries.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qsplineseries.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qstackedbarseries.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qtcharts-config.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qtchartsexports.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qtchartsversion.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qvalueaxis.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qvbarmodelmapper.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qvboxplotmodelmapper.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qvcandlestickmodelmapper.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qvpiemodelmapper.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qvxymodelmapper.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qxylegendmarker.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qxymodelmapper.h",
+            "lib/QtCharts.framework/Versions/A/Headers/qxyseries.h",
+            "lib/QtCharts.framework/Versions/A/QtCharts",
+            "lib/QtCharts.framework/Versions/A/Resources/Info.plist",
+            "lib/QtCharts.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtCharts.framework/Versions/A/Resources/QtCharts.prl",
+            "lib/QtChartsQml.framework/QtChartsQml",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativeabstractrendernode_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativeareaseries_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativeaxes_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativebarseries_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativeboxplotseries_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativecandlestickseries_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativecategoryaxis_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativechart_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativechartglobal_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativechartnode_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativeforeigntypes_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativelineseries_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativemargins_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativeopenglrendernode_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativepieseries_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativepolarchart_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativescatterseries_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativesplineseries_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativexypoint_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/6.11.2/QtChartsQml/private/declarativexyseries_p.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/QtChartsQml",
+            "lib/QtChartsQml.framework/Versions/A/Headers/QtChartsQmlDepends",
+            "lib/QtChartsQml.framework/Versions/A/Headers/QtChartsQmlVersion",
+            "lib/QtChartsQml.framework/Versions/A/Headers/qtchartsqmlexports.h",
+            "lib/QtChartsQml.framework/Versions/A/Headers/qtchartsqmlversion.h",
+            "lib/QtChartsQml.framework/Versions/A/QtChartsQml",
+            "lib/QtChartsQml.framework/Versions/A/Resources/Info.plist",
+            "lib/QtChartsQml.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtChartsQml.framework/Versions/A/Resources/QtChartsQml.prl",
+            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtChartsTestsConfig.cmake",
+            "lib/cmake/Qt6Charts/Qt6ChartsAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Charts/Qt6ChartsConfig.cmake",
+            "lib/cmake/Qt6Charts/Qt6ChartsConfigVersion.cmake",
+            "lib/cmake/Qt6Charts/Qt6ChartsConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Charts/Qt6ChartsDependencies.cmake",
+            "lib/cmake/Qt6Charts/Qt6ChartsTargets-release.cmake",
+            "lib/cmake/Qt6Charts/Qt6ChartsTargets.cmake",
+            "lib/cmake/Qt6Charts/Qt6ChartsTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Charts/Qt6ChartsVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6Charts/Qt6ChartsVersionlessTargets.cmake",
+            "lib/cmake/Qt6ChartsPrivate/Qt6ChartsPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6ChartsPrivate/Qt6ChartsPrivateConfig.cmake",
+            "lib/cmake/Qt6ChartsPrivate/Qt6ChartsPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6ChartsPrivate/Qt6ChartsPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6ChartsPrivate/Qt6ChartsPrivateDependencies.cmake",
+            "lib/cmake/Qt6ChartsPrivate/Qt6ChartsPrivateTargets.cmake",
+            "lib/cmake/Qt6ChartsPrivate/Qt6ChartsPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6ChartsPrivate/Qt6ChartsPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6ChartsPrivate/Qt6ChartsPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6ChartsQml/Qt6ChartsQmlAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6ChartsQml/Qt6ChartsQmlConfig.cmake",
+            "lib/cmake/Qt6ChartsQml/Qt6ChartsQmlConfigVersion.cmake",
+            "lib/cmake/Qt6ChartsQml/Qt6ChartsQmlConfigVersionImpl.cmake",
+            "lib/cmake/Qt6ChartsQml/Qt6ChartsQmlDependencies.cmake",
+            "lib/cmake/Qt6ChartsQml/Qt6ChartsQmlTargets-release.cmake",
+            "lib/cmake/Qt6ChartsQml/Qt6ChartsQmlTargets.cmake",
+            "lib/cmake/Qt6ChartsQml/Qt6ChartsQmlTargetsPrecheck.cmake",
+            "lib/cmake/Qt6ChartsQml/Qt6ChartsQmlVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6ChartsQml/Qt6ChartsQmlVersionlessTargets.cmake",
+            "lib/cmake/Qt6ChartsQmlPrivate/Qt6ChartsQmlPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6ChartsQmlPrivate/Qt6ChartsQmlPrivateConfig.cmake",
+            "lib/cmake/Qt6ChartsQmlPrivate/Qt6ChartsQmlPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6ChartsQmlPrivate/Qt6ChartsQmlPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6ChartsQmlPrivate/Qt6ChartsQmlPrivateDependencies.cmake",
+            "lib/cmake/Qt6ChartsQmlPrivate/Qt6ChartsQmlPrivateTargets.cmake",
+            "lib/cmake/Qt6ChartsQmlPrivate/Qt6ChartsQmlPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6ChartsQmlPrivate/Qt6ChartsQmlPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6ChartsQmlPrivate/Qt6ChartsQmlPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtchartsqml2AdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtchartsqml2Config.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtchartsqml2ConfigVersion.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtchartsqml2ConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtchartsqml2Targets-release.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtchartsqml2Targets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtchartsqml2TargetsPrecheck.cmake",
+            "lib/pkgconfig/Qt6Charts.pc",
+            "lib/pkgconfig/Qt6ChartsQml.pc",
+            "sbom.spdx.json",
+            "share/qt/metatypes/qt6charts_metatypes.json",
+            "share/qt/metatypes/qt6chartsqml_metatypes.json",
+            "share/qt/mkspecs/modules/qt_lib_charts.pri",
+            "share/qt/mkspecs/modules/qt_lib_charts_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_chartsqml.pri",
+            "share/qt/mkspecs/modules/qt_lib_chartsqml_private.pri",
+            "share/qt/modules/Charts.json",
+            "share/qt/modules/ChartsQml.json",
+            "share/qt/qml/QtCharts/designer/ChartViewSpecifics.qml",
+            "share/qt/qml/QtCharts/designer/default/AreaSeries.qml",
+            "share/qt/qml/QtCharts/designer/default/BarSeries.qml",
+            "share/qt/qml/QtCharts/designer/default/BoxPlotSeries.qml",
+            "share/qt/qml/QtCharts/designer/default/HorizontalBarSeries.qml",
+            "share/qt/qml/QtCharts/designer/default/HorizontalPercentBarSeries.qml",
+            "share/qt/qml/QtCharts/designer/default/HorizontalStackedBarSeries.qml",
+            "share/qt/qml/QtCharts/designer/default/LineSeries.qml",
+            "share/qt/qml/QtCharts/designer/default/PercentBarSeries.qml",
+            "share/qt/qml/QtCharts/designer/default/PieSeries.qml",
+            "share/qt/qml/QtCharts/designer/default/PolarAreaSeries.qml",
+            "share/qt/qml/QtCharts/designer/default/PolarLineSeries.qml",
+            "share/qt/qml/QtCharts/designer/default/PolarScatterSeries.qml",
+            "share/qt/qml/QtCharts/designer/default/PolarSplineSeries.qml",
+            "share/qt/qml/QtCharts/designer/default/ScatterSeries.qml",
+            "share/qt/qml/QtCharts/designer/default/SplineSeries.qml",
+            "share/qt/qml/QtCharts/designer/default/StackedBarSeries.qml",
+            "share/qt/qml/QtCharts/designer/images/areaseries-chart-icon.png",
+            "share/qt/qml/QtCharts/designer/images/areaseries-chart-icon16.png",
+            "share/qt/qml/QtCharts/designer/images/areaseries-polar-icon.png",
+            "share/qt/qml/QtCharts/designer/images/areaseries-polar-icon16.png",
+            "share/qt/qml/QtCharts/designer/images/barseries-icon.png",
+            "share/qt/qml/QtCharts/designer/images/barseries-icon16.png",
+            "share/qt/qml/QtCharts/designer/images/boxplotseries-chart-icon.png",
+            "share/qt/qml/QtCharts/designer/images/boxplotseries-chart-icon16.png",
+            "share/qt/qml/QtCharts/designer/images/horizontalbarseries-icon.png",
+            "share/qt/qml/QtCharts/designer/images/horizontalbarseries-icon16.png",
+            "share/qt/qml/QtCharts/designer/images/horizontalpercentbarseries-icon.png",
+            "share/qt/qml/QtCharts/designer/images/horizontalpercentbarseries-icon16.png",
+            "share/qt/qml/QtCharts/designer/images/horizontalstackedbarseries-icon.png",
+            "share/qt/qml/QtCharts/designer/images/horizontalstackedbarseries-icon16.png",
+            "share/qt/qml/QtCharts/designer/images/lineseries-chart-icon.png",
+            "share/qt/qml/QtCharts/designer/images/lineseries-chart-icon16.png",
+            "share/qt/qml/QtCharts/designer/images/lineseries-polar-icon.png",
+            "share/qt/qml/QtCharts/designer/images/lineseries-polar-icon16.png",
+            "share/qt/qml/QtCharts/designer/images/percentbarseries-icon.png",
+            "share/qt/qml/QtCharts/designer/images/percentbarseries-icon16.png",
+            "share/qt/qml/QtCharts/designer/images/pieseries-chart-icon.png",
+            "share/qt/qml/QtCharts/designer/images/pieseries-chart-icon16.png",
+            "share/qt/qml/QtCharts/designer/images/scatterseries-chart-icon.png",
+            "share/qt/qml/QtCharts/designer/images/scatterseries-chart-icon16.png",
+            "share/qt/qml/QtCharts/designer/images/scatterseries-polar-icon.png",
+            "share/qt/qml/QtCharts/designer/images/scatterseries-polar-icon16.png",
+            "share/qt/qml/QtCharts/designer/images/splineseries-chart-icon.png",
+            "share/qt/qml/QtCharts/designer/images/splineseries-chart-icon16.png",
+            "share/qt/qml/QtCharts/designer/images/splineseries-polar-icon.png",
+            "share/qt/qml/QtCharts/designer/images/splineseries-polar-icon16.png",
+            "share/qt/qml/QtCharts/designer/images/stackedbarseries-icon.png",
+            "share/qt/qml/QtCharts/designer/images/stackedbarseries-icon16.png",
+            "share/qt/qml/QtCharts/designer/qtcharts.metainfo",
+            "share/qt/qml/QtCharts/libqtchartsqml2plugin.dylib",
+            "share/qt/qml/QtCharts/plugins.qmltypes",
+            "share/qt/qml/QtCharts/qmldir",
+            "share/qt/sbom/qtcharts-6.11.2.spdx"
+          ],
+          "installed_size": 4893428
+        }
+      }
+    }
+  }
+}

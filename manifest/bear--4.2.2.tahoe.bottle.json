@@ -1,0 +1,95 @@
+{
+  "bear": {
+    "formula": {
+      "name": "bear",
+      "pkg_version": "4.2.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/b/bear.rb",
+      "tap_git_path": "Formula/b/bear.rb",
+      "tap_git_revision": "de6f29c91962af85b2c94b4f160e208672de22d0",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Generate compilation database for clang tooling",
+      "license": "GPL-3.0-or-later",
+      "homepage": "https://github.com/rizsotto/Bear"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-05T17:02:33Z",
+      "tags": {
+        "tahoe": {
+          "filename": "bear-4.2.2.tahoe.bottle.tar.gz",
+          "local_filename": "bear--4.2.2.tahoe.bottle.tar.gz",
+          "sha256": "e38fbeca278f84bd35447f4dc5e9a500c868c987f23021931e8eb512c9200d8f",
+          "tab": {
+            "homebrew_version": "6.0.22",
+            "changed_files": [
+              "bin/bear"
+            ],
+            "linkage_files": [
+              "libexec/bear/lib/libexec.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788579719,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-bear-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/bear"
+          ],
+          "all_files": [
+            ".brew/bear.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/bear",
+            "libexec/bear/bin/bear-driver",
+            "libexec/bear/bin/bear-wrapper",
+            "libexec/bear/lib/libexec.dylib",
+            "sbom.spdx.json",
+            "share/doc/bear/COPYING",
+            "share/doc/bear/README.md",
+            "share/man/man1/bear.1"
+          ],
+          "installed_size": 4374322
+        }
+      }
+    }
+  }
+}

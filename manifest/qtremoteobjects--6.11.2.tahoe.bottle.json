@@ -1,0 +1,879 @@
+{
+  "qtremoteobjects": {
+    "formula": {
+      "name": "qtremoteobjects",
+      "pkg_version": "6.11.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtremoteobjects.rb",
+      "tap_git_path": "Formula/q/qtremoteobjects.rb",
+      "tap_git_revision": "de6f29c91962af85b2c94b4f160e208672de22d0",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Provides APIs for inter-process communication",
+      "license": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause",
+      "homepage": "https://www.qt.io/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-05T19:08:14Z",
+      "tags": {
+        "tahoe": {
+          "filename": "qtremoteobjects-6.11.2.tahoe.bottle.tar.gz",
+          "local_filename": "qtremoteobjects--6.11.2.tahoe.bottle.tar.gz",
+          "sha256": "e4f7be36842eb27f6e46b8ba2c3ebe2b87592f60e078153ca20e578d15f4fa88",
+          "tab": {
+            "homebrew_version": "6.0.22",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/QtRemoteObjects.framework/Versions/A/QtRemoteObjects",
+              "lib/QtRemoteObjectsQml.framework/Versions/A/QtRemoteObjectsQml",
+              "share/qt/libexec/repc",
+              "share/qt/qml/QtRemoteObjects/libdeclarative_remoteobjectsplugin.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1786498435,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "brotli",
+                "version": "1.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "dbus",
+                "version": "1.16.2",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.16.2_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "double-conversion",
+                "version": "3.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.4.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpng",
+                "version": "1.6.58",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.58",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "freetype",
+                "version": "2.14.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.14.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.88.3",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2.88.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fontconfig",
+                "version": "2.18.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.18.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xorgproto",
+                "version": "2025.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2025.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxau",
+                "version": "1.0.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxdmcp",
+                "version": "1.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxcb",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.17.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libx11",
+                "version": "1.8.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxext",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.7",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxrender",
+                "version": "0.9.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.9.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lzo",
+                "version": "2.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.10",
+                "declared_directly": false
+              },
+              {
+                "full_name": "pixman",
+                "version": "0.46.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "0.46.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "cairo",
+                "version": "1.18.4",
+                "revision": 0,
+                "bottle_rebuild": 2,
+                "pkg_version": "1.18.4",
+                "declared_directly": false
+              },
+              {
+                "full_name": "graphite2",
+                "version": "1.3.15",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.15",
+                "declared_directly": false
+              },
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "harfbuzz",
+                "version": "14.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "14.4.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "jpeg-turbo",
+                "version": "3.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libb2",
+                "version": "0.98.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.98.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "md4c",
+                "version": "0.5.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.5.3",
+                "declared_directly": false
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtbase",
+                "version": "6.11.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.11.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtsvg",
+                "version": "6.11.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.11.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtdeclarative",
+                "version": "6.11.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.11.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.3",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+              "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
+              "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "name": "jpeg-turbo",
+                "versionInfo": "3.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5440035b2803de1d43de3c29d0df3816a2546d56fd1e3759add6138aa450820a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13fdc9f3d0d30296056e2685e0c989978a5ed213f34a0de174e19feb72833e73"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.10.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "name": "xz",
+                "versionInfo": "5.8.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/xz/blobs/sha256:df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+                "name": "qtbase",
+                "versionInfo": "6.11.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND GFDL-1.3-no-invariants-only",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.11.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5eb65dad3cdb928010071405fc3d5139e760b32a0a57a79c5d309be6f36f0096"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtbase@6.11.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
+                "name": "qtsvg",
+                "versionInfo": "6.11.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtsvg-6.11.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "db3fad7f3fa66cbbea91b162609e7a97f21d4f3fa33d64b70ac55c0c24022fe9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtsvg@6.11.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+                "name": "qtdeclarative",
+                "versionInfo": "6.11.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-2-Clause AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtdeclarative-6.11.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "abd66f4f1b7624792385c9579280b902d257d5f85a6b77698ca60301dcb33b99"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtdeclarative@6.11.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-qtremoteobjects-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/qtremoteobjects.rb",
+            "INSTALL_RECEIPT.json",
+            "include/QtRepParser/QtRepParserDepends",
+            "include/QtRepParser/parser.g",
+            "include/QtRepParser/qregexparser.h",
+            "lib/QtRemoteObjects.framework/QtRemoteObjects",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.11.2/QtRemoteObjects/private/qconnection_local_backend_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.11.2/QtRemoteObjects/private/qconnection_tcpip_backend_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.11.2/QtRemoteObjects/private/qconnectionfactories_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.11.2/QtRemoteObjects/private/qremoteobjectabstractitemmodeladapter_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.11.2/QtRemoteObjects/private/qremoteobjectabstractitemmodelreplica_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.11.2/QtRemoteObjects/private/qremoteobjectabstractitemmodeltypes_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.11.2/QtRemoteObjects/private/qremoteobjectcontainers_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.11.2/QtRemoteObjects/private/qremoteobjectnode_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.11.2/QtRemoteObjects/private/qremoteobjectpacket_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.11.2/QtRemoteObjects/private/qremoteobjectpendingcall_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.11.2/QtRemoteObjects/private/qremoteobjectregistrysource_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.11.2/QtRemoteObjects/private/qremoteobjectreplica_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.11.2/QtRemoteObjects/private/qremoteobjectrepparser_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.11.2/QtRemoteObjects/private/qremoteobjectsource_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.11.2/QtRemoteObjects/private/qremoteobjectsourceio_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.11.2/QtRemoteObjects/private/qremoteobjectstructs_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.11.2/QtRemoteObjects/private/qtremoteobjects-config_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.11.2/QtRemoteObjects/private/rep_grammar_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QAbstractItemModelReplica",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QConnectionAbstractServer",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QIntHash",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectAbstractPersistedStore",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectDynamicReplica",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectHost",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectHostBase",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectNode",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectPendingCall",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectPendingCallWatcher",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectPendingReply",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectRegistry",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectRegistryHost",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectReplica",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectSettingsStore",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectSourceLocation",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectSourceLocationInfo",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectSourceLocations",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QtROClientFactory",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QtROClientIoDevice",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QtROIoDeviceBase",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QtROServerFactory",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QtROServerIoDevice",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QtRemoteObjects",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QtRemoteObjectsDepends",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QtRemoteObjectsVersion",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qconnectionfactories.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qremoteobjectabstractitemmodelreplica.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qremoteobjectdynamicreplica.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qremoteobjectnode.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qremoteobjectpendingcall.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qremoteobjectregistry.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qremoteobjectreplica.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qremoteobjectsettingsstore.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qremoteobjectsource.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qtremoteobjectglobal.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qtremoteobjects-config.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qtremoteobjectsexports.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qtremoteobjectsversion.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/repparser.h",
+            "lib/QtRemoteObjects.framework/Versions/A/QtRemoteObjects",
+            "lib/QtRemoteObjects.framework/Versions/A/Resources/Info.plist",
+            "lib/QtRemoteObjects.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtRemoteObjects.framework/Versions/A/Resources/QtRemoteObjects.prl",
+            "lib/QtRemoteObjectsQml.framework/QtRemoteObjectsQml",
+            "lib/QtRemoteObjectsQml.framework/Versions/A/Headers/6.11.2/QtRemoteObjectsQml/private/qremoteobjectsqml_p.h",
+            "lib/QtRemoteObjectsQml.framework/Versions/A/Headers/QtRemoteObjectsQml",
+            "lib/QtRemoteObjectsQml.framework/Versions/A/Headers/QtRemoteObjectsQmlDepends",
+            "lib/QtRemoteObjectsQml.framework/Versions/A/Headers/QtRemoteObjectsQmlVersion",
+            "lib/QtRemoteObjectsQml.framework/Versions/A/Headers/qtremoteobjectsqmlversion.h",
+            "lib/QtRemoteObjectsQml.framework/Versions/A/QtRemoteObjectsQml",
+            "lib/QtRemoteObjectsQml.framework/Versions/A/Resources/Info.plist",
+            "lib/QtRemoteObjectsQml.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtRemoteObjectsQml.framework/Versions/A/Resources/QtRemoteObjectsQml.prl",
+            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtRemoteObjectsTestsConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_remoteobjectsAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_remoteobjectsConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_remoteobjectsConfigVersion.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_remoteobjectsConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_remoteobjectsTargets-release.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_remoteobjectsTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_remoteobjectsTargetsPrecheck.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsConfig.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsConfigVersion.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsConfigVersionImpl.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsDependencies.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsMacros.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsTargets-release.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsTargets.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsTargetsPrecheck.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsVersionlessTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsPrivate/Qt6RemoteObjectsPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6RemoteObjectsPrivate/Qt6RemoteObjectsPrivateConfig.cmake",
+            "lib/cmake/Qt6RemoteObjectsPrivate/Qt6RemoteObjectsPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6RemoteObjectsPrivate/Qt6RemoteObjectsPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6RemoteObjectsPrivate/Qt6RemoteObjectsPrivateDependencies.cmake",
+            "lib/cmake/Qt6RemoteObjectsPrivate/Qt6RemoteObjectsPrivateTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsPrivate/Qt6RemoteObjectsPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6RemoteObjectsPrivate/Qt6RemoteObjectsPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsPrivate/Qt6RemoteObjectsPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlConfig.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlConfigVersion.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlConfigVersionImpl.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlDependencies.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlTargets-release.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlTargetsPrecheck.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlVersionlessTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsQmlPrivate/Qt6RemoteObjectsQmlPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6RemoteObjectsQmlPrivate/Qt6RemoteObjectsQmlPrivateConfig.cmake",
+            "lib/cmake/Qt6RemoteObjectsQmlPrivate/Qt6RemoteObjectsQmlPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6RemoteObjectsQmlPrivate/Qt6RemoteObjectsQmlPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6RemoteObjectsQmlPrivate/Qt6RemoteObjectsQmlPrivateDependencies.cmake",
+            "lib/cmake/Qt6RemoteObjectsQmlPrivate/Qt6RemoteObjectsQmlPrivateTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsQmlPrivate/Qt6RemoteObjectsQmlPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6RemoteObjectsQmlPrivate/Qt6RemoteObjectsQmlPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsQmlPrivate/Qt6RemoteObjectsQmlPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsTools/Qt6RemoteObjectsToolsAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6RemoteObjectsTools/Qt6RemoteObjectsToolsConfig.cmake",
+            "lib/cmake/Qt6RemoteObjectsTools/Qt6RemoteObjectsToolsConfigVersion.cmake",
+            "lib/cmake/Qt6RemoteObjectsTools/Qt6RemoteObjectsToolsConfigVersionImpl.cmake",
+            "lib/cmake/Qt6RemoteObjectsTools/Qt6RemoteObjectsToolsDependencies.cmake",
+            "lib/cmake/Qt6RemoteObjectsTools/Qt6RemoteObjectsToolsTargets-release.cmake",
+            "lib/cmake/Qt6RemoteObjectsTools/Qt6RemoteObjectsToolsTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsTools/Qt6RemoteObjectsToolsTargetsPrecheck.cmake",
+            "lib/cmake/Qt6RemoteObjectsTools/Qt6RemoteObjectsToolsVersionlessTargets.cmake",
+            "lib/cmake/Qt6RepParser/Qt6RepParserAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6RepParser/Qt6RepParserConfig.cmake",
+            "lib/cmake/Qt6RepParser/Qt6RepParserConfigVersion.cmake",
+            "lib/cmake/Qt6RepParser/Qt6RepParserConfigVersionImpl.cmake",
+            "lib/cmake/Qt6RepParser/Qt6RepParserDependencies.cmake",
+            "lib/cmake/Qt6RepParser/Qt6RepParserTargets.cmake",
+            "lib/cmake/Qt6RepParser/Qt6RepParserTargetsPrecheck.cmake",
+            "lib/cmake/Qt6RepParser/Qt6RepParserVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6RepParser/Qt6RepParserVersionlessTargets.cmake",
+            "lib/pkgconfig/Qt6RemoteObjects.pc",
+            "lib/pkgconfig/Qt6RemoteObjectsQml.pc",
+            "lib/pkgconfig/Qt6RepParser.pc",
+            "sbom.spdx.json",
+            "share/qt/libexec/repc",
+            "share/qt/metatypes/qt6remoteobjects_metatypes.json",
+            "share/qt/metatypes/qt6remoteobjectsqml_metatypes.json",
+            "share/qt/mkspecs/features/remoteobjects_repc.prf",
+            "share/qt/mkspecs/features/repcclient.pri",
+            "share/qt/mkspecs/features/repccommon.pri",
+            "share/qt/mkspecs/features/repcmerged.pri",
+            "share/qt/mkspecs/features/repcserver.pri",
+            "share/qt/mkspecs/features/repparser.prf",
+            "share/qt/mkspecs/modules/qt_lib_remoteobjects.pri",
+            "share/qt/mkspecs/modules/qt_lib_remoteobjects_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_remoteobjectsqml.pri",
+            "share/qt/mkspecs/modules/qt_lib_remoteobjectsqml_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_repparser.pri",
+            "share/qt/modules/RemoteObjects.json",
+            "share/qt/modules/RemoteObjectsQml.json",
+            "share/qt/modules/RepParser.json",
+            "share/qt/qml/QtRemoteObjects/libdeclarative_remoteobjectsplugin.dylib",
+            "share/qt/qml/QtRemoteObjects/plugins.qmltypes",
+            "share/qt/qml/QtRemoteObjects/qmldir",
+            "share/qt/sbom/qtremoteobjects-6.11.2.spdx"
+          ],
+          "installed_size": 2288708
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1194 @@
+{
+  "qtgrpc": {
+    "formula": {
+      "name": "qtgrpc",
+      "pkg_version": "6.11.2_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtgrpc.rb",
+      "tap_git_path": "Formula/q/qtgrpc.rb",
+      "tap_git_revision": "de6f29c91962af85b2c94b4f160e208672de22d0",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Provides support for communicating with gRPC services",
+      "license": "GPL-3.0-only AND (LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause",
+      "homepage": "https://www.qt.io/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-05T18:34:35Z",
+      "tags": {
+        "tahoe": {
+          "filename": "qtgrpc-6.11.2_1.tahoe.bottle.tar.gz",
+          "local_filename": "qtgrpc--6.11.2_1.tahoe.bottle.tar.gz",
+          "sha256": "28824e5dbd0e11a24405329b568735aef45134486c4de8395a27a2b4a29a2c66",
+          "tab": {
+            "homebrew_version": "6.0.22",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/QtGrpc.framework/Versions/A/QtGrpc",
+              "lib/QtGrpcQuick.framework/Versions/A/QtGrpcQuick",
+              "lib/QtProtobuf.framework/Versions/A/QtProtobuf",
+              "lib/QtProtobufQtCoreTypes.framework/Versions/A/QtProtobufQtCoreTypes",
+              "lib/QtProtobufQtGuiTypes.framework/Versions/A/QtProtobufQtGuiTypes",
+              "lib/QtProtobufQuick.framework/Versions/A/QtProtobufQuick",
+              "lib/QtProtobufWellKnownTypes.framework/Versions/A/QtProtobufWellKnownTypes",
+              "share/qt/libexec/qtgrpcgen",
+              "share/qt/libexec/qtprotobufgen",
+              "share/qt/qml/QtGrpc/libgrpcquickplugin.dylib",
+              "share/qt/qml/QtProtobuf/libprotobufquickplugin.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1786498433,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "abseil",
+                "version": "20260817.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "20260817.0",
+                "declared_directly": true,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "protobuf",
+                "version": "36.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "36.1",
+                "declared_directly": true,
+                "compatibility_version": 6
+              },
+              {
+                "full_name": "brotli",
+                "version": "1.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "dbus",
+                "version": "1.16.2",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.16.2_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "double-conversion",
+                "version": "3.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.4.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpng",
+                "version": "1.6.58",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.58",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "freetype",
+                "version": "2.14.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.14.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.88.3",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2.88.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fontconfig",
+                "version": "2.18.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.18.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xorgproto",
+                "version": "2025.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2025.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxau",
+                "version": "1.0.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxdmcp",
+                "version": "1.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxcb",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.17.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libx11",
+                "version": "1.8.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxext",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.7",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxrender",
+                "version": "0.9.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.9.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lzo",
+                "version": "2.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.10",
+                "declared_directly": false
+              },
+              {
+                "full_name": "pixman",
+                "version": "0.46.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "0.46.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "cairo",
+                "version": "1.18.4",
+                "revision": 0,
+                "bottle_rebuild": 2,
+                "pkg_version": "1.18.4",
+                "declared_directly": false
+              },
+              {
+                "full_name": "graphite2",
+                "version": "1.3.15",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.15",
+                "declared_directly": false
+              },
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "harfbuzz",
+                "version": "14.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "14.4.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "jpeg-turbo",
+                "version": "3.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libb2",
+                "version": "0.98.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.98.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "md4c",
+                "version": "0.5.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.5.3",
+                "declared_directly": false
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtbase",
+                "version": "6.11.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.11.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtsvg",
+                "version": "6.11.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.11.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtdeclarative",
+                "version": "6.11.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.11.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-protobuf-36.1",
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.3",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+              "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
+              "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-36.1",
+                "name": "protobuf",
+                "versionInfo": "36.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/protobuf-36.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "2b049cb957ba23df6e1c01320f982a9e4610c36bb6cbb50e2d53b06c14f92db4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/protobuf@36.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "name": "jpeg-turbo",
+                "versionInfo": "3.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5440035b2803de1d43de3c29d0df3816a2546d56fd1e3759add6138aa450820a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13fdc9f3d0d30296056e2685e0c989978a5ed213f34a0de174e19feb72833e73"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.10.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "name": "xz",
+                "versionInfo": "5.8.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/xz/blobs/sha256:df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+                "name": "qtbase",
+                "versionInfo": "6.11.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND GFDL-1.3-no-invariants-only",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.11.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5eb65dad3cdb928010071405fc3d5139e760b32a0a57a79c5d309be6f36f0096"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtbase@6.11.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
+                "name": "qtsvg",
+                "versionInfo": "6.11.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtsvg-6.11.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "db3fad7f3fa66cbbea91b162609e7a97f21d4f3fa33d64b70ac55c0c24022fe9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtsvg@6.11.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+                "name": "qtdeclarative",
+                "versionInfo": "6.11.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-2-Clause AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtdeclarative-6.11.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "abd66f4f1b7624792385c9579280b902d257d5f85a6b77698ca60301dcb33b99"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtdeclarative@6.11.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-36.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtgrpc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtgrpc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtgrpc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtgrpc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtgrpc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtgrpc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtgrpc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtgrpc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtgrpc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtgrpc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtgrpc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtgrpc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-qtgrpc-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/qtgrpc.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.Apache-2.0.txt",
+            "include/QtProtobufQtCoreTypes/QtCore/QtCore.proto",
+            "include/QtProtobufQtGuiTypes/QtGui/QtGui.proto",
+            "lib/QtGrpc.framework/QtGrpc",
+            "lib/QtGrpc.framework/Versions/A/Headers/6.11.2/QtGrpc/private/qabstractgrpcchannel_p.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/6.11.2/QtGrpc/private/qgrpccommonoptions_p.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/6.11.2/QtGrpc/private/qgrpcinterceptorchain_p.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/6.11.2/QtGrpc/private/qgrpcinterceptorengine_p.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/6.11.2/QtGrpc/private/qgrpcoperation_p.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/6.11.2/QtGrpc/private/qgrpcoperationcontext_p.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/6.11.2/QtGrpc/private/qtgrpc-config_p.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/6.11.2/QtGrpc/private/qtgrpclogging_p.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/QAbstractGrpcChannel",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcBidiStream",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcCallOptions",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcCallReply",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcCancelInterceptor",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcChannelOptions",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcClientBase",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcClientStream",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcFinishedInterceptor",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcHttp2Channel",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcInitialMetadataInterceptor",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcInterceptionContext",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcInterceptor",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcInterceptorChain",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcMessageReceivedInterceptor",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcOperation",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcOperationContext",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcSerializationFormat",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcServerStream",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcStartInterceptor",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcStatus",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcTrailingMetadataInterceptor",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcWriteMessageInterceptor",
+            "lib/QtGrpc.framework/Versions/A/Headers/QGrpcWritesDoneInterceptor",
+            "lib/QtGrpc.framework/Versions/A/Headers/QtGrpc",
+            "lib/QtGrpc.framework/Versions/A/Headers/QtGrpcDepends",
+            "lib/QtGrpc.framework/Versions/A/Headers/QtGrpcNamespace",
+            "lib/QtGrpc.framework/Versions/A/Headers/QtGrpcVersion",
+            "lib/QtGrpc.framework/Versions/A/Headers/qabstractgrpcchannel.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/qgrpccalloptions.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/qgrpccallreply.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/qgrpcchanneloptions.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/qgrpcclientbase.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/qgrpchttp2channel.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/qgrpcinterceptor.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/qgrpcinterceptorchain.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/qgrpcoperation.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/qgrpcoperationcontext.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/qgrpcserializationformat.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/qgrpcstatus.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/qgrpcstream.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/qtgrpc-config.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/qtgrpcexports.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/qtgrpcglobal.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/qtgrpcnamespace.h",
+            "lib/QtGrpc.framework/Versions/A/Headers/qtgrpcversion.h",
+            "lib/QtGrpc.framework/Versions/A/QtGrpc",
+            "lib/QtGrpc.framework/Versions/A/Resources/Info.plist",
+            "lib/QtGrpc.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtGrpc.framework/Versions/A/Resources/QtGrpc.prl",
+            "lib/QtGrpcQuick.framework/QtGrpcQuick",
+            "lib/QtGrpcQuick.framework/Versions/A/Headers/6.11.2/QtGrpcQuick/private/qqmlabstractgrpcchannel_p.h",
+            "lib/QtGrpcQuick.framework/Versions/A/Headers/6.11.2/QtGrpcQuick/private/qqmlgrpcchanneloptions_p.h",
+            "lib/QtGrpcQuick.framework/Versions/A/Headers/6.11.2/QtGrpcQuick/private/qqmlgrpchttp2channel_p.h",
+            "lib/QtGrpcQuick.framework/Versions/A/Headers/6.11.2/QtGrpcQuick/private/qqmlgrpcmetadata_p.h",
+            "lib/QtGrpcQuick.framework/Versions/A/Headers/6.11.2/QtGrpcQuick/private/qqmlgrpcnamespace_p.h",
+            "lib/QtGrpcQuick.framework/Versions/A/Headers/6.11.2/QtGrpcQuick/private/qtgrpcquicklogging_p.h",
+            "lib/QtGrpcQuick.framework/Versions/A/Headers/QQmlAbstractGrpcChannel",
+            "lib/QtGrpcQuick.framework/Versions/A/Headers/QtGrpcQuick",
+            "lib/QtGrpcQuick.framework/Versions/A/Headers/QtGrpcQuickDepends",
+            "lib/QtGrpcQuick.framework/Versions/A/Headers/QtGrpcQuickVersion",
+            "lib/QtGrpcQuick.framework/Versions/A/Headers/qqmlabstractgrpcchannel.h",
+            "lib/QtGrpcQuick.framework/Versions/A/Headers/qqmlgrpccalloptions.h",
+            "lib/QtGrpcQuick.framework/Versions/A/Headers/qqmlgrpcfunctionalhandlers.h",
+            "lib/QtGrpcQuick.framework/Versions/A/Headers/qtgrpcquickexports.h",
+            "lib/QtGrpcQuick.framework/Versions/A/Headers/qtgrpcquickversion.h",
+            "lib/QtGrpcQuick.framework/Versions/A/Headers/qtqmlgrpcstreamsender.h",
+            "lib/QtGrpcQuick.framework/Versions/A/QtGrpcQuick",
+            "lib/QtGrpcQuick.framework/Versions/A/Resources/Info.plist",
+            "lib/QtGrpcQuick.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtGrpcQuick.framework/Versions/A/Resources/QtGrpcQuick.prl",
+            "lib/QtProtobuf.framework/QtProtobuf",
+            "lib/QtProtobuf.framework/Versions/A/Headers/6.11.2/QtProtobuf/private/protobuffieldpresencechecker_p.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/6.11.2/QtProtobuf/private/protobufscalarjsonserializers_p.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/6.11.2/QtProtobuf/private/protobufscalarserializers_p.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/6.11.2/QtProtobuf/private/qprotobufdeserializerbase_p.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/6.11.2/QtProtobuf/private/qprotobufjsonserializer_p.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/6.11.2/QtProtobuf/private/qprotobufmessage_p.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/6.11.2/QtProtobuf/private/qprotobufpropertyorderingbuilder_p.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/6.11.2/QtProtobuf/private/qprotobufregistration_p.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/6.11.2/QtProtobuf/private/qprotobufselfcheckiterator_p.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/6.11.2/QtProtobuf/private/qprotobufserializer_p.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/6.11.2/QtProtobuf/private/qprotobufserializerbase_p.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/6.11.2/QtProtobuf/private/qtprotobuf-config_p.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/6.11.2/QtProtobuf/private/qtprotobufdefs_p.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/6.11.2/QtProtobuf/private/qtprotobuflogging_p.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/6.11.2/QtProtobuf/private/qtprotobufserializerhelpers_p.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/QAbstractProtobufSerializer",
+            "lib/QtProtobuf.framework/Versions/A/Headers/QProtobufJsonSerializer",
+            "lib/QtProtobuf.framework/Versions/A/Headers/QProtobufMapEntry",
+            "lib/QtProtobuf.framework/Versions/A/Headers/QProtobufMapEntryBase",
+            "lib/QtProtobuf.framework/Versions/A/Headers/QProtobufMessage",
+            "lib/QtProtobuf.framework/Versions/A/Headers/QProtobufMessageDeleter",
+            "lib/QtProtobuf.framework/Versions/A/Headers/QProtobufOneof",
+            "lib/QtProtobuf.framework/Versions/A/Headers/QProtobufRepeatedIterator",
+            "lib/QtProtobuf.framework/Versions/A/Headers/QProtobufSerializer",
+            "lib/QtProtobuf.framework/Versions/A/Headers/QtProtobuf",
+            "lib/QtProtobuf.framework/Versions/A/Headers/QtProtobufDepends",
+            "lib/QtProtobuf.framework/Versions/A/Headers/QtProtobufVersion",
+            "lib/QtProtobuf.framework/Versions/A/Headers/qabstractprotobufserializer.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/qprotobufjsonserializer.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/qprotobuflazymessagepointer.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/qprotobufmessage.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/qprotobufobject.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/qprotobufoneof.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/qprotobufpropertyordering.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/qprotobufregistration.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/qprotobufrepeatediterator.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/qprotobufserializer.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/qtprotobuf-config.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/qtprotobufexports.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/qtprotobufglobal.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/qtprotobuftypes.h",
+            "lib/QtProtobuf.framework/Versions/A/Headers/qtprotobufversion.h",
+            "lib/QtProtobuf.framework/Versions/A/QtProtobuf",
+            "lib/QtProtobuf.framework/Versions/A/Resources/Info.plist",
+            "lib/QtProtobuf.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtProtobuf.framework/Versions/A/Resources/QtProtobuf.prl",
+            "lib/QtProtobufQtCoreTypes.framework/QtProtobufQtCoreTypes",
+            "lib/QtProtobufQtCoreTypes.framework/Versions/A/Headers/6.11.2/QtProtobufQtCoreTypes/private/QtCore.qpb.h",
+            "lib/QtProtobufQtCoreTypes.framework/Versions/A/Headers/6.11.2/QtProtobufQtCoreTypes/private/protobufqtcoretypes_exports.qpb.h",
+            "lib/QtProtobufQtCoreTypes.framework/Versions/A/Headers/6.11.2/QtProtobufQtCoreTypes/private/qtprotobufqttypescommon_p.h",
+            "lib/QtProtobufQtCoreTypes.framework/Versions/A/Headers/QtProtobufQtCoreTypes",
+            "lib/QtProtobufQtCoreTypes.framework/Versions/A/Headers/QtProtobufQtCoreTypesDepends",
+            "lib/QtProtobufQtCoreTypes.framework/Versions/A/Headers/QtProtobufQtCoreTypesVersion",
+            "lib/QtProtobufQtCoreTypes.framework/Versions/A/Headers/qtprotobufqtcoretypes.h",
+            "lib/QtProtobufQtCoreTypes.framework/Versions/A/Headers/qtprotobufqtcoretypesexports.h",
+            "lib/QtProtobufQtCoreTypes.framework/Versions/A/Headers/qtprotobufqtcoretypesglobal.h",
+            "lib/QtProtobufQtCoreTypes.framework/Versions/A/Headers/qtprotobufqtcoretypesversion.h",
+            "lib/QtProtobufQtCoreTypes.framework/Versions/A/QtProtobufQtCoreTypes",
+            "lib/QtProtobufQtCoreTypes.framework/Versions/A/Resources/Info.plist",
+            "lib/QtProtobufQtCoreTypes.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtProtobufQtCoreTypes.framework/Versions/A/Resources/QtProtobufQtCoreTypes.prl",
+            "lib/QtProtobufQtGuiTypes.framework/QtProtobufQtGuiTypes",
+            "lib/QtProtobufQtGuiTypes.framework/Versions/A/Headers/6.11.2/QtProtobufQtGuiTypes/private/QtGui.qpb.h",
+            "lib/QtProtobufQtGuiTypes.framework/Versions/A/Headers/6.11.2/QtProtobufQtGuiTypes/private/protobufqtguitypes_exports.qpb.h",
+            "lib/QtProtobufQtGuiTypes.framework/Versions/A/Headers/QtProtobufQtGuiTypes",
+            "lib/QtProtobufQtGuiTypes.framework/Versions/A/Headers/QtProtobufQtGuiTypesDepends",
+            "lib/QtProtobufQtGuiTypes.framework/Versions/A/Headers/QtProtobufQtGuiTypesVersion",
+            "lib/QtProtobufQtGuiTypes.framework/Versions/A/Headers/qtprotobufqtguitypes.h",
+            "lib/QtProtobufQtGuiTypes.framework/Versions/A/Headers/qtprotobufqtguitypesexports.h",
+            "lib/QtProtobufQtGuiTypes.framework/Versions/A/Headers/qtprotobufqtguitypesglobal.h",
+            "lib/QtProtobufQtGuiTypes.framework/Versions/A/Headers/qtprotobufqtguitypesversion.h",
+            "lib/QtProtobufQtGuiTypes.framework/Versions/A/QtProtobufQtGuiTypes",
+            "lib/QtProtobufQtGuiTypes.framework/Versions/A/Resources/Info.plist",
+            "lib/QtProtobufQtGuiTypes.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtProtobufQtGuiTypes.framework/Versions/A/Resources/QtProtobufQtGuiTypes.prl",
+            "lib/QtProtobufQuick.framework/QtProtobufQuick",
+            "lib/QtProtobufQuick.framework/Versions/A/Headers/6.11.2/QtProtobufQuick/private/qqmlprotobuftypes_p.h",
+            "lib/QtProtobufQuick.framework/Versions/A/Headers/QtProtobufQuick",
+            "lib/QtProtobufQuick.framework/Versions/A/Headers/QtProtobufQuickDepends",
+            "lib/QtProtobufQuick.framework/Versions/A/Headers/QtProtobufQuickVersion",
+            "lib/QtProtobufQuick.framework/Versions/A/Headers/qtprotobufquickexports.h",
+            "lib/QtProtobufQuick.framework/Versions/A/Headers/qtprotobufquickversion.h",
+            "lib/QtProtobufQuick.framework/Versions/A/QtProtobufQuick",
+            "lib/QtProtobufQuick.framework/Versions/A/Resources/Info.plist",
+            "lib/QtProtobufQuick.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtProtobufQuick.framework/Versions/A/Resources/QtProtobufQuick.prl",
+            "lib/QtProtobufWellKnownTypes.framework/QtProtobufWellKnownTypes",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/6.11.2/QtProtobufWellKnownTypes/private/qprotobufwellknowntypesjsonserializers_p.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/QtProtobufWellKnownTypes",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/QtProtobufWellKnownTypesDepends",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/QtProtobufWellKnownTypesVersion",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/any.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/api.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/duration.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/empty.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/field_mask.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/google/protobuf/any.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/google/protobuf/api.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/google/protobuf/duration.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/google/protobuf/empty.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/google/protobuf/field_mask.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/google/protobuf/protobufwellknowntypes_exports.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/google/protobuf/source_context.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/google/protobuf/struct.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/google/protobuf/timestamp.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/google/protobuf/type.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/google/protobuf/wrappers.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/protobufwellknowntypes_exports.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/qprotobufanysupport.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/qtprotobufwellknowntypesexports.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/qtprotobufwellknowntypesglobal.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/qtprotobufwellknowntypesversion.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/source_context.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/struct.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/timestamp.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/type.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Headers/wrappers.qpb.h",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/QtProtobufWellKnownTypes",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Resources/Info.plist",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtProtobufWellKnownTypes.framework/Versions/A/Resources/QtProtobufWellKnownTypes.prl",
+            "lib/cmake/Qt6/FindWrapProtoc.cmake",
+            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtGrpcTestsConfig.cmake",
+            "lib/cmake/Qt6Grpc/Qt6GrpcAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Grpc/Qt6GrpcConfig.cmake",
+            "lib/cmake/Qt6Grpc/Qt6GrpcConfigVersion.cmake",
+            "lib/cmake/Qt6Grpc/Qt6GrpcConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Grpc/Qt6GrpcDependencies.cmake",
+            "lib/cmake/Qt6Grpc/Qt6GrpcTargets-release.cmake",
+            "lib/cmake/Qt6Grpc/Qt6GrpcTargets.cmake",
+            "lib/cmake/Qt6Grpc/Qt6GrpcTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Grpc/Qt6GrpcVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6Grpc/Qt6GrpcVersionlessTargets.cmake",
+            "lib/cmake/Qt6GrpcPrivate/Qt6GrpcPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6GrpcPrivate/Qt6GrpcPrivateConfig.cmake",
+            "lib/cmake/Qt6GrpcPrivate/Qt6GrpcPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6GrpcPrivate/Qt6GrpcPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6GrpcPrivate/Qt6GrpcPrivateDependencies.cmake",
+            "lib/cmake/Qt6GrpcPrivate/Qt6GrpcPrivateTargets.cmake",
+            "lib/cmake/Qt6GrpcPrivate/Qt6GrpcPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6GrpcPrivate/Qt6GrpcPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6GrpcPrivate/Qt6GrpcPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6GrpcQuick/Qt6GrpcQuickAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6GrpcQuick/Qt6GrpcQuickConfig.cmake",
+            "lib/cmake/Qt6GrpcQuick/Qt6GrpcQuickConfigVersion.cmake",
+            "lib/cmake/Qt6GrpcQuick/Qt6GrpcQuickConfigVersionImpl.cmake",
+            "lib/cmake/Qt6GrpcQuick/Qt6GrpcQuickDependencies.cmake",
+            "lib/cmake/Qt6GrpcQuick/Qt6GrpcQuickTargets-release.cmake",
+            "lib/cmake/Qt6GrpcQuick/Qt6GrpcQuickTargets.cmake",
+            "lib/cmake/Qt6GrpcQuick/Qt6GrpcQuickTargetsPrecheck.cmake",
+            "lib/cmake/Qt6GrpcQuick/Qt6GrpcQuickVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6GrpcQuick/Qt6GrpcQuickVersionlessTargets.cmake",
+            "lib/cmake/Qt6GrpcQuickPrivate/Qt6GrpcQuickPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6GrpcQuickPrivate/Qt6GrpcQuickPrivateConfig.cmake",
+            "lib/cmake/Qt6GrpcQuickPrivate/Qt6GrpcQuickPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6GrpcQuickPrivate/Qt6GrpcQuickPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6GrpcQuickPrivate/Qt6GrpcQuickPrivateDependencies.cmake",
+            "lib/cmake/Qt6GrpcQuickPrivate/Qt6GrpcQuickPrivateTargets.cmake",
+            "lib/cmake/Qt6GrpcQuickPrivate/Qt6GrpcQuickPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6GrpcQuickPrivate/Qt6GrpcQuickPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6GrpcQuickPrivate/Qt6GrpcQuickPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6GrpcTools/Qt6GrpcToolsAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6GrpcTools/Qt6GrpcToolsConfig.cmake",
+            "lib/cmake/Qt6GrpcTools/Qt6GrpcToolsConfigVersion.cmake",
+            "lib/cmake/Qt6GrpcTools/Qt6GrpcToolsConfigVersionImpl.cmake",
+            "lib/cmake/Qt6GrpcTools/Qt6GrpcToolsDependencies.cmake",
+            "lib/cmake/Qt6GrpcTools/Qt6GrpcToolsMacros.cmake",
+            "lib/cmake/Qt6GrpcTools/Qt6GrpcToolsTargets-release.cmake",
+            "lib/cmake/Qt6GrpcTools/Qt6GrpcToolsTargets.cmake",
+            "lib/cmake/Qt6GrpcTools/Qt6GrpcToolsTargetsPrecheck.cmake",
+            "lib/cmake/Qt6GrpcTools/Qt6GrpcToolsVersionlessTargets.cmake",
+            "lib/cmake/Qt6Protobuf/Qt6ProtobufAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Protobuf/Qt6ProtobufBuildInternals.cmake",
+            "lib/cmake/Qt6Protobuf/Qt6ProtobufConfig.cmake",
+            "lib/cmake/Qt6Protobuf/Qt6ProtobufConfigVersion.cmake",
+            "lib/cmake/Qt6Protobuf/Qt6ProtobufConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Protobuf/Qt6ProtobufDependencies.cmake",
+            "lib/cmake/Qt6Protobuf/Qt6ProtobufTargets-release.cmake",
+            "lib/cmake/Qt6Protobuf/Qt6ProtobufTargets.cmake",
+            "lib/cmake/Qt6Protobuf/Qt6ProtobufTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Protobuf/Qt6ProtobufVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6Protobuf/Qt6ProtobufVersionlessTargets.cmake",
+            "lib/cmake/Qt6Protobuf/QtProtobufProperties.cmake.in",
+            "lib/cmake/Qt6ProtobufPrivate/Qt6ProtobufPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6ProtobufPrivate/Qt6ProtobufPrivateConfig.cmake",
+            "lib/cmake/Qt6ProtobufPrivate/Qt6ProtobufPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6ProtobufPrivate/Qt6ProtobufPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6ProtobufPrivate/Qt6ProtobufPrivateDependencies.cmake",
+            "lib/cmake/Qt6ProtobufPrivate/Qt6ProtobufPrivateTargets.cmake",
+            "lib/cmake/Qt6ProtobufPrivate/Qt6ProtobufPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6ProtobufPrivate/Qt6ProtobufPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6ProtobufPrivate/Qt6ProtobufPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypes/Qt6ProtobufQtCoreTypesAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypes/Qt6ProtobufQtCoreTypesConfig.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypes/Qt6ProtobufQtCoreTypesConfigVersion.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypes/Qt6ProtobufQtCoreTypesConfigVersionImpl.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypes/Qt6ProtobufQtCoreTypesDependencies.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypes/Qt6ProtobufQtCoreTypesProtobufProperties.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypes/Qt6ProtobufQtCoreTypesTargets-release.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypes/Qt6ProtobufQtCoreTypesTargets.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypes/Qt6ProtobufQtCoreTypesTargetsPrecheck.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypes/Qt6ProtobufQtCoreTypesVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypes/Qt6ProtobufQtCoreTypesVersionlessTargets.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypesPrivate/Qt6ProtobufQtCoreTypesPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypesPrivate/Qt6ProtobufQtCoreTypesPrivateConfig.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypesPrivate/Qt6ProtobufQtCoreTypesPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypesPrivate/Qt6ProtobufQtCoreTypesPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypesPrivate/Qt6ProtobufQtCoreTypesPrivateDependencies.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypesPrivate/Qt6ProtobufQtCoreTypesPrivateTargets.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypesPrivate/Qt6ProtobufQtCoreTypesPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypesPrivate/Qt6ProtobufQtCoreTypesPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6ProtobufQtCoreTypesPrivate/Qt6ProtobufQtCoreTypesPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypes/Qt6ProtobufQtGuiTypesAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypes/Qt6ProtobufQtGuiTypesConfig.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypes/Qt6ProtobufQtGuiTypesConfigVersion.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypes/Qt6ProtobufQtGuiTypesConfigVersionImpl.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypes/Qt6ProtobufQtGuiTypesDependencies.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypes/Qt6ProtobufQtGuiTypesProtobufProperties.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypes/Qt6ProtobufQtGuiTypesTargets-release.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypes/Qt6ProtobufQtGuiTypesTargets.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypes/Qt6ProtobufQtGuiTypesTargetsPrecheck.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypes/Qt6ProtobufQtGuiTypesVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypes/Qt6ProtobufQtGuiTypesVersionlessTargets.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypesPrivate/Qt6ProtobufQtGuiTypesPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypesPrivate/Qt6ProtobufQtGuiTypesPrivateConfig.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypesPrivate/Qt6ProtobufQtGuiTypesPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypesPrivate/Qt6ProtobufQtGuiTypesPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypesPrivate/Qt6ProtobufQtGuiTypesPrivateDependencies.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypesPrivate/Qt6ProtobufQtGuiTypesPrivateTargets.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypesPrivate/Qt6ProtobufQtGuiTypesPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypesPrivate/Qt6ProtobufQtGuiTypesPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6ProtobufQtGuiTypesPrivate/Qt6ProtobufQtGuiTypesPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6ProtobufQuick/Qt6ProtobufQuickAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6ProtobufQuick/Qt6ProtobufQuickConfig.cmake",
+            "lib/cmake/Qt6ProtobufQuick/Qt6ProtobufQuickConfigVersion.cmake",
+            "lib/cmake/Qt6ProtobufQuick/Qt6ProtobufQuickConfigVersionImpl.cmake",
+            "lib/cmake/Qt6ProtobufQuick/Qt6ProtobufQuickDependencies.cmake",
+            "lib/cmake/Qt6ProtobufQuick/Qt6ProtobufQuickTargets-release.cmake",
+            "lib/cmake/Qt6ProtobufQuick/Qt6ProtobufQuickTargets.cmake",
+            "lib/cmake/Qt6ProtobufQuick/Qt6ProtobufQuickTargetsPrecheck.cmake",
+            "lib/cmake/Qt6ProtobufQuick/Qt6ProtobufQuickVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6ProtobufQuick/Qt6ProtobufQuickVersionlessTargets.cmake",
+            "lib/cmake/Qt6ProtobufQuickPrivate/Qt6ProtobufQuickPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6ProtobufQuickPrivate/Qt6ProtobufQuickPrivateConfig.cmake",
+            "lib/cmake/Qt6ProtobufQuickPrivate/Qt6ProtobufQuickPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6ProtobufQuickPrivate/Qt6ProtobufQuickPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6ProtobufQuickPrivate/Qt6ProtobufQuickPrivateDependencies.cmake",
+            "lib/cmake/Qt6ProtobufQuickPrivate/Qt6ProtobufQuickPrivateTargets.cmake",
+            "lib/cmake/Qt6ProtobufQuickPrivate/Qt6ProtobufQuickPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6ProtobufQuickPrivate/Qt6ProtobufQuickPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6ProtobufQuickPrivate/Qt6ProtobufQuickPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6ProtobufTools/Qt6ProtobufToolsAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6ProtobufTools/Qt6ProtobufToolsConfig.cmake",
+            "lib/cmake/Qt6ProtobufTools/Qt6ProtobufToolsConfigVersion.cmake",
+            "lib/cmake/Qt6ProtobufTools/Qt6ProtobufToolsConfigVersionImpl.cmake",
+            "lib/cmake/Qt6ProtobufTools/Qt6ProtobufToolsDependencies.cmake",
+            "lib/cmake/Qt6ProtobufTools/Qt6ProtobufToolsMacros.cmake",
+            "lib/cmake/Qt6ProtobufTools/Qt6ProtobufToolsTargets-release.cmake",
+            "lib/cmake/Qt6ProtobufTools/Qt6ProtobufToolsTargets.cmake",
+            "lib/cmake/Qt6ProtobufTools/Qt6ProtobufToolsTargetsPrecheck.cmake",
+            "lib/cmake/Qt6ProtobufTools/Qt6ProtobufToolsVersionlessTargets.cmake",
+            "lib/cmake/Qt6ProtobufTools/QtProtocCommandWrapper.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypes/Qt6ProtobufWellKnownTypesAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypes/Qt6ProtobufWellKnownTypesBuildInternals.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypes/Qt6ProtobufWellKnownTypesConfig.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypes/Qt6ProtobufWellKnownTypesConfigVersion.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypes/Qt6ProtobufWellKnownTypesConfigVersionImpl.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypes/Qt6ProtobufWellKnownTypesDependencies.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypes/Qt6ProtobufWellKnownTypesExtras.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypes/Qt6ProtobufWellKnownTypesProtobufProperties.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypes/Qt6ProtobufWellKnownTypesTargets-release.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypes/Qt6ProtobufWellKnownTypesTargets.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypes/Qt6ProtobufWellKnownTypesTargetsPrecheck.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypes/Qt6ProtobufWellKnownTypesVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypes/Qt6ProtobufWellKnownTypesVersionlessTargets.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypesPrivate/Qt6ProtobufWellKnownTypesPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypesPrivate/Qt6ProtobufWellKnownTypesPrivateConfig.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypesPrivate/Qt6ProtobufWellKnownTypesPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypesPrivate/Qt6ProtobufWellKnownTypesPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypesPrivate/Qt6ProtobufWellKnownTypesPrivateDependencies.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypesPrivate/Qt6ProtobufWellKnownTypesPrivateTargets.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypesPrivate/Qt6ProtobufWellKnownTypesPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypesPrivate/Qt6ProtobufWellKnownTypesPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6ProtobufWellKnownTypesPrivate/Qt6ProtobufWellKnownTypesPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6grpcquickpluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6grpcquickpluginConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6grpcquickpluginConfigVersion.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6grpcquickpluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6grpcquickpluginTargets-release.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6grpcquickpluginTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6grpcquickpluginTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6protobufquickpluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6protobufquickpluginConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6protobufquickpluginConfigVersion.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6protobufquickpluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6protobufquickpluginTargets-release.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6protobufquickpluginTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6protobufquickpluginTargetsPrecheck.cmake",
+            "lib/pkgconfig/Qt6Grpc.pc",
+            "lib/pkgconfig/Qt6GrpcQuick.pc",
+            "lib/pkgconfig/Qt6Protobuf.pc",
+            "lib/pkgconfig/Qt6ProtobufQtCoreTypes.pc",
+            "lib/pkgconfig/Qt6ProtobufQtGuiTypes.pc",
+            "lib/pkgconfig/Qt6ProtobufQuick.pc",
+            "lib/pkgconfig/Qt6ProtobufWellKnownTypes.pc",
+            "sbom.spdx.json",
+            "share/qt/libexec/qtgrpcgen",
+            "share/qt/libexec/qtprotobufgen",
+            "share/qt/metatypes/qt6grpc_metatypes.json",
+            "share/qt/metatypes/qt6grpcquick_metatypes.json",
+            "share/qt/metatypes/qt6protobuf_metatypes.json",
+            "share/qt/metatypes/qt6protobufqtcoretypes_metatypes.json",
+            "share/qt/metatypes/qt6protobufqtguitypes_metatypes.json",
+            "share/qt/metatypes/qt6protobufquick_metatypes.json",
+            "share/qt/metatypes/qt6protobufwellknowntypes_metatypes.json",
+            "share/qt/mkspecs/modules/qt_lib_grpc.pri",
+            "share/qt/mkspecs/modules/qt_lib_grpc_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_grpcquick.pri",
+            "share/qt/mkspecs/modules/qt_lib_grpcquick_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_protobuf.pri",
+            "share/qt/mkspecs/modules/qt_lib_protobuf_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_protobufqtcoretypes.pri",
+            "share/qt/mkspecs/modules/qt_lib_protobufqtcoretypes_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_protobufqtguitypes.pri",
+            "share/qt/mkspecs/modules/qt_lib_protobufqtguitypes_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_protobufquick.pri",
+            "share/qt/mkspecs/modules/qt_lib_protobufquick_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_protobufwellknowntypes.pri",
+            "share/qt/mkspecs/modules/qt_lib_protobufwellknowntypes_private.pri",
+            "share/qt/modules/Grpc.json",
+            "share/qt/modules/GrpcQuick.json",
+            "share/qt/modules/Protobuf.json",
+            "share/qt/modules/ProtobufQtCoreTypes.json",
+            "share/qt/modules/ProtobufQtGuiTypes.json",
+            "share/qt/modules/ProtobufQuick.json",
+            "share/qt/modules/ProtobufWellKnownTypes.json",
+            "share/qt/qml/QtGrpc/libgrpcquickplugin.dylib",
+            "share/qt/qml/QtGrpc/plugins.qmltypes",
+            "share/qt/qml/QtGrpc/qmldir",
+            "share/qt/qml/QtProtobuf/libprotobufquickplugin.dylib",
+            "share/qt/qml/QtProtobuf/plugins.qmltypes",
+            "share/qt/qml/QtProtobuf/qmldir",
+            "share/qt/sbom/qtgrpc-6.11.2.spdx"
+          ],
+          "installed_size": 6753720
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1309 @@
+{
+  "mysql": {
+    "formula": {
+      "name": "mysql",
+      "pkg_version": "26.7.0_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/m/mysql.rb",
+      "tap_git_path": "Formula/m/mysql.rb",
+      "tap_git_revision": "de6f29c91962af85b2c94b4f160e208672de22d0",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Open source relational database management system",
+      "license": "GPL-2.0-only WITH Universal-FOSS-exception-1.0",
+      "homepage": "https://github.com/mysql/mysql-server"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-05T17:54:32Z",
+      "tags": {
+        "tahoe": {
+          "filename": "mysql-26.7.0_1.tahoe.bottle.tar.gz",
+          "local_filename": "mysql--26.7.0_1.tahoe.bottle.tar.gz",
+          "sha256": "ce4853aecc4d4e25b8da31d010c85b21f9a69127da9ddb45479f2ecfaa582e79",
+          "tab": {
+            "homebrew_version": "6.0.22",
+            "changed_files": [
+              "bin/mysql_config",
+              "bin/mysqld_multi",
+              "bin/mysqld_safe",
+              "support-files/mysql.server",
+              "homebrew.mysql.service",
+              "lib/pkgconfig/mysqlclient.pc",
+              "sh.brew.mysql.plist",
+              "share/doc/mysql/INFO_BIN",
+              "support-files/mysql-log-rotate"
+            ],
+            "linkage_files": [
+              "bin/comp_err",
+              "bin/ibd2sdi",
+              "bin/innochecksum",
+              "bin/my_print_defaults",
+              "bin/myisam_ftdump",
+              "bin/myisamchk",
+              "bin/myisamlog",
+              "bin/myisampack",
+              "bin/mysql",
+              "bin/mysql_client_test",
+              "bin/mysql_config_editor",
+              "bin/mysql_keyring_encryption_test",
+              "bin/mysql_migrate_keyring",
+              "bin/mysql_secure_installation",
+              "bin/mysql_test_event_tracking",
+              "bin/mysql_tzinfo_to_sql",
+              "bin/mysqladmin",
+              "bin/mysqlbinlog",
+              "bin/mysqlcheck",
+              "bin/mysqld",
+              "bin/mysqldump",
+              "bin/mysqlimport",
+              "bin/mysqlrouter",
+              "bin/mysqlrouter_bootstrap",
+              "bin/mysqlrouter_keyring",
+              "bin/mysqlrouter_mrs_client",
+              "bin/mysqlrouter_passwd",
+              "bin/mysqlrouter_plugin_info",
+              "bin/mysqlshow",
+              "bin/mysqlslap",
+              "bin/mysqltest",
+              "bin/mysqlxtest",
+              "bin/perror",
+              "lib/libmysqlclient.24.dylib",
+              "lib/libmysqlharness.1.dylib",
+              "lib/libmysqlharness_stdx.1.dylib",
+              "lib/libmysqlharness_tls.1.dylib",
+              "lib/libmysqlrouter.1.dylib",
+              "lib/libmysqlrouter_cluster.1.dylib",
+              "lib/libmysqlrouter_connection_pool.1.dylib",
+              "lib/libmysqlrouter_destination_status.1.dylib",
+              "lib/libmysqlrouter_http.1.dylib",
+              "lib/libmysqlrouter_http_auth_backend.1.dylib",
+              "lib/libmysqlrouter_http_auth_realm.1.dylib",
+              "lib/libmysqlrouter_http_client.1.dylib",
+              "lib/libmysqlrouter_http_server.1.dylib",
+              "lib/libmysqlrouter_io_component.1.dylib",
+              "lib/libmysqlrouter_metadata_cache.1.dylib",
+              "lib/libmysqlrouter_mysql.1.dylib",
+              "lib/libmysqlrouter_mysqlclient.1.dylib",
+              "lib/libmysqlrouter_mysqlxclient.1.dylib",
+              "lib/libmysqlrouter_mysqlxmessages.1.dylib",
+              "lib/libmysqlrouter_routing.1.dylib",
+              "lib/libmysqlrouter_routing_connections.1.dylib",
+              "lib/libmysqlrouter_routing_guidelines.1.dylib",
+              "lib/libmysqlrouter_utils.1.dylib",
+              "lib/mysqlrouter/connection_pool.so",
+              "lib/mysqlrouter/destination_status.so",
+              "lib/mysqlrouter/host_cache.so",
+              "lib/mysqlrouter/http_auth_backend.so",
+              "lib/mysqlrouter/http_auth_realm.so",
+              "lib/mysqlrouter/http_server.so",
+              "lib/mysqlrouter/io.so",
+              "lib/mysqlrouter/keepalive.so",
+              "lib/mysqlrouter/metadata_cache.so",
+              "lib/mysqlrouter/mysql_rest_service.so",
+              "lib/mysqlrouter/rest_api.so",
+              "lib/mysqlrouter/rest_connection_pool.so",
+              "lib/mysqlrouter/rest_host_cache.so",
+              "lib/mysqlrouter/rest_metadata_cache.so",
+              "lib/mysqlrouter/rest_router.so",
+              "lib/mysqlrouter/rest_routing.so",
+              "lib/mysqlrouter/router_openssl.so",
+              "lib/mysqlrouter/router_protobuf.so",
+              "lib/mysqlrouter/routing.so",
+              "lib/plugin/adt_null.so",
+              "lib/plugin/auth.so",
+              "lib/plugin/auth_test_plugin.so",
+              "lib/plugin/component_classic_hashing.so",
+              "lib/plugin/component_keyring_file.so",
+              "lib/plugin/component_test_component_deinit.so",
+              "lib/plugin/conflicting_variables.so",
+              "lib/plugin/connection_control.so",
+              "lib/plugin/ddl_rewriter.so",
+              "lib/plugin/group_replication.so",
+              "lib/plugin/ha_example.so",
+              "lib/plugin/ha_mock.so",
+              "lib/plugin/keyring_udf.so",
+              "lib/plugin/libdaemon_example.so",
+              "lib/plugin/libtest_framework.so",
+              "lib/plugin/libtest_services.so",
+              "lib/plugin/libtest_services_threaded.so",
+              "lib/plugin/libtest_session_attach.so",
+              "lib/plugin/libtest_session_detach.so",
+              "lib/plugin/libtest_session_in_thd.so",
+              "lib/plugin/libtest_session_info.so",
+              "lib/plugin/libtest_sql_2_sessions.so",
+              "lib/plugin/libtest_sql_all_col_types.so",
+              "lib/plugin/libtest_sql_cmds_1.so",
+              "lib/plugin/libtest_sql_commit.so",
+              "lib/plugin/libtest_sql_complex.so",
+              "lib/plugin/libtest_sql_errors.so",
+              "lib/plugin/libtest_sql_lock.so",
+              "lib/plugin/libtest_sql_processlist.so",
+              "lib/plugin/libtest_sql_replication.so",
+              "lib/plugin/libtest_sql_reset_connection.so",
+              "lib/plugin/libtest_sql_shutdown.so",
+              "lib/plugin/libtest_sql_sleep_is_connected.so",
+              "lib/plugin/libtest_sql_sqlmode.so",
+              "lib/plugin/libtest_sql_stmt.so",
+              "lib/plugin/libtest_sql_stored_procedures_functions.so",
+              "lib/plugin/libtest_sql_views_triggers.so",
+              "lib/plugin/libtest_x_sessions_deinit.so",
+              "lib/plugin/libtest_x_sessions_init.so",
+              "lib/plugin/locking_service.so",
+              "lib/plugin/mypluglib.so",
+              "lib/plugin/mysql_clone.so",
+              "lib/plugin/mysql_no_login.so",
+              "lib/plugin/pfs_example_plugin_employee.so",
+              "lib/plugin/qa_auth_client.so",
+              "lib/plugin/qa_auth_interface.so",
+              "lib/plugin/qa_auth_server.so",
+              "lib/plugin/replication_observers_example_plugin.so",
+              "lib/plugin/rewrite_example.so",
+              "lib/plugin/rewriter.so",
+              "lib/plugin/semisync_replica.so",
+              "lib/plugin/semisync_source.so",
+              "lib/plugin/test_security_context.so",
+              "lib/plugin/test_services_command_services.so",
+              "lib/plugin/test_services_host_application_signal.so",
+              "lib/plugin/test_services_plugin_registry.so",
+              "lib/plugin/test_udf_services.so",
+              "lib/plugin/thread_pool.so",
+              "lib/plugin/udf_example.so",
+              "lib/plugin/validate_password.so"
+            ],
+            "binary_relocation_files": [
+              "bin/comp_err",
+              "bin/ibd2sdi",
+              "bin/innochecksum",
+              "bin/my_print_defaults",
+              "bin/myisam_ftdump",
+              "bin/myisamchk",
+              "bin/myisamlog",
+              "bin/myisampack",
+              "bin/mysql",
+              "bin/mysql_client_test",
+              "bin/mysql_config_editor",
+              "bin/mysql_keyring_encryption_test",
+              "bin/mysql_migrate_keyring",
+              "bin/mysql_secure_installation",
+              "bin/mysql_test_event_tracking",
+              "bin/mysql_tzinfo_to_sql",
+              "bin/mysqladmin",
+              "bin/mysqlbinlog",
+              "bin/mysqlcheck",
+              "bin/mysqld",
+              "bin/mysqldump",
+              "bin/mysqlimport",
+              "bin/mysqlshow",
+              "bin/mysqlslap",
+              "bin/mysqltest",
+              "bin/mysqlxtest",
+              "bin/perror",
+              "lib/libmysqlclient.24.dylib",
+              "lib/libmysqlclient.a",
+              "lib/libmysqlrouter_mysqlclient.1.dylib"
+            ],
+            "source_modified_time": 1783684975,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "abseil",
+                "version": "20260817.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "20260817.0",
+                "declared_directly": true,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "protobuf",
+                "version": "36.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "36.1",
+                "declared_directly": true,
+                "compatibility_version": 6
+              },
+              {
+                "full_name": "zlib-ng-compat",
+                "version": "2.3.3",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.3_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/mysqlbinlog",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/lib/plugin",
+              "offset": 3820683
+            },
+            {
+              "path": "bin/mysqlbinlog",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 3832317
+            },
+            {
+              "path": "bin/mysqlbinlog",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 3832362
+            },
+            {
+              "path": "bin/mysql_config_editor",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 3263536
+            },
+            {
+              "path": "bin/mysql_config_editor",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 3263581
+            },
+            {
+              "path": "bin/mysql_migrate_keyring",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 1139019
+            },
+            {
+              "path": "bin/mysql_migrate_keyring",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 1139064
+            },
+            {
+              "path": "bin/mysql_migrate_keyring",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/lib/plugin",
+              "offset": 1154630
+            },
+            {
+              "path": "bin/mysql_tzinfo_to_sql",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 3209305
+            },
+            {
+              "path": "bin/mysql_tzinfo_to_sql",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 3209350
+            },
+            {
+              "path": "bin/my_print_defaults",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 320197
+            },
+            {
+              "path": "bin/my_print_defaults",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 320242
+            },
+            {
+              "path": "bin/mysqld",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/lib/plugin",
+              "offset": 27013266
+            },
+            {
+              "path": "bin/mysqld",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 27045336
+            },
+            {
+              "path": "bin/mysqld",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 27045461
+            },
+            {
+              "path": "bin/mysqlcheck",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/lib/plugin",
+              "offset": 493293
+            },
+            {
+              "path": "bin/mysqlcheck",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 504893
+            },
+            {
+              "path": "bin/mysqlcheck",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 504938
+            },
+            {
+              "path": "bin/mysql_keyring_encryption_test",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 975224
+            },
+            {
+              "path": "bin/mysql_keyring_encryption_test",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 975269
+            },
+            {
+              "path": "bin/mysqlimport",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/lib/plugin",
+              "offset": 486141
+            },
+            {
+              "path": "bin/mysqlimport",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 497821
+            },
+            {
+              "path": "bin/mysqlimport",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 497866
+            },
+            {
+              "path": "bin/comp_err",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 337881
+            },
+            {
+              "path": "bin/comp_err",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 337926
+            },
+            {
+              "path": "bin/perror",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 929394
+            },
+            {
+              "path": "bin/perror",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 929439
+            },
+            {
+              "path": "bin/mysql_client_test",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/lib/plugin",
+              "offset": 3923606
+            },
+            {
+              "path": "bin/mysql_client_test",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 3935245
+            },
+            {
+              "path": "bin/mysql_client_test",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 3935290
+            },
+            {
+              "path": "bin/mysqlshow",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/lib/plugin",
+              "offset": 486667
+            },
+            {
+              "path": "bin/mysqlshow",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 498269
+            },
+            {
+              "path": "bin/mysqlshow",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 498314
+            },
+            {
+              "path": "bin/myisamchk",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 3534044
+            },
+            {
+              "path": "bin/myisamchk",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 3534089
+            },
+            {
+              "path": "bin/mysql_secure_installation",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/lib/plugin",
+              "offset": 482856
+            },
+            {
+              "path": "bin/mysql_secure_installation",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 494461
+            },
+            {
+              "path": "bin/mysql_secure_installation",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 494506
+            },
+            {
+              "path": "bin/mysql_test_event_tracking",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 354046
+            },
+            {
+              "path": "bin/mysql_test_event_tracking",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 354091
+            },
+            {
+              "path": "bin/mysql",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/lib/plugin",
+              "offset": 3490503
+            },
+            {
+              "path": "bin/mysql",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 3502061
+            },
+            {
+              "path": "bin/mysql",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 3502106
+            },
+            {
+              "path": "bin/myisampack",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 3464946
+            },
+            {
+              "path": "bin/myisampack",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 3464991
+            },
+            {
+              "path": "bin/myisamlog",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 497572
+            },
+            {
+              "path": "bin/myisamlog",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 497617
+            },
+            {
+              "path": "bin/ibd2sdi",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 3333201
+            },
+            {
+              "path": "bin/ibd2sdi",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 3333246
+            },
+            {
+              "path": "bin/myisam_ftdump",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 3442204
+            },
+            {
+              "path": "bin/myisam_ftdump",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 3442249
+            },
+            {
+              "path": "bin/innochecksum",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 3274417
+            },
+            {
+              "path": "bin/innochecksum",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 3274462
+            },
+            {
+              "path": "bin/mysqladmin",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/lib/plugin",
+              "offset": 493809
+            },
+            {
+              "path": "bin/mysqladmin",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 505405
+            },
+            {
+              "path": "bin/mysqladmin",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 505450
+            },
+            {
+              "path": "bin/mysqldump",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/lib/plugin",
+              "offset": 3501912
+            },
+            {
+              "path": "bin/mysqldump",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 3513581
+            },
+            {
+              "path": "bin/mysqldump",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 3513626
+            },
+            {
+              "path": "bin/mysqlxtest",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 1490969
+            },
+            {
+              "path": "bin/mysqlxtest",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 1491014
+            },
+            {
+              "path": "bin/mysqltest",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/lib/plugin",
+              "offset": 4193749
+            },
+            {
+              "path": "bin/mysqltest",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 4205373
+            },
+            {
+              "path": "bin/mysqltest",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 4205418
+            },
+            {
+              "path": "bin/mysqlslap",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/lib/plugin",
+              "offset": 499816
+            },
+            {
+              "path": "bin/mysqlslap",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 511501
+            },
+            {
+              "path": "bin/mysqlslap",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 511546
+            },
+            {
+              "path": "lib/libmysqlclient.24.dylib",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/lib/plugin",
+              "offset": 3402947
+            },
+            {
+              "path": "lib/libmysqlclient.24.dylib",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 3414541
+            },
+            {
+              "path": "lib/libmysqlclient.24.dylib",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 3414586
+            },
+            {
+              "path": "lib/libmysqlrouter_mysqlclient.1.dylib",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/lib/plugin",
+              "offset": 3397587
+            },
+            {
+              "path": "lib/libmysqlrouter_mysqlclient.1.dylib",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 3398605
+            },
+            {
+              "path": "lib/libmysqlrouter_mysqlclient.1.dylib",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 3398650
+            },
+            {
+              "path": "lib/libmysqlclient.a",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/lib/plugin",
+              "offset": 344523
+            },
+            {
+              "path": "lib/libmysqlclient.a",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1/share/mysql",
+              "offset": 7059648
+            },
+            {
+              "path": "lib/libmysqlclient.a",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 7059693
+            },
+            {
+              "path": "lib/libmysqlclient.a",
+              "string": "/usr/local/Cellar/mysql/26.7.0_1",
+              "offset": 7206183
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-protobuf-36.1",
+              "SPDXRef-Package-SPDXRef-zlib-ng-compat-2.3.3_1",
+              "SPDXRef-Package-SPDXRef-xz-5.8.3",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.10.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13fdc9f3d0d30296056e2685e0c989978a5ed213f34a0de174e19feb72833e73"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-36.1",
+                "name": "protobuf",
+                "versionInfo": "36.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/protobuf-36.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "2b049cb957ba23df6e1c01320f982a9e4610c36bb6cbb50e2d53b06c14f92db4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/protobuf@36.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zlib-ng-compat-2.3.3_1",
+                "name": "zlib-ng-compat",
+                "versionInfo": "2.3.3_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Zlib",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/zlib-ng-compat-2.3.3_1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f630225a8a817c49f4b6691d9e0b5f66ed157d2f15170223cef570d77fdbdf90"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zlib-ng-compat@2.3.3_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "name": "xz",
+                "versionInfo": "5.8.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/xz/blobs/sha256:df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mysql"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mysql"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mysql"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-36.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mysql"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zlib-ng-compat-2.3.3_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mysql"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mysql"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mysql"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-mysql-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/mysqlbinlog",
+            "bin/mysql_config_editor",
+            "bin/mysql_migrate_keyring",
+            "bin/mysql_tzinfo_to_sql",
+            "bin/my_print_defaults",
+            "bin/mysqlrouter_keyring",
+            "bin/mysqldumpslow",
+            "bin/mysqld",
+            "bin/mysqlrouter",
+            "bin/mysql_config",
+            "bin/mysqltest_safe_process",
+            "bin/mysqld_multi",
+            "bin/mysqlcheck",
+            "bin/mysql_keyring_encryption_test",
+            "bin/mysqlimport",
+            "bin/comp_err",
+            "bin/mysqlrouter_bootstrap",
+            "bin/perror",
+            "bin/mysql_client_test",
+            "bin/mysqlshow",
+            "bin/myisamchk",
+            "bin/mysql_secure_installation",
+            "bin/mysql_test_event_tracking",
+            "bin/mysql",
+            "bin/myisampack",
+            "bin/mysqlrouter_mrs_client",
+            "bin/myisamlog",
+            "bin/ibd2sdi",
+            "bin/myisam_ftdump",
+            "bin/innochecksum",
+            "bin/mysqlrouter_passwd",
+            "bin/mysqladmin",
+            "bin/mysqlrouter_plugin_info",
+            "bin/mysqldump",
+            "bin/mysql.server",
+            "bin/mysqlxtest",
+            "bin/mysqltest",
+            "bin/mysqld_safe",
+            "bin/mysqlslap"
+          ],
+          "all_files": [
+            ".bottle/etc/my.cnf",
+            ".brew/mysql.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "LICENSE-test",
+            "LICENSE.router",
+            "README",
+            "README-test",
+            "README.router",
+            "bin/comp_err",
+            "bin/ibd2sdi",
+            "bin/innochecksum",
+            "bin/my_print_defaults",
+            "bin/myisam_ftdump",
+            "bin/myisamchk",
+            "bin/myisamlog",
+            "bin/myisampack",
+            "bin/mysql",
+            "bin/mysql.server",
+            "bin/mysql_client_test",
+            "bin/mysql_config",
+            "bin/mysql_config_editor",
+            "bin/mysql_keyring_encryption_test",
+            "bin/mysql_migrate_keyring",
+            "bin/mysql_secure_installation",
+            "bin/mysql_test_event_tracking",
+            "bin/mysql_tzinfo_to_sql",
+            "bin/mysqladmin",
+            "bin/mysqlbinlog",
+            "bin/mysqlcheck",
+            "bin/mysqld",
+            "bin/mysqld_multi",
+            "bin/mysqld_safe",
+            "bin/mysqldump",
+            "bin/mysqldumpslow",
+            "bin/mysqlimport",
+            "bin/mysqlrouter",
+            "bin/mysqlrouter_bootstrap",
+            "bin/mysqlrouter_keyring",
+            "bin/mysqlrouter_mrs_client",
+            "bin/mysqlrouter_passwd",
+            "bin/mysqlrouter_plugin_info",
+            "bin/mysqlshow",
+            "bin/mysqlslap",
+            "bin/mysqltest",
+            "bin/mysqltest_safe_process",
+            "bin/mysqlxtest",
+            "bin/perror",
+            "docs/sample_mysqlrouter.conf",
+            "homebrew.mysql.service",
+            "include/mysql/errmsg.h",
+            "include/mysql/field_types.h",
+            "include/mysql/my_command.h",
+            "include/mysql/my_compress.h",
+            "include/mysql/my_list.h",
+            "include/mysql/mysql/client_plugin.h",
+            "include/mysql/mysql/plugin_auth_common.h",
+            "include/mysql/mysql/udf_registration_types.h",
+            "include/mysql/mysql.h",
+            "include/mysql/mysql_com.h",
+            "include/mysql/mysql_time.h",
+            "include/mysql/mysql_version.h",
+            "include/mysql/mysqld_error.h",
+            "include/mysql/mysqlx_ername.h",
+            "include/mysql/mysqlx_error.h",
+            "include/mysql/mysqlx_version.h",
+            "lib/libmysqlclient.24.dylib",
+            "lib/libmysqlclient.a",
+            "lib/libmysqlclient.dylib",
+            "lib/libmysqlharness.1.dylib",
+            "lib/libmysqlharness_stdx.1.dylib",
+            "lib/libmysqlharness_tls.1.dylib",
+            "lib/libmysqlrouter.1.dylib",
+            "lib/libmysqlrouter_cluster.1.dylib",
+            "lib/libmysqlrouter_connection_pool.1.dylib",
+            "lib/libmysqlrouter_destination_status.1.dylib",
+            "lib/libmysqlrouter_http.1.dylib",
+            "lib/libmysqlrouter_http_auth_backend.1.dylib",
+            "lib/libmysqlrouter_http_auth_realm.1.dylib",
+            "lib/libmysqlrouter_http_client.1.dylib",
+            "lib/libmysqlrouter_http_server.1.dylib",
+            "lib/libmysqlrouter_io_component.1.dylib",
+            "lib/libmysqlrouter_metadata_cache.1.dylib",
+            "lib/libmysqlrouter_mysql.1.dylib",
+            "lib/libmysqlrouter_mysqlclient.1.dylib",
+            "lib/libmysqlrouter_mysqlxclient.1.dylib",
+            "lib/libmysqlrouter_mysqlxmessages.1.dylib",
+            "lib/libmysqlrouter_routing.1.dylib",
+            "lib/libmysqlrouter_routing_connections.1.dylib",
+            "lib/libmysqlrouter_routing_guidelines.1.dylib",
+            "lib/libmysqlrouter_utils.1.dylib",
+            "lib/libmysqlservices.a",
+            "lib/mysqlrouter/connection_pool.so",
+            "lib/mysqlrouter/destination_status.so",
+            "lib/mysqlrouter/host_cache.so",
+            "lib/mysqlrouter/http_auth_backend.so",
+            "lib/mysqlrouter/http_auth_realm.so",
+            "lib/mysqlrouter/http_server.so",
+            "lib/mysqlrouter/io.so",
+            "lib/mysqlrouter/keepalive.so",
+            "lib/mysqlrouter/metadata_cache.so",
+            "lib/mysqlrouter/mysql_rest_service.so",
+            "lib/mysqlrouter/rest_api.so",
+            "lib/mysqlrouter/rest_connection_pool.so",
+            "lib/mysqlrouter/rest_host_cache.so",
+            "lib/mysqlrouter/rest_metadata_cache.so",
+            "lib/mysqlrouter/rest_router.so",
+            "lib/mysqlrouter/rest_routing.so",
+            "lib/mysqlrouter/router_openssl.so",
+            "lib/mysqlrouter/router_protobuf.so",
+            "lib/mysqlrouter/routing.so",
+            "lib/pkgconfig/mysqlclient.pc",
+            "lib/plugin/adt_null.so",
+            "lib/plugin/auth.so",
+            "lib/plugin/auth_test_plugin.so",
+            "lib/plugin/component_audit_api_message_emit.so",
+            "lib/plugin/component_classic_hashing.so",
+            "lib/plugin/component_connection_control.so",
+            "lib/plugin/component_example_component1.so",
+            "lib/plugin/component_example_component2.so",
+            "lib/plugin/component_example_component3.so",
+            "lib/plugin/component_group_replication_elect_prefers_most_updated.so",
+            "lib/plugin/component_group_replication_flow_control_stats.so",
+            "lib/plugin/component_group_replication_resource_manager.so",
+            "lib/plugin/component_keyring_file.so",
+            "lib/plugin/component_log_filter_dragnet.so",
+            "lib/plugin/component_log_sink_json.so",
+            "lib/plugin/component_log_sink_syseventlog.so",
+            "lib/plugin/component_log_sink_test.so",
+            "lib/plugin/component_mysqlbackup.so",
+            "lib/plugin/component_mysqlx_global_reset.so",
+            "lib/plugin/component_pfs_example.so",
+            "lib/plugin/component_pfs_example_component_population.so",
+            "lib/plugin/component_query_attributes.so",
+            "lib/plugin/component_reference_cache.so",
+            "lib/plugin/component_replication_applier_metrics.so",
+            "lib/plugin/component_test_audit_api_message.so",
+            "lib/plugin/component_test_backup_lock_service.so",
+            "lib/plugin/component_test_component_deinit.so",
+            "lib/plugin/component_test_component_deinit_no_deadlock.so",
+            "lib/plugin/component_test_component_init_fail.so",
+            "lib/plugin/component_test_component_init_then_register.so",
+            "lib/plugin/component_test_event_tracking_consumer.so",
+            "lib/plugin/component_test_event_tracking_consumer_a.so",
+            "lib/plugin/component_test_event_tracking_consumer_b.so",
+            "lib/plugin/component_test_event_tracking_consumer_c.so",
+            "lib/plugin/component_test_event_tracking_producer_a.so",
+            "lib/plugin/component_test_event_tracking_producer_b.so",
+            "lib/plugin/component_test_execute_prepared_statement.so",
+            "lib/plugin/component_test_execute_regular_statement.so",
+            "lib/plugin/component_test_host_application_signal.so",
+            "lib/plugin/component_test_mysql_command_services.so",
+            "lib/plugin/component_test_mysql_current_thread_reader.so",
+            "lib/plugin/component_test_mysql_file_service.so",
+            "lib/plugin/component_test_mysql_runtime_error.so",
+            "lib/plugin/component_test_mysql_signal_handler.so",
+            "lib/plugin/component_test_mysql_system_variable_set.so",
+            "lib/plugin/component_test_mysql_thd_store_service.so",
+            "lib/plugin/component_test_pfs_notification.so",
+            "lib/plugin/component_test_pfs_resource_group.so",
+            "lib/plugin/component_test_sensitive_system_variables.so",
+            "lib/plugin/component_test_server_telemetry_logs_client.so",
+            "lib/plugin/component_test_server_telemetry_logs_export.so",
+            "lib/plugin/component_test_server_telemetry_metrics.so",
+            "lib/plugin/component_test_server_telemetry_traces.so",
+            "lib/plugin/component_test_session_var_service.so",
+            "lib/plugin/component_test_status_var_reader.so",
+            "lib/plugin/component_test_status_var_service.so",
+            "lib/plugin/component_test_status_var_service_int.so",
+            "lib/plugin/component_test_status_var_service_reg_only.so",
+            "lib/plugin/component_test_status_var_service_str.so",
+            "lib/plugin/component_test_status_var_service_unreg_only.so",
+            "lib/plugin/component_test_string_service.so",
+            "lib/plugin/component_test_string_service_charset.so",
+            "lib/plugin/component_test_string_service_long.so",
+            "lib/plugin/component_test_sys_var_service.so",
+            "lib/plugin/component_test_sys_var_service_int.so",
+            "lib/plugin/component_test_sys_var_service_same.so",
+            "lib/plugin/component_test_sys_var_service_str.so",
+            "lib/plugin/component_test_system_variable_source.so",
+            "lib/plugin/component_test_table_access.so",
+            "lib/plugin/component_test_telemetry_resource_provider.so",
+            "lib/plugin/component_test_telemetry_secret_provider.so",
+            "lib/plugin/component_test_udf_aggregate.so",
+            "lib/plugin/component_test_udf_registration.so",
+            "lib/plugin/component_test_udf_services.so",
+            "lib/plugin/component_udf_reg_3_func.so",
+            "lib/plugin/component_udf_reg_avg_func.so",
+            "lib/plugin/component_udf_reg_int_func.so",
+            "lib/plugin/component_udf_reg_int_same_func.so",
+            "lib/plugin/component_udf_reg_only_3_func.so",
+            "lib/plugin/component_udf_reg_real_func.so",
+            "lib/plugin/component_udf_unreg_3_func.so",
+            "lib/plugin/component_udf_unreg_int_func.so",
+            "lib/plugin/component_udf_unreg_real_func.so",
+            "lib/plugin/component_validate_password.so",
+            "lib/plugin/conflicting_variables.so",
+            "lib/plugin/connection_control.so",
+            "lib/plugin/daemon_example.ini",
+            "lib/plugin/ddl_rewriter.so",
+            "lib/plugin/group_replication.so",
+            "lib/plugin/ha_example.so",
+            "lib/plugin/ha_mock.so",
+            "lib/plugin/keyring_udf.so",
+            "lib/plugin/libdaemon_example.so",
+            "lib/plugin/libtest_framework.so",
+            "lib/plugin/libtest_services.so",
+            "lib/plugin/libtest_services_threaded.so",
+            "lib/plugin/libtest_session_attach.so",
+            "lib/plugin/libtest_session_detach.so",
+            "lib/plugin/libtest_session_in_thd.so",
+            "lib/plugin/libtest_session_info.so",
+            "lib/plugin/libtest_sql_2_sessions.so",
+            "lib/plugin/libtest_sql_all_col_types.so",
+            "lib/plugin/libtest_sql_cmds_1.so",
+            "lib/plugin/libtest_sql_commit.so",
+            "lib/plugin/libtest_sql_complex.so",
+            "lib/plugin/libtest_sql_errors.so",
+            "lib/plugin/libtest_sql_lock.so",
+            "lib/plugin/libtest_sql_processlist.so",
+            "lib/plugin/libtest_sql_replication.so",
+            "lib/plugin/libtest_sql_reset_connection.so",
+            "lib/plugin/libtest_sql_shutdown.so",
+            "lib/plugin/libtest_sql_sleep_is_connected.so",
+            "lib/plugin/libtest_sql_sqlmode.so",
+            "lib/plugin/libtest_sql_stmt.so",
+            "lib/plugin/libtest_sql_stored_procedures_functions.so",
+            "lib/plugin/libtest_sql_views_triggers.so",
+            "lib/plugin/libtest_x_sessions_deinit.so",
+            "lib/plugin/libtest_x_sessions_init.so",
+            "lib/plugin/locking_service.so",
+            "lib/plugin/mypluglib.so",
+            "lib/plugin/mysql_clone.so",
+            "lib/plugin/mysql_no_login.so",
+            "lib/plugin/pfs_example_plugin_employee.so",
+            "lib/plugin/qa_auth_client.so",
+            "lib/plugin/qa_auth_interface.so",
+            "lib/plugin/qa_auth_server.so",
+            "lib/plugin/replication_observers_example_plugin.so",
+            "lib/plugin/rewrite_example.so",
+            "lib/plugin/rewriter.so",
+            "lib/plugin/semisync_replica.so",
+            "lib/plugin/semisync_source.so",
+            "lib/plugin/test_security_context.so",
+            "lib/plugin/test_services_command_services.so",
+            "lib/plugin/test_services_host_application_signal.so",
+            "lib/plugin/test_services_plugin_registry.so",
+            "lib/plugin/test_udf_services.so",
+            "lib/plugin/thread_pool.so",
+            "lib/plugin/udf_example.so",
+            "lib/plugin/validate_password.so",
+            "mysqlrouter-log-rotate",
+            "sbom.spdx.json",
+            "sh.brew.mysql.plist",
+            "share/aclocal/mysql.m4",
+            "share/doc/mysql/INFO_BIN",
+            "share/doc/mysql/INFO_SRC",
+            "share/man/man1/comp_err.1",
+            "share/man/man1/ibd2sdi.1",
+            "share/man/man1/innochecksum.1",
+            "share/man/man1/my_print_defaults.1",
+            "share/man/man1/myisam_ftdump.1",
+            "share/man/man1/myisamchk.1",
+            "share/man/man1/myisamlog.1",
+            "share/man/man1/myisampack.1",
+            "share/man/man1/mysql.1",
+            "share/man/man1/mysql.server.1",
+            "share/man/man1/mysql_config.1",
+            "share/man/man1/mysql_config_editor.1",
+            "share/man/man1/mysql_secure_installation.1",
+            "share/man/man1/mysql_tzinfo_to_sql.1",
+            "share/man/man1/mysqladmin.1",
+            "share/man/man1/mysqlbinlog.1",
+            "share/man/man1/mysqlcheck.1",
+            "share/man/man1/mysqld_multi.1",
+            "share/man/man1/mysqld_safe.1",
+            "share/man/man1/mysqldump.1",
+            "share/man/man1/mysqldumpslow.1",
+            "share/man/man1/mysqlimport.1",
+            "share/man/man1/mysqlman.1",
+            "share/man/man1/mysqlrouter.1",
+            "share/man/man1/mysqlrouter_passwd.1",
+            "share/man/man1/mysqlrouter_plugin_info.1",
+            "share/man/man1/mysqlshow.1",
+            "share/man/man1/mysqlslap.1",
+            "share/man/man1/perror.1",
+            "share/man/man8/mysqld.8",
+            "share/mysql/bulgarian/errmsg.sys",
+            "share/mysql/charsets/Index.xml",
+            "share/mysql/charsets/README",
+            "share/mysql/charsets/armscii8.xml",
+            "share/mysql/charsets/ascii.xml",
+            "share/mysql/charsets/cp1250.xml",
+            "share/mysql/charsets/cp1251.xml",
+            "share/mysql/charsets/cp1256.xml",
+            "share/mysql/charsets/cp1257.xml",
+            "share/mysql/charsets/cp850.xml",
+            "share/mysql/charsets/cp852.xml",
+            "share/mysql/charsets/cp866.xml",
+            "share/mysql/charsets/dec8.xml",
+            "share/mysql/charsets/geostd8.xml",
+            "share/mysql/charsets/greek.xml",
+            "share/mysql/charsets/hebrew.xml",
+            "share/mysql/charsets/hp8.xml",
+            "share/mysql/charsets/keybcs2.xml",
+            "share/mysql/charsets/koi8r.xml",
+            "share/mysql/charsets/koi8u.xml",
+            "share/mysql/charsets/latin1.xml",
+            "share/mysql/charsets/latin2.xml",
+            "share/mysql/charsets/latin5.xml",
+            "share/mysql/charsets/latin7.xml",
+            "share/mysql/charsets/macce.xml",
+            "share/mysql/charsets/macroman.xml",
+            "share/mysql/charsets/swe7.xml",
+            "share/mysql/czech/errmsg.sys",
+            "share/mysql/danish/errmsg.sys",
+            "share/mysql/dictionary.txt",
+            "share/mysql/dutch/errmsg.sys",
+            "share/mysql/english/errmsg.sys",
+            "share/mysql/estonian/errmsg.sys",
+            "share/mysql/french/errmsg.sys",
+            "share/mysql/german/errmsg.sys",
+            "share/mysql/greek/errmsg.sys",
+            "share/mysql/hungarian/errmsg.sys",
+            "share/mysql/install_rewriter.sql",
+            "share/mysql/italian/errmsg.sys",
+            "share/mysql/japanese/errmsg.sys",
+            "share/mysql/korean/errmsg.sys",
+            "share/mysql/messages_to_clients.txt",
+            "share/mysql/messages_to_error_log.txt",
+            "share/mysql/norwegian/errmsg.sys",
+            "share/mysql/norwegian-ny/errmsg.sys",
+            "share/mysql/polish/errmsg.sys",
+            "share/mysql/portuguese/errmsg.sys",
+            "share/mysql/romanian/errmsg.sys",
+            "share/mysql/russian/errmsg.sys",
+            "share/mysql/serbian/errmsg.sys",
+            "share/mysql/slovak/errmsg.sys",
+            "share/mysql/spanish/errmsg.sys",
+            "share/mysql/swedish/errmsg.sys",
+            "share/mysql/ukrainian/errmsg.sys",
+            "share/mysql/uninstall_rewriter.sql",
+            "support-files/mysql-log-rotate",
+            "support-files/mysql.server",
+            "support-files/mysqld_multi.server"
+          ],
+          "installed_size": 304197345
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,886 @@
+{
+  "qt5compat": {
+    "formula": {
+      "name": "qt5compat",
+      "pkg_version": "6.11.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qt5compat.rb",
+      "tap_git_path": "Formula/q/qt5compat.rb",
+      "tap_git_revision": "de6f29c91962af85b2c94b4f160e208672de22d0",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Qt 5 Core APIs that were removed in Qt 6",
+      "license": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-2-Clause AND BSD-3-Clause",
+      "homepage": "https://www.qt.io/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-05T18:03:04Z",
+      "tags": {
+        "tahoe": {
+          "filename": "qt5compat-6.11.2.tahoe.bottle.tar.gz",
+          "local_filename": "qt5compat--6.11.2.tahoe.bottle.tar.gz",
+          "sha256": "a543e63d16893e3cdca8efda059381a461164e10d86ca5cde8158ca93b0f1359",
+          "tab": {
+            "homebrew_version": "6.0.22",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/QtCore5Compat.framework/Versions/A/QtCore5Compat",
+              "share/qt/qml/Qt5Compat/GraphicalEffects/libqtgraphicaleffectsplugin.dylib",
+              "share/qt/qml/Qt5Compat/GraphicalEffects/private/libqtgraphicaleffectsprivateplugin.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1786498443,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "brotli",
+                "version": "1.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "dbus",
+                "version": "1.16.2",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.16.2_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "double-conversion",
+                "version": "3.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.4.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpng",
+                "version": "1.6.58",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.58",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "freetype",
+                "version": "2.14.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.14.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.88.3",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2.88.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fontconfig",
+                "version": "2.18.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.18.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xorgproto",
+                "version": "2025.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2025.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxau",
+                "version": "1.0.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxdmcp",
+                "version": "1.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxcb",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.17.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libx11",
+                "version": "1.8.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxext",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.7",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxrender",
+                "version": "0.9.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.9.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lzo",
+                "version": "2.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.10",
+                "declared_directly": false
+              },
+              {
+                "full_name": "pixman",
+                "version": "0.46.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "0.46.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "cairo",
+                "version": "1.18.4",
+                "revision": 0,
+                "bottle_rebuild": 2,
+                "pkg_version": "1.18.4",
+                "declared_directly": false
+              },
+              {
+                "full_name": "graphite2",
+                "version": "1.3.15",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.15",
+                "declared_directly": false
+              },
+              {
+                "full_name": "harfbuzz",
+                "version": "14.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "14.4.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "jpeg-turbo",
+                "version": "3.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libb2",
+                "version": "0.98.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.98.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "md4c",
+                "version": "0.5.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.5.3",
+                "declared_directly": false
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtbase",
+                "version": "6.11.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.11.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtsvg",
+                "version": "6.11.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.11.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtdeclarative",
+                "version": "6.11.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.11.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtshadertools",
+                "version": "6.11.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.11.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.3",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+              "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
+              "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+              "SPDXRef-Package-SPDXRef-qtshadertools-6.11.2",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "name": "jpeg-turbo",
+                "versionInfo": "3.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5440035b2803de1d43de3c29d0df3816a2546d56fd1e3759add6138aa450820a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13fdc9f3d0d30296056e2685e0c989978a5ed213f34a0de174e19feb72833e73"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.10.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "name": "xz",
+                "versionInfo": "5.8.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/xz/blobs/sha256:df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+                "name": "qtbase",
+                "versionInfo": "6.11.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND GFDL-1.3-no-invariants-only",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.11.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5eb65dad3cdb928010071405fc3d5139e760b32a0a57a79c5d309be6f36f0096"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtbase@6.11.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
+                "name": "qtsvg",
+                "versionInfo": "6.11.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtsvg-6.11.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "db3fad7f3fa66cbbea91b162609e7a97f21d4f3fa33d64b70ac55c0c24022fe9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtsvg@6.11.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+                "name": "qtdeclarative",
+                "versionInfo": "6.11.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-2-Clause AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtdeclarative-6.11.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "abd66f4f1b7624792385c9579280b902d257d5f85a6b77698ca60301dcb33b99"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtdeclarative@6.11.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtshadertools-6.11.2",
+                "name": "qtshadertools",
+                "versionInfo": "6.11.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND (Apache-2.0 AND MIT-Khronos-old) AND (BSD-3-Clause AND MIT-Khronos-old AND Apache-2.0 AND AML-glslang AND (GPL-3.0-or-later WITH Bison-exception-2.2)) AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtshadertools-6.11.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "08d767722e3134339fbc766f23c3ec2353a46f505341e0b9965aabe2a21f6d2e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtshadertools@6.11.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtshadertools-6.11.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-qt5compat-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/qt5compat.rb",
+            "INSTALL_RECEIPT.json",
+            "lib/QtCore5Compat.framework/QtCore5Compat",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/6.11.2/QtCore5Compat/private/qbinaryjson_p.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/6.11.2/QtCore5Compat/private/qbinaryjsonarray_p.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/6.11.2/QtCore5Compat/private/qbinaryjsonobject_p.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/6.11.2/QtCore5Compat/private/qbinaryjsonvalue_p.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/6.11.2/QtCore5Compat/private/qcodecmacros_p.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/6.11.2/QtCore5Compat/private/qicucodec_p.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/6.11.2/QtCore5Compat/private/qisciicodec_p.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/6.11.2/QtCore5Compat/private/qlatincodec_p.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/6.11.2/QtCore5Compat/private/qsimplecodec_p.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/6.11.2/QtCore5Compat/private/qtcore5compat-config_p.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/6.11.2/QtCore5Compat/private/qtextcodec_p.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/6.11.2/QtCore5Compat/private/qtsciicodec_p.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/6.11.2/QtCore5Compat/private/qutfcodec_p.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/6.11.2/QtCore5Compat/private/qxml_p.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QBinaryJson",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QLinkedList",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QLinkedListData",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QLinkedListIterator",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QLinkedListNode",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QMutableLinkedListIterator",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QRegExp",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QStringRef",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QTextCodec",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QTextDecoder",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QTextEncoder",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlAttributes",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlContentHandler",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlDTDHandler",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlDeclHandler",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlDefaultHandler",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlEntityResolver",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlErrorHandler",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlInputSource",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlLexicalHandler",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlLocator",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlNamespaceSupport",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlParseException",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlReader",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlSimpleReader",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QtCore5Compat",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QtCore5CompatDepends",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/QtCore5CompatVersion",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/qbinaryjson.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/qcore5global.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/qlinkedlist.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/qregexp.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/qstringref.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/qtcore5compat-config.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/qtcore5compatversion.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/qtextcodec.h",
+            "lib/QtCore5Compat.framework/Versions/A/Headers/qxml.h",
+            "lib/QtCore5Compat.framework/Versions/A/QtCore5Compat",
+            "lib/QtCore5Compat.framework/Versions/A/Resources/Info.plist",
+            "lib/QtCore5Compat.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtCore5Compat.framework/Versions/A/Resources/QtCore5Compat.prl",
+            "lib/cmake/Qt6/FindWrapIconv.cmake",
+            "lib/cmake/Qt6BuildInternals/StandaloneTests/Qt5CompatTestsConfig.cmake",
+            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatConfig.cmake",
+            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatConfigVersion.cmake",
+            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatDependencies.cmake",
+            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatTargets-release.cmake",
+            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatTargets.cmake",
+            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatVersionlessTargets.cmake",
+            "lib/cmake/Qt6Core5CompatPrivate/Qt6Core5CompatPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Core5CompatPrivate/Qt6Core5CompatPrivateConfig.cmake",
+            "lib/cmake/Qt6Core5CompatPrivate/Qt6Core5CompatPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6Core5CompatPrivate/Qt6Core5CompatPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Core5CompatPrivate/Qt6Core5CompatPrivateDependencies.cmake",
+            "lib/cmake/Qt6Core5CompatPrivate/Qt6Core5CompatPrivateTargets.cmake",
+            "lib/cmake/Qt6Core5CompatPrivate/Qt6Core5CompatPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Core5CompatPrivate/Qt6Core5CompatPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6Core5CompatPrivate/Qt6Core5CompatPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginConfigVersion.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginTargets-release.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateConfigVersion.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateTargets-release.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateTargetsPrecheck.cmake",
+            "lib/pkgconfig/Qt6Core5Compat.pc",
+            "sbom.spdx.json",
+            "share/qt/metatypes/qt6core5compat_metatypes.json",
+            "share/qt/mkspecs/modules/qt_lib_core5compat.pri",
+            "share/qt/mkspecs/modules/qt_lib_core5compat_private.pri",
+            "share/qt/modules/Core5Compat.json",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/Blend.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/BrightnessContrast.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/ColorOverlay.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/Colorize.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/ConicalGradient.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/Desaturate.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/DirectionalBlur.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/Displace.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/DropShadow.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/FastBlur.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/GammaAdjust.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/GaussianBlur.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/Glow.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/HueSaturation.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/InnerShadow.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/LevelAdjust.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/LinearGradient.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/MaskedBlur.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/OpacityMask.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/RadialBlur.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/RadialGradient.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/RectangularGlow.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/RecursiveBlur.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/ThresholdMask.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/ZoomBlur.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/libqtgraphicaleffectsplugin.dylib",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/private/DropShadowBase.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/private/FastGlow.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/private/FastInnerShadow.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/private/GaussianDirectionalBlur.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/private/GaussianGlow.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/private/GaussianInnerShadow.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/private/GaussianMaskedBlur.qml",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/private/libqtgraphicaleffectsprivateplugin.dylib",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/private/plugins.qmltypes",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/private/qmldir",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/qmldir",
+            "share/qt/qml/Qt5Compat/GraphicalEffects/qtgraphicaleffectsplugin.qmltypes",
+            "share/qt/sbom/qt5compat-6.11.2.spdx"
+          ],
+          "installed_size": 3312918
+        }
+      }
+    }
+  }
+}
