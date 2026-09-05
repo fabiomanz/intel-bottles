@@ -1,0 +1,107 @@
+{
+  "expat": {
+    "formula": {
+      "name": "expat",
+      "pkg_version": "2.8.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/e/expat.rb",
+      "tap_git_path": "Formula/e/expat.rb",
+      "tap_git_revision": "42d2ea3c15816d980168382014ad117783d7e1ba",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "XML 1.0 parser",
+      "license": "MIT",
+      "homepage": "https://libexpat.github.io/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-05T04:23:12Z",
+      "tags": {
+        "tahoe": {
+          "filename": "expat-2.8.4.tahoe.bottle.tar.gz",
+          "local_filename": "expat--2.8.4.tahoe.bottle.tar.gz",
+          "sha256": "66a4d5169b16b64ce698928b939972ea453211685bb963db7b8a38e842ef883a",
+          "tab": {
+            "homebrew_version": "6.0.21",
+            "changed_files": [
+              "lib/pkgconfig/expat.pc"
+            ],
+            "linkage_files": [
+              "bin/xmlwf",
+              "lib/libexpat.1.12.4.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788182954,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-expat-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/xmlwf"
+          ],
+          "all_files": [
+            ".brew/expat.rb",
+            "AUTHORS",
+            "COPYING",
+            "Changes",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/xmlwf",
+            "include/expat.h",
+            "include/expat_config.h",
+            "include/expat_external.h",
+            "lib/cmake/expat-2.8.4/expat-config-version.cmake",
+            "lib/cmake/expat-2.8.4/expat-config.cmake",
+            "lib/cmake/expat-2.8.4/expat-noconfig.cmake",
+            "lib/cmake/expat-2.8.4/expat.cmake",
+            "lib/libexpat.1.12.4.dylib",
+            "lib/libexpat.1.dylib",
+            "lib/libexpat.a",
+            "lib/libexpat.dylib",
+            "lib/pkgconfig/expat.pc",
+            "sbom.spdx.json",
+            "share/doc/expat/AUTHORS",
+            "share/doc/expat/changelog",
+            "share/man/man1/xmlwf.1"
+          ],
+          "installed_size": 735325
+        }
+      }
+    }
+  }
+}

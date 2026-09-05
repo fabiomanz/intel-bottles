@@ -1,0 +1,98 @@
+{
+  "zlib-ng-compat": {
+    "formula": {
+      "name": "zlib-ng-compat",
+      "pkg_version": "2.3.3_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/z/zlib-ng-compat.rb",
+      "tap_git_path": "Formula/z/zlib-ng-compat.rb",
+      "tap_git_revision": "42d2ea3c15816d980168382014ad117783d7e1ba",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Zlib replacement with optimizations for next generation systems",
+      "license": "Zlib",
+      "homepage": "https://github.com/zlib-ng/zlib-ng"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-05T05:11:24Z",
+      "tags": {
+        "tahoe": {
+          "filename": "zlib-ng-compat-2.3.3_1.tahoe.bottle.tar.gz",
+          "local_filename": "zlib-ng-compat--2.3.3_1.tahoe.bottle.tar.gz",
+          "sha256": "f630225a8a817c49f4b6691d9e0b5f66ed157d2f15170223cef570d77fdbdf90",
+          "tab": {
+            "homebrew_version": "6.0.21",
+            "changed_files": [
+              "lib/pkgconfig/zlib.pc"
+            ],
+            "linkage_files": [
+              "lib/libz.1.3.1.zlib-ng.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1770153003,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-zlib-ng-compat-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/zlib-ng-compat.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.md",
+            "README.md",
+            "include/zconf.h",
+            "include/zlib.h",
+            "include/zlib_name_mangling.h",
+            "lib/cmake/ZLIB/ZLIB-targets-release.cmake",
+            "lib/cmake/ZLIB/ZLIB-targets.cmake",
+            "lib/cmake/ZLIB/zlib-config-version.cmake",
+            "lib/cmake/ZLIB/zlib-config.cmake",
+            "lib/libz.1.3.1.zlib-ng.dylib",
+            "lib/libz.1.dylib",
+            "lib/libz.a",
+            "lib/libz.dylib",
+            "lib/pkgconfig/zlib.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 494424
+        }
+      }
+    }
+  }
+}

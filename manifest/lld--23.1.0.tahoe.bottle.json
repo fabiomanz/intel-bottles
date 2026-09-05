@@ -1,0 +1,267 @@
+{
+  "lld": {
+    "formula": {
+      "name": "lld",
+      "pkg_version": "23.1.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/l/lld.rb",
+      "tap_git_path": "Formula/l/lld.rb",
+      "tap_git_revision": "42d2ea3c15816d980168382014ad117783d7e1ba",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "LLVM Project Linker",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "homepage": "https://lld.llvm.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-05T05:17:34Z",
+      "tags": {
+        "tahoe": {
+          "filename": "lld-23.1.0.tahoe.bottle.tar.gz",
+          "local_filename": "lld--23.1.0.tahoe.bottle.tar.gz",
+          "sha256": "40ae94ee653f2c77e0c27a72acc314da502c9321b44a113c9901334e671cd084",
+          "tab": {
+            "homebrew_version": "6.0.21",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/lld",
+              "lib/liblldCOFF.23.1.dylib",
+              "lib/liblldCommon.23.1.dylib",
+              "lib/liblldELF.23.1.dylib",
+              "lib/liblldMachO.23.1.dylib",
+              "lib/liblldMinGW.23.1.dylib",
+              "lib/liblldWasm.23.1.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1787685321,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "z3",
+                "version": "5.1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.1.0",
+                "declared_directly": false,
+                "compatibility_version": 4
+              },
+              {
+                "full_name": "llvm",
+                "version": "23.1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "23.1.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.3",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.10.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "name": "xz",
+                "versionInfo": "5.8.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/xz/blobs/sha256:df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-lld"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-lld"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-lld"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-lld-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/lld",
+            "bin/ld.lld",
+            "bin/wasm-ld",
+            "bin/lld-link",
+            "bin/ld64.lld"
+          ],
+          "all_files": [
+            ".brew/lld.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.TXT",
+            "README.md",
+            "bin/ld.lld",
+            "bin/ld64.lld",
+            "bin/lld",
+            "bin/lld-link",
+            "bin/wasm-ld",
+            "include/lld/Common/Args.h",
+            "include/lld/Common/Arrays.h",
+            "include/lld/Common/BPSectionOrdererBase.h",
+            "include/lld/Common/BPSectionOrdererBase.inc",
+            "include/lld/Common/CommonLinkerContext.h",
+            "include/lld/Common/DWARF.h",
+            "include/lld/Common/Driver.h",
+            "include/lld/Common/ErrorHandler.h",
+            "include/lld/Common/Filesystem.h",
+            "include/lld/Common/LLVM.h",
+            "include/lld/Common/Memory.h",
+            "include/lld/Common/Reproduce.h",
+            "include/lld/Common/Strings.h",
+            "include/lld/Common/TargetOptionsCommandFlags.h",
+            "include/lld/Common/Timer.h",
+            "include/lld/Common/Utils.h",
+            "include/lld/Common/Version.h",
+            "lib/cmake/lld/LLDConfig.cmake",
+            "lib/cmake/lld/LLDConfigVersion.cmake",
+            "lib/cmake/lld/LLDTargets-release.cmake",
+            "lib/cmake/lld/LLDTargets.cmake",
+            "lib/liblldCOFF.23.1.dylib",
+            "lib/liblldCOFF.dylib",
+            "lib/liblldCommon.23.1.dylib",
+            "lib/liblldCommon.dylib",
+            "lib/liblldELF.23.1.dylib",
+            "lib/liblldELF.dylib",
+            "lib/liblldMachO.23.1.dylib",
+            "lib/liblldMachO.dylib",
+            "lib/liblldMinGW.23.1.dylib",
+            "lib/liblldMinGW.dylib",
+            "lib/liblldWasm.23.1.dylib",
+            "lib/liblldWasm.dylib",
+            "sbom.spdx.json",
+            "share/man/man1/ld.lld.1.gz"
+          ],
+          "installed_size": 6124220
+        }
+      }
+    }
+  }
+}

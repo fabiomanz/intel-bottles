@@ -1,0 +1,118 @@
+{
+  "discount": {
+    "formula": {
+      "name": "discount",
+      "pkg_version": "3.0.2.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/discount.rb",
+      "tap_git_path": "Formula/d/discount.rb",
+      "tap_git_revision": "42d2ea3c15816d980168382014ad117783d7e1ba",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "C implementation of Markdown",
+      "license": "BSD-3-Clause",
+      "homepage": "https://www.pell.portland.or.us/~orc/Code/discount/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-05T04:22:55Z",
+      "tags": {
+        "tahoe": {
+          "filename": "discount-3.0.2.0.tahoe.bottle.tar.gz",
+          "local_filename": "discount--3.0.2.0.tahoe.bottle.tar.gz",
+          "sha256": "b4e101e9ba573bc4755b22012402429eb77e8795cf6098909a478d398a971b8c",
+          "tab": {
+            "homebrew_version": "6.0.21",
+            "changed_files": [
+              "lib/pkgconfig/libmarkdown.pc"
+            ],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1787974446,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-discount-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/mkd2html",
+            "bin/markdown",
+            "bin/makepage",
+            "bin/theme"
+          ],
+          "all_files": [
+            ".brew/discount.rb",
+            "COPYRIGHT",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "bin/makepage",
+            "bin/markdown",
+            "bin/mkd2html",
+            "bin/theme",
+            "include/mkdio.h",
+            "lib/libmarkdown.a",
+            "lib/pkgconfig/libmarkdown.pc",
+            "sbom.spdx.json",
+            "share/man/man1/makepage.1",
+            "share/man/man1/markdown.1",
+            "share/man/man1/mkd2html.1",
+            "share/man/man1/theme.1",
+            "share/man/man3/markdown.3",
+            "share/man/man3/mkd-callbacks.3",
+            "share/man/man3/mkd-functions.3",
+            "share/man/man3/mkd-line.3",
+            "share/man/man3/mkd_cleanup.3",
+            "share/man/man3/mkd_compile.3",
+            "share/man/man3/mkd_css.3",
+            "share/man/man3/mkd_doc_author.3",
+            "share/man/man3/mkd_doc_date.3",
+            "share/man/man3/mkd_doc_title.3",
+            "share/man/man3/mkd_generatecss.3",
+            "share/man/man3/mkd_generatehtml.3",
+            "share/man/man3/mkd_generateline.3",
+            "share/man/man3/mkd_in.3",
+            "share/man/man3/mkd_line.3",
+            "share/man/man3/mkd_string.3",
+            "share/man/man7/markdown.7",
+            "share/man/man7/mkd-extensions.7"
+          ],
+          "installed_size": 441563
+        }
+      }
+    }
+  }
+}

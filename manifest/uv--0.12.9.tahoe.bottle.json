@@ -1,0 +1,97 @@
+{
+  "uv": {
+    "formula": {
+      "name": "uv",
+      "pkg_version": "0.12.9",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/u/uv.rb",
+      "tap_git_path": "Formula/u/uv.rb",
+      "tap_git_revision": "42d2ea3c15816d980168382014ad117783d7e1ba",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Extremely fast Python package installer and resolver, written in Rust",
+      "license": "Apache-2.0 OR MIT",
+      "homepage": "https://docs.astral.sh/uv/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-05T05:42:55Z",
+      "tags": {
+        "tahoe": {
+          "filename": "uv-0.12.9.tahoe.bottle.tar.gz",
+          "local_filename": "uv--0.12.9.tahoe.bottle.tar.gz",
+          "sha256": "26c2d3f02e2465eb20f5388600df1fcd74059153fa4491b83d50d6dc7140032c",
+          "tab": {
+            "homebrew_version": "6.0.21",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788297390,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-uv-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/uvx",
+            "bin/uv"
+          ],
+          "all_files": [
+            ".brew/uv.rb",
+            ".crates.toml",
+            ".crates2.json",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE-APACHE",
+            "LICENSE-MIT",
+            "README.md",
+            "bin/uv",
+            "bin/uvx",
+            "etc/bash_completion.d/uv",
+            "etc/bash_completion.d/uvx",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/uv.fish",
+            "share/fish/vendor_completions.d/uvx.fish",
+            "share/zsh/site-functions/_uv",
+            "share/zsh/site-functions/_uvx"
+          ],
+          "installed_size": 51420760
+        }
+      }
+    }
+  }
+}

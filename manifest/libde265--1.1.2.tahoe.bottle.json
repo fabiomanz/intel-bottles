@@ -1,0 +1,99 @@
+{
+  "libde265": {
+    "formula": {
+      "name": "libde265",
+      "pkg_version": "1.1.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libde265.rb",
+      "tap_git_path": "Formula/lib/libde265.rb",
+      "tap_git_revision": "42d2ea3c15816d980168382014ad117783d7e1ba",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Open h.265 video codec implementation",
+      "license": "LGPL-3.0-or-later",
+      "homepage": "https://github.com/strukturag/libde265"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-05T04:33:01Z",
+      "tags": {
+        "tahoe": {
+          "filename": "libde265-1.1.2.tahoe.bottle.tar.gz",
+          "local_filename": "libde265--1.1.2.tahoe.bottle.tar.gz",
+          "sha256": "3e411fc2e3f36c7d8e2a8d0a900544e720b0760ac8f79d20638ac422ac2f5d9f",
+          "tab": {
+            "homebrew_version": "6.0.21",
+            "changed_files": [
+              "lib/pkgconfig/libde265.pc"
+            ],
+            "linkage_files": [
+              "lib/libde265.0.2.2.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788391114,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libde265-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libde265.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "README.md",
+            "include/libde265/de265-version.h",
+            "include/libde265/de265.h",
+            "lib/cmake/libde265/libde265-config-release.cmake",
+            "lib/cmake/libde265/libde265-config-version.cmake",
+            "lib/cmake/libde265/libde265-config.cmake",
+            "lib/libde265.0.2.2.dylib",
+            "lib/libde265.0.dylib",
+            "lib/libde265.dylib",
+            "lib/pkgconfig/libde265.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 491895
+        }
+      }
+    }
+  }
+}
