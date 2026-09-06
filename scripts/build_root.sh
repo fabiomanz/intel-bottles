@@ -29,6 +29,27 @@ OUT_DIR="${BOTTLE_OUT_DIR:-$PWD/bottles}"
 mkdir -p "$OUT_DIR"
 
 # Formula names never contain whitespace, so word splitting is safe and keeps this bash-3 clean.
+# Hard wall-clock limit for a single fetch attempt. The base macOS system has no
+# timeout(1), so use coreutils' when present and a watchdog otherwise.
+FETCH_LIMIT_SECONDS="${FETCH_LIMIT_SECONDS:-1200}"
+
+fetch_with_limit() {
+  local limit="$1" formula="$2"
+  if command -v gtimeout >/dev/null 2>&1; then
+    gtimeout "$limit" brew fetch --build-bottle --retry "$formula"
+  elif command -v timeout >/dev/null 2>&1; then
+    timeout "$limit" brew fetch --build-bottle --retry "$formula"
+  else
+    brew fetch --build-bottle --retry "$formula" &
+    local pid=$! rc=0
+    ( sleep "$limit"; kill -TERM "$pid" 2>/dev/null ) >/dev/null 2>&1 &
+    local watchdog=$!
+    wait "$pid" || rc=$?
+    kill -TERM "$watchdog" 2>/dev/null || true
+    return "$rc"
+  fi
+}
+
 CHAIN="$(brew deps -n --include-build "$ROOT"; echo "$ROOT")"
 TODO="$(python3 "$SCRIPT_DIR/filter_unbottled.py" $CHAIN)"
 
@@ -53,18 +74,22 @@ for formula in $TODO; do
     echo "    already installed; removing so it can be rebuilt for bottling"
     brew uninstall --ignore-dependencies --force "$formula"
   fi
-  # Download sources first, with backoff. Upstream mirrors are flaky -- gmp's primary
-  # (ftpmirror.gnu.org) and its mirror (gmplib.org) can both be unreachable for minutes at
-  # a time. Fetching separately means a network blip costs seconds instead of discarding a
-  # build that may already be hours in, and a successful fetch is cached so the install
-  # below does not re-download.
+  # Download sources first, under a hard wall-clock limit.
+  #
+  # This loop previously had no time bound and nearly destroyed a whole run: gmp's
+  # mirrors stalled, each `brew fetch --retry` sat for ~2.5 hours before failing, and
+  # four attempts burned 5+ hours. qemu then built fine in 15 minutes and was killed 3
+  # minutes later by timeout-minutes. A retry meant to protect long builds is worthless
+  # unless each attempt is bounded, so cap the attempt and try fewer times.
   fetched=0
   fetchlog="$(mktemp)"
-  for attempt in 1 2 3 4; do
-    if brew fetch --build-bottle --retry "$formula" 2>&1 | tee "$fetchlog"; then
+  for attempt in 1 2 3; do
+    if fetch_with_limit "$FETCH_LIMIT_SECONDS" "$formula" >"$fetchlog" 2>&1; then
+      cat "$fetchlog"
       fetched=1
       break
     fi
+    cat "$fetchlog"
 
     # Some formulae pull resources with tools the runner image does not ship -- netpbm
     # fetches its documentation over svn. Homebrew names exactly what is missing, so
@@ -76,11 +101,11 @@ for formula in $TODO; do
       continue
     fi
 
-    echo "    fetch attempt $attempt failed; backing off $((attempt * 30))s"
-    sleep $((attempt * 30))
+    echo "    fetch attempt $attempt failed or exceeded ${FETCH_LIMIT_SECONDS}s; backing off 30s"
+    sleep 30
   done
   if [ "$fetched" != 1 ]; then
-    echo "    could not download sources for $formula after 4 attempts" >&2
+    echo "    could not download sources for $formula" >&2
     exit 1
   fi
 
