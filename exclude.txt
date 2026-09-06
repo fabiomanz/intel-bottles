@@ -13,3 +13,8 @@ qtwebengine
 # -- nothing tests x86_64 since Homebrew moved it to Tier 3. Remove this line once the
 # formula or assimp is fixed.
 qtquick3d
+
+# qt3d hits the same assimp incompatibility directly rather than through qtquick3d
+# (QT_FEATURE_qt3d_assimp=ON, TEST_assimp=FALSE). The formula even applies an
+# assimp-6.patch, which does not fix the x86_64 configure. Remove when upstream does.
+qt3d
