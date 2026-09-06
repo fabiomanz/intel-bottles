@@ -17,12 +17,21 @@ set -euo pipefail
 REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 CORE_REPO="$(brew --repo homebrew/core)"
 
-echo "==> resetting $CORE_REPO onto upstream"
+echo "==> rebuilding $CORE_REPO from upstream"
 cd "$CORE_REPO"
 git remote get-url upstream >/dev/null 2>&1 \
   || git remote add upstream https://github.com/Homebrew/homebrew-core.git
 git fetch --quiet upstream main
-git reset --hard upstream/main
+git fetch --quiet origin main
+
+# Keep the fork's history linear. Resetting hard onto upstream and force-pushing rewrote
+# history every night, and a consumer running `brew update` could then no longer
+# fast-forward -- it left git conflict markers inside formula files, which made brew fail
+# with a Ruby syntax error. Instead: start from the fork's current main, swap the working
+# tree to upstream's content with read-tree, and commit that as an ordinary child. Same
+# resulting content, but every push fast-forwards.
+git checkout -q -B main origin/main
+git read-tree --reset -u upstream/main
 
 echo "==> planning"
 cd "$REPO_DIR"
@@ -51,10 +60,16 @@ else
 fi
 
 cd "$CORE_REPO"
-if [ -n "$(git status --porcelain)" ]; then
-  git add -A
-  git commit -m "Re-apply Intel bottle blocks ($(date -u +%Y-%m-%d))"
+git add -A
+if git diff --cached --quiet; then
+  echo "==> fork already matches upstream plus our blocks, nothing to push"
+  exit 0
 fi
+git commit -q -m "Upstream sync + Intel bottle blocks ($(date -u +%Y-%m-%d))"
 
-echo "==> force-pushing the rebuilt fork"
-git push --force origin HEAD:main
+echo "==> pushing (fast-forward)"
+if ! git push origin main; then
+  echo "push was rejected -- the fork moved unexpectedly. Refusing to force." >&2
+  echo "Inspect $CORE_REPO before retrying." >&2
+  exit 1
+fi

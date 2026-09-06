@@ -59,11 +59,23 @@ for formula in $TODO; do
   # build that may already be hours in, and a successful fetch is cached so the install
   # below does not re-download.
   fetched=0
+  fetchlog="$(mktemp)"
   for attempt in 1 2 3 4; do
-    if brew fetch --build-bottle --retry "$formula"; then
+    if brew fetch --build-bottle --retry "$formula" 2>&1 | tee "$fetchlog"; then
       fetched=1
       break
     fi
+
+    # Some formulae pull resources with tools the runner image does not ship -- netpbm
+    # fetches its documentation over svn. Homebrew names exactly what is missing, so
+    # install it and retry immediately rather than backing off against a fixed problem.
+    missing="$(sed -n 's/.*You must: brew install \([A-Za-z0-9@._+-]*\).*/\1/p' "$fetchlog" | head -1)"
+    if [ -n "$missing" ]; then
+      echo "    fetch needs $missing, installing it and retrying"
+      brew install "$missing" || true
+      continue
+    fi
+
     echo "    fetch attempt $attempt failed; backing off $((attempt * 30))s"
     sleep $((attempt * 30))
   done
