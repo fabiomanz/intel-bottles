@@ -64,7 +64,11 @@ jobs:
       - name: Point Homebrew at the fork
         run: |
           brew tap homebrew/core 2>/dev/null || true
-          brew update
+          # Non-fatal. Steps run under `bash -e`, and a non-zero `brew update`
+          # killed qttasktree before build_root.sh ever ran -- 46 minutes spent
+          # without attempting a single build. A stale tap is far better than a
+          # lost job; the plan job already decided what needs building.
+          brew update || echo 'WARNING: brew update failed, continuing with the tap as-is'
           echo "core tap: $(brew --repo homebrew/core)"
           git -C "$(brew --repo homebrew/core)" remote -v
           echo "bottle tag: $(brew ruby -e 'puts Utils::Bottles.tag')"
@@ -105,7 +109,11 @@ jobs:
       - name: Point Homebrew at the fork
         run: |
           brew tap homebrew/core 2>/dev/null || true
-          brew update
+          # Non-fatal. Steps run under `bash -e`, and a non-zero `brew update`
+          # killed qttasktree before build_root.sh ever ran -- 46 minutes spent
+          # without attempting a single build. A stale tap is far better than a
+          # lost job; the plan job already decided what needs building.
+          brew update || echo 'WARNING: brew update failed, continuing with the tap as-is'
 
       - name: Authenticate the fork remote
         run: |

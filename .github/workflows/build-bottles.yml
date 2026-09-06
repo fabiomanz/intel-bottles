@@ -50,7 +50,11 @@ jobs:
       - name: Point Homebrew at the fork
         run: |
           brew tap homebrew/core 2>/dev/null || true
-          brew update
+          # Non-fatal. Steps run under `bash -e`, and a non-zero `brew update`
+          # killed qttasktree before build_root.sh ever ran -- 46 minutes spent
+          # without attempting a single build. A stale tap is far better than a
+          # lost job; the plan job already decided what needs building.
+          brew update || echo 'WARNING: brew update failed, continuing with the tap as-is'
 
       - name: Compute the build plan
         id: plan
