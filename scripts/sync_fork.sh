@@ -33,6 +33,17 @@ git fetch --quiet origin main
 git checkout -q -B main origin/main
 git read-tree --reset -u upstream/main
 
+# Pin .github to whatever the fork already has, so our commits never touch workflow
+# files. FORK_TOKEN deliberately has only contents:write, and GitHub refuses a push
+# where a PAT without `workflow` scope creates or updates .github/workflows/*. Before
+# this, upstream's own commits were fast-forwarded so the token never authored them;
+# read-tree makes us the author of the whole tree, which tripped the restriction. The
+# fork runs no workflows, so its .github content is irrelevant -- keeping it frozen is
+# preferable to granting the token power to rewrite workflows.
+git rm -r -q --cached .github >/dev/null 2>&1 || true
+rm -rf .github
+git checkout origin/main -- .github >/dev/null 2>&1 || true
+
 echo "==> planning"
 cd "$REPO_DIR"
 PLAN="$(python3 scripts/apply_manifest.py)"
