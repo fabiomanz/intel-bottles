@@ -18,3 +18,8 @@ qtquick3d
 # (QT_FEATURE_qt3d_assimp=ON, TEST_assimp=FALSE). The formula even applies an
 # assimp-6.patch, which does not fix the x86_64 configure. Remove when upstream does.
 qt3d
+
+# openssl@1.1 was retired from homebrew-core and can never be rebuilt. It is still
+# installed locally (and pinned), so the local planner resolves it while CI reports it
+# missing. Excluding keeps the two consistent.
+openssl@1.1
