@@ -84,12 +84,13 @@ for formula in $TODO; do
   fetched=0
   fetchlog="$(mktemp)"
   for attempt in 1 2 3; do
-    if fetch_with_limit "$FETCH_LIMIT_SECONDS" "$formula" >"$fetchlog" 2>&1; then
-      cat "$fetchlog"
+    # Stream to the console AND capture, so a long download shows progress instead of
+    # looking hung. Redirecting to a file alone made gcc sit silent for minutes with no
+    # indication it was doing anything. pipefail makes the fetch's exit status win here.
+    if fetch_with_limit "$FETCH_LIMIT_SECONDS" "$formula" 2>&1 | tee "$fetchlog"; then
       fetched=1
       break
     fi
-    cat "$fetchlog"
 
     # Some formulae pull resources with tools the runner image does not ship -- netpbm
     # fetches its documentation over svn. Homebrew names exactly what is missing, so
