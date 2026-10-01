@@ -63,6 +63,16 @@ echo "$TODO" | sed 's/^/      /'
 
 cd "$OUT_DIR"
 
+# `brew bottle` installs its Ruby gems from rubygems.org the first time it runs, with no
+# retry of its own. On 2026-10-01 socat and makensis both built fine and then failed right
+# there on a DNS blip, with the finished build thrown away. Fetch the gems before
+# spending any build time; non-fatal, since `brew bottle` would try again anyway.
+for attempt in 1 2 3; do
+  brew install-bundler-gems --add-groups=bottle && break
+  echo "    installing Homebrew's bottle gems failed (attempt $attempt); retrying in 30s"
+  sleep 30
+done
+
 for formula in $TODO; do
   echo "::group::build $formula"
   df -h / | tail -1
@@ -123,7 +133,17 @@ for formula in $TODO; do
     brew install --build-bottle --display-times "$formula"
   fi
 
-  brew bottle --json --no-rebuild --root-url "$BOTTLE_ROOT_URL" "$formula"
+  # Retried for the same reason: after a build that may have taken hours, a network
+  # failure while bottling must not decide the job.
+  for attempt in 1 2 3; do
+    brew bottle --json --no-rebuild --root-url "$BOTTLE_ROOT_URL" "$formula" && break
+    if [ "$attempt" -eq 3 ]; then
+      echo "    could not bottle $formula" >&2
+      exit 1
+    fi
+    echo "    bottling $formula failed (attempt $attempt); retrying in 30s"
+    sleep 30
+  done
   echo "::endgroup::"
 done
 
