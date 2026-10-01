@@ -84,6 +84,9 @@ done
 
 echo "==> $kept bottle(s) verified, $skipped skipped"
 
+# Held formulae were built at upstream's version, so judge them against that.
+"$SCRIPT_DIR/release_holds.sh"
+
 # The job downloads every stage's artifacts so it can pick up a stage whose own publish
 # never ran; drop whatever is already released or no longer matches the fork.
 python3 "$SCRIPT_DIR/drop_published.py" "$STAGING"
@@ -128,6 +131,8 @@ retry ensure_release
 echo "==> uploading $(ls ./*.bottle.tar.gz | wc -l | tr -d " ") asset(s)"
 retry gh release upload "$RELEASE_TAG" ./*.bottle.tar.gz --clobber -R "$BOTTLES_REPO"
 
+python3 "$SCRIPT_DIR/settle_holds.py" "$STAGING" "$CORE_REPO"
+
 cd "$CORE_REPO"
 if [ -n "$(git status --porcelain)" ]; then
   git add -A
@@ -146,3 +151,16 @@ if [ -n "$(git status --porcelain)" ]; then
 else
   echo "==> fork unchanged"
 fi
+
+# Point each JSON at the fork commit that now carries its formula and block. brew bottle
+# recorded the tap's HEAD at build time, and for a formula swapped in by release_holds.sh
+# that commit still holds the OLD version -- a later hold would restore the wrong file.
+python3 - "$STAGING" "$(git rev-parse HEAD)" <<'PY'
+import json, pathlib, sys
+staging, head = pathlib.Path(sys.argv[1]), sys.argv[2]
+for path in staging.glob("*.bottle.json"):
+    data = json.loads(path.read_text())
+    for payload in data.values():
+        payload["formula"]["tap_git_revision"] = head
+    path.write_text(json.dumps(data, indent=2) + "\n")
+PY

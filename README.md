@@ -61,7 +61,9 @@ via `HOMEBREW_CORE_GIT_REMOTE`. Unqualified `brew install node` then just works,
 | `scripts/drop_published.py` | Keeps a publish from re-releasing an earlier stage's bottles |
 | `scripts/record_manifest.py` | Records published bottles in `manifest/`, one entry per formula |
 | `scripts/apply_manifest.py` | Splits the manifest into still-valid vs stale |
-| `scripts/sync_fork.sh` | Rebuilds the fork as upstream + our blocks |
+| `scripts/sync_fork.sh` | Rebuilds the fork as upstream + our blocks; records holds in `.intel-bottles-holds` |
+| `scripts/release_holds.sh` | In CI, swaps held formulae for upstream's version so the new one gets built |
+| `scripts/settle_holds.py` | At publish, keeps the swaps that got a bottle and reverts the rest |
 | `manifest/` | `*.bottle.json` — the source of truth for re-applying blocks |
 
 ## Runner assignment

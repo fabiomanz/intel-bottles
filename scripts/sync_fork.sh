@@ -52,14 +52,24 @@ if [ -z "$PLAN" ]; then
   echo "nothing in the manifest to apply"
 else
   # Restores first: put held formulae back to the revision we bottled.
+  #
+  # Each hold is also recorded in the fork, because CI plans from the fork and would
+  # otherwise see only the held, bottled version and never build upstream's.
+  # release_holds.sh reads this file. It sits outside Formula/, so brew ignores it.
+  HOLDS="$CORE_REPO/.intel-bottles-holds"
+  UPSTREAM_REV="$(git -C "$CORE_REPO" rev-parse upstream/main)"
+  echo "# name, path, upstream commit, held version, upstream version -- see release_holds.sh" > "$HOLDS"
   echo "$PLAN" | grep '^RESTORE' | while IFS=$'\t' read -r _ revision path name from to; do
     echo "    holding $name at $from (upstream $to)"
     if ! git -C "$CORE_REPO" checkout "$revision" -- "$path" 2>/dev/null; then
       # The clone may not have that object (shallow, or an upstream force-push).
       git -C "$CORE_REPO" fetch --quiet upstream "$revision" 2>/dev/null || true
-      git -C "$CORE_REPO" checkout "$revision" -- "$path" \
-        || echo "    WARNING: could not restore $name at $from; it will build from source" >&2
+      if ! git -C "$CORE_REPO" checkout "$revision" -- "$path"; then
+        echo "    WARNING: could not restore $name at $from; it will build from source" >&2
+        continue
+      fi
     fi
+    printf '%s\t%s\t%s\t%s\t%s\n' "$name" "$path" "$UPSTREAM_REV" "$from" "$to" >> "$HOLDS"
   done
 
   JSONS="$(echo "$PLAN" | grep '^APPLY' | cut -f2 | tr '\n' ' ')"
