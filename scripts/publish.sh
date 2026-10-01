@@ -26,6 +26,22 @@ set -euo pipefail
 : "${BOTTLES_REPO:?BOTTLES_REPO must be set}"
 : "${STAGE:=bottles}"
 
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+# Network steps get a few attempts. This job runs once per stage, after hours of builds,
+# and a single API hiccup here throws all of that away: the next stage then rebuilds
+# everything this one produced.
+retry() {
+  local attempt
+  for attempt in 1 2 3 4; do
+    "$@" && return 0
+    [ "$attempt" -lt 4 ] || break
+    echo "    attempt $attempt of '$*' failed; retrying in $((attempt * 20))s" >&2
+    sleep $((attempt * 20))
+  done
+  return 1
+}
+
 STAGING="$BOTTLE_DIR/.staged"
 rm -rf "$STAGING"
 mkdir -p "$STAGING"
@@ -67,6 +83,12 @@ print(next(iter(next(iter(d.values()))["bottle"]["tags"].values()))["sha256"])
 done
 
 echo "==> $kept bottle(s) verified, $skipped skipped"
+
+# The job downloads every stage's artifacts so it can pick up a stage whose own publish
+# never ran; drop whatever is already released or no longer matches the fork.
+python3 "$SCRIPT_DIR/drop_published.py" "$STAGING"
+kept="$(find "$STAGING" -maxdepth 1 -name '*.bottle.json' | wc -l | tr -d ' ')"
+echo "==> $kept bottle(s) to publish"
 if [ "$kept" -eq 0 ]; then
   echo "==> nothing to publish"
   exit 0
@@ -78,6 +100,9 @@ cd "$STAGING"
 # original names (brew validates against the json).
 CORE_REPO="$(brew --repo homebrew/core)"
 echo "==> merging bottle DSL into $CORE_REPO"
+# `brew bottle --merge` installs its gems from rubygems.org on first use, with no retry
+# of its own. Install them up front so a DNS blip cannot fail the merge.
+retry brew install-bundler-gems --add-groups=ast || true
 brew bottle --merge --write --no-commit ./*.bottle.json
 
 for bottle in ./*.bottle.tar.gz; do
@@ -87,19 +112,36 @@ for bottle in ./*.bottle.tar.gz; do
   fi
 done
 
-if ! gh release view "$RELEASE_TAG" -R "$BOTTLES_REPO" >/dev/null 2>&1; then
+# A failed `view` is not proof the release is missing. On 2026-09-30 a transient API error
+# made this branch try to create a release that existed, the 422 aborted the job, and
+# wave 1's bottles were never uploaded. Creating is idempotent here: if it fails, the
+# release has to be visible afterwards, or this really is an error.
+ensure_release() {
+  gh release view "$RELEASE_TAG" -R "$BOTTLES_REPO" >/dev/null 2>&1 && return 0
   gh release create "$RELEASE_TAG" -R "$BOTTLES_REPO" \
     --title "Intel (x86_64) bottles" \
-    --notes "Rolling release of macOS Intel bottles. Managed by CI; do not delete."
-fi
+    --notes "Rolling release of macOS Intel bottles. Managed by CI; do not delete." \
+    && return 0
+  gh release view "$RELEASE_TAG" -R "$BOTTLES_REPO" >/dev/null
+}
+retry ensure_release
 echo "==> uploading $(ls ./*.bottle.tar.gz | wc -l | tr -d " ") asset(s)"
-gh release upload "$RELEASE_TAG" ./*.bottle.tar.gz --clobber -R "$BOTTLES_REPO"
+retry gh release upload "$RELEASE_TAG" ./*.bottle.tar.gz --clobber -R "$BOTTLES_REPO"
 
 cd "$CORE_REPO"
 if [ -n "$(git status --porcelain)" ]; then
   git add -A
   git commit -m "Intel bottles: $STAGE ($(date -u +%Y-%m-%d))"
-  git push origin HEAD:main
+  # The sync job may have pushed meanwhile; rebase onto it rather than fail. A conflict
+  # means upstream moved a formula we just bottled -- abort and fail, as before.
+  push_fork() {
+    if ! git pull --rebase --quiet origin main; then
+      git rebase --abort 2>/dev/null || true
+      return 1
+    fi
+    git push origin HEAD:main
+  }
+  retry push_fork
   echo "==> pushed bottle blocks to the fork"
 else
   echo "==> fork unchanged"

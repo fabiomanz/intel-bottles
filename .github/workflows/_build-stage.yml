@@ -99,7 +99,10 @@ jobs:
 
       - uses: actions/download-artifact@v4
         with:
-          pattern: bottles-${{ inputs.stage }}-*
+          # Every stage's artifacts, not just this one's. If an earlier stage's publish
+          # never ran (GitHub once failed to acquire a runner for it five times), this
+          # one releases its bottles instead. publish.sh drops anything already released.
+          pattern: bottles-*
           path: bottles/
           # Unmerged: one directory per job. Merging collapses same-named bottles from
           # jobs that each built a shared dependency, which is how a tarball and a
@@ -132,13 +135,18 @@ jobs:
       - name: Record manifest
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # Records exactly what publish.sh released: its staging directory. This used to
+        # glob bottles/*.bottle.json, which matches nothing since artifacts download one
+        # directory per job -- so nothing was recorded, the nightly sync wiped every new
+        # bottle block, and each run rebuilt the same formulae.
         run: |
-          if ls bottles/*.bottle.json >/dev/null 2>&1; then
-            cp bottles/*.bottle.json manifest/
-            git add manifest/
-            if [ -n "$(git status --porcelain)" ]; then
-              git commit -m "manifest: ${{ inputs.stage }} ($(date -u +%Y-%m-%d))"
-              git pull --rebase --autostash
-              git push
-            fi
+          python3 scripts/record_manifest.py bottles/.staged
+          git add -A manifest/
+          if [ -n "$(git status --porcelain manifest/)" ]; then
+            git commit -m "manifest: ${{ inputs.stage }} ($(date -u +%Y-%m-%d))"
+            for attempt in 1 2 3; do
+              git pull --rebase --autostash && git push && break
+              [ "$attempt" -lt 3 ] || exit 1
+              sleep 20
+            done
           fi

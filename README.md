@@ -58,6 +58,8 @@ via `HOMEBREW_CORE_GIT_REMOTE`. Unqualified `brew install node` then just works,
 | `scripts/filter_unbottled.py` | Order-preserving "which of these lack a bottle here" |
 | `scripts/build_root.sh` | Builds + bottles one root and its unbottled chain |
 | `scripts/publish.sh` | Merges DSL into the fork, uploads release assets |
+| `scripts/drop_published.py` | Keeps a publish from re-releasing an earlier stage's bottles |
+| `scripts/record_manifest.py` | Records published bottles in `manifest/`, one entry per formula |
 | `scripts/apply_manifest.py` | Splits the manifest into still-valid vs stale |
 | `scripts/sync_fork.sh` | Rebuilds the fork as upstream + our blocks |
 | `manifest/` | `*.bottle.json` — the source of truth for re-applying blocks |
@@ -65,8 +67,10 @@ via `HOMEBREW_CORE_GIT_REMOTE`. Unqualified `brew install node` then just works,
 ## Runner assignment
 
 `runners.json` decides which machine builds which formula. Everything uses the free
-GitHub-hosted `macos-26-intel` unless listed under `assign`. Today only `qtwebengine` is
-assigned elsewhere, because it cannot finish inside GitHub's hard 6-hour job ceiling.
+GitHub-hosted `macos-26-intel` unless listed under `assign`. Nothing is assigned today: no
+self-hosted runner is registered, so the two formulae that cannot finish inside GitHub's
+hard 6-hour job ceiling, `qtwebengine` and `llvm`, are in `exclude.txt` instead. To build
+one on your own machine, assign it and remove it from `exclude.txt`:
 
 ```json
 "assign": { "qtwebengine": "selfhosted" }
@@ -124,6 +128,10 @@ jq .poured_from_bottle /usr/local/Cellar/tmux/*/INSTALL_RECEIPT.json
   pinned to stage 1 with `allow_failure: true` so it cannot take the run down. `qt`, `pyside`
   and `qtwebview` depend on it and stay unbottled with it. The only real options are a larger
   runner (more cores; billed even on public repos) or a self-hosted Intel runner.
+- **`llvm` (23.x) does not fit either.** Its three-phase bootstrap was cut off at 350 minutes
+  on two consecutive days, still in the third phase. It is in `exclude.txt`, which also
+  holds back `deno` (build dependency) and `yt-dlp` (needs `deno`). `llvm@22` builds in
+  3-4 hours and is unaffected; `rust` and most other llvm users only need that one.
 - **One `root_url` per bottle block.** Merging our `tahoe` bottle into a formula that still has
   upstream's `sonoma` bottle rewrites the block's single `root_url` to ours. Harmless here —
   an exact tag match wins, so macOS 26 Intel always picks `tahoe` — but that block's older tags
