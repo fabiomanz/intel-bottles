@@ -1,0 +1,1621 @@
+{
+  "vala": {
+    "formula": {
+      "name": "vala",
+      "pkg_version": "0.56.19_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/v/vala.rb",
+      "tap_git_path": "Formula/v/vala.rb",
+      "tap_git_revision": "f53e41b275b6070e94c2d7a81e645c1c05fb6bee",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Compiler for the GObject type system",
+      "license": "LGPL-2.1-or-later",
+      "homepage": "https://wiki.gnome.org/Projects/Vala"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-01T07:44:33Z",
+      "tags": {
+        "tahoe": {
+          "filename": "vala-0.56.19_1.tahoe.bottle.tar.gz",
+          "local_filename": "vala--0.56.19_1.tahoe.bottle.tar.gz",
+          "sha256": "1d9b30ecd88a4f9b7edfa0824fc71e02b0ebcd075e5a4b2e17dababdea2deb78",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "bin/vala-gen-introspect-0.56",
+              "lib/pkgconfig/libvala-0.56.pc",
+              "lib/pkgconfig/valadoc-0.56.pc",
+              "lib/pkgconfig/vapigen-0.56.pc"
+            ],
+            "linkage_files": [
+              "bin/valac-0.56",
+              "bin/valadoc-0.56",
+              "bin/vapigen-0.56",
+              "lib/libvala-0.56.0.dylib",
+              "lib/libvaladoc-0.56.0.dylib",
+              "lib/vala-0.56/gen-introspect-0.56",
+              "lib/vala-0.56/libvalaccodegen.dylib",
+              "lib/valadoc-0.56/doclets/devhelp/libdoclet.so",
+              "lib/valadoc-0.56/doclets/gtkdoc/libdoclet.so",
+              "lib/valadoc-0.56/doclets/html/libdoclet.so"
+            ],
+            "binary_relocation_files": [
+              "lib/libvala-0.56.0.dylib",
+              "lib/libvaladoc-0.56.0.dylib",
+              "lib/valadoc-0.56/doclets/devhelp/libdoclet.so",
+              "lib/valadoc-0.56/doclets/html/libdoclet.so"
+            ],
+            "source_modified_time": 1774880543,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.90.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.90.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpng",
+                "version": "1.6.58",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.58",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "freetype",
+                "version": "2.14.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.14.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fontconfig",
+                "version": "2.18.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.18.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xorgproto",
+                "version": "2025.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2025.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxau",
+                "version": "1.0.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxdmcp",
+                "version": "1.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxcb",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.17.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libx11",
+                "version": "1.8.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxext",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.7",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxrender",
+                "version": "0.9.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.9.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lzo",
+                "version": "2.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.10",
+                "declared_directly": false
+              },
+              {
+                "full_name": "pixman",
+                "version": "0.46.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "0.46.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "cairo",
+                "version": "1.18.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.18.6",
+                "declared_directly": false
+              },
+              {
+                "full_name": "jpeg-turbo",
+                "version": "3.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libvmaf",
+                "version": "3.2.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "aom",
+                "version": "3.15.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.15.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "dav1d",
+                "version": "1.5.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libavif",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "giflib",
+                "version": "6.1.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.1.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "webp",
+                "version": "1.6.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtiff",
+                "version": "4.7.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.7.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gd",
+                "version": "2.3.3",
+                "revision": 6,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.3_6",
+                "declared_directly": false
+              },
+              {
+                "full_name": "jasper",
+                "version": "4.2.9",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.2.9",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "netpbm",
+                "version": "11.02.30",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "11.02.30",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gts",
+                "version": "0.7.6",
+                "revision": 3,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.7.6_3",
+                "declared_directly": false
+              },
+              {
+                "full_name": "gdk-pixbuf",
+                "version": "2.44.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.44.8",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "graphite2",
+                "version": "1.3.15",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.15",
+                "declared_directly": false
+              },
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "harfbuzz",
+                "version": "14.5.0",
+                "revision": 0,
+                "pkg_version": "14.5.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fribidi",
+                "version": "1.0.17",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.17",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libdatrie",
+                "version": "0.2.14",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.2.14",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libthai",
+                "version": "0.1.30",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.1.30",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pango",
+                "version": "1.58.2",
+                "revision": 0,
+                "pkg_version": "1.58.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "librsvg",
+                "version": "2.63.2",
+                "revision": 0,
+                "pkg_version": "2.63.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "m4",
+                "version": "1.4.21",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.21",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtool",
+                "version": "2.6.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.6.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "graphviz",
+                "version": "16.1.0",
+                "revision": 0,
+                "pkg_version": "16.1.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "pkgconf",
+                "version": "3.0.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.0.7",
+                "declared_directly": true,
+                "compatibility_version": 2
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "lib/libvala-0.56.0.dylib",
+              "string": "/usr/local/Cellar/vala/0.56.19_1/share/vala-0.56",
+              "offset": 1181157
+            },
+            {
+              "path": "lib/valadoc-0.56/doclets/html/libdoclet.so",
+              "string": "/usr/local/Cellar/vala/0.56.19_1/share/valadoc-0.56/icons/",
+              "offset": 12623
+            },
+            {
+              "path": "lib/valadoc-0.56/doclets/devhelp/libdoclet.so",
+              "string": "/usr/local/Cellar/vala/0.56.19_1/share/valadoc-0.56/icons/",
+              "offset": 12960
+            },
+            {
+              "path": "lib/libvaladoc-0.56.0.dylib",
+              "string": "/usr/local/Cellar/vala/0.56.19_1/lib/valadoc-0.56",
+              "offset": 517557
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.0",
+              "SPDXRef-Package-SPDXRef-glib-2.90.0",
+              "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+              "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+              "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+              "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
+              "SPDXRef-Package-SPDXRef-aom-3.15.0",
+              "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+              "SPDXRef-Package-SPDXRef-webp-1.6.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+              "SPDXRef-Package-SPDXRef-netpbm-11.02.30",
+              "SPDXRef-Package-SPDXRef-gts-0.7.6_3",
+              "SPDXRef-Package-SPDXRef-fribidi-1.0.17",
+              "SPDXRef-Package-SPDXRef-m4-1.4.21",
+              "SPDXRef-Package-SPDXRef-libtool-2.6.2",
+              "SPDXRef-Package-SPDXRef-pkgconf-3.0.7",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8c54c7bc4c98effd8b886213f126278f87cef9c596d9ab2ef3d52bc100c79f65"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gettext-1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "27f00f82c225d2feafe765d37a15699352a390397bdeec1ccbc2b5fe943f7ee7"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "name": "glib",
+                "versionInfo": "2.90.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4f180b8f89781725d58c0a39d7508c0bf0e96225fc69ef630e18a9f885f61c4a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/glib@2.90.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "name": "libpng",
+                "versionInfo": "1.6.58",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.58.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e52e7248928f76d19f4253ab672b59dde6a6f21e94b090137170bb2e971f9cc2"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpng@1.6.58",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+                "name": "libx11",
+                "versionInfo": "1.8.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.13.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7035ebb1057ef3de675393d244db0d486f07b91aab5d24a4b2d0140c05b9724d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libx11@1.8.13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+                "name": "cairo",
+                "versionInfo": "1.18.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-only OR MPL-1.1",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/cairo-1.18.6.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "82e98b7ba1ba8aadca23d85b6ee4aaec38273d61c453dba9ad3905675cfb2a84"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/cairo@1.18.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "name": "jpeg-turbo",
+                "versionInfo": "3.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3c7d19c475389bbb48a07f78f52473c8f49f458bd45b4453457cfec9c01601ed"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
+                "name": "libvmaf",
+                "versionInfo": "3.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause-Patent",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libvmaf-3.2.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c874464309067f659d6428ba6287fce6d858e0ee391591c84cd8fe14bdfe7bcb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libvmaf@3.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aom-3.15.0",
+                "name": "aom",
+                "versionInfo": "3.15.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aom-3.15.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ef8363134b027fc8e46bc43bf5554debd48212fb20b09baf5b4b371fd3ea1342"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aom@3.15.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+                "name": "giflib",
+                "versionInfo": "6.1.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/giflib-6.1.3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d5a19371b08de71cb811b2fe8114e0092c5edc439b3ba4d09f2e8a775676eb6c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/giflib@6.1.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-webp-1.6.0",
+                "name": "webp",
+                "versionInfo": "1.6.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/webp-1.6.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "011465e668caf64f3ce3586efcd644b520f27083580c0334eb6d7278dac2713c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/webp@1.6.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xz-5.8.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b58278bdc3ee647396ba249e0d0959306231d593d2b8ce6c173f819b42192a9f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.10.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "name": "libtiff",
+                "versionInfo": "4.7.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libtiff",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libtiff-4.7.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f1abd05915f49c4d07b789fdfab78ad83e78e6a4a61ef7c0ebeab45657b2e51c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libtiff@4.7.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-netpbm-11.02.30",
+                "name": "netpbm",
+                "versionInfo": "11.02.30",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/netpbm-11.02.30.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "011568d4954b0ec1d894fe82fea0f5a0fe4767fbc0e121775d90a51210c7c727"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/netpbm@11.02.30",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gts-0.7.6_3",
+                "name": "gts",
+                "versionInfo": "0.7.6_3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gts-0.7.6_3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ead167c1f6f37b8d157deb968d8ccc2b75afd8900e605dc08f8e41e9b1b3f2bf"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gts@0.7.6_3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-fribidi-1.0.17",
+                "name": "fribidi",
+                "versionInfo": "1.0.17",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/fribidi-1.0.17.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "23ec3a2c361a11e94f71dee17afbe55d1d8b3e3f9df16a327f84e1124e80dcd4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/fribidi@1.0.17",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-m4-1.4.21",
+                "name": "m4",
+                "versionInfo": "1.4.21",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/m4/blobs/sha256:a7da5c29823df4a3c80723639e17153dc6fc71621d87cdc8f5e88f628764c816",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a7da5c29823df4a3c80723639e17153dc6fc71621d87cdc8f5e88f628764c816"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/m4@1.4.21",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libtool-2.6.2",
+                "name": "libtool",
+                "versionInfo": "2.6.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/libtool/blobs/sha256:c94ba9b047fa5744349911cd632fec5b88cd366991bb39cb06fe018d166a0a39",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c94ba9b047fa5744349911cd632fec5b88cd366991bb39cb06fe018d166a0a39"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libtool@2.6.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pkgconf-3.0.7",
+                "name": "pkgconf",
+                "versionInfo": "3.0.7",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "ISC",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pkgconf-3.0.7.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "112ebc0f90bf7a206447893877f8bdb5058e665ffd27de96500718ff69765938"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pkgconf@3.0.7",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aom-3.15.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-webp-1.6.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-netpbm-11.02.30",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gts-0.7.6_3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-fribidi-1.0.17",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-m4-1.4.21",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libtool-2.6.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pkgconf-3.0.7",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vala"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-vala-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/vala-gen-introspect-0.56",
+            "bin/valadoc",
+            "bin/vala-0.56",
+            "bin/vapigen-0.56",
+            "bin/vala-gen-introspect",
+            "bin/vala",
+            "bin/valadoc-0.56",
+            "bin/valac-0.56",
+            "bin/vapigen",
+            "bin/valac"
+          ],
+          "all_files": [
+            ".brew/vala.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "README.md",
+            "bin/vala",
+            "bin/vala-0.56",
+            "bin/vala-gen-introspect",
+            "bin/vala-gen-introspect-0.56",
+            "bin/valac",
+            "bin/valac-0.56",
+            "bin/valadoc",
+            "bin/valadoc-0.56",
+            "bin/vapigen",
+            "bin/vapigen-0.56",
+            "include/vala-0.56/vala.h",
+            "include/vala-0.56/valagee.h",
+            "include/valadoc-0.56/valadoc.h",
+            "lib/libvala-0.56.0.dylib",
+            "lib/libvala-0.56.dylib",
+            "lib/libvaladoc-0.56.0.dylib",
+            "lib/libvaladoc-0.56.dylib",
+            "lib/pkgconfig/libvala-0.56.pc",
+            "lib/pkgconfig/valadoc-0.56.pc",
+            "lib/pkgconfig/vapigen-0.56.pc",
+            "lib/pkgconfig/vapigen.pc",
+            "lib/vala-0.56/gen-introspect-0.56",
+            "lib/vala-0.56/libvalaccodegen.dylib",
+            "lib/valadoc-0.56/doclets/devhelp/libdoclet.so",
+            "lib/valadoc-0.56/doclets/gtkdoc/libdoclet.so",
+            "lib/valadoc-0.56/doclets/html/libdoclet.so",
+            "sbom.spdx.json",
+            "share/aclocal/vala.m4",
+            "share/aclocal/vapigen.m4",
+            "share/devhelp/books/vala-0.56/Attributes.html",
+            "share/devhelp/books/vala-0.56/Classes.html",
+            "share/devhelp/books/vala-0.56/Concepts.html",
+            "share/devhelp/books/vala-0.56/Delegates.html",
+            "share/devhelp/books/vala-0.56/Enumerated_types__Enums_.html",
+            "share/devhelp/books/vala-0.56/Errors.html",
+            "share/devhelp/books/vala-0.56/Expressions.html",
+            "share/devhelp/books/vala-0.56/GIDL_metadata_format.html",
+            "share/devhelp/books/vala-0.56/GIR_metadata_format.html",
+            "share/devhelp/books/vala-0.56/Generics.html",
+            "share/devhelp/books/vala-0.56/Interfaces.html",
+            "share/devhelp/books/vala-0.56/Methods.html",
+            "share/devhelp/books/vala-0.56/Namespaces.html",
+            "share/devhelp/books/vala-0.56/Overview.html",
+            "share/devhelp/books/vala-0.56/Preprocessor.html",
+            "share/devhelp/books/vala-0.56/Statements.html",
+            "share/devhelp/books/vala-0.56/Structs.html",
+            "share/devhelp/books/vala-0.56/Types.html",
+            "share/devhelp/books/vala-0.56/default.css",
+            "share/devhelp/books/vala-0.56/index.html",
+            "share/devhelp/books/vala-0.56/vala-0.56.devhelp2",
+            "share/man/man1/vala-gen-introspect-0.56.1",
+            "share/man/man1/vala-gen-introspect.1",
+            "share/man/man1/valac-0.56.1",
+            "share/man/man1/valac.1",
+            "share/man/man1/valadoc-0.56.1",
+            "share/man/man1/valadoc.1",
+            "share/man/man1/vapigen-0.56.1",
+            "share/man/man1/vapigen.1",
+            "share/vala/Makefile.vapigen",
+            "share/vala/vapi/libvala-0.56.vapi",
+            "share/vala/vapi/valadoc-0.56.deps",
+            "share/vala/vapi/valadoc-0.56.vapi",
+            "share/vala-0.56/vapi/SDL2_gfx.deps",
+            "share/vala-0.56/vapi/SDL2_gfx.vapi",
+            "share/vala-0.56/vapi/SDL2_image.deps",
+            "share/vala-0.56/vapi/SDL2_image.vapi",
+            "share/vala-0.56/vapi/SDL2_mixer.deps",
+            "share/vala-0.56/vapi/SDL2_mixer.vapi",
+            "share/vala-0.56/vapi/SDL2_net.deps",
+            "share/vala-0.56/vapi/SDL2_net.vapi",
+            "share/vala-0.56/vapi/SDL2_ttf.deps",
+            "share/vala-0.56/vapi/SDL2_ttf.vapi",
+            "share/vala-0.56/vapi/alsa.deps",
+            "share/vala-0.56/vapi/alsa.vapi",
+            "share/vala-0.56/vapi/atk.deps",
+            "share/vala-0.56/vapi/atk.vapi",
+            "share/vala-0.56/vapi/atspi-2.deps",
+            "share/vala-0.56/vapi/atspi-2.vapi",
+            "share/vala-0.56/vapi/avahi-client.vapi",
+            "share/vala-0.56/vapi/avahi-gobject.deps",
+            "share/vala-0.56/vapi/avahi-gobject.vapi",
+            "share/vala-0.56/vapi/bzlib.vapi",
+            "share/vala-0.56/vapi/cairo-gobject.deps",
+            "share/vala-0.56/vapi/cairo-gobject.vapi",
+            "share/vala-0.56/vapi/cairo-xcb.deps",
+            "share/vala-0.56/vapi/cairo-xcb.vapi",
+            "share/vala-0.56/vapi/cairo.vapi",
+            "share/vala-0.56/vapi/ccss-1.vapi",
+            "share/vala-0.56/vapi/clutter-1.0.deps",
+            "share/vala-0.56/vapi/clutter-1.0.vapi",
+            "share/vala-0.56/vapi/clutter-gdk-1.0.deps",
+            "share/vala-0.56/vapi/clutter-gdk-1.0.vapi",
+            "share/vala-0.56/vapi/clutter-gst-2.0.deps",
+            "share/vala-0.56/vapi/clutter-gst-2.0.vapi",
+            "share/vala-0.56/vapi/clutter-gst-3.0.deps",
+            "share/vala-0.56/vapi/clutter-gst-3.0.vapi",
+            "share/vala-0.56/vapi/clutter-gtk-0.10.deps",
+            "share/vala-0.56/vapi/clutter-gtk-0.10.vapi",
+            "share/vala-0.56/vapi/clutter-gtk-1.0.deps",
+            "share/vala-0.56/vapi/clutter-gtk-1.0.vapi",
+            "share/vala-0.56/vapi/clutter-x11-1.0.deps",
+            "share/vala-0.56/vapi/clutter-x11-1.0.vapi",
+            "share/vala-0.56/vapi/cogl-1.0.deps",
+            "share/vala-0.56/vapi/cogl-1.0.vapi",
+            "share/vala-0.56/vapi/cogl-pango-1.0.deps",
+            "share/vala-0.56/vapi/cogl-pango-1.0.vapi",
+            "share/vala-0.56/vapi/curses.vapi",
+            "share/vala-0.56/vapi/dbus-glib-1.vapi",
+            "share/vala-0.56/vapi/enchant-2.vapi",
+            "share/vala-0.56/vapi/enchant.vapi",
+            "share/vala-0.56/vapi/fuse.deps",
+            "share/vala-0.56/vapi/fuse.vapi",
+            "share/vala-0.56/vapi/gconf-2.0.vapi",
+            "share/vala-0.56/vapi/gdesktopenums-3.0.vapi",
+            "share/vala-0.56/vapi/gdk-2.0.deps",
+            "share/vala-0.56/vapi/gdk-2.0.vapi",
+            "share/vala-0.56/vapi/gdk-3.0.deps",
+            "share/vala-0.56/vapi/gdk-3.0.vapi",
+            "share/vala-0.56/vapi/gdk-pixbuf-2.0.deps",
+            "share/vala-0.56/vapi/gdk-pixbuf-2.0.vapi",
+            "share/vala-0.56/vapi/gdk-x11-2.0.deps",
+            "share/vala-0.56/vapi/gdk-x11-2.0.vapi",
+            "share/vala-0.56/vapi/gdk-x11-3.0.deps",
+            "share/vala-0.56/vapi/gdk-x11-3.0.vapi",
+            "share/vala-0.56/vapi/gdl-1.0.deps",
+            "share/vala-0.56/vapi/gdl-1.0.vapi",
+            "share/vala-0.56/vapi/gdl-3.0.deps",
+            "share/vala-0.56/vapi/gdl-3.0.vapi",
+            "share/vala-0.56/vapi/geocode-glib-1.0.deps",
+            "share/vala-0.56/vapi/geocode-glib-1.0.vapi",
+            "share/vala-0.56/vapi/geocode-glib-2.0.deps",
+            "share/vala-0.56/vapi/geocode-glib-2.0.vapi",
+            "share/vala-0.56/vapi/gio-2.0.deps",
+            "share/vala-0.56/vapi/gio-2.0.vapi",
+            "share/vala-0.56/vapi/gio-unix-2.0.deps",
+            "share/vala-0.56/vapi/gio-unix-2.0.vapi",
+            "share/vala-0.56/vapi/gio-windows-2.0.deps",
+            "share/vala-0.56/vapi/gio-windows-2.0.vapi",
+            "share/vala-0.56/vapi/glib-2.0.vapi",
+            "share/vala-0.56/vapi/gmodule-2.0.deps",
+            "share/vala-0.56/vapi/gmodule-2.0.vapi",
+            "share/vala-0.56/vapi/gnet-2.0.deps",
+            "share/vala-0.56/vapi/gnet-2.0.vapi",
+            "share/vala-0.56/vapi/gnome-bg-4.deps",
+            "share/vala-0.56/vapi/gnome-bg-4.vapi",
+            "share/vala-0.56/vapi/gnome-desktop-2.0.deps",
+            "share/vala-0.56/vapi/gnome-desktop-2.0.vapi",
+            "share/vala-0.56/vapi/gnome-desktop-3.0.deps",
+            "share/vala-0.56/vapi/gnome-desktop-3.0.vapi",
+            "share/vala-0.56/vapi/gnome-desktop-4.deps",
+            "share/vala-0.56/vapi/gnome-desktop-4.vapi",
+            "share/vala-0.56/vapi/gnome-rr-4.deps",
+            "share/vala-0.56/vapi/gnome-rr-4.vapi",
+            "share/vala-0.56/vapi/gnome-vfs-2.0.vapi",
+            "share/vala-0.56/vapi/gnu.deps",
+            "share/vala-0.56/vapi/gnu.vapi",
+            "share/vala-0.56/vapi/gnutls.vapi",
+            "share/vala-0.56/vapi/gobject-2.0.deps",
+            "share/vala-0.56/vapi/gobject-2.0.vapi",
+            "share/vala-0.56/vapi/gobject-introspection-1.0.deps",
+            "share/vala-0.56/vapi/gobject-introspection-1.0.vapi",
+            "share/vala-0.56/vapi/goocanvas-2.0.deps",
+            "share/vala-0.56/vapi/goocanvas-2.0.vapi",
+            "share/vala-0.56/vapi/goocanvas.deps",
+            "share/vala-0.56/vapi/goocanvas.vapi",
+            "share/vala-0.56/vapi/graphene-1.0.deps",
+            "share/vala-0.56/vapi/graphene-1.0.vapi",
+            "share/vala-0.56/vapi/graphene-gobject-1.0.deps",
+            "share/vala-0.56/vapi/graphene-gobject-1.0.vapi",
+            "share/vala-0.56/vapi/gsl.vapi",
+            "share/vala-0.56/vapi/gst-editing-services-1.0.deps",
+            "share/vala-0.56/vapi/gst-editing-services-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-allocators-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-allocators-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-app-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-app-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-audio-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-audio-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-bad-allocators-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-bad-allocators-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-base-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-base-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-check-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-check-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-controller-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-controller-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-fft-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-fft-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-net-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-net-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-pbutils-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-pbutils-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-play-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-play-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-player-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-player-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-riff-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-riff-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-rtp-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-rtp-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-rtsp-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-rtsp-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-rtsp-server-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-rtsp-server-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-sdp-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-sdp-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-tag-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-tag-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-video-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-video-1.0.vapi",
+            "share/vala-0.56/vapi/gstreamer-webrtc-1.0.deps",
+            "share/vala-0.56/vapi/gstreamer-webrtc-1.0.vapi",
+            "share/vala-0.56/vapi/gtk+-2.0.deps",
+            "share/vala-0.56/vapi/gtk+-2.0.vapi",
+            "share/vala-0.56/vapi/gtk+-3.0.deps",
+            "share/vala-0.56/vapi/gtk+-3.0.vapi",
+            "share/vala-0.56/vapi/gtk+-unix-print-2.0.deps",
+            "share/vala-0.56/vapi/gtk+-unix-print-2.0.vapi",
+            "share/vala-0.56/vapi/gtk+-unix-print-3.0.deps",
+            "share/vala-0.56/vapi/gtk+-unix-print-3.0.vapi",
+            "share/vala-0.56/vapi/gtk4-unix-print.deps",
+            "share/vala-0.56/vapi/gtk4-unix-print.vapi",
+            "share/vala-0.56/vapi/gtk4-wayland.deps",
+            "share/vala-0.56/vapi/gtk4-wayland.vapi",
+            "share/vala-0.56/vapi/gtk4-x11.deps",
+            "share/vala-0.56/vapi/gtk4-x11.vapi",
+            "share/vala-0.56/vapi/gtk4.deps",
+            "share/vala-0.56/vapi/gtk4.vapi",
+            "share/vala-0.56/vapi/gtkmozembed.deps",
+            "share/vala-0.56/vapi/gtkmozembed.vapi",
+            "share/vala-0.56/vapi/gtksourceview-2.0.deps",
+            "share/vala-0.56/vapi/gtksourceview-2.0.vapi",
+            "share/vala-0.56/vapi/gudev-1.0.deps",
+            "share/vala-0.56/vapi/gudev-1.0.vapi",
+            "share/vala-0.56/vapi/hal.deps",
+            "share/vala-0.56/vapi/hal.vapi",
+            "share/vala-0.56/vapi/harfbuzz-gobject.deps",
+            "share/vala-0.56/vapi/harfbuzz-gobject.vapi",
+            "share/vala-0.56/vapi/hildon-1.deps",
+            "share/vala-0.56/vapi/hildon-1.vapi",
+            "share/vala-0.56/vapi/hildon-fm-2.deps",
+            "share/vala-0.56/vapi/hildon-fm-2.vapi",
+            "share/vala-0.56/vapi/javascriptcoregtk-4.0.vapi",
+            "share/vala-0.56/vapi/javascriptcoregtk-4.1.vapi",
+            "share/vala-0.56/vapi/javascriptcoregtk-5.0.vapi",
+            "share/vala-0.56/vapi/javascriptcoregtk-6.0.vapi",
+            "share/vala-0.56/vapi/json-glib-1.0.deps",
+            "share/vala-0.56/vapi/json-glib-1.0.vapi",
+            "share/vala-0.56/vapi/libarchive.deps",
+            "share/vala-0.56/vapi/libarchive.vapi",
+            "share/vala-0.56/vapi/libbonoboui-2.0.vapi",
+            "share/vala-0.56/vapi/libdaemon.vapi",
+            "share/vala-0.56/vapi/libepc-1.0.vapi",
+            "share/vala-0.56/vapi/libesmtp.vapi",
+            "share/vala-0.56/vapi/libftdi.deps",
+            "share/vala-0.56/vapi/libftdi.vapi",
+            "share/vala-0.56/vapi/libgeoclue-2.0.deps",
+            "share/vala-0.56/vapi/libgeoclue-2.0.vapi",
+            "share/vala-0.56/vapi/libglade-2.0.deps",
+            "share/vala-0.56/vapi/libglade-2.0.vapi",
+            "share/vala-0.56/vapi/libgnome-2.0.vapi",
+            "share/vala-0.56/vapi/libgnome-menu-3.0.deps",
+            "share/vala-0.56/vapi/libgnome-menu-3.0.vapi",
+            "share/vala-0.56/vapi/libgnome-menu.vapi",
+            "share/vala-0.56/vapi/libgnomeui-2.0.deps",
+            "share/vala-0.56/vapi/libgnomeui-2.0.vapi",
+            "share/vala-0.56/vapi/libgrss.deps",
+            "share/vala-0.56/vapi/libgrss.vapi",
+            "share/vala-0.56/vapi/libgsf-1.deps",
+            "share/vala-0.56/vapi/libgsf-1.vapi",
+            "share/vala-0.56/vapi/libgvc.vapi",
+            "share/vala-0.56/vapi/libmagic.vapi",
+            "share/vala-0.56/vapi/libnl-1.vapi",
+            "share/vala-0.56/vapi/libnl-2.0.deps",
+            "share/vala-0.56/vapi/libnl-2.0.vapi",
+            "share/vala-0.56/vapi/libnl-3.0.deps",
+            "share/vala-0.56/vapi/libnl-3.0.vapi",
+            "share/vala-0.56/vapi/libnotify.deps",
+            "share/vala-0.56/vapi/libnotify.vapi",
+            "share/vala-0.56/vapi/liboobs-1.vapi",
+            "share/vala-0.56/vapi/libosso.vapi",
+            "share/vala-0.56/vapi/libpanelapplet-2.0.deps",
+            "share/vala-0.56/vapi/libpanelapplet-2.0.vapi",
+            "share/vala-0.56/vapi/libpeas-1.0.deps",
+            "share/vala-0.56/vapi/libpeas-1.0.vapi",
+            "share/vala-0.56/vapi/libpeas-gtk-1.0.deps",
+            "share/vala-0.56/vapi/libpeas-gtk-1.0.vapi",
+            "share/vala-0.56/vapi/libpq.vapi",
+            "share/vala-0.56/vapi/libsexy.deps",
+            "share/vala-0.56/vapi/libsexy.vapi",
+            "share/vala-0.56/vapi/libsoup-2.4.deps",
+            "share/vala-0.56/vapi/libsoup-2.4.vapi",
+            "share/vala-0.56/vapi/libsoup-3.0.deps",
+            "share/vala-0.56/vapi/libsoup-3.0.vapi",
+            "share/vala-0.56/vapi/libunwind-generic.vapi",
+            "share/vala-0.56/vapi/libusb-1.0.deps",
+            "share/vala-0.56/vapi/libusb-1.0.vapi",
+            "share/vala-0.56/vapi/libusb.vapi",
+            "share/vala-0.56/vapi/libwnck-1.0.deps",
+            "share/vala-0.56/vapi/libwnck-1.0.vapi",
+            "share/vala-0.56/vapi/libwnck-3.0.deps",
+            "share/vala-0.56/vapi/libwnck-3.0.vapi",
+            "share/vala-0.56/vapi/libxml-2.0.vapi",
+            "share/vala-0.56/vapi/linux.deps",
+            "share/vala-0.56/vapi/linux.vapi",
+            "share/vala-0.56/vapi/loudmouth-1.0.vapi",
+            "share/vala-0.56/vapi/lua.vapi",
+            "share/vala-0.56/vapi/mysql.vapi",
+            "share/vala-0.56/vapi/orc-0.4.vapi",
+            "share/vala-0.56/vapi/packagekit-glib2.deps",
+            "share/vala-0.56/vapi/packagekit-glib2.vapi",
+            "share/vala-0.56/vapi/pango.deps",
+            "share/vala-0.56/vapi/pango.vapi",
+            "share/vala-0.56/vapi/pangocairo.deps",
+            "share/vala-0.56/vapi/pangocairo.vapi",
+            "share/vala-0.56/vapi/pixman-1.vapi",
+            "share/vala-0.56/vapi/polkit-agent-1.deps",
+            "share/vala-0.56/vapi/polkit-agent-1.vapi",
+            "share/vala-0.56/vapi/polkit-gobject-1.deps",
+            "share/vala-0.56/vapi/polkit-gobject-1.vapi",
+            "share/vala-0.56/vapi/poppler-glib.deps",
+            "share/vala-0.56/vapi/poppler-glib.vapi",
+            "share/vala-0.56/vapi/posix.vapi",
+            "share/vala-0.56/vapi/purple.deps",
+            "share/vala-0.56/vapi/purple.vapi",
+            "share/vala-0.56/vapi/raptor.vapi",
+            "share/vala-0.56/vapi/rasqal.deps",
+            "share/vala-0.56/vapi/rasqal.vapi",
+            "share/vala-0.56/vapi/readline.vapi",
+            "share/vala-0.56/vapi/rest-0.7.deps",
+            "share/vala-0.56/vapi/rest-0.7.vapi",
+            "share/vala-0.56/vapi/rest-1.0.deps",
+            "share/vala-0.56/vapi/rest-1.0.vapi",
+            "share/vala-0.56/vapi/rest-extras-0.7.deps",
+            "share/vala-0.56/vapi/rest-extras-0.7.vapi",
+            "share/vala-0.56/vapi/rest-extras-1.0.deps",
+            "share/vala-0.56/vapi/rest-extras-1.0.vapi",
+            "share/vala-0.56/vapi/sdl2-android.deps",
+            "share/vala-0.56/vapi/sdl2-android.vapi",
+            "share/vala-0.56/vapi/sdl2-ios.deps",
+            "share/vala-0.56/vapi/sdl2-ios.vapi",
+            "share/vala-0.56/vapi/sdl2-windows.deps",
+            "share/vala-0.56/vapi/sdl2-windows.vapi",
+            "share/vala-0.56/vapi/sdl2-winrt.deps",
+            "share/vala-0.56/vapi/sdl2-winrt.vapi",
+            "share/vala-0.56/vapi/sdl2.vapi",
+            "share/vala-0.56/vapi/sqlite3.vapi",
+            "share/vala-0.56/vapi/taglib_c.vapi",
+            "share/vala-0.56/vapi/tiff.vapi",
+            "share/vala-0.56/vapi/tokyocabinet.vapi",
+            "share/vala-0.56/vapi/udisks2.deps",
+            "share/vala-0.56/vapi/udisks2.vapi",
+            "share/vala-0.56/vapi/unique-1.0.deps",
+            "share/vala-0.56/vapi/unique-1.0.vapi",
+            "share/vala-0.56/vapi/v4l2.vapi",
+            "share/vala-0.56/vapi/wayland-client.vapi",
+            "share/vala-0.56/vapi/webkit2gtk-4.0.deps",
+            "share/vala-0.56/vapi/webkit2gtk-4.0.vapi",
+            "share/vala-0.56/vapi/webkit2gtk-4.1.deps",
+            "share/vala-0.56/vapi/webkit2gtk-4.1.vapi",
+            "share/vala-0.56/vapi/webkit2gtk-5.0.deps",
+            "share/vala-0.56/vapi/webkit2gtk-5.0.vapi",
+            "share/vala-0.56/vapi/webkit2gtk-web-extension-4.0.deps",
+            "share/vala-0.56/vapi/webkit2gtk-web-extension-4.0.vapi",
+            "share/vala-0.56/vapi/webkit2gtk-web-extension-4.1.deps",
+            "share/vala-0.56/vapi/webkit2gtk-web-extension-4.1.vapi",
+            "share/vala-0.56/vapi/webkit2gtk-web-extension-5.0.deps",
+            "share/vala-0.56/vapi/webkit2gtk-web-extension-5.0.vapi",
+            "share/vala-0.56/vapi/webkitgtk-6.0.deps",
+            "share/vala-0.56/vapi/webkitgtk-6.0.vapi",
+            "share/vala-0.56/vapi/webkitgtk-web-extension-6.0.deps",
+            "share/vala-0.56/vapi/webkitgtk-web-extension-6.0.vapi",
+            "share/vala-0.56/vapi/webkitgtk-web-process-extension-6.0.deps",
+            "share/vala-0.56/vapi/webkitgtk-web-process-extension-6.0.vapi",
+            "share/vala-0.56/vapi/x11.vapi",
+            "share/vala-0.56/vapi/xcb-icccm.deps",
+            "share/vala-0.56/vapi/xcb-icccm.vapi",
+            "share/vala-0.56/vapi/xcb.vapi",
+            "share/vala-0.56/vapi/xtst.deps",
+            "share/vala-0.56/vapi/xtst.vapi",
+            "share/vala-0.56/vapi/zlib.vapi",
+            "share/valadoc-0.56/icons/abstractclass.svg",
+            "share/valadoc-0.56/icons/abstractmethod.svg",
+            "share/valadoc-0.56/icons/abstractproperty.svg",
+            "share/valadoc-0.56/icons/class.svg",
+            "share/valadoc-0.56/icons/coll_close.svg",
+            "share/valadoc-0.56/icons/coll_open.svg",
+            "share/valadoc-0.56/icons/constant.svg",
+            "share/valadoc-0.56/icons/constructor.svg",
+            "share/valadoc-0.56/icons/delegate.svg",
+            "share/valadoc-0.56/icons/devhelpstyle.css",
+            "share/valadoc-0.56/icons/enum.svg",
+            "share/valadoc-0.56/icons/enumvalue.svg",
+            "share/valadoc-0.56/icons/errorcode.svg",
+            "share/valadoc-0.56/icons/errordomain.svg",
+            "share/valadoc-0.56/icons/field.svg",
+            "share/valadoc-0.56/icons/interface.svg",
+            "share/valadoc-0.56/icons/method.svg",
+            "share/valadoc-0.56/icons/namespace.svg",
+            "share/valadoc-0.56/icons/package.svg",
+            "share/valadoc-0.56/icons/packages.svg",
+            "share/valadoc-0.56/icons/property.svg",
+            "share/valadoc-0.56/icons/scripts.js",
+            "share/valadoc-0.56/icons/signal.svg",
+            "share/valadoc-0.56/icons/staticmethod.svg",
+            "share/valadoc-0.56/icons/struct.svg",
+            "share/valadoc-0.56/icons/style.css",
+            "share/valadoc-0.56/icons/tip.svg",
+            "share/valadoc-0.56/icons/virtualmethod.svg",
+            "share/valadoc-0.56/icons/virtualproperty.svg",
+            "share/valadoc-0.56/icons/warning.svg",
+            "share/valadoc-0.56/icons/wikistyle.css"
+          ],
+          "installed_size": 16391646
+        }
+      }
+    }
+  }
+}

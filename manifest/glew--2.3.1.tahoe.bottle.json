@@ -1,0 +1,123 @@
+{
+  "glew": {
+    "formula": {
+      "name": "glew",
+      "pkg_version": "2.3.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/glew.rb",
+      "tap_git_path": "Formula/g/glew.rb",
+      "tap_git_revision": "f5900eedc815143778a79d3c0448054ab00be974",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "OpenGL Extension Wrangler Library",
+      "license": "BSD-3-Clause",
+      "homepage": "https://glew.sourceforge.net/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-01T11:52:49Z",
+      "tags": {
+        "tahoe": {
+          "filename": "glew-2.3.1.tahoe.bottle.tar.gz",
+          "local_filename": "glew--2.3.1.tahoe.bottle.tar.gz",
+          "sha256": "8b58aaff17ea72958b7df6eef113982aa41228e3153d5296a93fee9825c9d18c",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "lib/pkgconfig/glew.pc"
+            ],
+            "linkage_files": [
+              "lib/libGLEW.2.3.1.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1769209213,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-glew-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/visualinfo",
+            "bin/glewinfo"
+          ],
+          "all_files": [
+            ".brew/glew.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.txt",
+            "README.md",
+            "bin/glewinfo",
+            "bin/visualinfo",
+            "include/GL/eglew.h",
+            "include/GL/glew.h",
+            "include/GL/glxew.h",
+            "include/GL/wglew.h",
+            "lib/cmake/glew/CopyImportedTargetProperties.cmake",
+            "lib/cmake/glew/glew-config.cmake",
+            "lib/cmake/glew/glew-targets-release.cmake",
+            "lib/cmake/glew/glew-targets.cmake",
+            "lib/libGLEW.2.3.1.dylib",
+            "lib/libGLEW.2.3.dylib",
+            "lib/libGLEW.dylib",
+            "lib/pkgconfig/glew.pc",
+            "sbom.spdx.json",
+            "share/doc/glew/advanced.html",
+            "share/doc/glew/basic.html",
+            "share/doc/glew/build.html",
+            "share/doc/glew/credits.html",
+            "share/doc/glew/eglew.html",
+            "share/doc/glew/github.png",
+            "share/doc/glew/glew.css",
+            "share/doc/glew/glew.html",
+            "share/doc/glew/glew.png",
+            "share/doc/glew/glew.txt",
+            "share/doc/glew/glxew.html",
+            "share/doc/glew/gpl.txt",
+            "share/doc/glew/index.html",
+            "share/doc/glew/install.html",
+            "share/doc/glew/khronos.txt",
+            "share/doc/glew/log.html",
+            "share/doc/glew/mesa.txt",
+            "share/doc/glew/new.png",
+            "share/doc/glew/ogl_sm.jpg",
+            "share/doc/glew/wglew.html"
+          ],
+          "installed_size": 3208362
+        }
+      }
+    }
+  }
+}

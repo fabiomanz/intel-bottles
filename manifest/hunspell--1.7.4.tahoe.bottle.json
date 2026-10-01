@@ -1,0 +1,278 @@
+{
+  "hunspell": {
+    "formula": {
+      "name": "hunspell",
+      "pkg_version": "1.7.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/h/hunspell.rb",
+      "tap_git_path": "Formula/h/hunspell.rb",
+      "tap_git_revision": "52b61f5ef99b03c18032c38a4a3de85d226a0e7e",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Spell checker and morphological analyzer",
+      "license": "MPL-1.1 OR GPL-2.0-or-later OR LGPL-2.1-or-later",
+      "homepage": "https://hunspell.github.io"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-30T19:08:07Z",
+      "tags": {
+        "tahoe": {
+          "filename": "hunspell-1.7.4.tahoe.bottle.tar.gz",
+          "local_filename": "hunspell--1.7.4.tahoe.bottle.tar.gz",
+          "sha256": "00e9dbce505ebd730ba82af1aabf1fdfbe09c7ff33f2fde6acb1490c07761ead",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "lib/pkgconfig/hunspell.pc"
+            ],
+            "linkage_files": [
+              "bin/analyze",
+              "bin/chmorph",
+              "bin/hunspell",
+              "bin/hunzip",
+              "lib/libhunspell-1.7.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790521427,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "pkg_version": "1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-hunspell"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-hunspell-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/hzip",
+            "bin/hunzip",
+            "bin/wordlist2hunspell",
+            "bin/wordforms",
+            "bin/hunspell",
+            "bin/munch",
+            "bin/unmunch",
+            "bin/ispellaff2myspell",
+            "bin/chmorph",
+            "bin/analyze",
+            "bin/makealias",
+            "bin/affixcompress"
+          ],
+          "all_files": [
+            ".brew/hunspell.rb",
+            "AUTHORS",
+            "COPYING",
+            "COPYING.LESSER",
+            "COPYING.MPL",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "bin/affixcompress",
+            "bin/analyze",
+            "bin/chmorph",
+            "bin/hunspell",
+            "bin/hunzip",
+            "bin/hzip",
+            "bin/ispellaff2myspell",
+            "bin/makealias",
+            "bin/munch",
+            "bin/unmunch",
+            "bin/wordforms",
+            "bin/wordlist2hunspell",
+            "include/hunspell/atypes.hxx",
+            "include/hunspell/hunspell.h",
+            "include/hunspell/hunspell.hxx",
+            "include/hunspell/hunversion.h",
+            "include/hunspell/hunvisapi.h",
+            "include/hunspell/w_char.hxx",
+            "lib/libhunspell-1.7.0.dylib",
+            "lib/libhunspell-1.7.a",
+            "lib/libhunspell-1.7.dylib",
+            "lib/pkgconfig/hunspell.pc",
+            "license.hunspell",
+            "license.myspell",
+            "sbom.spdx.json",
+            "share/locale/an/LC_MESSAGES/hunspell.mo",
+            "share/locale/ar/LC_MESSAGES/hunspell.mo",
+            "share/locale/ast/LC_MESSAGES/hunspell.mo",
+            "share/locale/az/LC_MESSAGES/hunspell.mo",
+            "share/locale/be/LC_MESSAGES/hunspell.mo",
+            "share/locale/bg/LC_MESSAGES/hunspell.mo",
+            "share/locale/br/LC_MESSAGES/hunspell.mo",
+            "share/locale/ca/LC_MESSAGES/hunspell.mo",
+            "share/locale/ckb/LC_MESSAGES/hunspell.mo",
+            "share/locale/co/LC_MESSAGES/hunspell.mo",
+            "share/locale/cs/LC_MESSAGES/hunspell.mo",
+            "share/locale/da/LC_MESSAGES/hunspell.mo",
+            "share/locale/de/LC_MESSAGES/hunspell.mo",
+            "share/locale/de_CH/LC_MESSAGES/hunspell.mo",
+            "share/locale/el/LC_MESSAGES/hunspell.mo",
+            "share/locale/eo/LC_MESSAGES/hunspell.mo",
+            "share/locale/es/LC_MESSAGES/hunspell.mo",
+            "share/locale/et/LC_MESSAGES/hunspell.mo",
+            "share/locale/eu/LC_MESSAGES/hunspell.mo",
+            "share/locale/fa/LC_MESSAGES/hunspell.mo",
+            "share/locale/fi/LC_MESSAGES/hunspell.mo",
+            "share/locale/fr/LC_MESSAGES/hunspell.mo",
+            "share/locale/fur/LC_MESSAGES/hunspell.mo",
+            "share/locale/fy/LC_MESSAGES/hunspell.mo",
+            "share/locale/ga/LC_MESSAGES/hunspell.mo",
+            "share/locale/gl/LC_MESSAGES/hunspell.mo",
+            "share/locale/he/LC_MESSAGES/hunspell.mo",
+            "share/locale/hi/LC_MESSAGES/hunspell.mo",
+            "share/locale/hr/LC_MESSAGES/hunspell.mo",
+            "share/locale/ht/LC_MESSAGES/hunspell.mo",
+            "share/locale/hu/LC_MESSAGES/hunspell.mo",
+            "share/locale/hy/LC_MESSAGES/hunspell.mo",
+            "share/locale/id/LC_MESSAGES/hunspell.mo",
+            "share/locale/ie/LC_MESSAGES/hunspell.mo",
+            "share/locale/ilo/LC_MESSAGES/hunspell.mo",
+            "share/locale/is/LC_MESSAGES/hunspell.mo",
+            "share/locale/it/LC_MESSAGES/hunspell.mo",
+            "share/locale/ka/LC_MESSAGES/hunspell.mo",
+            "share/locale/kab/LC_MESSAGES/hunspell.mo",
+            "share/locale/kk/LC_MESSAGES/hunspell.mo",
+            "share/locale/kn/LC_MESSAGES/hunspell.mo",
+            "share/locale/ko/LC_MESSAGES/hunspell.mo",
+            "share/locale/ky/LC_MESSAGES/hunspell.mo",
+            "share/locale/ln/LC_MESSAGES/hunspell.mo",
+            "share/locale/lt/LC_MESSAGES/hunspell.mo",
+            "share/locale/lv/LC_MESSAGES/hunspell.mo",
+            "share/locale/mk/LC_MESSAGES/hunspell.mo",
+            "share/locale/mn/LC_MESSAGES/hunspell.mo",
+            "share/locale/my/LC_MESSAGES/hunspell.mo",
+            "share/locale/nb_NO/LC_MESSAGES/hunspell.mo",
+            "share/locale/nl/LC_MESSAGES/hunspell.mo",
+            "share/locale/nl_BE/LC_MESSAGES/hunspell.mo",
+            "share/locale/oc/LC_MESSAGES/hunspell.mo",
+            "share/locale/pa/LC_MESSAGES/hunspell.mo",
+            "share/locale/pl/LC_MESSAGES/hunspell.mo",
+            "share/locale/pt/LC_MESSAGES/hunspell.mo",
+            "share/locale/pt_BR/LC_MESSAGES/hunspell.mo",
+            "share/locale/pt_PT/LC_MESSAGES/hunspell.mo",
+            "share/locale/ro/LC_MESSAGES/hunspell.mo",
+            "share/locale/ru/LC_MESSAGES/hunspell.mo",
+            "share/locale/si/LC_MESSAGES/hunspell.mo",
+            "share/locale/sk/LC_MESSAGES/hunspell.mo",
+            "share/locale/sl/LC_MESSAGES/hunspell.mo",
+            "share/locale/sq/LC_MESSAGES/hunspell.mo",
+            "share/locale/sv/LC_MESSAGES/hunspell.mo",
+            "share/locale/ta/LC_MESSAGES/hunspell.mo",
+            "share/locale/tg/LC_MESSAGES/hunspell.mo",
+            "share/locale/tok/LC_MESSAGES/hunspell.mo",
+            "share/locale/tr/LC_MESSAGES/hunspell.mo",
+            "share/locale/tt/LC_MESSAGES/hunspell.mo",
+            "share/locale/uk/LC_MESSAGES/hunspell.mo",
+            "share/locale/ur/LC_MESSAGES/hunspell.mo",
+            "share/locale/uz/LC_MESSAGES/hunspell.mo",
+            "share/locale/vec/LC_MESSAGES/hunspell.mo",
+            "share/locale/vi/LC_MESSAGES/hunspell.mo",
+            "share/locale/wa/LC_MESSAGES/hunspell.mo",
+            "share/locale/zh_Hans/LC_MESSAGES/hunspell.mo",
+            "share/locale/zh_Hant/LC_MESSAGES/hunspell.mo",
+            "share/man/hu/man1/hunspell.1",
+            "share/man/man1/hunspell.1",
+            "share/man/man1/hunzip.1",
+            "share/man/man1/hzip.1",
+            "share/man/man3/hunspell.3",
+            "share/man/man5/hunspell.5"
+          ],
+          "installed_size": 2344926
+        }
+      }
+    }
+  }
+}

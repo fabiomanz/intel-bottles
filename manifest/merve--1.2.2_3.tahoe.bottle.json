@@ -1,0 +1,148 @@
+{
+  "merve": {
+    "formula": {
+      "name": "merve",
+      "pkg_version": "1.2.2_3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/m/merve.rb",
+      "tap_git_path": "Formula/m/merve.rb",
+      "tap_git_revision": "63fa1810e68212f67bd965ae06d098906b90ff0c",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "C++ lexer for extracting named exports from CommonJS modules",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/nodejs/merve"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-01T13:18:28Z",
+      "tags": {
+        "tahoe": {
+          "filename": "merve-1.2.2_3.tahoe.bottle.tar.gz",
+          "local_filename": "merve--1.2.2_3.tahoe.bottle.tar.gz",
+          "sha256": "bbd26ccb72b16358d72a2537ca648103bc96d5aed153e04b167cef9d75102be0",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "lib/pkgconfig/merve.pc"
+            ],
+            "linkage_files": [
+              "lib/libmerve.1.2.2.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1773248001,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "simdutf",
+                "version": "9.2.1",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "9.2.1_1",
+                "declared_directly": true,
+                "compatibility_version": 6
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-simdutf-9.2.1_1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2.1_1",
+                "name": "simdutf",
+                "versionInfo": "9.2.1_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 OR MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/simdutf-9.2.1_1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8dda728df292c179a848b72b5a3c8ac016314b6713e5b30cb952ac789aab6e57"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/simdutf@9.2.1_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2.1_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-merve"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-merve-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/merve.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE-APACHE",
+            "LICENSE-MIT",
+            "README.md",
+            "include/merve/parser.h",
+            "include/merve/version.h",
+            "include/merve.h",
+            "include/merve_c.h",
+            "lib/cmake/merve/merve-config-version.cmake",
+            "lib/cmake/merve/merve-config.cmake",
+            "lib/cmake/merve/merve_targets-release.cmake",
+            "lib/cmake/merve/merve_targets.cmake",
+            "lib/libmerve.1.2.2.dylib",
+            "lib/libmerve.1.dylib",
+            "lib/libmerve.dylib",
+            "lib/pkgconfig/merve.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 100358
+        }
+      }
+    }
+  }
+}

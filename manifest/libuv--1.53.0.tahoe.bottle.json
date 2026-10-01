@@ -1,0 +1,117 @@
+{
+  "libuv": {
+    "formula": {
+      "name": "libuv",
+      "pkg_version": "1.53.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libuv.rb",
+      "tap_git_path": "Formula/lib/libuv.rb",
+      "tap_git_revision": "63fa1810e68212f67bd965ae06d098906b90ff0c",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Multi-platform support library with a focus on asynchronous I/O",
+      "license": "MIT",
+      "homepage": "https://libuv.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-01T13:06:36Z",
+      "tags": {
+        "tahoe": {
+          "filename": "libuv-1.53.0.tahoe.bottle.tar.gz",
+          "local_filename": "libuv--1.53.0.tahoe.bottle.tar.gz",
+          "sha256": "a320aede3e22cd856d6f959dabdf5949dd68a7459acab1c13359b8e84e6c0511",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "lib/pkgconfig/libuv-static.pc",
+              "lib/pkgconfig/libuv.pc"
+            ],
+            "linkage_files": [
+              "lib/libuv.1.0.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790260427,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libuv-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libuv.rb",
+            "AUTHORS",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "LICENSE-docs",
+            "LICENSE-extra",
+            "README.md",
+            "include/uv/aix.h",
+            "include/uv/bsd.h",
+            "include/uv/darwin.h",
+            "include/uv/errno.h",
+            "include/uv/linux.h",
+            "include/uv/os390.h",
+            "include/uv/posix.h",
+            "include/uv/sunos.h",
+            "include/uv/threadpool.h",
+            "include/uv/tree.h",
+            "include/uv/unix.h",
+            "include/uv/version.h",
+            "include/uv/win.h",
+            "include/uv.h",
+            "lib/cmake/libuv/libuvConfig-release.cmake",
+            "lib/cmake/libuv/libuvConfig.cmake",
+            "lib/cmake/libuv/libuvConfigVersion.cmake",
+            "lib/libuv.1.0.0.dylib",
+            "lib/libuv.1.dylib",
+            "lib/libuv.a",
+            "lib/libuv.dylib",
+            "lib/pkgconfig/libuv-static.pc",
+            "lib/pkgconfig/libuv.pc",
+            "sbom.spdx.json",
+            "share/doc/libuv/LICENSE",
+            "share/doc/libuv/LICENSE-extra",
+            "share/man/man1/libuv.1"
+          ],
+          "installed_size": 1256355
+        }
+      }
+    }
+  }
+}

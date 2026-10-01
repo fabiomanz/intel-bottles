@@ -1,0 +1,618 @@
+{
+  "at-spi2-core": {
+    "formula": {
+      "name": "at-spi2-core",
+      "pkg_version": "2.62.0.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/a/at-spi2-core.rb",
+      "tap_git_path": "Formula/a/at-spi2-core.rb",
+      "tap_git_revision": "f53e41b275b6070e94c2d7a81e645c1c05fb6bee",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Protocol definitions and daemon for D-Bus at-spi",
+      "license": "LGPL-2.1-or-later",
+      "homepage": "https://www.freedesktop.org/wiki/Accessibility/AT-SPI2/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-01T05:40:28Z",
+      "tags": {
+        "tahoe": {
+          "filename": "at-spi2-core-2.62.0.1.tahoe.bottle.tar.gz",
+          "local_filename": "at-spi2-core--2.62.0.1.tahoe.bottle.tar.gz",
+          "sha256": "919bafdc178a7e99cb9b0c4f866c6c764dfa6abb30f3a2ebe8e2ecfb54b374f7",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "etc/xdg/autostart/at-spi-dbus-bus.desktop",
+              "lib/pkgconfig/atk-bridge-2.0.pc",
+              "lib/pkgconfig/atk.pc",
+              "lib/pkgconfig/atspi-2.pc",
+              "lib/systemd/user/at-spi-dbus-bus.service",
+              "share/dbus-1/accessibility-services/org.a11y.atspi.Registry.service",
+              "share/dbus-1/services/org.a11y.Bus.service",
+              "share/defaults/at-spi2/accessibility.conf"
+            ],
+            "linkage_files": [
+              "lib/gtk-2.0/modules/libatk-bridge.dylib",
+              "lib/libatk-1.0.0.dylib",
+              "lib/libatk-bridge-2.0.0.dylib",
+              "lib/libatspi.0.dylib",
+              "libexec/at-spi-bus-launcher",
+              "libexec/at-spi2-registryd"
+            ],
+            "binary_relocation_files": [
+              "lib/libatspi.0.dylib",
+              "libexec/at-spi-bus-launcher"
+            ],
+            "source_modified_time": 1789600052,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "dbus",
+                "version": "1.16.2",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.16.2_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.90.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.90.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xorgproto",
+                "version": "2025.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2025.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxau",
+                "version": "1.0.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxdmcp",
+                "version": "1.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxcb",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.17.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libx11",
+                "version": "1.8.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.13",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxext",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.7",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxfixes",
+                "version": "6.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.0.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxi",
+                "version": "1.8.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxtst",
+                "version": "1.2.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.5",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "libexec/at-spi-bus-launcher",
+              "string": "/usr/local/opt/dbus/bin/dbus-daemon",
+              "offset": 13028
+            },
+            {
+              "path": "lib/libatspi.0.dylib",
+              "string": "/usr/local/Cellar/at-spi2-core/2.62.0.1/share/locale",
+              "offset": 116380
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.0",
+              "SPDXRef-Package-SPDXRef-glib-2.90.0",
+              "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8c54c7bc4c98effd8b886213f126278f87cef9c596d9ab2ef3d52bc100c79f65"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gettext-1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "27f00f82c225d2feafe765d37a15699352a390397bdeec1ccbc2b5fe943f7ee7"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "name": "glib",
+                "versionInfo": "2.90.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4f180b8f89781725d58c0a39d7508c0bf0e96225fc69ef630e18a9f885f61c4a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/glib@2.90.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+                "name": "libx11",
+                "versionInfo": "1.8.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.13.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7035ebb1057ef3de675393d244db0d486f07b91aab5d24a4b2d0140c05b9724d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libx11@1.8.13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-at-spi2-core"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-at-spi2-core"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-at-spi2-core"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-at-spi2-core"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-at-spi2-core"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-at-spi2-core"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-at-spi2-core-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/at-spi2-core.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "Library/Python/3.9/site-packages/gi/overrides/Atspi.py",
+            "NEWS",
+            "README.md",
+            "etc/xdg/Xwayland-session.d/00-at-spi",
+            "etc/xdg/autostart/at-spi-dbus-bus.desktop",
+            "include/at-spi-2.0/atspi/atspi-accessible.h",
+            "include/at-spi-2.0/atspi/atspi-action.h",
+            "include/at-spi-2.0/atspi/atspi-application.h",
+            "include/at-spi-2.0/atspi/atspi-collection.h",
+            "include/at-spi-2.0/atspi/atspi-component.h",
+            "include/at-spi-2.0/atspi/atspi-constants.h",
+            "include/at-spi-2.0/atspi/atspi-device-a11y-manager.h",
+            "include/at-spi-2.0/atspi/atspi-device-legacy.h",
+            "include/at-spi-2.0/atspi/atspi-device-listener.h",
+            "include/at-spi-2.0/atspi/atspi-device-x11.h",
+            "include/at-spi-2.0/atspi/atspi-device.h",
+            "include/at-spi-2.0/atspi/atspi-document.h",
+            "include/at-spi-2.0/atspi/atspi-editabletext.h",
+            "include/at-spi-2.0/atspi/atspi-enum-types.h",
+            "include/at-spi-2.0/atspi/atspi-event-listener.h",
+            "include/at-spi-2.0/atspi/atspi-hyperlink.h",
+            "include/at-spi-2.0/atspi/atspi-hypertext.h",
+            "include/at-spi-2.0/atspi/atspi-image.h",
+            "include/at-spi-2.0/atspi/atspi-matchrule.h",
+            "include/at-spi-2.0/atspi/atspi-misc.h",
+            "include/at-spi-2.0/atspi/atspi-object.h",
+            "include/at-spi-2.0/atspi/atspi-registry.h",
+            "include/at-spi-2.0/atspi/atspi-relation.h",
+            "include/at-spi-2.0/atspi/atspi-selection.h",
+            "include/at-spi-2.0/atspi/atspi-stateset.h",
+            "include/at-spi-2.0/atspi/atspi-table-cell.h",
+            "include/at-spi-2.0/atspi/atspi-table.h",
+            "include/at-spi-2.0/atspi/atspi-text.h",
+            "include/at-spi-2.0/atspi/atspi-types.h",
+            "include/at-spi-2.0/atspi/atspi-value.h",
+            "include/at-spi-2.0/atspi/atspi-version.h",
+            "include/at-spi-2.0/atspi/atspi.h",
+            "include/at-spi2-atk/2.0/atk-bridge.h",
+            "include/atk-1.0/atk/atk-autocleanups.h",
+            "include/atk-1.0/atk/atk-enum-types.h",
+            "include/atk-1.0/atk/atk.h",
+            "include/atk-1.0/atk/atkaction.h",
+            "include/atk-1.0/atk/atkcomponent.h",
+            "include/atk-1.0/atk/atkdocument.h",
+            "include/atk-1.0/atk/atkeditabletext.h",
+            "include/atk-1.0/atk/atkgobjectaccessible.h",
+            "include/atk-1.0/atk/atkhyperlink.h",
+            "include/atk-1.0/atk/atkhyperlinkimpl.h",
+            "include/atk-1.0/atk/atkhypertext.h",
+            "include/atk-1.0/atk/atkimage.h",
+            "include/atk-1.0/atk/atkmisc.h",
+            "include/atk-1.0/atk/atknoopobject.h",
+            "include/atk-1.0/atk/atknoopobjectfactory.h",
+            "include/atk-1.0/atk/atkobject.h",
+            "include/atk-1.0/atk/atkobjectfactory.h",
+            "include/atk-1.0/atk/atkplug.h",
+            "include/atk-1.0/atk/atkrange.h",
+            "include/atk-1.0/atk/atkregistry.h",
+            "include/atk-1.0/atk/atkrelation.h",
+            "include/atk-1.0/atk/atkrelationset.h",
+            "include/atk-1.0/atk/atkrelationtype.h",
+            "include/atk-1.0/atk/atkselection.h",
+            "include/atk-1.0/atk/atksocket.h",
+            "include/atk-1.0/atk/atkstate.h",
+            "include/atk-1.0/atk/atkstateset.h",
+            "include/atk-1.0/atk/atkstreamablecontent.h",
+            "include/atk-1.0/atk/atktable.h",
+            "include/atk-1.0/atk/atktablecell.h",
+            "include/atk-1.0/atk/atktext.h",
+            "include/atk-1.0/atk/atkutil.h",
+            "include/atk-1.0/atk/atkvalue.h",
+            "include/atk-1.0/atk/atkversion.h",
+            "include/atk-1.0/atk/atkwindow.h",
+            "lib/girepository-1.0/Atk-1.0.typelib",
+            "lib/girepository-1.0/Atspi-2.0.typelib",
+            "lib/gnome-settings-daemon-3.0/gtk-modules/at-spi2-atk.desktop",
+            "lib/gtk-2.0/modules/libatk-bridge.dylib",
+            "lib/libatk-1.0.0.dylib",
+            "lib/libatk-1.0.dylib",
+            "lib/libatk-bridge-2.0.0.dylib",
+            "lib/libatk-bridge-2.0.dylib",
+            "lib/libatspi.0.dylib",
+            "lib/libatspi.dylib",
+            "lib/pkgconfig/atk-bridge-2.0.pc",
+            "lib/pkgconfig/atk.pc",
+            "lib/pkgconfig/atspi-2.pc",
+            "lib/systemd/user/at-spi-dbus-bus.service",
+            "libexec/at-spi-bus-launcher",
+            "libexec/at-spi2-registryd",
+            "sbom.spdx.json",
+            "share/dbus-1/accessibility-services/org.a11y.atspi.Registry.service",
+            "share/dbus-1/services/org.a11y.Bus.service",
+            "share/defaults/at-spi2/accessibility.conf",
+            "share/gir-1.0/Atk-1.0.gir",
+            "share/gir-1.0/Atspi-2.0.gir",
+            "share/locale/ab/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/af/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/am/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/an/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/ar/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/as/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/ast/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/az/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/be/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/be@latin/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/bg/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/bn/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/bn_IN/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/bs/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/ca/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/ca@valencia/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/ckb/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/cs/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/cy/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/da/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/de/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/dz/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/el/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/en@shaw/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/en_CA/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/en_GB/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/eo/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/es/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/et/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/eu/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/fa/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/fi/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/fr/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/fur/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/ga/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/gd/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/gl/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/gu/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/he/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/hi/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/hr/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/hu/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/hy/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/id/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/is/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/it/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/ja/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/ka/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/kab/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/kk/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/km/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/kn/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/ko/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/ku/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/li/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/lt/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/lv/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/mai/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/mk/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/ml/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/mn/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/mr/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/ms/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/nb/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/ne/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/nl/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/nn/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/oc/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/or/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/pa/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/pl/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/ps/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/pt/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/pt_BR/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/ro/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/ru/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/rw/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/si/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/sk/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/sl/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/sq/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/sr/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/sr@ije/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/sr@latin/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/sv/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/ta/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/te/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/tg/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/th/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/tk/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/tr/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/tt/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/ug/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/uk/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/uz/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/uz@cyrillic/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/vi/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/wa/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/xh/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/yi/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/zh_CN/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/zh_HK/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/zh_TW/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/zu/LC_MESSAGES/at-spi2-core.mo"
+          ],
+          "installed_size": 4357640
+        }
+      }
+    }
+  }
+}

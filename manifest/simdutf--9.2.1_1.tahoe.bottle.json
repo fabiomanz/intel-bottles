@@ -1,0 +1,162 @@
+{
+  "simdutf": {
+    "formula": {
+      "name": "simdutf",
+      "pkg_version": "9.2.1_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/simdutf.rb",
+      "tap_git_path": "Formula/s/simdutf.rb",
+      "tap_git_revision": "f5900eedc815143778a79d3c0448054ab00be974",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Unicode conversion routines, fast",
+      "license": "Apache-2.0 OR MIT",
+      "homepage": "https://simdutf.github.io/simdutf/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-01T12:19:49Z",
+      "tags": {
+        "tahoe": {
+          "filename": "simdutf-9.2.1_1.tahoe.bottle.tar.gz",
+          "local_filename": "simdutf--9.2.1_1.tahoe.bottle.tar.gz",
+          "sha256": "8dda728df292c179a848b72b5a3c8ac016314b6713e5b30cb952ac789aab6e57",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "lib/pkgconfig/simdutf.pc"
+            ],
+            "linkage_files": [
+              "bin/sutf-benchmark",
+              "lib/libsimdutf.36.0.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790198037,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-simdutf-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/sutf",
+            "bin/fastbase64",
+            "bin/fastbase64.coreutils",
+            "bin/sutf-benchmark"
+          ],
+          "all_files": [
+            ".brew/simdutf.rb",
+            "AUTHORS",
+            "INSTALL_RECEIPT.json",
+            "LICENSE-APACHE",
+            "LICENSE-MIT",
+            "README.md",
+            "bin/fastbase64",
+            "bin/fastbase64.coreutils",
+            "bin/sutf",
+            "bin/sutf-benchmark",
+            "include/simdutf/avx512.h",
+            "include/simdutf/base64_implementation.h",
+            "include/simdutf/base64_tables.h",
+            "include/simdutf/common_defs.h",
+            "include/simdutf/compiler_check.h",
+            "include/simdutf/constexpr_ptr.h",
+            "include/simdutf/encoding_types.h",
+            "include/simdutf/error.h",
+            "include/simdutf/implementation.h",
+            "include/simdutf/internal/isadetection.h",
+            "include/simdutf/portability.h",
+            "include/simdutf/scalar/ascii.h",
+            "include/simdutf/scalar/atomic_util.h",
+            "include/simdutf/scalar/base64.h",
+            "include/simdutf/scalar/latin1.h",
+            "include/simdutf/scalar/latin1_to_utf16/latin1_to_utf16.h",
+            "include/simdutf/scalar/latin1_to_utf32/latin1_to_utf32.h",
+            "include/simdutf/scalar/latin1_to_utf8/latin1_to_utf8.h",
+            "include/simdutf/scalar/swap_bytes.h",
+            "include/simdutf/scalar/utf16.h",
+            "include/simdutf/scalar/utf16_to_latin1/utf16_to_latin1.h",
+            "include/simdutf/scalar/utf16_to_latin1/valid_utf16_to_latin1.h",
+            "include/simdutf/scalar/utf16_to_utf32/utf16_to_utf32.h",
+            "include/simdutf/scalar/utf16_to_utf32/valid_utf16_to_utf32.h",
+            "include/simdutf/scalar/utf16_to_utf8/utf16_to_utf8.h",
+            "include/simdutf/scalar/utf16_to_utf8/valid_utf16_to_utf8.h",
+            "include/simdutf/scalar/utf32.h",
+            "include/simdutf/scalar/utf32_to_latin1/utf32_to_latin1.h",
+            "include/simdutf/scalar/utf32_to_latin1/valid_utf32_to_latin1.h",
+            "include/simdutf/scalar/utf32_to_utf16/utf32_to_utf16.h",
+            "include/simdutf/scalar/utf32_to_utf16/valid_utf32_to_utf16.h",
+            "include/simdutf/scalar/utf32_to_utf8/utf32_to_utf8.h",
+            "include/simdutf/scalar/utf32_to_utf8/valid_utf32_to_utf8.h",
+            "include/simdutf/scalar/utf8.h",
+            "include/simdutf/scalar/utf8_to_latin1/utf8_to_latin1.h",
+            "include/simdutf/scalar/utf8_to_latin1/valid_utf8_to_latin1.h",
+            "include/simdutf/scalar/utf8_to_utf16/utf8_to_utf16.h",
+            "include/simdutf/scalar/utf8_to_utf16/valid_utf8_to_utf16.h",
+            "include/simdutf/scalar/utf8_to_utf32/utf8_to_utf32.h",
+            "include/simdutf/scalar/utf8_to_utf32/valid_utf8_to_utf32.h",
+            "include/simdutf/simdutf_version.h",
+            "include/simdutf.h",
+            "include/simdutf_c.h",
+            "lib/cmake/simdutf/simdutf-config-version.cmake",
+            "lib/cmake/simdutf/simdutf-config.cmake",
+            "lib/cmake/simdutf/simdutfTargets-release.cmake",
+            "lib/cmake/simdutf/simdutfTargets.cmake",
+            "lib/libsimdutf.36.0.0.dylib",
+            "lib/libsimdutf.36.dylib",
+            "lib/libsimdutf.dylib",
+            "lib/pkgconfig/simdutf.pc",
+            "sbom.spdx.json",
+            "share/man/man1/fastbase64.1",
+            "share/man/man1/fastbase64.coreutils.1",
+            "share/man/man1/sutf.1"
+          ],
+          "installed_size": 2699894
+        }
+      }
+    }
+  }
+}

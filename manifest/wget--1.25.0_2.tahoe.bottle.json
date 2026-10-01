@@ -1,0 +1,305 @@
+{
+  "wget": {
+    "formula": {
+      "name": "wget",
+      "pkg_version": "1.25.0_2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/w/wget.rb",
+      "tap_git_path": "Formula/w/wget.rb",
+      "tap_git_revision": "52b61f5ef99b03c18032c38a4a3de85d226a0e7e",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Internet file retriever",
+      "license": "GPL-3.0-or-later",
+      "homepage": "https://www.gnu.org/software/wget/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-30T20:34:20Z",
+      "tags": {
+        "tahoe": {
+          "filename": "wget-1.25.0_2.tahoe.bottle.tar.gz",
+          "local_filename": "wget--1.25.0_2.tahoe.bottle.tar.gz",
+          "sha256": "a9e0958c067a10d301f7c11925e38623ac861d594d56837d396bca348c668a41",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "README",
+              "share/man/man1/wget.1"
+            ],
+            "linkage_files": [
+              "bin/wget"
+            ],
+            "binary_relocation_files": [
+              "bin/wget"
+            ],
+            "source_modified_time": 1731274298,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "pkg_version": "1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libidn2",
+                "version": "2.3.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.8",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpsl",
+                "version": "0.23.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.23.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/wget",
+              "string": "/usr/local/Cellar/wget/1.25.0_2/share/locale",
+              "offset": 324285
+            },
+            {
+              "path": "bin/wget",
+              "string": "/usr/local/etc/wgetrc",
+              "offset": 319085
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-wget"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-wget"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-wget-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/wget"
+          ],
+          "all_files": [
+            ".brew/wget.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "bin/wget",
+            "sbom.spdx.json",
+            "share/info/wget.info",
+            "share/locale/af/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/be/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/be/LC_MESSAGES/wget.mo",
+            "share/locale/bg/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/bg/LC_MESSAGES/wget.mo",
+            "share/locale/ca/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/ca/LC_MESSAGES/wget.mo",
+            "share/locale/cs/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/cs/LC_MESSAGES/wget.mo",
+            "share/locale/da/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/da/LC_MESSAGES/wget.mo",
+            "share/locale/de/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/de/LC_MESSAGES/wget.mo",
+            "share/locale/el/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/el/LC_MESSAGES/wget.mo",
+            "share/locale/en_GB/LC_MESSAGES/wget.mo",
+            "share/locale/eo/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/eo/LC_MESSAGES/wget.mo",
+            "share/locale/es/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/es/LC_MESSAGES/wget.mo",
+            "share/locale/et/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/et/LC_MESSAGES/wget.mo",
+            "share/locale/eu/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/eu/LC_MESSAGES/wget.mo",
+            "share/locale/fi/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/fi/LC_MESSAGES/wget.mo",
+            "share/locale/fr/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/fr/LC_MESSAGES/wget.mo",
+            "share/locale/ga/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/ga/LC_MESSAGES/wget.mo",
+            "share/locale/gl/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/gl/LC_MESSAGES/wget.mo",
+            "share/locale/he/LC_MESSAGES/wget.mo",
+            "share/locale/hr/LC_MESSAGES/wget.mo",
+            "share/locale/hu/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/hu/LC_MESSAGES/wget.mo",
+            "share/locale/id/LC_MESSAGES/wget.mo",
+            "share/locale/it/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/it/LC_MESSAGES/wget.mo",
+            "share/locale/ja/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/ja/LC_MESSAGES/wget.mo",
+            "share/locale/ka/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/ka/LC_MESSAGES/wget.mo",
+            "share/locale/ko/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/ko/LC_MESSAGES/wget.mo",
+            "share/locale/lt/LC_MESSAGES/wget.mo",
+            "share/locale/ms/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/nb/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/nb/LC_MESSAGES/wget.mo",
+            "share/locale/nl/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/nl/LC_MESSAGES/wget.mo",
+            "share/locale/pl/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/pl/LC_MESSAGES/wget.mo",
+            "share/locale/pt/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/pt/LC_MESSAGES/wget.mo",
+            "share/locale/pt_BR/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/pt_BR/LC_MESSAGES/wget.mo",
+            "share/locale/ro/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/ro/LC_MESSAGES/wget.mo",
+            "share/locale/ru/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/ru/LC_MESSAGES/wget.mo",
+            "share/locale/rw/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/sk/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/sk/LC_MESSAGES/wget.mo",
+            "share/locale/sl/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/sl/LC_MESSAGES/wget.mo",
+            "share/locale/sr/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/sr/LC_MESSAGES/wget.mo",
+            "share/locale/sv/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/sv/LC_MESSAGES/wget.mo",
+            "share/locale/tr/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/tr/LC_MESSAGES/wget.mo",
+            "share/locale/uk/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/uk/LC_MESSAGES/wget.mo",
+            "share/locale/vi/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/vi/LC_MESSAGES/wget.mo",
+            "share/locale/zh_CN/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/zh_CN/LC_MESSAGES/wget.mo",
+            "share/locale/zh_TW/LC_MESSAGES/wget-gnulib.mo",
+            "share/locale/zh_TW/LC_MESSAGES/wget.mo",
+            "share/man/man1/wget.1"
+          ],
+          "installed_size": 4664023
+        }
+      }
+    }
+  }
+}

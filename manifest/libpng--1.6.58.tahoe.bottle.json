@@ -1,0 +1,117 @@
+{
+  "libpng": {
+    "formula": {
+      "name": "libpng",
+      "pkg_version": "1.6.58",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libpng.rb",
+      "tap_git_path": "Formula/lib/libpng.rb",
+      "tap_git_revision": "f5900eedc815143778a79d3c0448054ab00be974",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Library for manipulating PNG images",
+      "license": "libpng-2.0",
+      "homepage": "https://www.libpng.org/pub/png/libpng.html"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-01T12:04:23Z",
+      "tags": {
+        "tahoe": {
+          "filename": "libpng-1.6.58.tahoe.bottle.tar.gz",
+          "local_filename": "libpng--1.6.58.tahoe.bottle.tar.gz",
+          "sha256": "e570839e89d5bbb4efbaf2cb1386f730446069e2899a4bf4317b898ac223656a",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "bin/libpng16-config",
+              "lib/pkgconfig/libpng.pc",
+              "lib/pkgconfig/libpng16.pc"
+            ],
+            "linkage_files": [
+              "bin/pngfix",
+              "lib/libpng16.16.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1776273806,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libpng-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/png-fix-itxt",
+            "bin/libpng16-config",
+            "bin/pngfix",
+            "bin/libpng-config"
+          ],
+          "all_files": [
+            ".brew/libpng.rb",
+            "AUTHORS",
+            "CHANGES",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README",
+            "TODO",
+            "bin/libpng-config",
+            "bin/libpng16-config",
+            "bin/png-fix-itxt",
+            "bin/pngfix",
+            "include/libpng16/png.h",
+            "include/libpng16/pngconf.h",
+            "include/libpng16/pnglibconf.h",
+            "include/png.h",
+            "include/pngconf.h",
+            "include/pnglibconf.h",
+            "lib/libpng.a",
+            "lib/libpng.dylib",
+            "lib/libpng16.16.dylib",
+            "lib/libpng16.a",
+            "lib/libpng16.dylib",
+            "lib/pkgconfig/libpng.pc",
+            "lib/pkgconfig/libpng16.pc",
+            "sbom.spdx.json",
+            "share/man/man3/libpng.3",
+            "share/man/man3/libpngpf.3",
+            "share/man/man5/png.5"
+          ],
+          "installed_size": 1276650
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "readline": {
+    "formula": {
+      "name": "readline",
+      "pkg_version": "8.3.6",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/r/readline.rb",
+      "tap_git_path": "Formula/r/readline.rb",
+      "tap_git_revision": "f5900eedc815143778a79d3c0448054ab00be974",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Library for command-line editing",
+      "license": "GPL-3.0-or-later",
+      "homepage": "https://tiswww.case.edu/php/chet/readline/rltop.html"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-01T12:12:59Z",
+      "tags": {
+        "tahoe": {
+          "filename": "readline-8.3.6.tahoe.bottle.tar.gz",
+          "local_filename": "readline--8.3.6.tahoe.bottle.tar.gz",
+          "sha256": "8e2d9a12817040fff1164139282e0d2f7ad2aaf388db15db8eb36a8fb00dd74a",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "lib/pkgconfig/history.pc",
+              "lib/pkgconfig/readline.pc"
+            ],
+            "linkage_files": [
+              "lib/libhistory.8.3.dylib",
+              "lib/libreadline.8.3.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1750882156,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-readline-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/readline.rb",
+            "CHANGELOG",
+            "CHANGES",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "include/readline/chardefs.h",
+            "include/readline/history.h",
+            "include/readline/keymaps.h",
+            "include/readline/readline.h",
+            "include/readline/rlconf.h",
+            "include/readline/rlstdc.h",
+            "include/readline/rltypedefs.h",
+            "include/readline/tilde.h",
+            "lib/libhistory.8.3.dylib",
+            "lib/libhistory.8.dylib",
+            "lib/libhistory.a",
+            "lib/libhistory.dylib",
+            "lib/libreadline.8.3.dylib",
+            "lib/libreadline.8.dylib",
+            "lib/libreadline.a",
+            "lib/libreadline.dylib",
+            "lib/pkgconfig/history.pc",
+            "lib/pkgconfig/readline.pc",
+            "sbom.spdx.json",
+            "share/doc/readline/CHANGES",
+            "share/doc/readline/INSTALL",
+            "share/doc/readline/README",
+            "share/doc/readline/history.html",
+            "share/doc/readline/readline.html",
+            "share/doc/readline/rluserman.html",
+            "share/info/history.info",
+            "share/info/readline.info",
+            "share/info/rluserman.info",
+            "share/man/man3/history.3",
+            "share/man/man3/readline.3",
+            "share/readline/excallback.c",
+            "share/readline/fileman.c",
+            "share/readline/hist_erasedups.c",
+            "share/readline/hist_purgecmd.c",
+            "share/readline/histexamp.c",
+            "share/readline/manexamp.c",
+            "share/readline/rl-callbacktest.c",
+            "share/readline/rl-callbacktest2.c",
+            "share/readline/rl-callbacktest3.c",
+            "share/readline/rl-fgets.c",
+            "share/readline/rl-timeout.c",
+            "share/readline/rl.c",
+            "share/readline/rlbasic.c",
+            "share/readline/rlcat.c",
+            "share/readline/rlevent.c",
+            "share/readline/rlkeymaps.c",
+            "share/readline/rlptytest.c",
+            "share/readline/rltest.c",
+            "share/readline/rlversion.c"
+          ],
+          "installed_size": 2550737
+        }
+      }
+    }
+  }
+}

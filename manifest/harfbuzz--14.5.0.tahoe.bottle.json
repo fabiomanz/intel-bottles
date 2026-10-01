@@ -1,0 +1,613 @@
+{
+  "harfbuzz": {
+    "formula": {
+      "name": "harfbuzz",
+      "pkg_version": "14.5.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/h/harfbuzz.rb",
+      "tap_git_path": "Formula/h/harfbuzz.rb",
+      "tap_git_revision": "f53e41b275b6070e94c2d7a81e645c1c05fb6bee",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "OpenType text shaping engine",
+      "license": "MIT",
+      "homepage": "https://github.com/harfbuzz/harfbuzz"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-01T05:43:42Z",
+      "tags": {
+        "tahoe": {
+          "filename": "harfbuzz-14.5.0.tahoe.bottle.tar.gz",
+          "local_filename": "harfbuzz--14.5.0.tahoe.bottle.tar.gz",
+          "sha256": "fbc301cc22f65682374306d5e7c1cf6c49b39a97147daca564ca9169ac8ac357",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "lib/pkgconfig/harfbuzz-cairo.pc",
+              "lib/pkgconfig/harfbuzz-gobject.pc",
+              "lib/pkgconfig/harfbuzz-gpu.pc",
+              "lib/pkgconfig/harfbuzz-icu.pc",
+              "lib/pkgconfig/harfbuzz-raster.pc",
+              "lib/pkgconfig/harfbuzz-subset.pc",
+              "lib/pkgconfig/harfbuzz-vector.pc",
+              "lib/pkgconfig/harfbuzz.pc"
+            ],
+            "linkage_files": [
+              "bin/hb-info",
+              "bin/hb-raster",
+              "bin/hb-shape",
+              "bin/hb-subset",
+              "bin/hb-vector",
+              "bin/hb-view",
+              "lib/libharfbuzz-cairo.0.dylib",
+              "lib/libharfbuzz-gobject.0.dylib",
+              "lib/libharfbuzz-gpu.0.dylib",
+              "lib/libharfbuzz-icu.0.dylib",
+              "lib/libharfbuzz-raster.0.dylib",
+              "lib/libharfbuzz-subset.0.dylib",
+              "lib/libharfbuzz-vector.0.dylib",
+              "lib/libharfbuzz.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789940467,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libpng",
+                "version": "1.6.58",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.58",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "freetype",
+                "version": "2.14.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.14.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fontconfig",
+                "version": "2.18.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.18.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.90.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.90.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xorgproto",
+                "version": "2025.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2025.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxau",
+                "version": "1.0.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxdmcp",
+                "version": "1.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxcb",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.17.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libx11",
+                "version": "1.8.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxext",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.7",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxrender",
+                "version": "0.9.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.9.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lzo",
+                "version": "2.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.10",
+                "declared_directly": false
+              },
+              {
+                "full_name": "pixman",
+                "version": "0.46.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "0.46.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "cairo",
+                "version": "1.18.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.18.6",
+                "declared_directly": true
+              },
+              {
+                "full_name": "graphite2",
+                "version": "1.3.15",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.15",
+                "declared_directly": true
+              },
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.0",
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-glib-2.90.0",
+              "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+              "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "name": "libpng",
+                "versionInfo": "1.6.58",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.58.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e52e7248928f76d19f4253ab672b59dde6a6f21e94b090137170bb2e971f9cc2"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpng@1.6.58",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8c54c7bc4c98effd8b886213f126278f87cef9c596d9ab2ef3d52bc100c79f65"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gettext-1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "27f00f82c225d2feafe765d37a15699352a390397bdeec1ccbc2b5fe943f7ee7"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "name": "glib",
+                "versionInfo": "2.90.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4f180b8f89781725d58c0a39d7508c0bf0e96225fc69ef630e18a9f885f61c4a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/glib@2.90.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+                "name": "libx11",
+                "versionInfo": "1.8.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.13.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7035ebb1057ef3de675393d244db0d486f07b91aab5d24a4b2d0140c05b9724d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libx11@1.8.13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+                "name": "cairo",
+                "versionInfo": "1.18.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-only OR MPL-1.1",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/cairo-1.18.6.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "82e98b7ba1ba8aadca23d85b6ee4aaec38273d61c453dba9ad3905675cfb2a84"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/cairo@1.18.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-harfbuzz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-harfbuzz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-harfbuzz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-harfbuzz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-harfbuzz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-harfbuzz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-harfbuzz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-harfbuzz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-harfbuzz-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/hb-vector",
+            "bin/hb-raster",
+            "bin/hb-info",
+            "bin/hb-view",
+            "bin/hb-shape",
+            "bin/hb-subset"
+          ],
+          "all_files": [
+            ".brew/harfbuzz.rb",
+            "AUTHORS",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README.md",
+            "bin/hb-info",
+            "bin/hb-raster",
+            "bin/hb-shape",
+            "bin/hb-subset",
+            "bin/hb-vector",
+            "bin/hb-view",
+            "include/harfbuzz/hb-aat-layout.h",
+            "include/harfbuzz/hb-aat.h",
+            "include/harfbuzz/hb-blob.h",
+            "include/harfbuzz/hb-buffer.h",
+            "include/harfbuzz/hb-cairo.h",
+            "include/harfbuzz/hb-common.h",
+            "include/harfbuzz/hb-coretext.h",
+            "include/harfbuzz/hb-cplusplus.hh",
+            "include/harfbuzz/hb-deprecated.h",
+            "include/harfbuzz/hb-draw.h",
+            "include/harfbuzz/hb-face.h",
+            "include/harfbuzz/hb-features.h",
+            "include/harfbuzz/hb-font.h",
+            "include/harfbuzz/hb-ft.h",
+            "include/harfbuzz/hb-glib.h",
+            "include/harfbuzz/hb-gobject-enums.h",
+            "include/harfbuzz/hb-gobject-structs.h",
+            "include/harfbuzz/hb-gobject.h",
+            "include/harfbuzz/hb-gpu.h",
+            "include/harfbuzz/hb-graphite2.h",
+            "include/harfbuzz/hb-icu.h",
+            "include/harfbuzz/hb-map.h",
+            "include/harfbuzz/hb-ot-color.h",
+            "include/harfbuzz/hb-ot-deprecated.h",
+            "include/harfbuzz/hb-ot-fetch.h",
+            "include/harfbuzz/hb-ot-font.h",
+            "include/harfbuzz/hb-ot-layout.h",
+            "include/harfbuzz/hb-ot-math.h",
+            "include/harfbuzz/hb-ot-meta.h",
+            "include/harfbuzz/hb-ot-metrics.h",
+            "include/harfbuzz/hb-ot-name.h",
+            "include/harfbuzz/hb-ot-shape.h",
+            "include/harfbuzz/hb-ot-var.h",
+            "include/harfbuzz/hb-ot.h",
+            "include/harfbuzz/hb-paint.h",
+            "include/harfbuzz/hb-raster.h",
+            "include/harfbuzz/hb-script-list.h",
+            "include/harfbuzz/hb-set.h",
+            "include/harfbuzz/hb-shape-plan.h",
+            "include/harfbuzz/hb-shape.h",
+            "include/harfbuzz/hb-style.h",
+            "include/harfbuzz/hb-subset-depend.h",
+            "include/harfbuzz/hb-subset-serialize.h",
+            "include/harfbuzz/hb-subset.h",
+            "include/harfbuzz/hb-unicode.h",
+            "include/harfbuzz/hb-vector.h",
+            "include/harfbuzz/hb-version.h",
+            "include/harfbuzz/hb.h",
+            "lib/cmake/harfbuzz/harfbuzz-config.cmake",
+            "lib/girepository-1.0/HarfBuzz-0.0.typelib",
+            "lib/libharfbuzz-cairo.0.dylib",
+            "lib/libharfbuzz-cairo.a",
+            "lib/libharfbuzz-cairo.dylib",
+            "lib/libharfbuzz-gobject.0.dylib",
+            "lib/libharfbuzz-gobject.a",
+            "lib/libharfbuzz-gobject.dylib",
+            "lib/libharfbuzz-gpu.0.dylib",
+            "lib/libharfbuzz-gpu.a",
+            "lib/libharfbuzz-gpu.dylib",
+            "lib/libharfbuzz-icu.0.dylib",
+            "lib/libharfbuzz-icu.a",
+            "lib/libharfbuzz-icu.dylib",
+            "lib/libharfbuzz-raster.0.dylib",
+            "lib/libharfbuzz-raster.a",
+            "lib/libharfbuzz-raster.dylib",
+            "lib/libharfbuzz-subset.0.dylib",
+            "lib/libharfbuzz-subset.a",
+            "lib/libharfbuzz-subset.dylib",
+            "lib/libharfbuzz-vector.0.dylib",
+            "lib/libharfbuzz-vector.a",
+            "lib/libharfbuzz-vector.dylib",
+            "lib/libharfbuzz.0.dylib",
+            "lib/libharfbuzz.a",
+            "lib/libharfbuzz.dylib",
+            "lib/pkgconfig/harfbuzz-cairo.pc",
+            "lib/pkgconfig/harfbuzz-gobject.pc",
+            "lib/pkgconfig/harfbuzz-gpu.pc",
+            "lib/pkgconfig/harfbuzz-icu.pc",
+            "lib/pkgconfig/harfbuzz-raster.pc",
+            "lib/pkgconfig/harfbuzz-subset.pc",
+            "lib/pkgconfig/harfbuzz-vector.pc",
+            "lib/pkgconfig/harfbuzz.pc",
+            "sbom.spdx.json",
+            "share/gir-1.0/HarfBuzz-0.0.gir"
+          ],
+          "installed_size": 14818410
+        }
+      }
+    }
+  }
+}

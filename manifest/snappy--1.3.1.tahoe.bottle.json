@@ -1,0 +1,99 @@
+{
+  "snappy": {
+    "formula": {
+      "name": "snappy",
+      "pkg_version": "1.3.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/snappy.rb",
+      "tap_git_path": "Formula/s/snappy.rb",
+      "tap_git_revision": "f5900eedc815143778a79d3c0448054ab00be974",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Compression/decompression library aiming for high speed",
+      "license": "BSD-3-Clause",
+      "homepage": "https://google.github.io/snappy/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-01T12:21:01Z",
+      "tags": {
+        "tahoe": {
+          "filename": "snappy-1.3.1.tahoe.bottle.tar.gz",
+          "local_filename": "snappy--1.3.1.tahoe.bottle.tar.gz",
+          "sha256": "9df09c01fff87e4398eedbb6c7b687964c657b8e10265ab586cb8ded601b1cb8",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/libsnappy.1.3.1.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789728466,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-snappy-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/snappy.rb",
+            "AUTHORS",
+            "COPYING",
+            "COPYING.notestdata",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README.md",
+            "include/snappy-c.h",
+            "include/snappy-sinksource.h",
+            "include/snappy-stubs-public.h",
+            "include/snappy.h",
+            "lib/cmake/Snappy/SnappyConfig.cmake",
+            "lib/cmake/Snappy/SnappyConfigVersion.cmake",
+            "lib/cmake/Snappy/SnappyTargets-release.cmake",
+            "lib/cmake/Snappy/SnappyTargets.cmake",
+            "lib/libsnappy.1.3.1.dylib",
+            "lib/libsnappy.1.dylib",
+            "lib/libsnappy.a",
+            "lib/libsnappy.dylib",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 157615
+        }
+      }
+    }
+  }
+}

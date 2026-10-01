@@ -1,0 +1,1474 @@
+{
+  "graphviz": {
+    "formula": {
+      "name": "graphviz",
+      "pkg_version": "16.1.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/graphviz.rb",
+      "tap_git_path": "Formula/g/graphviz.rb",
+      "tap_git_revision": "f53e41b275b6070e94c2d7a81e645c1c05fb6bee",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Graph visualization software from AT&T and Bell Labs",
+      "license": "EPL-1.0",
+      "homepage": "https://graphviz.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-01T06:00:14Z",
+      "tags": {
+        "tahoe": {
+          "filename": "graphviz-16.1.0.tahoe.bottle.tar.gz",
+          "local_filename": "graphviz--16.1.0.tahoe.bottle.tar.gz",
+          "sha256": "974709e08190c331413a87582921d61e298e1a10cb31cc83d03ad2a77daaee35",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "lib/pkgconfig/libcdt.pc",
+              "lib/pkgconfig/libcgraph.pc",
+              "lib/pkgconfig/libgvc.pc",
+              "lib/pkgconfig/libgvpr.pc",
+              "lib/pkgconfig/libpathplan.pc",
+              "lib/pkgconfig/libxdot.pc"
+            ],
+            "linkage_files": [
+              "bin/acyclic",
+              "bin/bcomps",
+              "bin/ccomps",
+              "bin/cluster",
+              "bin/dijkstra",
+              "bin/dot",
+              "bin/dot_builtins",
+              "bin/edgepaint",
+              "bin/gc",
+              "bin/gml2gv",
+              "bin/graphml2gv",
+              "bin/gv2gml",
+              "bin/gvcolor",
+              "bin/gvgen",
+              "bin/gvmap",
+              "bin/gvpack",
+              "bin/gvpr",
+              "bin/gxl2gv",
+              "bin/mm2gv",
+              "bin/nop",
+              "bin/prune",
+              "bin/sccmap",
+              "bin/tred",
+              "bin/unflatten",
+              "lib/graphviz/libgvplugin_core.8.dylib",
+              "lib/graphviz/libgvplugin_dot_layout.8.dylib",
+              "lib/graphviz/libgvplugin_gd.8.dylib",
+              "lib/graphviz/libgvplugin_kitty.8.dylib",
+              "lib/graphviz/libgvplugin_neato_layout.8.dylib",
+              "lib/graphviz/libgvplugin_pango.8.dylib",
+              "lib/graphviz/libgvplugin_quartz.8.dylib",
+              "lib/graphviz/libgvplugin_rsvg.8.dylib",
+              "lib/graphviz/libgvplugin_vt.8.dylib",
+              "lib/graphviz/libgvplugin_webp.8.dylib",
+              "lib/libcdt.6.dylib",
+              "lib/libcgraph.10.dylib",
+              "lib/libgvc.7.dylib",
+              "lib/libgvpr.2.dylib",
+              "lib/libpathplan.4.dylib",
+              "lib/libxdot.5.dylib"
+            ],
+            "binary_relocation_files": [
+              "lib/libgvc.7.dylib"
+            ],
+            "source_modified_time": 1788486073,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libpng",
+                "version": "1.6.58",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.58",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "freetype",
+                "version": "2.14.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.14.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fontconfig",
+                "version": "2.18.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.18.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.90.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.90.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xorgproto",
+                "version": "2025.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2025.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxau",
+                "version": "1.0.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxdmcp",
+                "version": "1.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxcb",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.17.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libx11",
+                "version": "1.8.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxext",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.7",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxrender",
+                "version": "0.9.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.9.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lzo",
+                "version": "2.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.10",
+                "declared_directly": false
+              },
+              {
+                "full_name": "pixman",
+                "version": "0.46.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "0.46.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "cairo",
+                "version": "1.18.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.18.6",
+                "declared_directly": true
+              },
+              {
+                "full_name": "jpeg-turbo",
+                "version": "3.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libvmaf",
+                "version": "3.2.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "aom",
+                "version": "3.15.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.15.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "dav1d",
+                "version": "1.5.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libavif",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "giflib",
+                "version": "6.1.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.1.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "webp",
+                "version": "1.6.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtiff",
+                "version": "4.7.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.7.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gd",
+                "version": "2.3.3",
+                "revision": 6,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.3_6",
+                "declared_directly": true
+              },
+              {
+                "full_name": "jasper",
+                "version": "4.2.9",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.2.9",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "netpbm",
+                "version": "11.02.30",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "11.02.30",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gts",
+                "version": "0.7.6",
+                "revision": 3,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.7.6_3",
+                "declared_directly": true
+              },
+              {
+                "full_name": "gdk-pixbuf",
+                "version": "2.44.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.44.8",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "graphite2",
+                "version": "1.3.15",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.15",
+                "declared_directly": false
+              },
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "harfbuzz",
+                "version": "14.5.0",
+                "revision": 0,
+                "pkg_version": "14.5.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fribidi",
+                "version": "1.0.17",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.17",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libdatrie",
+                "version": "0.2.14",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.2.14",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libthai",
+                "version": "0.1.30",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.1.30",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pango",
+                "version": "1.58.2",
+                "revision": 0,
+                "pkg_version": "1.58.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "librsvg",
+                "version": "2.63.2",
+                "revision": 0,
+                "pkg_version": "2.63.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "m4",
+                "version": "1.4.21",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.21",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtool",
+                "version": "2.6.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.6.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "lib/libgvc.7.dylib",
+              "string": "/usr/local/Cellar/graphviz/16.1.0/lib/graphviz",
+              "offset": 404705
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.0",
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-glib-2.90.0",
+              "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+              "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+              "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
+              "SPDXRef-Package-SPDXRef-aom-3.15.0",
+              "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+              "SPDXRef-Package-SPDXRef-webp-1.6.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+              "SPDXRef-Package-SPDXRef-netpbm-11.02.30",
+              "SPDXRef-Package-SPDXRef-gts-0.7.6_3",
+              "SPDXRef-Package-SPDXRef-fribidi-1.0.17",
+              "SPDXRef-Package-SPDXRef-m4-1.4.21",
+              "SPDXRef-Package-SPDXRef-libtool-2.6.2",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "name": "libpng",
+                "versionInfo": "1.6.58",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.58.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e52e7248928f76d19f4253ab672b59dde6a6f21e94b090137170bb2e971f9cc2"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpng@1.6.58",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8c54c7bc4c98effd8b886213f126278f87cef9c596d9ab2ef3d52bc100c79f65"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gettext-1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "27f00f82c225d2feafe765d37a15699352a390397bdeec1ccbc2b5fe943f7ee7"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "name": "glib",
+                "versionInfo": "2.90.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4f180b8f89781725d58c0a39d7508c0bf0e96225fc69ef630e18a9f885f61c4a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/glib@2.90.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+                "name": "libx11",
+                "versionInfo": "1.8.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.13.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7035ebb1057ef3de675393d244db0d486f07b91aab5d24a4b2d0140c05b9724d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libx11@1.8.13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+                "name": "cairo",
+                "versionInfo": "1.18.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-only OR MPL-1.1",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/cairo-1.18.6.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "82e98b7ba1ba8aadca23d85b6ee4aaec38273d61c453dba9ad3905675cfb2a84"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/cairo@1.18.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "name": "jpeg-turbo",
+                "versionInfo": "3.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3c7d19c475389bbb48a07f78f52473c8f49f458bd45b4453457cfec9c01601ed"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
+                "name": "libvmaf",
+                "versionInfo": "3.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause-Patent",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libvmaf-3.2.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c874464309067f659d6428ba6287fce6d858e0ee391591c84cd8fe14bdfe7bcb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libvmaf@3.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aom-3.15.0",
+                "name": "aom",
+                "versionInfo": "3.15.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aom-3.15.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ef8363134b027fc8e46bc43bf5554debd48212fb20b09baf5b4b371fd3ea1342"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aom@3.15.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+                "name": "giflib",
+                "versionInfo": "6.1.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/giflib-6.1.3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d5a19371b08de71cb811b2fe8114e0092c5edc439b3ba4d09f2e8a775676eb6c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/giflib@6.1.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-webp-1.6.0",
+                "name": "webp",
+                "versionInfo": "1.6.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/webp-1.6.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "011465e668caf64f3ce3586efcd644b520f27083580c0334eb6d7278dac2713c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/webp@1.6.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xz-5.8.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b58278bdc3ee647396ba249e0d0959306231d593d2b8ce6c173f819b42192a9f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.10.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "name": "libtiff",
+                "versionInfo": "4.7.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libtiff",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libtiff-4.7.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f1abd05915f49c4d07b789fdfab78ad83e78e6a4a61ef7c0ebeab45657b2e51c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libtiff@4.7.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-netpbm-11.02.30",
+                "name": "netpbm",
+                "versionInfo": "11.02.30",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/netpbm-11.02.30.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "011568d4954b0ec1d894fe82fea0f5a0fe4767fbc0e121775d90a51210c7c727"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/netpbm@11.02.30",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gts-0.7.6_3",
+                "name": "gts",
+                "versionInfo": "0.7.6_3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gts-0.7.6_3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ead167c1f6f37b8d157deb968d8ccc2b75afd8900e605dc08f8e41e9b1b3f2bf"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gts@0.7.6_3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-fribidi-1.0.17",
+                "name": "fribidi",
+                "versionInfo": "1.0.17",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/fribidi-1.0.17.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "23ec3a2c361a11e94f71dee17afbe55d1d8b3e3f9df16a327f84e1124e80dcd4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/fribidi@1.0.17",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-m4-1.4.21",
+                "name": "m4",
+                "versionInfo": "1.4.21",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/m4/blobs/sha256:a7da5c29823df4a3c80723639e17153dc6fc71621d87cdc8f5e88f628764c816",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a7da5c29823df4a3c80723639e17153dc6fc71621d87cdc8f5e88f628764c816"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/m4@1.4.21",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libtool-2.6.2",
+                "name": "libtool",
+                "versionInfo": "2.6.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/libtool/blobs/sha256:c94ba9b047fa5744349911cd632fec5b88cd366991bb39cb06fe018d166a0a39",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c94ba9b047fa5744349911cd632fec5b88cd366991bb39cb06fe018d166a0a39"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libtool@2.6.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aom-3.15.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-webp-1.6.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-netpbm-11.02.30",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gts-0.7.6_3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-fribidi-1.0.17",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-m4-1.4.21",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libtool-2.6.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphviz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-graphviz-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/dot2gxl",
+            "bin/cluster",
+            "bin/gv2gml",
+            "bin/gxl2dot",
+            "bin/tred",
+            "bin/unflatten",
+            "bin/mm2gv",
+            "bin/dot",
+            "bin/gvpack",
+            "bin/gv2gxl",
+            "bin/twopi",
+            "bin/graphml2gv",
+            "bin/patchwork",
+            "bin/sccmap",
+            "bin/gvmap",
+            "bin/neato",
+            "bin/osage",
+            "bin/gvgen",
+            "bin/gvpr",
+            "bin/nop",
+            "bin/circo",
+            "bin/gxl2gv",
+            "bin/acyclic",
+            "bin/gml2gv",
+            "bin/sfdp",
+            "bin/gc",
+            "bin/dijkstra",
+            "bin/gvmap.sh",
+            "bin/dot_sandbox",
+            "bin/dot_builtins",
+            "bin/prune",
+            "bin/fdp",
+            "bin/bcomps",
+            "bin/ccomps",
+            "bin/edgepaint",
+            "bin/gvcolor"
+          ],
+          "all_files": [
+            ".brew/graphviz.rb",
+            "AUTHORS",
+            "CHANGELOG.md",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README.md",
+            "bin/acyclic",
+            "bin/bcomps",
+            "bin/ccomps",
+            "bin/circo",
+            "bin/cluster",
+            "bin/dijkstra",
+            "bin/dot",
+            "bin/dot2gxl",
+            "bin/dot_builtins",
+            "bin/dot_sandbox",
+            "bin/edgepaint",
+            "bin/fdp",
+            "bin/gc",
+            "bin/gml2gv",
+            "bin/graphml2gv",
+            "bin/gv2gml",
+            "bin/gv2gxl",
+            "bin/gvcolor",
+            "bin/gvgen",
+            "bin/gvmap",
+            "bin/gvmap.sh",
+            "bin/gvpack",
+            "bin/gvpr",
+            "bin/gxl2dot",
+            "bin/gxl2gv",
+            "bin/mm2gv",
+            "bin/neato",
+            "bin/nop",
+            "bin/osage",
+            "bin/patchwork",
+            "bin/prune",
+            "bin/sccmap",
+            "bin/sfdp",
+            "bin/tred",
+            "bin/twopi",
+            "bin/unflatten",
+            "include/graphviz/arith.h",
+            "include/graphviz/cdt.h",
+            "include/graphviz/cgraph.h",
+            "include/graphviz/color.h",
+            "include/graphviz/geom.h",
+            "include/graphviz/graphviz_version.h",
+            "include/graphviz/gvc.h",
+            "include/graphviz/gvcext.h",
+            "include/graphviz/gvcjob.h",
+            "include/graphviz/gvcommon.h",
+            "include/graphviz/gvconfig.h",
+            "include/graphviz/gvplugin.h",
+            "include/graphviz/gvplugin_device.h",
+            "include/graphviz/gvplugin_layout.h",
+            "include/graphviz/gvplugin_loadimage.h",
+            "include/graphviz/gvplugin_render.h",
+            "include/graphviz/gvplugin_textlayout.h",
+            "include/graphviz/gvpr.h",
+            "include/graphviz/pack.h",
+            "include/graphviz/pathgeom.h",
+            "include/graphviz/pathplan.h",
+            "include/graphviz/textspan.h",
+            "include/graphviz/types.h",
+            "include/graphviz/usershape.h",
+            "include/graphviz/xdot.h",
+            "lib/graphviz/config8",
+            "lib/graphviz/libgvplugin_core.8.dylib",
+            "lib/graphviz/libgvplugin_core.dylib",
+            "lib/graphviz/libgvplugin_dot_layout.8.dylib",
+            "lib/graphviz/libgvplugin_dot_layout.dylib",
+            "lib/graphviz/libgvplugin_gd.8.dylib",
+            "lib/graphviz/libgvplugin_gd.dylib",
+            "lib/graphviz/libgvplugin_kitty.8.dylib",
+            "lib/graphviz/libgvplugin_kitty.dylib",
+            "lib/graphviz/libgvplugin_neato_layout.8.dylib",
+            "lib/graphviz/libgvplugin_neato_layout.dylib",
+            "lib/graphviz/libgvplugin_pango.8.dylib",
+            "lib/graphviz/libgvplugin_pango.dylib",
+            "lib/graphviz/libgvplugin_quartz.8.dylib",
+            "lib/graphviz/libgvplugin_quartz.dylib",
+            "lib/graphviz/libgvplugin_rsvg.8.dylib",
+            "lib/graphviz/libgvplugin_rsvg.dylib",
+            "lib/graphviz/libgvplugin_vt.8.dylib",
+            "lib/graphviz/libgvplugin_vt.dylib",
+            "lib/graphviz/libgvplugin_webp.8.dylib",
+            "lib/graphviz/libgvplugin_webp.dylib",
+            "lib/libcdt.6.dylib",
+            "lib/libcdt.dylib",
+            "lib/libcgraph.10.dylib",
+            "lib/libcgraph.dylib",
+            "lib/libgvc.7.dylib",
+            "lib/libgvc.dylib",
+            "lib/libgvpr.2.dylib",
+            "lib/libgvpr.dylib",
+            "lib/libpathplan.4.dylib",
+            "lib/libpathplan.dylib",
+            "lib/libxdot.5.dylib",
+            "lib/libxdot.dylib",
+            "lib/pkgconfig/libcdt.pc",
+            "lib/pkgconfig/libcgraph.pc",
+            "lib/pkgconfig/libgvc.pc",
+            "lib/pkgconfig/libgvpr.pc",
+            "lib/pkgconfig/libpathplan.pc",
+            "lib/pkgconfig/libxdot.pc",
+            "sbom.spdx.json",
+            "share/doc/graphviz/AUTHORS",
+            "share/doc/graphviz/Agraph.pdf",
+            "share/doc/graphviz/CHANGELOG.md",
+            "share/doc/graphviz/COPYING",
+            "share/doc/graphviz/Dot.ref",
+            "share/doc/graphviz/FAQ.html",
+            "share/doc/graphviz/NEWS",
+            "share/doc/graphviz/build.html",
+            "share/doc/graphviz/char.html",
+            "share/doc/graphviz/cpl1.0.txt",
+            "share/doc/graphviz/dotguide.pdf",
+            "share/doc/graphviz/gdtclft.entities.example.png",
+            "share/doc/graphviz/index.html",
+            "share/doc/graphviz/info/arrows.html",
+            "share/doc/graphviz/info/attrs.html",
+            "share/doc/graphviz/info/colors.html",
+            "share/doc/graphviz/info/command.html",
+            "share/doc/graphviz/info/index.html",
+            "share/doc/graphviz/info/lang.html",
+            "share/doc/graphviz/info/output.html",
+            "share/doc/graphviz/info/shapes.html",
+            "share/doc/graphviz/internal_todo.html",
+            "share/doc/graphviz/latex_suggestions.txt",
+            "share/doc/graphviz/libguide.pdf",
+            "share/doc/graphviz/neatoguide.pdf",
+            "share/doc/graphviz/pspdf.png",
+            "share/doc/graphviz/schema/arguments.xml",
+            "share/doc/graphviz/schema/attributes.xml",
+            "share/doc/graphviz/schema/attributes.xslt",
+            "share/doc/graphviz/todo.html",
+            "share/doc/graphviz/winbuild.html",
+            "share/graphviz/graphs/directed/KW91.gv",
+            "share/graphviz/graphs/directed/Latin1.gv",
+            "share/graphviz/graphs/directed/NaN.gv",
+            "share/graphviz/graphs/directed/abstract.gv",
+            "share/graphviz/graphs/directed/alf.gv",
+            "share/graphviz/graphs/directed/arrows.gv",
+            "share/graphviz/graphs/directed/awilliams.gv",
+            "share/graphviz/graphs/directed/biological.gv",
+            "share/graphviz/graphs/directed/clust.gv",
+            "share/graphviz/graphs/directed/clust1.gv",
+            "share/graphviz/graphs/directed/clust2.gv",
+            "share/graphviz/graphs/directed/clust3.gv",
+            "share/graphviz/graphs/directed/clust4.gv",
+            "share/graphviz/graphs/directed/clust5.gv",
+            "share/graphviz/graphs/directed/crazy.gv",
+            "share/graphviz/graphs/directed/ctext.gv",
+            "share/graphviz/graphs/directed/dfa.gv",
+            "share/graphviz/graphs/directed/fig6.gv",
+            "share/graphviz/graphs/directed/fsm.gv",
+            "share/graphviz/graphs/directed/grammar.gv",
+            "share/graphviz/graphs/directed/hashtable.gv",
+            "share/graphviz/graphs/directed/honda-tokoro.gv",
+            "share/graphviz/graphs/directed/japanese.gv",
+            "share/graphviz/graphs/directed/jcctree.gv",
+            "share/graphviz/graphs/directed/jsort.gv",
+            "share/graphviz/graphs/directed/ldbxtried.gv",
+            "share/graphviz/graphs/directed/longflat.gv",
+            "share/graphviz/graphs/directed/mike.gv",
+            "share/graphviz/graphs/directed/nhg.gv",
+            "share/graphviz/graphs/directed/oldarrows.gv",
+            "share/graphviz/graphs/directed/pgram.gv",
+            "share/graphviz/graphs/directed/pm2way.gv",
+            "share/graphviz/graphs/directed/pmpipe.gv",
+            "share/graphviz/graphs/directed/polypoly.gv",
+            "share/graphviz/graphs/directed/proc3d.gv",
+            "share/graphviz/graphs/directed/psfonttest.gv",
+            "share/graphviz/graphs/directed/record2.gv",
+            "share/graphviz/graphs/directed/records.gv",
+            "share/graphviz/graphs/directed/rowe.gv",
+            "share/graphviz/graphs/directed/russian.gv",
+            "share/graphviz/graphs/directed/sdh.gv",
+            "share/graphviz/graphs/directed/shells.gv",
+            "share/graphviz/graphs/directed/states.gv",
+            "share/graphviz/graphs/directed/structs.gv",
+            "share/graphviz/graphs/directed/switch.gv",
+            "share/graphviz/graphs/directed/table.gv",
+            "share/graphviz/graphs/directed/train11.gv",
+            "share/graphviz/graphs/directed/trapeziumlr.gv",
+            "share/graphviz/graphs/directed/tree.gv",
+            "share/graphviz/graphs/directed/triedds.gv",
+            "share/graphviz/graphs/directed/try.gv",
+            "share/graphviz/graphs/directed/unix.gv",
+            "share/graphviz/graphs/directed/unix2.gv",
+            "share/graphviz/graphs/directed/viewfile.gv",
+            "share/graphviz/graphs/directed/world.gv",
+            "share/graphviz/graphs/undirected/ER.gv",
+            "share/graphviz/graphs/undirected/Heawood.gv",
+            "share/graphviz/graphs/undirected/Petersen.gv",
+            "share/graphviz/graphs/undirected/ngk10_4.gv",
+            "share/graphviz/graphs/undirected/process.gv",
+            "share/graphviz/gvpr/addedges",
+            "share/graphviz/gvpr/addranks",
+            "share/graphviz/gvpr/addrings",
+            "share/graphviz/gvpr/anon",
+            "share/graphviz/gvpr/attr",
+            "share/graphviz/gvpr/bb",
+            "share/graphviz/gvpr/bbox",
+            "share/graphviz/gvpr/binduce",
+            "share/graphviz/gvpr/bipart",
+            "share/graphviz/gvpr/chkclusters",
+            "share/graphviz/gvpr/chkedges",
+            "share/graphviz/gvpr/cliptree",
+            "share/graphviz/gvpr/col",
+            "share/graphviz/gvpr/collapse",
+            "share/graphviz/gvpr/color",
+            "share/graphviz/gvpr/cycle",
+            "share/graphviz/gvpr/dechain",
+            "share/graphviz/gvpr/deghist",
+            "share/graphviz/gvpr/deledges",
+            "share/graphviz/gvpr/delmulti",
+            "share/graphviz/gvpr/delnodes",
+            "share/graphviz/gvpr/depath",
+            "share/graphviz/gvpr/dijkstra",
+            "share/graphviz/gvpr/flatten",
+            "share/graphviz/gvpr/get-layers-list",
+            "share/graphviz/gvpr/group",
+            "share/graphviz/gvpr/histogram",
+            "share/graphviz/gvpr/indent",
+            "share/graphviz/gvpr/knbhd",
+            "share/graphviz/gvpr/maxdeg",
+            "share/graphviz/gvpr/path",
+            "share/graphviz/gvpr/rotate",
+            "share/graphviz/gvpr/scale",
+            "share/graphviz/gvpr/scalexy",
+            "share/graphviz/gvpr/span",
+            "share/graphviz/gvpr/topon",
+            "share/graphviz/gvpr/treetoclust",
+            "share/man/man1/acyclic.1",
+            "share/man/man1/bcomps.1",
+            "share/man/man1/ccomps.1",
+            "share/man/man1/circo.1",
+            "share/man/man1/cluster.1",
+            "share/man/man1/dijkstra.1",
+            "share/man/man1/dot.1",
+            "share/man/man1/dot2gxl.1",
+            "share/man/man1/dot_sandbox.1",
+            "share/man/man1/edgepaint.1",
+            "share/man/man1/fdp.1",
+            "share/man/man1/gc.1",
+            "share/man/man1/gml2gv.1",
+            "share/man/man1/graphml2gv.1",
+            "share/man/man1/gv2gml.1",
+            "share/man/man1/gv2gxl.1",
+            "share/man/man1/gvcolor.1",
+            "share/man/man1/gvgen.1",
+            "share/man/man1/gvmap.1",
+            "share/man/man1/gvmap.sh.1",
+            "share/man/man1/gvpack.1",
+            "share/man/man1/gvpr.1",
+            "share/man/man1/gxl2dot.1",
+            "share/man/man1/gxl2gv.1",
+            "share/man/man1/mm2gv.1",
+            "share/man/man1/neato.1",
+            "share/man/man1/nop.1",
+            "share/man/man1/osage.1",
+            "share/man/man1/patchwork.1",
+            "share/man/man1/prune.1",
+            "share/man/man1/sccmap.1",
+            "share/man/man1/sfdp.1",
+            "share/man/man1/tred.1",
+            "share/man/man1/twopi.1",
+            "share/man/man1/unflatten.1",
+            "share/man/man3/cdt.3",
+            "share/man/man3/cgraph.3",
+            "share/man/man3/expr.3",
+            "share/man/man3/gvc.3",
+            "share/man/man3/gvpr.3",
+            "share/man/man3/pack.3",
+            "share/man/man3/pathplan.3",
+            "share/man/man3/xdot.3",
+            "share/man/man7/graphviz.7"
+          ],
+          "installed_size": 7090364
+        }
+      }
+    }
+  }
+}

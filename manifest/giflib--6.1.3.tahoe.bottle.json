@@ -1,0 +1,104 @@
+{
+  "giflib": {
+    "formula": {
+      "name": "giflib",
+      "pkg_version": "6.1.3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/giflib.rb",
+      "tap_git_path": "Formula/g/giflib.rb",
+      "tap_git_revision": "f5900eedc815143778a79d3c0448054ab00be974",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Library and utilities for processing GIFs",
+      "license": "MIT",
+      "homepage": "https://giflib.sourceforge.net/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-01T11:53:10Z",
+      "tags": {
+        "tahoe": {
+          "filename": "giflib-6.1.3.tahoe.bottle.tar.gz",
+          "local_filename": "giflib--6.1.3.tahoe.bottle.tar.gz",
+          "sha256": "974c6265c287445fb2ffa5e4ebce9e476a02eb7e29dee6da3bea1e8fc6bd7209",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/libgif.7.2.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1776014247,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-giflib-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/gifclrmp",
+            "bin/giftext",
+            "bin/giffix",
+            "bin/gifbuild",
+            "bin/giftool"
+          ],
+          "all_files": [
+            ".brew/giflib.rb",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README.adoc",
+            "TODO",
+            "bin/gifbuild",
+            "bin/gifclrmp",
+            "bin/giffix",
+            "bin/giftext",
+            "bin/giftool",
+            "history.adoc",
+            "include/gif_lib.h",
+            "lib/libgif.7.2.0.dylib",
+            "lib/libgif.7.dylib",
+            "lib/libgif.a",
+            "lib/libgif.dylib",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 354129
+        }
+      }
+    }
+  }
+}

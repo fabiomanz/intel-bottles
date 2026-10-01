@@ -1,0 +1,326 @@
+{
+  "unbound": {
+    "formula": {
+      "name": "unbound",
+      "pkg_version": "1.26.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/u/unbound.rb",
+      "tap_git_path": "Formula/u/unbound.rb",
+      "tap_git_revision": "63fa1810e68212f67bd965ae06d098906b90ff0c",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Validating, recursive, caching DNS resolver",
+      "license": "BSD-3-Clause",
+      "homepage": "https://www.unbound.net"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-01T14:05:54Z",
+      "tags": {
+        "tahoe": {
+          "filename": "unbound-1.26.1.tahoe.bottle.tar.gz",
+          "local_filename": "unbound--1.26.1.tahoe.bottle.tar.gz",
+          "sha256": "81925bf7b961e4ac05cf02260db65f65ae2e6926d3ce4d482cef497629705a1a",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "sbin/unbound-control-setup",
+              ".bottle/etc/unbound/unbound.conf",
+              "lib/pkgconfig/libunbound.pc",
+              "sh.brew.unbound.plist",
+              "sh.brew.unbound.service",
+              "share/man/man5/unbound.conf.5",
+              "share/man/man8/unbound-anchor.8",
+              "share/man/man8/unbound-checkconf.8",
+              "share/man/man8/unbound-control-setup.8",
+              "share/man/man8/unbound-control.8"
+            ],
+            "linkage_files": [
+              "lib/libunbound.8.dylib",
+              "sbin/unbound",
+              "sbin/unbound-anchor",
+              "sbin/unbound-checkconf",
+              "sbin/unbound-control",
+              "sbin/unbound-host"
+            ],
+            "binary_relocation_files": [
+              "lib/libunbound.8.dylib",
+              "sbin/unbound",
+              "sbin/unbound-checkconf",
+              "sbin/unbound-control"
+            ],
+            "source_modified_time": 1789544157,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libevent",
+                "version": "2.1.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.1.13",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libnghttp2",
+                "version": "1.70.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.70.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "sbin/unbound-checkconf",
+              "string": "/usr/local/etc/unbound/unbound.conf",
+              "offset": 617255
+            },
+            {
+              "path": "sbin/unbound-checkconf",
+              "string": "/usr/local/etc/unbound",
+              "offset": 637806
+            },
+            {
+              "path": "sbin/unbound-control",
+              "string": "/usr/local/etc/unbound/unbound.conf",
+              "offset": 168260
+            },
+            {
+              "path": "sbin/unbound-control",
+              "string": "/usr/local/etc/unbound",
+              "offset": 176512
+            },
+            {
+              "path": "sbin/unbound",
+              "string": "/usr/local/etc/unbound/unbound.conf",
+              "offset": 918134
+            },
+            {
+              "path": "sbin/unbound",
+              "string": "/usr/local/etc/unbound",
+              "offset": 951200
+            },
+            {
+              "path": "lib/libunbound.8.dylib",
+              "string": "/usr/local/etc/unbound",
+              "offset": 740092
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13fdc9f3d0d30296056e2685e0c989978a5ed213f34a0de174e19feb72833e73"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "name": "libnghttp2",
+                "versionInfo": "1.70.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libnghttp2-1.70.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "04d57bab80ac6b535f89b1a2ede4c4c85285f8ab5617944d4aaaddd722b6e04c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libnghttp2@1.70.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-unbound"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-unbound"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-unbound"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-unbound-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "sbin/unbound-anchor",
+            "sbin/unbound-checkconf",
+            "sbin/unbound-control",
+            "sbin/unbound",
+            "sbin/unbound-control-setup",
+            "sbin/unbound-host"
+          ],
+          "all_files": [
+            ".bottle/etc/unbound/unbound.conf",
+            ".brew/unbound.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README",
+            "README.md",
+            "include/unbound-event.h",
+            "include/unbound.h",
+            "lib/libunbound.8.dylib",
+            "lib/libunbound.a",
+            "lib/libunbound.dylib",
+            "lib/pkgconfig/libunbound.pc",
+            "sbin/unbound",
+            "sbin/unbound-anchor",
+            "sbin/unbound-checkconf",
+            "sbin/unbound-control",
+            "sbin/unbound-control-setup",
+            "sbin/unbound-host",
+            "sbom.spdx.json",
+            "sh.brew.unbound.plist",
+            "sh.brew.unbound.service",
+            "share/man/man1/unbound-host.1",
+            "share/man/man3/libunbound.3",
+            "share/man/man3/ub_cancel.3",
+            "share/man/man3/ub_ctx.3",
+            "share/man/man3/ub_ctx_add_ta.3",
+            "share/man/man3/ub_ctx_add_ta_file.3",
+            "share/man/man3/ub_ctx_async.3",
+            "share/man/man3/ub_ctx_config.3",
+            "share/man/man3/ub_ctx_create.3",
+            "share/man/man3/ub_ctx_data_add.3",
+            "share/man/man3/ub_ctx_data_remove.3",
+            "share/man/man3/ub_ctx_debuglevel.3",
+            "share/man/man3/ub_ctx_debugout.3",
+            "share/man/man3/ub_ctx_delete.3",
+            "share/man/man3/ub_ctx_get_option.3",
+            "share/man/man3/ub_ctx_hosts.3",
+            "share/man/man3/ub_ctx_print_local_zones.3",
+            "share/man/man3/ub_ctx_resolvconf.3",
+            "share/man/man3/ub_ctx_set_fwd.3",
+            "share/man/man3/ub_ctx_set_option.3",
+            "share/man/man3/ub_ctx_trustedkeys.3",
+            "share/man/man3/ub_ctx_zone_add.3",
+            "share/man/man3/ub_ctx_zone_remove.3",
+            "share/man/man3/ub_fd.3",
+            "share/man/man3/ub_poll.3",
+            "share/man/man3/ub_process.3",
+            "share/man/man3/ub_resolve.3",
+            "share/man/man3/ub_resolve_async.3",
+            "share/man/man3/ub_resolve_free.3",
+            "share/man/man3/ub_result.3",
+            "share/man/man3/ub_strerror.3",
+            "share/man/man3/ub_wait.3",
+            "share/man/man5/unbound.conf.5",
+            "share/man/man8/unbound-anchor.8",
+            "share/man/man8/unbound-checkconf.8",
+            "share/man/man8/unbound-control-setup.8",
+            "share/man/man8/unbound-control.8",
+            "share/man/man8/unbound.8"
+          ],
+          "installed_size": 6396318
+        }
+      }
+    }
+  }
+}

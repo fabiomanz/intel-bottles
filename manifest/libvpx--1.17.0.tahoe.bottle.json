@@ -1,0 +1,103 @@
+{
+  "libvpx": {
+    "formula": {
+      "name": "libvpx",
+      "pkg_version": "1.17.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libvpx.rb",
+      "tap_git_path": "Formula/lib/libvpx.rb",
+      "tap_git_revision": "f5900eedc815143778a79d3c0448054ab00be974",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "VP8/VP9 video codec",
+      "license": "BSD-3-Clause",
+      "homepage": "https://www.webmproject.org/code/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-01T12:07:28Z",
+      "tags": {
+        "tahoe": {
+          "filename": "libvpx-1.17.0.tahoe.bottle.tar.gz",
+          "local_filename": "libvpx--1.17.0.tahoe.bottle.tar.gz",
+          "sha256": "37b1fb1840bf793c99768ffc8342a3ec5148b5ad3cf933da107ba7b89612eb24",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "lib/pkgconfig/vpx.pc"
+            ],
+            "linkage_files": [
+              "lib/libvpx.12.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1787252795,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libvpx-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libvpx.rb",
+            "AUTHORS",
+            "CHANGELOG",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README",
+            "include/vpx/vp8.h",
+            "include/vpx/vp8cx.h",
+            "include/vpx/vp8dx.h",
+            "include/vpx/vpx_codec.h",
+            "include/vpx/vpx_decoder.h",
+            "include/vpx/vpx_encoder.h",
+            "include/vpx/vpx_ext_ratectrl.h",
+            "include/vpx/vpx_frame_buffer.h",
+            "include/vpx/vpx_image.h",
+            "include/vpx/vpx_integer.h",
+            "include/vpx/vpx_tpl.h",
+            "lib/libvpx.12.dylib",
+            "lib/libvpx.a",
+            "lib/libvpx.dylib",
+            "lib/pkgconfig/vpx.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 5942683
+        }
+      }
+    }
+  }
+}

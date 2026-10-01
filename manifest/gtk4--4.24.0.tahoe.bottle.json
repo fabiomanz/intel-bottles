@@ -1,0 +1,1627 @@
+{
+  "gtk4": {
+    "formula": {
+      "name": "gtk4",
+      "pkg_version": "4.24.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gtk4.rb",
+      "tap_git_path": "Formula/g/gtk4.rb",
+      "tap_git_revision": "f53e41b275b6070e94c2d7a81e645c1c05fb6bee",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Toolkit for creating graphical user interfaces",
+      "license": "LGPL-2.1-or-later",
+      "homepage": "https://gtk.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-01T07:36:10Z",
+      "tags": {
+        "tahoe": {
+          "filename": "gtk4-4.24.0.tahoe.bottle.tar.gz",
+          "local_filename": "gtk4--4.24.0.tahoe.bottle.tar.gz",
+          "sha256": "0040a5bf2855d85ae5746af25b3b680e0026a57d09e6f919410fdf920606beba",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "lib/pkgconfig/gtk4-atspi.pc",
+              "lib/pkgconfig/gtk4-macos.pc",
+              "lib/pkgconfig/gtk4-unix-print.pc",
+              "lib/pkgconfig/gtk4.pc"
+            ],
+            "linkage_files": [
+              "bin/gtk4-builder-tool",
+              "bin/gtk4-demo",
+              "bin/gtk4-demo-application",
+              "bin/gtk4-image-tool",
+              "bin/gtk4-launch",
+              "bin/gtk4-node-editor",
+              "bin/gtk4-path-tool",
+              "bin/gtk4-print-editor",
+              "bin/gtk4-query-settings",
+              "bin/gtk4-rendernode-tool",
+              "bin/gtk4-update-icon-cache",
+              "bin/gtk4-widget-factory",
+              "lib/libgtk-4.1.dylib"
+            ],
+            "binary_relocation_files": [
+              "bin/gtk4-demo",
+              "bin/gtk4-launch",
+              "bin/gtk4-rendernode-tool",
+              "bin/gtk4-update-icon-cache",
+              "lib/libgtk-4.1.dylib"
+            ],
+            "source_modified_time": 1789146803,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libpng",
+                "version": "1.6.58",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.58",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "freetype",
+                "version": "2.14.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.14.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fontconfig",
+                "version": "2.18.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.18.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.90.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.90.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xorgproto",
+                "version": "2025.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2025.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxau",
+                "version": "1.0.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxdmcp",
+                "version": "1.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxcb",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.17.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libx11",
+                "version": "1.8.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxext",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.7",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxrender",
+                "version": "0.9.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.9.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lzo",
+                "version": "2.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.10",
+                "declared_directly": false
+              },
+              {
+                "full_name": "pixman",
+                "version": "0.46.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "0.46.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "cairo",
+                "version": "1.18.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.18.6",
+                "declared_directly": true
+              },
+              {
+                "full_name": "fribidi",
+                "version": "1.0.17",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.17",
+                "declared_directly": true
+              },
+              {
+                "full_name": "jpeg-turbo",
+                "version": "3.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "giflib",
+                "version": "6.1.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.1.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "webp",
+                "version": "1.6.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtiff",
+                "version": "4.7.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.7.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gdk-pixbuf",
+                "version": "2.44.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.44.8",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "graphene",
+                "version": "1.10.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.8",
+                "declared_directly": true
+              },
+              {
+                "full_name": "graphite2",
+                "version": "1.3.15",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.15",
+                "declared_directly": false
+              },
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "harfbuzz",
+                "version": "14.5.0",
+                "revision": 0,
+                "pkg_version": "14.5.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "hicolor-icon-theme",
+                "version": "0.18",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.18",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libepoxy",
+                "version": "1.5.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.10",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libdatrie",
+                "version": "0.2.14",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.2.14",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libthai",
+                "version": "0.1.30",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.1.30",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pango",
+                "version": "1.58.2",
+                "revision": 0,
+                "pkg_version": "1.58.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "librsvg",
+                "version": "2.63.2",
+                "revision": 0,
+                "pkg_version": "2.63.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/gtk4-demo",
+              "string": "/usr/local/Cellar/gtk4/4.24.0/share",
+              "offset": 8163179
+            },
+            {
+              "path": "bin/gtk4-update-icon-cache",
+              "string": "/usr/local/Cellar/gtk4/4.24.0/share/locale",
+              "offset": 17699
+            },
+            {
+              "path": "bin/gtk4-rendernode-tool",
+              "string": "/usr/local/Cellar/gtk4/4.24.0/share",
+              "offset": 4655466
+            },
+            {
+              "path": "bin/gtk4-rendernode-tool",
+              "string": "/usr/local/Cellar/gtk4/4.24.0/lib",
+              "offset": 4655502
+            },
+            {
+              "path": "bin/gtk4-rendernode-tool",
+              "string": "/usr/local/Cellar/gtk4/4.24.0/share/locale",
+              "offset": 4655570
+            },
+            {
+              "path": "bin/gtk4-rendernode-tool",
+              "string": "/usr/local/Cellar/gtk4/4.24.0",
+              "offset": 4655613
+            },
+            {
+              "path": "bin/gtk4-launch",
+              "string": "/usr/local/Cellar/gtk4/4.24.0/share/locale",
+              "offset": 7029
+            },
+            {
+              "path": "lib/libgtk-4.1.dylib",
+              "string": "/usr/local/Cellar/gtk4/4.24.0/share",
+              "offset": 4652940
+            },
+            {
+              "path": "lib/libgtk-4.1.dylib",
+              "string": "/usr/local/Cellar/gtk4/4.24.0/lib",
+              "offset": 4652976
+            },
+            {
+              "path": "lib/libgtk-4.1.dylib",
+              "string": "/usr/local/Cellar/gtk4/4.24.0/share/locale",
+              "offset": 4653044
+            },
+            {
+              "path": "lib/libgtk-4.1.dylib",
+              "string": "/usr/local/Cellar/gtk4/4.24.0",
+              "offset": 4653087
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.0",
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-glib-2.90.0",
+              "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+              "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+              "SPDXRef-Package-SPDXRef-fribidi-1.0.17",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+              "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+              "SPDXRef-Package-SPDXRef-webp-1.6.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+              "SPDXRef-Package-SPDXRef-hicolor-icon-theme-0.18",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "name": "libpng",
+                "versionInfo": "1.6.58",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.58.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e52e7248928f76d19f4253ab672b59dde6a6f21e94b090137170bb2e971f9cc2"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpng@1.6.58",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8c54c7bc4c98effd8b886213f126278f87cef9c596d9ab2ef3d52bc100c79f65"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gettext-1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "27f00f82c225d2feafe765d37a15699352a390397bdeec1ccbc2b5fe943f7ee7"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "name": "glib",
+                "versionInfo": "2.90.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4f180b8f89781725d58c0a39d7508c0bf0e96225fc69ef630e18a9f885f61c4a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/glib@2.90.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+                "name": "libx11",
+                "versionInfo": "1.8.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.13.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7035ebb1057ef3de675393d244db0d486f07b91aab5d24a4b2d0140c05b9724d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libx11@1.8.13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+                "name": "cairo",
+                "versionInfo": "1.18.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-only OR MPL-1.1",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/cairo-1.18.6.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "82e98b7ba1ba8aadca23d85b6ee4aaec38273d61c453dba9ad3905675cfb2a84"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/cairo@1.18.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-fribidi-1.0.17",
+                "name": "fribidi",
+                "versionInfo": "1.0.17",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/fribidi-1.0.17.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "23ec3a2c361a11e94f71dee17afbe55d1d8b3e3f9df16a327f84e1124e80dcd4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/fribidi@1.0.17",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "name": "jpeg-turbo",
+                "versionInfo": "3.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3c7d19c475389bbb48a07f78f52473c8f49f458bd45b4453457cfec9c01601ed"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+                "name": "giflib",
+                "versionInfo": "6.1.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/giflib-6.1.3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d5a19371b08de71cb811b2fe8114e0092c5edc439b3ba4d09f2e8a775676eb6c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/giflib@6.1.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-webp-1.6.0",
+                "name": "webp",
+                "versionInfo": "1.6.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/webp-1.6.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "011465e668caf64f3ce3586efcd644b520f27083580c0334eb6d7278dac2713c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/webp@1.6.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xz-5.8.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b58278bdc3ee647396ba249e0d0959306231d593d2b8ce6c173f819b42192a9f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.10.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "name": "libtiff",
+                "versionInfo": "4.7.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libtiff",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libtiff-4.7.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f1abd05915f49c4d07b789fdfab78ad83e78e6a4a61ef7c0ebeab45657b2e51c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libtiff@4.7.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-hicolor-icon-theme-0.18",
+                "name": "hicolor-icon-theme",
+                "versionInfo": "0.18",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-only",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/hicolor-icon-theme/blobs/sha256:76779247990b538d304e98b042fde85677491e428d0381a59383264ce8ef199f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "76779247990b538d304e98b042fde85677491e428d0381a59383264ce8ef199f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/hicolor-icon-theme@0.18",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk4"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk4"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk4"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk4"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk4"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk4"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk4"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk4"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-fribidi-1.0.17",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk4"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk4"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk4"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-webp-1.6.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk4"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk4"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk4"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk4"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk4"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-hicolor-icon-theme-0.18",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk4"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-gtk4-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/gtk4-path-tool",
+            "bin/gtk4-image-tool",
+            "bin/gtk4-demo",
+            "bin/gtk4-widget-factory",
+            "bin/gtk4-query-settings",
+            "bin/gtk4-print-editor",
+            "bin/gtk4-update-icon-cache",
+            "bin/gtk4-rendernode-tool",
+            "bin/gtk4-demo-application",
+            "bin/gtk4-builder-tool",
+            "bin/gtk4-node-editor",
+            "bin/gtk4-launch"
+          ],
+          "all_files": [
+            ".brew/gtk4.rb",
+            "AUTHORS",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README.md",
+            "bin/gtk4-builder-tool",
+            "bin/gtk4-demo",
+            "bin/gtk4-demo-application",
+            "bin/gtk4-image-tool",
+            "bin/gtk4-launch",
+            "bin/gtk4-node-editor",
+            "bin/gtk4-path-tool",
+            "bin/gtk4-print-editor",
+            "bin/gtk4-query-settings",
+            "bin/gtk4-rendernode-tool",
+            "bin/gtk4-update-icon-cache",
+            "bin/gtk4-widget-factory",
+            "include/gtk-4.0/gdk/deprecated/gdkpixbuf.h",
+            "include/gtk-4.0/gdk/gdk.h",
+            "include/gtk-4.0/gdk/gdkapplaunchcontext.h",
+            "include/gtk-4.0/gdk/gdkcairo.h",
+            "include/gtk-4.0/gdk/gdkcairocontext.h",
+            "include/gtk-4.0/gdk/gdkcicpparams.h",
+            "include/gtk-4.0/gdk/gdkclipboard.h",
+            "include/gtk-4.0/gdk/gdkcolorstate.h",
+            "include/gtk-4.0/gdk/gdkconfig.h",
+            "include/gtk-4.0/gdk/gdkcontentdeserializer.h",
+            "include/gtk-4.0/gdk/gdkcontentformats.h",
+            "include/gtk-4.0/gdk/gdkcontentprovider.h",
+            "include/gtk-4.0/gdk/gdkcontentproviderimpl.h",
+            "include/gtk-4.0/gdk/gdkcontentserializer.h",
+            "include/gtk-4.0/gdk/gdkcursor.h",
+            "include/gtk-4.0/gdk/gdkdevice.h",
+            "include/gtk-4.0/gdk/gdkdevicepad.h",
+            "include/gtk-4.0/gdk/gdkdevicetool.h",
+            "include/gtk-4.0/gdk/gdkdisplay.h",
+            "include/gtk-4.0/gdk/gdkdisplaymanager.h",
+            "include/gtk-4.0/gdk/gdkdmabufformats.h",
+            "include/gtk-4.0/gdk/gdkdmabuftexture.h",
+            "include/gtk-4.0/gdk/gdkdmabuftexturebuilder.h",
+            "include/gtk-4.0/gdk/gdkdrag.h",
+            "include/gtk-4.0/gdk/gdkdragsurface.h",
+            "include/gtk-4.0/gdk/gdkdragsurfacesize.h",
+            "include/gtk-4.0/gdk/gdkdrawcontext.h",
+            "include/gtk-4.0/gdk/gdkdrop.h",
+            "include/gtk-4.0/gdk/gdkenums.h",
+            "include/gtk-4.0/gdk/gdkenumtypes.h",
+            "include/gtk-4.0/gdk/gdkevents.h",
+            "include/gtk-4.0/gdk/gdkframeclock.h",
+            "include/gtk-4.0/gdk/gdkframetimings.h",
+            "include/gtk-4.0/gdk/gdkglcontext.h",
+            "include/gtk-4.0/gdk/gdkgltexture.h",
+            "include/gtk-4.0/gdk/gdkgltexturebuilder.h",
+            "include/gtk-4.0/gdk/gdkkeys.h",
+            "include/gtk-4.0/gdk/gdkkeysyms.h",
+            "include/gtk-4.0/gdk/gdkmemorytexture.h",
+            "include/gtk-4.0/gdk/gdkmemorytexturebuilder.h",
+            "include/gtk-4.0/gdk/gdkmonitor.h",
+            "include/gtk-4.0/gdk/gdkpaintable.h",
+            "include/gtk-4.0/gdk/gdkpango.h",
+            "include/gtk-4.0/gdk/gdkpopup.h",
+            "include/gtk-4.0/gdk/gdkpopuplayout.h",
+            "include/gtk-4.0/gdk/gdkrectangle.h",
+            "include/gtk-4.0/gdk/gdkrgba.h",
+            "include/gtk-4.0/gdk/gdkseat.h",
+            "include/gtk-4.0/gdk/gdksnapshot.h",
+            "include/gtk-4.0/gdk/gdksurface.h",
+            "include/gtk-4.0/gdk/gdktexture.h",
+            "include/gtk-4.0/gdk/gdktexturedownloader.h",
+            "include/gtk-4.0/gdk/gdktoplevel.h",
+            "include/gtk-4.0/gdk/gdktoplevellayout.h",
+            "include/gtk-4.0/gdk/gdktoplevelsize.h",
+            "include/gtk-4.0/gdk/gdktypes.h",
+            "include/gtk-4.0/gdk/gdkvulkancontext.h",
+            "include/gtk-4.0/gdk/macos/gdkmacos.h",
+            "include/gtk-4.0/gdk/macos/gdkmacosdevice.h",
+            "include/gtk-4.0/gdk/macos/gdkmacosdisplay.h",
+            "include/gtk-4.0/gdk/macos/gdkmacosglcontext.h",
+            "include/gtk-4.0/gdk/macos/gdkmacoskeymap.h",
+            "include/gtk-4.0/gdk/macos/gdkmacosmonitor.h",
+            "include/gtk-4.0/gdk/macos/gdkmacosseat.h",
+            "include/gtk-4.0/gdk/macos/gdkmacossurface.h",
+            "include/gtk-4.0/gdk/version/gdk-visibility.h",
+            "include/gtk-4.0/gdk/version/gdkversionmacros.h",
+            "include/gtk-4.0/gsk/gl/gskglrenderer.h",
+            "include/gtk-4.0/gsk/gpu/gskglrenderer.h",
+            "include/gtk-4.0/gsk/gpu/gskvulkanrenderer.h",
+            "include/gtk-4.0/gsk/gsk.h",
+            "include/gtk-4.0/gsk/gskblendnode.h",
+            "include/gtk-4.0/gsk/gskblurnode.h",
+            "include/gtk-4.0/gsk/gskbordernode.h",
+            "include/gtk-4.0/gsk/gskcaironode.h",
+            "include/gtk-4.0/gsk/gskcairorenderer.h",
+            "include/gtk-4.0/gsk/gskclipnode.h",
+            "include/gtk-4.0/gsk/gskcolormatrixnode.h",
+            "include/gtk-4.0/gsk/gskcolornode.h",
+            "include/gtk-4.0/gsk/gskcomponenttransfer.h",
+            "include/gtk-4.0/gsk/gskcomponenttransfernode.h",
+            "include/gtk-4.0/gsk/gskcompositenode.h",
+            "include/gtk-4.0/gsk/gskconicgradientnode.h",
+            "include/gtk-4.0/gsk/gskcontainernode.h",
+            "include/gtk-4.0/gsk/gskcopynode.h",
+            "include/gtk-4.0/gsk/gskcrossfadenode.h",
+            "include/gtk-4.0/gsk/gskdebugnode.h",
+            "include/gtk-4.0/gsk/gskenums.h",
+            "include/gtk-4.0/gsk/gskenumtypes.h",
+            "include/gtk-4.0/gsk/gskfillnode.h",
+            "include/gtk-4.0/gsk/gskglshader.h",
+            "include/gtk-4.0/gsk/gskglshadernode.h",
+            "include/gtk-4.0/gsk/gskinsetshadownode.h",
+            "include/gtk-4.0/gsk/gskisolationnode.h",
+            "include/gtk-4.0/gsk/gsklineargradientnode.h",
+            "include/gtk-4.0/gsk/gskmasknode.h",
+            "include/gtk-4.0/gsk/gskopacitynode.h",
+            "include/gtk-4.0/gsk/gskoutsetshadownode.h",
+            "include/gtk-4.0/gsk/gskpastenode.h",
+            "include/gtk-4.0/gsk/gskpath.h",
+            "include/gtk-4.0/gsk/gskpathbuilder.h",
+            "include/gtk-4.0/gsk/gskpathmeasure.h",
+            "include/gtk-4.0/gsk/gskpathpoint.h",
+            "include/gtk-4.0/gsk/gskradialgradientnode.h",
+            "include/gtk-4.0/gsk/gskrectsnap.h",
+            "include/gtk-4.0/gsk/gskrenderer.h",
+            "include/gtk-4.0/gsk/gskrendernode.h",
+            "include/gtk-4.0/gsk/gskrenderreplay.h",
+            "include/gtk-4.0/gsk/gskrepeatnode.h",
+            "include/gtk-4.0/gsk/gskroundedclipnode.h",
+            "include/gtk-4.0/gsk/gskroundedrect.h",
+            "include/gtk-4.0/gsk/gskshadownode.h",
+            "include/gtk-4.0/gsk/gskstroke.h",
+            "include/gtk-4.0/gsk/gskstrokenode.h",
+            "include/gtk-4.0/gsk/gsksubsurfacenode.h",
+            "include/gtk-4.0/gsk/gsktextnode.h",
+            "include/gtk-4.0/gsk/gsktexturenode.h",
+            "include/gtk-4.0/gsk/gsktexturescalenode.h",
+            "include/gtk-4.0/gsk/gsktransform.h",
+            "include/gtk-4.0/gsk/gsktransformnode.h",
+            "include/gtk-4.0/gsk/gsktypes.h",
+            "include/gtk-4.0/gtk/a11y/gtkatspi.h",
+            "include/gtk-4.0/gtk/a11y/gtkatspisocket.h",
+            "include/gtk-4.0/gtk/css/gtkcss.h",
+            "include/gtk-4.0/gtk/css/gtkcssenums.h",
+            "include/gtk-4.0/gtk/css/gtkcssenumtypes.h",
+            "include/gtk-4.0/gtk/css/gtkcsserror.h",
+            "include/gtk-4.0/gtk/css/gtkcsslocation.h",
+            "include/gtk-4.0/gtk/css/gtkcsssection.h",
+            "include/gtk-4.0/gtk/deprecated/gtkappchooser.h",
+            "include/gtk-4.0/gtk/deprecated/gtkappchooserbutton.h",
+            "include/gtk-4.0/gtk/deprecated/gtkappchooserdialog.h",
+            "include/gtk-4.0/gtk/deprecated/gtkappchooserwidget.h",
+            "include/gtk-4.0/gtk/deprecated/gtkassistant.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcellarea.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcellareabox.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcellareacontext.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcelleditable.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcelllayout.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcellrenderer.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcellrendereraccel.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcellrenderercombo.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcellrendererpixbuf.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcellrendererprogress.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcellrendererspin.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcellrendererspinner.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcellrenderertext.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcellrenderertoggle.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcellview.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcolorbutton.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcolorchooser.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcolorchooserdialog.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcolorchooserwidget.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcombobox.h",
+            "include/gtk-4.0/gtk/deprecated/gtkcomboboxtext.h",
+            "include/gtk-4.0/gtk/deprecated/gtkdialog.h",
+            "include/gtk-4.0/gtk/deprecated/gtkentrycompletion.h",
+            "include/gtk-4.0/gtk/deprecated/gtkfilechooser.h",
+            "include/gtk-4.0/gtk/deprecated/gtkfilechooserdialog.h",
+            "include/gtk-4.0/gtk/deprecated/gtkfilechoosernative.h",
+            "include/gtk-4.0/gtk/deprecated/gtkfilechooserwidget.h",
+            "include/gtk-4.0/gtk/deprecated/gtkfontbutton.h",
+            "include/gtk-4.0/gtk/deprecated/gtkfontchooser.h",
+            "include/gtk-4.0/gtk/deprecated/gtkfontchooserdialog.h",
+            "include/gtk-4.0/gtk/deprecated/gtkfontchooserwidget.h",
+            "include/gtk-4.0/gtk/deprecated/gtkiconview.h",
+            "include/gtk-4.0/gtk/deprecated/gtkinfobar.h",
+            "include/gtk-4.0/gtk/deprecated/gtkliststore.h",
+            "include/gtk-4.0/gtk/deprecated/gtklockbutton.h",
+            "include/gtk-4.0/gtk/deprecated/gtkmessagedialog.h",
+            "include/gtk-4.0/gtk/deprecated/gtkrender.h",
+            "include/gtk-4.0/gtk/deprecated/gtkshortcutlabel.h",
+            "include/gtk-4.0/gtk/deprecated/gtkshortcutsgroup.h",
+            "include/gtk-4.0/gtk/deprecated/gtkshortcutssection.h",
+            "include/gtk-4.0/gtk/deprecated/gtkshortcutsshortcut.h",
+            "include/gtk-4.0/gtk/deprecated/gtkshortcutswindow.h",
+            "include/gtk-4.0/gtk/deprecated/gtkshow.h",
+            "include/gtk-4.0/gtk/deprecated/gtkstatusbar.h",
+            "include/gtk-4.0/gtk/deprecated/gtkstylecontext.h",
+            "include/gtk-4.0/gtk/deprecated/gtktreednd.h",
+            "include/gtk-4.0/gtk/deprecated/gtktreemodel.h",
+            "include/gtk-4.0/gtk/deprecated/gtktreemodelfilter.h",
+            "include/gtk-4.0/gtk/deprecated/gtktreemodelsort.h",
+            "include/gtk-4.0/gtk/deprecated/gtktreeselection.h",
+            "include/gtk-4.0/gtk/deprecated/gtktreesortable.h",
+            "include/gtk-4.0/gtk/deprecated/gtktreestore.h",
+            "include/gtk-4.0/gtk/deprecated/gtktreeview.h",
+            "include/gtk-4.0/gtk/deprecated/gtktreeviewcolumn.h",
+            "include/gtk-4.0/gtk/deprecated/gtkvolumebutton.h",
+            "include/gtk-4.0/gtk/gtk.h",
+            "include/gtk-4.0/gtk/gtkaboutdialog.h",
+            "include/gtk-4.0/gtk/gtkaccelgroup.h",
+            "include/gtk-4.0/gtk/gtkaccessible.h",
+            "include/gtk-4.0/gtk/gtkaccessiblehypertext.h",
+            "include/gtk-4.0/gtk/gtkaccessiblerange.h",
+            "include/gtk-4.0/gtk/gtkaccessibletext.h",
+            "include/gtk-4.0/gtk/gtkactionable.h",
+            "include/gtk-4.0/gtk/gtkactionbar.h",
+            "include/gtk-4.0/gtk/gtkadjustment.h",
+            "include/gtk-4.0/gtk/gtkalertdialog.h",
+            "include/gtk-4.0/gtk/gtkapplication.h",
+            "include/gtk-4.0/gtk/gtkapplicationwindow.h",
+            "include/gtk-4.0/gtk/gtkaspectframe.h",
+            "include/gtk-4.0/gtk/gtkatcontext.h",
+            "include/gtk-4.0/gtk/gtkbinlayout.h",
+            "include/gtk-4.0/gtk/gtkbitset.h",
+            "include/gtk-4.0/gtk/gtkbookmarklist.h",
+            "include/gtk-4.0/gtk/gtkboolfilter.h",
+            "include/gtk-4.0/gtk/gtkborder.h",
+            "include/gtk-4.0/gtk/gtkbox.h",
+            "include/gtk-4.0/gtk/gtkboxlayout.h",
+            "include/gtk-4.0/gtk/gtkbuildable.h",
+            "include/gtk-4.0/gtk/gtkbuilder.h",
+            "include/gtk-4.0/gtk/gtkbuilderlistitemfactory.h",
+            "include/gtk-4.0/gtk/gtkbuilderscope.h",
+            "include/gtk-4.0/gtk/gtkbutton.h",
+            "include/gtk-4.0/gtk/gtkcalendar.h",
+            "include/gtk-4.0/gtk/gtkcenterbox.h",
+            "include/gtk-4.0/gtk/gtkcenterlayout.h",
+            "include/gtk-4.0/gtk/gtkcheckbutton.h",
+            "include/gtk-4.0/gtk/gtkcolordialog.h",
+            "include/gtk-4.0/gtk/gtkcolordialogbutton.h",
+            "include/gtk-4.0/gtk/gtkcolorutils.h",
+            "include/gtk-4.0/gtk/gtkcolumnview.h",
+            "include/gtk-4.0/gtk/gtkcolumnviewcell.h",
+            "include/gtk-4.0/gtk/gtkcolumnviewcolumn.h",
+            "include/gtk-4.0/gtk/gtkcolumnviewrow.h",
+            "include/gtk-4.0/gtk/gtkcolumnviewsorter.h",
+            "include/gtk-4.0/gtk/gtkconfig.h",
+            "include/gtk-4.0/gtk/gtkconstraint.h",
+            "include/gtk-4.0/gtk/gtkconstraintguide.h",
+            "include/gtk-4.0/gtk/gtkconstraintlayout.h",
+            "include/gtk-4.0/gtk/gtkcssprovider.h",
+            "include/gtk-4.0/gtk/gtkcustomfilter.h",
+            "include/gtk-4.0/gtk/gtkcustomlayout.h",
+            "include/gtk-4.0/gtk/gtkcustomsorter.h",
+            "include/gtk-4.0/gtk/gtkdebug.h",
+            "include/gtk-4.0/gtk/gtkdialogerror.h",
+            "include/gtk-4.0/gtk/gtkdirectorylist.h",
+            "include/gtk-4.0/gtk/gtkdragicon.h",
+            "include/gtk-4.0/gtk/gtkdragsource.h",
+            "include/gtk-4.0/gtk/gtkdrawingarea.h",
+            "include/gtk-4.0/gtk/gtkdropcontrollermotion.h",
+            "include/gtk-4.0/gtk/gtkdropdown.h",
+            "include/gtk-4.0/gtk/gtkdroptarget.h",
+            "include/gtk-4.0/gtk/gtkdroptargetasync.h",
+            "include/gtk-4.0/gtk/gtkeditable.h",
+            "include/gtk-4.0/gtk/gtkeditablelabel.h",
+            "include/gtk-4.0/gtk/gtkemojichooser.h",
+            "include/gtk-4.0/gtk/gtkentry.h",
+            "include/gtk-4.0/gtk/gtkentrybuffer.h",
+            "include/gtk-4.0/gtk/gtkenumlist.h",
+            "include/gtk-4.0/gtk/gtkenums.h",
+            "include/gtk-4.0/gtk/gtkeventcontroller.h",
+            "include/gtk-4.0/gtk/gtkeventcontrollerfocus.h",
+            "include/gtk-4.0/gtk/gtkeventcontrollerkey.h",
+            "include/gtk-4.0/gtk/gtkeventcontrollerlegacy.h",
+            "include/gtk-4.0/gtk/gtkeventcontrollermotion.h",
+            "include/gtk-4.0/gtk/gtkeventcontrollerscroll.h",
+            "include/gtk-4.0/gtk/gtkexpander.h",
+            "include/gtk-4.0/gtk/gtkexpression.h",
+            "include/gtk-4.0/gtk/gtkfiledialog.h",
+            "include/gtk-4.0/gtk/gtkfilefilter.h",
+            "include/gtk-4.0/gtk/gtkfilelauncher.h",
+            "include/gtk-4.0/gtk/gtkfilter.h",
+            "include/gtk-4.0/gtk/gtkfilterlistmodel.h",
+            "include/gtk-4.0/gtk/gtkfixed.h",
+            "include/gtk-4.0/gtk/gtkfixedlayout.h",
+            "include/gtk-4.0/gtk/gtkflattenlistmodel.h",
+            "include/gtk-4.0/gtk/gtkflowbox.h",
+            "include/gtk-4.0/gtk/gtkfontdialog.h",
+            "include/gtk-4.0/gtk/gtkfontdialogbutton.h",
+            "include/gtk-4.0/gtk/gtkframe.h",
+            "include/gtk-4.0/gtk/gtkgesture.h",
+            "include/gtk-4.0/gtk/gtkgestureclick.h",
+            "include/gtk-4.0/gtk/gtkgesturedrag.h",
+            "include/gtk-4.0/gtk/gtkgesturelongpress.h",
+            "include/gtk-4.0/gtk/gtkgesturepan.h",
+            "include/gtk-4.0/gtk/gtkgesturerotate.h",
+            "include/gtk-4.0/gtk/gtkgesturesingle.h",
+            "include/gtk-4.0/gtk/gtkgesturestylus.h",
+            "include/gtk-4.0/gtk/gtkgestureswipe.h",
+            "include/gtk-4.0/gtk/gtkgesturezoom.h",
+            "include/gtk-4.0/gtk/gtkglarea.h",
+            "include/gtk-4.0/gtk/gtkgraphicsoffload.h",
+            "include/gtk-4.0/gtk/gtkgrid.h",
+            "include/gtk-4.0/gtk/gtkgridlayout.h",
+            "include/gtk-4.0/gtk/gtkgridview.h",
+            "include/gtk-4.0/gtk/gtkheaderbar.h",
+            "include/gtk-4.0/gtk/gtkiconpaintable.h",
+            "include/gtk-4.0/gtk/gtkicontheme.h",
+            "include/gtk-4.0/gtk/gtkimage.h",
+            "include/gtk-4.0/gtk/gtkimcontext.h",
+            "include/gtk-4.0/gtk/gtkimcontextsimple.h",
+            "include/gtk-4.0/gtk/gtkimmodule.h",
+            "include/gtk-4.0/gtk/gtkimmulticontext.h",
+            "include/gtk-4.0/gtk/gtkinscription.h",
+            "include/gtk-4.0/gtk/gtklabel.h",
+            "include/gtk-4.0/gtk/gtklayoutchild.h",
+            "include/gtk-4.0/gtk/gtklayoutmanager.h",
+            "include/gtk-4.0/gtk/gtklevelbar.h",
+            "include/gtk-4.0/gtk/gtklinkbutton.h",
+            "include/gtk-4.0/gtk/gtklistbase.h",
+            "include/gtk-4.0/gtk/gtklistbox.h",
+            "include/gtk-4.0/gtk/gtklistheader.h",
+            "include/gtk-4.0/gtk/gtklistitem.h",
+            "include/gtk-4.0/gtk/gtklistitemfactory.h",
+            "include/gtk-4.0/gtk/gtklistview.h",
+            "include/gtk-4.0/gtk/gtkmain.h",
+            "include/gtk-4.0/gtk/gtkmaplistmodel.h",
+            "include/gtk-4.0/gtk/gtkmediacontrols.h",
+            "include/gtk-4.0/gtk/gtkmediafile.h",
+            "include/gtk-4.0/gtk/gtkmediastream.h",
+            "include/gtk-4.0/gtk/gtkmenubutton.h",
+            "include/gtk-4.0/gtk/gtkmountoperation.h",
+            "include/gtk-4.0/gtk/gtkmultifilter.h",
+            "include/gtk-4.0/gtk/gtkmultiselection.h",
+            "include/gtk-4.0/gtk/gtkmultisorter.h",
+            "include/gtk-4.0/gtk/gtknative.h",
+            "include/gtk-4.0/gtk/gtknativedialog.h",
+            "include/gtk-4.0/gtk/gtknoselection.h",
+            "include/gtk-4.0/gtk/gtknotebook.h",
+            "include/gtk-4.0/gtk/gtknumericsorter.h",
+            "include/gtk-4.0/gtk/gtkorientable.h",
+            "include/gtk-4.0/gtk/gtkoverlay.h",
+            "include/gtk-4.0/gtk/gtkoverlaylayout.h",
+            "include/gtk-4.0/gtk/gtkpadcontroller.h",
+            "include/gtk-4.0/gtk/gtkpaned.h",
+            "include/gtk-4.0/gtk/gtkpasswordentry.h",
+            "include/gtk-4.0/gtk/gtkpasswordentrybuffer.h",
+            "include/gtk-4.0/gtk/gtkpicture.h",
+            "include/gtk-4.0/gtk/gtkpopover.h",
+            "include/gtk-4.0/gtk/gtkpopoverbin.h",
+            "include/gtk-4.0/gtk/gtkpopovermenu.h",
+            "include/gtk-4.0/gtk/gtkpopovermenubar.h",
+            "include/gtk-4.0/gtk/gtkprintdialog.h",
+            "include/gtk-4.0/gtk/gtkprogressbar.h",
+            "include/gtk-4.0/gtk/gtkrange.h",
+            "include/gtk-4.0/gtk/gtkrecentmanager.h",
+            "include/gtk-4.0/gtk/gtkrevealer.h",
+            "include/gtk-4.0/gtk/gtkroot.h",
+            "include/gtk-4.0/gtk/gtkscale.h",
+            "include/gtk-4.0/gtk/gtkscalebutton.h",
+            "include/gtk-4.0/gtk/gtkscrollable.h",
+            "include/gtk-4.0/gtk/gtkscrollbar.h",
+            "include/gtk-4.0/gtk/gtkscrolledwindow.h",
+            "include/gtk-4.0/gtk/gtkscrollinfo.h",
+            "include/gtk-4.0/gtk/gtksearchbar.h",
+            "include/gtk-4.0/gtk/gtksearchentry.h",
+            "include/gtk-4.0/gtk/gtksectionmodel.h",
+            "include/gtk-4.0/gtk/gtkselectionfiltermodel.h",
+            "include/gtk-4.0/gtk/gtkselectionmodel.h",
+            "include/gtk-4.0/gtk/gtkseparator.h",
+            "include/gtk-4.0/gtk/gtksettings.h",
+            "include/gtk-4.0/gtk/gtkshortcut.h",
+            "include/gtk-4.0/gtk/gtkshortcutaction.h",
+            "include/gtk-4.0/gtk/gtkshortcutcontroller.h",
+            "include/gtk-4.0/gtk/gtkshortcutmanager.h",
+            "include/gtk-4.0/gtk/gtkshortcuttrigger.h",
+            "include/gtk-4.0/gtk/gtksignallistitemfactory.h",
+            "include/gtk-4.0/gtk/gtksingleselection.h",
+            "include/gtk-4.0/gtk/gtksizegroup.h",
+            "include/gtk-4.0/gtk/gtksizerequest.h",
+            "include/gtk-4.0/gtk/gtkslicelistmodel.h",
+            "include/gtk-4.0/gtk/gtksnapshot.h",
+            "include/gtk-4.0/gtk/gtksorter.h",
+            "include/gtk-4.0/gtk/gtksortlistmodel.h",
+            "include/gtk-4.0/gtk/gtkspinbutton.h",
+            "include/gtk-4.0/gtk/gtkspinner.h",
+            "include/gtk-4.0/gtk/gtkstack.h",
+            "include/gtk-4.0/gtk/gtkstacksidebar.h",
+            "include/gtk-4.0/gtk/gtkstackswitcher.h",
+            "include/gtk-4.0/gtk/gtkstringfilter.h",
+            "include/gtk-4.0/gtk/gtkstringlist.h",
+            "include/gtk-4.0/gtk/gtkstringsorter.h",
+            "include/gtk-4.0/gtk/gtkstyleprovider.h",
+            "include/gtk-4.0/gtk/gtksvgwidget.h",
+            "include/gtk-4.0/gtk/gtkswitch.h",
+            "include/gtk-4.0/gtk/gtksymbolicpaintable.h",
+            "include/gtk-4.0/gtk/gtktestatcontext.h",
+            "include/gtk-4.0/gtk/gtktestutils.h",
+            "include/gtk-4.0/gtk/gtktext.h",
+            "include/gtk-4.0/gtk/gtktextbuffer.h",
+            "include/gtk-4.0/gtk/gtktextchild.h",
+            "include/gtk-4.0/gtk/gtktextiter.h",
+            "include/gtk-4.0/gtk/gtktextmark.h",
+            "include/gtk-4.0/gtk/gtktexttag.h",
+            "include/gtk-4.0/gtk/gtktexttagtable.h",
+            "include/gtk-4.0/gtk/gtktextview.h",
+            "include/gtk-4.0/gtk/gtktogglebutton.h",
+            "include/gtk-4.0/gtk/gtktooltip.h",
+            "include/gtk-4.0/gtk/gtktreeexpander.h",
+            "include/gtk-4.0/gtk/gtktreelistmodel.h",
+            "include/gtk-4.0/gtk/gtktreelistrowsorter.h",
+            "include/gtk-4.0/gtk/gtktypebuiltins.h",
+            "include/gtk-4.0/gtk/gtktypes.h",
+            "include/gtk-4.0/gtk/gtkurilauncher.h",
+            "include/gtk-4.0/gtk/gtkversion.h",
+            "include/gtk-4.0/gtk/gtkvideo.h",
+            "include/gtk-4.0/gtk/gtkviewport.h",
+            "include/gtk-4.0/gtk/gtkwidget.h",
+            "include/gtk-4.0/gtk/gtkwidgetpaintable.h",
+            "include/gtk-4.0/gtk/gtkwindow.h",
+            "include/gtk-4.0/gtk/gtkwindowcontrols.h",
+            "include/gtk-4.0/gtk/gtkwindowgroup.h",
+            "include/gtk-4.0/gtk/gtkwindowhandle.h",
+            "include/gtk-4.0/gtk/print/gtkpagesetup.h",
+            "include/gtk-4.0/gtk/print/gtkpapersize.h",
+            "include/gtk-4.0/gtk/print/gtkprintcontext.h",
+            "include/gtk-4.0/gtk/print/gtkprintoperation.h",
+            "include/gtk-4.0/gtk/print/gtkprintoperationpreview.h",
+            "include/gtk-4.0/gtk/print/gtkprintsettings.h",
+            "include/gtk-4.0/gtk/svg/gtksvg.h",
+            "include/gtk-4.0/gtk/svg/gtksvgenumtypes.h",
+            "include/gtk-4.0/unix-print/gtk/gtkunixprint.h",
+            "include/gtk-4.0/unix-print/gtk/print/gtkpagesetupunixdialog.h",
+            "include/gtk-4.0/unix-print/gtk/print/gtkprinter.h",
+            "include/gtk-4.0/unix-print/gtk/print/gtkprintjob.h",
+            "include/gtk-4.0/unix-print/gtk/print/gtkprintunixdialog.h",
+            "lib/girepository-1.0/Gdk-4.0.typelib",
+            "lib/girepository-1.0/GdkMacos-4.0.typelib",
+            "lib/girepository-1.0/Gsk-4.0.typelib",
+            "lib/girepository-1.0/Gtk-4.0.typelib",
+            "lib/libgtk-4.1.dylib",
+            "lib/libgtk-4.dylib",
+            "lib/pkgconfig/gtk4-atspi.pc",
+            "lib/pkgconfig/gtk4-macos.pc",
+            "lib/pkgconfig/gtk4-unix-print.pc",
+            "lib/pkgconfig/gtk4.pc",
+            "sbom.spdx.json",
+            "share/applications/org.gtk.Demo4.desktop",
+            "share/applications/org.gtk.PrintEditor4.desktop",
+            "share/applications/org.gtk.WidgetFactory4.desktop",
+            "share/applications/org.gtk.gtk4.NodeEditor.desktop",
+            "share/bash-completion/completions/gtk4-builder-tool",
+            "share/bash-completion/completions/gtk4-demo",
+            "share/bash-completion/completions/gtk4-image-tool",
+            "share/bash-completion/completions/gtk4-node-editor",
+            "share/bash-completion/completions/gtk4-path-tool",
+            "share/bash-completion/completions/gtk4-print-editor",
+            "share/bash-completion/completions/gtk4-rendernode-tool",
+            "share/bash-completion/completions/gtk4-widget-factory",
+            "share/gettext/its/gtk4builder.its",
+            "share/gettext/its/gtk4builder.loc",
+            "share/gir-1.0/Gdk-4.0.gir",
+            "share/gir-1.0/GdkMacos-4.0.gir",
+            "share/gir-1.0/Gsk-4.0.gir",
+            "share/gir-1.0/Gtk-4.0.gir",
+            "share/glib-2.0/schemas/org.gtk.Demo4.gschema.xml",
+            "share/glib-2.0/schemas/org.gtk.gtk4.Inspector.gschema.xml",
+            "share/glib-2.0/schemas/org.gtk.gtk4.Settings.ColorChooser.gschema.xml",
+            "share/glib-2.0/schemas/org.gtk.gtk4.Settings.Debug.gschema.xml",
+            "share/glib-2.0/schemas/org.gtk.gtk4.Settings.EmojiChooser.gschema.xml",
+            "share/glib-2.0/schemas/org.gtk.gtk4.Settings.FileChooser.gschema.xml",
+            "share/gtk-4.0/emoji/bn.gresource",
+            "share/gtk-4.0/emoji/da.gresource",
+            "share/gtk-4.0/emoji/de.gresource",
+            "share/gtk-4.0/emoji/es.gresource",
+            "share/gtk-4.0/emoji/et.gresource",
+            "share/gtk-4.0/emoji/fi.gresource",
+            "share/gtk-4.0/emoji/fr.gresource",
+            "share/gtk-4.0/emoji/hi.gresource",
+            "share/gtk-4.0/emoji/hu.gresource",
+            "share/gtk-4.0/emoji/it.gresource",
+            "share/gtk-4.0/emoji/ja.gresource",
+            "share/gtk-4.0/emoji/ko.gresource",
+            "share/gtk-4.0/emoji/lt.gresource",
+            "share/gtk-4.0/emoji/ms.gresource",
+            "share/gtk-4.0/emoji/nb.gresource",
+            "share/gtk-4.0/emoji/nl.gresource",
+            "share/gtk-4.0/emoji/pl.gresource",
+            "share/gtk-4.0/emoji/pt.gresource",
+            "share/gtk-4.0/emoji/ru.gresource",
+            "share/gtk-4.0/emoji/sv.gresource",
+            "share/gtk-4.0/emoji/th.gresource",
+            "share/gtk-4.0/emoji/uk.gresource",
+            "share/gtk-4.0/emoji/zh.gresource",
+            "share/gtk-4.0/gtk4builder.rng",
+            "share/gtk-4.0/valgrind/gtk.supp",
+            "share/icons/hicolor/scalable/apps/org.gtk.Demo4.svg",
+            "share/icons/hicolor/scalable/apps/org.gtk.PrintEditor4.Devel.svg",
+            "share/icons/hicolor/scalable/apps/org.gtk.PrintEditor4.svg",
+            "share/icons/hicolor/scalable/apps/org.gtk.WidgetFactory4.svg",
+            "share/icons/hicolor/scalable/apps/org.gtk.gtk4.NodeEditor.Devel.svg",
+            "share/icons/hicolor/scalable/apps/org.gtk.gtk4.NodeEditor.svg",
+            "share/icons/hicolor/symbolic/apps/org.gtk.Demo4-symbolic.svg",
+            "share/icons/hicolor/symbolic/apps/org.gtk.PrintEditor4-symbolic.svg",
+            "share/icons/hicolor/symbolic/apps/org.gtk.WidgetFactory4-symbolic.svg",
+            "share/icons/hicolor/symbolic/apps/org.gtk.gtk4.NodeEditor-symbolic.svg",
+            "share/locale/ab/LC_MESSAGES/gtk40.mo",
+            "share/locale/af/LC_MESSAGES/gtk40.mo",
+            "share/locale/am/LC_MESSAGES/gtk40.mo",
+            "share/locale/an/LC_MESSAGES/gtk40.mo",
+            "share/locale/ang/LC_MESSAGES/gtk40.mo",
+            "share/locale/ar/LC_MESSAGES/gtk40.mo",
+            "share/locale/as/LC_MESSAGES/gtk40.mo",
+            "share/locale/ast/LC_MESSAGES/gtk40.mo",
+            "share/locale/az/LC_MESSAGES/gtk40.mo",
+            "share/locale/az_IR/LC_MESSAGES/gtk40.mo",
+            "share/locale/be/LC_MESSAGES/gtk40.mo",
+            "share/locale/be@latin/LC_MESSAGES/gtk40.mo",
+            "share/locale/bg/LC_MESSAGES/gtk40.mo",
+            "share/locale/bn/LC_MESSAGES/gtk40.mo",
+            "share/locale/bn_IN/LC_MESSAGES/gtk40.mo",
+            "share/locale/br/LC_MESSAGES/gtk40.mo",
+            "share/locale/bs/LC_MESSAGES/gtk40.mo",
+            "share/locale/ca/LC_MESSAGES/gtk40.mo",
+            "share/locale/ca@valencia/LC_MESSAGES/gtk40.mo",
+            "share/locale/crh/LC_MESSAGES/gtk40.mo",
+            "share/locale/cs/LC_MESSAGES/gtk40.mo",
+            "share/locale/cy/LC_MESSAGES/gtk40.mo",
+            "share/locale/da/LC_MESSAGES/gtk40.mo",
+            "share/locale/de/LC_MESSAGES/gtk40.mo",
+            "share/locale/dz/LC_MESSAGES/gtk40.mo",
+            "share/locale/el/LC_MESSAGES/gtk40.mo",
+            "share/locale/en/LC_MESSAGES/gtk40.mo",
+            "share/locale/en@shaw/LC_MESSAGES/gtk40.mo",
+            "share/locale/en_CA/LC_MESSAGES/gtk40.mo",
+            "share/locale/en_GB/LC_MESSAGES/gtk40.mo",
+            "share/locale/eo/LC_MESSAGES/gtk40.mo",
+            "share/locale/es/LC_MESSAGES/gtk40.mo",
+            "share/locale/et/LC_MESSAGES/gtk40.mo",
+            "share/locale/eu/LC_MESSAGES/gtk40.mo",
+            "share/locale/fa/LC_MESSAGES/gtk40.mo",
+            "share/locale/fi/LC_MESSAGES/gtk40.mo",
+            "share/locale/fr/LC_MESSAGES/gtk40.mo",
+            "share/locale/fur/LC_MESSAGES/gtk40.mo",
+            "share/locale/ga/LC_MESSAGES/gtk40.mo",
+            "share/locale/gd/LC_MESSAGES/gtk40.mo",
+            "share/locale/gl/LC_MESSAGES/gtk40.mo",
+            "share/locale/gu/LC_MESSAGES/gtk40.mo",
+            "share/locale/he/LC_MESSAGES/gtk40.mo",
+            "share/locale/hi/LC_MESSAGES/gtk40.mo",
+            "share/locale/hr/LC_MESSAGES/gtk40.mo",
+            "share/locale/hu/LC_MESSAGES/gtk40.mo",
+            "share/locale/hy/LC_MESSAGES/gtk40.mo",
+            "share/locale/ia/LC_MESSAGES/gtk40.mo",
+            "share/locale/id/LC_MESSAGES/gtk40.mo",
+            "share/locale/ie/LC_MESSAGES/gtk40.mo",
+            "share/locale/io/LC_MESSAGES/gtk40.mo",
+            "share/locale/is/LC_MESSAGES/gtk40.mo",
+            "share/locale/it/LC_MESSAGES/gtk40.mo",
+            "share/locale/ja/LC_MESSAGES/gtk40.mo",
+            "share/locale/ka/LC_MESSAGES/gtk40.mo",
+            "share/locale/kab/LC_MESSAGES/gtk40.mo",
+            "share/locale/kk/LC_MESSAGES/gtk40.mo",
+            "share/locale/km/LC_MESSAGES/gtk40.mo",
+            "share/locale/kn/LC_MESSAGES/gtk40.mo",
+            "share/locale/ko/LC_MESSAGES/gtk40.mo",
+            "share/locale/ku/LC_MESSAGES/gtk40.mo",
+            "share/locale/ky/LC_MESSAGES/gtk40.mo",
+            "share/locale/lg/LC_MESSAGES/gtk40.mo",
+            "share/locale/li/LC_MESSAGES/gtk40.mo",
+            "share/locale/lt/LC_MESSAGES/gtk40.mo",
+            "share/locale/lv/LC_MESSAGES/gtk40.mo",
+            "share/locale/mai/LC_MESSAGES/gtk40.mo",
+            "share/locale/mi/LC_MESSAGES/gtk40.mo",
+            "share/locale/mjw/LC_MESSAGES/gtk40.mo",
+            "share/locale/mk/LC_MESSAGES/gtk40.mo",
+            "share/locale/ml/LC_MESSAGES/gtk40.mo",
+            "share/locale/mn/LC_MESSAGES/gtk40.mo",
+            "share/locale/mr/LC_MESSAGES/gtk40.mo",
+            "share/locale/ms/LC_MESSAGES/gtk40.mo",
+            "share/locale/my/LC_MESSAGES/gtk40.mo",
+            "share/locale/nb/LC_MESSAGES/gtk40.mo",
+            "share/locale/nds/LC_MESSAGES/gtk40.mo",
+            "share/locale/ne/LC_MESSAGES/gtk40.mo",
+            "share/locale/nl/LC_MESSAGES/gtk40.mo",
+            "share/locale/nn/LC_MESSAGES/gtk40.mo",
+            "share/locale/nso/LC_MESSAGES/gtk40.mo",
+            "share/locale/oc/LC_MESSAGES/gtk40.mo",
+            "share/locale/or/LC_MESSAGES/gtk40.mo",
+            "share/locale/pa/LC_MESSAGES/gtk40.mo",
+            "share/locale/pl/LC_MESSAGES/gtk40.mo",
+            "share/locale/ps/LC_MESSAGES/gtk40.mo",
+            "share/locale/pt/LC_MESSAGES/gtk40.mo",
+            "share/locale/pt_BR/LC_MESSAGES/gtk40.mo",
+            "share/locale/ro/LC_MESSAGES/gtk40.mo",
+            "share/locale/ru/LC_MESSAGES/gtk40.mo",
+            "share/locale/rw/LC_MESSAGES/gtk40.mo",
+            "share/locale/si/LC_MESSAGES/gtk40.mo",
+            "share/locale/sk/LC_MESSAGES/gtk40.mo",
+            "share/locale/sl/LC_MESSAGES/gtk40.mo",
+            "share/locale/sq/LC_MESSAGES/gtk40.mo",
+            "share/locale/sr/LC_MESSAGES/gtk40.mo",
+            "share/locale/sr@ije/LC_MESSAGES/gtk40.mo",
+            "share/locale/sr@latin/LC_MESSAGES/gtk40.mo",
+            "share/locale/sv/LC_MESSAGES/gtk40.mo",
+            "share/locale/ta/LC_MESSAGES/gtk40.mo",
+            "share/locale/te/LC_MESSAGES/gtk40.mo",
+            "share/locale/tg/LC_MESSAGES/gtk40.mo",
+            "share/locale/th/LC_MESSAGES/gtk40.mo",
+            "share/locale/tr/LC_MESSAGES/gtk40.mo",
+            "share/locale/tt/LC_MESSAGES/gtk40.mo",
+            "share/locale/ug/LC_MESSAGES/gtk40.mo",
+            "share/locale/uk/LC_MESSAGES/gtk40.mo",
+            "share/locale/ur/LC_MESSAGES/gtk40.mo",
+            "share/locale/uz/LC_MESSAGES/gtk40.mo",
+            "share/locale/uz@cyrillic/LC_MESSAGES/gtk40.mo",
+            "share/locale/vi/LC_MESSAGES/gtk40.mo",
+            "share/locale/wa/LC_MESSAGES/gtk40.mo",
+            "share/locale/xh/LC_MESSAGES/gtk40.mo",
+            "share/locale/yi/LC_MESSAGES/gtk40.mo",
+            "share/locale/zh_CN/LC_MESSAGES/gtk40.mo",
+            "share/locale/zh_HK/LC_MESSAGES/gtk40.mo",
+            "share/locale/zh_TW/LC_MESSAGES/gtk40.mo",
+            "share/man/man1/gtk4-broadwayd.1",
+            "share/man/man1/gtk4-builder-tool.1",
+            "share/man/man1/gtk4-demo-application.1",
+            "share/man/man1/gtk4-demo.1",
+            "share/man/man1/gtk4-image-tool.1",
+            "share/man/man1/gtk4-launch.1",
+            "share/man/man1/gtk4-node-editor.1",
+            "share/man/man1/gtk4-path-tool.1",
+            "share/man/man1/gtk4-query-settings.1",
+            "share/man/man1/gtk4-rendernode-tool.1",
+            "share/man/man1/gtk4-update-icon-cache.1",
+            "share/man/man1/gtk4-widget-factory.1",
+            "share/metainfo/org.gtk.Demo4.appdata.xml",
+            "share/metainfo/org.gtk.PrintEditor4.appdata.xml",
+            "share/metainfo/org.gtk.WidgetFactory4.appdata.xml",
+            "share/metainfo/org.gtk.gtk4.NodeEditor.appdata.xml"
+          ],
+          "installed_size": 68222884
+        }
+      }
+    }
+  }
+}

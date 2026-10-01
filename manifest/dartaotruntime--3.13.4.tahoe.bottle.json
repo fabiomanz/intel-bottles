@@ -1,0 +1,87 @@
+{
+  "dartaotruntime": {
+    "formula": {
+      "name": "dartaotruntime",
+      "pkg_version": "3.13.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dartaotruntime.rb",
+      "tap_git_path": "Formula/d/dartaotruntime.rb",
+      "tap_git_revision": "f53e41b275b6070e94c2d7a81e645c1c05fb6bee",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Command-line tool for running AOT-compiled snapshots of Dart code",
+      "license": "BSD-3-Clause",
+      "homepage": "https://dart.dev/tools/dartaotruntime"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-10-01T07:19:07Z",
+      "tags": {
+        "tahoe": {
+          "filename": "dartaotruntime-3.13.4.tahoe.bottle.tar.gz",
+          "local_filename": "dartaotruntime--3.13.4.tahoe.bottle.tar.gz",
+          "sha256": "29238da43614c0e8da675ae0c5cea68fa53d62b0f769efe530fcd9a3fbe106d8",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790838550,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-dartaotruntime-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/dartaotruntime"
+          ],
+          "all_files": [
+            ".brew/dartaotruntime.rb",
+            "AUTHORS",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/dartaotruntime",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 5540394
+        }
+      }
+    }
+  }
+}

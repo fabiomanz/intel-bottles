@@ -1,0 +1,175 @@
+{
+  "libgcrypt": {
+    "formula": {
+      "name": "libgcrypt",
+      "pkg_version": "1.12.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libgcrypt.rb",
+      "tap_git_path": "Formula/lib/libgcrypt.rb",
+      "tap_git_revision": "52b61f5ef99b03c18032c38a4a3de85d226a0e7e",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Cryptographic library based on the code from GnuPG",
+      "license": "LGPL-2.1-or-later AND GPL-2.0-or-later",
+      "homepage": "https://gnupg.org/related_software/libgcrypt/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-30T19:28:04Z",
+      "tags": {
+        "tahoe": {
+          "filename": "libgcrypt-1.12.4.tahoe.bottle.tar.gz",
+          "local_filename": "libgcrypt--1.12.4.tahoe.bottle.tar.gz",
+          "sha256": "efbbe3d885e7e904bba98d2d0ad0e4d93a81e9289a0af3b77c44ae8f3293218b",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "bin/libgcrypt-config",
+              "lib/pkgconfig/libgcrypt.pc"
+            ],
+            "linkage_files": [
+              "bin/mpicalc",
+              "lib/libgcrypt.20.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789125624,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libgpg-error",
+                "version": "1.61",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.61",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libgcrypt"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libgcrypt-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/dumpsexp",
+            "bin/libgcrypt-config",
+            "bin/mpicalc",
+            "bin/hmac256"
+          ],
+          "all_files": [
+            ".brew/libgcrypt.rb",
+            "AUTHORS",
+            "COPYING",
+            "COPYING.LIB",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "TODO",
+            "bin/dumpsexp",
+            "bin/hmac256",
+            "bin/libgcrypt-config",
+            "bin/mpicalc",
+            "include/gcrypt.h",
+            "lib/libgcrypt.20.dylib",
+            "lib/libgcrypt.a",
+            "lib/libgcrypt.dylib",
+            "lib/pkgconfig/libgcrypt.pc",
+            "sbom.spdx.json",
+            "share/aclocal/libgcrypt.m4",
+            "share/info/gcrypt.info",
+            "share/info/gcrypt.info-1",
+            "share/info/gcrypt.info-2",
+            "share/man/man1/hmac256.1"
+          ],
+          "installed_size": 4058924
+        }
+      }
+    }
+  }
+}

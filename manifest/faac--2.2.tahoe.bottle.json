@@ -1,0 +1,100 @@
+{
+  "faac": {
+    "formula": {
+      "name": "faac",
+      "pkg_version": "2.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/f/faac.rb",
+      "tap_git_path": "Formula/f/faac.rb",
+      "tap_git_revision": "63fa1810e68212f67bd965ae06d098906b90ff0c",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "ISO AAC audio encoder",
+      "license": "LGPL-2.1-or-later",
+      "homepage": "https://sourceforge.net/projects/faac/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-01T12:58:26Z",
+      "tags": {
+        "tahoe": {
+          "filename": "faac-2.2.tahoe.bottle.tar.gz",
+          "local_filename": "faac--2.2.tahoe.bottle.tar.gz",
+          "sha256": "cbafd260a4bd3fe68533f7b7621e3c2529c09270c02ba9e8e502638e3130c4fa",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "lib/pkgconfig/faac.pc"
+            ],
+            "linkage_files": [
+              "bin/faac",
+              "lib/libfaac.2.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790672497,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-faac-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/faac"
+          ],
+          "all_files": [
+            ".brew/faac.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README.md",
+            "TODO",
+            "bin/faac",
+            "include/faac.h",
+            "lib/libfaac.2.dylib",
+            "lib/libfaac.a",
+            "lib/libfaac.dylib",
+            "lib/pkgconfig/faac.pc",
+            "sbom.spdx.json",
+            "share/man/man1/faac.1"
+          ],
+          "installed_size": 325650
+        }
+      }
+    }
+  }
+}
