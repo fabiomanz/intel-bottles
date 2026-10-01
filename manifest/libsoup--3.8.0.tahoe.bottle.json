@@ -1,0 +1,840 @@
+{
+  "libsoup": {
+    "formula": {
+      "name": "libsoup",
+      "pkg_version": "3.8.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libsoup.rb",
+      "tap_git_path": "Formula/lib/libsoup.rb",
+      "tap_git_revision": "b2442fe3b367026a5197c984d8ba035622c8147a",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "HTTP client/server library for GNOME",
+      "license": "LGPL-2.0-or-later",
+      "homepage": "https://wiki.gnome.org/Projects/libsoup"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-01T20:07:16Z",
+      "tags": {
+        "tahoe": {
+          "filename": "libsoup-3.8.0.tahoe.bottle.tar.gz",
+          "local_filename": "libsoup--3.8.0.tahoe.bottle.tar.gz",
+          "sha256": "e453a9affbd474077f52cda4bfda6606c34eaf58b8568a1ec2b1d0245f17acc5",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "lib/pkgconfig/libsoup-3.0.pc"
+            ],
+            "linkage_files": [
+              "lib/libsoup-3.0.0.dylib"
+            ],
+            "binary_relocation_files": [
+              "lib/libsoup-3.0.0.dylib"
+            ],
+            "source_modified_time": 1790809942,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.90.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.90.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libidn2",
+                "version": "2.3.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.8",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtasn1",
+                "version": "4.21.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.21.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "nettle",
+                "version": "4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "p11-kit",
+                "version": "0.26.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.26.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gnutls",
+                "version": "3.8.13",
+                "revision": 2,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.8.13_2",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "gsettings-desktop-schemas",
+                "version": "51.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "51.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib-networking",
+                "version": "2.80.1",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2.80.1",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libnghttp2",
+                "version": "1.70.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.70.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpsl",
+                "version": "0.23.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.23.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.53.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.53.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "lib/libsoup-3.0.0.dylib",
+              "string": "/usr/local/Cellar/libsoup/3.8.0/share/locale",
+              "offset": 361421
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.0",
+              "SPDXRef-Package-SPDXRef-glib-2.90.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Package-SPDXRef-p11-kit-0.26.5",
+              "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.0",
+              "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+              "SPDXRef-Package-SPDXRef-readline-8.3.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gettext-1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fe9d5337ff31e4f40b827b3463bd3fdc61b8f377277769f71e93baad0443bc96"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "name": "glib",
+                "versionInfo": "2.90.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4f180b8f89781725d58c0a39d7508c0bf0e96225fc69ef630e18a9f885f61c4a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/glib@2.90.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gmp-6.3.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b4e672215c05a94e9244d447c8dab3435d4e8a96f6135fdbf8c37ba730c98d65"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-p11-kit-0.26.5",
+                "name": "p11-kit",
+                "versionInfo": "0.26.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/p11-kit-0.26.5.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "28df4ce7bd92b899411a8adc39fe2c6ba25e8042fcc96718d2cb677c23720ca6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/p11-kit@0.26.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.0",
+                "name": "gsettings-desktop-schemas",
+                "versionInfo": "51.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gsettings-desktop-schemas-51.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f3a5ad690831b13ba15993a8fa0a39233448f0293a88abaa526af28f57371e00"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gsettings-desktop-schemas@51.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "name": "libnghttp2",
+                "versionInfo": "1.70.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libnghttp2-1.70.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "04d57bab80ac6b535f89b1a2ede4c4c85285f8ab5617944d4aaaddd722b6e04c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libnghttp2@1.70.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/readline-8.3.6.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8e2d9a12817040fff1164139282e0d2f7ad2aaf388db15db8eb36a8fb00dd74a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "name": "sqlite",
+                "versionInfo": "3.53.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.10.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xz-5.8.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54a648c4197b0299ee2d37527ca6a23447abe65342f8f8c0ed68e154f4593b0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-p11-kit-0.26.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libsoup-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libsoup.rb",
+            "AUTHORS",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "include/libsoup-3.0/libsoup/soup-auth-domain-basic.h",
+            "include/libsoup-3.0/libsoup/soup-auth-domain-digest.h",
+            "include/libsoup-3.0/libsoup/soup-auth-domain.h",
+            "include/libsoup-3.0/libsoup/soup-auth-manager.h",
+            "include/libsoup-3.0/libsoup/soup-auth.h",
+            "include/libsoup-3.0/libsoup/soup-cache.h",
+            "include/libsoup-3.0/libsoup/soup-compression-dictionary-request.h",
+            "include/libsoup-3.0/libsoup/soup-content-decoder.h",
+            "include/libsoup-3.0/libsoup/soup-content-sniffer.h",
+            "include/libsoup-3.0/libsoup/soup-cookie-jar-db.h",
+            "include/libsoup-3.0/libsoup/soup-cookie-jar-text.h",
+            "include/libsoup-3.0/libsoup/soup-cookie-jar.h",
+            "include/libsoup-3.0/libsoup/soup-cookie.h",
+            "include/libsoup-3.0/libsoup/soup-date-utils.h",
+            "include/libsoup-3.0/libsoup/soup-enum-types.h",
+            "include/libsoup-3.0/libsoup/soup-form.h",
+            "include/libsoup-3.0/libsoup/soup-headers.h",
+            "include/libsoup-3.0/libsoup/soup-hsts-enforcer-db.h",
+            "include/libsoup-3.0/libsoup/soup-hsts-enforcer.h",
+            "include/libsoup-3.0/libsoup/soup-hsts-policy.h",
+            "include/libsoup-3.0/libsoup/soup-logger.h",
+            "include/libsoup-3.0/libsoup/soup-message-body.h",
+            "include/libsoup-3.0/libsoup/soup-message-headers.h",
+            "include/libsoup-3.0/libsoup/soup-message-metrics.h",
+            "include/libsoup-3.0/libsoup/soup-message.h",
+            "include/libsoup-3.0/libsoup/soup-method.h",
+            "include/libsoup-3.0/libsoup/soup-multipart-input-stream.h",
+            "include/libsoup-3.0/libsoup/soup-multipart.h",
+            "include/libsoup-3.0/libsoup/soup-server-message.h",
+            "include/libsoup-3.0/libsoup/soup-server.h",
+            "include/libsoup-3.0/libsoup/soup-session-feature.h",
+            "include/libsoup-3.0/libsoup/soup-session.h",
+            "include/libsoup-3.0/libsoup/soup-status.h",
+            "include/libsoup-3.0/libsoup/soup-tld.h",
+            "include/libsoup-3.0/libsoup/soup-types.h",
+            "include/libsoup-3.0/libsoup/soup-uri-utils.h",
+            "include/libsoup-3.0/libsoup/soup-version.h",
+            "include/libsoup-3.0/libsoup/soup-websocket-connection.h",
+            "include/libsoup-3.0/libsoup/soup-websocket-extension-deflate.h",
+            "include/libsoup-3.0/libsoup/soup-websocket-extension-manager.h",
+            "include/libsoup-3.0/libsoup/soup-websocket-extension.h",
+            "include/libsoup-3.0/libsoup/soup-websocket.h",
+            "include/libsoup-3.0/libsoup/soup.h",
+            "lib/girepository-1.0/Soup-3.0.typelib",
+            "lib/libsoup-3.0.0.dylib",
+            "lib/libsoup-3.0.dylib",
+            "lib/pkgconfig/libsoup-3.0.pc",
+            "sbom.spdx.json",
+            "share/gir-1.0/Soup-3.0.gir",
+            "share/locale/ab/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/an/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/as/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/be/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/bg/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/bn_IN/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/bs/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/ca/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/ca@valencia/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/cs/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/da/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/de/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/el/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/en_GB/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/eo/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/es/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/et/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/eu/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/fa/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/fi/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/fr/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/fur/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/gd/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/gl/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/gu/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/he/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/hi/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/hr/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/hu/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/id/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/it/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/ja/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/ka/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/kab/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/kk/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/kn/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/ko/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/kw/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/lt/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/lv/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/ml/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/mr/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/ms/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/nb/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/ne/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/nl/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/oc/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/or/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/pa/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/pl/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/pt/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/pt_BR/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/ro/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/ru/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/sk/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/sl/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/sr/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/sr@latin/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/sv/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/ta/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/te/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/tg/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/th/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/tr/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/ug/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/uk/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/uz/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/uz@cyrillic/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/vi/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/zh_CN/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/zh_HK/LC_MESSAGES/libsoup-3.0.mo",
+            "share/locale/zh_TW/LC_MESSAGES/libsoup-3.0.mo",
+            "share/vala/vapi/libsoup-3.0.deps",
+            "share/vala/vapi/libsoup-3.0.vapi"
+          ],
+          "installed_size": 2323414
+        }
+      }
+    }
+  }
+}
