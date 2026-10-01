@@ -1,0 +1,103 @@
+{
+  "faad2": {
+    "formula": {
+      "name": "faad2",
+      "pkg_version": "2.11.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/f/faad2.rb",
+      "tap_git_path": "Formula/f/faad2.rb",
+      "tap_git_revision": "d71cbf58d6ae21acf3d01a12e3ce289aa88329f1",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "ISO AAC audio decoder",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://sourceforge.net/projects/faac/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-01T19:48:05Z",
+      "tags": {
+        "tahoe": {
+          "filename": "faad2-2.11.4.tahoe.bottle.tar.gz",
+          "local_filename": "faad2--2.11.4.tahoe.bottle.tar.gz",
+          "sha256": "83866be181ffb96ad784a9ed5666418b0916d5899e2d29bbc392d6788298f44a",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "lib/pkgconfig/faad2.pc"
+            ],
+            "linkage_files": [
+              "bin/faad",
+              "lib/libfaad.2.11.4.dylib",
+              "lib/libfaad_drm.2.11.4.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790840744,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-faad2-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/faad"
+          ],
+          "all_files": [
+            ".brew/faad2.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "bin/faad",
+            "include/faad.h",
+            "include/neaacdec.h",
+            "lib/libfaad.2.11.4.dylib",
+            "lib/libfaad.2.dylib",
+            "lib/libfaad.dylib",
+            "lib/libfaad_drm.2.11.4.dylib",
+            "lib/libfaad_drm.2.dylib",
+            "lib/libfaad_drm.dylib",
+            "lib/pkgconfig/faad2.pc",
+            "sbom.spdx.json",
+            "share/man/man1/faad.1"
+          ],
+          "installed_size": 558627
+        }
+      }
+    }
+  }
+}
