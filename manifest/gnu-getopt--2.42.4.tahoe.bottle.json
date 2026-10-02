@@ -2,10 +2,10 @@
   "gnu-getopt": {
     "formula": {
       "name": "gnu-getopt",
-      "pkg_version": "2.42.3",
+      "pkg_version": "2.42.4",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gnu-getopt.rb",
       "tap_git_path": "Formula/g/gnu-getopt.rb",
-      "tap_git_revision": "74ae27082c23f2c3d5690b20ee5a8dcfb2d47e13",
+      "tap_git_revision": "c8da8fbc0394a16dbf433d4be341e653625daea9",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Command-line option parsing utility",
       "license": "GPL-2.0-or-later",
@@ -15,27 +15,27 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-04T20:29:05Z",
+      "date": "2026-10-02T12:57:29Z",
       "tags": {
         "tahoe": {
-          "filename": "gnu-getopt-2.42.3.tahoe.bottle.tar.gz",
-          "local_filename": "gnu-getopt--2.42.3.tahoe.bottle.tar.gz",
-          "sha256": "13c304bda6bba53b3920ced250a44bef907a83a1a2ac23e6318b345865341782",
+          "filename": "gnu-getopt-2.42.4.tahoe.bottle.tar.gz",
+          "local_filename": "gnu-getopt--2.42.4.tahoe.bottle.tar.gz",
+          "sha256": "8d25d3e02ed550fc41ce3eff55e423f9d2ea845da9f9ef2ce5f78153e8993356",
           "tab": {
-            "homebrew_version": "6.0.21",
+            "homebrew_version": "7.0.7",
             "changed_files": [],
             "linkage_files": [
               "bin/getopt"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1788267840,
+            "source_modified_time": 1789987189,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "gettext",
                 "version": "1.0",
                 "revision": 0,
-                "bottle_rebuild": 1,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.0",
                 "declared_directly": false,
                 "compatibility_version": 1
@@ -54,9 +54,33 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-gettext-1.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gettext-1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fe9d5337ff31e4f40b827b3463bd3fdc61b8f377277769f71e93baad0443bc96"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
@@ -71,6 +95,11 @@
               }
             ],
             "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gnu-getopt"
+              },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
@@ -96,7 +125,7 @@
             "share/doc/gnu-getopt/getopt-example.tcsh",
             "share/man/man1/getopt.1"
           ],
-          "installed_size": 151629
+          "installed_size": 151652
         }
       }
     }
