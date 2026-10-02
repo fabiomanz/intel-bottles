@@ -2,10 +2,10 @@
   "orc": {
     "formula": {
       "name": "orc",
-      "pkg_version": "0.4.43",
+      "pkg_version": "0.4.44",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/o/orc.rb",
       "tap_git_path": "Formula/o/orc.rb",
-      "tap_git_revision": "42d2ea3c15816d980168382014ad117783d7e1ba",
+      "tap_git_revision": "4712cb3bfba37772b6a281bc79998e82f5824141",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Oil Runtime Compiler (ORC)",
       "license": "BSD-2-Clause AND BSD-3-Clause",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-05T04:40:21Z",
+      "date": "2026-10-02T11:55:50Z",
       "tags": {
         "tahoe": {
-          "filename": "orc-0.4.43.tahoe.bottle.tar.gz",
-          "local_filename": "orc--0.4.43.tahoe.bottle.tar.gz",
-          "sha256": "ccc606265b76f56d1b49653fe2fbc4eee8a78f783068622801e2a33151102a47",
+          "filename": "orc-0.4.44.tahoe.bottle.tar.gz",
+          "local_filename": "orc--0.4.44.tahoe.bottle.tar.gz",
+          "sha256": "8f364787f83e761cbadda77e972513515e58e766247d7738eba4d090137aae1d",
           "tab": {
-            "homebrew_version": "6.0.21",
+            "homebrew_version": "7.0.7",
             "changed_files": [
               "lib/pkgconfig/orc-0.4.pc",
               "lib/pkgconfig/orc-test-0.4.pc"
@@ -34,7 +34,7 @@
               "lib/liborc-test-0.4.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1787943451,
+            "source_modified_time": 1788909256,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -137,7 +137,7 @@
             "lib/pkgconfig/orc-test-0.4.pc",
             "sbom.spdx.json"
           ],
-          "installed_size": 1595882
+          "installed_size": 1595881
         }
       }
     }

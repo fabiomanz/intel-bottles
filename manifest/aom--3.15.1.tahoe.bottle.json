@@ -2,10 +2,10 @@
   "aom": {
     "formula": {
       "name": "aom",
-      "pkg_version": "3.15.0",
+      "pkg_version": "3.15.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/aom.rb",
       "tap_git_path": "Formula/a/aom.rb",
-      "tap_git_revision": "42d2ea3c15816d980168382014ad117783d7e1ba",
+      "tap_git_revision": "4712cb3bfba37772b6a281bc79998e82f5824141",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Codec library for encoding and decoding AV1 video streams",
       "license": "BSD-2-Clause",
@@ -15,37 +15,37 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-05T04:32:20Z",
+      "date": "2026-10-02T12:01:08Z",
       "tags": {
         "tahoe": {
-          "filename": "aom-3.15.0.tahoe.bottle.tar.gz",
-          "local_filename": "aom--3.15.0.tahoe.bottle.tar.gz",
-          "sha256": "ef8363134b027fc8e46bc43bf5554debd48212fb20b09baf5b4b371fd3ea1342",
+          "filename": "aom-3.15.1.tahoe.bottle.tar.gz",
+          "local_filename": "aom--3.15.1.tahoe.bottle.tar.gz",
+          "sha256": "0541e25c813131d69df3b9a1cbeacdf55e05abe4700103bd0076bf443c134399",
           "tab": {
-            "homebrew_version": "6.0.21",
+            "homebrew_version": "7.0.7",
             "changed_files": [
               "lib/cmake/AOM/AOMTargets.cmake",
               "lib/pkgconfig/aom.pc"
             ],
             "linkage_files": [
-              "lib/libaom.3.15.0.dylib"
+              "lib/libaom.3.15.1.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1787681909,
+            "source_modified_time": 1790053003,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "libvmaf",
-                "version": "3.2.0",
+                "version": "3.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.2.0",
+                "pkg_version": "3.2.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
             ],
             "source": {
-              "scm_revision": "de4c1d1edc49723a78954d30a83690aa1937422f"
+              "scm_revision": "44d0a57786f432d933ff64b653347c66f4d0fa1d"
             },
             "arch": "x86_64",
             "built_on": {
@@ -60,9 +60,33 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
+                "name": "libvmaf",
+                "versionInfo": "3.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause-Patent",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libvmaf-3.2.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4c9eb639c3440373be568cc39fa210ea3f7c7b79f5c73a354a5d0dadb1a1f65a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libvmaf@3.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
@@ -77,6 +101,11 @@
               }
             ],
             "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-aom"
+              },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
@@ -113,14 +142,14 @@
             "lib/cmake/AOM/AOMConfigVersion.cmake",
             "lib/cmake/AOM/AOMTargets-release.cmake",
             "lib/cmake/AOM/AOMTargets.cmake",
-            "lib/libaom.3.15.0.dylib",
+            "lib/libaom.3.15.1.dylib",
             "lib/libaom.3.dylib",
             "lib/libaom.a",
             "lib/libaom.dylib",
             "lib/pkgconfig/aom.pc",
             "sbom.spdx.json"
           ],
-          "installed_size": 13189455
+          "installed_size": 13189629
         }
       }
     }
