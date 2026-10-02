@@ -24,11 +24,5 @@ qt3d
 # missing. Excluding keeps the two consistent.
 openssl@1.1
 
-# llvm (23.x) does not fit in a GitHub job either. Measured twice, 2026-09-30 and
-# 2026-10-01: cut off at 350 minutes both times, still in the third of its three build
-# phases (stage 1 ~1h35m, stage 2 ~1h35m, then the runtimes). It made every scheduled run
-# since 2026-09-17 end "cancelled" and held its wave open for six hours each day.
-# llvm@22 is a single-stage build (~3-4h) and stays in -- rust and most llvm users only
-# need that. Excluding llvm also skips deno (build dependency) and yt-dlp (needs deno).
-# To bottle it, assign it to "selfhosted" in runners.json and remove this line.
-llvm
+# llvm is NOT excluded: its PGO bootstrap did not fit in 6 hours, so ci-patches/llvm.sed
+# builds it once without PGO instead. If that ever stops fitting, add it back here.

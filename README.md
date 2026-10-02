@@ -64,15 +64,16 @@ via `HOMEBREW_CORE_GIT_REMOTE`. Unqualified `brew install node` then just works,
 | `scripts/sync_fork.sh` | Rebuilds the fork as upstream + our blocks; records holds in `.intel-bottles-holds` |
 | `scripts/release_holds.sh` | In CI, swaps held formulae for upstream's version so the new one gets built |
 | `scripts/settle_holds.py` | At publish, keeps the swaps that got a bottle and reverts the rest |
+| `ci-patches/` | Build-only tweaks to a formula on the runner (`llvm`: no PGO) |
 | `manifest/` | `*.bottle.json` — the source of truth for re-applying blocks |
 
 ## Runner assignment
 
 `runners.json` decides which machine builds which formula. Everything uses the free
 GitHub-hosted `macos-26-intel` unless listed under `assign`. Nothing is assigned today: no
-self-hosted runner is registered, so the two formulae that cannot finish inside GitHub's
-hard 6-hour job ceiling, `qtwebengine` and `llvm`, are in `exclude.txt` instead. To build
-one on your own machine, assign it and remove it from `exclude.txt`:
+self-hosted runner is registered, so `qtwebengine`, which cannot finish inside GitHub's
+hard 6-hour job ceiling, is in `exclude.txt` instead. To build it on your own machine,
+assign it and remove it from `exclude.txt`:
 
 ```json
 "assign": { "qtwebengine": "selfhosted" }
@@ -130,10 +131,12 @@ jq .poured_from_bottle /usr/local/Cellar/tmux/*/INSTALL_RECEIPT.json
   pinned to stage 1 with `allow_failure: true` so it cannot take the run down. `qt`, `pyside`
   and `qtwebview` depend on it and stay unbottled with it. The only real options are a larger
   runner (more cores; billed even on public repos) or a self-hosted Intel runner.
-- **`llvm` (23.x) does not fit either.** Its three-phase bootstrap was cut off at 350 minutes
-  on two consecutive days, still in the third phase. It is in `exclude.txt`, which also
-  holds back `deno` (build dependency) and `yt-dlp` (needs `deno`). `llvm@22` builds in
-  3-4 hours and is unaffected; `rust` and most other llvm users only need that one.
+- **`llvm` is bottled without PGO.** When bottling, the formula bootstraps itself with
+  profile-guided optimization and ThinLTO -- four LLVM builds -- and was cut off at 350
+  minutes twice. `ci-patches/llvm.sed` turns that off on the build runner, giving one
+  build like `llvm@22` (3-4 hours). Same contents; clang and libLLVM are just not
+  profile-optimized. Any `ci-patches/<formula>.sed` is applied this way, and the build
+  stops if a patch no longer matches the formula.
 - **One `root_url` per bottle block.** Merging our `tahoe` bottle into a formula that still has
   upstream's `sonoma` bottle rewrites the block's single `root_url` to ours. Harmless here —
   an exact tag match wins, so macOS 26 Intel always picks `tahoe` — but that block's older tags

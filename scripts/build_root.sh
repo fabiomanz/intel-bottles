@@ -84,6 +84,25 @@ for formula in $TODO; do
     echo "    already installed; removing so it can be rebuilt for bottling"
     brew uninstall --ignore-dependencies --force "$formula"
   fi
+
+  # Formula-specific build adjustments in ci-patches/<name>.sed, applied to this runner's
+  # copy of the formula only (the publish job never sees them). A patch that no longer
+  # changes anything means upstream rewrote the formula -- stop rather than silently
+  # fall back to whatever the patch was there to avoid.
+  ci_patch="$SCRIPT_DIR/../ci-patches/$formula.sed"
+  if [ -f "$ci_patch" ]; then
+    formula_file="$(brew formula "$formula")"
+    cp "$formula_file" "$formula_file.ci-orig"
+    sed -E -i '' -f "$ci_patch" "$formula_file"
+    if cmp -s "$formula_file" "$formula_file.ci-orig"; then
+      echo "    ci-patches/$formula.sed no longer applies to $formula_file; review it" >&2
+      exit 1
+    fi
+    rm -f "$formula_file.ci-orig"
+    echo "    applied ci-patches/$formula.sed:"
+    git -C "$(dirname "$formula_file")" diff --no-color -U0 -- "$formula_file" | sed 's/^/      /'
+  fi
+
   # Download sources first, under a hard wall-clock limit.
   #
   # This loop previously had no time bound and nearly destroyed a whole run: gmp's
