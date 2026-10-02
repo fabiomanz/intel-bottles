@@ -2,10 +2,10 @@
   "protobuf": {
     "formula": {
       "name": "protobuf",
-      "pkg_version": "36.1",
+      "pkg_version": "36.2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/protobuf.rb",
       "tap_git_path": "Formula/p/protobuf.rb",
-      "tap_git_revision": "1ab7e64a4dcefac22b13667f9bcc915a804164c1",
+      "tap_git_revision": "4512b0f6f75400b709fd3e7ef6041f5148922401",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Protocol buffers (Google's data interchange format)",
       "license": "BSD-3-Clause",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-05T12:22:58Z",
+      "date": "2026-10-02T11:33:53Z",
       "tags": {
         "tahoe": {
-          "filename": "protobuf-36.1.tahoe.bottle.tar.gz",
-          "local_filename": "protobuf--36.1.tahoe.bottle.tar.gz",
-          "sha256": "2b049cb957ba23df6e1c01320f982a9e4610c36bb6cbb50e2d53b06c14f92db4",
+          "filename": "protobuf-36.2.tahoe.bottle.tar.gz",
+          "local_filename": "protobuf--36.2.tahoe.bottle.tar.gz",
+          "sha256": "49180fdcd3abf974de57015b28dd86e880a9be8627e5f2bf0bbefa7116ac0a8b",
           "tab": {
-            "homebrew_version": "6.0.22",
+            "homebrew_version": "7.0.7",
             "changed_files": [
               "lib/pkgconfig/protobuf-lite.pc",
               "lib/pkgconfig/protobuf.pc",
@@ -30,18 +30,18 @@
               "lib/pkgconfig/utf8_range.pc"
             ],
             "linkage_files": [
-              "bin/protoc-36.1.0",
-              "bin/protoc-gen-upb-36.1.0",
-              "bin/protoc-gen-upb_minitable-36.1.0",
-              "bin/protoc-gen-upbdefs-36.1.0",
-              "lib/libprotobuf-lite.36.1.0.dylib",
-              "lib/libprotobuf.36.1.0.dylib",
-              "lib/libprotoc.36.1.0.dylib",
-              "lib/libutf8_range.36.1.0.dylib",
-              "lib/libutf8_validity.36.1.0.dylib"
+              "bin/protoc-36.2.0",
+              "bin/protoc-gen-upb-36.2.0",
+              "bin/protoc-gen-upb_minitable-36.2.0",
+              "bin/protoc-gen-upbdefs-36.2.0",
+              "lib/libprotobuf-lite.36.2.0.dylib",
+              "lib/libprotobuf.36.2.0.dylib",
+              "lib/libprotoc.36.2.0.dylib",
+              "lib/libutf8_range.36.2.0.dylib",
+              "lib/libutf8_validity.36.2.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1788163382,
+            "source_modified_time": 1789632217,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -92,10 +92,10 @@
             ]
           },
           "path_exec_files": [
-            "bin/protoc-gen-upb-36.1.0",
-            "bin/protoc-gen-upb_minitable-36.1.0",
-            "bin/protoc-gen-upbdefs-36.1.0",
-            "bin/protoc-36.1.0",
+            "bin/protoc-gen-upbdefs-36.2.0",
+            "bin/protoc-36.2.0",
+            "bin/protoc-gen-upb-36.2.0",
+            "bin/protoc-gen-upb_minitable-36.2.0",
             "bin/protoc-gen-upb_minitable",
             "bin/protoc",
             "bin/protoc-gen-upb",
@@ -107,13 +107,13 @@
             "LICENSE",
             "README.md",
             "bin/protoc",
-            "bin/protoc-36.1.0",
+            "bin/protoc-36.2.0",
             "bin/protoc-gen-upb",
-            "bin/protoc-gen-upb-36.1.0",
+            "bin/protoc-gen-upb-36.2.0",
             "bin/protoc-gen-upb_minitable",
-            "bin/protoc-gen-upb_minitable-36.1.0",
+            "bin/protoc-gen-upb_minitable-36.2.0",
             "bin/protoc-gen-upbdefs",
-            "bin/protoc-gen-upbdefs-36.1.0",
+            "bin/protoc-gen-upbdefs-36.2.0",
             "include/google/protobuf/any.h",
             "include/google/protobuf/any.pb.h",
             "include/google/protobuf/any.proto",
@@ -440,16 +440,16 @@
             "lib/cmake/utf8_range/utf8_range-config.cmake",
             "lib/cmake/utf8_range/utf8_range-targets-release.cmake",
             "lib/cmake/utf8_range/utf8_range-targets.cmake",
-            "lib/libprotobuf-lite.36.1.0.dylib",
+            "lib/libprotobuf-lite.36.2.0.dylib",
             "lib/libprotobuf-lite.dylib",
-            "lib/libprotobuf.36.1.0.dylib",
+            "lib/libprotobuf.36.2.0.dylib",
             "lib/libprotobuf.dylib",
-            "lib/libprotoc.36.1.0.dylib",
+            "lib/libprotoc.36.2.0.dylib",
             "lib/libprotoc.dylib",
             "lib/libupb.a",
-            "lib/libutf8_range.36.1.0.dylib",
+            "lib/libutf8_range.36.2.0.dylib",
             "lib/libutf8_range.dylib",
-            "lib/libutf8_validity.36.1.0.dylib",
+            "lib/libutf8_validity.36.2.0.dylib",
             "lib/libutf8_validity.dylib",
             "lib/pkgconfig/protobuf-lite.pc",
             "lib/pkgconfig/protobuf.pc",
@@ -490,7 +490,7 @@
             "share/protobuf/examples/pubspec.yaml",
             "share/vim/vimfiles/syntax/proto.vim"
           ],
-          "installed_size": 17601698
+          "installed_size": 17606665
         }
       }
     }

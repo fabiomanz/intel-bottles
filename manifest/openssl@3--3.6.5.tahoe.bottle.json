@@ -2,10 +2,10 @@
   "openssl@3": {
     "formula": {
       "name": "openssl@3",
-      "pkg_version": "3.6.4",
+      "pkg_version": "3.6.5",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/o/openssl@3.rb",
       "tap_git_path": "Formula/o/openssl@3.rb",
-      "tap_git_revision": "8050a17e50de98d2fd27db37fa3bedadec6334a8",
+      "tap_git_revision": "4512b0f6f75400b709fd3e7ef6041f5148922401",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Cryptography and SSL/TLS Toolkit",
       "license": "Apache-2.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-09-04T19:26:07Z",
+      "date": "2026-10-02T11:45:51Z",
       "tags": {
         "tahoe": {
-          "filename": "openssl%403-3.6.4.tahoe.bottle.tar.gz",
-          "local_filename": "openssl@3--3.6.4.tahoe.bottle.tar.gz",
-          "sha256": "13fdc9f3d0d30296056e2685e0c989978a5ed213f34a0de174e19feb72833e73",
+          "filename": "openssl%403-3.6.5.tahoe.bottle.tar.gz",
+          "local_filename": "openssl@3--3.6.5.tahoe.bottle.tar.gz",
+          "sha256": "9df24dab1c79c4c07958ee358ef146ebcd5b05d8180274c3db0075a28f34f7f6",
           "tab": {
-            "homebrew_version": "6.0.21",
+            "homebrew_version": "7.0.7",
             "changed_files": [
               "bin/c_rehash",
               "lib/pkgconfig/libcrypto.pc",
@@ -42,15 +42,15 @@
               "lib/libcrypto.3.dylib",
               "lib/libcrypto.a"
             ],
-            "source_modified_time": 1787658514,
+            "source_modified_time": 1790690250,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "ca-certificates",
-                "version": "2026-08-13",
+                "version": "2026-09-25",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "2026-08-13",
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -68,95 +68,95 @@
           "binary_relocation_diagnostics": [
             {
               "path": "lib/libcrypto.a",
-              "string": "/usr/local/Cellar/openssl@3/3.6.4/lib/engines-3",
-              "offset": 3875941
+              "string": "/usr/local/Cellar/openssl@3/3.6.5/lib/engines-3",
+              "offset": 3877733
             },
             {
               "path": "lib/libcrypto.a",
-              "string": "/usr/local/Cellar/openssl@3/3.6.4/lib/ossl-modules",
-              "offset": 3875989
+              "string": "/usr/local/Cellar/openssl@3/3.6.5/lib/ossl-modules",
+              "offset": 3877781
             },
             {
               "path": "lib/libcrypto.3.dylib",
-              "string": "/usr/local/Cellar/openssl@3/3.6.4/lib/engines-3",
-              "offset": 3247596
+              "string": "/usr/local/Cellar/openssl@3/3.6.5/lib/engines-3",
+              "offset": 3251180
             },
             {
               "path": "lib/libcrypto.3.dylib",
-              "string": "/usr/local/Cellar/openssl@3/3.6.4/lib/ossl-modules",
-              "offset": 3247644
+              "string": "/usr/local/Cellar/openssl@3/3.6.5/lib/ossl-modules",
+              "offset": 3251228
             },
             {
               "path": "lib/libcrypto.a",
               "string": "/usr/local/etc/openssl@3/ct_log_list.cnf",
-              "offset": 1811573
+              "offset": 1813277
             },
             {
               "path": "lib/libcrypto.a",
               "string": "/usr/local/etc/openssl@3",
-              "offset": 6670439
+              "offset": 6677847
             },
             {
               "path": "lib/libcrypto.a",
               "string": "/usr/local/etc/openssl@3/certs",
-              "offset": 6670464
+              "offset": 6677872
             },
             {
               "path": "lib/libcrypto.a",
               "string": "/usr/local/etc/openssl@3/cert.pem",
-              "offset": 6670495
+              "offset": 6677903
             },
             {
               "path": "lib/libcrypto.3.dylib",
               "string": "/usr/local/etc/openssl@3/ct_log_list.cnf",
-              "offset": 3206373
+              "offset": 3209942
             },
             {
               "path": "lib/libcrypto.3.dylib",
               "string": "/usr/local/etc/openssl@3",
-              "offset": 3247571
+              "offset": 3251155
             },
             {
               "path": "lib/libcrypto.3.dylib",
               "string": "/usr/local/etc/openssl@3/private",
-              "offset": 3336910
+              "offset": 3340487
             },
             {
               "path": "lib/libcrypto.3.dylib",
               "string": "/usr/local/etc/openssl@3/certs",
-              "offset": 3336943
+              "offset": 3340520
             },
             {
               "path": "lib/libcrypto.3.dylib",
               "string": "/usr/local/etc/openssl@3/cert.pem",
-              "offset": 3336974
+              "offset": 3340551
             }
           ],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "name": "ca-certificates",
-                "versionInfo": "2026-08-13",
+                "versionInfo": "2026-09-25",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
                     "referenceType": "purl"
                   }
                 ]
@@ -176,7 +176,7 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-openssl@3"
               },
@@ -1030,6 +1030,7 @@
             "share/doc/openssl/html/man3/UI_UTIL_read_pw.html",
             "share/doc/openssl/html/man3/UI_create_method.html",
             "share/doc/openssl/html/man3/UI_new.html",
+            "share/doc/openssl/html/man3/X509V3_EXT_nconf_nid.html",
             "share/doc/openssl/html/man3/X509V3_EXT_print.html",
             "share/doc/openssl/html/man3/X509V3_get_d2i.html",
             "share/doc/openssl/html/man3/X509V3_set_ctx.html",
@@ -6407,6 +6408,8 @@
             "share/man/man3/USERNOTICE_new.3ssl",
             "share/man/man3/X509V3_EXT_d2i.3ssl",
             "share/man/man3/X509V3_EXT_i2d.3ssl",
+            "share/man/man3/X509V3_EXT_nconf.3ssl",
+            "share/man/man3/X509V3_EXT_nconf_nid.3ssl",
             "share/man/man3/X509V3_EXT_print.3ssl",
             "share/man/man3/X509V3_EXT_print_fp.3ssl",
             "share/man/man3/X509V3_add1_i2d.3ssl",
@@ -7823,7 +7826,7 @@
             "share/man/man7/ssl.7ssl",
             "share/man/man7/x509.7ssl"
           ],
-          "installed_size": 38180813
+          "installed_size": 38264849
         }
       }
     }

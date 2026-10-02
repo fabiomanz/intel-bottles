@@ -1,36 +1,37 @@
 {
-  "simdjson": {
+  "expat": {
     "formula": {
-      "name": "simdjson",
-      "pkg_version": "4.6.10",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/simdjson.rb",
-      "tap_git_path": "Formula/s/simdjson.rb",
-      "tap_git_revision": "74ae27082c23f2c3d5690b20ee5a8dcfb2d47e13",
+      "name": "expat",
+      "pkg_version": "2.8.5",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/e/expat.rb",
+      "tap_git_path": "Formula/e/expat.rb",
+      "tap_git_revision": "4512b0f6f75400b709fd3e7ef6041f5148922401",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
-      "desc": "SIMD-accelerated C++ JSON parser",
-      "license": "Apache-2.0",
-      "homepage": "https://simdjson.org"
+      "desc": "XML 1.0 parser",
+      "license": "MIT",
+      "homepage": "https://libexpat.github.io/"
     },
     "bottle": {
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-04T22:35:17Z",
+      "date": "2026-10-02T11:21:10Z",
       "tags": {
         "tahoe": {
-          "filename": "simdjson-4.6.10.tahoe.bottle.tar.gz",
-          "local_filename": "simdjson--4.6.10.tahoe.bottle.tar.gz",
-          "sha256": "56ef8c02bd9e8875c5e8eb474d368b4dcfda03cd763c88f1178d48ff10b3a2a7",
+          "filename": "expat-2.8.5.tahoe.bottle.tar.gz",
+          "local_filename": "expat--2.8.5.tahoe.bottle.tar.gz",
+          "sha256": "bd49e834287f96034355565bf8c47e6be0e1c7af68962c11fd544a63ee25b528",
           "tab": {
-            "homebrew_version": "6.0.21",
+            "homebrew_version": "7.0.7",
             "changed_files": [
-              "lib/pkgconfig/simdjson.pc"
+              "lib/pkgconfig/expat.pc"
             ],
             "linkage_files": [
-              "lib/libsimdjson.33.0.0.dylib"
+              "bin/xmlwf",
+              "lib/libexpat.1.12.5.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1788452266,
+            "source_modified_time": 1790075502,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -66,33 +67,39 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-simdjson-src"
+                "relatedSpdxElement": "SPDXRef-Archive-expat-src"
               }
             ]
           },
-          "path_exec_files": [],
-          "all_files": [
-            ".brew/simdjson.rb",
-            "AUTHORS",
-            "INSTALL_RECEIPT.json",
-            "LICENSE",
-            "LICENSE-MIT",
-            "README.md",
-            "include/simdjson.h",
-            "lib/cmake/simdjson/simdjson-config-version.cmake",
-            "lib/cmake/simdjson/simdjson-config.cmake",
-            "lib/cmake/simdjson/simdjsonTargets-release.cmake",
-            "lib/cmake/simdjson/simdjsonTargets.cmake",
-            "lib/cmake/simdjson/simdjson_staticTargets-release.cmake",
-            "lib/cmake/simdjson/simdjson_staticTargets.cmake",
-            "lib/libsimdjson.33.0.0.dylib",
-            "lib/libsimdjson.33.dylib",
-            "lib/libsimdjson.dylib",
-            "lib/libsimdjson_static.a",
-            "lib/pkgconfig/simdjson.pc",
-            "sbom.spdx.json"
+          "path_exec_files": [
+            "bin/xmlwf"
           ],
-          "installed_size": 8119528
+          "all_files": [
+            ".brew/expat.rb",
+            "AUTHORS",
+            "COPYING",
+            "Changes",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/xmlwf",
+            "include/expat.h",
+            "include/expat_config.h",
+            "include/expat_external.h",
+            "lib/cmake/expat-2.8.5/expat-config-version.cmake",
+            "lib/cmake/expat-2.8.5/expat-config.cmake",
+            "lib/cmake/expat-2.8.5/expat-noconfig.cmake",
+            "lib/cmake/expat-2.8.5/expat.cmake",
+            "lib/libexpat.1.12.5.dylib",
+            "lib/libexpat.1.dylib",
+            "lib/libexpat.a",
+            "lib/libexpat.dylib",
+            "lib/pkgconfig/expat.pc",
+            "sbom.spdx.json",
+            "share/doc/expat/AUTHORS",
+            "share/doc/expat/changelog",
+            "share/man/man1/xmlwf.1"
+          ],
+          "installed_size": 746288
         }
       }
     }

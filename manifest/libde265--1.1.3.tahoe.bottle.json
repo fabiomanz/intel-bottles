@@ -1,37 +1,36 @@
 {
-  "expat": {
+  "libde265": {
     "formula": {
-      "name": "expat",
-      "pkg_version": "2.8.4",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/e/expat.rb",
-      "tap_git_path": "Formula/e/expat.rb",
-      "tap_git_revision": "42d2ea3c15816d980168382014ad117783d7e1ba",
+      "name": "libde265",
+      "pkg_version": "1.1.3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libde265.rb",
+      "tap_git_path": "Formula/lib/libde265.rb",
+      "tap_git_revision": "4512b0f6f75400b709fd3e7ef6041f5148922401",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
-      "desc": "XML 1.0 parser",
-      "license": "MIT",
-      "homepage": "https://libexpat.github.io/"
+      "desc": "Open h.265 video codec implementation",
+      "license": "LGPL-3.0-or-later",
+      "homepage": "https://github.com/strukturag/libde265"
     },
     "bottle": {
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-05T04:23:12Z",
+      "date": "2026-10-02T11:21:19Z",
       "tags": {
         "tahoe": {
-          "filename": "expat-2.8.4.tahoe.bottle.tar.gz",
-          "local_filename": "expat--2.8.4.tahoe.bottle.tar.gz",
-          "sha256": "66a4d5169b16b64ce698928b939972ea453211685bb963db7b8a38e842ef883a",
+          "filename": "libde265-1.1.3.tahoe.bottle.tar.gz",
+          "local_filename": "libde265--1.1.3.tahoe.bottle.tar.gz",
+          "sha256": "22bd6619516c122215be22703611adaf9ae9035eb5e122501314fa126d6457fb",
           "tab": {
-            "homebrew_version": "6.0.21",
+            "homebrew_version": "7.0.7",
             "changed_files": [
-              "lib/pkgconfig/expat.pc"
+              "lib/pkgconfig/libde265.pc"
             ],
             "linkage_files": [
-              "bin/xmlwf",
-              "lib/libexpat.1.12.4.dylib"
+              "lib/libde265.0.2.3.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1788182954,
+            "source_modified_time": 1789395386,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -67,39 +66,32 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-expat-src"
+                "relatedSpdxElement": "SPDXRef-Archive-libde265-src"
               }
             ]
           },
-          "path_exec_files": [
-            "bin/xmlwf"
-          ],
+          "path_exec_files": [],
           "all_files": [
-            ".brew/expat.rb",
+            ".brew/libde265.rb",
             "AUTHORS",
             "COPYING",
-            "Changes",
+            "ChangeLog",
             "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
             "README.md",
-            "bin/xmlwf",
-            "include/expat.h",
-            "include/expat_config.h",
-            "include/expat_external.h",
-            "lib/cmake/expat-2.8.4/expat-config-version.cmake",
-            "lib/cmake/expat-2.8.4/expat-config.cmake",
-            "lib/cmake/expat-2.8.4/expat-noconfig.cmake",
-            "lib/cmake/expat-2.8.4/expat.cmake",
-            "lib/libexpat.1.12.4.dylib",
-            "lib/libexpat.1.dylib",
-            "lib/libexpat.a",
-            "lib/libexpat.dylib",
-            "lib/pkgconfig/expat.pc",
-            "sbom.spdx.json",
-            "share/doc/expat/AUTHORS",
-            "share/doc/expat/changelog",
-            "share/man/man1/xmlwf.1"
+            "include/libde265/de265-version.h",
+            "include/libde265/de265.h",
+            "lib/cmake/libde265/libde265-config-release.cmake",
+            "lib/cmake/libde265/libde265-config-version.cmake",
+            "lib/cmake/libde265/libde265-config.cmake",
+            "lib/libde265.0.2.3.dylib",
+            "lib/libde265.0.dylib",
+            "lib/libde265.dylib",
+            "lib/pkgconfig/libde265.pc",
+            "sbom.spdx.json"
           ],
-          "installed_size": 735325
+          "installed_size": 503028
         }
       }
     }
