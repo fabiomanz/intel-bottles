@@ -2,10 +2,10 @@
   "sdl2-compat": {
     "formula": {
       "name": "sdl2-compat",
-      "pkg_version": "2.32.72",
+      "pkg_version": "2.32.74",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/s/sdl2-compat.rb",
       "tap_git_path": "Formula/s/sdl2-compat.rb",
-      "tap_git_revision": "42d2ea3c15816d980168382014ad117783d7e1ba",
+      "tap_git_revision": "01cc7a89ff52524b999e2e7751af8680f8aab517",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "SDL2 compatibility layer that uses SDL3 behind the scenes",
       "license": "Zlib",
@@ -15,27 +15,28 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-05T04:58:08Z",
+      "date": "2026-10-03T11:20:12Z",
       "tags": {
         "tahoe": {
-          "filename": "sdl2-compat-2.32.72.tahoe.bottle.tar.gz",
-          "local_filename": "sdl2-compat--2.32.72.tahoe.bottle.tar.gz",
-          "sha256": "cbc418392383ba8a4656ed7d94d546e7ca2ce1985bc4aa38a7ad48714fda2954",
+          "filename": "sdl2-compat-2.32.74.tahoe.bottle.tar.gz",
+          "local_filename": "sdl2-compat--2.32.74.tahoe.bottle.tar.gz",
+          "sha256": "42fee0f4e61686c0e4f1c06d16ab0c01ccf6e3d55f1b29af88cd90472786f959",
           "tab": {
-            "homebrew_version": "6.0.21",
+            "homebrew_version": "7.0.7",
             "changed_files": [],
             "linkage_files": [
               "lib/libSDL2-2.0.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1788366335,
+            "source_modified_time": 1790981284,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "sdl3",
-                "version": "3.4.16",
+                "version": "3.4.18",
                 "revision": 0,
-                "pkg_version": "3.4.16",
+                "bottle_rebuild": 0,
+                "pkg_version": "3.4.18",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -53,9 +54,33 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-sdl3-3.4.18",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl3-3.4.18",
+                "name": "sdl3",
+                "versionInfo": "3.4.18",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Zlib",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/sdl3-3.4.18.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "09f268a724188351f6bda2ddb67a5f01007abfd64c221a1aff949913d5d0f27b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sdl3@3.4.18",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
@@ -70,6 +95,11 @@
               }
             ],
             "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl3-3.4.18",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sdl2-compat"
+              },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
@@ -199,7 +229,7 @@
             "share/aclocal/sdl2.m4",
             "share/licenses/sdl2-compat/LICENSE.txt"
           ],
-          "installed_size": 3224451
+          "installed_size": 3229451
         }
       }
     }
