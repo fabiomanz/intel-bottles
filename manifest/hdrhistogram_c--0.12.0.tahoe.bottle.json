@@ -1,0 +1,104 @@
+{
+  "hdrhistogram_c": {
+    "formula": {
+      "name": "hdrhistogram_c",
+      "pkg_version": "0.12.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/h/hdrhistogram_c.rb",
+      "tap_git_path": "Formula/h/hdrhistogram_c.rb",
+      "tap_git_revision": "ec705d4a6ceff44bafd152f7e9d29c99ed2e72f3",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "C port of the HdrHistogram",
+      "license": "CC0-1.0 OR BSD-2-Clause",
+      "homepage": "https://github.com/HdrHistogram/HdrHistogram_c"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-03T10:38:23Z",
+      "tags": {
+        "tahoe": {
+          "filename": "hdrhistogram_c-0.12.0.tahoe.bottle.tar.gz",
+          "local_filename": "hdrhistogram_c--0.12.0.tahoe.bottle.tar.gz",
+          "sha256": "a1986f7cb00e361d0606ed3696bce4b47cd69050438624b41821f395ce2b5063",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "lib/pkgconfig/hdr_histogram.pc"
+            ],
+            "linkage_files": [
+              "lib/libhdr_histogram.6.4.4.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790954522,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-hdrhistogram_c-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/hdrhistogram_c.rb",
+            "COPYING.txt",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.txt",
+            "README.md",
+            "include/hdr/hdr_histogram.h",
+            "include/hdr/hdr_histogram_log.h",
+            "include/hdr/hdr_histogram_version.h",
+            "include/hdr/hdr_interval_recorder.h",
+            "include/hdr/hdr_packed_histogram.h",
+            "include/hdr/hdr_thread.h",
+            "include/hdr/hdr_time.h",
+            "include/hdr/hdr_writer_reader_phaser.h",
+            "lib/cmake/hdr_histogram/hdr_histogram-config-version.cmake",
+            "lib/cmake/hdr_histogram/hdr_histogram-config.cmake",
+            "lib/cmake/hdr_histogram/hdr_histogram-targets-release.cmake",
+            "lib/cmake/hdr_histogram/hdr_histogram-targets.cmake",
+            "lib/libhdr_histogram.6.4.4.dylib",
+            "lib/libhdr_histogram.6.dylib",
+            "lib/libhdr_histogram.dylib",
+            "lib/libhdr_histogram_static.a",
+            "lib/pkgconfig/hdr_histogram.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 175265
+        }
+      }
+    }
+  }
+}

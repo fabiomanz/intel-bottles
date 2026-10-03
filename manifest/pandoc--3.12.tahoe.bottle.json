@@ -2,10 +2,10 @@
   "pandoc": {
     "formula": {
       "name": "pandoc",
-      "pkg_version": "3.11",
+      "pkg_version": "3.12",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pandoc.rb",
       "tap_git_path": "Formula/p/pandoc.rb",
-      "tap_git_revision": "63fa1810e68212f67bd965ae06d098906b90ff0c",
+      "tap_git_revision": "ec705d4a6ceff44bafd152f7e9d29c99ed2e72f3",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Swiss-army knife of markup format conversion",
       "license": "GPL-2.0-or-later",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-01T14:22:01Z",
+      "date": "2026-10-03T11:12:44Z",
       "tags": {
         "tahoe": {
-          "filename": "pandoc-3.11.tahoe.bottle.tar.gz",
-          "local_filename": "pandoc--3.11.tahoe.bottle.tar.gz",
-          "sha256": "1e7d5d46280e784d7549c935fea8a607ddac4a179108a9e685a25eef41070ba4",
+          "filename": "pandoc-3.12.tahoe.bottle.tar.gz",
+          "local_filename": "pandoc--3.12.tahoe.bottle.tar.gz",
+          "sha256": "2f0e7b003002dfd3f640ef0f26d866206f608d902de969b28b81d6ba4f50e07d",
           "tab": {
             "homebrew_version": "7.0.7",
             "changed_files": [],
@@ -28,7 +28,7 @@
               "bin/pandoc"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1787963455,
+            "source_modified_time": 1790661045,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -123,7 +123,7 @@
             "sbom.spdx.json",
             "share/man/man1/pandoc.1"
           ],
-          "installed_size": 181346321
+          "installed_size": 175268083
         }
       }
     }

@@ -2,10 +2,10 @@
   "gtk+3": {
     "formula": {
       "name": "gtk+3",
-      "pkg_version": "3.24.52",
+      "pkg_version": "3.24.52_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gtk+3.rb",
       "tap_git_path": "Formula/g/gtk+3.rb",
-      "tap_git_revision": "f53e41b275b6070e94c2d7a81e645c1c05fb6bee",
+      "tap_git_revision": "ec705d4a6ceff44bafd152f7e9d29c99ed2e72f3",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Toolkit for creating graphical user interfaces",
       "license": "LGPL-2.0-or-later",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-01T05:47:03Z",
+      "date": "2026-10-03T10:46:50Z",
       "tags": {
         "tahoe": {
-          "filename": "gtk%2B3-3.24.52.tahoe.bottle.tar.gz",
-          "local_filename": "gtk+3--3.24.52.tahoe.bottle.tar.gz",
-          "sha256": "fba5d8bbd661499bc24754a60d16287d48257241af5742e1dc076918271f2fe3",
+          "filename": "gtk%2B3-3.24.52_1.tahoe.bottle.tar.gz",
+          "local_filename": "gtk+3--3.24.52_1.tahoe.bottle.tar.gz",
+          "sha256": "103485f68a8b96eecc3c89ded43b5eba0a52fb2282a79b4b6bb5c6750a905c7d",
           "tab": {
             "homebrew_version": "7.0.7",
             "changed_files": [
@@ -91,10 +91,10 @@
               },
               {
                 "full_name": "pcre2",
-                "version": "10.48",
+                "version": "10.49",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "10.48",
+                "pkg_version": "10.49",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -218,16 +218,17 @@
                 "full_name": "at-spi2-core",
                 "version": "2.62.0.1",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "2.62.0.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "libpng",
-                "version": "1.6.58",
+                "version": "1.6.59",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.6.58",
+                "pkg_version": "1.6.59",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -366,6 +367,7 @@
                 "full_name": "gsettings-desktop-schemas",
                 "version": "51.0",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "51.0",
                 "declared_directly": true,
                 "compatibility_version": 1
@@ -389,9 +391,10 @@
               },
               {
                 "full_name": "harfbuzz",
-                "version": "14.5.0",
+                "version": "14.5.1",
                 "revision": 0,
-                "pkg_version": "14.5.0",
+                "bottle_rebuild": 0,
+                "pkg_version": "14.5.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -434,6 +437,7 @@
                 "full_name": "pango",
                 "version": "1.58.2",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.58.2",
                 "declared_directly": true,
                 "compatibility_version": 1
@@ -452,94 +456,95 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/gtk-encode-symbolic-svg",
-              "string": "/usr/local/Cellar/gtk+3/3.24.52/share/locale",
+              "string": "/usr/local/Cellar/gtk+3/3.24.52_1/share/locale",
               "offset": 11639
             },
             {
               "path": "bin/gtk-update-icon-cache",
-              "string": "/usr/local/Cellar/gtk+3/3.24.52/share/locale",
+              "string": "/usr/local/Cellar/gtk+3/3.24.52_1/share/locale",
               "offset": 18535
             },
             {
               "path": "bin/gtk-launch",
-              "string": "/usr/local/Cellar/gtk+3/3.24.52/share/locale",
+              "string": "/usr/local/Cellar/gtk+3/3.24.52_1/share/locale",
               "offset": 7051
             },
             {
               "path": "lib/libgtk-3.0.dylib",
-              "string": "/usr/local/Cellar/gtk+3/3.24.52/share/locale",
+              "string": "/usr/local/Cellar/gtk+3/3.24.52_1/share/locale",
               "offset": 3391803
             },
             {
               "path": "lib/gtk-3.0/3.0.0/immodules/im-cedilla.so",
-              "string": "/usr/local/Cellar/gtk+3/3.24.52/share/locale",
+              "string": "/usr/local/Cellar/gtk+3/3.24.52_1/share/locale",
               "offset": 5732
             },
             {
               "path": "lib/gtk-3.0/3.0.0/immodules/im-ti-er.so",
-              "string": "/usr/local/Cellar/gtk+3/3.24.52/share/locale",
+              "string": "/usr/local/Cellar/gtk+3/3.24.52_1/share/locale",
               "offset": 5746
             },
             {
               "path": "lib/gtk-3.0/3.0.0/immodules/im-multipress.so",
-              "string": "/usr/local/Cellar/gtk+3/3.24.52/etc/gtk-3.0/im-multipress.conf",
+              "string": "/usr/local/Cellar/gtk+3/3.24.52_1/etc/gtk-3.0/im-multipress.conf",
               "offset": 11286
             },
             {
               "path": "lib/gtk-3.0/3.0.0/immodules/im-multipress.so",
-              "string": "/usr/local/Cellar/gtk+3/3.24.52/share/locale",
-              "offset": 11600
+              "string": "/usr/local/Cellar/gtk+3/3.24.52_1/share/locale",
+              "offset": 11602
             },
             {
               "path": "lib/gtk-3.0/3.0.0/immodules/im-quartz.so",
-              "string": "/usr/local/Cellar/gtk+3/3.24.52/share/locale",
+              "string": "/usr/local/Cellar/gtk+3/3.24.52_1/share/locale",
               "offset": 14228
             },
             {
               "path": "lib/gtk-3.0/3.0.0/immodules/im-am-et.so",
-              "string": "/usr/local/Cellar/gtk+3/3.24.52/share/locale",
+              "string": "/usr/local/Cellar/gtk+3/3.24.52_1/share/locale",
               "offset": 5736
             },
             {
               "path": "lib/gtk-3.0/3.0.0/immodules/im-ipa.so",
-              "string": "/usr/local/Cellar/gtk+3/3.24.52/share/locale",
+              "string": "/usr/local/Cellar/gtk+3/3.24.52_1/share/locale",
               "offset": 5712
             },
             {
               "path": "lib/gtk-3.0/3.0.0/immodules/im-cyrillic-translit.so",
-              "string": "/usr/local/Cellar/gtk+3/3.24.52/share/locale",
+              "string": "/usr/local/Cellar/gtk+3/3.24.52_1/share/locale",
               "offset": 5761
             },
             {
               "path": "lib/gtk-3.0/3.0.0/immodules/im-thai.so",
-              "string": "/usr/local/Cellar/gtk+3/3.24.52/share/locale",
+              "string": "/usr/local/Cellar/gtk+3/3.24.52_1/share/locale",
               "offset": 11308
             },
             {
               "path": "lib/gtk-3.0/3.0.0/immodules/im-viqr.so",
-              "string": "/usr/local/Cellar/gtk+3/3.24.52/share/locale",
+              "string": "/usr/local/Cellar/gtk+3/3.24.52_1/share/locale",
               "offset": 5728
             },
             {
               "path": "lib/gtk-3.0/3.0.0/immodules/im-ti-et.so",
-              "string": "/usr/local/Cellar/gtk+3/3.24.52/share/locale",
+              "string": "/usr/local/Cellar/gtk+3/3.24.52_1/share/locale",
               "offset": 5748
             },
             {
               "path": "lib/gtk-3.0/3.0.0/immodules/im-inuktitut.so",
-              "string": "/usr/local/Cellar/gtk+3/3.24.52/share/locale",
+              "string": "/usr/local/Cellar/gtk+3/3.24.52_1/share/locale",
               "offset": 5747
             }
           ],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-pcre2-10.49",
               "SPDXRef-Package-SPDXRef-json-c-0.19",
               "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
               "SPDXRef-Package-SPDXRef-gettext-1.0",
               "SPDXRef-Package-SPDXRef-glib-2.90.0",
               "SPDXRef-Package-SPDXRef-libx11-1.8.13",
-              "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+              "SPDXRef-Package-SPDXRef-at-spi2-core-2.62.0.1",
+              "SPDXRef-Package-SPDXRef-libpng-1.6.59",
               "SPDXRef-Package-SPDXRef-cairo-1.18.6",
               "SPDXRef-Package-SPDXRef-fribidi-1.0.17",
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
@@ -549,29 +554,32 @@
               "SPDXRef-Package-SPDXRef-lz4-1.10.0",
               "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
               "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+              "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.0",
+              "SPDXRef-Package-SPDXRef-harfbuzz-14.5.1",
               "SPDXRef-Package-SPDXRef-hicolor-icon-theme-0.18",
+              "SPDXRef-Package-SPDXRef-pango-1.58.2",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.49",
                 "name": "pcre2",
-                "versionInfo": "10.48",
+                "versionInfo": "10.49",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.49.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                    "checksumValue": "7fe75e3ba297623163ee0e3a262e417d0eb36342f6cda4135ede90412ff03040"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceLocator": "pkg:brew/pcre2@10.49",
                     "referenceType": "purl"
                   }
                 ]
@@ -611,7 +619,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "8c54c7bc4c98effd8b886213f126278f87cef9c596d9ab2ef3d52bc100c79f65"
+                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
                   }
                 ],
                 "externalRefs": [
@@ -634,7 +642,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "27f00f82c225d2feafe765d37a15699352a390397bdeec1ccbc2b5fe943f7ee7"
+                    "checksumValue": "fe9d5337ff31e4f40b827b3463bd3fdc61b8f377277769f71e93baad0443bc96"
                   }
                 ],
                 "externalRefs": [
@@ -680,7 +688,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "7035ebb1057ef3de675393d244db0d486f07b91aab5d24a4b2d0140c05b9724d"
+                    "checksumValue": "10c0844f2a8daab11aa21bd737480e496469da1a15c37067dc34ab308f8b6285"
                   }
                 ],
                 "externalRefs": [
@@ -692,24 +700,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
-                "name": "libpng",
-                "versionInfo": "1.6.58",
+                "SPDXID": "SPDXRef-Package-SPDXRef-at-spi2-core-2.62.0.1",
+                "name": "at-spi2-core",
+                "versionInfo": "2.62.0.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "libpng-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.58.tahoe.bottle.tar.gz",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/at-spi2-core-2.62.0.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "e52e7248928f76d19f4253ab672b59dde6a6f21e94b090137170bb2e971f9cc2"
+                    "checksumValue": "919bafdc178a7e99cb9b0c4f866c6c764dfa6abb30f3a2ebe8e2ecfb54b374f7"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libpng@1.6.58",
+                    "referenceLocator": "pkg:brew/at-spi2-core@2.62.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.59",
+                "name": "libpng",
+                "versionInfo": "1.6.59",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.59.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "983550222f14d7db234a39119dc66c0de74d9b79b74f83ecf4b81a6b694d40de"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpng@1.6.59",
                     "referenceType": "purl"
                   }
                 ]
@@ -795,7 +826,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "d5a19371b08de71cb811b2fe8114e0092c5edc439b3ba4d09f2e8a775676eb6c"
+                    "checksumValue": "974c6265c287445fb2ffa5e4ebce9e476a02eb7e29dee6da3bea1e8fc6bd7209"
                   }
                 ],
                 "externalRefs": [
@@ -818,7 +849,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "011465e668caf64f3ce3586efcd644b520f27083580c0334eb6d7278dac2713c"
+                    "checksumValue": "28483ee31b5610606f46e0ee4706bbe9b19a4981bdfc736e9322ed6248ca79fc"
                   }
                 ],
                 "externalRefs": [
@@ -841,7 +872,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "b58278bdc3ee647396ba249e0d0959306231d593d2b8ce6c173f819b42192a9f"
+                    "checksumValue": "54a648c4197b0299ee2d37527ca6a23447abe65342f8f8c0ed68e154f4593b0f"
                   }
                 ],
                 "externalRefs": [
@@ -922,6 +953,52 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.0",
+                "name": "gsettings-desktop-schemas",
+                "versionInfo": "51.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gsettings-desktop-schemas-51.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f3a5ad690831b13ba15993a8fa0a39233448f0293a88abaa526af28f57371e00"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gsettings-desktop-schemas@51.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-harfbuzz-14.5.1",
+                "name": "harfbuzz",
+                "versionInfo": "14.5.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/harfbuzz-14.5.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b879940a16dddfb56c92b986abd1d88bb902d1c3805353b8e9c5437b39781c30"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/harfbuzz@14.5.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-hicolor-icon-theme-0.18",
                 "name": "hicolor-icon-theme",
                 "versionInfo": "0.18",
@@ -945,6 +1022,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pango-1.58.2",
+                "name": "pango",
+                "versionInfo": "1.58.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pango-1.58.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1b38fee636b06c2c02c74dee8d4ae84af18da7ce7857c023f35692960b707964"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pango@1.58.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
                 "versionInfo": "26.6",
@@ -959,7 +1059,7 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gtk+3"
               },
@@ -989,7 +1089,12 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-gtk+3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-at-spi2-core-2.62.0.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk+3"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gtk+3"
               },
@@ -1039,7 +1144,22 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-gtk+3"
               },
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk+3"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.5.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk+3"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-hicolor-icon-theme-0.18",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gtk+3"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pango-1.58.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gtk+3"
               },
@@ -1813,7 +1933,7 @@
             "share/themes/Emacs/gtk-3.0/gtk-keys.css",
             "share/themes/Mac/gtk-3.0/gtk-keys.css"
           ],
-          "installed_size": 58953035
+          "installed_size": 58954113
         }
       }
     }

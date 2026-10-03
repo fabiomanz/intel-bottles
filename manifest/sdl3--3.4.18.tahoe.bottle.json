@@ -2,10 +2,10 @@
   "sdl3": {
     "formula": {
       "name": "sdl3",
-      "pkg_version": "3.4.16",
+      "pkg_version": "3.4.18",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/s/sdl3.rb",
       "tap_git_path": "Formula/s/sdl3.rb",
-      "tap_git_revision": "42d2ea3c15816d980168382014ad117783d7e1ba",
+      "tap_git_revision": "ec705d4a6ceff44bafd152f7e9d29c99ed2e72f3",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Low-level access to audio, keyboard, mouse, joystick, and graphics",
       "license": "Zlib",
@@ -15,20 +15,20 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-05T04:57:05Z",
+      "date": "2026-10-03T10:49:51Z",
       "tags": {
         "tahoe": {
-          "filename": "sdl3-3.4.16.tahoe.bottle.tar.gz",
-          "local_filename": "sdl3--3.4.16.tahoe.bottle.tar.gz",
-          "sha256": "131576a595762148e7093dea7c302583306da3ff976e5195b950d11e904355d1",
+          "filename": "sdl3-3.4.18.tahoe.bottle.tar.gz",
+          "local_filename": "sdl3--3.4.18.tahoe.bottle.tar.gz",
+          "sha256": "09f268a724188351f6bda2ddb67a5f01007abfd64c221a1aff949913d5d0f27b",
           "tab": {
-            "homebrew_version": "6.0.21",
+            "homebrew_version": "7.0.7",
             "changed_files": [],
             "linkage_files": [
               "lib/libSDL3.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1788364830,
+            "source_modified_time": 1790973383,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -174,7 +174,7 @@
             "sbom.spdx.json",
             "share/licenses/SDL3/LICENSE.txt"
           ],
-          "installed_size": 6350578
+          "installed_size": 6356911
         }
       }
     }

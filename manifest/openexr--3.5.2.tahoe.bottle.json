@@ -2,10 +2,10 @@
   "openexr": {
     "formula": {
       "name": "openexr",
-      "pkg_version": "3.5.1",
+      "pkg_version": "3.5.2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/o/openexr.rb",
       "tap_git_path": "Formula/o/openexr.rb",
-      "tap_git_revision": "0f1fffb595bf5257874e6ac8e95ba6485c7ccd26",
+      "tap_git_revision": "ec705d4a6ceff44bafd152f7e9d29c99ed2e72f3",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "High dynamic-range image file format",
       "license": "BSD-3-Clause",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-30T23:51:34Z",
+      "date": "2026-10-03T10:40:20Z",
       "tags": {
         "tahoe": {
-          "filename": "openexr-3.5.1.tahoe.bottle.tar.gz",
-          "local_filename": "openexr--3.5.1.tahoe.bottle.tar.gz",
-          "sha256": "75e8cd9f7eaaa898aaa53d22acb65ac2e53025e58d8943f8626378653a72d8d5",
+          "filename": "openexr-3.5.2.tahoe.bottle.tar.gz",
+          "local_filename": "openexr--3.5.2.tahoe.bottle.tar.gz",
+          "sha256": "d3e0204260250815dcaccba0761cb5191e1047de06d709d275b858a961e7d692",
           "tab": {
             "homebrew_version": "7.0.7",
             "changed_files": [
@@ -38,14 +38,14 @@
               "bin/exrmultipart",
               "bin/exrmultiview",
               "bin/exrstdattr",
-              "lib/libIex-3_5.34.3.5.1.dylib",
-              "lib/libIlmThread-3_5.34.3.5.1.dylib",
-              "lib/libOpenEXR-3_5.34.3.5.1.dylib",
-              "lib/libOpenEXRCore-3_5.34.3.5.1.dylib",
-              "lib/libOpenEXRUtil-3_5.34.3.5.1.dylib"
+              "lib/libIex-3_5.34.3.5.2.dylib",
+              "lib/libIlmThread-3_5.34.3.5.2.dylib",
+              "lib/libOpenEXR-3_5.34.3.5.2.dylib",
+              "lib/libOpenEXRCore-3_5.34.3.5.2.dylib",
+              "lib/libOpenEXRUtil-3_5.34.3.5.2.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790176584,
+            "source_modified_time": 1790915763,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -86,10 +86,10 @@
               },
               {
                 "full_name": "libpng",
-                "version": "1.6.58",
+                "version": "1.6.59",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.6.58",
+                "pkg_version": "1.6.59",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -162,7 +162,7 @@
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
               "SPDXRef-Package-SPDXRef-giflib-6.1.3",
-              "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+              "SPDXRef-Package-SPDXRef-libpng-1.6.59",
               "SPDXRef-Package-SPDXRef-webp-1.6.0",
               "SPDXRef-Package-SPDXRef-xz-5.8.4",
               "SPDXRef-Package-SPDXRef-lz4-1.10.0",
@@ -207,7 +207,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "d5a19371b08de71cb811b2fe8114e0092c5edc439b3ba4d09f2e8a775676eb6c"
+                    "checksumValue": "974c6265c287445fb2ffa5e4ebce9e476a02eb7e29dee6da3bea1e8fc6bd7209"
                   }
                 ],
                 "externalRefs": [
@@ -219,24 +219,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.59",
                 "name": "libpng",
-                "versionInfo": "1.6.58",
+                "versionInfo": "1.6.59",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "libpng-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.58.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.59.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "e52e7248928f76d19f4253ab672b59dde6a6f21e94b090137170bb2e971f9cc2"
+                    "checksumValue": "983550222f14d7db234a39119dc66c0de74d9b79b74f83ecf4b81a6b694d40de"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libpng@1.6.58",
+                    "referenceLocator": "pkg:brew/libpng@1.6.59",
                     "referenceType": "purl"
                   }
                 ]
@@ -253,7 +253,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "011465e668caf64f3ce3586efcd644b520f27083580c0334eb6d7278dac2713c"
+                    "checksumValue": "28483ee31b5610606f46e0ee4706bbe9b19a4981bdfc736e9322ed6248ca79fc"
                   }
                 ],
                 "externalRefs": [
@@ -276,7 +276,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "b58278bdc3ee647396ba249e0d0959306231d593d2b8ce6c173f819b42192a9f"
+                    "checksumValue": "54a648c4197b0299ee2d37527ca6a23447abe65342f8f8c0ed68e154f4593b0f"
                   }
                 ],
                 "externalRefs": [
@@ -404,7 +404,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-openexr"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-openexr"
               },
@@ -629,23 +629,23 @@
             "lib/cmake/OpenEXR/OpenEXRConfigVersion.cmake",
             "lib/cmake/OpenEXR/OpenEXRTargets-release.cmake",
             "lib/cmake/OpenEXR/OpenEXRTargets.cmake",
-            "lib/libIex-3_5.34.3.5.1.dylib",
+            "lib/libIex-3_5.34.3.5.2.dylib",
             "lib/libIex-3_5.34.dylib",
             "lib/libIex-3_5.dylib",
             "lib/libIex.dylib",
-            "lib/libIlmThread-3_5.34.3.5.1.dylib",
+            "lib/libIlmThread-3_5.34.3.5.2.dylib",
             "lib/libIlmThread-3_5.34.dylib",
             "lib/libIlmThread-3_5.dylib",
             "lib/libIlmThread.dylib",
-            "lib/libOpenEXR-3_5.34.3.5.1.dylib",
+            "lib/libOpenEXR-3_5.34.3.5.2.dylib",
             "lib/libOpenEXR-3_5.34.dylib",
             "lib/libOpenEXR-3_5.dylib",
             "lib/libOpenEXR.dylib",
-            "lib/libOpenEXRCore-3_5.34.3.5.1.dylib",
+            "lib/libOpenEXRCore-3_5.34.3.5.2.dylib",
             "lib/libOpenEXRCore-3_5.34.dylib",
             "lib/libOpenEXRCore-3_5.dylib",
             "lib/libOpenEXRCore.dylib",
-            "lib/libOpenEXRUtil-3_5.34.3.5.1.dylib",
+            "lib/libOpenEXRUtil-3_5.34.3.5.2.dylib",
             "lib/libOpenEXRUtil-3_5.34.dylib",
             "lib/libOpenEXRUtil-3_5.dylib",
             "lib/libOpenEXRUtil.dylib",
@@ -674,7 +674,7 @@
             "share/doc/OpenEXR/examples/rgbaInterfaceTiledExamples.cpp",
             "share/doc/OpenEXR/examples/rgbaInterfaceTiledExamples.h"
           ],
-          "installed_size": 4265308
+          "installed_size": 4271939
         }
       }
     }
