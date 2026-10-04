@@ -1,0 +1,33 @@
+run 37214025062, qtwebengine, updated 2026-10-04T21:06:16Z
+
+elapsed  mem_free  swap_used  load1  top_rss_mb top_process
+    0m       88%      0.00M   3.07  138 mds_stores
+
+== top processes by memory (RSS MB)
+    138  mds_stores
+     96  Spotlight
+     81  Runner.Worker
+     70  softwareupdated
+     62  ruby
+     62  Runner.Listener
+     57  WindowServer
+     54  mds
+
+== vm_stat
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                                   106020.
+Pages active:                                1150022.
+Pages inactive:                              1013854.
+Pages speculative:                            991700.
+Pages throttled:                                   0.
+Pages wired down:                             406902.
+Pages purgeable:                               11557.
+"Translation faults":                       53918773.
+Pages copy-on-write:                         3112196.
+Pages zero filled:                          36765729.
+Pages reactivated:                             41145.
+
+== df /
+/dev/disk1s5s1   325Gi    12Gi   137Gi     8%    459k  1.4G    0%   /
+
+== build log (last 30 lines)
