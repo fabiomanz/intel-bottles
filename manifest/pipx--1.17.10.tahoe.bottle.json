@@ -2,10 +2,10 @@
   "pipx": {
     "formula": {
       "name": "pipx",
-      "pkg_version": "1.17.9",
+      "pkg_version": "1.17.10",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pipx.rb",
       "tap_git_path": "Formula/p/pipx.rb",
-      "tap_git_revision": "ec705d4a6ceff44bafd152f7e9d29c99ed2e72f3",
+      "tap_git_revision": "12f4804b767923c69ed2a3bc49a257a4584a80fe",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Execute binaries from Python packages in isolated environments",
       "license": "MIT",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-03T10:45:01Z",
+      "date": "2026-10-04T14:41:17Z",
       "tags": {
         "tahoe": {
-          "filename": "pipx-1.17.9.tahoe.bottle.tar.gz",
-          "local_filename": "pipx--1.17.9.tahoe.bottle.tar.gz",
-          "sha256": "0fdff9f6345164cfddad9548ac52361eb88600dcbe450b15e9e59baccf986719",
+          "filename": "pipx-1.17.10.tahoe.bottle.tar.gz",
+          "local_filename": "pipx--1.17.10.tahoe.bottle.tar.gz",
+          "sha256": "8ac74d9db52b5aa8dd5d5850d773e957cfddada2750faa7b1a67af5f2a0d9c76",
           "tab": {
             "homebrew_version": "7.0.7",
             "changed_files": [
@@ -33,7 +33,7 @@
             ],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1790897662,
+            "source_modified_time": 1790955406,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -590,12 +590,12 @@
             "libexec/lib/python3.14/site-packages/pipx/version.py",
             "libexec/lib/python3.14/site-packages/pipx/version.pyi",
             "libexec/lib/python3.14/site-packages/pipx/wrap.py",
-            "libexec/lib/python3.14/site-packages/pipx-1.17.9.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/pipx-1.17.9.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/pipx-1.17.9.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/pipx-1.17.9.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/pipx-1.17.9.dist-info/entry_points.txt",
-            "libexec/lib/python3.14/site-packages/pipx-1.17.9.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/pipx-1.17.10.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/pipx-1.17.10.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/pipx-1.17.10.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/pipx-1.17.10.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/pipx-1.17.10.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/pipx-1.17.10.dist-info/licenses/LICENSE",
             "libexec/lib/python3.14/site-packages/platformdirs/__init__.py",
             "libexec/lib/python3.14/site-packages/platformdirs/__main__.py",
             "libexec/lib/python3.14/site-packages/platformdirs/_xdg.py",
@@ -635,7 +635,7 @@
             "share/man/man1/pipx.1",
             "share/zsh/site-functions/_pipx"
           ],
-          "installed_size": 2206127
+          "installed_size": 2208208
         }
       }
     }

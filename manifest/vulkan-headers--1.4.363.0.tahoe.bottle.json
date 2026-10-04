@@ -1,0 +1,149 @@
+{
+  "vulkan-headers": {
+    "formula": {
+      "name": "vulkan-headers",
+      "pkg_version": "1.4.363.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/v/vulkan-headers.rb",
+      "tap_git_path": "Formula/v/vulkan-headers.rb",
+      "tap_git_revision": "12f4804b767923c69ed2a3bc49a257a4584a80fe",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Vulkan Header files and API registry",
+      "license": "Apache-2.0",
+      "homepage": "https://www.vulkan.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-10-04T14:39:16Z",
+      "tags": {
+        "tahoe": {
+          "filename": "vulkan-headers-1.4.363.0.tahoe.bottle.tar.gz",
+          "local_filename": "vulkan-headers--1.4.363.0.tahoe.bottle.tar.gz",
+          "sha256": "36ccf9e92ec8f1bcf7a55bbe21d9e5684e7bfec3329ef70b35faa5d8ee139ef5",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789692468,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-vulkan-headers-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/vulkan-headers.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.md",
+            "README.md",
+            "include/vk_video/vulkan_video_codec_av1std.h",
+            "include/vk_video/vulkan_video_codec_av1std_decode.h",
+            "include/vk_video/vulkan_video_codec_av1std_encode.h",
+            "include/vk_video/vulkan_video_codec_h264std.h",
+            "include/vk_video/vulkan_video_codec_h264std_decode.h",
+            "include/vk_video/vulkan_video_codec_h264std_encode.h",
+            "include/vk_video/vulkan_video_codec_h265std.h",
+            "include/vk_video/vulkan_video_codec_h265std_decode.h",
+            "include/vk_video/vulkan_video_codec_h265std_encode.h",
+            "include/vk_video/vulkan_video_codec_vp9std.h",
+            "include/vk_video/vulkan_video_codec_vp9std_decode.h",
+            "include/vk_video/vulkan_video_codecs_common.h",
+            "include/vulkan/vk_icd.h",
+            "include/vulkan/vk_layer.h",
+            "include/vulkan/vk_platform.h",
+            "include/vulkan/vulkan.cppm",
+            "include/vulkan/vulkan.h",
+            "include/vulkan/vulkan.hpp",
+            "include/vulkan/vulkan_android.h",
+            "include/vulkan/vulkan_beta.h",
+            "include/vulkan/vulkan_core.h",
+            "include/vulkan/vulkan_directfb.h",
+            "include/vulkan/vulkan_enums.hpp",
+            "include/vulkan/vulkan_extension_inspection.hpp",
+            "include/vulkan/vulkan_format_traits.hpp",
+            "include/vulkan/vulkan_fuchsia.h",
+            "include/vulkan/vulkan_funcs.hpp",
+            "include/vulkan/vulkan_ggp.h",
+            "include/vulkan/vulkan_handles.hpp",
+            "include/vulkan/vulkan_hash.hpp",
+            "include/vulkan/vulkan_hpp_macros.hpp",
+            "include/vulkan/vulkan_ios.h",
+            "include/vulkan/vulkan_macos.h",
+            "include/vulkan/vulkan_metal.h",
+            "include/vulkan/vulkan_ohos.h",
+            "include/vulkan/vulkan_raii.hpp",
+            "include/vulkan/vulkan_screen.h",
+            "include/vulkan/vulkan_shared.hpp",
+            "include/vulkan/vulkan_static_assertions.hpp",
+            "include/vulkan/vulkan_structs.hpp",
+            "include/vulkan/vulkan_to_string.hpp",
+            "include/vulkan/vulkan_ubm.h",
+            "include/vulkan/vulkan_vi.h",
+            "include/vulkan/vulkan_video.cppm",
+            "include/vulkan/vulkan_video.hpp",
+            "include/vulkan/vulkan_wayland.h",
+            "include/vulkan/vulkan_win32.h",
+            "include/vulkan/vulkan_xcb.h",
+            "include/vulkan/vulkan_xlib.h",
+            "include/vulkan/vulkan_xlib_xrandr.h",
+            "sbom.spdx.json",
+            "share/cmake/VulkanHeaders/VulkanHeadersConfig.cmake",
+            "share/cmake/VulkanHeaders/VulkanHeadersConfigVersion.cmake",
+            "share/vulkan/registry/apiconventions.py",
+            "share/vulkan/registry/base_generator.py",
+            "share/vulkan/registry/cgenerator.py",
+            "share/vulkan/registry/generator.py",
+            "share/vulkan/registry/parse_dependency.py",
+            "share/vulkan/registry/profiles/VP_KHR_roadmap.json",
+            "share/vulkan/registry/reg.py",
+            "share/vulkan/registry/spec_tools/conventions.py",
+            "share/vulkan/registry/spec_tools/util.py",
+            "share/vulkan/registry/stripAPI.py",
+            "share/vulkan/registry/validusage.json",
+            "share/vulkan/registry/video.xml",
+            "share/vulkan/registry/vk.xml",
+            "share/vulkan/registry/vkconventions.py",
+            "share/vulkan/registry/vulkan_object.py"
+          ],
+          "installed_size": 42399632
+        }
+      }
+    }
+  }
+}
