@@ -1,34 +1,65 @@
-run 37214025062, qtwebengine, updated 2026-10-04T21:09:17Z
+run 37214025062, qtwebengine, updated 2026-10-04T21:12:19Z
 
 elapsed  mem_free  swap_used  load1  top_rss_mb top_process
     0m       88%      0.00M   3.07  138 mds_stores
     3m       88%      0.00M   4.10  390 ruby
+    6m       88%      0.00M   7.07  143 mds_stores
 
 == top processes by memory (RSS MB)
-    390  ruby
-    139  mds_stores
-    136  clang
+    143  mds_stores
      96  Spotlight
-     84  clang
-     79  Runner.Worker
-     78  clang
-     71  clang
+     92  ruby
+     81  Runner.Worker
+     70  softwareupdated
+     63  Runner.Listener
+     57  WindowServer
+     55  mds
 
 == vm_stat
 Mach Virtual Memory Statistics: (page size of 4096 bytes)
-Pages free:                                    80851.
-Pages active:                                1335006.
-Pages inactive:                              1248326.
-Pages speculative:                            590024.
+Pages free:                                    36119.
+Pages active:                                1178851.
+Pages inactive:                              1525192.
+Pages speculative:                            517568.
 Pages throttled:                                   0.
-Pages wired down:                             414901.
-Pages purgeable:                               13136.
-"Translation faults":                       64793261.
-Pages copy-on-write:                         4671285.
-Pages zero filled:                          40375514.
-Pages reactivated:                             43857.
+Pages wired down:                             411525.
+Pages purgeable:                               13203.
+"Translation faults":                       77412944.
+Pages copy-on-write:                         6092936.
+Pages zero filled:                          45635303.
+Pages reactivated:                             44154.
 
 == df /
-/dev/disk1s5s1   325Gi    12Gi   135Gi     8%    459k  1.4G    0%   /
+/dev/disk1s5s1   325Gi    12Gi   134Gi     9%    459k  1.4G    0%   /
 
 == build log (last 30 lines)
+✔︎ Patch 6c0a651f9cf91d07c87be8feba854a38a311aba6.patch?full_index=1
+✔︎ Formula qtwebengine (6.11.2)
+✔︎ Bottle qttools (6.11.2_1)
+✔︎ Bottle qtserialport (6.11.2)
+✔︎ Bottle qtpositioning (6.11.2)
+✔︎ Bottle qtwebchannel (6.11.2)
+✔︎ Bottle qtbase (6.11.2)
+✔︎ Bottle qtdeclarative (6.11.2)
+[32m==>[0m [1mInstalling dependencies for qtwebengine:[0m [32mabseil[39m, [32msimdutf[39m, [32mada-url[39m, [32mhdrhistogram_c[39m, [32mlibffi[39m, [32mlibuv[39m, [32mllhttp[39m, [32mmerve[39m, [32mnbytes[39m, [32msimdjson[39m, [32mreadline[39m, [32mhighway[39m, [32mnode
+[32m==>[0m [1mInstalling qtwebengine dependency: [32mabseil[39m[0m
+[34m==>[0m [1mPouring abseil--20260817.0.sonoma.bottle.1.tar.gz[0m
+🍺  /usr/local/Cellar/abseil/20260817.0: 832 files, 9.8MB
+[32m==>[0m [1mInstalling qtwebengine dependency: [32msimdutf[39m[0m
+[34m==>[0m [1mPouring simdutf-9.2.1_1.tahoe.bottle.tar.gz[0m
+🍺  /usr/local/Cellar/simdutf/9.2.1_1: 65 files, 2.7MB
+[32m==>[0m [1mInstalling qtwebengine dependency: [32mada-url[39m[0m
+[34m==>[0m [1mPouring ada-url-4.0.0.tahoe.bottle.tar.gz[0m
+clang: error: couldn't create cache file '/var/folders/fq/bhsbs5bd52791c8x2z6s3dh40000gn/T/xcrun_db-0DgbPdnP' (errno=Operation not permitted)
+🍺  /usr/local/Cellar/ada-url/4.0.0: 56 files, 1MB
+[32m==>[0m [1mUpgrading qtwebengine dependency: [32mhdrhistogram_c[39m[0m
+[34m==>[0m [1mPouring hdrhistogram_c-0.12.0.tahoe.bottle.tar.gz[0m
+🍺  /usr/local/Cellar/hdrhistogram_c/0.12.0: 23 files, 177.2KB
+[32m==>[0m [1mInstalling qtwebengine dependency: [32mlibffi[39m[0m
+[34m==>[0m [1mPouring libffi--3.8.0.sonoma.bottle.tar.gz[0m
+🍺  /usr/local/Cellar/libffi/3.8.0: 18 files, 881.2KB
+[32m==>[0m [1mUpgrading qtwebengine dependency: [32mlibuv[39m[0m
+[34m==>[0m [1mPouring libuv-1.53.0.tahoe.bottle.tar.gz[0m
+🍺  /usr/local/Cellar/libuv/1.53.0: 35 files, 1.3MB
+[32m==>[0m [1mInstalling qtwebengine dependency: [32mllhttp[39m[0m
+[34m==>[0m [1mPouring llhttp--9.4.3.sonoma.bottle.tar.gz[0m
