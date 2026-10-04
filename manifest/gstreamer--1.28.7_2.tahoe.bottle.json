@@ -2,10 +2,10 @@
   "gstreamer": {
     "formula": {
       "name": "gstreamer",
-      "pkg_version": "1.28.7_1",
+      "pkg_version": "1.28.7_2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gstreamer.rb",
       "tap_git_path": "Formula/g/gstreamer.rb",
-      "tap_git_revision": "f53e41b275b6070e94c2d7a81e645c1c05fb6bee",
+      "tap_git_revision": "575650f3ffc41524ec374793dc4ce89493ff579e",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Development framework for multimedia applications",
       "license": "LGPL-2.0-or-later AND LGPL-2.1-or-later AND MIT",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-01T08:50:54Z",
+      "date": "2026-10-04T20:57:58Z",
       "tags": {
         "tahoe": {
-          "filename": "gstreamer-1.28.7_1.tahoe.bottle.tar.gz",
-          "local_filename": "gstreamer--1.28.7_1.tahoe.bottle.tar.gz",
-          "sha256": "0f63982cfa14d16b97f8a00a1d31513fa38381bebe840774525c533731347ad8",
+          "filename": "gstreamer-1.28.7_2.tahoe.bottle.tar.gz",
+          "local_filename": "gstreamer--1.28.7_2.tahoe.bottle.tar.gz",
+          "sha256": "41101cd969f56e6e8086070f24ee9447ef5a4c5c607b0ed12946286bd3e677fd",
           "tab": {
             "homebrew_version": "7.0.7",
             "changed_files": [
@@ -63,7 +63,7 @@
               "lib/pkgconfig/gstreamer-video-1.0.pc",
               "lib/pkgconfig/gstreamer-webrtc-1.0.pc",
               "lib/pkgconfig/gstreamer-webrtc-nice-1.0.pc",
-              "share/gdb/auto-load/usr/local/Cellar/gstreamer/1.28.7_1/lib/libgstreamer-1.0.so.0.2807.0-gdb.py"
+              "share/gdb/auto-load/usr/local/Cellar/gstreamer/1.28.7_2/lib/libgstreamer-1.0.so.0.2807.0-gdb.py"
             ],
             "linkage_files": [
               "bin/ges-launch-1.0",
@@ -452,18 +452,18 @@
               },
               {
                 "full_name": "aom",
-                "version": "3.15.0",
+                "version": "3.15.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.15.0",
+                "pkg_version": "3.15.1",
                 "declared_directly": true
               },
               {
                 "full_name": "libpng",
-                "version": "1.6.58",
+                "version": "1.6.59",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.6.58",
+                "pkg_version": "1.6.59",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -513,10 +513,10 @@
               },
               {
                 "full_name": "pcre2",
-                "version": "10.48",
+                "version": "10.49",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "10.48",
+                "pkg_version": "10.49",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -531,10 +531,10 @@
               },
               {
                 "full_name": "xorgproto",
-                "version": "2025.1",
+                "version": "2026.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2025.1",
+                "pkg_version": "2026.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -628,19 +628,19 @@
               },
               {
                 "full_name": "faac",
-                "version": "2.1",
+                "version": "2.2",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.1",
+                "pkg_version": "2.2",
                 "declared_directly": true,
-                "compatibility_version": 2
+                "compatibility_version": 3
               },
               {
                 "full_name": "faad2",
-                "version": "2.11.3",
+                "version": "2.11.4",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.11.3",
+                "pkg_version": "2.11.4",
                 "declared_directly": true
               },
               {
@@ -680,10 +680,10 @@
               },
               {
                 "full_name": "openssl@3",
-                "version": "3.6.4",
+                "version": "3.6.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.4",
+                "pkg_version": "3.6.5",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -698,19 +698,19 @@
               },
               {
                 "full_name": "sdl3",
-                "version": "3.4.16",
+                "version": "3.4.18",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.4.16",
+                "pkg_version": "3.4.18",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "sdl2-compat",
-                "version": "2.32.72",
+                "version": "2.32.74",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.32.72",
+                "pkg_version": "2.32.74",
                 "declared_directly": false
               },
               {
@@ -885,6 +885,7 @@
                 "full_name": "at-spi2-core",
                 "version": "2.62.0.1",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "2.62.0.1",
                 "declared_directly": false,
                 "compatibility_version": 1
@@ -901,6 +902,7 @@
                 "full_name": "gsettings-desktop-schemas",
                 "version": "51.0",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "51.0",
                 "declared_directly": false,
                 "compatibility_version": 1
@@ -924,9 +926,10 @@
               },
               {
                 "full_name": "harfbuzz",
-                "version": "14.5.0",
+                "version": "14.5.1",
                 "revision": 0,
-                "pkg_version": "14.5.0",
+                "bottle_rebuild": 0,
+                "pkg_version": "14.5.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -969,6 +972,7 @@
                 "full_name": "pango",
                 "version": "1.58.2",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.58.2",
                 "declared_directly": true,
                 "compatibility_version": 1
@@ -976,8 +980,9 @@
               {
                 "full_name": "gtk+3",
                 "version": "3.24.52",
-                "revision": 0,
-                "pkg_version": "3.24.52",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.24.52_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -985,15 +990,17 @@
                 "full_name": "librsvg",
                 "version": "2.63.2",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "2.63.2",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "gtk4",
-                "version": "4.24.0",
+                "version": "4.24.1",
                 "revision": 0,
-                "pkg_version": "4.24.0",
+                "bottle_rebuild": 0,
+                "pkg_version": "4.24.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -1019,6 +1026,7 @@
                 "full_name": "libunibreak",
                 "version": "8.0",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "8.0",
                 "declared_directly": false,
                 "compatibility_version": 3
@@ -1027,6 +1035,7 @@
                 "full_name": "libass",
                 "version": "0.17.5",
                 "revision": 1,
+                "bottle_rebuild": 0,
                 "pkg_version": "0.17.5_1",
                 "declared_directly": true,
                 "compatibility_version": 1
@@ -1159,6 +1168,7 @@
                 "full_name": "libnghttp2",
                 "version": "1.70.0",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.70.0",
                 "declared_directly": false,
                 "compatibility_version": 1
@@ -1192,10 +1202,10 @@
               },
               {
                 "full_name": "libsoup",
-                "version": "3.6.6",
+                "version": "3.8.0",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "3.6.6",
+                "bottle_rebuild": 0,
+                "pkg_version": "3.8.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -1245,28 +1255,28 @@
               },
               {
                 "full_name": "openexr",
-                "version": "3.5.1",
+                "version": "3.5.2",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.5.1",
+                "pkg_version": "3.5.2",
                 "declared_directly": true,
                 "compatibility_version": 2
               },
               {
                 "full_name": "openjpeg",
                 "version": "2.5.4",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.5.4",
+                "pkg_version": "2.5.4_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "orc",
-                "version": "0.4.43",
+                "version": "0.4.44",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.4.43",
+                "pkg_version": "0.4.44",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -1290,10 +1300,10 @@
               },
               {
                 "full_name": "python@3.14",
-                "version": "3.14.7",
+                "version": "3.14.8",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.14.7",
+                "pkg_version": "3.14.8",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -1319,6 +1329,7 @@
                 "full_name": "pygobject3",
                 "version": "3.58.0",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "3.58.0",
                 "declared_directly": true,
                 "compatibility_version": 1
@@ -1345,6 +1356,7 @@
                 "full_name": "srtp",
                 "version": "2.8.1",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "2.8.1",
                 "declared_directly": true,
                 "compatibility_version": 1
@@ -1407,228 +1419,231 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/gst-inspect-1.0",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 35331
             },
             {
               "path": "bin/gst-typefind-1.0",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 8830
             },
             {
               "path": "bin/gst-play-1.0",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 29343
             },
             {
               "path": "bin/gst-device-monitor-1.0",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 11844
             },
             {
               "path": "bin/gst-stats-1.0",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 18711
             },
             {
               "path": "bin/gst-launch-1.0",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 18033
             },
             {
               "path": "libexec/gstreamer-1.0/gst-hotdoc-plugins-scanner",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 20731
             },
             {
               "path": "lib/libgstaudio-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 346437
             },
             {
               "path": "lib/libgstnet-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/libexec/gstreamer-1.0/gst-ptp-helper",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/libexec/gstreamer-1.0/gst-ptp-helper",
               "offset": 73280
             },
             {
               "path": "lib/libgstreamer-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 837724
             },
             {
               "path": "lib/libgstreamer-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/lib",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/lib",
               "offset": 837780
             },
             {
               "path": "lib/libgstreamer-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share",
               "offset": 926901
             },
             {
               "path": "lib/libgstreamer-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/lib/gstreamer-1.0",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/lib/gstreamer-1.0",
               "offset": 936017
             },
             {
               "path": "lib/libgstreamer-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/libexec/gstreamer-1.0/gst-plugin-scanner",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/libexec/gstreamer-1.0/gst-plugin-scanner",
               "offset": 984450
             },
             {
               "path": "lib/libgstvalidate-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share",
               "offset": 273902
             },
             {
               "path": "lib/libgstvalidate-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/lib/gstreamer-1.0/validate",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/lib/gstreamer-1.0/validate",
               "offset": 319810
             },
             {
               "path": "lib/libgsttag-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/gst-plugins-base/1.0/license-translations.dict",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/gst-plugins-base/1.0/license-translations.dict",
               "offset": 157804
             },
             {
               "path": "lib/libgsttag-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 159040
             },
             {
               "path": "lib/gstreamer-1.0/libgstencoding.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 65453
             },
             {
               "path": "lib/gstreamer-1.0/libgstplayback.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 479382
             },
             {
               "path": "lib/gstreamer-1.0/libgstisomp4.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 443759
             },
             {
               "path": "lib/gstreamer-1.0/libgstsoup.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 62347
             },
             {
               "path": "lib/gstreamer-1.0/libgstvalidatetracer.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share",
               "offset": 274062
             },
             {
               "path": "lib/gstreamer-1.0/libgstvalidatetracer.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/lib/gstreamer-1.0/validate",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/lib/gstreamer-1.0/validate",
               "offset": 319970
             },
             {
               "path": "lib/gstreamer-1.0/libgstmidi.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 25148
             },
             {
               "path": "lib/gstreamer-1.0/libgstlame.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 20915
             },
             {
               "path": "lib/gstreamer-1.0/libgstogg.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 171165
             },
             {
               "path": "lib/gstreamer-1.0/libgstflac.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 40714
             },
             {
               "path": "lib/gstreamer-1.0/libgstpython.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/lib/gstreamer-1.0/python:HOME/.gstreamer-1.0/plugins/python:GST_PLUGIN_SYSTEM_PATH/python:GST_PLUGIN_PATH/python",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/lib/gstreamer-1.0/python:HOME/.gstreamer-1.0/plugins/python:GST_PLUGIN_SYSTEM_PATH/python:GST_PLUGIN_PATH/python",
               "offset": 13327
             },
             {
               "path": "lib/gstreamer-1.0/libgstpython.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/lib/gstreamer-1.0/python",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/lib/gstreamer-1.0/python",
               "offset": 14682
             },
             {
               "path": "lib/gstreamer-1.0/libgstsndfile.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 21170
             },
             {
               "path": "lib/gstreamer-1.0/libgstfrei0r.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/lib",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/lib",
               "offset": 30193
             },
             {
               "path": "lib/gstreamer-1.0/libgstasf.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 107656
             },
             {
               "path": "lib/gstreamer-1.0/libgstaiff.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 44449
             },
             {
               "path": "lib/gstreamer-1.0/libgstcurl.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 78554
             },
             {
               "path": "lib/gstreamer-1.0/libgstrtsp.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 136497
             },
             {
               "path": "lib/gstreamer-1.0/libgstshout2.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 22509
             },
             {
               "path": "lib/gstreamer-1.0/libgstavi.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 139581
             },
             {
               "path": "lib/gstreamer-1.0/libgstoss4.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 36144
             },
             {
               "path": "lib/libgstpbutils-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
               "offset": 137077
             },
             {
               "path": "lib/libgstpbutils-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_1/share",
+              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share",
               "offset": 158663
             }
           ],
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
-              "SPDXRef-Package-SPDXRef-aom-3.15.0",
-              "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+              "SPDXRef-Package-SPDXRef-aom-3.15.1",
+              "SPDXRef-Package-SPDXRef-libpng-1.6.59",
               "SPDXRef-Package-SPDXRef-json-c-0.19",
               "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
               "SPDXRef-Package-SPDXRef-gettext-1.0",
-              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-pcre2-10.49",
               "SPDXRef-Package-SPDXRef-glib-2.90.0",
+              "SPDXRef-Package-SPDXRef-xorgproto-2026.1",
               "SPDXRef-Package-SPDXRef-libx11-1.8.13",
               "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+              "SPDXRef-Package-SPDXRef-faac-2.2",
+              "SPDXRef-Package-SPDXRef-faad2-2.11.4",
               "SPDXRef-Package-SPDXRef-mpg123-1.33.7",
               "SPDXRef-Package-SPDXRef-libvpx-1.17.0",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-              "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
-              "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+              "SPDXRef-Package-SPDXRef-sdl3-3.4.18",
+              "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.74",
               "SPDXRef-Package-SPDXRef-x265-4.3",
               "SPDXRef-Package-SPDXRef-xz-5.8.4",
               "SPDXRef-Package-SPDXRef-ffmpeg-9.0.2",
@@ -1638,20 +1653,34 @@
               "SPDXRef-Package-SPDXRef-lz4-1.10.0",
               "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
               "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+              "SPDXRef-Package-SPDXRef-at-spi2-core-2.62.0.1",
               "SPDXRef-Package-SPDXRef-fribidi-1.0.17",
+              "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.0",
+              "SPDXRef-Package-SPDXRef-harfbuzz-14.5.1",
               "SPDXRef-Package-SPDXRef-hicolor-icon-theme-0.18",
+              "SPDXRef-Package-SPDXRef-pango-1.58.2",
+              "SPDXRef-Package-SPDXRef-gtk+3-3.24.52_1",
+              "SPDXRef-Package-SPDXRef-librsvg-2.63.2",
+              "SPDXRef-Package-SPDXRef-gtk4-4.24.1",
+              "SPDXRef-Package-SPDXRef-libunibreak-8.0",
+              "SPDXRef-Package-SPDXRef-libass-0.17.5_1",
               "SPDXRef-Package-SPDXRef-gmp-6.3.0",
               "SPDXRef-Package-SPDXRef-p11-kit-0.26.5",
               "SPDXRef-Package-SPDXRef-libnice-0.1.24",
+              "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
               "SPDXRef-Package-SPDXRef-readline-8.3.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+              "SPDXRef-Package-SPDXRef-libsoup-3.8.0",
               "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
               "SPDXRef-Package-SPDXRef-openjph-0.32.0",
-              "SPDXRef-Package-SPDXRef-openexr-3.5.1",
-              "SPDXRef-Package-SPDXRef-orc-0.4.43",
+              "SPDXRef-Package-SPDXRef-openexr-3.5.2",
+              "SPDXRef-Package-SPDXRef-openjpeg-2.5.4_1",
+              "SPDXRef-Package-SPDXRef-orc-0.4.44",
               "SPDXRef-Package-SPDXRef-pkgconf-3.0.7",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
-              "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+              "SPDXRef-Package-SPDXRef-python@3.14-3.14.8",
+              "SPDXRef-Package-SPDXRef-pygobject3-3.58.0",
+              "SPDXRef-Package-SPDXRef-srtp-2.8.1",
               "SPDXRef-Package-SPDXRef-utf8cpp-4.2.1",
               "SPDXRef-Package-SPDXRef-taglib-2.3.2",
               "SPDXRef-Compiler"
@@ -1669,7 +1698,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "c874464309067f659d6428ba6287fce6d858e0ee391591c84cd8fe14bdfe7bcb"
+                    "checksumValue": "4c9eb639c3440373be568cc39fa210ea3f7c7b79f5c73a354a5d0dadb1a1f65a"
                   }
                 ],
                 "externalRefs": [
@@ -1681,47 +1710,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-aom-3.15.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-aom-3.15.1",
                 "name": "aom",
-                "versionInfo": "3.15.0",
+                "versionInfo": "3.15.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aom-3.15.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aom-3.15.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "ef8363134b027fc8e46bc43bf5554debd48212fb20b09baf5b4b371fd3ea1342"
+                    "checksumValue": "0541e25c813131d69df3b9a1cbeacdf55e05abe4700103bd0076bf443c134399"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/aom@3.15.0",
+                    "referenceLocator": "pkg:brew/aom@3.15.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.59",
                 "name": "libpng",
-                "versionInfo": "1.6.58",
+                "versionInfo": "1.6.59",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "libpng-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.58.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.59.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "e52e7248928f76d19f4253ab672b59dde6a6f21e94b090137170bb2e971f9cc2"
+                    "checksumValue": "983550222f14d7db234a39119dc66c0de74d9b79b74f83ecf4b81a6b694d40de"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libpng@1.6.58",
+                    "referenceLocator": "pkg:brew/libpng@1.6.59",
                     "referenceType": "purl"
                   }
                 ]
@@ -1761,7 +1790,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "8c54c7bc4c98effd8b886213f126278f87cef9c596d9ab2ef3d52bc100c79f65"
+                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
                   }
                 ],
                 "externalRefs": [
@@ -1784,7 +1813,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "27f00f82c225d2feafe765d37a15699352a390397bdeec1ccbc2b5fe943f7ee7"
+                    "checksumValue": "fe9d5337ff31e4f40b827b3463bd3fdc61b8f377277769f71e93baad0443bc96"
                   }
                 ],
                 "externalRefs": [
@@ -1796,24 +1825,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.49",
                 "name": "pcre2",
-                "versionInfo": "10.48",
+                "versionInfo": "10.49",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.49.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                    "checksumValue": "7fe75e3ba297623163ee0e3a262e417d0eb36342f6cda4135ede90412ff03040"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceLocator": "pkg:brew/pcre2@10.49",
                     "referenceType": "purl"
                   }
                 ]
@@ -1842,6 +1871,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xorgproto-2026.1",
+                "name": "xorgproto",
+                "versionInfo": "2026.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xorgproto-2026.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5286465a0d9c7954041bcec0ebee5641b6c8018b3f679eaa8595b029a44c2af9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xorgproto@2026.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
                 "name": "libx11",
                 "versionInfo": "1.8.13",
@@ -1853,7 +1905,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "7035ebb1057ef3de675393d244db0d486f07b91aab5d24a4b2d0140c05b9724d"
+                    "checksumValue": "10c0844f2a8daab11aa21bd737480e496469da1a15c37067dc34ab308f8b6285"
                   }
                 ],
                 "externalRefs": [
@@ -1883,6 +1935,52 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/cairo@1.18.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-faac-2.2",
+                "name": "faac",
+                "versionInfo": "2.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/faac-2.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "cbafd260a4bd3fe68533f7b7621e3c2529c09270c02ba9e8e502638e3130c4fa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/faac@2.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-faad2-2.11.4",
+                "name": "faad2",
+                "versionInfo": "2.11.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/faad2-2.11.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "83866be181ffb96ad784a9ed5666418b0916d5899e2d29bbc392d6788298f44a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/faad2@2.11.4",
                     "referenceType": "purl"
                   }
                 ]
@@ -1922,7 +2020,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "2e6f540d2f890c1ef83c7203d07c415653cb7e1e61738228d9c88750daa2c017"
+                    "checksumValue": "37b1fb1840bf793c99768ffc8342a3ec5148b5ad3cf933da107ba7b89612eb24"
                   }
                 ],
                 "externalRefs": [
@@ -1957,70 +2055,70 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
                 "name": "openssl@3",
-                "versionInfo": "3.6.4",
+                "versionInfo": "3.6.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.4.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.5.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13fdc9f3d0d30296056e2685e0c989978a5ed213f34a0de174e19feb72833e73"
+                    "checksumValue": "9df24dab1c79c4c07958ee358ef146ebcd5b05d8180274c3db0075a28f34f7f6"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.5",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl3-3.4.18",
                 "name": "sdl3",
-                "versionInfo": "3.4.16",
+                "versionInfo": "3.4.18",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Zlib",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/sdl3-3.4.16.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/sdl3-3.4.18.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "131576a595762148e7093dea7c302583306da3ff976e5195b950d11e904355d1"
+                    "checksumValue": "09f268a724188351f6bda2ddb67a5f01007abfd64c221a1aff949913d5d0f27b"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/sdl3@3.4.16",
+                    "referenceLocator": "pkg:brew/sdl3@3.4.18",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.74",
                 "name": "sdl2-compat",
-                "versionInfo": "2.32.72",
+                "versionInfo": "2.32.74",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Zlib",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/sdl2-compat-2.32.72.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/sdl2-compat-2.32.74.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "cbc418392383ba8a4656ed7d94d546e7ca2ce1985bc4aa38a7ad48714fda2954"
+                    "checksumValue": "42fee0f4e61686c0e4f1c06d16ab0c01ccf6e3d55f1b29af88cd90472786f959"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/sdl2-compat@2.32.72",
+                    "referenceLocator": "pkg:brew/sdl2-compat@2.32.74",
                     "referenceType": "purl"
                   }
                 ]
@@ -2037,7 +2135,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "f3464e97558ccae26f644931c856cb3ebceaf85733a80ee08172d77783f5e35c"
+                    "checksumValue": "e8c85fcc0d5bc5e17efab8324ba9cfae9d96639d29e27ee05bd96404e30efba0"
                   }
                 ],
                 "externalRefs": [
@@ -2060,7 +2158,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "b58278bdc3ee647396ba249e0d0959306231d593d2b8ce6c173f819b42192a9f"
+                    "checksumValue": "54a648c4197b0299ee2d37527ca6a23447abe65342f8f8c0ed68e154f4593b0f"
                   }
                 ],
                 "externalRefs": [
@@ -2129,7 +2227,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "d5a19371b08de71cb811b2fe8114e0092c5edc439b3ba4d09f2e8a775676eb6c"
+                    "checksumValue": "974c6265c287445fb2ffa5e4ebce9e476a02eb7e29dee6da3bea1e8fc6bd7209"
                   }
                 ],
                 "externalRefs": [
@@ -2152,7 +2250,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "011465e668caf64f3ce3586efcd644b520f27083580c0334eb6d7278dac2713c"
+                    "checksumValue": "28483ee31b5610606f46e0ee4706bbe9b19a4981bdfc736e9322ed6248ca79fc"
                   }
                 ],
                 "externalRefs": [
@@ -2233,6 +2331,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-at-spi2-core-2.62.0.1",
+                "name": "at-spi2-core",
+                "versionInfo": "2.62.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/at-spi2-core-2.62.0.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "919bafdc178a7e99cb9b0c4f866c6c764dfa6abb30f3a2ebe8e2ecfb54b374f7"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/at-spi2-core@2.62.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-fribidi-1.0.17",
                 "name": "fribidi",
                 "versionInfo": "1.0.17",
@@ -2256,6 +2377,52 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.0",
+                "name": "gsettings-desktop-schemas",
+                "versionInfo": "51.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gsettings-desktop-schemas-51.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f3a5ad690831b13ba15993a8fa0a39233448f0293a88abaa526af28f57371e00"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gsettings-desktop-schemas@51.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-harfbuzz-14.5.1",
+                "name": "harfbuzz",
+                "versionInfo": "14.5.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/harfbuzz-14.5.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b879940a16dddfb56c92b986abd1d88bb902d1c3805353b8e9c5437b39781c30"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/harfbuzz@14.5.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-hicolor-icon-theme-0.18",
                 "name": "hicolor-icon-theme",
                 "versionInfo": "0.18",
@@ -2274,6 +2441,144 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/hicolor-icon-theme@0.18",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pango-1.58.2",
+                "name": "pango",
+                "versionInfo": "1.58.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pango-1.58.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1b38fee636b06c2c02c74dee8d4ae84af18da7ce7857c023f35692960b707964"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pango@1.58.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gtk+3-3.24.52_1",
+                "name": "gtk+3",
+                "versionInfo": "3.24.52_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gtk%2B3-3.24.52_1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "103485f68a8b96eecc3c89ded43b5eba0a52fb2282a79b4b6bb5c6750a905c7d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gtk%2B3@3.24.52_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-librsvg-2.63.2",
+                "name": "librsvg",
+                "versionInfo": "2.63.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/librsvg-2.63.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7be184545dcb7d9b000f697b5f2924384343d5eabe5b6970e9fca005caeee431"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/librsvg@2.63.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gtk4-4.24.1",
+                "name": "gtk4",
+                "versionInfo": "4.24.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gtk4-4.24.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "79be2f081e30924938dac340f1f2fa461cf03a571f70051bf9fcba79156c33c6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gtk4@4.24.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunibreak-8.0",
+                "name": "libunibreak",
+                "versionInfo": "8.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Zlib",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunibreak-8.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "843a44844ed63d5402283597fea73052abf3c4c78912d02b59e6efcc319d4b8b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunibreak@8.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libass-0.17.5_1",
+                "name": "libass",
+                "versionInfo": "0.17.5_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "ISC",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libass-0.17.5_1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f0e566b336fe75ee4a9b817632418d5d0eec2a9861bb0de467e993fe0f7d891a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libass@0.17.5_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -2313,7 +2618,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "c97e5c89870817d422641fffda08ba85d2e4486db6eccd37ceb3b32978e4b0c1"
+                    "checksumValue": "28df4ce7bd92b899411a8adc39fe2c6ba25e8042fcc96718d2cb677c23720ca6"
                   }
                 ],
                 "externalRefs": [
@@ -2348,6 +2653,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "name": "libnghttp2",
+                "versionInfo": "1.70.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libnghttp2-1.70.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "04d57bab80ac6b535f89b1a2ede4c4c85285f8ab5617944d4aaaddd722b6e04c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libnghttp2@1.70.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
                 "name": "readline",
                 "versionInfo": "8.3.6",
@@ -2359,7 +2687,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4b61824f0d54a4eb5dad33db69ab8461a7eb197ce9bd5ce696cb297a627160e3"
+                    "checksumValue": "8e2d9a12817040fff1164139282e0d2f7ad2aaf388db15db8eb36a8fb00dd74a"
                   }
                 ],
                 "externalRefs": [
@@ -2389,6 +2717,29 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libsoup-3.8.0",
+                "name": "libsoup",
+                "versionInfo": "3.8.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libsoup-3.8.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e453a9affbd474077f52cda4bfda6606c34eaf58b8568a1ec2b1d0245f17acc5"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libsoup@3.8.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -2440,47 +2791,70 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openexr-3.5.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openexr-3.5.2",
                 "name": "openexr",
-                "versionInfo": "3.5.1",
+                "versionInfo": "3.5.2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openexr-3.5.1.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openexr-3.5.2.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "75e8cd9f7eaaa898aaa53d22acb65ac2e53025e58d8943f8626378653a72d8d5"
+                    "checksumValue": "d3e0204260250815dcaccba0761cb5191e1047de06d709d275b858a961e7d692"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openexr@3.5.1",
+                    "referenceLocator": "pkg:brew/openexr@3.5.2",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-orc-0.4.43",
-                "name": "orc",
-                "versionInfo": "0.4.43",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openjpeg-2.5.4_1",
+                "name": "openjpeg",
+                "versionInfo": "2.5.4_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "BSD-2-Clause AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/orc-0.4.43.tahoe.bottle.tar.gz",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openjpeg-2.5.4_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "ccc606265b76f56d1b49653fe2fbc4eee8a78f783068622801e2a33151102a47"
+                    "checksumValue": "572be491fadb893f1cb8d7849555bfb840815a9a875b47ddf69da8cf4a639708"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/orc@0.4.43",
+                    "referenceLocator": "pkg:brew/openjpeg@2.5.4_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-orc-0.4.44",
+                "name": "orc",
+                "versionInfo": "0.4.44",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/orc-0.4.44.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8f364787f83e761cbadda77e972513515e58e766247d7738eba4d090137aae1d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/orc@0.4.44",
                     "referenceType": "purl"
                   }
                 ]
@@ -2532,24 +2906,70 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "SPDXID": "SPDXRef-Package-SPDXRef-python@3.14-3.14.8",
                 "name": "python@3.14",
-                "versionInfo": "3.14.7",
+                "versionInfo": "3.14.8",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Python-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/python/3.14/blobs/sha256:edaf325ee40b533f6042d84317f06af217267e824d5105cb7cd9a7f05c466e2c",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/python%403.14-3.14.8.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "edaf325ee40b533f6042d84317f06af217267e824d5105cb7cd9a7f05c466e2c"
+                    "checksumValue": "a583b971f24d1c8fe05cbd86f3a2e0b46edf43b5dd1f60e18d63774a99ddd1a8"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/python%403.14@3.14.7",
+                    "referenceLocator": "pkg:brew/python%403.14@3.14.8",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pygobject3-3.58.0",
+                "name": "pygobject3",
+                "versionInfo": "3.58.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pygobject3-3.58.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c5a07929377f63ee64df4caee198d0200b6f06b985635b37164fc632cae2a2c3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pygobject3@3.58.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-srtp-2.8.1",
+                "name": "srtp",
+                "versionInfo": "2.8.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/srtp-2.8.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "0415af7230cf3d0cfa23a2641a8e9ce3858528276173312b5bf3c30399d1c3d2"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/srtp@2.8.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -2620,12 +3040,12 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-aom-3.15.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aom-3.15.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
@@ -2645,12 +3065,17 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
@@ -2661,6 +3086,16 @@
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-faac-2.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-faad2-2.11.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
@@ -2680,17 +3115,17 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl3-3.4.18",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.74",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
@@ -2740,12 +3175,57 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-at-spi2-core-2.62.0.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-fribidi-1.0.17",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.5.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-hicolor-icon-theme-0.18",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pango-1.58.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gtk+3-3.24.52_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-librsvg-2.63.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gtk4-4.24.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunibreak-8.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libass-0.17.5_1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
@@ -2765,12 +3245,22 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libsoup-3.8.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
@@ -2785,12 +3275,17 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openexr-3.5.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openexr-3.5.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-orc-0.4.43",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openjpeg-2.5.4_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-orc-0.4.44",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
@@ -2805,7 +3300,17 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python@3.14-3.14.8",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pygobject3-3.58.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-srtp-2.8.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
@@ -3873,7 +4378,7 @@
             "sbom.spdx.json",
             "share/aclocal/gst-element-check-1.0.m4",
             "share/cmake/FindGStreamer.cmake",
-            "share/gdb/auto-load/usr/local/Cellar/gstreamer/1.28.7_1/lib/libgstreamer-1.0.so.0.2807.0-gdb.py",
+            "share/gdb/auto-load/usr/local/Cellar/gstreamer/1.28.7_2/lib/libgstreamer-1.0.so.0.2807.0-gdb.py",
             "share/gir-1.0/GES-1.0.gir",
             "share/gir-1.0/Gst-1.0.gir",
             "share/gir-1.0/GstAllocators-1.0.gir",
@@ -4191,7 +4696,7 @@
             "share/man/man1/gst-stats-1.0.1",
             "share/man/man1/gst-typefind-1.0.1"
           ],
-          "installed_size": 223526140
+          "installed_size": 223168536
         }
       }
     }
