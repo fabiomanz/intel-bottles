@@ -1,33 +1,34 @@
-run 37214025062, qtwebengine, updated 2026-10-04T21:06:16Z
+run 37214025062, qtwebengine, updated 2026-10-04T21:09:17Z
 
 elapsed  mem_free  swap_used  load1  top_rss_mb top_process
     0m       88%      0.00M   3.07  138 mds_stores
+    3m       88%      0.00M   4.10  390 ruby
 
 == top processes by memory (RSS MB)
-    138  mds_stores
+    390  ruby
+    139  mds_stores
+    136  clang
      96  Spotlight
-     81  Runner.Worker
-     70  softwareupdated
-     62  ruby
-     62  Runner.Listener
-     57  WindowServer
-     54  mds
+     84  clang
+     79  Runner.Worker
+     78  clang
+     71  clang
 
 == vm_stat
 Mach Virtual Memory Statistics: (page size of 4096 bytes)
-Pages free:                                   106020.
-Pages active:                                1150022.
-Pages inactive:                              1013854.
-Pages speculative:                            991700.
+Pages free:                                    80851.
+Pages active:                                1335006.
+Pages inactive:                              1248326.
+Pages speculative:                            590024.
 Pages throttled:                                   0.
-Pages wired down:                             406902.
-Pages purgeable:                               11557.
-"Translation faults":                       53918773.
-Pages copy-on-write:                         3112196.
-Pages zero filled:                          36765729.
-Pages reactivated:                             41145.
+Pages wired down:                             414901.
+Pages purgeable:                               13136.
+"Translation faults":                       64793261.
+Pages copy-on-write:                         4671285.
+Pages zero filled:                          40375514.
+Pages reactivated:                             43857.
 
 == df /
-/dev/disk1s5s1   325Gi    12Gi   137Gi     8%    459k  1.4G    0%   /
+/dev/disk1s5s1   325Gi    12Gi   135Gi     8%    459k  1.4G    0%   /
 
 == build log (last 30 lines)
