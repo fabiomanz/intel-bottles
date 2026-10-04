@@ -83,6 +83,8 @@ def runner_for(name: str) -> dict:
         "labels": profile["labels"],
         "timeout": profile["timeout"],
         "profile": profile_name,
+        # Built through a compiler cache that persists between runs; see ccache.txt.
+        "ccache": name in read_list(REPO / "ccache.txt"),
     }
 
 
@@ -124,6 +126,20 @@ def main() -> None:
             print(f"note: excluded from building: {', '.join(sorted(blocked))}", file=sys.stderr)
         missing = [m for m in missing if m not in blocked]
         deps = {k: v - blocked for k, v in deps.items() if k not in blocked}
+
+    # A formula built across several runs (ccache.txt) is scheduled, but its dependents
+    # wait until it is bottled. Otherwise each of them would start compiling it from
+    # scratch in its own job and hit the time limit the cache exists to get around.
+    resumable = set(read_list(REPO / "ccache.txt")) & set(missing)
+    waiting = {n for n, c in deps.items() if c & resumable}
+    if waiting:
+        print(
+            f"note: waiting for {', '.join(sorted(resumable))} to be bottled: "
+            f"{', '.join(sorted(waiting))}",
+            file=sys.stderr,
+        )
+        missing = [m for m in missing if m not in waiting]
+        deps = {k: v - waiting for k, v in deps.items() if k not in waiting}
 
     depth = levels(deps)
     waves: dict[int, list[str]] = {}

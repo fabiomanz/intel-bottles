@@ -20,6 +20,7 @@ ca-certificates
 cabal-install
 cairo
 capstone
+ccache
 certifi
 cffi
 cjson

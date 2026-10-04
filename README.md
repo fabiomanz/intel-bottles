@@ -64,16 +64,17 @@ via `HOMEBREW_CORE_GIT_REMOTE`. Unqualified `brew install node` then just works,
 | `scripts/sync_fork.sh` | Rebuilds the fork as upstream + our blocks; records holds in `.intel-bottles-holds` |
 | `scripts/release_holds.sh` | In CI, swaps held formulae for upstream's version so the new one gets built |
 | `scripts/settle_holds.py` | At publish, keeps the swaps that got a bottle and reverts the rest |
-| `ci-patches/` | Build-only tweaks to a formula on the runner (`llvm`: no PGO) |
+| `ci-patches/` | Build-only tweaks to a formula on the runner (`llvm`: no PGO; `qtwebengine`: ccache) |
+| `ccache.txt` | Formulae built across several runs through a saved compiler cache |
 | `manifest/` | `*.bottle.json` — the source of truth for re-applying blocks |
 
 ## Runner assignment
 
 `runners.json` decides which machine builds which formula. Everything uses the free
 GitHub-hosted `macos-26-intel` unless listed under `assign`. Nothing is assigned today: no
-self-hosted runner is registered, so `qtwebengine`, which cannot finish inside GitHub's
-hard 6-hour job ceiling, is in `exclude.txt` instead. To build it on your own machine,
-assign it and remove it from `exclude.txt`:
+self-hosted runner is registered, and the formulae that cannot finish inside GitHub's hard
+6-hour job ceiling are either trimmed (`ci-patches/`) or built across runs (`ccache.txt`).
+Should one still not fit, it can go to your own machine instead:
 
 ```json
 "assign": { "qtwebengine": "selfhosted" }
@@ -124,13 +125,14 @@ jq .poured_from_bottle /usr/local/Cellar/tmux/*/INSTALL_RECEIPT.json
 
 ## Known limits
 
-- **`qtwebengine` does not fit in a GitHub job.** Measured, not predicted: it ran **5h50m**
-  before hitting `timeout-minutes: 350`, and GitHub's hard job ceiling is 6 hours, so there
-  was no headroom to give it. Disk was never the problem (~160 GB free throughout) — it is
-  purely CPU time on 4 cores, and a single Chromium build cannot be split across jobs. It is
-  pinned to stage 1 with `allow_failure: true` so it cannot take the run down. `qt`, `pyside`
-  and `qtwebview` depend on it and stay unbottled with it. The only real options are a larger
-  runner (more cores; billed even on public repos) or a self-hosted Intel runner.
+- **`qtwebengine` takes several runs.** It is one Chromium build that ran 5h50m on 4 cores
+  and was cut off, with no optional step to drop. So it is built across runs (`ccache.txt`):
+  `ci-patches/qtwebengine.sed` routes every compile through ccache (Qt passes
+  `CMAKE_CXX_COMPILER_LAUNCHER` to Chromium's GN as `cc_wrapper`), the build step stops at
+  300 minutes, and the cache is saved to the Actions cache either way, so each daily run
+  continues where the last one stopped. A Qt version bump invalidates part of the cache and
+  takes another run or two. `qtwebview` waits until it is bottled; `qt` and `pyside` also
+  need `qtquick3d`/`qt3d`, which stay excluded (see `exclude.txt`).
 - **`llvm` is bottled without PGO.** When bottling, the formula bootstraps itself with
   profile-guided optimization and ThinLTO -- four LLVM builds -- and was cut off at 350
   minutes twice. `ci-patches/llvm.sed` turns that off on the build runner, giving one

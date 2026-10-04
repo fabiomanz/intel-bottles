@@ -42,6 +42,9 @@ env:
   # The tap gets uncommitted upstream formula files (release_holds.sh); an auto-update
   # would stash them away mid-job.
   HOMEBREW_NO_AUTO_UPDATE: 1
+  # The macOS default, pinned because the compiler-cache steps save and restore
+  # $HOMEBREW_CACHE/ccache (see ccache.txt).
+  HOMEBREW_CACHE: /Users/runner/Library/Caches/Homebrew
   # 5 made every stalled fetch take longer; the mirrors either answer or they do not.
   HOMEBREW_CURL_RETRIES: 2
 
@@ -94,13 +97,41 @@ jobs:
             "$RUNNER_TEMP/build.log" > "$RUNNER_TEMP/diag.out" 2>&1 &
           echo "heartbeat started; snapshots go to diag/${GITHUB_RUN_ID}-${{ matrix.entry.formula }}.txt"
 
+      # Formulae in ccache.txt build across several runs: ci-patches/<name>.sed routes
+      # their compiler through ccache, the build step stops before the job limit, and the
+      # cache is saved either way so the next run only compiles what is still missing.
+      - name: Install ccache
+        if: matrix.entry.ccache
+        run: brew install ccache
+
+      - name: Restore compiler cache
+        if: matrix.entry.ccache
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ env.HOMEBREW_CACHE }}/ccache
+          key: ccache-${{ matrix.entry.formula }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: ccache-${{ matrix.entry.formula }}-
+
       - name: Build and bottle
+        # 300 minutes for cached builds, leaving time to save the cache within the job.
+        timeout-minutes: ${{ matrix.entry.ccache && 300 || matrix.entry.timeout }}
         env:
           BOTTLE_OUT_DIR: ${{ github.workspace }}/bottles
         # Also written to a file, for the diagnostics heartbeat to tail.
         run: |
           set -o pipefail
           ./scripts/build_root.sh "${{ matrix.entry.formula }}" 2>&1 | tee "$RUNNER_TEMP/build.log"
+
+      - name: Compiler cache statistics
+        if: always() && matrix.entry.ccache
+        run: CCACHE_DIR="$HOMEBREW_CACHE/ccache" ccache --show-stats || true
+
+      - name: Save compiler cache
+        if: always() && matrix.entry.ccache
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ env.HOMEBREW_CACHE }}/ccache
+          key: ccache-${{ matrix.entry.formula }}-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Upload bottles
         if: always()

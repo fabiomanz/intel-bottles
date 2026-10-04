@@ -1,10 +1,8 @@
 # Formulae never to build, and any root whose chain needs one of them.
 #
-# qtwebengine cannot finish inside GitHub's 6-hour job ceiling (measured: cut off at
-# 5h50m). Excluding it also skips qt, pyside and qtwebview, which depend on it -- without
-# this they would each spend ~6 hours rebuilding it before failing the same way.
-
-qtwebengine
+# qtwebengine is NOT excluded: it cannot finish inside GitHub's 6-hour job ceiling (cut
+# off at 5h50m), so it is built across several runs through a compiler cache instead --
+# see ccache.txt. Its dependents (qtwebview, ...) wait until it is bottled.
 
 # qtquick3d fails to configure on Intel: the formula deletes Qt's bundled assimp and
 # forces -DFEATURE_system_assimp=ON, but Homebrew's assimp is 6.0.5 and Qt 6.11's probe

@@ -1,0 +1,9 @@
+# Formulae built across several runs through a persistent compiler cache.
+#
+# For these, the build step stops after 300 minutes -- before GitHub's 6-hour job
+# limit -- and the job saves the ccache directory to the Actions cache either way. The
+# next run restores it, so only what is still missing gets compiled; the build finishes
+# after a few runs. Each needs a ci-patches/<name>.sed that routes its compiler through
+# ccache. Formulae that depend on one are held back until it is bottled.
+
+qtwebengine
