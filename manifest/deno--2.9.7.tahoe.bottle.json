@@ -1,0 +1,512 @@
+{
+  "deno": {
+    "formula": {
+      "name": "deno",
+      "pkg_version": "2.9.7",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/deno.rb",
+      "tap_git_path": "Formula/d/deno.rb",
+      "tap_git_revision": "e21a79262d5bdbc28f0fa7dd6555ef3e558d0c7e",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Secure runtime for JavaScript and TypeScript",
+      "license": "MIT",
+      "homepage": "https://deno.com/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-04T17:20:49Z",
+      "tags": {
+        "tahoe": {
+          "filename": "deno-2.9.7.tahoe.bottle.tar.gz",
+          "local_filename": "deno--2.9.7.tahoe.bottle.tar.gz",
+          "sha256": "1f9ae01d979096504561a5322510bfa737e04e521f16b7829f49bd68a4d407bb",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/deno"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789574324,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "jpeg-turbo",
+                "version": "3.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "giflib",
+                "version": "6.1.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.1.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpng",
+                "version": "1.6.59",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.59",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "webp",
+                "version": "1.6.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtiff",
+                "version": "4.7.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.7.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "little-cms2",
+                "version": "2.19.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.19.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.53.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.53.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+              "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+              "SPDXRef-Package-SPDXRef-libpng-1.6.59",
+              "SPDXRef-Package-SPDXRef-webp-1.6.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+              "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+              "SPDXRef-Package-SPDXRef-readline-8.3.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "name": "jpeg-turbo",
+                "versionInfo": "3.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3c7d19c475389bbb48a07f78f52473c8f49f458bd45b4453457cfec9c01601ed"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+                "name": "giflib",
+                "versionInfo": "6.1.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/giflib-6.1.3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "974c6265c287445fb2ffa5e4ebce9e476a02eb7e29dee6da3bea1e8fc6bd7209"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/giflib@6.1.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.59",
+                "name": "libpng",
+                "versionInfo": "1.6.59",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.59.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "983550222f14d7db234a39119dc66c0de74d9b79b74f83ecf4b81a6b694d40de"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpng@1.6.59",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-webp-1.6.0",
+                "name": "webp",
+                "versionInfo": "1.6.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/webp-1.6.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "28483ee31b5610606f46e0ee4706bbe9b19a4981bdfc736e9322ed6248ca79fc"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/webp@1.6.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xz-5.8.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54a648c4197b0299ee2d37527ca6a23447abe65342f8f8c0ed68e154f4593b0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.10.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "name": "libtiff",
+                "versionInfo": "4.7.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libtiff",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libtiff-4.7.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f1abd05915f49c4d07b789fdfab78ad83e78e6a4a61ef7c0ebeab45657b2e51c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libtiff@4.7.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+                "name": "little-cms2",
+                "versionInfo": "2.19.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/little-cms2-2.19.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e1890bcfd1f63598fa537a40b75379b1c930bdbd86164a2ef02a71858cd85185"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/little-cms2@2.19.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/readline-8.3.6.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8e2d9a12817040fff1164139282e0d2f7ad2aaf388db15db8eb36a8fb00dd74a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "name": "sqlite",
+                "versionInfo": "3.53.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-deno"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-deno"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.59",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-deno"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-webp-1.6.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-deno"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-deno"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-deno"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-deno"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-deno"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-deno"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-deno"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-deno"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-deno-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/deno",
+            "bin/dx"
+          ],
+          "all_files": [
+            ".brew/deno.rb",
+            ".crates.toml",
+            ".crates2.json",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.md",
+            "README.md",
+            "bin/deno",
+            "bin/dx",
+            "etc/bash_completion.d/deno",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/deno.fish",
+            "share/zsh/site-functions/_deno"
+          ],
+          "installed_size": 142664576
+        }
+      }
+    }
+  }
+}

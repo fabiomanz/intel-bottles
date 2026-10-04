@@ -1,32 +1,32 @@
 {
-  "dartaotruntime": {
+  "uv": {
     "formula": {
-      "name": "dartaotruntime",
-      "pkg_version": "3.13.4",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dartaotruntime.rb",
-      "tap_git_path": "Formula/d/dartaotruntime.rb",
-      "tap_git_revision": "f53e41b275b6070e94c2d7a81e645c1c05fb6bee",
+      "name": "uv",
+      "pkg_version": "0.12.23",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/u/uv.rb",
+      "tap_git_path": "Formula/u/uv.rb",
+      "tap_git_revision": "e21a79262d5bdbc28f0fa7dd6555ef3e558d0c7e",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
-      "desc": "Command-line tool for running AOT-compiled snapshots of Dart code",
-      "license": "BSD-3-Clause",
-      "homepage": "https://dart.dev/tools/dartaotruntime"
+      "desc": "Extremely fast Python package installer and resolver, written in Rust",
+      "license": "Apache-2.0 OR MIT",
+      "homepage": "https://docs.astral.sh/uv/"
     },
     "bottle": {
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-01T07:19:07Z",
+      "date": "2026-10-04T17:05:59Z",
       "tags": {
         "tahoe": {
-          "filename": "dartaotruntime-3.13.4.tahoe.bottle.tar.gz",
-          "local_filename": "dartaotruntime--3.13.4.tahoe.bottle.tar.gz",
-          "sha256": "29238da43614c0e8da675ae0c5cea68fa53d62b0f769efe530fcd9a3fbe106d8",
+          "filename": "uv-0.12.23.tahoe.bottle.tar.gz",
+          "local_filename": "uv--0.12.23.tahoe.bottle.tar.gz",
+          "sha256": "1b3fe20bf3f6e064e7b96fd8fd924d752d9702d23f0afa6f62ffc8961eb84312",
           "tab": {
             "homebrew_version": "7.0.7",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1790838550,
+            "source_modified_time": 1791046361,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -62,24 +62,34 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-dartaotruntime-src"
+                "relatedSpdxElement": "SPDXRef-Archive-uv-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/dartaotruntime"
+            "bin/uvx",
+            "bin/uv"
           ],
           "all_files": [
-            ".brew/dartaotruntime.rb",
-            "AUTHORS",
+            ".brew/uv.rb",
+            ".crates.toml",
+            ".crates2.json",
             "CHANGELOG.md",
             "INSTALL_RECEIPT.json",
-            "LICENSE",
+            "LICENSE-APACHE",
+            "LICENSE-MIT",
             "README.md",
-            "bin/dartaotruntime",
-            "sbom.spdx.json"
+            "bin/uv",
+            "bin/uvx",
+            "etc/bash_completion.d/uv",
+            "etc/bash_completion.d/uvx",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/uv.fish",
+            "share/fish/vendor_completions.d/uvx.fish",
+            "share/zsh/site-functions/_uv",
+            "share/zsh/site-functions/_uvx"
           ],
-          "installed_size": 5540394
+          "installed_size": 50319667
         }
       }
     }

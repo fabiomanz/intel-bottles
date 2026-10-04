@@ -2,10 +2,10 @@
   "lld": {
     "formula": {
       "name": "lld",
-      "pkg_version": "23.1.0",
+      "pkg_version": "23.1.2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/l/lld.rb",
       "tap_git_path": "Formula/l/lld.rb",
-      "tap_git_revision": "42d2ea3c15816d980168382014ad117783d7e1ba",
+      "tap_git_revision": "e21a79262d5bdbc28f0fa7dd6555ef3e558d0c7e",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "LLVM Project Linker",
       "license": "Apache-2.0 WITH LLVM-exception",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-05T05:17:34Z",
+      "date": "2026-10-04T16:32:02Z",
       "tags": {
         "tahoe": {
-          "filename": "lld-23.1.0.tahoe.bottle.tar.gz",
-          "local_filename": "lld--23.1.0.tahoe.bottle.tar.gz",
-          "sha256": "40ae94ee653f2c77e0c27a72acc314da502c9321b44a113c9901334e671cd084",
+          "filename": "lld-23.1.2.tahoe.bottle.tar.gz",
+          "local_filename": "lld--23.1.2.tahoe.bottle.tar.gz",
+          "sha256": "75ea4580359fae650ed4d58905c5743118177d5ea1a21c8f6fc897583c2d4fab",
           "tab": {
-            "homebrew_version": "6.0.21",
+            "homebrew_version": "7.0.7",
             "changed_files": [],
             "linkage_files": [
               "bin/lld",
@@ -34,7 +34,7 @@
               "lib/liblldWasm.23.1.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1787685321,
+            "source_modified_time": 1789873207,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -47,10 +47,10 @@
               },
               {
                 "full_name": "xz",
-                "version": "5.8.3",
+                "version": "5.8.4",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "5.8.3",
+                "pkg_version": "5.8.4",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -74,10 +74,10 @@
               },
               {
                 "full_name": "llvm",
-                "version": "23.1.0",
+                "version": "23.1.2",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "23.1.0",
+                "pkg_version": "23.1.2",
                 "declared_directly": true,
                 "compatibility_version": 2
               }
@@ -96,8 +96,9 @@
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-xz-5.8.3",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
               "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-llvm-23.1.2",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -125,24 +126,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
                 "name": "xz",
-                "versionInfo": "5.8.3",
+                "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "0BSD AND GPL-2.0-or-later",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/xz/blobs/sha256:df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xz-5.8.4.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f"
+                    "checksumValue": "54a648c4197b0299ee2d37527ca6a23447abe65342f8f8c0ed68e154f4593b0f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/xz@5.8.3",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
                     "referenceType": "purl"
                   }
                 ]
@@ -171,6 +172,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-llvm-23.1.2",
+                "name": "llvm",
+                "versionInfo": "23.1.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 WITH LLVM-exception",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/llvm-23.1.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c96a3ce337f7c6125b069ad01c103094e9689cbcdf54e8d8a6f5869babc4ac69"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/llvm@23.1.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
                 "versionInfo": "26.6",
@@ -190,12 +214,17 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-lld"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-lld"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-lld"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-llvm-23.1.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-lld"
               },
@@ -259,7 +288,7 @@
             "sbom.spdx.json",
             "share/man/man1/ld.lld.1.gz"
           ],
-          "installed_size": 6124220
+          "installed_size": 6124219
         }
       }
     }

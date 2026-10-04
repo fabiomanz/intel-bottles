@@ -2,10 +2,10 @@
   "dart-sdk": {
     "formula": {
       "name": "dart-sdk",
-      "pkg_version": "3.13.4",
+      "pkg_version": "3.13.5",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dart-sdk.rb",
       "tap_git_path": "Formula/d/dart-sdk.rb",
-      "tap_git_revision": "f53e41b275b6070e94c2d7a81e645c1c05fb6bee",
+      "tap_git_revision": "e21a79262d5bdbc28f0fa7dd6555ef3e558d0c7e",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Dart Language SDK, including the VM, dart2js, core libraries, and more",
       "license": "BSD-3-Clause",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-01T07:09:05Z",
+      "date": "2026-10-04T17:44:19Z",
       "tags": {
         "tahoe": {
-          "filename": "dart-sdk-3.13.4.tahoe.bottle.tar.gz",
-          "local_filename": "dart-sdk--3.13.4.tahoe.bottle.tar.gz",
-          "sha256": "d298ad702cbbfd720af5a035d56de4e1ce8ada8553ba06b97ad4345d305feee3",
+          "filename": "dart-sdk-3.13.5.tahoe.bottle.tar.gz",
+          "local_filename": "dart-sdk--3.13.5.tahoe.bottle.tar.gz",
+          "sha256": "d70c32659002fcc0411e2de0d75e7083599f2bea7133b46062760d2595164283",
           "tab": {
             "homebrew_version": "7.0.7",
             "changed_files": [],
@@ -38,7 +38,7 @@
               "libexec/bin/snapshots/kernel_worker_aot.dart.snapshot"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1789459275,
+            "source_modified_time": 1790668852,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -1135,7 +1135,7 @@
             "libexec/version",
             "sbom.spdx.json"
           ],
-          "installed_size": 638734237
+          "installed_size": 638721218
         }
       }
     }
