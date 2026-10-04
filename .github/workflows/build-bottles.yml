@@ -15,6 +15,10 @@ on:
         description: Space-separated formulae to build instead of the computed plan
         required: false
         type: string
+      diag:
+        description: Space-separated formulae whose build pushes health snapshots to the diag branch
+        required: false
+        type: string
   schedule:
     # Daily, ~74 min after sync-fork, so anything upstream bumped is bottled within a day.
     # The plan job is cheap and schedules nothing when nothing has changed.
@@ -91,6 +95,7 @@ jobs:
       formulae: ${{ needs.plan.outputs.wave0 }}
       stage: wave0
       allow_failure: true
+      diag: ${{ inputs.diag }}
     secrets:
       FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
 
@@ -105,6 +110,7 @@ jobs:
       formulae: ${{ needs.plan.outputs.wave1 }}
       stage: wave1
       allow_failure: true
+      diag: ${{ inputs.diag }}
     secrets:
       FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
 
@@ -117,6 +123,7 @@ jobs:
       formulae: ${{ needs.plan.outputs.wave2 }}
       stage: wave2
       allow_failure: true
+      diag: ${{ inputs.diag }}
     secrets:
       FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
 
@@ -129,6 +136,7 @@ jobs:
       formulae: ${{ needs.plan.outputs.wave3 }}
       stage: wave3
       allow_failure: true
+      diag: ${{ inputs.diag }}
     secrets:
       FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
 
@@ -141,5 +149,6 @@ jobs:
       formulae: ${{ needs.plan.outputs.wave4 }}
       stage: wave4
       allow_failure: true
+      diag: ${{ inputs.diag }}
     secrets:
       FORK_TOKEN: ${{ secrets.FORK_TOKEN }}

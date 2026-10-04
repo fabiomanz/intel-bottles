@@ -19,6 +19,10 @@ on:
         description: Let a failing formula pass the stage (used for the heavy roots)
         type: boolean
         default: false
+      diag:
+        description: Space-separated formulae whose build pushes health snapshots to the diag branch
+        type: string
+        default: ""
     secrets:
       FORK_TOKEN:
         description: PAT with contents:write on the homebrew-core fork
@@ -79,10 +83,24 @@ jobs:
       - name: Build upstream's version of held formulae
         run: ./scripts/release_holds.sh
 
+      - name: Start diagnostics heartbeat
+        # Only for formulae named in the `diag` input. A runner that "loses communication"
+        # takes its whole log with it; this keeps snapshots on the diag branch instead.
+        if: contains(format(' {0} ', inputs.diag), format(' {0} ', matrix.entry.formula))
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          nohup ./scripts/diag_heartbeat.sh "${{ matrix.entry.formula }}" \
+            "$RUNNER_TEMP/build.log" > "$RUNNER_TEMP/diag.out" 2>&1 &
+          echo "heartbeat started; snapshots go to diag/${GITHUB_RUN_ID}-${{ matrix.entry.formula }}.txt"
+
       - name: Build and bottle
         env:
           BOTTLE_OUT_DIR: ${{ github.workspace }}/bottles
-        run: ./scripts/build_root.sh "${{ matrix.entry.formula }}"
+        # Also written to a file, for the diagnostics heartbeat to tail.
+        run: |
+          set -o pipefail
+          ./scripts/build_root.sh "${{ matrix.entry.formula }}" 2>&1 | tee "$RUNNER_TEMP/build.log"
 
       - name: Upload bottles
         if: always()

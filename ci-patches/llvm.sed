@@ -10,6 +10,12 @@
 # clang and libLLVM are just not profile-optimized, so they run somewhat slower.
 s/^([[:space:]]*pgo_build = ).*/\1false # intel-bottles: PGO bootstrap exceeds GitHub's 6-hour job limit/
 
+# Without PGO, two runs in a row lost their runner ~65-75 minutes into the build ("lost
+# communication", GitHub's sign of a starved machine; 14 GB RAM, 4 compile jobs). Large
+# links are LLVM's biggest memory spikes, so allow only one at a time. Ninja job pool;
+# costs little time. Appended on an existing line because the args are a %W[] list.
+s/^([[:space:]]*-DLLVM_POLLY_LINK_INTO_TOOLS=ON)$/\1 -DLLVM_PARALLEL_LINK_JOBS=1/
+
 # One of llvm's patches is a GitHub compare URL, which GitHub renders on the fly. Around
 # 2026-10-02 it started abbreviating the `index` hashes to 15 characters instead of 13
 # (and inconsistently between servers), so the download no longer matches the sha256
