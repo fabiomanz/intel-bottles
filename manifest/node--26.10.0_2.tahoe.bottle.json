@@ -2,10 +2,10 @@
   "node": {
     "formula": {
       "name": "node",
-      "pkg_version": "26.10.0_1",
+      "pkg_version": "26.10.0_2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/n/node.rb",
       "tap_git_path": "Formula/n/node.rb",
-      "tap_git_revision": "e21a79262d5bdbc28f0fa7dd6555ef3e558d0c7e",
+      "tap_git_revision": "54225afdb462262ca4b5b1e0f046fab85b3b3545",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Open-source, cross-platform JavaScript runtime environment",
       "license": "MIT",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-04T19:32:26Z",
+      "date": "2026-10-05T16:34:45Z",
       "tags": {
         "tahoe": {
-          "filename": "node-26.10.0_1.tahoe.bottle.tar.gz",
-          "local_filename": "node--26.10.0_1.tahoe.bottle.tar.gz",
-          "sha256": "cf387445158997f4b7518bf32abc08da62d437ffe58ae3c1a33156ce02e6187b",
+          "filename": "node-26.10.0_2.tahoe.bottle.tar.gz",
+          "local_filename": "node--26.10.0_2.tahoe.bottle.tar.gz",
+          "sha256": "fda6d18edacb40a843f5a5c61e0e96cead948c07b71414d723df4de20a14973b",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.8",
             "changed_files": [
               "include/node/config.gypi"
             ],
@@ -180,12 +180,11 @@
               },
               {
                 "full_name": "simdjson",
-                "version": "4.6.11",
+                "version": "5.0.2",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.6.11",
-                "declared_directly": true,
-                "compatibility_version": 3
+                "pkg_version": "5.0.2",
+                "declared_directly": true
               },
               {
                 "full_name": "readline",
@@ -264,125 +263,125 @@
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/llhttp/include",
-              "offset": 24866671
+              "offset": 24843679
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/libuv/include",
-              "offset": 24866715
+              "offset": 24843723
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/abseil/include",
-              "offset": 24866759
+              "offset": 24843767
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/ada-url/include",
-              "offset": 24866803
+              "offset": 24843811
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/simdjson/include",
-              "offset": 24866847
+              "offset": 24843855
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/simdutf/include",
-              "offset": 24866891
+              "offset": 24843899
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/brotli/include",
-              "offset": 24866935
+              "offset": 24843943
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/c-ares/include",
-              "offset": 24866979
+              "offset": 24843987
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/hdrhistogram_c/include",
-              "offset": 24867023
+              "offset": 24844031
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/highway/include",
-              "offset": 24867075
+              "offset": 24844083
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/merve/include",
-              "offset": 24867119
+              "offset": 24844127
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/nbytes/include",
-              "offset": 24867163
+              "offset": 24844171
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/libnghttp2/include",
-              "offset": 24867207
+              "offset": 24844215
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/sqlite/include",
-              "offset": 24867259
+              "offset": 24844267
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/libffi/include",
-              "offset": 24867303
+              "offset": 24844311
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/uvwasi/include",
-              "offset": 24867347
+              "offset": 24844355
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/zstd/include",
-              "offset": 24867391
+              "offset": 24844399
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/openssl@3/include",
-              "offset": 24867435
+              "offset": 24844443
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/icu4c@78/include",
-              "offset": 24867479
+              "offset": 24844487
             },
             {
               "path": "lib/libnode.147.dylib",
-              "string": "/usr/local/Cellar/node/26.10.0_1",
-              "offset": 24845639
+              "string": "/usr/local/Cellar/node/26.10.0_2",
+              "offset": 24822647
             }
           ],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-simdutf-9.2.1_1",
-              "SPDXRef-Package-SPDXRef-ada-url-4.0.0",
-              "SPDXRef-Package-SPDXRef-hdrhistogram_c-0.12.0",
-              "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
-              "SPDXRef-Package-SPDXRef-libuv-1.53.0",
-              "SPDXRef-Package-SPDXRef-merve-1.2.2_3",
+              "SPDXRef-Package-SPDXRef-simdutf-9.2e.2.2e.1.5f.1",
+              "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0",
+              "SPDXRef-Package-SPDXRef-hdrhistogram.5f.c-0.2e.12.2e.0",
+              "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
+              "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
+              "SPDXRef-Package-SPDXRef-merve-1.2e.2.2e.2.5f.3",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
-              "SPDXRef-Package-SPDXRef-simdjson-4.6.11",
-              "SPDXRef-Package-SPDXRef-readline-8.3.6",
-              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.6.2e.5",
+              "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.2",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2.1_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2e.2.2e.1.5f.1",
                 "name": "simdutf",
                 "versionInfo": "9.2.1_1",
                 "filesAnalyzed": false,
@@ -405,7 +404,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ada-url-4.0.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0",
                 "name": "ada-url",
                 "versionInfo": "4.0.0",
                 "filesAnalyzed": false,
@@ -428,7 +427,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-hdrhistogram_c-0.12.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-hdrhistogram.5f.c-0.2e.12.2e.0",
                 "name": "hdrhistogram_c",
                 "versionInfo": "0.12.0",
                 "filesAnalyzed": false,
@@ -451,7 +450,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
                 "name": "libnghttp2",
                 "versionInfo": "1.70.0",
                 "filesAnalyzed": false,
@@ -474,7 +473,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libuv-1.53.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
                 "name": "libuv",
                 "versionInfo": "1.53.0",
                 "filesAnalyzed": false,
@@ -497,7 +496,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-merve-1.2.2_3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-merve-1.2e.2.2e.2.5f.3",
                 "name": "merve",
                 "versionInfo": "1.2.2_3",
                 "filesAnalyzed": false,
@@ -543,7 +542,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.6.2e.5",
                 "name": "openssl@3",
                 "versionInfo": "3.6.5",
                 "filesAnalyzed": false,
@@ -566,30 +565,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdjson-4.6.11",
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.2",
                 "name": "simdjson",
-                "versionInfo": "4.6.11",
+                "versionInfo": "5.0.2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/simdjson-4.6.11.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/simdjson-5.0.2.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "ee77781493b1907000f7436f04149b3f8b3a5fe1be4bbf9ac5e8d3f5e02df846"
+                    "checksumValue": "820b72657a85f068ecf16102037fda81d849bd623bd583868ca83b9f5166f397"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/simdjson@4.6.11",
+                    "referenceLocator": "pkg:brew/simdjson@5.0.2",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "name": "readline",
                 "versionInfo": "8.3.6",
                 "filesAnalyzed": false,
@@ -612,7 +611,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
                 "name": "sqlite",
                 "versionInfo": "3.53.4",
                 "filesAnalyzed": false,
@@ -635,7 +634,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -658,7 +657,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
@@ -681,7 +680,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -718,32 +717,32 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2.1_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2e.2.2e.1.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-node"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ada-url-4.0.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-node"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-hdrhistogram_c-0.12.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-hdrhistogram.5f.c-0.2e.12.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-node"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-node"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libuv-1.53.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-node"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-merve-1.2.2_3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-merve-1.2e.2.2e.2.5f.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-node"
               },
@@ -753,37 +752,37 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-node"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.6.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-node"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-4.6.11",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-node"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-node"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-node"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-node"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-node"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-node"
               },
@@ -2878,7 +2877,7 @@
             "share/doc/node/lldb_commands.py",
             "share/man/man1/node.1"
           ],
-          "installed_size": 75122623
+          "installed_size": 75092702
         }
       }
     }
