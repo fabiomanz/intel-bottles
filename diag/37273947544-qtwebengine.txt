@@ -1,4 +1,4 @@
-run 37273947544, qtwebengine, updated 2026-10-05T09:54:12Z
+run 37273947544, qtwebengine, updated 2026-10-05T09:57:13Z
 
 elapsed  mem_free  swap_used  load1  top_rss_mb top_process
     0m       88%      0.00M   5.47  339 mds_stores
@@ -63,30 +63,31 @@ elapsed  mem_free  swap_used  load1  top_rss_mb top_process
   178m       86%      0.00M   7.89  479 ninja
   182m       86%      0.00M   8.25  479 ninja
   185m       86%      0.00M   9.53  592 clang
+  188m       86%      0.00M   8.18  800 clang
 
 == top processes by memory (RSS MB)
-    593  clang
-    533  clang
+    801  clang
+    592  clang
     480  ninja
+    245  clang
     222  ruby
     137  ruby
     131  mds_stores
-    106  clang
      96  Spotlight
 
 == vm_stat
 Mach Virtual Memory Statistics: (page size of 4096 bytes)
-Pages free:                                   300746.
-Pages active:                                1363730.
-Pages inactive:                              1160055.
-Pages speculative:                            349695.
+Pages free:                                   308829.
+Pages active:                                1416162.
+Pages inactive:                              1216797.
+Pages speculative:                            237415.
 Pages throttled:                                   0.
-Pages wired down:                             494706.
-Pages purgeable:                                2366.
-"Translation faults":                     1006030345.
-Pages copy-on-write:                        81110357.
-Pages zero filled:                         506624301.
-Pages reactivated:                             52375.
+Pages wired down:                             489464.
+Pages purgeable:                                2083.
+"Translation faults":                     1016618999.
+Pages copy-on-write:                        82076030.
+Pages zero filled:                         512905117.
+Pages reactivated:                             52593.
 
 == df /
 /dev/disk1s5s1   325Gi    12Gi   126Gi     9%    459k  1.3G    0%   /
