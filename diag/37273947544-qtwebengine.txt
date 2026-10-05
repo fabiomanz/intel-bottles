@@ -1,4 +1,4 @@
-run 37273947544, qtwebengine, updated 2026-10-05T10:09:21Z
+run 37273947544, qtwebengine, updated 2026-10-05T10:12:23Z
 
 elapsed  mem_free  swap_used  load1  top_rss_mb top_process
     0m       88%      0.00M   5.47  339 mds_stores
@@ -68,30 +68,31 @@ elapsed  mem_free  swap_used  load1  top_rss_mb top_process
   194m       86%      0.00M  12.27  689 clang
   197m       86%      0.00M   8.73  480 ninja
   200m       86%      0.00M   8.51  521 clang
+  203m       86%      0.00M   8.96  1089 clang
 
 == top processes by memory (RSS MB)
-    522  clang
+   1090  clang
+    767  clang
     481  ninja
-    378  clang
-    296  clang
+    418  clang
     222  ruby
     137  ruby
     131  mds_stores
-     96  Spotlight
+     95  Spotlight
 
 == vm_stat
 Mach Virtual Memory Statistics: (page size of 4096 bytes)
-Pages free:                                   552979.
-Pages active:                                1282841.
-Pages inactive:                              1237118.
-Pages speculative:                            106827.
+Pages free:                                   384132.
+Pages active:                                1397594.
+Pages inactive:                              1396856.
+Pages speculative:                               869.
 Pages throttled:                                   0.
-Pages wired down:                             489340.
-Pages purgeable:                                 701.
-"Translation faults":                     1062532966.
-Pages copy-on-write:                        86065439.
-Pages zero filled:                         541829550.
-Pages reactivated:                             52730.
+Pages wired down:                             490006.
+Pages purgeable:                                 928.
+"Translation faults":                     1073483422.
+Pages copy-on-write:                        87080175.
+Pages zero filled:                         548635560.
+Pages reactivated:                             52835.
 
 == df /
 /dev/disk1s5s1   325Gi    12Gi   126Gi     9%    459k  1.3G    0%   /
