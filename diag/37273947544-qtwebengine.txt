@@ -1,4 +1,4 @@
-run 37273947544, qtwebengine, updated 2026-10-05T09:11:45Z
+run 37273947544, qtwebengine, updated 2026-10-05T09:14:47Z
 
 elapsed  mem_free  swap_used  load1  top_rss_mb top_process
     0m       88%      0.00M   5.47  339 mds_stores
@@ -49,33 +49,34 @@ elapsed  mem_free  swap_used  load1  top_rss_mb top_process
   136m       86%      0.00M   8.51  475 ninja
   139m       86%      0.00M   8.83  475 ninja
   142m       86%      0.00M   8.21  475 ninja
+  145m       86%      0.00M   8.38  476 ninja
 
 == top processes by memory (RSS MB)
-    475  ninja
-    356  clang
+    476  ninja
     222  ruby
     137  ruby
     131  mds_stores
+    115  clang
      94  Spotlight
      80  Runner.Worker
-     79  clang
+     72  softwareupdated
 
 == vm_stat
 Mach Virtual Memory Statistics: (page size of 4096 bytes)
-Pages free:                                   470404.
-Pages active:                                1176499.
-Pages inactive:                              1071280.
-Pages speculative:                            456815.
+Pages free:                                   516119.
+Pages active:                                1088286.
+Pages inactive:                              1084279.
+Pages speculative:                            487071.
 Pages throttled:                                   0.
-Pages wired down:                             493825.
-Pages purgeable:                               12174.
-"Translation faults":                      825164856.
-Pages copy-on-write:                        65257646.
-Pages zero filled:                         409915683.
-Pages reactivated:                             51459.
+Pages wired down:                             493377.
+Pages purgeable:                               12133.
+"Translation faults":                      838786691.
+Pages copy-on-write:                        66617245.
+Pages zero filled:                         416655892.
+Pages reactivated:                             51686.
 
 == df /
-/dev/disk1s5s1   325Gi    12Gi   127Gi     9%    459k  1.3G    0%   /
+/dev/disk1s5s1   325Gi    12Gi   126Gi     9%    459k  1.3G    0%   /
 
 == build log (last 30 lines)
 [34m==>[0m [1mPouring qtdeclarative-6.11.2.tahoe.bottle.tar.gz[0m
