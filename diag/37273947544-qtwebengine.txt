@@ -1,4 +1,4 @@
-run 37273947544, qtwebengine, updated 2026-10-05T07:49:52Z
+run 37273947544, qtwebengine, updated 2026-10-05T07:52:54Z
 
 elapsed  mem_free  swap_used  load1  top_rss_mb top_process
     0m       88%      0.00M   5.47  339 mds_stores
@@ -22,30 +22,31 @@ elapsed  mem_free  swap_used  load1  top_rss_mb top_process
    54m       86%      0.00M  10.18  468 ninja
    57m       86%      0.00M   8.19  469 ninja
    60m       86%      0.00M   7.95  469 ninja
+   63m       86%      0.00M   7.72  469 ninja
 
 == top processes by memory (RSS MB)
     469  ninja
     222  ruby
     137  ruby
     120  mds_stores
-     96  Spotlight
+     95  Spotlight
+     80  clang
      80  Runner.Worker
-     72  softwareupdated
-     69  Runner.Listener
+     78  clang
 
 == vm_stat
 Mach Virtual Memory Statistics: (page size of 4096 bytes)
-Pages free:                                   676636.
-Pages active:                                1061614.
-Pages inactive:                              1039207.
-Pages speculative:                            404486.
+Pages free:                                   640046.
+Pages active:                                1093090.
+Pages inactive:                              1042029.
+Pages speculative:                            406625.
 Pages throttled:                                   0.
-Pages wired down:                             486771.
-Pages purgeable:                               12140.
-"Translation faults":                      386075844.
-Pages copy-on-write:                        30179955.
-Pages zero filled:                         193378127.
-Pages reactivated:                             50292.
+Pages wired down:                             487156.
+Pages purgeable:                               12108.
+"Translation faults":                      402620454.
+Pages copy-on-write:                        31447672.
+Pages zero filled:                         200967708.
+Pages reactivated:                             50335.
 
 == df /
 /dev/disk1s5s1   325Gi    12Gi   128Gi     9%    459k  1.3G    0%   /
