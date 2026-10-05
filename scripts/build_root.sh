@@ -85,6 +85,14 @@ for formula in $TODO; do
     brew uninstall --ignore-dependencies --force "$formula"
   fi
 
+  # Formula-specific runner setup in ci-patches/<name>.setup.sh (tools the build needs that
+  # the runner image lacks). A failing setup stops the build.
+  ci_setup="$SCRIPT_DIR/../ci-patches/$formula.setup.sh"
+  if [ -f "$ci_setup" ]; then
+    echo "    running ci-patches/$formula.setup.sh"
+    bash "$ci_setup"
+  fi
+
   # Formula-specific build adjustments in ci-patches/<name>.sed, applied to this runner's
   # copy of the formula only (the publish job never sees them). A patch that no longer
   # changes anything means upstream rewrote the formula -- stop rather than silently

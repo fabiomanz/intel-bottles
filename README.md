@@ -64,7 +64,7 @@ via `HOMEBREW_CORE_GIT_REMOTE`. Unqualified `brew install node` then just works,
 | `scripts/sync_fork.sh` | Rebuilds the fork as upstream + our blocks; records holds in `.intel-bottles-holds` |
 | `scripts/release_holds.sh` | In CI, swaps held formulae for upstream's version so the new one gets built |
 | `scripts/settle_holds.py` | At publish, keeps the swaps that got a bottle and reverts the rest |
-| `ci-patches/` | Build-only tweaks to a formula on the runner (`llvm`: no PGO; `qtwebengine`: ccache) |
+| `ci-patches/` | Build-only tweaks on the runner: `<name>.sed` edits the formula (`llvm`: no PGO; `qtwebengine`: ccache), `<name>.setup.sh` installs what the image lacks (`qtwebengine`: Metal toolchain) |
 | `ccache.txt` | Formulae built across several runs through a saved compiler cache |
 | `manifest/` | `*.bottle.json` — the source of truth for re-applying blocks |
 
