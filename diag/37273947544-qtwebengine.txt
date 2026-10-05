@@ -1,52 +1,39 @@
-run 37273947544, qtwebengine, updated 2026-10-05T06:55:15Z
+run 37273947544, qtwebengine, updated 2026-10-05T06:58:17Z
 
 elapsed  mem_free  swap_used  load1  top_rss_mb top_process
     0m       88%      0.00M   5.47  339 mds_stores
     3m       86%      0.00M   8.89  500 mds_stores
     6m       86%      0.00M   3.70  359 mds_stores
+    9m       86%      0.00M   1.78  222 ruby
 
 == top processes by memory (RSS MB)
-    359  mds_stores
+    222  ruby
     137  ruby
+    133  mds_stores
      97  Spotlight
      80  Runner.Worker
      72  softwareupdated
-     67  Runner.Listener
+     63  Runner.Listener
      58  WindowServer
-     56  mds
 
 == vm_stat
 Mach Virtual Memory Statistics: (page size of 4096 bytes)
-Pages free:                                   565438.
-Pages active:                                 908754.
-Pages inactive:                              1088363.
-Pages speculative:                            621678.
+Pages free:                                  1538586.
+Pages active:                                 816487.
+Pages inactive:                               794914.
+Pages speculative:                             42748.
 Pages throttled:                                   0.
-Pages wired down:                             484572.
-Pages purgeable:                               13881.
-"Translation faults":                       67796616.
-Pages copy-on-write:                         4697751.
-Pages zero filled:                          42006281.
-Pages reactivated:                             37774.
+Pages wired down:                             476143.
+Pages purgeable:                               13929.
+"Translation faults":                       72341907.
+Pages copy-on-write:                         5549102.
+Pages zero filled:                          43135512.
+Pages reactivated:                             38104.
 
 == df /
-/dev/disk1s5s1   325Gi    12Gi   132Gi     9%    459k  1.4G    0%   /
+/dev/disk1s5s1   325Gi    12Gi   130Gi     9%    459k  1.4G    0%   /
 
 == build log (last 30 lines)
-[34m==>[0m [1mPouring harfbuzz-14.5.1.tahoe.bottle.tar.gz[0m
-🍺  /usr/local/Cellar/harfbuzz/14.5.1: 96 files, 14.8MB
-[32m==>[0m [1mInstalling qtwebengine dependency: [32mlibb2[39m[0m
-[34m==>[0m [1mPouring libb2--0.98.1.sonoma.bottle.tar.gz[0m
-🍺  /usr/local/Cellar/libb2/0.98.1: 8 files, 282.9KB
-[32m==>[0m [1mInstalling qtwebengine dependency: [32mmd4c[39m[0m
-[34m==>[0m [1mPouring md4c-0.6.0.tahoe.bottle.tar.gz[0m
-🍺  /usr/local/Cellar/md4c/0.6.0: 20 files, 246.4KB
-[32m==>[0m [1mInstalling qtwebengine dependency: [32mqtbase[39m[0m
-[34m==>[0m [1mPouring qtbase-6.11.2.tahoe.bottle.tar.gz[0m
-🍺  /usr/local/Cellar/qtbase/6.11.2: 4,126 files, 60.7MB
-[32m==>[0m [1mInstalling qtwebengine dependency: [32mqtsvg[39m[0m
-[34m==>[0m [1mPouring qtsvg-6.11.2.tahoe.bottle.tar.gz[0m
-🍺  /usr/local/Cellar/qtsvg/6.11.2: 112 files, 1MB
 [32m==>[0m [1mInstalling qtwebengine dependency: [32mqtdeclarative[39m[0m
 [34m==>[0m [1mPouring qtdeclarative-6.11.2.tahoe.bottle.tar.gz[0m
 🍺  /usr/local/Cellar/qtdeclarative/6.11.2: 5,377 files, 149.3MB
@@ -63,3 +50,17 @@ Pages reactivated:                             37774.
 [34m==>[0m [1mPouring qtwebchannel-6.11.2.tahoe.bottle.tar.gz[0m
 🍺  /usr/local/Cellar/qtwebchannel/6.11.2: 98 files, 601.6KB
 [32m==>[0m [1mInstalling [32mqtwebengine[39m[0m
+[34m==>[0m [1mPatching[0m
+[34m==>[0m [1mApplying 6c0a651f9cf91d07c87be8feba854a38a311aba6.patch[0m
+patching file 'sandbox/mac/seatbelt.cc'
+patching file 'sandbox/mac/seatbelt.h'
+[34m==>[0m [1m/usr/local/opt/python@3.14/bin/python3.14 -m venv --system-site-packages --w[0m
+[34m==>[0m [1mPatching html5lib[0m
+[34m==>[0m [1mApplying 379f9476c2a5ee370cd7ec856ee9092cace88499.patch[0m
+patching file setup.py
+[34m==>[0m [1mApplying 1dbc19cd6db72cb919885827bc4883423e0cb647.patch[0m
+patching file setup.py
+[34m==>[0m [1m/usr/local/opt/python@3.14/bin/python3.14 -m pip --python=/private/tmp/s-3Rf[0m
+[34m==>[0m [1m/usr/local/opt/python@3.14/bin/python3.14 -m pip --python=/private/tmp/s-3Rf[0m
+[34m==>[0m [1m/usr/local/opt/python@3.14/bin/python3.14 -m pip --python=/private/tmp/s-3Rf[0m
+[34m==>[0m [1mcmake -S . -B build -G Ninja -DCMAKE_STAGING_PREFIX=/usr/local/Cellar/qtwebe[0m
