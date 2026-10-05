@@ -133,6 +133,17 @@ jobs:
           path: ${{ env.HOMEBREW_CACHE }}/ccache
           key: ccache-${{ matrix.entry.formula }}-${{ github.run_id }}-${{ github.run_attempt }}
 
+      - name: Upload Homebrew build logs
+        # The step log only shows brew's summary lines; configure and compiler output
+        # (why a feature was skipped, which file failed) is only in these.
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: brewlogs-${{ inputs.stage }}-${{ matrix.entry.formula }}
+          path: ~/Library/Logs/Homebrew/
+          if-no-files-found: ignore
+          retention-days: 7
+
       - name: Upload bottles
         if: always()
         uses: actions/upload-artifact@v4

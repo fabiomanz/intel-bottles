@@ -4,6 +4,8 @@
 # limit -- and the job saves the ccache directory to the Actions cache either way. The
 # next run restores it, so only what is still missing gets compiled; the build finishes
 # after a few runs. Each needs a ci-patches/<name>.sed that routes its compiler through
-# ccache. Formulae that depend on one are held back until it is bottled.
+# ccache. Formulae that depend on one are held back until it is bottled. Each must pass
+# `brew test` before it is bottled (build_root.sh), since a build that silently drops a
+# component looks just like a finished one.
 
 qtwebengine

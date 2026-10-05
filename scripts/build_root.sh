@@ -152,6 +152,19 @@ for formula in $TODO; do
     brew install --build-bottle --display-times "$formula"
   fi
 
+  # Formulae built through ci-patches and a compiler cache (ccache.txt) must pass the
+  # formula's own test before they are bottled. On 2026-10-04 qtwebengine "built" in 26
+  # minutes: Qt's configure decided WebEngine was not buildable, silently built only
+  # QtPdf, and a 3.4 MB bottle without QtWebEngineCore was published. Its test compiles
+  # against Qt6::WebEngineWidgets and would have failed.
+  if grep -qx "$formula" "$SCRIPT_DIR/../ccache.txt" 2>/dev/null; then
+    echo "    running brew test $formula before bottling"
+    if ! brew test "$formula"; then
+      echo "    $formula failed its test; not bottling it" >&2
+      exit 1
+    fi
+  fi
+
   # Retried for the same reason: after a build that may have taken hours, a network
   # failure while bottling must not decide the job.
   for attempt in 1 2 3; do
