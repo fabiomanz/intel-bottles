@@ -1,4 +1,4 @@
-run 37273947544, qtwebengine, updated 2026-10-05T07:04:22Z
+run 37273947544, qtwebengine, updated 2026-10-05T07:07:24Z
 
 elapsed  mem_free  swap_used  load1  top_rss_mb top_process
     0m       88%      0.00M   5.47  339 mds_stores
@@ -7,30 +7,31 @@ elapsed  mem_free  swap_used  load1  top_rss_mb top_process
     9m       86%      0.00M   1.78  222 ruby
    12m       86%      0.00M   5.10  222 ruby
    15m       86%      0.00M  13.32  466 ninja
+   18m       86%      0.00M   9.89  466 ninja
 
 == top processes by memory (RSS MB)
     466  ninja
     222  ruby
-    173  node
     143  mds_stores
     137  ruby
      96  Spotlight
      80  Runner.Worker
      72  softwareupdated
+     64  Runner.Listener
 
 == vm_stat
 Mach Virtual Memory Statistics: (page size of 4096 bytes)
-Pages free:                                   601544.
-Pages active:                                1075988.
-Pages inactive:                              1059094.
-Pages speculative:                            451639.
+Pages free:                                   635944.
+Pages active:                                1027328.
+Pages inactive:                              1067344.
+Pages speculative:                            458169.
 Pages throttled:                                   0.
-Pages wired down:                             480472.
-Pages purgeable:                               13932.
-"Translation faults":                       99588667.
-Pages copy-on-write:                         8325399.
-Pages zero filled:                          55835725.
-Pages reactivated:                             38406.
+Pages wired down:                             479997.
+Pages purgeable:                               14033.
+"Translation faults":                      115263123.
+Pages copy-on-write:                         9623819.
+Pages zero filled:                          64209788.
+Pages reactivated:                             39110.
 
 == df /
 /dev/disk1s5s1   325Gi    12Gi   128Gi     9%    459k  1.3G    0%   /
