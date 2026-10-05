@@ -1,4 +1,4 @@
-run 37273947544, qtwebengine, updated 2026-10-05T08:26:15Z
+run 37273947544, qtwebengine, updated 2026-10-05T08:29:17Z
 
 elapsed  mem_free  swap_used  load1  top_rss_mb top_process
     0m       88%      0.00M   5.47  339 mds_stores
@@ -34,12 +34,13 @@ elapsed  mem_free  swap_used  load1  top_rss_mb top_process
    91m       86%      0.00M   7.46  471 ninja
    94m       86%      0.00M   8.82  471 ninja
    97m       86%      0.00M   7.04  471 ninja
+  100m       86%      0.00M   7.52  472 ninja
 
 == top processes by memory (RSS MB)
-    471  ninja
+    472  ninja
     222  ruby
     137  ruby
-    132  mds_stores
+    131  mds_stores
      95  Spotlight
      80  Runner.Worker
      72  softwareupdated
@@ -47,17 +48,17 @@ elapsed  mem_free  swap_used  load1  top_rss_mb top_process
 
 == vm_stat
 Mach Virtual Memory Statistics: (page size of 4096 bytes)
-Pages free:                                   588490.
-Pages active:                                1063469.
-Pages inactive:                              1081719.
-Pages speculative:                            444581.
+Pages free:                                   585799.
+Pages active:                                1046808.
+Pages inactive:                              1090202.
+Pages speculative:                            455393.
 Pages throttled:                                   0.
-Pages wired down:                             490634.
-Pages purgeable:                               12067.
-"Translation faults":                      593509263.
-Pages copy-on-write:                        46211810.
-Pages zero filled:                         294380220.
-Pages reactivated:                             50689.
+Pages wired down:                             490550.
+Pages purgeable:                               12063.
+"Translation faults":                      611883642.
+Pages copy-on-write:                        47681422.
+Pages zero filled:                         302804735.
+Pages reactivated:                             50952.
 
 == df /
 /dev/disk1s5s1   325Gi    12Gi   127Gi     9%    459k  1.3G    0%   /
