@@ -1,4 +1,4 @@
-run 37273947544, qtwebengine, updated 2026-10-05T10:39:40Z
+run 37273947544, qtwebengine, updated 2026-10-05T10:42:42Z
 
 elapsed  mem_free  swap_used  load1  top_rss_mb top_process
     0m       88%      0.00M   5.47  339 mds_stores
@@ -78,12 +78,13 @@ elapsed  mem_free  swap_used  load1  top_rss_mb top_process
   224m       86%      0.00M  13.00  482 ninja
   227m       86%      0.00M  10.28  483 ninja
   230m       86%      0.00M   7.98  497 clang
+  233m       86%      0.00M   8.50  483 ninja
 
 == top processes by memory (RSS MB)
-    498  clang
     483  ninja
-    280  clang
-    255  clang
+    375  clang
+    268  clang
+    236  clang
     222  ruby
     137  ruby
     131  mds_stores
@@ -91,17 +92,17 @@ elapsed  mem_free  swap_used  load1  top_rss_mb top_process
 
 == vm_stat
 Mach Virtual Memory Statistics: (page size of 4096 bytes)
-Pages free:                                   620370.
-Pages active:                                1277609.
-Pages inactive:                              1190841.
-Pages speculative:                             86553.
+Pages free:                                   672025.
+Pages active:                                1251598.
+Pages inactive:                              1169705.
+Pages speculative:                             81655.
 Pages throttled:                                   0.
-Pages wired down:                             493550.
-Pages purgeable:                                2360.
-"Translation faults":                     1168739396.
-Pages copy-on-write:                        96457153.
-Pages zero filled:                         597539958.
-Pages reactivated:                             53085.
+Pages wired down:                             494015.
+Pages purgeable:                                3520.
+"Translation faults":                     1179041363.
+Pages copy-on-write:                        97455536.
+Pages zero filled:                         603169048.
+Pages reactivated:                             53141.
 
 == df /
 /dev/disk1s5s1   325Gi    12Gi   125Gi     9%    459k  1.3G    0%   /
