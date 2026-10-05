@@ -1,40 +1,40 @@
-run 37273947544, qtwebengine, updated 2026-10-05T06:58:17Z
+run 37273947544, qtwebengine, updated 2026-10-05T07:01:19Z
 
 elapsed  mem_free  swap_used  load1  top_rss_mb top_process
     0m       88%      0.00M   5.47  339 mds_stores
     3m       86%      0.00M   8.89  500 mds_stores
     6m       86%      0.00M   3.70  359 mds_stores
     9m       86%      0.00M   1.78  222 ruby
+   12m       86%      0.00M   5.10  222 ruby
 
 == top processes by memory (RSS MB)
     222  ruby
     137  ruby
+    135  clang
     133  mds_stores
-     97  Spotlight
+     96  Spotlight
      80  Runner.Worker
      72  softwareupdated
      63  Runner.Listener
-     58  WindowServer
 
 == vm_stat
 Mach Virtual Memory Statistics: (page size of 4096 bytes)
-Pages free:                                  1538586.
-Pages active:                                 816487.
-Pages inactive:                               794914.
-Pages speculative:                             42748.
+Pages free:                                  1411523.
+Pages active:                                 876368.
+Pages inactive:                               823488.
+Pages speculative:                             79316.
 Pages throttled:                                   0.
-Pages wired down:                             476143.
-Pages purgeable:                               13929.
-"Translation faults":                       72341907.
-Pages copy-on-write:                         5549102.
-Pages zero filled:                          43135512.
-Pages reactivated:                             38104.
+Pages wired down:                             478534.
+Pages purgeable:                               13951.
+"Translation faults":                       82008467.
+Pages copy-on-write:                         7003833.
+Pages zero filled:                          45890436.
+Pages reactivated:                             38250.
 
 == df /
 /dev/disk1s5s1   325Gi    12Gi   130Gi     9%    459k  1.4G    0%   /
 
 == build log (last 30 lines)
-[32m==>[0m [1mInstalling qtwebengine dependency: [32mqtdeclarative[39m[0m
 [34m==>[0m [1mPouring qtdeclarative-6.11.2.tahoe.bottle.tar.gz[0m
 🍺  /usr/local/Cellar/qtdeclarative/6.11.2: 5,377 files, 149.3MB
 [32m==>[0m [1mInstalling qtwebengine dependency: [32mqttools[39m[0m
@@ -64,3 +64,4 @@ patching file setup.py
 [34m==>[0m [1m/usr/local/opt/python@3.14/bin/python3.14 -m pip --python=/private/tmp/s-3Rf[0m
 [34m==>[0m [1m/usr/local/opt/python@3.14/bin/python3.14 -m pip --python=/private/tmp/s-3Rf[0m
 [34m==>[0m [1mcmake -S . -B build -G Ninja -DCMAKE_STAGING_PREFIX=/usr/local/Cellar/qtwebe[0m
+[34m==>[0m [1mcmake --build build[0m
