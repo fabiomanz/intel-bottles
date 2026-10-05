@@ -2,10 +2,10 @@
   "pipx": {
     "formula": {
       "name": "pipx",
-      "pkg_version": "1.17.10",
+      "pkg_version": "1.17.11",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pipx.rb",
       "tap_git_path": "Formula/p/pipx.rb",
-      "tap_git_revision": "12f4804b767923c69ed2a3bc49a257a4584a80fe",
+      "tap_git_revision": "a9eb3f0cddc9a16651e6a46d0c1b0102499877f7",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Execute binaries from Python packages in isolated environments",
       "license": "MIT",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-04T14:41:17Z",
+      "date": "2026-10-05T12:47:37Z",
       "tags": {
         "tahoe": {
-          "filename": "pipx-1.17.10.tahoe.bottle.tar.gz",
-          "local_filename": "pipx--1.17.10.tahoe.bottle.tar.gz",
-          "sha256": "8ac74d9db52b5aa8dd5d5850d773e957cfddada2750faa7b1a67af5f2a0d9c76",
+          "filename": "pipx-1.17.11.tahoe.bottle.tar.gz",
+          "local_filename": "pipx--1.17.11.tahoe.bottle.tar.gz",
+          "sha256": "da09d3d6fd76faef9d814bdf92382a0d1127f7eae4e88e9b7b45daaf463564c6",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.8",
             "changed_files": [
               "libexec/bin/activate-global-python-argcomplete",
               "libexec/bin/pipx",
@@ -33,7 +33,7 @@
             ],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1790955406,
+            "source_modified_time": 1791071928,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -131,14 +131,14 @@
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
-              "SPDXRef-Package-SPDXRef-readline-8.3.6",
-              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
-              "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-python@3.14-3.14.8",
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.6.2e.5",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -166,7 +166,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
                 "name": "mpdecimal",
                 "versionInfo": "4.0.1",
                 "filesAnalyzed": false,
@@ -189,7 +189,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.6.2e.5",
                 "name": "openssl@3",
                 "versionInfo": "3.6.5",
                 "filesAnalyzed": false,
@@ -212,7 +212,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "name": "readline",
                 "versionInfo": "8.3.6",
                 "filesAnalyzed": false,
@@ -235,7 +235,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
                 "name": "sqlite",
                 "versionInfo": "3.53.4",
                 "filesAnalyzed": false,
@@ -258,7 +258,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
@@ -281,7 +281,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -304,7 +304,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -327,7 +327,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-python@3.14-3.14.8",
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8",
                 "name": "python@3.14",
                 "versionInfo": "3.14.8",
                 "filesAnalyzed": false,
@@ -369,42 +369,42 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-pipx"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pipx"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.6.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pipx"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pipx"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pipx"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pipx"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pipx"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pipx"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-python@3.14-3.14.8",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pipx"
               },
@@ -504,11 +504,11 @@
             "libexec/lib/python3.14/site-packages/filelock/asyncio.py",
             "libexec/lib/python3.14/site-packages/filelock/py.typed",
             "libexec/lib/python3.14/site-packages/filelock/version.py",
-            "libexec/lib/python3.14/site-packages/filelock-4.0.9.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/filelock-4.0.9.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/filelock-4.0.9.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/filelock-4.0.9.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/filelock-4.0.9.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/filelock-4.0.10.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/filelock-4.0.10.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/filelock-4.0.10.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/filelock-4.0.10.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/filelock-4.0.10.dist-info/licenses/LICENSE",
             "libexec/lib/python3.14/site-packages/packaging/__init__.py",
             "libexec/lib/python3.14/site-packages/packaging/_elffile.py",
             "libexec/lib/python3.14/site-packages/packaging/_manylinux.py",
@@ -590,12 +590,12 @@
             "libexec/lib/python3.14/site-packages/pipx/version.py",
             "libexec/lib/python3.14/site-packages/pipx/version.pyi",
             "libexec/lib/python3.14/site-packages/pipx/wrap.py",
-            "libexec/lib/python3.14/site-packages/pipx-1.17.10.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/pipx-1.17.10.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/pipx-1.17.10.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/pipx-1.17.10.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/pipx-1.17.10.dist-info/entry_points.txt",
-            "libexec/lib/python3.14/site-packages/pipx-1.17.10.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/pipx-1.17.11.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/pipx-1.17.11.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/pipx-1.17.11.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/pipx-1.17.11.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/pipx-1.17.11.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/pipx-1.17.11.dist-info/licenses/LICENSE",
             "libexec/lib/python3.14/site-packages/platformdirs/__init__.py",
             "libexec/lib/python3.14/site-packages/platformdirs/__main__.py",
             "libexec/lib/python3.14/site-packages/platformdirs/_xdg.py",
@@ -609,12 +609,12 @@
             "libexec/lib/python3.14/site-packages/platformdirs/unix.py",
             "libexec/lib/python3.14/site-packages/platformdirs/version.py",
             "libexec/lib/python3.14/site-packages/platformdirs/windows.py",
-            "libexec/lib/python3.14/site-packages/platformdirs-4.12.2.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/platformdirs-4.12.2.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/platformdirs-4.12.2.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/platformdirs-4.12.2.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/platformdirs-4.12.2.dist-info/entry_points.txt",
-            "libexec/lib/python3.14/site-packages/platformdirs-4.12.2.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/platformdirs-4.12.3.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/platformdirs-4.12.3.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/platformdirs-4.12.3.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/platformdirs-4.12.3.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/platformdirs-4.12.3.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/platformdirs-4.12.3.dist-info/licenses/LICENSE",
             "libexec/lib/python3.14/site-packages/userpath/__init__.py",
             "libexec/lib/python3.14/site-packages/userpath/__main__.py",
             "libexec/lib/python3.14/site-packages/userpath/cli.py",
@@ -635,7 +635,7 @@
             "share/man/man1/pipx.1",
             "share/zsh/site-functions/_pipx"
           ],
-          "installed_size": 2208208
+          "installed_size": 2210967
         }
       }
     }

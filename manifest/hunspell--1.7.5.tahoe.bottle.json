@@ -2,10 +2,10 @@
   "hunspell": {
     "formula": {
       "name": "hunspell",
-      "pkg_version": "1.7.4",
+      "pkg_version": "1.7.5",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/h/hunspell.rb",
       "tap_git_path": "Formula/h/hunspell.rb",
-      "tap_git_revision": "52b61f5ef99b03c18032c38a4a3de85d226a0e7e",
+      "tap_git_revision": "a9eb3f0cddc9a16651e6a46d0c1b0102499877f7",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Spell checker and morphological analyzer",
       "license": "MPL-1.1 OR GPL-2.0-or-later OR LGPL-2.1-or-later",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-30T19:08:07Z",
+      "date": "2026-10-05T12:39:13Z",
       "tags": {
         "tahoe": {
-          "filename": "hunspell-1.7.4.tahoe.bottle.tar.gz",
-          "local_filename": "hunspell--1.7.4.tahoe.bottle.tar.gz",
-          "sha256": "00e9dbce505ebd730ba82af1aabf1fdfbe09c7ff33f2fde6acb1490c07761ead",
+          "filename": "hunspell-1.7.5.tahoe.bottle.tar.gz",
+          "local_filename": "hunspell--1.7.5.tahoe.bottle.tar.gz",
+          "sha256": "63ef4725d5bdd95041b1e6d445847439bd16d37a33896c09bda984a1aa1489e6",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.8",
             "changed_files": [
               "lib/pkgconfig/hunspell.pc"
             ],
@@ -34,13 +34,14 @@
               "lib/libhunspell-1.7.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790521427,
+            "source_modified_time": 1791139309,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "readline",
                 "version": "8.3.6",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "8.3.6",
                 "declared_directly": true,
                 "compatibility_version": 1
@@ -57,6 +58,7 @@
                 "full_name": "libunistring",
                 "version": "1.4.2",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.4.2",
                 "declared_directly": false,
                 "compatibility_version": 1
@@ -65,6 +67,7 @@
                 "full_name": "gettext",
                 "version": "1.0",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.0",
                 "declared_directly": true,
                 "compatibility_version": 1
@@ -83,12 +86,38 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/readline-8.3.6.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8e2d9a12817040fff1164139282e0d2f7ad2aaf388db15db8eb36a8fb00dd74a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "name": "json-c",
                 "versionInfo": "0.19",
                 "filesAnalyzed": false,
@@ -111,6 +140,52 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gettext-1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fe9d5337ff31e4f40b827b3463bd3fdc61b8f377277769f71e93baad0443bc96"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
                 "versionInfo": "26.6",
@@ -125,7 +200,22 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-hunspell"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-hunspell"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-hunspell"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-hunspell"
               },
@@ -270,7 +360,7 @@
             "share/man/man3/hunspell.3",
             "share/man/man5/hunspell.5"
           ],
-          "installed_size": 2344926
+          "installed_size": 2357806
         }
       }
     }
