@@ -1,4 +1,4 @@
-run 37273947544, qtwebengine, updated 2026-10-05T09:39:02Z
+run 37273947544, qtwebengine, updated 2026-10-05T09:42:04Z
 
 elapsed  mem_free  swap_used  load1  top_rss_mb top_process
     0m       88%      0.00M   5.47  339 mds_stores
@@ -58,30 +58,31 @@ elapsed  mem_free  swap_used  load1  top_rss_mb top_process
   163m       86%      0.00M   7.47  478 ninja
   166m       86%      0.00M   7.82  479 ninja
   169m       86%      0.00M   8.75  479 ninja
+  172m       86%      0.00M   8.94  480 clang
 
 == top processes by memory (RSS MB)
+    481  clang
     479  ninja
-    352  clang
-    233  clang
+    235  clang
     222  ruby
+    150  clang
     137  ruby
     131  mds_stores
      95  Spotlight
-     80  Runner.Worker
 
 == vm_stat
 Mach Virtual Memory Statistics: (page size of 4096 bytes)
-Pages free:                                   360956.
-Pages active:                                1236702.
-Pages inactive:                              1127271.
-Pages speculative:                            448537.
+Pages free:                                   299420.
+Pages active:                                1293383.
+Pages inactive:                              1133484.
+Pages speculative:                            446209.
 Pages throttled:                                   0.
-Pages wired down:                             495544.
-Pages purgeable:                               12076.
-"Translation faults":                      952377575.
-Pages copy-on-write:                        76026930.
-Pages zero filled:                         477784046.
-Pages reactivated:                             51922.
+Pages wired down:                             496199.
+Pages purgeable:                               12079.
+"Translation faults":                      962945714.
+Pages copy-on-write:                        77063559.
+Pages zero filled:                         483212562.
+Pages reactivated:                             52179.
 
 == df /
 /dev/disk1s5s1   325Gi    12Gi   126Gi     9%    459k  1.3G    0%   /
