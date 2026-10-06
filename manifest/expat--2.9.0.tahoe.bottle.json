@@ -2,10 +2,10 @@
   "expat": {
     "formula": {
       "name": "expat",
-      "pkg_version": "2.8.5",
+      "pkg_version": "2.9.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/e/expat.rb",
       "tap_git_path": "Formula/e/expat.rb",
-      "tap_git_revision": "4512b0f6f75400b709fd3e7ef6041f5148922401",
+      "tap_git_revision": "3fd845574a627e757b76db2c15c370a9a528be8f",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "XML 1.0 parser",
       "license": "MIT",
@@ -15,23 +15,23 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-02T11:21:10Z",
+      "date": "2026-10-06T12:15:47Z",
       "tags": {
         "tahoe": {
-          "filename": "expat-2.8.5.tahoe.bottle.tar.gz",
-          "local_filename": "expat--2.8.5.tahoe.bottle.tar.gz",
-          "sha256": "bd49e834287f96034355565bf8c47e6be0e1c7af68962c11fd544a63ee25b528",
+          "filename": "expat-2.9.0.tahoe.bottle.tar.gz",
+          "local_filename": "expat--2.9.0.tahoe.bottle.tar.gz",
+          "sha256": "a13f89acb0f32a6da005bf8879cdb0add4882145d3b2a33782850ac9b024ee9c",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.8",
             "changed_files": [
               "lib/pkgconfig/expat.pc"
             ],
             "linkage_files": [
               "bin/xmlwf",
-              "lib/libexpat.1.12.5.dylib"
+              "lib/libexpat.1.13.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790075502,
+            "source_modified_time": 1791218091,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -85,11 +85,11 @@
             "include/expat.h",
             "include/expat_config.h",
             "include/expat_external.h",
-            "lib/cmake/expat-2.8.5/expat-config-version.cmake",
-            "lib/cmake/expat-2.8.5/expat-config.cmake",
-            "lib/cmake/expat-2.8.5/expat-noconfig.cmake",
-            "lib/cmake/expat-2.8.5/expat.cmake",
-            "lib/libexpat.1.12.5.dylib",
+            "lib/cmake/expat-2.9.0/expat-config-version.cmake",
+            "lib/cmake/expat-2.9.0/expat-config.cmake",
+            "lib/cmake/expat-2.9.0/expat-noconfig.cmake",
+            "lib/cmake/expat-2.9.0/expat.cmake",
+            "lib/libexpat.1.13.0.dylib",
             "lib/libexpat.1.dylib",
             "lib/libexpat.a",
             "lib/libexpat.dylib",
@@ -99,7 +99,7 @@
             "share/doc/expat/changelog",
             "share/man/man1/xmlwf.1"
           ],
-          "installed_size": 746288
+          "installed_size": 759482
         }
       }
     }
