@@ -1,0 +1,1513 @@
+{
+  "gobject-introspection": {
+    "formula": {
+      "name": "gobject-introspection",
+      "pkg_version": "1.86.0_4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gobject-introspection.rb",
+      "tap_git_path": "Formula/g/gobject-introspection.rb",
+      "tap_git_revision": "d791d893230eaa4e335e66a6b3b37210a42094ec",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Generate introspection data for GObject libraries",
+      "license": "GPL-2.0-or-later AND LGPL-2.0-or-later AND MIT",
+      "homepage": "https://gi.readthedocs.io/en/latest/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-07T12:17:53Z",
+      "tags": {
+        "tahoe": {
+          "filename": "gobject-introspection-1.86.0_4.tahoe.bottle.tar.gz",
+          "local_filename": "gobject-introspection--1.86.0_4.tahoe.bottle.tar.gz",
+          "sha256": "cd79e127069c9094d35c783e26ae66dd6a630d2eaf6d7361b36d7b1ab958ceb5",
+          "tab": {
+            "homebrew_version": "7.0.8",
+            "changed_files": [
+              "bin/g-ir-annotation-tool",
+              "bin/g-ir-doc-tool",
+              "bin/g-ir-scanner",
+              "libexec/bin/mako-render",
+              "libexec/bin/markdown_py",
+              "lib/pkgconfig/gobject-introspection-1.0.pc",
+              "lib/pkgconfig/gobject-introspection-no-export-1.0.pc",
+              "libexec/pyvenv.cfg"
+            ],
+            "linkage_files": [
+              "bin/g-ir-compiler",
+              "bin/g-ir-generate",
+              "bin/g-ir-inspect",
+              "lib/gobject-introspection/giscanner/_giscanner.cpython-314-darwin.so",
+              "lib/libgirepository-1.0.1.dylib"
+            ],
+            "binary_relocation_files": [
+              "bin/g-ir-compiler"
+            ],
+            "source_modified_time": 1757761686,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libpng",
+                "version": "1.6.59",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.59",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "freetype",
+                "version": "2.14.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.14.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fontconfig",
+                "version": "2.18.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.18.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pcre2",
+                "version": "10.49",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.49",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.90.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.90.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xorgproto",
+                "version": "2026.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxau",
+                "version": "1.0.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxdmcp",
+                "version": "1.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxcb",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.17.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libx11",
+                "version": "1.8.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxext",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.7",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxrender",
+                "version": "0.9.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.9.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lzo",
+                "version": "2.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.10",
+                "declared_directly": false
+              },
+              {
+                "full_name": "pixman",
+                "version": "0.46.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "0.46.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "cairo",
+                "version": "1.18.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.18.6",
+                "declared_directly": true
+              },
+              {
+                "full_name": "pkgconf",
+                "version": "3.0.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.0.7",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.53.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.53.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "python@3.14",
+                "version": "3.14.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.14.8",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/g-ir-compiler",
+              "string": "/usr/local/Cellar/gobject-introspection/1.86.0_4/share/gir-1.0",
+              "offset": 130935
+            },
+            {
+              "path": "bin/g-ir-compiler",
+              "string": "/usr/local/Cellar/gobject-introspection/1.86.0_4/share",
+              "offset": 131021
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+              "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+              "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+              "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+              "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.7",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.6.2e.5",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+                "name": "libpng",
+                "versionInfo": "1.6.59",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.59.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "983550222f14d7db234a39119dc66c0de74d9b79b74f83ecf4b81a6b694d40de"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpng@1.6.59",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gettext-1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fe9d5337ff31e4f40b827b3463bd3fdc61b8f377277769f71e93baad0443bc96"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+                "name": "pcre2",
+                "versionInfo": "10.49",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.49.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7fe75e3ba297623163ee0e3a262e417d0eb36342f6cda4135ede90412ff03040"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.49",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+                "name": "glib",
+                "versionInfo": "2.90.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b0aaa12be31d6f764cdca91e2a75efe6f317eabba79a48bdf1467217a0ccbab"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/glib@2.90.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+                "name": "xorgproto",
+                "versionInfo": "2026.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xorgproto-2026.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5286465a0d9c7954041bcec0ebee5641b6c8018b3f679eaa8595b029a44c2af9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xorgproto@2026.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "name": "libx11",
+                "versionInfo": "1.8.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.13.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10c0844f2a8daab11aa21bd737480e496469da1a15c37067dc34ab308f8b6285"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libx11@1.8.13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+                "name": "cairo",
+                "versionInfo": "1.18.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-only OR MPL-1.1",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/cairo-1.18.6.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "82e98b7ba1ba8aadca23d85b6ee4aaec38273d61c453dba9ad3905675cfb2a84"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/cairo@1.18.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.7",
+                "name": "pkgconf",
+                "versionInfo": "3.0.7",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "ISC",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pkgconf-3.0.7.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "112ebc0f90bf7a206447893877f8bdb5058e665ffd27de96500718ff69765938"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pkgconf@3.0.7",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "49cd2025d6a2f8159d82a50c4720d75f17e01205c59fe057b931b4603d6f822d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.6.2e.5",
+                "name": "openssl@3",
+                "versionInfo": "3.6.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.5.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9df24dab1c79c4c07958ee358ef146ebcd5b05d8180274c3db0075a28f34f7f6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/readline-8.3.6.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8e2d9a12817040fff1164139282e0d2f7ad2aaf388db15db8eb36a8fb00dd74a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "name": "sqlite",
+                "versionInfo": "3.53.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xz-5.8.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54a648c4197b0299ee2d37527ca6a23447abe65342f8f8c0ed68e154f4593b0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.10.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8",
+                "name": "python@3.14",
+                "versionInfo": "3.14.8",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Python-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/python%403.14-3.14.8.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a583b971f24d1c8fe05cbd86f3a2e0b46edf43b5dd1f60e18d63774a99ddd1a8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/python%403.14@3.14.8",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.7",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.6.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-gobject-introspection-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/g-ir-compiler",
+            "bin/g-ir-annotation-tool",
+            "bin/g-ir-doc-tool",
+            "bin/g-ir-generate",
+            "bin/g-ir-inspect",
+            "bin/g-ir-scanner"
+          ],
+          "all_files": [
+            ".brew/gobject-introspection.rb",
+            "COPYING",
+            "COPYING.GPL",
+            "COPYING.LGPL",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README.rst",
+            "bin/g-ir-annotation-tool",
+            "bin/g-ir-compiler",
+            "bin/g-ir-doc-tool",
+            "bin/g-ir-generate",
+            "bin/g-ir-inspect",
+            "bin/g-ir-scanner",
+            "include/gobject-introspection-1.0/giarginfo.h",
+            "include/gobject-introspection-1.0/gibaseinfo.h",
+            "include/gobject-introspection-1.0/gicallableinfo.h",
+            "include/gobject-introspection-1.0/giconstantinfo.h",
+            "include/gobject-introspection-1.0/gienuminfo.h",
+            "include/gobject-introspection-1.0/gifieldinfo.h",
+            "include/gobject-introspection-1.0/gifunctioninfo.h",
+            "include/gobject-introspection-1.0/giinterfaceinfo.h",
+            "include/gobject-introspection-1.0/giobjectinfo.h",
+            "include/gobject-introspection-1.0/gipropertyinfo.h",
+            "include/gobject-introspection-1.0/giregisteredtypeinfo.h",
+            "include/gobject-introspection-1.0/girepository.h",
+            "include/gobject-introspection-1.0/girffi.h",
+            "include/gobject-introspection-1.0/gisignalinfo.h",
+            "include/gobject-introspection-1.0/gistructinfo.h",
+            "include/gobject-introspection-1.0/gitypeinfo.h",
+            "include/gobject-introspection-1.0/gitypelib.h",
+            "include/gobject-introspection-1.0/gitypes.h",
+            "include/gobject-introspection-1.0/giunioninfo.h",
+            "include/gobject-introspection-1.0/giversion.h",
+            "include/gobject-introspection-1.0/giversionmacros.h",
+            "include/gobject-introspection-1.0/givfuncinfo.h",
+            "lib/girepository-1.0/DBus-1.0.typelib",
+            "lib/girepository-1.0/DBusGLib-1.0.typelib",
+            "lib/girepository-1.0/GIRepository-2.0.typelib",
+            "lib/girepository-1.0/GL-1.0.typelib",
+            "lib/girepository-1.0/Vulkan-1.0.typelib",
+            "lib/girepository-1.0/cairo-1.0.typelib",
+            "lib/girepository-1.0/fontconfig-2.0.typelib",
+            "lib/girepository-1.0/freetype2-2.0.typelib",
+            "lib/girepository-1.0/libxml2-2.0.typelib",
+            "lib/girepository-1.0/win32-1.0.typelib",
+            "lib/girepository-1.0/xfixes-4.0.typelib",
+            "lib/girepository-1.0/xft-2.0.typelib",
+            "lib/girepository-1.0/xlib-2.0.typelib",
+            "lib/girepository-1.0/xrandr-1.3.typelib",
+            "lib/gobject-introspection/giscanner/__init__.py",
+            "lib/gobject-introspection/giscanner/_giscanner.cpython-314-darwin.so",
+            "lib/gobject-introspection/giscanner/_version.py",
+            "lib/gobject-introspection/giscanner/annotationmain.py",
+            "lib/gobject-introspection/giscanner/annotationparser.py",
+            "lib/gobject-introspection/giscanner/ast.py",
+            "lib/gobject-introspection/giscanner/cachestore.py",
+            "lib/gobject-introspection/giscanner/ccompiler.py",
+            "lib/gobject-introspection/giscanner/codegen.py",
+            "lib/gobject-introspection/giscanner/docmain.py",
+            "lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs/_doc.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs/_index.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs/_method.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs/_methods.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs/_properties.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs/_signals.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs/_staticmethods.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs/_vfuncs.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs/base.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs/callback.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs/class.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs/default.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs/enum.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs/function.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs/interface.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs/method.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs/namespace.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/devdocs/meson.build",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/C/callback.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/C/class.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/C/constructor.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/C/default.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/C/enum.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/C/field.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/C/function.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/C/interface.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/C/method.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/C/namespace.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/C/property.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/C/record.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/C/signal.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/C/vfunc.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs/callback.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs/class.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs/constructor.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs/default.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs/enum.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs/field.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs/function.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs/interface.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs/method.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs/namespace.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs/property.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs/record.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs/signal.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs/vfunc.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Python/callback.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Python/class.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Python/constructor.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Python/default.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Python/enum.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Python/field.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Python/function.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Python/interface.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Python/method.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Python/namespace.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Python/property.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Python/record.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Python/signal.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/Python/vfunc.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/base.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/class.tmpl",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/meson.build",
+            "lib/gobject-introspection/giscanner/doctemplates/mallard/namespace.tmpl",
+            "lib/gobject-introspection/giscanner/docwriter.py",
+            "lib/gobject-introspection/giscanner/dumper.py",
+            "lib/gobject-introspection/giscanner/gdumpparser.py",
+            "lib/gobject-introspection/giscanner/girparser.py",
+            "lib/gobject-introspection/giscanner/girwriter.py",
+            "lib/gobject-introspection/giscanner/introspectablepass.py",
+            "lib/gobject-introspection/giscanner/maintransformer.py",
+            "lib/gobject-introspection/giscanner/mdextensions.py",
+            "lib/gobject-introspection/giscanner/message.py",
+            "lib/gobject-introspection/giscanner/msvccompiler.py",
+            "lib/gobject-introspection/giscanner/pkgconfig.py",
+            "lib/gobject-introspection/giscanner/scannermain.py",
+            "lib/gobject-introspection/giscanner/sectionparser.py",
+            "lib/gobject-introspection/giscanner/shlibs.py",
+            "lib/gobject-introspection/giscanner/sourcescanner.py",
+            "lib/gobject-introspection/giscanner/testcodegen.py",
+            "lib/gobject-introspection/giscanner/transformer.py",
+            "lib/gobject-introspection/giscanner/utils.py",
+            "lib/gobject-introspection/giscanner/xmlwriter.py",
+            "lib/libgirepository-1.0.1.dylib",
+            "lib/libgirepository-1.0.dylib",
+            "lib/pkgconfig/gobject-introspection-1.0.pc",
+            "lib/pkgconfig/gobject-introspection-no-export-1.0.pc",
+            "libexec/.gitignore",
+            "libexec/bin/mako-render",
+            "libexec/bin/markdown_py",
+            "libexec/bin/python",
+            "libexec/bin/python3",
+            "libexec/bin/python3.14",
+            "libexec/bin/\ud835\udf0bthon",
+            "libexec/lib/python3.14/site-packages/_distutils_hack/__init__.py",
+            "libexec/lib/python3.14/site-packages/_distutils_hack/override.py",
+            "libexec/lib/python3.14/site-packages/distutils-precedence.pth",
+            "libexec/lib/python3.14/site-packages/mako/__init__.py",
+            "libexec/lib/python3.14/site-packages/mako/_ast_util.py",
+            "libexec/lib/python3.14/site-packages/mako/ast.py",
+            "libexec/lib/python3.14/site-packages/mako/cache.py",
+            "libexec/lib/python3.14/site-packages/mako/cmd.py",
+            "libexec/lib/python3.14/site-packages/mako/codegen.py",
+            "libexec/lib/python3.14/site-packages/mako/compat.py",
+            "libexec/lib/python3.14/site-packages/mako/exceptions.py",
+            "libexec/lib/python3.14/site-packages/mako/ext/__init__.py",
+            "libexec/lib/python3.14/site-packages/mako/ext/autohandler.py",
+            "libexec/lib/python3.14/site-packages/mako/ext/babelplugin.py",
+            "libexec/lib/python3.14/site-packages/mako/ext/beaker_cache.py",
+            "libexec/lib/python3.14/site-packages/mako/ext/extract.py",
+            "libexec/lib/python3.14/site-packages/mako/ext/linguaplugin.py",
+            "libexec/lib/python3.14/site-packages/mako/ext/preprocessors.py",
+            "libexec/lib/python3.14/site-packages/mako/ext/pygmentplugin.py",
+            "libexec/lib/python3.14/site-packages/mako/ext/turbogears.py",
+            "libexec/lib/python3.14/site-packages/mako/filters.py",
+            "libexec/lib/python3.14/site-packages/mako/lexer.py",
+            "libexec/lib/python3.14/site-packages/mako/lookup.py",
+            "libexec/lib/python3.14/site-packages/mako/parsetree.py",
+            "libexec/lib/python3.14/site-packages/mako/pygen.py",
+            "libexec/lib/python3.14/site-packages/mako/pyparser.py",
+            "libexec/lib/python3.14/site-packages/mako/runtime.py",
+            "libexec/lib/python3.14/site-packages/mako/template.py",
+            "libexec/lib/python3.14/site-packages/mako/testing/__init__.py",
+            "libexec/lib/python3.14/site-packages/mako/testing/_config.py",
+            "libexec/lib/python3.14/site-packages/mako/testing/assertions.py",
+            "libexec/lib/python3.14/site-packages/mako/testing/config.py",
+            "libexec/lib/python3.14/site-packages/mako/testing/exclusions.py",
+            "libexec/lib/python3.14/site-packages/mako/testing/fixtures.py",
+            "libexec/lib/python3.14/site-packages/mako/testing/helpers.py",
+            "libexec/lib/python3.14/site-packages/mako/util.py",
+            "libexec/lib/python3.14/site-packages/mako-1.4.3.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/mako-1.4.3.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/mako-1.4.3.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/mako-1.4.3.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/mako-1.4.3.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/mako-1.4.3.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/mako-1.4.3.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/markdown/__init__.py",
+            "libexec/lib/python3.14/site-packages/markdown/__main__.py",
+            "libexec/lib/python3.14/site-packages/markdown/__meta__.py",
+            "libexec/lib/python3.14/site-packages/markdown/blockparser.py",
+            "libexec/lib/python3.14/site-packages/markdown/blockprocessors.py",
+            "libexec/lib/python3.14/site-packages/markdown/core.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/__init__.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/abbr.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/admonition.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/attr_list.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/codehilite.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/def_list.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/extra.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/fenced_code.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/footnotes.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/legacy_attrs.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/legacy_em.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/md_in_html.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/meta.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/nl2br.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/sane_lists.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/smarty.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/tables.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/toc.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/wikilinks.py",
+            "libexec/lib/python3.14/site-packages/markdown/htmlparser.py",
+            "libexec/lib/python3.14/site-packages/markdown/inlinepatterns.py",
+            "libexec/lib/python3.14/site-packages/markdown/postprocessors.py",
+            "libexec/lib/python3.14/site-packages/markdown/preprocessors.py",
+            "libexec/lib/python3.14/site-packages/markdown/serializers.py",
+            "libexec/lib/python3.14/site-packages/markdown/test_tools.py",
+            "libexec/lib/python3.14/site-packages/markdown/treeprocessors.py",
+            "libexec/lib/python3.14/site-packages/markdown/util.py",
+            "libexec/lib/python3.14/site-packages/markdown-3.11.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/markdown-3.11.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/markdown-3.11.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/markdown-3.11.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/markdown-3.11.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/markdown-3.11.dist-info/licenses/LICENSE.md",
+            "libexec/lib/python3.14/site-packages/markdown-3.11.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/markupsafe/__init__.py",
+            "libexec/lib/python3.14/site-packages/markupsafe/_native.py",
+            "libexec/lib/python3.14/site-packages/markupsafe/_speedups.c",
+            "libexec/lib/python3.14/site-packages/markupsafe/_speedups.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/markupsafe/_speedups.pyi",
+            "libexec/lib/python3.14/site-packages/markupsafe/py.typed",
+            "libexec/lib/python3.14/site-packages/markupsafe-3.0.4.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/markupsafe-3.0.4.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/markupsafe-3.0.4.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/markupsafe-3.0.4.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/markupsafe-3.0.4.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.14/site-packages/markupsafe-3.0.4.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/setuptools/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_core_metadata.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_discovery.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/_dataclass.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/_log.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/_macos_compat.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/_modified.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/_msvccompiler.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/archive_util.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/ccompiler.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/cmd.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/_framework_compat.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/bdist.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/bdist_dumb.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/bdist_rpm.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/build.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/build_clib.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/build_ext.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/build_py.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/build_scripts.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/check.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/clean.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/config.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/install.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/install_data.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/install_egg_info.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/install_headers.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/install_lib.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/install_scripts.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/command/sdist.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/compat/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/compat/numpy.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/compat/py310.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/compilers/C/base.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/compilers/C/cygwin.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/compilers/C/errors.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/compilers/C/msvc.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/compilers/C/py.typed",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/compilers/C/unix.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/compilers/C/zos.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/compilers/_modified.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/compilers/_util.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/compilers/errors.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/compilers/logging.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/compilers/platform/detect.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/compilers/platform/macos.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/core.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/cygwinccompiler.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/debug.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/dep_util.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/dir_util.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/dist.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/errors.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/extension.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/fancy_getopt.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/file_util.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/filelist.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/log.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/py.typed",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/spawn.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/sysconfig.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/text_file.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/unixccompiler.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/util.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/version.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/versionpredicate.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_distutils/zosccompiler.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_entry_points.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_imp.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_importlib.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_itertools.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_normalization.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_path.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_reqs.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_scripts.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_shutil.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_static.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/.lock",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/autocommand/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/autocommand/autoasync.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/autocommand/autocommand.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/autocommand/automain.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/autocommand/autoparse.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/autocommand/errors.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/autocommand-2.2.2.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/autocommand-2.2.2.dist-info/LICENSE",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/autocommand-2.2.2.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/autocommand-2.2.2.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/autocommand-2.2.2.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/autocommand-2.2.2.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/backports/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/backports/tarfile/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/backports/tarfile/__main__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/backports/tarfile/compat/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/backports/tarfile/compat/py38.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/backports.tarfile-1.2.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/backports.tarfile-1.2.0.dist-info/LICENSE",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/backports.tarfile-1.2.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/backports.tarfile-1.2.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/backports.tarfile-1.2.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/backports.tarfile-1.2.0.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata/_adapters.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata/_collections.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata/_compat.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata/_functools.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata/_itertools.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata/_meta.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata/_text.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata/_typing.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata/compat/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata/compat/py311.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata/compat/py39.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata/diagnose.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata/py.typed",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco/context/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco/context/py.typed",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco/functools/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco/functools/__init__.pyi",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco/functools/py.typed",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco/text/Lorem ipsum.txt",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco/text/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco/text/layouts.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco/text/show-newlines.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco/text/strip-prefix.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco/text/to-dvorak.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco/text/to-qwerty.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco.text-4.0.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco.text-4.0.0.dist-info/LICENSE",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco.text-4.0.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco.text-4.0.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco.text-4.0.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco.text-4.0.0.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco_context-6.1.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco_context-6.1.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco_context-6.1.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco_context-6.1.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco_context-6.1.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco_context-6.1.0.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/more_itertools/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/more_itertools/__init__.pyi",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/more_itertools/more.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/more_itertools/more.pyi",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/more_itertools/py.typed",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/more_itertools/recipes.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/more_itertools/recipes.pyi",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/more_itertools-10.8.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/more_itertools-10.8.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/more_itertools-10.8.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/more_itertools-10.8.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/more_itertools-10.8.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging/_elffile.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging/_manylinux.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging/_musllinux.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging/_parser.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging/_structures.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging/_tokenizer.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging/licenses/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging/licenses/_spdx.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging/markers.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging/metadata.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging/py.typed",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging/pylock.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging/requirements.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging/specifiers.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging/tags.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging/utils.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging/version.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging-26.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging-26.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging-26.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging-26.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE.APACHE",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE.BSD",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/platformdirs/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/platformdirs/__main__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/platformdirs/android.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/platformdirs/api.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/platformdirs/macos.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/platformdirs/py.typed",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/platformdirs/unix.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/platformdirs/version.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/platformdirs/windows.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/platformdirs-4.4.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/platformdirs-4.4.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/platformdirs-4.4.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/platformdirs-4.4.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/platformdirs-4.4.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/tomli/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/tomli/_parser.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/tomli/_re.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/tomli/_types.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/tomli/py.typed",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/tomli-2.4.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/tomli-2.4.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/tomli-2.4.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/tomli-2.4.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/tomli-2.4.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel/__main__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel/_bdist_wheel.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel/_commands/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel/_commands/convert.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel/_commands/pack.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel/_commands/tags.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel/_commands/unpack.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel/_metadata.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel/_setuptools_logging.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel/bdist_wheel.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel/macosx_libfile.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel/metadata.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel/wheelfile.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel-0.46.3.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel-0.46.3.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel-0.46.3.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel-0.46.3.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel-0.46.3.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/wheel-0.46.3.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/zipp/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/zipp/_functools.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/zipp/compat/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/zipp/compat/overlay.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/zipp/compat/py310.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/zipp/compat/py313.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/zipp/glob.py",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/zipp-3.23.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/zipp-3.23.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/zipp-3.23.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/zipp-3.23.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/zipp-3.23.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/setuptools/_vendor/zipp-3.23.0.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/setuptools/archive_util.py",
+            "libexec/lib/python3.14/site-packages/setuptools/build_meta.py",
+            "libexec/lib/python3.14/site-packages/setuptools/cli-32.exe",
+            "libexec/lib/python3.14/site-packages/setuptools/cli-64.exe",
+            "libexec/lib/python3.14/site-packages/setuptools/cli-arm64.exe",
+            "libexec/lib/python3.14/site-packages/setuptools/cli.exe",
+            "libexec/lib/python3.14/site-packages/setuptools/command/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/_requirestxt.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/alias.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/bdist_egg.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/bdist_rpm.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/bdist_wheel.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/build.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/build_clib.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/build_ext.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/build_py.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/develop.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/dist_info.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/easy_install.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/editable_wheel.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/egg_info.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/install.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/install_egg_info.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/install_lib.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/install_scripts.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/rotate.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/saveopts.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/sdist.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/setopt.py",
+            "libexec/lib/python3.14/site-packages/setuptools/command/test.py",
+            "libexec/lib/python3.14/site-packages/setuptools/compat/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/compat/py310.py",
+            "libexec/lib/python3.14/site-packages/setuptools/compat/py311.py",
+            "libexec/lib/python3.14/site-packages/setuptools/compat/py312.py",
+            "libexec/lib/python3.14/site-packages/setuptools/compat/py39.py",
+            "libexec/lib/python3.14/site-packages/setuptools/config/NOTICE",
+            "libexec/lib/python3.14/site-packages/setuptools/config/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/config/_apply_pyprojecttoml.py",
+            "libexec/lib/python3.14/site-packages/setuptools/config/_validate_pyproject/NOTICE",
+            "libexec/lib/python3.14/site-packages/setuptools/config/_validate_pyproject/__init__.py",
+            "libexec/lib/python3.14/site-packages/setuptools/config/_validate_pyproject/error_reporting.py",
+            "libexec/lib/python3.14/site-packages/setuptools/config/_validate_pyproject/extra_validations.py",
+            "libexec/lib/python3.14/site-packages/setuptools/config/_validate_pyproject/fastjsonschema_exceptions.py",
+            "libexec/lib/python3.14/site-packages/setuptools/config/_validate_pyproject/fastjsonschema_validations.py",
+            "libexec/lib/python3.14/site-packages/setuptools/config/_validate_pyproject/formats.py",
+            "libexec/lib/python3.14/site-packages/setuptools/config/distutils.schema.json",
+            "libexec/lib/python3.14/site-packages/setuptools/config/expand.py",
+            "libexec/lib/python3.14/site-packages/setuptools/config/pyprojecttoml.py",
+            "libexec/lib/python3.14/site-packages/setuptools/config/setupcfg.py",
+            "libexec/lib/python3.14/site-packages/setuptools/config/setuptools.schema.json",
+            "libexec/lib/python3.14/site-packages/setuptools/depends.py",
+            "libexec/lib/python3.14/site-packages/setuptools/discovery.py",
+            "libexec/lib/python3.14/site-packages/setuptools/dist.py",
+            "libexec/lib/python3.14/site-packages/setuptools/errors.py",
+            "libexec/lib/python3.14/site-packages/setuptools/extension.py",
+            "libexec/lib/python3.14/site-packages/setuptools/glob.py",
+            "libexec/lib/python3.14/site-packages/setuptools/gui-32.exe",
+            "libexec/lib/python3.14/site-packages/setuptools/gui-64.exe",
+            "libexec/lib/python3.14/site-packages/setuptools/gui-arm64.exe",
+            "libexec/lib/python3.14/site-packages/setuptools/gui.exe",
+            "libexec/lib/python3.14/site-packages/setuptools/installer.py",
+            "libexec/lib/python3.14/site-packages/setuptools/launch.py",
+            "libexec/lib/python3.14/site-packages/setuptools/launcher manifest.xml",
+            "libexec/lib/python3.14/site-packages/setuptools/logging.py",
+            "libexec/lib/python3.14/site-packages/setuptools/modified.py",
+            "libexec/lib/python3.14/site-packages/setuptools/monkey.py",
+            "libexec/lib/python3.14/site-packages/setuptools/msvc.py",
+            "libexec/lib/python3.14/site-packages/setuptools/namespaces.py",
+            "libexec/lib/python3.14/site-packages/setuptools/script (dev).tmpl",
+            "libexec/lib/python3.14/site-packages/setuptools/script.tmpl",
+            "libexec/lib/python3.14/site-packages/setuptools/unicode_utils.py",
+            "libexec/lib/python3.14/site-packages/setuptools/version.py",
+            "libexec/lib/python3.14/site-packages/setuptools/warnings.py",
+            "libexec/lib/python3.14/site-packages/setuptools/wheel.py",
+            "libexec/lib/python3.14/site-packages/setuptools/windows_support.py",
+            "libexec/lib/python3.14/site-packages/setuptools-84.0.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/setuptools-84.0.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/setuptools-84.0.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/setuptools-84.0.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/setuptools-84.0.0.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/setuptools-84.0.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/setuptools-84.0.0.dist-info/top_level.txt",
+            "libexec/pyvenv.cfg",
+            "sbom.spdx.json",
+            "share/aclocal/introspection.m4",
+            "share/gir-1.0/DBus-1.0.gir",
+            "share/gir-1.0/DBusGLib-1.0.gir",
+            "share/gir-1.0/GIRepository-2.0.gir",
+            "share/gir-1.0/GL-1.0.gir",
+            "share/gir-1.0/Vulkan-1.0.gir",
+            "share/gir-1.0/cairo-1.0.gir",
+            "share/gir-1.0/fontconfig-2.0.gir",
+            "share/gir-1.0/freetype2-2.0.gir",
+            "share/gir-1.0/gir-1.2.rnc",
+            "share/gir-1.0/libxml2-2.0.gir",
+            "share/gir-1.0/win32-1.0.gir",
+            "share/gir-1.0/xfixes-4.0.gir",
+            "share/gir-1.0/xft-2.0.gir",
+            "share/gir-1.0/xlib-2.0.gir",
+            "share/gir-1.0/xrandr-1.3.gir",
+            "share/gobject-introspection-1.0/Makefile.introspection",
+            "share/gobject-introspection-1.0/gdump.c",
+            "share/man/man1/g-ir-compiler.1",
+            "share/man/man1/g-ir-doc-tool.1",
+            "share/man/man1/g-ir-generate.1",
+            "share/man/man1/g-ir-scanner.1"
+          ],
+          "installed_size": 5525047
+        }
+      }
+    }
+  }
+}
