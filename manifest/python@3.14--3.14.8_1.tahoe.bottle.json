@@ -2,10 +2,10 @@
   "python@3.14": {
     "formula": {
       "name": "python@3.14",
-      "pkg_version": "3.14.8",
+      "pkg_version": "3.14.8_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/python@3.14.rb",
       "tap_git_path": "Formula/p/python@3.14.rb",
-      "tap_git_revision": "d71cbf58d6ae21acf3d01a12e3ce289aa88329f1",
+      "tap_git_revision": "c949465655d38fac5a5f5fd6cfa7cfd784c1ac5d",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Interpreted, interactive, object-oriented programming language",
       "license": "Python-2.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-01T19:56:35Z",
+      "date": "2026-10-09T12:32:00Z",
       "tags": {
         "tahoe": {
-          "filename": "python%403.14-3.14.8.tahoe.bottle.tar.gz",
-          "local_filename": "python@3.14--3.14.8.tahoe.bottle.tar.gz",
-          "sha256": "a583b971f24d1c8fe05cbd86f3a2e0b46edf43b5dd1f60e18d63774a99ddd1a8",
+          "filename": "python%403.14-3.14.8_1.tahoe.bottle.tar.gz",
+          "local_filename": "python@3.14--3.14.8_1.tahoe.bottle.tar.gz",
+          "sha256": "88fba8bbb502003257756ac15a0e2e6008c2ab6e7d5ad3543329b368a87183c4",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [
               "Frameworks/Python.framework/Versions/3.14/bin/idle3.14",
               "Frameworks/Python.framework/Versions/3.14/bin/pip3",
@@ -59,6 +59,15 @@
             "compiler": "clang",
             "runtime_dependencies": [
               {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
                 "full_name": "mpdecimal",
                 "version": "4.0.1",
                 "revision": 0,
@@ -68,22 +77,12 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "ca-certificates",
-                "version": "2026-09-25",
+                "full_name": "openssl@4",
+                "version": "4.0.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "openssl@3",
-                "version": "3.6.4",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "3.6.4",
-                "declared_directly": true,
-                "compatibility_version": 1
+                "pkg_version": "4.0.3",
+                "declared_directly": true
               },
               {
                 "full_name": "readline",
@@ -152,47 +151,24 @@
           "binary_relocation_diagnostics": [
             {
               "path": "Frameworks/Python.framework/Versions/3.14/Python",
-              "string": "/usr/local/Cellar/python@3.14/3.14.8/Frameworks/Python.framework/Versions/3.14",
-              "offset": 4061596
+              "string": "/usr/local/Cellar/python@3.14/3.14.8_1/Frameworks/Python.framework/Versions/3.14",
+              "offset": 4053794
             }
           ],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-              "SPDXRef-Package-SPDXRef-readline-8.3.6",
-              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
-              "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-gettext-1.0",
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
-                "name": "mpdecimal",
-                "versionInfo": "4.0.1",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.tahoe.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "49cd2025d6a2f8159d82a50c4720d75f17e01205c59fe057b931b4603d6f822d"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "name": "ca-certificates",
@@ -217,30 +193,53 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-                "name": "openssl@3",
-                "versionInfo": "3.6.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.4.tahoe.bottle.tar.gz",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13fdc9f3d0d30296056e2685e0c989978a5ed213f34a0de174e19feb72833e73"
+                    "checksumValue": "49cd2025d6a2f8159d82a50c4720d75f17e01205c59fe057b931b4603d6f822d"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "name": "readline",
                 "versionInfo": "8.3.6",
                 "filesAnalyzed": false,
@@ -263,7 +262,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
                 "name": "sqlite",
                 "versionInfo": "3.53.4",
                 "filesAnalyzed": false,
@@ -286,7 +285,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
@@ -309,7 +308,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -332,7 +331,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -355,7 +354,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "name": "gettext",
                 "versionInfo": "1.0",
                 "filesAnalyzed": false,
@@ -392,54 +391,54 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python@3.14"
-              },
-              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python@3.14"
+                "relatedSpdxElement": "SPDXRef-Bottle-python.40.3.2e.14"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python@3.14"
+                "relatedSpdxElement": "SPDXRef-Bottle-python.40.3.2e.14"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python@3.14"
+                "relatedSpdxElement": "SPDXRef-Bottle-python.40.3.2e.14"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python@3.14"
+                "relatedSpdxElement": "SPDXRef-Bottle-python.40.3.2e.14"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python@3.14"
+                "relatedSpdxElement": "SPDXRef-Bottle-python.40.3.2e.14"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python@3.14"
+                "relatedSpdxElement": "SPDXRef-Bottle-python.40.3.2e.14"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python@3.14"
+                "relatedSpdxElement": "SPDXRef-Bottle-python.40.3.2e.14"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python@3.14"
+                "relatedSpdxElement": "SPDXRef-Bottle-python.40.3.2e.14"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-python.40.3.2e.14"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-python@3.14-src"
+                "relatedSpdxElement": "SPDXRef-Archive-python.40.3.2e.14-src"
               }
             ]
           },
@@ -4236,7 +4235,7 @@
             "share/man/man1/python3.1",
             "share/man/man1/python3.14.1"
           ],
-          "installed_size": 72358173
+          "installed_size": 72120621
         }
       }
     }

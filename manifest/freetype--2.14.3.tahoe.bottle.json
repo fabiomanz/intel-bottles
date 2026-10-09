@@ -1,0 +1,200 @@
+{
+  "freetype": {
+    "formula": {
+      "name": "freetype",
+      "pkg_version": "2.14.3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/f/freetype.rb",
+      "tap_git_path": "Formula/f/freetype.rb",
+      "tap_git_revision": "c949465655d38fac5a5f5fd6cfa7cfd784c1ac5d",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Software library to render fonts",
+      "license": "FTL",
+      "homepage": "https://www.freetype.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-09T12:14:05Z",
+      "tags": {
+        "tahoe": {
+          "filename": "freetype-2.14.3.tahoe.bottle.tar.gz",
+          "local_filename": "freetype--2.14.3.tahoe.bottle.tar.gz",
+          "sha256": "a8a2bcc65a1d21adba6797d59f4ab1c91b0a40c53aae2794b4f94780e7379837",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "bin/freetype-config",
+              "lib/pkgconfig/freetype2.pc"
+            ],
+            "linkage_files": [
+              "lib/libfreetype.6.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1774192254,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "brotli",
+                "version": "1.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpng",
+                "version": "1.6.59",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.59",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+                "name": "libpng",
+                "versionInfo": "1.6.59",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.59.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "983550222f14d7db234a39119dc66c0de74d9b79b74f83ecf4b81a6b694d40de"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpng@1.6.59",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-freetype"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-freetype-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/freetype-config"
+          ],
+          "all_files": [
+            ".brew/freetype.rb",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.TXT",
+            "README",
+            "bin/freetype-config",
+            "include/freetype2/freetype/config/ftconfig.h",
+            "include/freetype2/freetype/config/ftheader.h",
+            "include/freetype2/freetype/config/ftmodule.h",
+            "include/freetype2/freetype/config/ftoption.h",
+            "include/freetype2/freetype/config/ftstdlib.h",
+            "include/freetype2/freetype/config/integer-types.h",
+            "include/freetype2/freetype/config/mac-support.h",
+            "include/freetype2/freetype/config/public-macros.h",
+            "include/freetype2/freetype/freetype.h",
+            "include/freetype2/freetype/ftadvanc.h",
+            "include/freetype2/freetype/ftbbox.h",
+            "include/freetype2/freetype/ftbdf.h",
+            "include/freetype2/freetype/ftbitmap.h",
+            "include/freetype2/freetype/ftbzip2.h",
+            "include/freetype2/freetype/ftcache.h",
+            "include/freetype2/freetype/ftchapters.h",
+            "include/freetype2/freetype/ftcid.h",
+            "include/freetype2/freetype/ftcolor.h",
+            "include/freetype2/freetype/ftdriver.h",
+            "include/freetype2/freetype/fterrdef.h",
+            "include/freetype2/freetype/fterrors.h",
+            "include/freetype2/freetype/ftfntfmt.h",
+            "include/freetype2/freetype/ftgasp.h",
+            "include/freetype2/freetype/ftglyph.h",
+            "include/freetype2/freetype/ftgxval.h",
+            "include/freetype2/freetype/ftgzip.h",
+            "include/freetype2/freetype/ftimage.h",
+            "include/freetype2/freetype/ftincrem.h",
+            "include/freetype2/freetype/ftlcdfil.h",
+            "include/freetype2/freetype/ftlist.h",
+            "include/freetype2/freetype/ftlogging.h",
+            "include/freetype2/freetype/ftlzw.h",
+            "include/freetype2/freetype/ftmac.h",
+            "include/freetype2/freetype/ftmm.h",
+            "include/freetype2/freetype/ftmodapi.h",
+            "include/freetype2/freetype/ftmoderr.h",
+            "include/freetype2/freetype/ftotval.h",
+            "include/freetype2/freetype/ftoutln.h",
+            "include/freetype2/freetype/ftparams.h",
+            "include/freetype2/freetype/ftpfr.h",
+            "include/freetype2/freetype/ftrender.h",
+            "include/freetype2/freetype/ftsizes.h",
+            "include/freetype2/freetype/ftsnames.h",
+            "include/freetype2/freetype/ftstroke.h",
+            "include/freetype2/freetype/ftsynth.h",
+            "include/freetype2/freetype/ftsystem.h",
+            "include/freetype2/freetype/fttrigon.h",
+            "include/freetype2/freetype/fttypes.h",
+            "include/freetype2/freetype/ftwinfnt.h",
+            "include/freetype2/freetype/otsvg.h",
+            "include/freetype2/freetype/t1tables.h",
+            "include/freetype2/freetype/ttnameid.h",
+            "include/freetype2/freetype/tttables.h",
+            "include/freetype2/freetype/tttags.h",
+            "include/freetype2/ft2build.h",
+            "lib/libfreetype.6.dylib",
+            "lib/libfreetype.a",
+            "lib/libfreetype.dylib",
+            "lib/pkgconfig/freetype2.pc",
+            "sbom.spdx.json",
+            "share/aclocal/freetype2.m4",
+            "share/man/man1/freetype-config.1"
+          ],
+          "installed_size": 2813610
+        }
+      }
+    }
+  }
+}

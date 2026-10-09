@@ -2,10 +2,10 @@
   "simdjson": {
     "formula": {
       "name": "simdjson",
-      "pkg_version": "5.0.2",
+      "pkg_version": "5.0.3",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/s/simdjson.rb",
       "tap_git_path": "Formula/s/simdjson.rb",
-      "tap_git_revision": "a9eb3f0cddc9a16651e6a46d0c1b0102499877f7",
+      "tap_git_revision": "c949465655d38fac5a5f5fd6cfa7cfd784c1ac5d",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "SIMD-accelerated C++ JSON parser",
       "license": "Apache-2.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-05T12:40:19Z",
+      "date": "2026-10-09T12:23:06Z",
       "tags": {
         "tahoe": {
-          "filename": "simdjson-5.0.2.tahoe.bottle.tar.gz",
-          "local_filename": "simdjson--5.0.2.tahoe.bottle.tar.gz",
-          "sha256": "820b72657a85f068ecf16102037fda81d849bd623bd583868ca83b9f5166f397",
+          "filename": "simdjson-5.0.3.tahoe.bottle.tar.gz",
+          "local_filename": "simdjson--5.0.3.tahoe.bottle.tar.gz",
+          "sha256": "5c829f9d1b3b2bad30b0a6f2d86cb9dc96bfd4eeac75a4b9c1249defa653deff",
           "tab": {
-            "homebrew_version": "7.0.8",
+            "homebrew_version": "7.0.9",
             "changed_files": [
               "lib/pkgconfig/simdjson.pc"
             ],
@@ -30,7 +30,7 @@
               "lib/libsimdjson.34.0.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1791139930,
+            "source_modified_time": 1791433142,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -92,7 +92,7 @@
             "lib/pkgconfig/simdjson.pc",
             "sbom.spdx.json"
           ],
-          "installed_size": 10973902
+          "installed_size": 10993254
         }
       }
     }

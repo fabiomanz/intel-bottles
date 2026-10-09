@@ -1,0 +1,190 @@
+{
+  "rtmpdump": {
+    "formula": {
+      "name": "rtmpdump",
+      "pkg_version": "2.6_2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/r/rtmpdump.rb",
+      "tap_git_path": "Formula/r/rtmpdump.rb",
+      "tap_git_revision": "c949465655d38fac5a5f5fd6cfa7cfd784c1ac5d",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Tool for downloading RTMP streaming media",
+      "license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+      "homepage": "https://rtmpdump.mplayerhq.hu/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-09T12:21:16Z",
+      "tags": {
+        "tahoe": {
+          "filename": "rtmpdump-2.6_2.tahoe.bottle.tar.gz",
+          "local_filename": "rtmpdump--2.6_2.tahoe.bottle.tar.gz",
+          "sha256": "4fca17bafd17d2838fa972cd96043c0446636f5f8ee3efe9b086e1c7202fccaa",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "lib/pkgconfig/librtmp.pc"
+            ],
+            "linkage_files": [
+              "bin/rtmpdump",
+              "bin/rtmpgw",
+              "bin/rtmpsrv",
+              "bin/rtmpsuck",
+              "lib/librtmp.1.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1763122780,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              }
+            ],
+            "source": {
+              "scm_revision": "138fdb258d9fc26f1843fd1b891180416c9dc575"
+            },
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rtmpdump"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rtmpdump"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-rtmpdump-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/rtmpsuck",
+            "bin/rtmpdump",
+            "bin/rtmpgw",
+            "bin/rtmpsrv"
+          ],
+          "all_files": [
+            ".brew/rtmpdump.rb",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "bin/rtmpdump",
+            "bin/rtmpgw",
+            "bin/rtmpsrv",
+            "bin/rtmpsuck",
+            "include/librtmp/amf.h",
+            "include/librtmp/http.h",
+            "include/librtmp/log.h",
+            "include/librtmp/rtmp.h",
+            "lib/librtmp.1.dylib",
+            "lib/librtmp.a",
+            "lib/librtmp.dylib",
+            "lib/pkgconfig/librtmp.pc",
+            "sbom.spdx.json",
+            "share/man/man1/rtmpdump.1",
+            "share/man/man3/librtmp.3",
+            "share/man/man8/rtmpgw.8"
+          ],
+          "installed_size": 435952
+        }
+      }
+    }
+  }
+}
