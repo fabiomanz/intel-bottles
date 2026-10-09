@@ -2,10 +2,10 @@
   "ffmpeg": {
     "formula": {
       "name": "ffmpeg",
-      "pkg_version": "9.0.2",
+      "pkg_version": "9.0.2_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/f/ffmpeg.rb",
       "tap_git_path": "Formula/f/ffmpeg.rb",
-      "tap_git_revision": "52b61f5ef99b03c18032c38a4a3de85d226a0e7e",
+      "tap_git_revision": "f00814c073d8a4980e21638b275db1e2a6fd24d0",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Play, record, convert, and stream select audio and video codecs",
       "license": "GPL-3.0-or-later",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-09-30T19:07:09Z",
+      "date": "2026-10-09T13:09:50Z",
       "tags": {
         "tahoe": {
-          "filename": "ffmpeg-9.0.2.tahoe.bottle.tar.gz",
-          "local_filename": "ffmpeg--9.0.2.tahoe.bottle.tar.gz",
-          "sha256": "9fd8e18d8f80d2f3ed27105397382eccb9204a2ca193e74939623c6513bd4b4c",
+          "filename": "ffmpeg-9.0.2_1.tahoe.bottle.tar.gz",
+          "local_filename": "ffmpeg--9.0.2_1.tahoe.bottle.tar.gz",
+          "sha256": "10b305e5fb3a252ad69f9d4dbca880bebb5b9e9b2f8ca3e69a09cab23f46aebc",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [
               "lib/pkgconfig/libavcodec.pc",
               "lib/pkgconfig/libavdevice.pc",
@@ -82,6 +82,7 @@
                 "full_name": "mpg123",
                 "version": "1.33.7",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.33.7",
                 "declared_directly": false,
                 "compatibility_version": 1
@@ -98,6 +99,7 @@
                 "full_name": "libvmaf",
                 "version": "3.2.1",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "3.2.1",
                 "declared_directly": true,
                 "compatibility_version": 1
@@ -106,6 +108,7 @@
                 "full_name": "libvpx",
                 "version": "1.17.0",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.17.0",
                 "declared_directly": true,
                 "compatibility_version": 1
@@ -120,13 +123,12 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "openssl@3",
-                "version": "3.6.4",
+                "full_name": "openssl@4",
+                "version": "4.0.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.4",
-                "declared_directly": true,
-                "compatibility_version": 1
+                "pkg_version": "4.0.3",
+                "declared_directly": true
               },
               {
                 "full_name": "opus",
@@ -139,19 +141,19 @@
               },
               {
                 "full_name": "sdl3",
-                "version": "3.4.16",
+                "version": "3.4.18",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.4.16",
+                "pkg_version": "3.4.18",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "sdl2-compat",
-                "version": "2.32.72",
+                "version": "2.32.74",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.32.72",
+                "pkg_version": "2.32.74",
                 "declared_directly": true
               },
               {
@@ -176,6 +178,7 @@
                 "full_name": "x265",
                 "version": "4.3",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "4.3",
                 "declared_directly": true,
                 "compatibility_version": 2
@@ -184,6 +187,7 @@
                 "full_name": "xz",
                 "version": "5.8.4",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "5.8.4",
                 "declared_directly": true,
                 "compatibility_version": 1
@@ -192,6 +196,7 @@
                 "full_name": "libx11",
                 "version": "1.8.13",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.8.13",
                 "declared_directly": false,
                 "compatibility_version": 1
@@ -210,29 +215,104 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/ffmpeg",
-              "string": "/usr/local/Cellar/ffmpeg/9.0.2/share/ffmpeg",
+              "string": "/usr/local/Cellar/ffmpeg/9.0.2_1/share/ffmpeg",
               "offset": 264763
             },
             {
               "path": "bin/ffprobe",
-              "string": "/usr/local/Cellar/ffmpeg/9.0.2/share/ffmpeg",
+              "string": "/usr/local/Cellar/ffmpeg/9.0.2_1/share/ffmpeg",
               "offset": 129538
             },
             {
               "path": "bin/ffplay",
-              "string": "/usr/local/Cellar/ffmpeg/9.0.2/share/ffmpeg",
+              "string": "/usr/local/Cellar/ffmpeg/9.0.2_1/share/ffmpeg",
               "offset": 104125
             }
           ],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-mpg123-1.2e.33.2e.7",
+              "SPDXRef-Package-SPDXRef-libvmaf-3.2e.2.2e.1",
+              "SPDXRef-Package-SPDXRef-libvpx-1.2e.17.2e.0",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-              "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
-              "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-sdl3-3.2e.4.2e.18",
+              "SPDXRef-Package-SPDXRef-sdl2-compat-2.2e.32.2e.74",
+              "SPDXRef-Package-SPDXRef-x265-4.2e.3",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpg123-1.2e.33.2e.7",
+                "name": "mpg123",
+                "versionInfo": "1.33.7",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-only",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/mpg123-1.33.7.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "568914f036d13546b887cd973a9f56526e1c3992c619d83a2b80fc0b9757ddc1"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpg123@1.33.7",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libvmaf-3.2e.2.2e.1",
+                "name": "libvmaf",
+                "versionInfo": "3.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause-Patent",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libvmaf-3.2.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4c9eb639c3440373be568cc39fa210ea3f7c7b79f5c73a354a5d0dadb1a1f65a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libvmaf@3.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libvpx-1.2e.17.2e.0",
+                "name": "libvpx",
+                "versionInfo": "1.17.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libvpx-1.17.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37b1fb1840bf793c99768ffc8342a3ec5148b5ad3cf933da107ba7b89612eb24"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libvpx@1.17.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "name": "ca-certificates",
@@ -257,70 +337,139 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-                "name": "openssl@3",
-                "versionInfo": "3.6.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.4.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13fdc9f3d0d30296056e2685e0c989978a5ed213f34a0de174e19feb72833e73"
+                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl3-3.2e.4.2e.18",
                 "name": "sdl3",
-                "versionInfo": "3.4.16",
+                "versionInfo": "3.4.18",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Zlib",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/sdl3-3.4.16.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/sdl3-3.4.18.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "131576a595762148e7093dea7c302583306da3ff976e5195b950d11e904355d1"
+                    "checksumValue": "09f268a724188351f6bda2ddb67a5f01007abfd64c221a1aff949913d5d0f27b"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/sdl3@3.4.16",
+                    "referenceLocator": "pkg:brew/sdl3@3.4.18",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl2-compat-2.2e.32.2e.74",
                 "name": "sdl2-compat",
-                "versionInfo": "2.32.72",
+                "versionInfo": "2.32.74",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Zlib",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/sdl2-compat-2.32.72.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/sdl2-compat-2.32.74.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "cbc418392383ba8a4656ed7d94d546e7ca2ce1985bc4aa38a7ad48714fda2954"
+                    "checksumValue": "42fee0f4e61686c0e4f1c06d16ab0c01ccf6e3d55f1b29af88cd90472786f959"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/sdl2-compat@2.32.72",
+                    "referenceLocator": "pkg:brew/sdl2-compat@2.32.74",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-x265-4.2e.3",
+                "name": "x265",
+                "versionInfo": "4.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/x265-4.3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e8c85fcc0d5bc5e17efab8324ba9cfae9d96639d29e27ee05bd96404e30efba0"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/x265@4.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xz-5.8.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54a648c4197b0299ee2d37527ca6a23447abe65342f8f8c0ed68e154f4593b0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "name": "libx11",
+                "versionInfo": "1.8.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.13.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10c0844f2a8daab11aa21bd737480e496469da1a15c37067dc34ab308f8b6285"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libx11@1.8.13",
                     "referenceType": "purl"
                   }
                 ]
@@ -340,22 +489,52 @@
             ],
             "relationships": [
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpg123-1.2e.33.2e.7",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libvmaf-3.2e.2.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libvpx-1.2e.17.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl3-3.2e.4.2e.18",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl2-compat-2.2e.32.2e.74",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-x265-4.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg"
               },
@@ -705,7 +884,7 @@
             "share/man/man3/libswresample.3",
             "share/man/man3/libswscale.3"
           ],
-          "installed_size": 56800510
+          "installed_size": 56800701
         }
       }
     }

@@ -2,10 +2,10 @@
   "nmap": {
     "formula": {
       "name": "nmap",
-      "pkg_version": "7.991",
+      "pkg_version": "7.991_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/n/nmap.rb",
       "tap_git_path": "Formula/n/nmap.rb",
-      "tap_git_revision": "63fa1810e68212f67bd965ae06d098906b90ff0c",
+      "tap_git_revision": "f00814c073d8a4980e21638b275db1e2a6fd24d0",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Port scanning utility for large networks",
       "license": "LicenseRef-Homebrew-cannot-represent",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-01T13:27:42Z",
+      "date": "2026-10-09T13:18:03Z",
       "tags": {
         "tahoe": {
-          "filename": "nmap-7.991.tahoe.bottle.tar.gz",
-          "local_filename": "nmap--7.991.tahoe.bottle.tar.gz",
-          "sha256": "cd7cd524217861f02e7330dbd33134c1dfe7fc7f683e111e6e7908c54bae0224",
+          "filename": "nmap-7.991_1.tahoe.bottle.tar.gz",
+          "local_filename": "nmap--7.991_1.tahoe.bottle.tar.gz",
+          "sha256": "18e7d753a7914e133d1c3bb1a654c7af39efbdc69c67e6f2ae80d681421e2e6d",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [
               "bin/ndiff",
               "share/man/de/man1/nmap.1",
@@ -73,20 +73,19 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "openssl@3",
-                "version": "3.6.4",
+                "full_name": "openssl@4",
+                "version": "4.0.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.4",
-                "declared_directly": true,
-                "compatibility_version": 1
+                "pkg_version": "4.0.3",
+                "declared_directly": true
               },
               {
                 "full_name": "libssh2",
                 "version": "1.11.1",
-                "revision": 6,
+                "revision": 7,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.11.1_6",
+                "pkg_version": "1.11.1_7",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -101,10 +100,10 @@
               },
               {
                 "full_name": "pcre2",
-                "version": "10.48",
+                "version": "10.49",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "10.48",
+                "pkg_version": "10.49",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -163,10 +162,10 @@
               },
               {
                 "full_name": "python@3.14",
-                "version": "3.14.7",
-                "revision": 0,
+                "version": "3.14.8",
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.14.7",
+                "pkg_version": "3.14.8_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -184,28 +183,28 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/ncat",
-              "string": "/usr/local/Cellar/nmap/7.991/share/ncat/ca-bundle.crt",
-              "offset": 302160
+              "string": "/usr/local/Cellar/nmap/7.991_1/share/ncat/ca-bundle.crt",
+              "offset": 302192
             },
             {
               "path": "bin/nmap",
-              "string": "/usr/local/Cellar/nmap/7.991/share/nmap",
-              "offset": 938938
+              "string": "/usr/local/Cellar/nmap/7.991_1/share/nmap",
+              "offset": 938922
             }
           ],
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-              "SPDXRef-Package-SPDXRef-libssh2-1.11.1_6",
-              "SPDXRef-Package-SPDXRef-pcre2-10.48",
-              "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
-              "SPDXRef-Package-SPDXRef-readline-8.3.6",
-              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
-              "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-libssh2-1.2e.11.2e.1.5f.7",
+              "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -233,76 +232,76 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-                "name": "openssl@3",
-                "versionInfo": "3.6.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.4.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13fdc9f3d0d30296056e2685e0c989978a5ed213f34a0de174e19feb72833e73"
+                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libssh2-1.11.1_6",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libssh2-1.2e.11.2e.1.5f.7",
                 "name": "libssh2",
-                "versionInfo": "1.11.1_6",
+                "versionInfo": "1.11.1_7",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libssh2-1.11.1_6.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libssh2-1.11.1_7.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "58e08062557f5f419f7ce6c7fe180a6c2a373270357267b4f29fa4f317f64b3f"
+                    "checksumValue": "5b100f4578cc8d595ae19553e26b12106d56df1112dcb8e1cd222b20acdfe295"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libssh2@1.11.1_6",
+                    "referenceLocator": "pkg:brew/libssh2@1.11.1_7",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "name": "pcre2",
-                "versionInfo": "10.48",
+                "versionInfo": "10.49",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.49.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                    "checksumValue": "7fe75e3ba297623163ee0e3a262e417d0eb36342f6cda4135ede90412ff03040"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceLocator": "pkg:brew/pcre2@10.49",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
                 "name": "mpdecimal",
                 "versionInfo": "4.0.1",
                 "filesAnalyzed": false,
@@ -325,7 +324,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "name": "readline",
                 "versionInfo": "8.3.6",
                 "filesAnalyzed": false,
@@ -348,7 +347,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
                 "name": "sqlite",
                 "versionInfo": "3.53.4",
                 "filesAnalyzed": false,
@@ -371,7 +370,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
@@ -394,7 +393,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -417,7 +416,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -440,24 +439,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
                 "name": "python@3.14",
-                "versionInfo": "3.14.7",
+                "versionInfo": "3.14.8_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Python-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/python/3.14/blobs/sha256:edaf325ee40b533f6042d84317f06af217267e824d5105cb7cd9a7f05c466e2c",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/python%403.14-3.14.8_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "edaf325ee40b533f6042d84317f06af217267e824d5105cb7cd9a7f05c466e2c"
+                    "checksumValue": "88fba8bbb502003257756ac15a0e2e6008c2ab6e7d5ad3543329b368a87183c4"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/python%403.14@3.14.7",
+                    "referenceLocator": "pkg:brew/python%403.14@3.14.8_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -482,52 +481,52 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-nmap"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-nmap"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libssh2-1.11.1_6",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libssh2-1.2e.11.2e.1.5f.7",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-nmap"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-nmap"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-nmap"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-nmap"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-nmap"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-nmap"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-nmap"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-nmap"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-nmap"
               },
@@ -1389,7 +1388,7 @@
             "share/nmap/scripts/xmpp-brute.nse",
             "share/nmap/scripts/xmpp-info.nse"
           ],
-          "installed_size": 30616209
+          "installed_size": 30615998
         }
       }
     }

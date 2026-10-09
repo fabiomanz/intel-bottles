@@ -2,10 +2,10 @@
   "unbound": {
     "formula": {
       "name": "unbound",
-      "pkg_version": "1.26.1",
+      "pkg_version": "1.26.1_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/u/unbound.rb",
       "tap_git_path": "Formula/u/unbound.rb",
-      "tap_git_revision": "63fa1810e68212f67bd965ae06d098906b90ff0c",
+      "tap_git_revision": "f00814c073d8a4980e21638b275db1e2a6fd24d0",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Validating, recursive, caching DNS resolver",
       "license": "BSD-3-Clause",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-01T14:05:54Z",
+      "date": "2026-10-09T13:31:40Z",
       "tags": {
         "tahoe": {
-          "filename": "unbound-1.26.1.tahoe.bottle.tar.gz",
-          "local_filename": "unbound--1.26.1.tahoe.bottle.tar.gz",
-          "sha256": "81925bf7b961e4ac05cf02260db65f65ae2e6926d3ce4d482cef497629705a1a",
+          "filename": "unbound-1.26.1_1.tahoe.bottle.tar.gz",
+          "local_filename": "unbound--1.26.1_1.tahoe.bottle.tar.gz",
+          "sha256": "70b46669a4ab3620694968d6590c805c515a1f0dcdd57105e8e5bb792e340b7a",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [
               "sbin/unbound-control-setup",
               ".bottle/etc/unbound/unbound.conf",
@@ -62,20 +62,19 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "openssl@3",
-                "version": "3.6.4",
+                "full_name": "openssl@4",
+                "version": "4.0.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.4",
-                "declared_directly": true,
-                "compatibility_version": 1
+                "pkg_version": "4.0.3",
+                "declared_directly": true
               },
               {
                 "full_name": "libevent",
                 "version": "2.1.13",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.1.13",
+                "pkg_version": "2.1.13_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -103,12 +102,12 @@
             {
               "path": "sbin/unbound-checkconf",
               "string": "/usr/local/etc/unbound/unbound.conf",
-              "offset": 617255
+              "offset": 617511
             },
             {
               "path": "sbin/unbound-checkconf",
               "string": "/usr/local/etc/unbound",
-              "offset": 637806
+              "offset": 638062
             },
             {
               "path": "sbin/unbound-control",
@@ -123,24 +122,25 @@
             {
               "path": "sbin/unbound",
               "string": "/usr/local/etc/unbound/unbound.conf",
-              "offset": 918134
+              "offset": 918390
             },
             {
               "path": "sbin/unbound",
               "string": "/usr/local/etc/unbound",
-              "offset": 951200
+              "offset": 951458
             },
             {
               "path": "lib/libunbound.8.dylib",
               "string": "/usr/local/etc/unbound",
-              "offset": 740092
+              "offset": 740348
             }
           ],
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-              "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+              "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -168,30 +168,53 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-                "name": "openssl@3",
-                "versionInfo": "3.6.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.4.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13fdc9f3d0d30296056e2685e0c989978a5ed213f34a0de174e19feb72833e73"
+                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+                "name": "libevent",
+                "versionInfo": "2.1.13_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libevent-2.1.13_1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "377d86e20e3ac97a4a671ba1260e80d5129cfaa08a34d68bef55c658b1c4513f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libevent@2.1.13_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
                 "name": "libnghttp2",
                 "versionInfo": "1.70.0",
                 "filesAnalyzed": false,
@@ -233,12 +256,17 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-unbound"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-unbound"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-unbound"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-unbound"
               },
@@ -318,7 +346,7 @@
             "share/man/man8/unbound-control.8",
             "share/man/man8/unbound.8"
           ],
-          "installed_size": 6396318
+          "installed_size": 6397735
         }
       }
     }

@@ -2,10 +2,10 @@
   "pandoc": {
     "formula": {
       "name": "pandoc",
-      "pkg_version": "3.12",
+      "pkg_version": "3.12.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pandoc.rb",
       "tap_git_path": "Formula/p/pandoc.rb",
-      "tap_git_revision": "ec705d4a6ceff44bafd152f7e9d29c99ed2e72f3",
+      "tap_git_revision": "f00814c073d8a4980e21638b275db1e2a6fd24d0",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Swiss-army knife of markup format conversion",
       "license": "GPL-2.0-or-later",
@@ -15,20 +15,20 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-03T11:12:44Z",
+      "date": "2026-10-09T13:48:23Z",
       "tags": {
         "tahoe": {
-          "filename": "pandoc-3.12.tahoe.bottle.tar.gz",
-          "local_filename": "pandoc--3.12.tahoe.bottle.tar.gz",
-          "sha256": "2f0e7b003002dfd3f640ef0f26d866206f608d902de969b28b81d6ba4f50e07d",
+          "filename": "pandoc-3.12.1.tahoe.bottle.tar.gz",
+          "local_filename": "pandoc--3.12.1.tahoe.bottle.tar.gz",
+          "sha256": "4d3bd03b7fc8ff75c09a612bba552de71c70c9c0c535ab4721b4b8a6eda3975e",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [
               "bin/pandoc"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790661045,
+            "source_modified_time": 1791394479,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -54,12 +54,12 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
                 "name": "gmp",
                 "versionInfo": "6.3.0",
                 "filesAnalyzed": false,
@@ -96,7 +96,7 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pandoc"
               },
@@ -123,7 +123,7 @@
             "sbom.spdx.json",
             "share/man/man1/pandoc.1"
           ],
-          "installed_size": 175268083
+          "installed_size": 175918712
         }
       }
     }

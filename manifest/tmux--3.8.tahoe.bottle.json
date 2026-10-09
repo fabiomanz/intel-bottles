@@ -1,0 +1,290 @@
+{
+  "tmux": {
+    "formula": {
+      "name": "tmux",
+      "pkg_version": "3.8",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/t/tmux.rb",
+      "tap_git_path": "Formula/t/tmux.rb",
+      "tap_git_revision": "f00814c073d8a4980e21638b275db1e2a6fd24d0",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Terminal multiplexer",
+      "license": "ISC",
+      "homepage": "https://tmux.github.io/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-09T13:23:58Z",
+      "tags": {
+        "tahoe": {
+          "filename": "tmux-3.8.tahoe.bottle.tar.gz",
+          "local_filename": "tmux--3.8.tahoe.bottle.tar.gz",
+          "sha256": "c84100b6fee8ed9a29e99a77422f43d002b2b40c3fe66ff1dc5a30be997b702c",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "share/man/man1/tmux.1"
+            ],
+            "linkage_files": [
+              "bin/tmux"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1791443953,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libevent",
+                "version": "2.1.13",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.1.13_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ncurses",
+                "version": "6.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "utf8proc",
+                "version": "2.12.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.12.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "jemalloc",
+                "version": "5.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.4.0",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+              "SPDXRef-Package-SPDXRef-utf8proc-2.2e.12.2e.0",
+              "SPDXRef-Package-SPDXRef-jemalloc-5.2e.4.2e.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+                "name": "libevent",
+                "versionInfo": "2.1.13_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libevent-2.1.13_1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "377d86e20e3ac97a4a671ba1260e80d5129cfaa08a34d68bef55c658b1c4513f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libevent@2.1.13_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-utf8proc-2.2e.12.2e.0",
+                "name": "utf8proc",
+                "versionInfo": "2.12.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT AND Unicode-DFS-2015",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/utf8proc-2.12.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "cd101c9656b6738d51068f8ef47b8e8fe19f234ac30dac3a5fccf52d95215e2a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/utf8proc@2.12.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jemalloc-5.2e.4.2e.0",
+                "name": "jemalloc",
+                "versionInfo": "5.4.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/jemalloc-5.4.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "38d3df3ed864854db962195bdbfb3a1032cfeecd73876599d1a56a14482bca85"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/jemalloc@5.4.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-tmux"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-tmux"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-tmux"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-utf8proc-2.2e.12.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-tmux"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jemalloc-5.2e.4.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-tmux"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-tmux-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/tmux"
+          ],
+          "all_files": [
+            ".brew/tmux.rb",
+            "CHANGES",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "bin/tmux",
+            "sbom.spdx.json",
+            "share/man/man1/tmux.1",
+            "share/tmux/example_tmux.conf"
+          ],
+          "installed_size": 1587088
+        }
+      }
+    }
+  }
+}

@@ -2,10 +2,10 @@
   "pipx": {
     "formula": {
       "name": "pipx",
-      "pkg_version": "1.17.11",
+      "pkg_version": "1.17.12",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pipx.rb",
       "tap_git_path": "Formula/p/pipx.rb",
-      "tap_git_revision": "a9eb3f0cddc9a16651e6a46d0c1b0102499877f7",
+      "tap_git_revision": "f00814c073d8a4980e21638b275db1e2a6fd24d0",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Execute binaries from Python packages in isolated environments",
       "license": "MIT",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-05T12:47:37Z",
+      "date": "2026-10-09T13:17:13Z",
       "tags": {
         "tahoe": {
-          "filename": "pipx-1.17.11.tahoe.bottle.tar.gz",
-          "local_filename": "pipx--1.17.11.tahoe.bottle.tar.gz",
-          "sha256": "da09d3d6fd76faef9d814bdf92382a0d1127f7eae4e88e9b7b45daaf463564c6",
+          "filename": "pipx-1.17.12.tahoe.bottle.tar.gz",
+          "local_filename": "pipx--1.17.12.tahoe.bottle.tar.gz",
+          "sha256": "1b1f7b456353178c65f923c5e41c0d89347940d251d9a8860f7cdcb7db19964d",
           "tab": {
-            "homebrew_version": "7.0.8",
+            "homebrew_version": "7.0.9",
             "changed_files": [
               "libexec/bin/activate-global-python-argcomplete",
               "libexec/bin/pipx",
@@ -33,7 +33,7 @@
             ],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1791071928,
+            "source_modified_time": 1791403645,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -55,13 +55,12 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "openssl@3",
-                "version": "3.6.5",
+                "full_name": "openssl@4",
+                "version": "4.0.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.5",
-                "declared_directly": false,
-                "compatibility_version": 1
+                "pkg_version": "4.0.3",
+                "declared_directly": false
               },
               {
                 "full_name": "readline",
@@ -110,9 +109,9 @@
               {
                 "full_name": "python@3.14",
                 "version": "3.14.8",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.14.8",
+                "pkg_version": "3.14.8_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -132,13 +131,13 @@
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
-              "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.6.2e.5",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -189,24 +188,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.6.2e.5",
-                "name": "openssl@3",
-                "versionInfo": "3.6.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.5.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "9df24dab1c79c4c07958ee358ef146ebcd5b05d8180274c3db0075a28f34f7f6"
+                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.5",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
                     "referenceType": "purl"
                   }
                 ]
@@ -327,24 +326,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8",
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
                 "name": "python@3.14",
-                "versionInfo": "3.14.8",
+                "versionInfo": "3.14.8_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Python-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/python%403.14-3.14.8.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/python%403.14-3.14.8_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "a583b971f24d1c8fe05cbd86f3a2e0b46edf43b5dd1f60e18d63774a99ddd1a8"
+                    "checksumValue": "88fba8bbb502003257756ac15a0e2e6008c2ab6e7d5ad3543329b368a87183c4"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/python%403.14@3.14.8",
+                    "referenceLocator": "pkg:brew/python%403.14@3.14.8_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -374,7 +373,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-pipx"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.6.2e.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pipx"
               },
@@ -404,7 +403,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-pipx"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pipx"
               },
@@ -504,11 +503,11 @@
             "libexec/lib/python3.14/site-packages/filelock/asyncio.py",
             "libexec/lib/python3.14/site-packages/filelock/py.typed",
             "libexec/lib/python3.14/site-packages/filelock/version.py",
-            "libexec/lib/python3.14/site-packages/filelock-4.0.10.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/filelock-4.0.10.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/filelock-4.0.10.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/filelock-4.0.10.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/filelock-4.0.10.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/filelock-4.0.12.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/filelock-4.0.12.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/filelock-4.0.12.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/filelock-4.0.12.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/filelock-4.0.12.dist-info/licenses/LICENSE",
             "libexec/lib/python3.14/site-packages/packaging/__init__.py",
             "libexec/lib/python3.14/site-packages/packaging/_elffile.py",
             "libexec/lib/python3.14/site-packages/packaging/_manylinux.py",
@@ -590,12 +589,12 @@
             "libexec/lib/python3.14/site-packages/pipx/version.py",
             "libexec/lib/python3.14/site-packages/pipx/version.pyi",
             "libexec/lib/python3.14/site-packages/pipx/wrap.py",
-            "libexec/lib/python3.14/site-packages/pipx-1.17.11.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/pipx-1.17.11.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/pipx-1.17.11.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/pipx-1.17.11.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/pipx-1.17.11.dist-info/entry_points.txt",
-            "libexec/lib/python3.14/site-packages/pipx-1.17.11.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/pipx-1.17.12.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/pipx-1.17.12.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/pipx-1.17.12.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/pipx-1.17.12.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/pipx-1.17.12.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/pipx-1.17.12.dist-info/licenses/LICENSE",
             "libexec/lib/python3.14/site-packages/platformdirs/__init__.py",
             "libexec/lib/python3.14/site-packages/platformdirs/__main__.py",
             "libexec/lib/python3.14/site-packages/platformdirs/_xdg.py",
@@ -635,7 +634,7 @@
             "share/man/man1/pipx.1",
             "share/zsh/site-functions/_pipx"
           ],
-          "installed_size": 2210967
+          "installed_size": 2214444
         }
       }
     }

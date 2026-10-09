@@ -2,10 +2,10 @@
   "llvm": {
     "formula": {
       "name": "llvm",
-      "pkg_version": "23.1.2",
+      "pkg_version": "23.1.3",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/l/llvm.rb",
       "tap_git_path": "Formula/l/llvm.rb",
-      "tap_git_revision": "8f9f40ed7a05c8e4ae96cc94b146618df30e271c",
+      "tap_git_revision": "f00814c073d8a4980e21638b275db1e2a6fd24d0",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Next-gen compiler infrastructure",
       "license": "Apache-2.0 WITH LLVM-exception",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-04T14:01:36Z",
+      "date": "2026-10-09T17:36:10Z",
       "tags": {
         "tahoe": {
-          "filename": "llvm-23.1.2.tahoe.bottle.tar.gz",
-          "local_filename": "llvm--23.1.2.tahoe.bottle.tar.gz",
-          "sha256": "c96a3ce337f7c6125b069ad01c103094e9689cbcdf54e8d8a6f5869babc4ac69",
+          "filename": "llvm-23.1.3.tahoe.bottle.tar.gz",
+          "local_filename": "llvm--23.1.3.tahoe.bottle.tar.gz",
+          "sha256": "4f16dbbb45437551b40fff97c839a2215ee2a277ce4c592a178eae420a6e67ec",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [
               "lib/python3.10/site-packages/clang/cindex.py",
               "lib/python3.11/site-packages/clang/cindex.py",
@@ -83,7 +83,7 @@
               "lib/unwind/libunwind.1.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1789873207,
+            "source_modified_time": 1791272331,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -135,14 +135,14 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -165,7 +165,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
@@ -188,7 +188,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -225,17 +225,17 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-llvm"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-llvm"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-llvm"
               },
@@ -425,7 +425,7 @@
             "INSTALL_RECEIPT.json",
             "LICENSE.TXT",
             "README.md",
-            "Toolchains/LLVM23.1.2.xctoolchain/Info.plist",
+            "Toolchains/LLVM23.1.3.xctoolchain/Info.plist",
             "bin/FileCheck",
             "bin/UnicodeNameMappingGenerator",
             "bin/amdgpu-arch",
@@ -9757,7 +9757,7 @@
             "share/vim/vimfiles/syntax/mlir.vim",
             "share/vim/vimfiles/syntax/tablegen.vim"
           ],
-          "installed_size": 1662184633
+          "installed_size": 1662340564
         }
       }
     }
