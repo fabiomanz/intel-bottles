@@ -2,10 +2,10 @@
   "python@3.14": {
     "formula": {
       "name": "python@3.14",
-      "pkg_version": "3.14.8_1",
+      "pkg_version": "3.14.8_2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/python@3.14.rb",
       "tap_git_path": "Formula/p/python@3.14.rb",
-      "tap_git_revision": "c949465655d38fac5a5f5fd6cfa7cfd784c1ac5d",
+      "tap_git_revision": "cb8855e9129930a1b3be143465931a84b6ecc774",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Interpreted, interactive, object-oriented programming language",
       "license": "Python-2.0",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-09T12:32:00Z",
+      "date": "2026-10-10T11:36:28Z",
       "tags": {
         "tahoe": {
-          "filename": "python%403.14-3.14.8_1.tahoe.bottle.tar.gz",
-          "local_filename": "python@3.14--3.14.8_1.tahoe.bottle.tar.gz",
-          "sha256": "88fba8bbb502003257756ac15a0e2e6008c2ab6e7d5ad3543329b368a87183c4",
+          "filename": "python%403.14-3.14.8_2.tahoe.bottle.tar.gz",
+          "local_filename": "python@3.14--3.14.8_2.tahoe.bottle.tar.gz",
+          "sha256": "30d9c51110454922fccd94256a0c88cdebf4bf9b9595141976dadac933aadd66",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [
@@ -31,7 +31,6 @@
               "Frameworks/Python.framework/Versions/3.14/bin/python3.14-config",
               "Frameworks/Python.framework/Versions/3.14/lib/python3.14/config-3.14-darwin/python-config.py",
               "IDLE 3.app/Contents/MacOS/IDLE",
-              "bin/pip3",
               "bin/pip3.14",
               "bin/wheel3.14",
               "Frameworks/Python.framework/Versions/3.14/lib/pkgconfig/python-3.14-embed.pc",
@@ -151,8 +150,8 @@
           "binary_relocation_diagnostics": [
             {
               "path": "Frameworks/Python.framework/Versions/3.14/Python",
-              "string": "/usr/local/Cellar/python@3.14/3.14.8_1/Frameworks/Python.framework/Versions/3.14",
-              "offset": 4053794
+              "string": "/usr/local/Cellar/python@3.14/3.14.8_2/Frameworks/Python.framework/Versions/3.14",
+              "offset": 4057282
             }
           ],
           "sbom": {
@@ -445,20 +444,13 @@
           "path_exec_files": [
             "bin/python3.14-config",
             "bin/pydoc3.14",
-            "bin/wheel3",
-            "bin/python3",
             "bin/pip3.14",
-            "bin/pip3",
-            "bin/idle3",
-            "bin/python3-config",
             "bin/idle3.14",
             "bin/wheel3.14",
-            "bin/pydoc3",
             "bin/python3.14"
           ],
           "all_files": [
             ".brew/python@3.14.rb",
-            "Frameworks/Python.framework/Python",
             "Frameworks/Python.framework/Versions/3.14/Python",
             "Frameworks/Python.framework/Versions/3.14/Resources/Info.plist",
             "Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/Info.plist",
@@ -466,14 +458,10 @@
             "Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/PkgInfo",
             "Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/Resources/PythonApplet.icns",
             "Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/Resources/PythonInterpreter.icns",
-            "Frameworks/Python.framework/Versions/3.14/bin/idle3",
             "Frameworks/Python.framework/Versions/3.14/bin/idle3.14",
             "Frameworks/Python.framework/Versions/3.14/bin/pip3",
             "Frameworks/Python.framework/Versions/3.14/bin/pip3.14",
-            "Frameworks/Python.framework/Versions/3.14/bin/pydoc3",
             "Frameworks/Python.framework/Versions/3.14/bin/pydoc3.14",
-            "Frameworks/Python.framework/Versions/3.14/bin/python3",
-            "Frameworks/Python.framework/Versions/3.14/bin/python3-config",
             "Frameworks/Python.framework/Versions/3.14/bin/python3.14",
             "Frameworks/Python.framework/Versions/3.14/bin/python3.14-config",
             "Frameworks/Python.framework/Versions/3.14/include/python3.14/Python.h",
@@ -763,8 +751,6 @@
             "Frameworks/Python.framework/Versions/3.14/lib/libpython3.14.dylib",
             "Frameworks/Python.framework/Versions/3.14/lib/pkgconfig/python-3.14-embed.pc",
             "Frameworks/Python.framework/Versions/3.14/lib/pkgconfig/python-3.14.pc",
-            "Frameworks/Python.framework/Versions/3.14/lib/pkgconfig/python3-embed.pc",
-            "Frameworks/Python.framework/Versions/3.14/lib/pkgconfig/python3.pc",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/EXTERNALLY-MANAGED",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/LICENSE.txt",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/__future__.py",
@@ -3710,22 +3696,14 @@
             "Python Launcher 3.app/Contents/Resources/PythonSource.icns",
             "Python Launcher 3.app/Contents/Resources/factorySettings.plist",
             "README.rst",
-            "bin/idle3",
             "bin/idle3.14",
-            "bin/pip3",
             "bin/pip3.14",
-            "bin/pydoc3",
             "bin/pydoc3.14",
-            "bin/python3",
-            "bin/python3-config",
             "bin/python3.14",
             "bin/python3.14-config",
-            "bin/wheel3",
             "bin/wheel3.14",
             "lib/pkgconfig/python-3.14-embed.pc",
             "lib/pkgconfig/python-3.14.pc",
-            "lib/pkgconfig/python3-embed.pc",
-            "lib/pkgconfig/python3.pc",
             "lib/python3.14/site-packages/pip/__init__.py",
             "lib/python3.14/site-packages/pip/__main__.py",
             "lib/python3.14/site-packages/pip/__pip-runner__.py",
@@ -4225,17 +4203,22 @@
             "lib/python3.14/site-packages/wheel-0.48.0.dist-info/entry_points.txt",
             "lib/python3.14/site-packages/wheel-0.48.0.dist-info/licenses/LICENSE.txt",
             "libexec/bin/idle",
+            "libexec/bin/idle3",
             "libexec/bin/pip",
+            "libexec/bin/pip3",
             "libexec/bin/pydoc",
+            "libexec/bin/pydoc3",
             "libexec/bin/python",
             "libexec/bin/python-config",
+            "libexec/bin/python3",
+            "libexec/bin/python3-config",
             "libexec/bin/wheel",
+            "libexec/bin/wheel3",
             "libexec/wheel-0.48.0-py3-none-any.whl",
             "sbom.spdx.json",
-            "share/man/man1/python3.1",
             "share/man/man1/python3.14.1"
           ],
-          "installed_size": 72120621
+          "installed_size": 72098224
         }
       }
     }

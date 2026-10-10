@@ -2,10 +2,10 @@
   "git": {
     "formula": {
       "name": "git",
-      "pkg_version": "2.56.0",
+      "pkg_version": "2.56.0_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/git.rb",
       "tap_git_path": "Formula/g/git.rb",
-      "tap_git_revision": "52b61f5ef99b03c18032c38a4a3de85d226a0e7e",
+      "tap_git_revision": "cb8855e9129930a1b3be143465931a84b6ecc774",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Distributed revision control system",
       "license": "GPL-2.0-only AND GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause AND MIT",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-09-30T19:04:20Z",
+      "date": "2026-10-10T11:29:05Z",
       "tags": {
         "tahoe": {
-          "filename": "git-2.56.0.tahoe.bottle.tar.gz",
-          "local_filename": "git--2.56.0.tahoe.bottle.tar.gz",
-          "sha256": "e210f5a14b7368f99dac297283f07881968205e4d4d4583f2df14d6d76255436",
+          "filename": "git-2.56.0_1.tahoe.bottle.tar.gz",
+          "local_filename": "git--2.56.0_1.tahoe.bottle.tar.gz",
+          "sha256": "8d0202701e84deb3df21d38534ae5a5c73a6cc3c47148cbe75d2cbcfc228c02e",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [
               "bin/git-cvsserver",
               "libexec/git-core/git-archimport",
@@ -65,10 +65,10 @@
             "runtime_dependencies": [
               {
                 "full_name": "pcre2",
-                "version": "10.48",
+                "version": "10.49",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "10.48",
+                "pkg_version": "10.49",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -84,6 +84,7 @@
                 "full_name": "libunistring",
                 "version": "1.4.2",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.4.2",
                 "declared_directly": false,
                 "compatibility_version": 1
@@ -92,6 +93,7 @@
                 "full_name": "gettext",
                 "version": "1.0",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.0",
                 "declared_directly": true,
                 "compatibility_version": 1
@@ -221,36 +223,38 @@
           ],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-pcre2-10.48",
-              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "name": "pcre2",
-                "versionInfo": "10.48",
+                "versionInfo": "10.49",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.49.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                    "checksumValue": "7fe75e3ba297623163ee0e3a262e417d0eb36342f6cda4135ede90412ff03040"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceLocator": "pkg:brew/pcre2@10.49",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "name": "json-c",
                 "versionInfo": "0.19",
                 "filesAnalyzed": false,
@@ -273,6 +277,52 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gettext-1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fe9d5337ff31e4f40b827b3463bd3fdc61b8f377277769f71e93baad0443bc96"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
                 "versionInfo": "26.6",
@@ -287,12 +337,22 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-git"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-git"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-git"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-git"
               },
@@ -2049,7 +2109,7 @@
             "share/zsh/site-functions/git-completion.bash",
             "share/zsh/site-functions/git-prompt.sh"
           ],
-          "installed_size": 66711901
+          "installed_size": 66711987
         }
       }
     }
