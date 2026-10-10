@@ -58,6 +58,20 @@ if [ -z "$TODO" ]; then
   exit 0
 fi
 
+# Never build an expensive dependency (heavy.txt) inside another formula's job: it has
+# its own job in an earlier wave. If that job failed, building it here again costs hours
+# per dependent and usually ends at the time limit -- on 2026-10-03 eight jobs each tried
+# to compile llvm, and on 2026-10-10 node, uv, cryptography and rpds-py did the same.
+# Skip cleanly instead; the next run builds this formula on top of the published bottle.
+for dep in $TODO; do
+  [ "$dep" = "$ROOT" ] && continue
+  if grep -qx "$dep" "$SCRIPT_DIR/../heavy.txt" 2>/dev/null; then
+    echo "==> $ROOT: skipped -- it needs $dep, which has no bottle yet and is only built"
+    echo "    in its own job (heavy.txt). It will be built once $dep is published."
+    exit 0
+  fi
+done
+
 echo "==> $ROOT: building $(echo "$TODO" | wc -l | tr -d ' ') formula(e) in dependency order"
 echo "$TODO" | sed 's/^/      /'
 

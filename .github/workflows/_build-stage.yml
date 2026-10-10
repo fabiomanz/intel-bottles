@@ -118,9 +118,13 @@ jobs:
         env:
           BOTTLE_OUT_DIR: ${{ github.workspace }}/bottles
         # Also written to a file, for the diagnostics heartbeat to tail.
+        #
+        # At lower CPU priority: a build that keeps every core busy can starve the runner's
+        # own agent, and GitHub then drops the job as "lost communication" -- with no log.
+        # That hit llvm 3 times out of 7 at 45-75 minutes in. Costs no build time.
         run: |
           set -o pipefail
-          ./scripts/build_root.sh "${{ matrix.entry.formula }}" 2>&1 | tee "$RUNNER_TEMP/build.log"
+          nice -n 10 ./scripts/build_root.sh "${{ matrix.entry.formula }}" 2>&1 | tee "$RUNNER_TEMP/build.log"
 
       - name: Compiler cache statistics
         if: always() && matrix.entry.ccache
