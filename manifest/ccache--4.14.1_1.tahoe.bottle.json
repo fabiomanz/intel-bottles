@@ -2,10 +2,10 @@
   "ccache": {
     "formula": {
       "name": "ccache",
-      "pkg_version": "4.14.1",
+      "pkg_version": "4.14.1_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/c/ccache.rb",
       "tap_git_path": "Formula/c/ccache.rb",
-      "tap_git_revision": "9ab57ffee970ac6a34f1f246cc3c71080e7fac62",
+      "tap_git_revision": "1df5620822602675a8447e99d239b35362d30a84",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Object-file caching compiler wrapper",
       "license": "GPL-3.0-or-later",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-04T21:12:43Z",
+      "date": "2026-10-10T00:19:00Z",
       "tags": {
         "tahoe": {
-          "filename": "ccache-4.14.1.tahoe.bottle.tar.gz",
-          "local_filename": "ccache--4.14.1.tahoe.bottle.tar.gz",
-          "sha256": "4cec7c69ce208adfa399bda3e295eb768a2a7d4f5c9e31dc7aeaca979515c52b",
+          "filename": "ccache-4.14.1_1.tahoe.bottle.tar.gz",
+          "local_filename": "ccache--4.14.1_1.tahoe.bottle.tar.gz",
+          "sha256": "c1f28046c89a0ef1339e2472898cece9e2734a321147e12eef1a462df1ffc42f",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [
               "bin/ccache"
@@ -61,20 +61,18 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "openssl@3",
-                "version": "3.6.5",
+                "full_name": "openssl@4",
+                "version": "4.0.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.5",
-                "declared_directly": true,
-                "compatibility_version": 1
+                "pkg_version": "4.0.3",
+                "declared_directly": true
               },
               {
                 "full_name": "hiredis",
                 "version": "1.4.1",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.4.1",
+                "revision": 1,
+                "pkg_version": "1.4.1_1",
                 "declared_directly": true,
                 "compatibility_version": 2
               },
@@ -126,18 +124,18 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/ccache",
-              "string": "/usr/local/Cellar/ccache/4.14.1/libexec",
-              "offset": 833888
+              "string": "/usr/local/Cellar/ccache/4.14.1_1/libexec",
+              "offset": 833136
             }
           ],
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
-              "SPDXRef-Package-SPDXRef-xxhash-0.8.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-xxhash-0.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -165,30 +163,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
-                "name": "openssl@3",
-                "versionInfo": "3.6.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.5.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "9df24dab1c79c4c07958ee358ef146ebcd5b05d8180274c3db0075a28f34f7f6"
+                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.5",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xxhash-0.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xxhash-0.2e.8.2e.4",
                 "name": "xxhash",
                 "versionInfo": "0.8.4",
                 "filesAnalyzed": false,
@@ -211,7 +209,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -234,7 +232,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
@@ -257,7 +255,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -299,27 +297,27 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-ccache"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ccache"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xxhash-0.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xxhash-0.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ccache"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ccache"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ccache"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ccache"
               },
@@ -424,7 +422,7 @@
             "share/doc/ccache/NEWS.html",
             "share/man/man1/ccache.1"
           ],
-          "installed_size": 2228136
+          "installed_size": 2228090
         }
       }
     }
