@@ -2,10 +2,10 @@
   "gstreamer": {
     "formula": {
       "name": "gstreamer",
-      "pkg_version": "1.28.7_2",
+      "pkg_version": "1.28.8",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gstreamer.rb",
       "tap_git_path": "Formula/g/gstreamer.rb",
-      "tap_git_revision": "575650f3ffc41524ec374793dc4ce89493ff579e",
+      "tap_git_revision": "6435daf1c531ff55b212e81448d0290b5e1d324f",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Development framework for multimedia applications",
       "license": "LGPL-2.0-or-later AND LGPL-2.1-or-later AND MIT",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-04T20:57:58Z",
+      "date": "2026-10-09T23:50:52Z",
       "tags": {
         "tahoe": {
-          "filename": "gstreamer-1.28.7_2.tahoe.bottle.tar.gz",
-          "local_filename": "gstreamer--1.28.7_2.tahoe.bottle.tar.gz",
-          "sha256": "41101cd969f56e6e8086070f24ee9447ef5a4c5c607b0ed12946286bd3e677fd",
+          "filename": "gstreamer-1.28.8.tahoe.bottle.tar.gz",
+          "local_filename": "gstreamer--1.28.8.tahoe.bottle.tar.gz",
+          "sha256": "c50ca4f9e6fc9e5552f5c826e8b21db430c5e3bae8d7f0cfc961123ae5c47b42",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [
               "bin/gst-validate-launcher",
               "lib/gst-validate-launcher/python/launcher/config.py",
@@ -63,7 +63,7 @@
               "lib/pkgconfig/gstreamer-video-1.0.pc",
               "lib/pkgconfig/gstreamer-webrtc-1.0.pc",
               "lib/pkgconfig/gstreamer-webrtc-nice-1.0.pc",
-              "share/gdb/auto-load/usr/local/Cellar/gstreamer/1.28.7_2/lib/libgstreamer-1.0.so.0.2807.0-gdb.py"
+              "share/gdb/auto-load/usr/local/Cellar/gstreamer/1.28.8/lib/libgstreamer-1.0.so.0.2808.0-gdb.py"
             ],
             "linkage_files": [
               "bin/ges-launch-1.0",
@@ -438,7 +438,7 @@
               "lib/libgstvalidate-1.0.0.dylib",
               "libexec/gstreamer-1.0/gst-hotdoc-plugins-scanner"
             ],
-            "source_modified_time": 1788808273,
+            "source_modified_time": 1791472832,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -457,6 +457,15 @@
                 "bottle_rebuild": 0,
                 "pkg_version": "3.15.1",
                 "declared_directly": true
+              },
+              {
+                "full_name": "brotli",
+                "version": "1.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "libpng",
@@ -522,10 +531,10 @@
               },
               {
                 "full_name": "glib",
-                "version": "2.90.0",
+                "version": "2.90.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.90.0",
+                "pkg_version": "2.90.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -679,13 +688,12 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "openssl@3",
-                "version": "3.6.5",
+                "full_name": "openssl@4",
+                "version": "4.0.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.5",
-                "declared_directly": true,
-                "compatibility_version": 1
+                "pkg_version": "4.0.3",
+                "declared_directly": true
               },
               {
                 "full_name": "opus",
@@ -752,9 +760,9 @@
               {
                 "full_name": "ffmpeg",
                 "version": "9.0.2",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "9.0.2",
+                "pkg_version": "9.0.2_1",
                 "declared_directly": true,
                 "compatibility_version": 3
               },
@@ -926,10 +934,10 @@
               },
               {
                 "full_name": "harfbuzz",
-                "version": "14.5.1",
+                "version": "14.6.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "14.5.1",
+                "pkg_version": "14.6.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -1132,9 +1140,9 @@
               {
                 "full_name": "libshout",
                 "version": "2.4.6",
-                "revision": 2,
+                "revision": 4,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.4.6_2",
+                "pkg_version": "2.4.6_4",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -1301,27 +1309,27 @@
               {
                 "full_name": "python@3.14",
                 "version": "3.14.8",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.14.8",
+                "pkg_version": "3.14.8_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "gobject-introspection",
                 "version": "1.86.0",
-                "revision": 3,
+                "revision": 4,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.86.0_3",
+                "pkg_version": "1.86.0_4",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "py3cairo",
-                "version": "1.29.1",
+                "version": "1.29.2",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.29.1",
+                "pkg_version": "1.29.2",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -1337,27 +1345,27 @@
               {
                 "full_name": "rtmpdump",
                 "version": "2.6",
-                "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "2.6",
+                "revision": 2,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.6_2",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "srt",
                 "version": "1.5.7",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.5.7",
+                "pkg_version": "1.5.7_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "srtp",
                 "version": "2.8.1",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.8.1",
+                "pkg_version": "2.8.1_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -1419,275 +1427,281 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/gst-inspect-1.0",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 35331
             },
             {
               "path": "bin/gst-typefind-1.0",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 8830
             },
             {
               "path": "bin/gst-play-1.0",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 29343
             },
             {
               "path": "bin/gst-device-monitor-1.0",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 11844
             },
             {
               "path": "bin/gst-stats-1.0",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 18711
             },
             {
               "path": "bin/gst-launch-1.0",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 18033
             },
             {
               "path": "libexec/gstreamer-1.0/gst-hotdoc-plugins-scanner",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 20731
             },
             {
               "path": "lib/libgstaudio-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
-              "offset": 346437
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
+              "offset": 346933
             },
             {
               "path": "lib/libgstnet-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/libexec/gstreamer-1.0/gst-ptp-helper",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/libexec/gstreamer-1.0/gst-ptp-helper",
               "offset": 73280
             },
             {
               "path": "lib/libgstreamer-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
-              "offset": 837724
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
+              "offset": 837892
             },
             {
               "path": "lib/libgstreamer-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/lib",
-              "offset": 837780
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/lib",
+              "offset": 837946
             },
             {
               "path": "lib/libgstreamer-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share",
-              "offset": 926901
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share",
+              "offset": 927123
             },
             {
               "path": "lib/libgstreamer-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/lib/gstreamer-1.0",
-              "offset": 936017
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/lib/gstreamer-1.0",
+              "offset": 936237
             },
             {
               "path": "lib/libgstreamer-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/libexec/gstreamer-1.0/gst-plugin-scanner",
-              "offset": 984450
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/libexec/gstreamer-1.0/gst-plugin-scanner",
+              "offset": 984668
             },
             {
               "path": "lib/libgstvalidate-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share",
               "offset": 273902
             },
             {
               "path": "lib/libgstvalidate-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/lib/gstreamer-1.0/validate",
-              "offset": 319810
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/lib/gstreamer-1.0/validate",
+              "offset": 319808
             },
             {
               "path": "lib/libgsttag-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/gst-plugins-base/1.0/license-translations.dict",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/gst-plugins-base/1.0/license-translations.dict",
               "offset": 157804
             },
             {
               "path": "lib/libgsttag-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
-              "offset": 159040
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
+              "offset": 159038
             },
             {
               "path": "lib/gstreamer-1.0/libgstencoding.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 65453
             },
             {
               "path": "lib/gstreamer-1.0/libgstplayback.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 479382
             },
             {
               "path": "lib/gstreamer-1.0/libgstisomp4.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
-              "offset": 443759
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
+              "offset": 443971
             },
             {
               "path": "lib/gstreamer-1.0/libgstsoup.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 62347
             },
             {
               "path": "lib/gstreamer-1.0/libgstvalidatetracer.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share",
               "offset": 274062
             },
             {
               "path": "lib/gstreamer-1.0/libgstvalidatetracer.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/lib/gstreamer-1.0/validate",
-              "offset": 319970
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/lib/gstreamer-1.0/validate",
+              "offset": 319968
             },
             {
               "path": "lib/gstreamer-1.0/libgstmidi.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 25148
             },
             {
               "path": "lib/gstreamer-1.0/libgstlame.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 20915
             },
             {
               "path": "lib/gstreamer-1.0/libgstogg.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 171165
             },
             {
               "path": "lib/gstreamer-1.0/libgstflac.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 40714
             },
             {
               "path": "lib/gstreamer-1.0/libgstpython.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/lib/gstreamer-1.0/python:HOME/.gstreamer-1.0/plugins/python:GST_PLUGIN_SYSTEM_PATH/python:GST_PLUGIN_PATH/python",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/lib/gstreamer-1.0/python:HOME/.gstreamer-1.0/plugins/python:GST_PLUGIN_SYSTEM_PATH/python:GST_PLUGIN_PATH/python",
               "offset": 13327
             },
             {
               "path": "lib/gstreamer-1.0/libgstpython.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/lib/gstreamer-1.0/python",
-              "offset": 14682
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/lib/gstreamer-1.0/python",
+              "offset": 14680
             },
             {
               "path": "lib/gstreamer-1.0/libgstsndfile.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 21170
             },
             {
               "path": "lib/gstreamer-1.0/libgstfrei0r.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/lib",
-              "offset": 30193
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/lib",
+              "offset": 30191
             },
             {
               "path": "lib/gstreamer-1.0/libgstasf.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
-              "offset": 107656
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
+              "offset": 107816
             },
             {
               "path": "lib/gstreamer-1.0/libgstaiff.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 44449
             },
             {
               "path": "lib/gstreamer-1.0/libgstcurl.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 78554
             },
             {
               "path": "lib/gstreamer-1.0/libgstrtsp.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
-              "offset": 136497
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
+              "offset": 136505
             },
             {
               "path": "lib/gstreamer-1.0/libgstshout2.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 22509
             },
             {
               "path": "lib/gstreamer-1.0/libgstavi.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 139581
             },
             {
               "path": "lib/gstreamer-1.0/libgstoss4.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 36144
             },
             {
               "path": "lib/libgstpbutils-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share/locale",
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share/locale",
               "offset": 137077
             },
             {
               "path": "lib/libgstpbutils-1.0.0.dylib",
-              "string": "/usr/local/Cellar/gstreamer/1.28.7_2/share",
-              "offset": 158663
+              "string": "/usr/local/Cellar/gstreamer/1.28.8/share",
+              "offset": 158661
             }
           ],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
-              "SPDXRef-Package-SPDXRef-aom-3.15.1",
-              "SPDXRef-Package-SPDXRef-libpng-1.6.59",
-              "SPDXRef-Package-SPDXRef-json-c-0.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
-              "SPDXRef-Package-SPDXRef-gettext-1.0",
-              "SPDXRef-Package-SPDXRef-pcre2-10.49",
-              "SPDXRef-Package-SPDXRef-glib-2.90.0",
-              "SPDXRef-Package-SPDXRef-xorgproto-2026.1",
-              "SPDXRef-Package-SPDXRef-libx11-1.8.13",
-              "SPDXRef-Package-SPDXRef-cairo-1.18.6",
-              "SPDXRef-Package-SPDXRef-faac-2.2",
-              "SPDXRef-Package-SPDXRef-faad2-2.11.4",
-              "SPDXRef-Package-SPDXRef-mpg123-1.33.7",
-              "SPDXRef-Package-SPDXRef-libvpx-1.17.0",
+              "SPDXRef-Package-SPDXRef-libvmaf-3.2e.2.2e.1",
+              "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.1",
+              "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+              "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+              "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+              "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+              "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+              "SPDXRef-Package-SPDXRef-faac-2.2e.2",
+              "SPDXRef-Package-SPDXRef-faad2-2.2e.11.2e.4",
+              "SPDXRef-Package-SPDXRef-mpg123-1.2e.33.2e.7",
+              "SPDXRef-Package-SPDXRef-libvpx-1.2e.17.2e.0",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
-              "SPDXRef-Package-SPDXRef-sdl3-3.4.18",
-              "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.74",
-              "SPDXRef-Package-SPDXRef-x265-4.3",
-              "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-ffmpeg-9.0.2",
-              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
-              "SPDXRef-Package-SPDXRef-giflib-6.1.3",
-              "SPDXRef-Package-SPDXRef-webp-1.6.0",
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
-              "SPDXRef-Package-SPDXRef-at-spi2-core-2.62.0.1",
-              "SPDXRef-Package-SPDXRef-fribidi-1.0.17",
-              "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.0",
-              "SPDXRef-Package-SPDXRef-harfbuzz-14.5.1",
-              "SPDXRef-Package-SPDXRef-hicolor-icon-theme-0.18",
-              "SPDXRef-Package-SPDXRef-pango-1.58.2",
-              "SPDXRef-Package-SPDXRef-gtk+3-3.24.52_1",
-              "SPDXRef-Package-SPDXRef-librsvg-2.63.2",
-              "SPDXRef-Package-SPDXRef-gtk4-4.24.1",
-              "SPDXRef-Package-SPDXRef-libunibreak-8.0",
-              "SPDXRef-Package-SPDXRef-libass-0.17.5_1",
-              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
-              "SPDXRef-Package-SPDXRef-p11-kit-0.26.5",
-              "SPDXRef-Package-SPDXRef-libnice-0.1.24",
-              "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
-              "SPDXRef-Package-SPDXRef-readline-8.3.6",
-              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
-              "SPDXRef-Package-SPDXRef-libsoup-3.8.0",
-              "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
-              "SPDXRef-Package-SPDXRef-openjph-0.32.0",
-              "SPDXRef-Package-SPDXRef-openexr-3.5.2",
-              "SPDXRef-Package-SPDXRef-openjpeg-2.5.4_1",
-              "SPDXRef-Package-SPDXRef-orc-0.4.44",
-              "SPDXRef-Package-SPDXRef-pkgconf-3.0.7",
-              "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
-              "SPDXRef-Package-SPDXRef-python@3.14-3.14.8",
-              "SPDXRef-Package-SPDXRef-pygobject3-3.58.0",
-              "SPDXRef-Package-SPDXRef-srtp-2.8.1",
-              "SPDXRef-Package-SPDXRef-utf8cpp-4.2.1",
-              "SPDXRef-Package-SPDXRef-taglib-2.3.2",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-sdl3-3.2e.4.2e.18",
+              "SPDXRef-Package-SPDXRef-sdl2-compat-2.2e.32.2e.74",
+              "SPDXRef-Package-SPDXRef-x265-4.2e.3",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-ffmpeg-9.2e.0.2e.2.5f.1",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
+              "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
+              "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-libtiff-4.2e.7.2e.2",
+              "SPDXRef-Package-SPDXRef-at-spi2-core-2.2e.62.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-fribidi-1.2e.0.2e.17",
+              "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.2e.0",
+              "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+              "SPDXRef-Package-SPDXRef-hicolor-icon-theme-0.2e.18",
+              "SPDXRef-Package-SPDXRef-pango-1.2e.58.2e.2",
+              "SPDXRef-Package-SPDXRef-gtk.2b.3-3.2e.24.2e.52.5f.1",
+              "SPDXRef-Package-SPDXRef-librsvg-2.2e.63.2e.2",
+              "SPDXRef-Package-SPDXRef-gtk4-4.2e.24.2e.1",
+              "SPDXRef-Package-SPDXRef-libunibreak-8.2e.0",
+              "SPDXRef-Package-SPDXRef-libass-0.2e.17.2e.5.5f.1",
+              "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+              "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+              "SPDXRef-Package-SPDXRef-libnice-0.2e.1.2e.24",
+              "SPDXRef-Package-SPDXRef-libshout-2.2e.4.2e.6.5f.4",
+              "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+              "SPDXRef-Package-SPDXRef-libsoup-3.2e.8.2e.0",
+              "SPDXRef-Package-SPDXRef-little-cms2-2.2e.19.2e.1",
+              "SPDXRef-Package-SPDXRef-openjph-0.2e.32.2e.0",
+              "SPDXRef-Package-SPDXRef-openexr-3.2e.5.2e.2",
+              "SPDXRef-Package-SPDXRef-openjpeg-2.2e.5.2e.4.5f.1",
+              "SPDXRef-Package-SPDXRef-orc-0.2e.4.2e.44",
+              "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.7",
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
+              "SPDXRef-Package-SPDXRef-gobject-introspection-1.2e.86.2e.0.5f.4",
+              "SPDXRef-Package-SPDXRef-py3cairo-1.2e.29.2e.2",
+              "SPDXRef-Package-SPDXRef-pygobject3-3.2e.58.2e.0",
+              "SPDXRef-Package-SPDXRef-rtmpdump-2.2e.6.5f.2",
+              "SPDXRef-Package-SPDXRef-srt-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-srtp-2.2e.8.2e.1.5f.1",
+              "SPDXRef-Package-SPDXRef-utf8cpp-4.2e.2.2e.1",
+              "SPDXRef-Package-SPDXRef-taglib-2.2e.3.2e.2",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libvmaf-3.2e.2.2e.1",
                 "name": "libvmaf",
                 "versionInfo": "3.2.1",
                 "filesAnalyzed": false,
@@ -1710,7 +1724,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-aom-3.15.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.1",
                 "name": "aom",
                 "versionInfo": "3.15.1",
                 "filesAnalyzed": false,
@@ -1733,7 +1747,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.59",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "name": "libpng",
                 "versionInfo": "1.6.59",
                 "filesAnalyzed": false,
@@ -1756,7 +1770,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "name": "freetype",
+                "versionInfo": "2.14.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "FTL",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.14.3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a8a2bcc65a1d21adba6797d59f4ab1c91b0a40c53aae2794b4f94780e7379837"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/freetype@2.14.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "name": "json-c",
                 "versionInfo": "0.19",
                 "filesAnalyzed": false,
@@ -1779,7 +1816,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
                 "name": "libunistring",
                 "versionInfo": "1.4.2",
                 "filesAnalyzed": false,
@@ -1802,7 +1839,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "name": "gettext",
                 "versionInfo": "1.0",
                 "filesAnalyzed": false,
@@ -1825,7 +1862,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.49",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "name": "pcre2",
                 "versionInfo": "10.49",
                 "filesAnalyzed": false,
@@ -1848,30 +1885,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "name": "glib",
-                "versionInfo": "2.90.0",
+                "versionInfo": "2.90.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "LGPL-2.1-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4f180b8f89781725d58c0a39d7508c0bf0e96225fc69ef630e18a9f885f61c4a"
+                    "checksumValue": "3b0aaa12be31d6f764cdca91e2a75efe6f317eabba79a48bdf1467217a0ccbab"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/glib@2.90.0",
+                    "referenceLocator": "pkg:brew/glib@2.90.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xorgproto-2026.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "name": "xorgproto",
                 "versionInfo": "2026.1",
                 "filesAnalyzed": false,
@@ -1894,7 +1931,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
                 "name": "libx11",
                 "versionInfo": "1.8.13",
                 "filesAnalyzed": false,
@@ -1917,7 +1954,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+                "SPDXID": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "name": "cairo",
                 "versionInfo": "1.18.6",
                 "filesAnalyzed": false,
@@ -1940,7 +1977,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-faac-2.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-faac-2.2e.2",
                 "name": "faac",
                 "versionInfo": "2.2",
                 "filesAnalyzed": false,
@@ -1963,7 +2000,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-faad2-2.11.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-faad2-2.2e.11.2e.4",
                 "name": "faad2",
                 "versionInfo": "2.11.4",
                 "filesAnalyzed": false,
@@ -1986,7 +2023,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-mpg123-1.33.7",
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpg123-1.2e.33.2e.7",
                 "name": "mpg123",
                 "versionInfo": "1.33.7",
                 "filesAnalyzed": false,
@@ -2009,7 +2046,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libvpx-1.17.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libvpx-1.2e.17.2e.0",
                 "name": "libvpx",
                 "versionInfo": "1.17.0",
                 "filesAnalyzed": false,
@@ -2055,30 +2092,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
-                "name": "openssl@3",
-                "versionInfo": "3.6.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.5.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "9df24dab1c79c4c07958ee358ef146ebcd5b05d8180274c3db0075a28f34f7f6"
+                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.5",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sdl3-3.4.18",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl3-3.2e.4.2e.18",
                 "name": "sdl3",
                 "versionInfo": "3.4.18",
                 "filesAnalyzed": false,
@@ -2101,7 +2138,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.74",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl2-compat-2.2e.32.2e.74",
                 "name": "sdl2-compat",
                 "versionInfo": "2.32.74",
                 "filesAnalyzed": false,
@@ -2124,7 +2161,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-x265-4.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-x265-4.2e.3",
                 "name": "x265",
                 "versionInfo": "4.3",
                 "filesAnalyzed": false,
@@ -2147,7 +2184,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
@@ -2170,30 +2207,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ffmpeg-9.0.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ffmpeg-9.2e.0.2e.2.5f.1",
                 "name": "ffmpeg",
-                "versionInfo": "9.0.2",
+                "versionInfo": "9.0.2_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-3.0-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/ffmpeg-9.0.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/ffmpeg-9.0.2_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "9fd8e18d8f80d2f3ed27105397382eccb9204a2ca193e74939623c6513bd4b4c"
+                    "checksumValue": "10b305e5fb3a252ad69f9d4dbca880bebb5b9e9b2f8ca3e69a09cab23f46aebc"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ffmpeg@9.0.2",
+                    "referenceLocator": "pkg:brew/ffmpeg@9.0.2_1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
                 "name": "jpeg-turbo",
                 "versionInfo": "3.2.0",
                 "filesAnalyzed": false,
@@ -2216,7 +2253,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
                 "name": "giflib",
                 "versionInfo": "6.1.3",
                 "filesAnalyzed": false,
@@ -2239,7 +2276,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-webp-1.6.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
                 "name": "webp",
                 "versionInfo": "1.6.0",
                 "filesAnalyzed": false,
@@ -2262,7 +2299,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -2285,7 +2322,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -2308,7 +2345,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libtiff-4.2e.7.2e.2",
                 "name": "libtiff",
                 "versionInfo": "4.7.2",
                 "filesAnalyzed": false,
@@ -2331,7 +2368,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-at-spi2-core-2.62.0.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-at-spi2-core-2.2e.62.2e.0.2e.1",
                 "name": "at-spi2-core",
                 "versionInfo": "2.62.0.1",
                 "filesAnalyzed": false,
@@ -2354,7 +2391,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-fribidi-1.0.17",
+                "SPDXID": "SPDXRef-Package-SPDXRef-fribidi-1.2e.0.2e.17",
                 "name": "fribidi",
                 "versionInfo": "1.0.17",
                 "filesAnalyzed": false,
@@ -2377,7 +2414,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.2e.0",
                 "name": "gsettings-desktop-schemas",
                 "versionInfo": "51.0",
                 "filesAnalyzed": false,
@@ -2400,30 +2437,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-harfbuzz-14.5.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
                 "name": "harfbuzz",
-                "versionInfo": "14.5.1",
+                "versionInfo": "14.6.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/harfbuzz-14.5.1.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/harfbuzz-14.6.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "b879940a16dddfb56c92b986abd1d88bb902d1c3805353b8e9c5437b39781c30"
+                    "checksumValue": "38958915ce3b608419a3e9f5c1f87f1c97be753b1f39f058317824798d26f34d"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/harfbuzz@14.5.1",
+                    "referenceLocator": "pkg:brew/harfbuzz@14.6.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-hicolor-icon-theme-0.18",
+                "SPDXID": "SPDXRef-Package-SPDXRef-hicolor-icon-theme-0.2e.18",
                 "name": "hicolor-icon-theme",
                 "versionInfo": "0.18",
                 "filesAnalyzed": false,
@@ -2446,7 +2483,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pango-1.58.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pango-1.2e.58.2e.2",
                 "name": "pango",
                 "versionInfo": "1.58.2",
                 "filesAnalyzed": false,
@@ -2469,7 +2506,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gtk+3-3.24.52_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gtk.2b.3-3.2e.24.2e.52.5f.1",
                 "name": "gtk+3",
                 "versionInfo": "3.24.52_1",
                 "filesAnalyzed": false,
@@ -2492,7 +2529,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-librsvg-2.63.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-librsvg-2.2e.63.2e.2",
                 "name": "librsvg",
                 "versionInfo": "2.63.2",
                 "filesAnalyzed": false,
@@ -2515,7 +2552,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gtk4-4.24.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gtk4-4.2e.24.2e.1",
                 "name": "gtk4",
                 "versionInfo": "4.24.1",
                 "filesAnalyzed": false,
@@ -2538,7 +2575,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunibreak-8.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunibreak-8.2e.0",
                 "name": "libunibreak",
                 "versionInfo": "8.0",
                 "filesAnalyzed": false,
@@ -2561,7 +2598,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libass-0.17.5_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libass-0.2e.17.2e.5.5f.1",
                 "name": "libass",
                 "versionInfo": "0.17.5_1",
                 "filesAnalyzed": false,
@@ -2584,7 +2621,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
                 "name": "gmp",
                 "versionInfo": "6.3.0",
                 "filesAnalyzed": false,
@@ -2607,7 +2644,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-p11-kit-0.26.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
                 "name": "p11-kit",
                 "versionInfo": "0.26.5",
                 "filesAnalyzed": false,
@@ -2630,7 +2667,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libnice-0.1.24",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libnice-0.2e.1.2e.24",
                 "name": "libnice",
                 "versionInfo": "0.1.24",
                 "filesAnalyzed": false,
@@ -2653,7 +2690,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libshout-2.2e.4.2e.6.5f.4",
+                "name": "libshout",
+                "versionInfo": "2.4.6_4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libshout-2.4.6_4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "51480bdc7e373b1a6465baa92d518d3ac3d49d074ef2ab7ce9dd7e0f0aab68c3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libshout@2.4.6_4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
                 "name": "libnghttp2",
                 "versionInfo": "1.70.0",
                 "filesAnalyzed": false,
@@ -2676,7 +2736,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "name": "readline",
                 "versionInfo": "8.3.6",
                 "filesAnalyzed": false,
@@ -2699,7 +2759,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
                 "name": "sqlite",
                 "versionInfo": "3.53.4",
                 "filesAnalyzed": false,
@@ -2722,7 +2782,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libsoup-3.8.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libsoup-3.2e.8.2e.0",
                 "name": "libsoup",
                 "versionInfo": "3.8.0",
                 "filesAnalyzed": false,
@@ -2745,7 +2805,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-little-cms2-2.2e.19.2e.1",
                 "name": "little-cms2",
                 "versionInfo": "2.19.1",
                 "filesAnalyzed": false,
@@ -2768,7 +2828,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openjph-0.32.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openjph-0.2e.32.2e.0",
                 "name": "openjph",
                 "versionInfo": "0.32.0",
                 "filesAnalyzed": false,
@@ -2791,7 +2851,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openexr-3.5.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openexr-3.2e.5.2e.2",
                 "name": "openexr",
                 "versionInfo": "3.5.2",
                 "filesAnalyzed": false,
@@ -2814,7 +2874,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openjpeg-2.5.4_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openjpeg-2.2e.5.2e.4.5f.1",
                 "name": "openjpeg",
                 "versionInfo": "2.5.4_1",
                 "filesAnalyzed": false,
@@ -2837,7 +2897,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-orc-0.4.44",
+                "SPDXID": "SPDXRef-Package-SPDXRef-orc-0.2e.4.2e.44",
                 "name": "orc",
                 "versionInfo": "0.4.44",
                 "filesAnalyzed": false,
@@ -2860,7 +2920,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pkgconf-3.0.7",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.7",
                 "name": "pkgconf",
                 "versionInfo": "3.0.7",
                 "filesAnalyzed": false,
@@ -2883,7 +2943,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
                 "name": "mpdecimal",
                 "versionInfo": "4.0.1",
                 "filesAnalyzed": false,
@@ -2906,30 +2966,76 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-python@3.14-3.14.8",
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
                 "name": "python@3.14",
-                "versionInfo": "3.14.8",
+                "versionInfo": "3.14.8_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Python-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/python%403.14-3.14.8.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/python%403.14-3.14.8_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "a583b971f24d1c8fe05cbd86f3a2e0b46edf43b5dd1f60e18d63774a99ddd1a8"
+                    "checksumValue": "88fba8bbb502003257756ac15a0e2e6008c2ab6e7d5ad3543329b368a87183c4"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/python%403.14@3.14.8",
+                    "referenceLocator": "pkg:brew/python%403.14@3.14.8_1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pygobject3-3.58.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gobject-introspection-1.2e.86.2e.0.5f.4",
+                "name": "gobject-introspection",
+                "versionInfo": "1.86.0_4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later AND LGPL-2.0-or-later AND MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gobject-introspection-1.86.0_4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "cd79e127069c9094d35c783e26ae66dd6a630d2eaf6d7361b36d7b1ab958ceb5"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gobject-introspection@1.86.0_4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-py3cairo-1.2e.29.2e.2",
+                "name": "py3cairo",
+                "versionInfo": "1.29.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-only OR MPL-1.1",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/py3cairo-1.29.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4e058a5d99461c3c6ae0ff5b2111f78310d074b81b714fc6f62cc4a435323558"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/py3cairo@1.29.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pygobject3-3.2e.58.2e.0",
                 "name": "pygobject3",
                 "versionInfo": "3.58.0",
                 "filesAnalyzed": false,
@@ -2952,30 +3058,76 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-srtp-2.8.1",
-                "name": "srtp",
-                "versionInfo": "2.8.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-rtmpdump-2.2e.6.5f.2",
+                "name": "rtmpdump",
+                "versionInfo": "2.6_2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/srtp-2.8.1.tahoe.bottle.tar.gz",
+                "licenseConcluded": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/rtmpdump-2.6_2.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "0415af7230cf3d0cfa23a2641a8e9ce3858528276173312b5bf3c30399d1c3d2"
+                    "checksumValue": "4fca17bafd17d2838fa972cd96043c0446636f5f8ee3efe9b086e1c7202fccaa"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/srtp@2.8.1",
+                    "referenceLocator": "pkg:brew/rtmpdump@2.6_2",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-utf8cpp-4.2.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-srt-1.2e.5.2e.7.5f.1",
+                "name": "srt",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/srt-1.5.7_1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d4af4b7ab0aec6568adee219d611e455b865443fd0d23686d47e57459c1def9f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/srt@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-srtp-2.2e.8.2e.1.5f.1",
+                "name": "srtp",
+                "versionInfo": "2.8.1_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/srtp-2.8.1_1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "db743cb33f8050edf5e7f05688488e986bba3a39f7dc17d918f8fdc0a8c98736"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/srtp@2.8.1_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-utf8cpp-4.2e.2.2e.1",
                 "name": "utf8cpp",
                 "versionInfo": "4.2.1",
                 "filesAnalyzed": false,
@@ -2998,7 +3150,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-taglib-2.3.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-taglib-2.2e.3.2e.2",
                 "name": "taglib",
                 "versionInfo": "2.3.2",
                 "filesAnalyzed": false,
@@ -3035,77 +3187,82 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libvmaf-3.2e.2.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-aom-3.15.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.59",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.49",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-faac-2.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-faad2-2.11.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-faac-2.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-mpg123-1.33.7",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-faad2-2.2e.11.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libvpx-1.17.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpg123-1.2e.33.2e.7",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libvpx-1.2e.17.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
@@ -3115,212 +3272,237 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl3-3.4.18",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl3-3.2e.4.2e.18",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.74",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl2-compat-2.2e.32.2e.74",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-x265-4.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-x265-4.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ffmpeg-9.0.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ffmpeg-9.2e.0.2e.2.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-webp-1.6.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libtiff-4.2e.7.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-at-spi2-core-2.62.0.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-at-spi2-core-2.2e.62.2e.0.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-fribidi-1.0.17",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-fribidi-1.2e.0.2e.17",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.5.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-hicolor-icon-theme-0.18",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-hicolor-icon-theme-0.2e.18",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pango-1.58.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pango-1.2e.58.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gtk+3-3.24.52_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gtk.2b.3-3.2e.24.2e.52.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-librsvg-2.63.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-librsvg-2.2e.63.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gtk4-4.24.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gtk4-4.2e.24.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunibreak-8.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunibreak-8.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libass-0.17.5_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libass-0.2e.17.2e.5.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-p11-kit-0.26.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libnice-0.1.24",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libnice-0.2e.1.2e.24",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libshout-2.2e.4.2e.6.5f.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libsoup-3.8.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libsoup-3.2e.8.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openjph-0.32.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-little-cms2-2.2e.19.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openexr-3.5.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openjph-0.2e.32.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openjpeg-2.5.4_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openexr-3.2e.5.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-orc-0.4.44",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openjpeg-2.2e.5.2e.4.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pkgconf-3.0.7",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-orc-0.2e.4.2e.44",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.7",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-python@3.14-3.14.8",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pygobject3-3.58.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-srtp-2.8.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gobject-introspection-1.2e.86.2e.0.5f.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-utf8cpp-4.2.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-py3cairo-1.2e.29.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-taglib-2.3.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pygobject3-3.2e.58.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-rtmpdump-2.2e.6.5f.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-srt-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-srtp-2.2e.8.2e.1.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-utf8cpp-4.2e.2.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-taglib-2.2e.3.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gstreamer"
               },
@@ -4378,7 +4560,7 @@
             "sbom.spdx.json",
             "share/aclocal/gst-element-check-1.0.m4",
             "share/cmake/FindGStreamer.cmake",
-            "share/gdb/auto-load/usr/local/Cellar/gstreamer/1.28.7_2/lib/libgstreamer-1.0.so.0.2807.0-gdb.py",
+            "share/gdb/auto-load/usr/local/Cellar/gstreamer/1.28.8/lib/libgstreamer-1.0.so.0.2808.0-gdb.py",
             "share/gir-1.0/GES-1.0.gir",
             "share/gir-1.0/Gst-1.0.gir",
             "share/gir-1.0/GstAllocators-1.0.gir",
@@ -4696,7 +4878,7 @@
             "share/man/man1/gst-stats-1.0.1",
             "share/man/man1/gst-typefind-1.0.1"
           ],
-          "installed_size": 223168536
+          "installed_size": 232833854
         }
       }
     }

@@ -1,32 +1,32 @@
 {
-  "uv": {
+  "hyperfine": {
     "formula": {
-      "name": "uv",
-      "pkg_version": "0.12.23",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/u/uv.rb",
-      "tap_git_path": "Formula/u/uv.rb",
-      "tap_git_revision": "e21a79262d5bdbc28f0fa7dd6555ef3e558d0c7e",
+      "name": "hyperfine",
+      "pkg_version": "2.0.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/h/hyperfine.rb",
+      "tap_git_path": "Formula/h/hyperfine.rb",
+      "tap_git_revision": "6435daf1c531ff55b212e81448d0290b5e1d324f",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
-      "desc": "Extremely fast Python package installer and resolver, written in Rust",
+      "desc": "Command-line benchmarking tool",
       "license": "Apache-2.0 OR MIT",
-      "homepage": "https://docs.astral.sh/uv/"
+      "homepage": "https://github.com/sharkdp/hyperfine"
     },
     "bottle": {
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-04T17:05:59Z",
+      "date": "2026-10-09T20:31:18Z",
       "tags": {
         "tahoe": {
-          "filename": "uv-0.12.23.tahoe.bottle.tar.gz",
-          "local_filename": "uv--0.12.23.tahoe.bottle.tar.gz",
-          "sha256": "1b3fe20bf3f6e064e7b96fd8fd924d752d9702d23f0afa6f62ffc8961eb84312",
+          "filename": "hyperfine-2.0.0.tahoe.bottle.tar.gz",
+          "local_filename": "hyperfine--2.0.0.tahoe.bottle.tar.gz",
+          "sha256": "0ca91d955156bc80c779279e62108d7fe5e99bef9fec58734437aecbfa593aea",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1791046361,
+            "source_modified_time": 1791407201,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -62,16 +62,15 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-uv-src"
+                "relatedSpdxElement": "SPDXRef-Archive-hyperfine-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/uvx",
-            "bin/uv"
+            "bin/hyperfine"
           ],
           "all_files": [
-            ".brew/uv.rb",
+            ".brew/hyperfine.rb",
             ".crates.toml",
             ".crates2.json",
             "CHANGELOG.md",
@@ -79,17 +78,14 @@
             "LICENSE-APACHE",
             "LICENSE-MIT",
             "README.md",
-            "bin/uv",
-            "bin/uvx",
-            "etc/bash_completion.d/uv",
-            "etc/bash_completion.d/uvx",
+            "bin/hyperfine",
+            "etc/bash_completion.d/hyperfine",
             "sbom.spdx.json",
-            "share/fish/vendor_completions.d/uv.fish",
-            "share/fish/vendor_completions.d/uvx.fish",
-            "share/zsh/site-functions/_uv",
-            "share/zsh/site-functions/_uvx"
+            "share/fish/vendor_completions.d/hyperfine.fish",
+            "share/man/man1/hyperfine.1",
+            "share/zsh/site-functions/_hyperfine"
           ],
-          "installed_size": 50319667
+          "installed_size": 1375191
         }
       }
     }

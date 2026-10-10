@@ -2,10 +2,10 @@
   "ruby": {
     "formula": {
       "name": "ruby",
-      "pkg_version": "4.0.7",
+      "pkg_version": "4.0.7_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/r/ruby.rb",
       "tap_git_path": "Formula/r/ruby.rb",
-      "tap_git_revision": "b2442fe3b367026a5197c984d8ba035622c8147a",
+      "tap_git_revision": "6435daf1c531ff55b212e81448d0290b5e1d324f",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Powerful, clean, object-oriented scripting language",
       "license": "Ruby",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-01T20:10:00Z",
+      "date": "2026-10-09T20:43:17Z",
       "tags": {
         "tahoe": {
-          "filename": "ruby-4.0.7.tahoe.bottle.tar.gz",
-          "local_filename": "ruby--4.0.7.tahoe.bottle.tar.gz",
-          "sha256": "eb9f5d6bd6e7852cf216726ea7dd759ef97901e42b69af84d56572bd154afb32",
+          "filename": "ruby-4.0.7_1.tahoe.bottle.tar.gz",
+          "local_filename": "ruby--4.0.7_1.tahoe.bottle.tar.gz",
+          "sha256": "eb030c49aa609d62c2d303f141ef7574c0ff247b3f17e52787d5550afe4ffa0a",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [
               "bin/bundle",
               "bin/bundler",
@@ -180,13 +180,12 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "openssl@3",
-                "version": "3.6.4",
+                "full_name": "openssl@4",
+                "version": "4.0.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.4",
-                "declared_directly": true,
-                "compatibility_version": 1
+                "pkg_version": "4.0.3",
+                "declared_directly": true
               }
             ],
             "arch": "x86_64",
@@ -202,24 +201,24 @@
           "binary_relocation_diagnostics": [
             {
               "path": "lib/libruby.4.0.dylib",
-              "string": "/usr/local/Cellar/ruby/4.0.7",
-              "offset": 4729216
+              "string": "/usr/local/Cellar/ruby/4.0.7_1",
+              "offset": 4735040
             },
             {
               "path": "lib/libruby.4.0.dylib",
-              "string": "/usr/local/Cellar/ruby/4.0.7/lib/ruby/4.0.0",
-              "offset": 4729490
+              "string": "/usr/local/Cellar/ruby/4.0.7_1/lib/ruby/4.0.0",
+              "offset": 4735314
             },
             {
               "path": "lib/libruby.4.0.dylib",
-              "string": "/usr/local/Cellar/ruby/4.0.7/lib/ruby/4.0.0/x86_64-darwin25",
-              "offset": 4729534
+              "string": "/usr/local/Cellar/ruby/4.0.7_1/lib/ruby/4.0.0/x86_64-darwin25",
+              "offset": 4735360
             }
           ],
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -247,24 +246,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-                "name": "openssl@3",
-                "versionInfo": "3.6.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.4.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13fdc9f3d0d30296056e2685e0c989978a5ed213f34a0de174e19feb72833e73"
+                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
                     "referenceType": "purl"
                   }
                 ]
@@ -289,7 +288,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-ruby"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ruby"
               },
@@ -19640,7 +19639,7 @@
             "share/ri/4.0.0/system/syntax/page-precedence_rdoc.ri",
             "share/ri/4.0.0/system/syntax/page-refinements_rdoc.ri"
           ],
-          "installed_size": 56145121
+          "installed_size": 56159032
         }
       }
     }

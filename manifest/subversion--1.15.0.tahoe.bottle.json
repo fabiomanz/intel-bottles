@@ -1,0 +1,681 @@
+{
+  "subversion": {
+    "formula": {
+      "name": "subversion",
+      "pkg_version": "1.15.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/subversion.rb",
+      "tap_git_path": "Formula/s/subversion.rb",
+      "tap_git_revision": "6435daf1c531ff55b212e81448d0290b5e1d324f",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Version control system designed to be a better CVS",
+      "license": "Apache-2.0",
+      "homepage": "https://subversion.apache.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-09T21:05:20Z",
+      "tags": {
+        "tahoe": {
+          "filename": "subversion-1.15.0.tahoe.bottle.tar.gz",
+          "local_filename": "subversion--1.15.0.tahoe.bottle.tar.gz",
+          "sha256": "d0f011b1779652de84548c19d88a37cb473c895bdb7c2a898a2395bd884bc087",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "libexec/svn-tools/fsfs-stats",
+              "share/pkgconfig/libsvn_client.pc",
+              "share/pkgconfig/libsvn_delta.pc",
+              "share/pkgconfig/libsvn_diff.pc",
+              "share/pkgconfig/libsvn_fs.pc",
+              "share/pkgconfig/libsvn_fs_fs.pc",
+              "share/pkgconfig/libsvn_fs_util.pc",
+              "share/pkgconfig/libsvn_fs_x.pc",
+              "share/pkgconfig/libsvn_ra.pc",
+              "share/pkgconfig/libsvn_ra_local.pc",
+              "share/pkgconfig/libsvn_ra_serf.pc",
+              "share/pkgconfig/libsvn_ra_svn.pc",
+              "share/pkgconfig/libsvn_repos.pc",
+              "share/pkgconfig/libsvn_subr.pc",
+              "share/pkgconfig/libsvn_wc.pc"
+            ],
+            "linkage_files": [
+              "bin/svn",
+              "bin/svnadmin",
+              "bin/svnbench",
+              "bin/svndumpfilter",
+              "bin/svnfsfs",
+              "bin/svnlook",
+              "bin/svnmucc",
+              "bin/svnrdump",
+              "bin/svnserve",
+              "bin/svnsync",
+              "bin/svnversion",
+              "lib/libsvn_client-1.0.dylib",
+              "lib/libsvn_delta-1.0.dylib",
+              "lib/libsvn_diff-1.0.dylib",
+              "lib/libsvn_fs-1.0.dylib",
+              "lib/libsvn_fs_fs-1.0.dylib",
+              "lib/libsvn_fs_util-1.0.dylib",
+              "lib/libsvn_fs_x-1.0.dylib",
+              "lib/libsvn_ra-1.0.dylib",
+              "lib/libsvn_ra_local-1.0.dylib",
+              "lib/libsvn_ra_serf-1.0.dylib",
+              "lib/libsvn_ra_svn-1.0.dylib",
+              "lib/libsvn_repos-1.0.dylib",
+              "lib/libsvn_subr-1.0.dylib",
+              "lib/libsvn_swig_perl-1.0.dylib",
+              "lib/libsvn_swig_py-1.0.dylib",
+              "lib/libsvn_wc-1.0.dylib",
+              "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/auto/SVN/_Client/_Client.bundle",
+              "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/auto/SVN/_Core/_Core.bundle",
+              "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/auto/SVN/_Delta/_Delta.bundle",
+              "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/auto/SVN/_Fs/_Fs.bundle",
+              "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/auto/SVN/_Ra/_Ra.bundle",
+              "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/auto/SVN/_Repos/_Repos.bundle",
+              "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/auto/SVN/_Wc/_Wc.bundle",
+              "lib/svn-python/libsvn/_client.so",
+              "lib/svn-python/libsvn/_core.so",
+              "lib/svn-python/libsvn/_delta.so",
+              "lib/svn-python/libsvn/_diff.so",
+              "lib/svn-python/libsvn/_fs.so",
+              "lib/svn-python/libsvn/_ra.so",
+              "lib/svn-python/libsvn/_repos.so",
+              "lib/svn-python/libsvn/_wc.so",
+              "libexec/svn-tools/diff",
+              "libexec/svn-tools/diff3",
+              "libexec/svn-tools/diff4",
+              "libexec/svn-tools/fsfs-access-map",
+              "libexec/svn-tools/svn-mergeinfo-normalizer",
+              "libexec/svn-tools/svn-populate-node-origins-index",
+              "libexec/svn-tools/svnauthz",
+              "libexec/svn-tools/svnauthz-validate",
+              "libexec/svn-tools/svnconflict",
+              "libexec/svn-tools/svnraisetreeconflict",
+              "libexec/svn-tools/x509-parser"
+            ],
+            "binary_relocation_files": [
+              "lib/libsvn_subr-1.0.dylib",
+              "lib/libsvn_subr-1.a"
+            ],
+            "source_modified_time": 1790246423,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "apr",
+                "version": "1.7.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.7.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": false
+              },
+              {
+                "full_name": "apr-util",
+                "version": "1.6.5",
+                "revision": 1,
+                "pkg_version": "1.6.5_1",
+                "declared_directly": true
+              },
+              {
+                "full_name": "apache-serf",
+                "version": "1.3.10",
+                "revision": 1,
+                "pkg_version": "1.3.10_1",
+                "declared_directly": true
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "utf8proc",
+                "version": "2.12.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.12.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "lib/libsvn_subr-1.a",
+              "string": "/usr/local/Cellar/subversion/1.15.0/share/locale",
+              "offset": 433033
+            },
+            {
+              "path": "lib/libsvn_subr-1.0.dylib",
+              "string": "/usr/local/Cellar/subversion/1.15.0/share/locale",
+              "offset": 317354
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-utf8proc-2.2e.12.2e.0",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.10.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-utf8proc-2.2e.12.2e.0",
+                "name": "utf8proc",
+                "versionInfo": "2.12.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT AND Unicode-DFS-2015",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/utf8proc-2.12.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "cd101c9656b6738d51068f8ef47b8e8fe19f234ac30dac3a5fccf52d95215e2a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/utf8proc@2.12.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gettext-1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fe9d5337ff31e4f40b827b3463bd3fdc61b8f377277769f71e93baad0443bc96"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-subversion"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-subversion"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-subversion"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-utf8proc-2.2e.12.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-subversion"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-subversion"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-subversion"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-subversion"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-subversion-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/svn",
+            "bin/svnserve",
+            "bin/svnrdump",
+            "bin/svnfsfs",
+            "bin/svnlook",
+            "bin/svnmucc",
+            "bin/svnadmin",
+            "bin/svndumpfilter",
+            "bin/svnsync",
+            "bin/svnversion",
+            "bin/svnbench"
+          ],
+          "all_files": [
+            ".brew/subversion.rb",
+            "CHANGES",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "NOTICE",
+            "README",
+            "bin/svn",
+            "bin/svnadmin",
+            "bin/svnbench",
+            "bin/svndumpfilter",
+            "bin/svnfsfs",
+            "bin/svnlook",
+            "bin/svnmucc",
+            "bin/svnrdump",
+            "bin/svnserve",
+            "bin/svnsync",
+            "bin/svnversion",
+            "etc/bash_completion.d/subversion",
+            "include/subversion-1/mod_authz_svn.h",
+            "include/subversion-1/mod_dav_svn.h",
+            "include/subversion-1/svn-revision.txt",
+            "include/subversion-1/svn_auth.h",
+            "include/subversion-1/svn_base64.h",
+            "include/subversion-1/svn_cache_config.h",
+            "include/subversion-1/svn_checksum.h",
+            "include/subversion-1/svn_client.h",
+            "include/subversion-1/svn_cmdline.h",
+            "include/subversion-1/svn_compat.h",
+            "include/subversion-1/svn_config.h",
+            "include/subversion-1/svn_ctype.h",
+            "include/subversion-1/svn_dav.h",
+            "include/subversion-1/svn_delta.h",
+            "include/subversion-1/svn_diff.h",
+            "include/subversion-1/svn_dirent_uri.h",
+            "include/subversion-1/svn_dso.h",
+            "include/subversion-1/svn_error.h",
+            "include/subversion-1/svn_error_codes.h",
+            "include/subversion-1/svn_fs.h",
+            "include/subversion-1/svn_hash.h",
+            "include/subversion-1/svn_io.h",
+            "include/subversion-1/svn_iter.h",
+            "include/subversion-1/svn_md5.h",
+            "include/subversion-1/svn_mergeinfo.h",
+            "include/subversion-1/svn_nls.h",
+            "include/subversion-1/svn_opt.h",
+            "include/subversion-1/svn_opt_impl.h",
+            "include/subversion-1/svn_path.h",
+            "include/subversion-1/svn_pools.h",
+            "include/subversion-1/svn_props.h",
+            "include/subversion-1/svn_quoprint.h",
+            "include/subversion-1/svn_ra.h",
+            "include/subversion-1/svn_ra_svn.h",
+            "include/subversion-1/svn_repos.h",
+            "include/subversion-1/svn_sorts.h",
+            "include/subversion-1/svn_string.h",
+            "include/subversion-1/svn_subst.h",
+            "include/subversion-1/svn_time.h",
+            "include/subversion-1/svn_types.h",
+            "include/subversion-1/svn_types_impl.h",
+            "include/subversion-1/svn_user.h",
+            "include/subversion-1/svn_utf.h",
+            "include/subversion-1/svn_version.h",
+            "include/subversion-1/svn_wc.h",
+            "include/subversion-1/svn_x509.h",
+            "include/subversion-1/svn_xml.h",
+            "lib/libsvn_client-1.0.dylib",
+            "lib/libsvn_client-1.a",
+            "lib/libsvn_client-1.dylib",
+            "lib/libsvn_delta-1.0.dylib",
+            "lib/libsvn_delta-1.a",
+            "lib/libsvn_delta-1.dylib",
+            "lib/libsvn_diff-1.0.dylib",
+            "lib/libsvn_diff-1.a",
+            "lib/libsvn_diff-1.dylib",
+            "lib/libsvn_fs-1.0.dylib",
+            "lib/libsvn_fs-1.a",
+            "lib/libsvn_fs-1.dylib",
+            "lib/libsvn_fs_fs-1.0.dylib",
+            "lib/libsvn_fs_fs-1.a",
+            "lib/libsvn_fs_fs-1.dylib",
+            "lib/libsvn_fs_util-1.0.dylib",
+            "lib/libsvn_fs_util-1.a",
+            "lib/libsvn_fs_util-1.dylib",
+            "lib/libsvn_fs_x-1.0.dylib",
+            "lib/libsvn_fs_x-1.a",
+            "lib/libsvn_fs_x-1.dylib",
+            "lib/libsvn_ra-1.0.dylib",
+            "lib/libsvn_ra-1.a",
+            "lib/libsvn_ra-1.dylib",
+            "lib/libsvn_ra_local-1.0.dylib",
+            "lib/libsvn_ra_local-1.a",
+            "lib/libsvn_ra_local-1.dylib",
+            "lib/libsvn_ra_serf-1.0.dylib",
+            "lib/libsvn_ra_serf-1.a",
+            "lib/libsvn_ra_serf-1.dylib",
+            "lib/libsvn_ra_svn-1.0.dylib",
+            "lib/libsvn_ra_svn-1.a",
+            "lib/libsvn_ra_svn-1.dylib",
+            "lib/libsvn_repos-1.0.dylib",
+            "lib/libsvn_repos-1.a",
+            "lib/libsvn_repos-1.dylib",
+            "lib/libsvn_subr-1.0.dylib",
+            "lib/libsvn_subr-1.a",
+            "lib/libsvn_subr-1.dylib",
+            "lib/libsvn_swig_perl-1.0.dylib",
+            "lib/libsvn_swig_perl-1.a",
+            "lib/libsvn_swig_perl-1.dylib",
+            "lib/libsvn_swig_py-1.0.dylib",
+            "lib/libsvn_swig_py-1.a",
+            "lib/libsvn_swig_py-1.dylib",
+            "lib/libsvn_wc-1.0.dylib",
+            "lib/libsvn_wc-1.a",
+            "lib/libsvn_wc-1.dylib",
+            "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/SVN/Base.pm",
+            "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/SVN/Client.pm",
+            "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/SVN/Core.pm",
+            "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/SVN/Delta.pm",
+            "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/SVN/Fs.pm",
+            "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/SVN/Ra.pm",
+            "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/SVN/Repos.pm",
+            "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/SVN/Wc.pm",
+            "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/auto/SVN/_Client/_Client.bundle",
+            "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/auto/SVN/_Core/_Core.bundle",
+            "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/auto/SVN/_Delta/_Delta.bundle",
+            "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/auto/SVN/_Fs/_Fs.bundle",
+            "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/auto/SVN/_Ra/_Ra.bundle",
+            "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/auto/SVN/_Repos/_Repos.bundle",
+            "lib/perl5/site_perl/5.34.1/darwin-thread-multi-2level/auto/SVN/_Wc/_Wc.bundle",
+            "lib/svn-python/libsvn/__init__.py",
+            "lib/svn-python/libsvn/_client.a",
+            "lib/svn-python/libsvn/_client.so",
+            "lib/svn-python/libsvn/_core.a",
+            "lib/svn-python/libsvn/_core.so",
+            "lib/svn-python/libsvn/_delta.a",
+            "lib/svn-python/libsvn/_delta.so",
+            "lib/svn-python/libsvn/_diff.a",
+            "lib/svn-python/libsvn/_diff.so",
+            "lib/svn-python/libsvn/_fs.a",
+            "lib/svn-python/libsvn/_fs.so",
+            "lib/svn-python/libsvn/_ra.a",
+            "lib/svn-python/libsvn/_ra.so",
+            "lib/svn-python/libsvn/_repos.a",
+            "lib/svn-python/libsvn/_repos.so",
+            "lib/svn-python/libsvn/_wc.a",
+            "lib/svn-python/libsvn/_wc.so",
+            "lib/svn-python/libsvn/client.py",
+            "lib/svn-python/libsvn/core.py",
+            "lib/svn-python/libsvn/delta.py",
+            "lib/svn-python/libsvn/diff.py",
+            "lib/svn-python/libsvn/fs.py",
+            "lib/svn-python/libsvn/ra.py",
+            "lib/svn-python/libsvn/repos.py",
+            "lib/svn-python/libsvn/wc.py",
+            "lib/svn-python/svn/__init__.py",
+            "lib/svn-python/svn/client.py",
+            "lib/svn-python/svn/core.py",
+            "lib/svn-python/svn/delta.py",
+            "lib/svn-python/svn/diff.py",
+            "lib/svn-python/svn/fs.py",
+            "lib/svn-python/svn/ra.py",
+            "lib/svn-python/svn/repos.py",
+            "lib/svn-python/svn/wc.py",
+            "libexec/svn-tools/diff",
+            "libexec/svn-tools/diff3",
+            "libexec/svn-tools/diff4",
+            "libexec/svn-tools/fsfs-access-map",
+            "libexec/svn-tools/fsfs-stats",
+            "libexec/svn-tools/svn-bench",
+            "libexec/svn-tools/svn-mergeinfo-normalizer",
+            "libexec/svn-tools/svn-populate-node-origins-index",
+            "libexec/svn-tools/svnauthz",
+            "libexec/svn-tools/svnauthz-validate",
+            "libexec/svn-tools/svnconflict",
+            "libexec/svn-tools/svnmucc",
+            "libexec/svn-tools/svnraisetreeconflict",
+            "libexec/svn-tools/x509-parser",
+            "sbom.spdx.json",
+            "share/locale/de/LC_MESSAGES/subversion.mo",
+            "share/locale/es/LC_MESSAGES/subversion.mo",
+            "share/locale/fr/LC_MESSAGES/subversion.mo",
+            "share/locale/it/LC_MESSAGES/subversion.mo",
+            "share/locale/ja/LC_MESSAGES/subversion.mo",
+            "share/locale/ko/LC_MESSAGES/subversion.mo",
+            "share/locale/nb/LC_MESSAGES/subversion.mo",
+            "share/locale/pl/LC_MESSAGES/subversion.mo",
+            "share/locale/pt_BR/LC_MESSAGES/subversion.mo",
+            "share/locale/sv/LC_MESSAGES/subversion.mo",
+            "share/locale/zh_CN/LC_MESSAGES/subversion.mo",
+            "share/locale/zh_TW/LC_MESSAGES/subversion.mo",
+            "share/man/man1/svn.1",
+            "share/man/man1/svnadmin.1",
+            "share/man/man1/svndumpfilter.1",
+            "share/man/man1/svnlook.1",
+            "share/man/man1/svnmucc.1",
+            "share/man/man1/svnrdump.1",
+            "share/man/man1/svnsync.1",
+            "share/man/man1/svnversion.1",
+            "share/man/man3/SVN::Base.3pm",
+            "share/man/man3/SVN::Client.3pm",
+            "share/man/man3/SVN::Core.3pm",
+            "share/man/man3/SVN::Delta.3pm",
+            "share/man/man3/SVN::Fs.3pm",
+            "share/man/man3/SVN::Ra.3pm",
+            "share/man/man3/SVN::Repos.3pm",
+            "share/man/man3/SVN::Wc.3pm",
+            "share/man/man5/svnserve.conf.5",
+            "share/man/man8/svnserve.8",
+            "share/pkgconfig/libsvn_client.pc",
+            "share/pkgconfig/libsvn_delta.pc",
+            "share/pkgconfig/libsvn_diff.pc",
+            "share/pkgconfig/libsvn_fs.pc",
+            "share/pkgconfig/libsvn_fs_fs.pc",
+            "share/pkgconfig/libsvn_fs_util.pc",
+            "share/pkgconfig/libsvn_fs_x.pc",
+            "share/pkgconfig/libsvn_ra.pc",
+            "share/pkgconfig/libsvn_ra_local.pc",
+            "share/pkgconfig/libsvn_ra_serf.pc",
+            "share/pkgconfig/libsvn_ra_svn.pc",
+            "share/pkgconfig/libsvn_repos.pc",
+            "share/pkgconfig/libsvn_subr.pc",
+            "share/pkgconfig/libsvn_wc.pc"
+          ],
+          "installed_size": 28498953
+        }
+      }
+    }
+  }
+}
