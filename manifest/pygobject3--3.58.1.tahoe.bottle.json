@@ -2,10 +2,10 @@
   "pygobject3": {
     "formula": {
       "name": "pygobject3",
-      "pkg_version": "3.58.0",
+      "pkg_version": "3.58.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pygobject3.rb",
       "tap_git_path": "Formula/p/pygobject3.rb",
-      "tap_git_revision": "f53e41b275b6070e94c2d7a81e645c1c05fb6bee",
+      "tap_git_revision": "5bc85410cedd1c8ac21b2770e8438814b1884b61",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "GNOME Python bindings (based on GObject Introspection)",
       "license": "LGPL-2.1-or-later",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-01T07:47:53Z",
+      "date": "2026-10-10T12:00:59Z",
       "tags": {
         "tahoe": {
-          "filename": "pygobject3-3.58.0.tahoe.bottle.tar.gz",
-          "local_filename": "pygobject3--3.58.0.tahoe.bottle.tar.gz",
-          "sha256": "c5a07929377f63ee64df4caee198d0200b6f06b985635b37164fc632cae2a2c3",
+          "filename": "pygobject3-3.58.1.tahoe.bottle.tar.gz",
+          "local_filename": "pygobject3--3.58.1.tahoe.bottle.tar.gz",
+          "sha256": "62d680036f61afc6465c9af2bed62410bea4d3b5764e88bbb2b189df31f50040",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [
               "lib/pkgconfig/pygobject-3.0.pc"
             ],
@@ -33,15 +33,24 @@
               "lib/python3.14/site-packages/gi/_gi_cairo.cpython-314-darwin.so"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1787846878,
+            "source_modified_time": 1791543358,
             "compiler": "clang",
             "runtime_dependencies": [
               {
-                "full_name": "libpng",
-                "version": "1.6.58",
+                "full_name": "brotli",
+                "version": "1.2.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.6.58",
+                "pkg_version": "1.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpng",
+                "version": "1.6.59",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.59",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -91,28 +100,28 @@
               },
               {
                 "full_name": "pcre2",
-                "version": "10.48",
+                "version": "10.49",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "10.48",
+                "pkg_version": "10.49",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "glib",
-                "version": "2.90.0",
+                "version": "2.90.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.90.0",
+                "pkg_version": "2.90.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "xorgproto",
-                "version": "2025.1",
+                "version": "2026.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2025.1",
+                "pkg_version": "2026.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -205,15 +214,6 @@
                 "compatibility_version": 2
               },
               {
-                "full_name": "mpdecimal",
-                "version": "4.0.1",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "4.0.1",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
                 "full_name": "ca-certificates",
                 "version": "2026-09-25",
                 "revision": 0,
@@ -223,13 +223,21 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "openssl@3",
-                "version": "3.6.4",
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.4",
+                "pkg_version": "4.0.1",
                 "declared_directly": false,
                 "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": false
               },
               {
                 "full_name": "readline",
@@ -277,28 +285,28 @@
               },
               {
                 "full_name": "python@3.14",
-                "version": "3.14.7",
-                "revision": 0,
+                "version": "3.14.8",
+                "revision": 2,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.14.7",
+                "pkg_version": "3.14.8_2",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "gobject-introspection",
                 "version": "1.86.0",
-                "revision": 3,
+                "revision": 4,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.86.0_3",
+                "pkg_version": "1.86.0_4",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "py3cairo",
-                "version": "1.29.1",
+                "version": "1.29.2",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.29.1",
+                "pkg_version": "1.29.2",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -316,52 +324,79 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-libpng-1.6.58",
-              "SPDXRef-Package-SPDXRef-json-c-0.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
-              "SPDXRef-Package-SPDXRef-gettext-1.0",
-              "SPDXRef-Package-SPDXRef-pcre2-10.48",
-              "SPDXRef-Package-SPDXRef-glib-2.90.0",
-              "SPDXRef-Package-SPDXRef-libx11-1.8.13",
-              "SPDXRef-Package-SPDXRef-cairo-1.18.6",
-              "SPDXRef-Package-SPDXRef-pkgconf-3.0.7",
-              "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+              "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+              "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+              "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+              "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+              "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+              "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.7",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-              "SPDXRef-Package-SPDXRef-readline-8.3.6",
-              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
-              "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.2",
+              "SPDXRef-Package-SPDXRef-gobject-introspection-1.2e.86.2e.0.5f.4",
+              "SPDXRef-Package-SPDXRef-py3cairo-1.2e.29.2e.2",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "name": "libpng",
-                "versionInfo": "1.6.58",
+                "versionInfo": "1.6.59",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "libpng-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.58.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.59.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "e52e7248928f76d19f4253ab672b59dde6a6f21e94b090137170bb2e971f9cc2"
+                    "checksumValue": "983550222f14d7db234a39119dc66c0de74d9b79b74f83ecf4b81a6b694d40de"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libpng@1.6.58",
+                    "referenceLocator": "pkg:brew/libpng@1.6.59",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "name": "freetype",
+                "versionInfo": "2.14.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "FTL",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.14.3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a8a2bcc65a1d21adba6797d59f4ab1c91b0a40c53aae2794b4f94780e7379837"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/freetype@2.14.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "name": "json-c",
                 "versionInfo": "0.19",
                 "filesAnalyzed": false,
@@ -384,7 +419,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
                 "name": "libunistring",
                 "versionInfo": "1.4.2",
                 "filesAnalyzed": false,
@@ -395,7 +430,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "8c54c7bc4c98effd8b886213f126278f87cef9c596d9ab2ef3d52bc100c79f65"
+                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
                   }
                 ],
                 "externalRefs": [
@@ -407,7 +442,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "name": "gettext",
                 "versionInfo": "1.0",
                 "filesAnalyzed": false,
@@ -418,7 +453,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "27f00f82c225d2feafe765d37a15699352a390397bdeec1ccbc2b5fe943f7ee7"
+                    "checksumValue": "fe9d5337ff31e4f40b827b3463bd3fdc61b8f377277769f71e93baad0443bc96"
                   }
                 ],
                 "externalRefs": [
@@ -430,53 +465,76 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "name": "pcre2",
-                "versionInfo": "10.48",
+                "versionInfo": "10.49",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.49.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                    "checksumValue": "7fe75e3ba297623163ee0e3a262e417d0eb36342f6cda4135ede90412ff03040"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceLocator": "pkg:brew/pcre2@10.49",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "name": "glib",
-                "versionInfo": "2.90.0",
+                "versionInfo": "2.90.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "LGPL-2.1-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4f180b8f89781725d58c0a39d7508c0bf0e96225fc69ef630e18a9f885f61c4a"
+                    "checksumValue": "3b0aaa12be31d6f764cdca91e2a75efe6f317eabba79a48bdf1467217a0ccbab"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/glib@2.90.0",
+                    "referenceLocator": "pkg:brew/glib@2.90.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+                "name": "xorgproto",
+                "versionInfo": "2026.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xorgproto-2026.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5286465a0d9c7954041bcec0ebee5641b6c8018b3f679eaa8595b029a44c2af9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xorgproto@2026.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
                 "name": "libx11",
                 "versionInfo": "1.8.13",
                 "filesAnalyzed": false,
@@ -487,7 +545,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "7035ebb1057ef3de675393d244db0d486f07b91aab5d24a4b2d0140c05b9724d"
+                    "checksumValue": "10c0844f2a8daab11aa21bd737480e496469da1a15c37067dc34ab308f8b6285"
                   }
                 ],
                 "externalRefs": [
@@ -499,7 +557,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+                "SPDXID": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "name": "cairo",
                 "versionInfo": "1.18.6",
                 "filesAnalyzed": false,
@@ -522,7 +580,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pkgconf-3.0.7",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.7",
                 "name": "pkgconf",
                 "versionInfo": "3.0.7",
                 "filesAnalyzed": false,
@@ -540,29 +598,6 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/pkgconf@3.0.7",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
-                "name": "mpdecimal",
-                "versionInfo": "4.0.1",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.tahoe.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "49cd2025d6a2f8159d82a50c4720d75f17e01205c59fe057b931b4603d6f822d"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -591,30 +626,53 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-                "name": "openssl@3",
-                "versionInfo": "3.6.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.4.tahoe.bottle.tar.gz",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13fdc9f3d0d30296056e2685e0c989978a5ed213f34a0de174e19feb72833e73"
+                    "checksumValue": "49cd2025d6a2f8159d82a50c4720d75f17e01205c59fe057b931b4603d6f822d"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "name": "readline",
                 "versionInfo": "8.3.6",
                 "filesAnalyzed": false,
@@ -625,7 +683,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4b61824f0d54a4eb5dad33db69ab8461a7eb197ce9bd5ce696cb297a627160e3"
+                    "checksumValue": "8e2d9a12817040fff1164139282e0d2f7ad2aaf388db15db8eb36a8fb00dd74a"
                   }
                 ],
                 "externalRefs": [
@@ -637,7 +695,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
                 "name": "sqlite",
                 "versionInfo": "3.53.4",
                 "filesAnalyzed": false,
@@ -660,7 +718,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
@@ -671,7 +729,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "b58278bdc3ee647396ba249e0d0959306231d593d2b8ce6c173f819b42192a9f"
+                    "checksumValue": "54a648c4197b0299ee2d37527ca6a23447abe65342f8f8c0ed68e154f4593b0f"
                   }
                 ],
                 "externalRefs": [
@@ -683,7 +741,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -706,7 +764,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -729,24 +787,70 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.2",
                 "name": "python@3.14",
-                "versionInfo": "3.14.7",
+                "versionInfo": "3.14.8_2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Python-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/python/3.14/blobs/sha256:edaf325ee40b533f6042d84317f06af217267e824d5105cb7cd9a7f05c466e2c",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/python%403.14-3.14.8_2.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "edaf325ee40b533f6042d84317f06af217267e824d5105cb7cd9a7f05c466e2c"
+                    "checksumValue": "30d9c51110454922fccd94256a0c88cdebf4bf9b9595141976dadac933aadd66"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/python%403.14@3.14.7",
+                    "referenceLocator": "pkg:brew/python%403.14@3.14.8_2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gobject-introspection-1.2e.86.2e.0.5f.4",
+                "name": "gobject-introspection",
+                "versionInfo": "1.86.0_4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later AND LGPL-2.0-or-later AND MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gobject-introspection-1.86.0_4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "cd79e127069c9094d35c783e26ae66dd6a630d2eaf6d7361b36d7b1ab958ceb5"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gobject-introspection@1.86.0_4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-py3cairo-1.2e.29.2e.2",
+                "name": "py3cairo",
+                "versionInfo": "1.29.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-only OR MPL-1.1",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/py3cairo-1.29.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4e058a5d99461c3c6ae0ff5b2111f78310d074b81b714fc6f62cc4a435323558"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/py3cairo@1.29.2",
                     "referenceType": "purl"
                   }
                 ]
@@ -766,52 +870,57 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pkgconf-3.0.7",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.7",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
@@ -821,37 +930,52 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gobject-introspection-1.2e.86.2e.0.5f.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-py3cairo-1.2e.29.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
@@ -872,7 +996,7 @@
             "include/pygobject-3.0/pygobject-types.h",
             "include/pygobject-3.0/pygobject.h",
             "lib/pkgconfig/pygobject-3.0.pc",
-            "lib/python3.13/site-packages/PyGObject-3.58.0.dist-info/METADATA",
+            "lib/python3.13/site-packages/PyGObject-3.58.1.dist-info/METADATA",
             "lib/python3.13/site-packages/gi/__init__.py",
             "lib/python3.13/site-packages/gi/_constants.py",
             "lib/python3.13/site-packages/gi/_enum.py",
@@ -901,7 +1025,7 @@
             "lib/python3.13/site-packages/gi/overrides/__init__.py",
             "lib/python3.13/site-packages/gi/repository/__init__.py",
             "lib/python3.13/site-packages/gi/types.py",
-            "lib/python3.14/site-packages/PyGObject-3.58.0.dist-info/METADATA",
+            "lib/python3.14/site-packages/PyGObject-3.58.1.dist-info/METADATA",
             "lib/python3.14/site-packages/gi/__init__.py",
             "lib/python3.14/site-packages/gi/_constants.py",
             "lib/python3.14/site-packages/gi/_enum.py",
@@ -932,7 +1056,7 @@
             "lib/python3.14/site-packages/gi/types.py",
             "sbom.spdx.json"
           ],
-          "installed_size": 1623775
+          "installed_size": 1624059
         }
       }
     }

@@ -1,0 +1,191 @@
+{
+  "cffi": {
+    "formula": {
+      "name": "cffi",
+      "pkg_version": "2.1.1_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/cffi.rb",
+      "tap_git_path": "Formula/c/cffi.rb",
+      "tap_git_revision": "5bc85410cedd1c8ac21b2770e8438814b1884b61",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "C Foreign Function Interface for Python",
+      "license": "MIT-0",
+      "homepage": "https://cffi.readthedocs.io/en/latest/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-10-10T11:57:20Z",
+      "tags": {
+        "tahoe": {
+          "filename": "cffi-2.1.1_1.tahoe.bottle.tar.gz",
+          "local_filename": "cffi--2.1.1_1.tahoe.bottle.tar.gz",
+          "sha256": "1209a1fb0fb4df49bf282f6f218e7e7df8149864cc4960bbd6939f06a47cb2a7",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "bin/cffi-gen-src"
+            ],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1785792081,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "pycparser",
+                "version": "3.1",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.1_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-pycparser-3.2e.1.5f.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pycparser-3.2e.1.5f.1",
+                "name": "pycparser",
+                "versionInfo": "3.1_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/pycparser/blobs/sha256:c008a84b1a89712d6f194b5e3dfd8ed76f08b5ecb2d197571dd8445ae2bf2955",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c008a84b1a89712d6f194b5e3dfd8ed76f08b5ecb2d197571dd8445ae2bf2955"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pycparser@3.1_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pycparser-3.2e.1.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cffi"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-cffi-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/cffi-gen-src"
+          ],
+          "all_files": [
+            ".brew/cffi.rb",
+            "AUTHORS",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/cffi-gen-src",
+            "lib/python3.14/site-packages/_cffi_backend.cpython-314-darwin.so",
+            "lib/python3.14/site-packages/cffi/__init__.py",
+            "lib/python3.14/site-packages/cffi/_cffi_errors.h",
+            "lib/python3.14/site-packages/cffi/_cffi_gen_src.py",
+            "lib/python3.14/site-packages/cffi/_cffi_include.h",
+            "lib/python3.14/site-packages/cffi/_embedding.h",
+            "lib/python3.14/site-packages/cffi/_imp_emulation.py",
+            "lib/python3.14/site-packages/cffi/_shimmed_dist_utils.py",
+            "lib/python3.14/site-packages/cffi/api.py",
+            "lib/python3.14/site-packages/cffi/backend_ctypes.py",
+            "lib/python3.14/site-packages/cffi/cffi_opcode.py",
+            "lib/python3.14/site-packages/cffi/commontypes.py",
+            "lib/python3.14/site-packages/cffi/cparser.py",
+            "lib/python3.14/site-packages/cffi/error.py",
+            "lib/python3.14/site-packages/cffi/ffiplatform.py",
+            "lib/python3.14/site-packages/cffi/gen_src.py",
+            "lib/python3.14/site-packages/cffi/lock.py",
+            "lib/python3.14/site-packages/cffi/model.py",
+            "lib/python3.14/site-packages/cffi/parse_c_type.h",
+            "lib/python3.14/site-packages/cffi/pkgconfig.py",
+            "lib/python3.14/site-packages/cffi/recompiler.py",
+            "lib/python3.14/site-packages/cffi/setuptools_ext.py",
+            "lib/python3.14/site-packages/cffi/vengine_cpy.py",
+            "lib/python3.14/site-packages/cffi/vengine_gen.py",
+            "lib/python3.14/site-packages/cffi/verifier.py",
+            "lib/python3.14/site-packages/cffi-2.1.1.dist-info/INSTALLER",
+            "lib/python3.14/site-packages/cffi-2.1.1.dist-info/METADATA",
+            "lib/python3.14/site-packages/cffi-2.1.1.dist-info/REQUESTED",
+            "lib/python3.14/site-packages/cffi-2.1.1.dist-info/WHEEL",
+            "lib/python3.14/site-packages/cffi-2.1.1.dist-info/entry_points.txt",
+            "lib/python3.14/site-packages/cffi-2.1.1.dist-info/licenses/LICENSE",
+            "lib/python3.14/site-packages/cffi-2.1.1.dist-info/top_level.txt",
+            "lib/python3.15/site-packages/_cffi_backend.cpython-315-darwin.so",
+            "lib/python3.15/site-packages/cffi/__init__.py",
+            "lib/python3.15/site-packages/cffi/_cffi_errors.h",
+            "lib/python3.15/site-packages/cffi/_cffi_gen_src.py",
+            "lib/python3.15/site-packages/cffi/_cffi_include.h",
+            "lib/python3.15/site-packages/cffi/_embedding.h",
+            "lib/python3.15/site-packages/cffi/_imp_emulation.py",
+            "lib/python3.15/site-packages/cffi/_shimmed_dist_utils.py",
+            "lib/python3.15/site-packages/cffi/api.py",
+            "lib/python3.15/site-packages/cffi/backend_ctypes.py",
+            "lib/python3.15/site-packages/cffi/cffi_opcode.py",
+            "lib/python3.15/site-packages/cffi/commontypes.py",
+            "lib/python3.15/site-packages/cffi/cparser.py",
+            "lib/python3.15/site-packages/cffi/error.py",
+            "lib/python3.15/site-packages/cffi/ffiplatform.py",
+            "lib/python3.15/site-packages/cffi/gen_src.py",
+            "lib/python3.15/site-packages/cffi/lock.py",
+            "lib/python3.15/site-packages/cffi/model.py",
+            "lib/python3.15/site-packages/cffi/parse_c_type.h",
+            "lib/python3.15/site-packages/cffi/pkgconfig.py",
+            "lib/python3.15/site-packages/cffi/recompiler.py",
+            "lib/python3.15/site-packages/cffi/setuptools_ext.py",
+            "lib/python3.15/site-packages/cffi/vengine_cpy.py",
+            "lib/python3.15/site-packages/cffi/vengine_gen.py",
+            "lib/python3.15/site-packages/cffi/verifier.py",
+            "lib/python3.15/site-packages/cffi-2.1.1.dist-info/INSTALLER",
+            "lib/python3.15/site-packages/cffi-2.1.1.dist-info/METADATA",
+            "lib/python3.15/site-packages/cffi-2.1.1.dist-info/REQUESTED",
+            "lib/python3.15/site-packages/cffi-2.1.1.dist-info/WHEEL",
+            "lib/python3.15/site-packages/cffi-2.1.1.dist-info/entry_points.txt",
+            "lib/python3.15/site-packages/cffi-2.1.1.dist-info/licenses/LICENSE",
+            "lib/python3.15/site-packages/cffi-2.1.1.dist-info/top_level.txt",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 1169750
+        }
+      }
+    }
+  }
+}
