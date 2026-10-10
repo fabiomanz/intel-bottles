@@ -2,10 +2,10 @@
   "cryptography": {
     "formula": {
       "name": "cryptography",
-      "pkg_version": "50.0.2_1",
+      "pkg_version": "50.0.2_2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/c/cryptography.rb",
       "tap_git_path": "Formula/c/cryptography.rb",
-      "tap_git_revision": "6435daf1c531ff55b212e81448d0290b5e1d324f",
+      "tap_git_revision": "8067e8fdb34bd521c3d5b4cc1c52f19d22e68093",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Cryptographic recipes and primitives for Python",
       "license": "Apache-2.0 OR BSD-3-Clause",
@@ -15,17 +15,18 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-09T20:34:54Z",
+      "date": "2026-10-10T16:37:54Z",
       "tags": {
         "tahoe": {
-          "filename": "cryptography-50.0.2_1.tahoe.bottle.tar.gz",
-          "local_filename": "cryptography--50.0.2_1.tahoe.bottle.tar.gz",
-          "sha256": "4f641c2da139d3e84be1cf7b2f06917871024243d7a5ef4bef77621c9ee7b0cc",
+          "filename": "cryptography-50.0.2_2.tahoe.bottle.tar.gz",
+          "local_filename": "cryptography--50.0.2_2.tahoe.bottle.tar.gz",
+          "sha256": "fefde079108005132d60ce764fa7fd2f02e70425e26569d0a7ea2b7185a0c294",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [
-              "lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust.abi3.so"
+              "lib/python3.14/site-packages/cryptography/hazmat/bindings/_rust.abi3.so",
+              "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust.abi3t.so"
             ],
             "binary_relocation_files": [],
             "source_modified_time": 1790782207,
@@ -33,19 +34,19 @@
             "runtime_dependencies": [
               {
                 "full_name": "pycparser",
-                "version": "3.0",
-                "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "3.0",
+                "version": "3.1",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.1_1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "cffi",
                 "version": "2.1.1",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.1.1",
+                "pkg_version": "2.1.1_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -80,55 +81,55 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-pycparser-3.2e.0",
-              "SPDXRef-Package-SPDXRef-cffi-2.2e.1.2e.1",
+              "SPDXRef-Package-SPDXRef-pycparser-3.2e.1.5f.1",
+              "SPDXRef-Package-SPDXRef-cffi-2.2e.1.2e.1.5f.1",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pycparser-3.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pycparser-3.2e.1.5f.1",
                 "name": "pycparser",
-                "versionInfo": "3.0",
+                "versionInfo": "3.1_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/pycparser/blobs/sha256:a9392396176283b2a99bf53cf5ad77dee0e5c1a9318a119dd41bf13bf740a522",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/pycparser/blobs/sha256:c008a84b1a89712d6f194b5e3dfd8ed76f08b5ecb2d197571dd8445ae2bf2955",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "a9392396176283b2a99bf53cf5ad77dee0e5c1a9318a119dd41bf13bf740a522"
+                    "checksumValue": "c008a84b1a89712d6f194b5e3dfd8ed76f08b5ecb2d197571dd8445ae2bf2955"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/pycparser@3.0",
+                    "referenceLocator": "pkg:brew/pycparser@3.1_1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-cffi-2.2e.1.2e.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-cffi-2.2e.1.2e.1.5f.1",
                 "name": "cffi",
-                "versionInfo": "2.1.1",
+                "versionInfo": "2.1.1_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT-0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/cffi/blobs/sha256:e8d3fba9e24ffa2eda3600b080d5b81f89374f94c2b9d1e81bd3f13c1f4fdf90",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/cffi-2.1.1_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "e8d3fba9e24ffa2eda3600b080d5b81f89374f94c2b9d1e81bd3f13c1f4fdf90"
+                    "checksumValue": "1209a1fb0fb4df49bf282f6f218e7e7df8149864cc4960bbd6939f06a47cb2a7"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/cffi@2.1.1",
+                    "referenceLocator": "pkg:brew/cffi@2.1.1_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -194,12 +195,12 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pycparser-3.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pycparser-3.2e.1.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-cryptography"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-cffi-2.2e.1.2e.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cffi-2.2e.1.2e.1.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-cryptography"
               },
@@ -349,9 +350,129 @@
             "lib/python3.14/site-packages/cryptography-50.0.2.dist-info/licenses/LICENSE.APACHE",
             "lib/python3.14/site-packages/cryptography-50.0.2.dist-info/licenses/LICENSE.BSD",
             "lib/python3.14/site-packages/cryptography-50.0.2.dist-info/sboms/cryptography-rust.cyclonedx.json",
+            "lib/python3.15/site-packages/cryptography/__about__.py",
+            "lib/python3.15/site-packages/cryptography/__init__.py",
+            "lib/python3.15/site-packages/cryptography/cobblestone.py",
+            "lib/python3.15/site-packages/cryptography/exceptions.py",
+            "lib/python3.15/site-packages/cryptography/fernet.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/__init__.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/_oid.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/asn1/__init__.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/asn1/asn1.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/backends/__init__.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/backends/openssl/__init__.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/backends/openssl/backend.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/__init__.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/__init__.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/_openssl.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/asn1.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/cobblestone.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/declarative_asn1.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/exceptions.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/ocsp.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/__init__.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/aead.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/ciphers.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/cmac.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/dh.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/dsa.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/ec.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/ed25519.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/ed448.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/hashes.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/hmac.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/hpke.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/kdf.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/keys.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/keywrap.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/mldsa.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/mlkem.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/poly1305.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/rsa.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/x25519.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/openssl/x448.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/pkcs12.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/pkcs7.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/test_support.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust/x509.pyi",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/_rust.abi3t.so",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/openssl/__init__.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/openssl/_conditional.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/bindings/openssl/binding.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/decrepit/__init__.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/decrepit/ciphers/__init__.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/decrepit/ciphers/algorithms.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/decrepit/ciphers/modes.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/__init__.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/_asymmetric.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/_cipheralgorithm.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/_modes.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/_serialization.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/asymmetric/__init__.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/asymmetric/dh.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/asymmetric/dsa.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/asymmetric/ec.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/asymmetric/ed25519.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/asymmetric/ed448.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/asymmetric/mldsa.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/asymmetric/mlkem.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/asymmetric/padding.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/asymmetric/rsa.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/asymmetric/types.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/asymmetric/utils.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/asymmetric/x25519.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/asymmetric/x448.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/ciphers/__init__.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/ciphers/aead.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/ciphers/algorithms.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/ciphers/base.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/ciphers/modes.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/cmac.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/constant_time.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/hashes.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/hmac.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/hpke.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/kdf/__init__.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/kdf/argon2.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/kdf/concatkdf.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/kdf/hkdf.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/kdf/kbkdf.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/kdf/pbkdf2.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/kdf/scrypt.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/kdf/x963kdf.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/keywrap.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/padding.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/poly1305.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/serialization/__init__.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/serialization/base.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/serialization/pkcs12.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/serialization/pkcs7.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/serialization/ssh.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/twofactor/__init__.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/twofactor/hotp.py",
+            "lib/python3.15/site-packages/cryptography/hazmat/primitives/twofactor/totp.py",
+            "lib/python3.15/site-packages/cryptography/py.typed",
+            "lib/python3.15/site-packages/cryptography/utils.py",
+            "lib/python3.15/site-packages/cryptography/x509/__init__.py",
+            "lib/python3.15/site-packages/cryptography/x509/base.py",
+            "lib/python3.15/site-packages/cryptography/x509/certificate_transparency.py",
+            "lib/python3.15/site-packages/cryptography/x509/extensions.py",
+            "lib/python3.15/site-packages/cryptography/x509/general_name.py",
+            "lib/python3.15/site-packages/cryptography/x509/name.py",
+            "lib/python3.15/site-packages/cryptography/x509/ocsp.py",
+            "lib/python3.15/site-packages/cryptography/x509/oid.py",
+            "lib/python3.15/site-packages/cryptography/x509/verification.py",
+            "lib/python3.15/site-packages/cryptography-50.0.2.dist-info/INSTALLER",
+            "lib/python3.15/site-packages/cryptography-50.0.2.dist-info/METADATA",
+            "lib/python3.15/site-packages/cryptography-50.0.2.dist-info/REQUESTED",
+            "lib/python3.15/site-packages/cryptography-50.0.2.dist-info/WHEEL",
+            "lib/python3.15/site-packages/cryptography-50.0.2.dist-info/licenses/LICENSE",
+            "lib/python3.15/site-packages/cryptography-50.0.2.dist-info/licenses/LICENSE.APACHE",
+            "lib/python3.15/site-packages/cryptography-50.0.2.dist-info/licenses/LICENSE.BSD",
+            "lib/python3.15/site-packages/cryptography-50.0.2.dist-info/sboms/cryptography-rust.cyclonedx.json",
             "sbom.spdx.json"
           ],
-          "installed_size": 6611668
+          "installed_size": 13941172
         }
       }
     }

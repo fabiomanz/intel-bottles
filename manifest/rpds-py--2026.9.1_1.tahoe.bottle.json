@@ -2,10 +2,10 @@
   "rpds-py": {
     "formula": {
       "name": "rpds-py",
-      "pkg_version": "2026.9.1",
+      "pkg_version": "2026.9.1_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/r/rpds-py.rb",
       "tap_git_path": "Formula/r/rpds-py.rb",
-      "tap_git_revision": "3fd845574a627e757b76db2c15c370a9a528be8f",
+      "tap_git_revision": "8067e8fdb34bd521c3d5b4cc1c52f19d22e68093",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Python bindings to Rust's persistent data structures",
       "license": "MIT",
@@ -15,18 +15,18 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-06T12:23:26Z",
+      "date": "2026-10-10T16:12:16Z",
       "tags": {
         "tahoe": {
-          "filename": "rpds-py-2026.9.1.tahoe.bottle.tar.gz",
-          "local_filename": "rpds-py--2026.9.1.tahoe.bottle.tar.gz",
-          "sha256": "5b8388b69e69b6ada5413d004552a8dababb0758ac68ce53996acd593672a74e",
+          "filename": "rpds-py-2026.9.1_1.tahoe.bottle.tar.gz",
+          "local_filename": "rpds-py--2026.9.1_1.tahoe.bottle.tar.gz",
+          "sha256": "09fe96602a7e9d19ba7c6ec5b044b6ffe0d6e36b5bf202d323de29b191002a44",
           "tab": {
-            "homebrew_version": "7.0.8",
+            "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [
-              "lib/python3.13/site-packages/rpds/rpds.cpython-313-darwin.so",
-              "lib/python3.14/site-packages/rpds/rpds.cpython-314-darwin.so"
+              "lib/python3.14/site-packages/rpds/rpds.cpython-314-darwin.so",
+              "lib/python3.15/site-packages/rpds/rpds.cpython-315-darwin.so"
             ],
             "binary_relocation_files": [],
             "source_modified_time": 1791131559,
@@ -75,16 +75,6 @@
             "INSTALL_RECEIPT.json",
             "LICENSE",
             "README.rst",
-            "lib/python3.13/site-packages/rpds/__init__.py",
-            "lib/python3.13/site-packages/rpds/__init__.pyi",
-            "lib/python3.13/site-packages/rpds/py.typed",
-            "lib/python3.13/site-packages/rpds/rpds.cpython-313-darwin.so",
-            "lib/python3.13/site-packages/rpds_py-2026.9.1.dist-info/INSTALLER",
-            "lib/python3.13/site-packages/rpds_py-2026.9.1.dist-info/METADATA",
-            "lib/python3.13/site-packages/rpds_py-2026.9.1.dist-info/REQUESTED",
-            "lib/python3.13/site-packages/rpds_py-2026.9.1.dist-info/WHEEL",
-            "lib/python3.13/site-packages/rpds_py-2026.9.1.dist-info/licenses/LICENSE",
-            "lib/python3.13/site-packages/rpds_py-2026.9.1.dist-info/sboms/rpds-py.cyclonedx.json",
             "lib/python3.14/site-packages/rpds/__init__.py",
             "lib/python3.14/site-packages/rpds/__init__.pyi",
             "lib/python3.14/site-packages/rpds/py.typed",
@@ -95,9 +85,19 @@
             "lib/python3.14/site-packages/rpds_py-2026.9.1.dist-info/WHEEL",
             "lib/python3.14/site-packages/rpds_py-2026.9.1.dist-info/licenses/LICENSE",
             "lib/python3.14/site-packages/rpds_py-2026.9.1.dist-info/sboms/rpds-py.cyclonedx.json",
+            "lib/python3.15/site-packages/rpds/__init__.py",
+            "lib/python3.15/site-packages/rpds/__init__.pyi",
+            "lib/python3.15/site-packages/rpds/py.typed",
+            "lib/python3.15/site-packages/rpds/rpds.cpython-315-darwin.so",
+            "lib/python3.15/site-packages/rpds_py-2026.9.1.dist-info/INSTALLER",
+            "lib/python3.15/site-packages/rpds_py-2026.9.1.dist-info/METADATA",
+            "lib/python3.15/site-packages/rpds_py-2026.9.1.dist-info/REQUESTED",
+            "lib/python3.15/site-packages/rpds_py-2026.9.1.dist-info/WHEEL",
+            "lib/python3.15/site-packages/rpds_py-2026.9.1.dist-info/licenses/LICENSE",
+            "lib/python3.15/site-packages/rpds_py-2026.9.1.dist-info/sboms/rpds-py.cyclonedx.json",
             "sbom.spdx.json"
           ],
-          "installed_size": 1928597
+          "installed_size": 1932528
         }
       }
     }
