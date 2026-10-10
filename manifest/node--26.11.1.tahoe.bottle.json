@@ -2,10 +2,10 @@
   "node": {
     "formula": {
       "name": "node",
-      "pkg_version": "26.11.0_1",
+      "pkg_version": "26.11.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/n/node.rb",
       "tap_git_path": "Formula/n/node.rb",
-      "tap_git_revision": "6435daf1c531ff55b212e81448d0290b5e1d324f",
+      "tap_git_revision": "31ba0ef2186ac0710f08107ead2086b7956b72fe",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Open-source, cross-platform JavaScript runtime environment",
       "license": "MIT",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-09T23:53:24Z",
+      "date": "2026-10-10T21:59:05Z",
       "tags": {
         "tahoe": {
-          "filename": "node-26.11.0_1.tahoe.bottle.tar.gz",
-          "local_filename": "node--26.11.0_1.tahoe.bottle.tar.gz",
-          "sha256": "9103b02999b9913260c1d71e70aa635989ba5a4d85d499504cca2e669fccfdbe",
+          "filename": "node-26.11.1.tahoe.bottle.tar.gz",
+          "local_filename": "node--26.11.1.tahoe.bottle.tar.gz",
+          "sha256": "0197c2d5463b32931a7cfbc6d3510ffab0904ceb7fcd1bc26938450bc4aa43b9",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [
@@ -33,7 +33,7 @@
             "binary_relocation_files": [
               "lib/libnode.147.dylib"
             ],
-            "source_modified_time": 1791358791,
+            "source_modified_time": 1791391492,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -356,7 +356,7 @@
             },
             {
               "path": "lib/libnode.147.dylib",
-              "string": "/usr/local/Cellar/node/26.11.0_1",
+              "string": "/usr/local/Cellar/node/26.11.1",
               "offset": 24854317
             }
           ],
@@ -2876,7 +2876,7 @@
             "share/doc/node/lldb_commands.py",
             "share/man/man1/node.1"
           ],
-          "installed_size": 75264955
+          "installed_size": 75265021
         }
       }
     }
