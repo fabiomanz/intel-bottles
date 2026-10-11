@@ -23,6 +23,10 @@ on:
         description: Space-separated formulae whose build pushes health snapshots to the diag branch
         type: string
         default: ""
+      chain:
+        description: Follow-up number of a self-queued run for a cached build (empty = 0)
+        type: string
+        default: ""
     secrets:
       FORK_TOKEN:
         description: PAT with contents:write on the homebrew-core fork
@@ -112,6 +116,12 @@ jobs:
           key: ccache-${{ matrix.entry.formula }}-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: ccache-${{ matrix.entry.formula }}-
 
+      - name: Note cache state before the build
+        if: matrix.entry.ccache
+        run: |
+          echo "BUILD_START=$(date +%s)" >> "$GITHUB_ENV"
+          echo "CACHE_KB_BEFORE=$(du -sk "$HOMEBREW_CACHE/ccache" 2>/dev/null | cut -f1 || echo 0)" >> "$GITHUB_ENV"
+
       - name: Build and bottle
         # 300 minutes for cached builds, leaving time to save the cache within the job.
         timeout-minutes: ${{ matrix.entry.ccache && 300 || matrix.entry.timeout }}
@@ -126,6 +136,25 @@ jobs:
           set -o pipefail
           nice -n 10 ./scripts/build_root.sh "${{ matrix.entry.formula }}" 2>&1 | tee "$RUNNER_TEMP/build.log"
 
+      - name: Stop leftover build processes
+        # The step timeout kills the build step, but compilers it started keep running and
+        # writing into the cache. On 2026-10-10 that made the save fail ("file changed as
+        # we read it") and a whole run's progress was lost.
+        if: always() && matrix.entry.ccache
+        run: |
+          pkill -TERM -x ninja || true
+          pkill -TERM -f 'Homebrew/build.rb' || true
+          pkill -TERM -x ccache || true
+          pkill -TERM -f 'clang' || true
+          for _ in $(seq 1 30); do
+            pgrep -x ccache >/dev/null || pgrep -f clang >/dev/null || break
+            sleep 2
+          done
+          pkill -KILL -x ccache || true
+          pkill -KILL -f 'clang' || true
+          pkill -KILL -x ninja || true
+          sleep 2
+
       - name: Compiler cache statistics
         if: always() && matrix.entry.ccache
         run: CCACHE_DIR="$HOMEBREW_CACHE/ccache" ccache --show-stats || true
@@ -136,6 +165,38 @@ jobs:
         with:
           path: ${{ env.HOMEBREW_CACHE }}/ccache
           key: ccache-${{ matrix.entry.formula }}-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Queue a follow-up run if the cache is still filling
+        # A cached build that hit its time limit continues in a run of its own right after
+        # this one, instead of waiting for tomorrow's schedule. Only when the build really
+        # ran out of time, produced no bottle and actually added to the cache -- a genuine
+        # build error or a skip ends sooner and is not repeated -- and at most 6 times.
+        if: always() && matrix.entry.ccache
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FORMULA: ${{ matrix.entry.formula }}
+          CHAIN: ${{ inputs.chain }}
+        run: |
+          chain="${CHAIN:-0}"
+          elapsed=$(( ($(date +%s) - ${BUILD_START:-$(date +%s)}) / 60 ))
+          after=$(du -sk "$HOMEBREW_CACHE/ccache" 2>/dev/null | cut -f1 || echo 0)
+          grew=$(( (after - ${CACHE_KB_BEFORE:-0}) / 1024 ))
+          echo "build ran ${elapsed} min; cache grew ${grew} MB; follow-up number ${chain}"
+          if ls bottles/*.bottle.json >/dev/null 2>&1; then
+            echo "bottle produced; nothing to continue"; exit 0
+          fi
+          if [ "$elapsed" -lt 290 ]; then
+            echo "stopped before the time limit (error or skip); not re-queueing"; exit 0
+          fi
+          if [ "$grew" -lt 50 ]; then
+            echo "cache barely grew; not re-queueing a build that makes no progress"; exit 0
+          fi
+          if [ "$chain" -ge 6 ]; then
+            echo "already ${chain} follow-ups in a row; leaving it to the daily schedule"; exit 0
+          fi
+          gh workflow run build-bottles.yml -R "$GITHUB_REPOSITORY" --ref main \
+            -f formulae="$FORMULA" -f chain=$((chain + 1))
+          echo "queued follow-up run $((chain + 1)) for $FORMULA"
 
       - name: Upload Homebrew build logs
         # The step log only shows brew's summary lines; configure and compiler output
