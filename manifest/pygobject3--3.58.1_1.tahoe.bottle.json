@@ -2,10 +2,10 @@
   "pygobject3": {
     "formula": {
       "name": "pygobject3",
-      "pkg_version": "3.58.1",
+      "pkg_version": "3.58.1_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pygobject3.rb",
       "tap_git_path": "Formula/p/pygobject3.rb",
-      "tap_git_revision": "5bc85410cedd1c8ac21b2770e8438814b1884b61",
+      "tap_git_revision": "19d8b00b53716ec6e060539988a7ac1f71eb517c",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "GNOME Python bindings (based on GObject Introspection)",
       "license": "LGPL-2.1-or-later",
@@ -15,22 +15,22 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-10T12:00:59Z",
+      "date": "2026-10-11T17:08:26Z",
       "tags": {
         "tahoe": {
-          "filename": "pygobject3-3.58.1.tahoe.bottle.tar.gz",
-          "local_filename": "pygobject3--3.58.1.tahoe.bottle.tar.gz",
-          "sha256": "62d680036f61afc6465c9af2bed62410bea4d3b5764e88bbb2b189df31f50040",
+          "filename": "pygobject3-3.58.1_1.tahoe.bottle.tar.gz",
+          "local_filename": "pygobject3--3.58.1_1.tahoe.bottle.tar.gz",
+          "sha256": "4e2498f2ac589ef5573dc898d713db08fc61a4da292a82df2d466ec5b9d69be9",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [
               "lib/pkgconfig/pygobject-3.0.pc"
             ],
             "linkage_files": [
-              "lib/python3.13/site-packages/gi/_gi.cpython-313-darwin.so",
-              "lib/python3.13/site-packages/gi/_gi_cairo.cpython-313-darwin.so",
               "lib/python3.14/site-packages/gi/_gi.cpython-314-darwin.so",
-              "lib/python3.14/site-packages/gi/_gi_cairo.cpython-314-darwin.so"
+              "lib/python3.14/site-packages/gi/_gi_cairo.cpython-314-darwin.so",
+              "lib/python3.15/site-packages/gi/_gi.cpython-315-darwin.so",
+              "lib/python3.15/site-packages/gi/_gi_cairo.cpython-315-darwin.so"
             ],
             "binary_relocation_files": [],
             "source_modified_time": 1791543358,
@@ -206,10 +206,10 @@
               },
               {
                 "full_name": "pkgconf",
-                "version": "3.0.7",
+                "version": "3.0.8",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.0.7",
+                "pkg_version": "3.0.8",
                 "declared_directly": true,
                 "compatibility_version": 2
               },
@@ -250,10 +250,10 @@
               },
               {
                 "full_name": "sqlite",
-                "version": "3.53.4",
+                "version": "3.54.0",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "3.53.4",
+                "bottle_rebuild": 0,
+                "pkg_version": "3.54.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -304,9 +304,9 @@
               {
                 "full_name": "py3cairo",
                 "version": "1.29.2",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.29.2",
+                "pkg_version": "1.29.2_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -334,18 +334,18 @@
               "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
               "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
               "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
-              "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.7",
+              "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.8",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
-              "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
               "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.2",
               "SPDXRef-Package-SPDXRef-gobject-introspection-1.2e.86.2e.0.5f.4",
-              "SPDXRef-Package-SPDXRef-py3cairo-1.2e.29.2e.2",
+              "SPDXRef-Package-SPDXRef-py3cairo-1.2e.29.2e.2.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -580,24 +580,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.7",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.8",
                 "name": "pkgconf",
-                "versionInfo": "3.0.7",
+                "versionInfo": "3.0.8",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "ISC",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pkgconf-3.0.7.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pkgconf-3.0.8.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "112ebc0f90bf7a206447893877f8bdb5058e665ffd27de96500718ff69765938"
+                    "checksumValue": "bc09d8aa97c8079cae55c9aad2d10909cb52a07f45779ce4ba8ac3ed70c5458a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/pkgconf@3.0.7",
+                    "referenceLocator": "pkg:brew/pkgconf@3.0.8",
                     "referenceType": "purl"
                   }
                 ]
@@ -695,24 +695,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
                 "name": "sqlite",
-                "versionInfo": "3.53.4",
+                "versionInfo": "3.54.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "blessing",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/sqlite-3.54.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f"
+                    "checksumValue": "dc852ce3cc635ed216e4daf1e68736ee9d8e90327d23bf17638be27c37ed61d4"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceLocator": "pkg:brew/sqlite@3.54.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -833,24 +833,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-py3cairo-1.2e.29.2e.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-py3cairo-1.2e.29.2e.2.5f.1",
                 "name": "py3cairo",
-                "versionInfo": "1.29.2",
+                "versionInfo": "1.29.2_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "LGPL-2.1-only OR MPL-1.1",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/py3cairo-1.29.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/py3cairo-1.29.2_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4e058a5d99461c3c6ae0ff5b2111f78310d074b81b714fc6f62cc4a435323558"
+                    "checksumValue": "b4009357b7eec1c53478d2c2bc1dbc73d42d28da0da8380033d266480ab4b114"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/py3cairo@1.29.2",
+                    "referenceLocator": "pkg:brew/py3cairo@1.29.2_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -920,7 +920,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.7",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.8",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
@@ -945,7 +945,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
@@ -975,7 +975,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-py3cairo-1.2e.29.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-py3cairo-1.2e.29.2e.2.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pygobject3"
               },
@@ -996,35 +996,6 @@
             "include/pygobject-3.0/pygobject-types.h",
             "include/pygobject-3.0/pygobject.h",
             "lib/pkgconfig/pygobject-3.0.pc",
-            "lib/python3.13/site-packages/PyGObject-3.58.1.dist-info/METADATA",
-            "lib/python3.13/site-packages/gi/__init__.py",
-            "lib/python3.13/site-packages/gi/_constants.py",
-            "lib/python3.13/site-packages/gi/_enum.py",
-            "lib/python3.13/site-packages/gi/_error.py",
-            "lib/python3.13/site-packages/gi/_gi.cpython-313-darwin.so",
-            "lib/python3.13/site-packages/gi/_gi_cairo.cpython-313-darwin.so",
-            "lib/python3.13/site-packages/gi/_gtktemplate.py",
-            "lib/python3.13/site-packages/gi/_ossighelper.py",
-            "lib/python3.13/site-packages/gi/_propertyhelper.py",
-            "lib/python3.13/site-packages/gi/_signalhelper.py",
-            "lib/python3.13/site-packages/gi/_signature.py",
-            "lib/python3.13/site-packages/gi/docstring.py",
-            "lib/python3.13/site-packages/gi/events.py",
-            "lib/python3.13/site-packages/gi/importer.py",
-            "lib/python3.13/site-packages/gi/module.py",
-            "lib/python3.13/site-packages/gi/overrides/GIMarshallingTests.py",
-            "lib/python3.13/site-packages/gi/overrides/GLib.py",
-            "lib/python3.13/site-packages/gi/overrides/GLibUnix.py",
-            "lib/python3.13/site-packages/gi/overrides/GObject.py",
-            "lib/python3.13/site-packages/gi/overrides/Gdk.py",
-            "lib/python3.13/site-packages/gi/overrides/GdkPixbuf.py",
-            "lib/python3.13/site-packages/gi/overrides/Gio.py",
-            "lib/python3.13/site-packages/gi/overrides/GioUnix.py",
-            "lib/python3.13/site-packages/gi/overrides/Gtk.py",
-            "lib/python3.13/site-packages/gi/overrides/Pango.py",
-            "lib/python3.13/site-packages/gi/overrides/__init__.py",
-            "lib/python3.13/site-packages/gi/repository/__init__.py",
-            "lib/python3.13/site-packages/gi/types.py",
             "lib/python3.14/site-packages/PyGObject-3.58.1.dist-info/METADATA",
             "lib/python3.14/site-packages/gi/__init__.py",
             "lib/python3.14/site-packages/gi/_constants.py",
@@ -1054,9 +1025,38 @@
             "lib/python3.14/site-packages/gi/overrides/__init__.py",
             "lib/python3.14/site-packages/gi/repository/__init__.py",
             "lib/python3.14/site-packages/gi/types.py",
+            "lib/python3.15/site-packages/PyGObject-3.58.1.dist-info/METADATA",
+            "lib/python3.15/site-packages/gi/__init__.py",
+            "lib/python3.15/site-packages/gi/_constants.py",
+            "lib/python3.15/site-packages/gi/_enum.py",
+            "lib/python3.15/site-packages/gi/_error.py",
+            "lib/python3.15/site-packages/gi/_gi.cpython-315-darwin.so",
+            "lib/python3.15/site-packages/gi/_gi_cairo.cpython-315-darwin.so",
+            "lib/python3.15/site-packages/gi/_gtktemplate.py",
+            "lib/python3.15/site-packages/gi/_ossighelper.py",
+            "lib/python3.15/site-packages/gi/_propertyhelper.py",
+            "lib/python3.15/site-packages/gi/_signalhelper.py",
+            "lib/python3.15/site-packages/gi/_signature.py",
+            "lib/python3.15/site-packages/gi/docstring.py",
+            "lib/python3.15/site-packages/gi/events.py",
+            "lib/python3.15/site-packages/gi/importer.py",
+            "lib/python3.15/site-packages/gi/module.py",
+            "lib/python3.15/site-packages/gi/overrides/GIMarshallingTests.py",
+            "lib/python3.15/site-packages/gi/overrides/GLib.py",
+            "lib/python3.15/site-packages/gi/overrides/GLibUnix.py",
+            "lib/python3.15/site-packages/gi/overrides/GObject.py",
+            "lib/python3.15/site-packages/gi/overrides/Gdk.py",
+            "lib/python3.15/site-packages/gi/overrides/GdkPixbuf.py",
+            "lib/python3.15/site-packages/gi/overrides/Gio.py",
+            "lib/python3.15/site-packages/gi/overrides/GioUnix.py",
+            "lib/python3.15/site-packages/gi/overrides/Gtk.py",
+            "lib/python3.15/site-packages/gi/overrides/Pango.py",
+            "lib/python3.15/site-packages/gi/overrides/__init__.py",
+            "lib/python3.15/site-packages/gi/repository/__init__.py",
+            "lib/python3.15/site-packages/gi/types.py",
             "sbom.spdx.json"
           ],
-          "installed_size": 1624059
+          "installed_size": 1623772
         }
       }
     }
