@@ -2,10 +2,10 @@
   "py3cairo": {
     "formula": {
       "name": "py3cairo",
-      "pkg_version": "1.29.2",
+      "pkg_version": "1.29.2_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/py3cairo.rb",
       "tap_git_path": "Formula/p/py3cairo.rb",
-      "tap_git_revision": "a9eb3f0cddc9a16651e6a46d0c1b0102499877f7",
+      "tap_git_revision": "ce519c7921c7cf6fef2ba8cafc68be28ca0a39e4",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Python 3 bindings for the Cairo graphics library",
       "license": "LGPL-2.1-only OR MPL-1.1",
@@ -15,25 +15,34 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-05T12:42:49Z",
+      "date": "2026-10-11T11:55:45Z",
       "tags": {
         "tahoe": {
-          "filename": "py3cairo-1.29.2.tahoe.bottle.tar.gz",
-          "local_filename": "py3cairo--1.29.2.tahoe.bottle.tar.gz",
-          "sha256": "4e058a5d99461c3c6ae0ff5b2111f78310d074b81b714fc6f62cc4a435323558",
+          "filename": "py3cairo-1.29.2_1.tahoe.bottle.tar.gz",
+          "local_filename": "py3cairo--1.29.2_1.tahoe.bottle.tar.gz",
+          "sha256": "b4009357b7eec1c53478d2c2bc1dbc73d42d28da0da8380033d266480ab4b114",
           "tab": {
-            "homebrew_version": "7.0.8",
+            "homebrew_version": "7.0.9",
             "changed_files": [
               "lib/pkgconfig/py3cairo.pc"
             ],
             "linkage_files": [
-              "lib/python3.13/site-packages/cairo/_cairo.cpython-313-darwin.so",
-              "lib/python3.14/site-packages/cairo/_cairo.cpython-314-darwin.so"
+              "lib/python3.14/site-packages/cairo/_cairo.cpython-314-darwin.so",
+              "lib/python3.15/site-packages/cairo/_cairo.cpython-315-darwin.so"
             ],
             "binary_relocation_files": [],
             "source_modified_time": 1791140081,
             "compiler": "clang",
             "runtime_dependencies": [
+              {
+                "full_name": "brotli",
+                "version": "1.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
               {
                 "full_name": "libpng",
                 "version": "1.6.59",
@@ -98,10 +107,10 @@
               },
               {
                 "full_name": "glib",
-                "version": "2.90.0",
+                "version": "2.90.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.90.0",
+                "pkg_version": "2.90.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -208,11 +217,12 @@
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+              "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
               "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
               "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
-              "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.0",
+              "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
               "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
               "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
               "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
@@ -238,6 +248,29 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/libpng@1.6.59",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "name": "freetype",
+                "versionInfo": "2.14.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "FTL",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.14.3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a8a2bcc65a1d21adba6797d59f4ab1c91b0a40c53aae2794b4f94780e7379837"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/freetype@2.14.3",
                     "referenceType": "purl"
                   }
                 ]
@@ -335,24 +368,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "name": "glib",
-                "versionInfo": "2.90.0",
+                "versionInfo": "2.90.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "LGPL-2.1-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4f180b8f89781725d58c0a39d7508c0bf0e96225fc69ef630e18a9f885f61c4a"
+                    "checksumValue": "3b0aaa12be31d6f764cdca91e2a75efe6f317eabba79a48bdf1467217a0ccbab"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/glib@2.90.0",
+                    "referenceLocator": "pkg:brew/glib@2.90.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -446,6 +479,11 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-py3cairo"
               },
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-py3cairo"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-py3cairo"
@@ -466,7 +504,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-py3cairo"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-py3cairo"
               },
@@ -503,21 +541,21 @@
             "README.rst",
             "include/pycairo/py3cairo.h",
             "lib/pkgconfig/py3cairo.pc",
-            "lib/python3.13/site-packages/cairo/__init__.py",
-            "lib/python3.13/site-packages/cairo/__init__.pyi",
-            "lib/python3.13/site-packages/cairo/_cairo.cpython-313-darwin.so",
-            "lib/python3.13/site-packages/cairo/include/py3cairo.h",
-            "lib/python3.13/site-packages/cairo/py.typed",
-            "lib/python3.13/site-packages/pycairo-1.29.2.dist-info/METADATA",
             "lib/python3.14/site-packages/cairo/__init__.py",
             "lib/python3.14/site-packages/cairo/__init__.pyi",
             "lib/python3.14/site-packages/cairo/_cairo.cpython-314-darwin.so",
             "lib/python3.14/site-packages/cairo/include/py3cairo.h",
             "lib/python3.14/site-packages/cairo/py.typed",
             "lib/python3.14/site-packages/pycairo-1.29.2.dist-info/METADATA",
+            "lib/python3.15/site-packages/cairo/__init__.py",
+            "lib/python3.15/site-packages/cairo/__init__.pyi",
+            "lib/python3.15/site-packages/cairo/_cairo.cpython-315-darwin.so",
+            "lib/python3.15/site-packages/cairo/include/py3cairo.h",
+            "lib/python3.15/site-packages/cairo/py.typed",
+            "lib/python3.15/site-packages/pycairo-1.29.2.dist-info/METADATA",
             "sbom.spdx.json"
           ],
-          "installed_size": 982371
+          "installed_size": 982631
         }
       }
     }
