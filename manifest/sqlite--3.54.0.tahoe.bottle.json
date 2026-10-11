@@ -1,0 +1,136 @@
+{
+  "sqlite": {
+    "formula": {
+      "name": "sqlite",
+      "pkg_version": "3.54.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/sqlite.rb",
+      "tap_git_path": "Formula/s/sqlite.rb",
+      "tap_git_revision": "0ffe26e2f48973f4f582be184947b5a714dbe03c",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Command-line interface for SQLite",
+      "license": "blessing",
+      "homepage": "https://sqlite.org/index.html"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-11T11:44:04Z",
+      "tags": {
+        "tahoe": {
+          "filename": "sqlite-3.54.0.tahoe.bottle.tar.gz",
+          "local_filename": "sqlite--3.54.0.tahoe.bottle.tar.gz",
+          "sha256": "dc852ce3cc635ed216e4daf1e68736ee9d8e90327d23bf17638be27c37ed61d4",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "lib/pkgconfig/sqlite3.pc"
+            ],
+            "linkage_files": [
+              "bin/sqlite3",
+              "lib/libsqlite3.3.54.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1791562501,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/readline-8.3.6.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8e2d9a12817040fff1164139282e0d2f7ad2aaf388db15db8eb36a8fb00dd74a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sqlite"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-sqlite-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/sqlite3"
+          ],
+          "all_files": [
+            ".brew/sqlite.rb",
+            "INSTALL_RECEIPT.json",
+            "README.txt",
+            "bin/sqlite3",
+            "include/sqlite3.h",
+            "include/sqlite3ext.h",
+            "lib/libsqlite3.0.dylib",
+            "lib/libsqlite3.3.54.0.dylib",
+            "lib/libsqlite3.a",
+            "lib/libsqlite3.dylib",
+            "lib/pkgconfig/sqlite3.pc",
+            "sbom.spdx.json",
+            "share/man/man1/sqlite3.1"
+          ],
+          "installed_size": 5330083
+        }
+      }
+    }
+  }
+}
