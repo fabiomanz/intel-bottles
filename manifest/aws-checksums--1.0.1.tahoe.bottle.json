@@ -1,0 +1,104 @@
+{
+  "aws-checksums": {
+    "formula": {
+      "name": "aws-checksums",
+      "pkg_version": "1.0.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/a/aws-checksums.rb",
+      "tap_git_path": "Formula/a/aws-checksums.rb",
+      "tap_git_revision": "d98f9a2ef1367c241d0881aae9de3c3db5cb07ae",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Cross-Platform HW accelerated CRC32c and CRC32 with fallback",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/awslabs/aws-checksums"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-12T13:55:23Z",
+      "tags": {
+        "tahoe": {
+          "filename": "aws-checksums-1.0.1.tahoe.bottle.tar.gz",
+          "local_filename": "aws-checksums--1.0.1.tahoe.bottle.tar.gz",
+          "sha256": "9ce4ea682b28b532766a1988771bf81923bbb74b951f1e9526177dfb3f1552da",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/libaws-checksums.1.0.1.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790795424,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "aws-c-common",
+                "version": "1.0.3",
+                "revision": 0,
+                "pkg_version": "1.0.3",
+                "declared_directly": true,
+                "compatibility_version": 2
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-aws-checksums-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/aws-checksums.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "include/aws/checksums/checksums.h",
+            "include/aws/checksums/crc.h",
+            "include/aws/checksums/exports.h",
+            "include/aws/checksums/xxhash.h",
+            "lib/cmake/aws-checksums/aws-checksums-config.cmake",
+            "lib/cmake/aws-checksums/shared/aws-checksums-targets-release.cmake",
+            "lib/cmake/aws-checksums/shared/aws-checksums-targets.cmake",
+            "lib/libaws-checksums.1.0.1.dylib",
+            "lib/libaws-checksums.1.0.dylib",
+            "lib/libaws-checksums.dylib",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 131877
+        }
+      }
+    }
+  }
+}

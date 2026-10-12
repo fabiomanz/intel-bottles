@@ -1,0 +1,108 @@
+{
+  "aws-c-sdkutils": {
+    "formula": {
+      "name": "aws-c-sdkutils",
+      "pkg_version": "1.0.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/a/aws-c-sdkutils.rb",
+      "tap_git_path": "Formula/a/aws-c-sdkutils.rb",
+      "tap_git_revision": "d98f9a2ef1367c241d0881aae9de3c3db5cb07ae",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "C99 library implementing AWS SDK specific utilities",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/awslabs/aws-c-sdkutils"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-12T13:54:00Z",
+      "tags": {
+        "tahoe": {
+          "filename": "aws-c-sdkutils-1.0.0.tahoe.bottle.tar.gz",
+          "local_filename": "aws-c-sdkutils--1.0.0.tahoe.bottle.tar.gz",
+          "sha256": "ab419449f692ffb7c27a97e3affc0b1cd8655e8a54ac0bd2faed09e0f55b60de",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/libaws-c-sdkutils.1.0.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1787701254,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "aws-c-common",
+                "version": "1.0.3",
+                "revision": 0,
+                "pkg_version": "1.0.3",
+                "declared_directly": true,
+                "compatibility_version": 2
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-aws-c-sdkutils-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/aws-c-sdkutils.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "NOTICE",
+            "README.md",
+            "include/aws/sdkutils/aws_profile.h",
+            "include/aws/sdkutils/endpoints_bdd_engine.h",
+            "include/aws/sdkutils/endpoints_rule_engine.h",
+            "include/aws/sdkutils/exports.h",
+            "include/aws/sdkutils/partitions.h",
+            "include/aws/sdkutils/resource_name.h",
+            "include/aws/sdkutils/sdkutils.h",
+            "lib/cmake/aws-c-sdkutils/aws-c-sdkutils-config.cmake",
+            "lib/cmake/aws-c-sdkutils/shared/aws-c-sdkutils-targets-release.cmake",
+            "lib/cmake/aws-c-sdkutils/shared/aws-c-sdkutils-targets.cmake",
+            "lib/libaws-c-sdkutils.1.0.0.dylib",
+            "lib/libaws-c-sdkutils.1.0.dylib",
+            "lib/libaws-c-sdkutils.dylib",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 155779
+        }
+      }
+    }
+  }
+}
