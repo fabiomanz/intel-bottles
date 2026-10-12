@@ -8,6 +8,7 @@ assimp
 at-spi2-core
 autoconf
 automake
+awscli
 bat
 bear
 binutils
