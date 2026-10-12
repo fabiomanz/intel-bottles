@@ -112,9 +112,17 @@ jobs:
           key: ccache-${{ matrix.entry.formula }}-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: ccache-${{ matrix.entry.formula }}-
 
+      - name: Enable ccache debug output
+        # With `diag` naming a cached formula, ccache records why each compile missed (see
+        # ci-patches/<name>.sed). The build is then cut to 120 minutes: enough to sample
+        # the misses, and two such runs compared show what changes between runs.
+        if: matrix.entry.ccache && contains(format(' {0} ', inputs.diag), format(' {0} ', matrix.entry.formula))
+        run: mkdir -p "$HOMEBREW_CACHE/ccache-debug/files" && touch "$HOMEBREW_CACHE/ccache-debug/on"
+
       - name: Build and bottle
-        # 300 minutes for cached builds, leaving time to save the cache within the job.
-        timeout-minutes: ${{ matrix.entry.ccache && 300 || matrix.entry.timeout }}
+        # 300 minutes for cached builds, leaving time to save the cache within the job
+        # (120 for a ccache debug run, see above).
+        timeout-minutes: ${{ matrix.entry.ccache && (contains(format(' {0} ', inputs.diag), format(' {0} ', matrix.entry.formula)) && 120 || 300) || matrix.entry.timeout }}
         env:
           BOTTLE_OUT_DIR: ${{ github.workspace }}/bottles
         # Also written to a file, for the diagnostics heartbeat to tail.
@@ -155,6 +163,19 @@ jobs:
         with:
           path: ${{ env.HOMEBREW_CACHE }}/ccache
           key: ccache-${{ matrix.entry.formula }}-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Collect ccache debug output
+        if: always() && matrix.entry.ccache && contains(format(' {0} ', inputs.diag), format(' {0} ', matrix.entry.formula))
+        run: ./scripts/ccache_debug_collect.sh "$HOMEBREW_CACHE/ccache-debug/files" "$RUNNER_TEMP/ccache-debug.tgz"
+
+      - name: Upload ccache debug output
+        if: always() && matrix.entry.ccache && contains(format(' {0} ', inputs.diag), format(' {0} ', matrix.entry.formula))
+        uses: actions/upload-artifact@v4
+        with:
+          name: ccachedebug-${{ inputs.stage }}-${{ matrix.entry.formula }}
+          path: ${{ runner.temp }}/ccache-debug.tgz
+          if-no-files-found: ignore
+          retention-days: 14
 
       - name: Upload Homebrew build logs
         # The step log only shows brew's summary lines; configure and compiler output

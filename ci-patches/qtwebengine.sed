@@ -19,5 +19,9 @@
 # precompile_platform.h-cc.gch from the Oct 5 directory and failed with "malformed or
 # corrupted precompiled file". Without it ccache runs the compiler for anything that
 # creates or uses a PCH and caches everything else as before.
-s|^  def install$|  def install; ENV["CCACHE_DIR"] = "#{HOMEBREW_CACHE}/ccache"; ENV["CCACHE_BASEDIR"] = HOMEBREW_TEMP.realpath.to_s; ENV["CCACHE_NOHASHDIR"] = "1"; ENV["CCACHE_COMPILERCHECK"] = "%compiler% --version"; ENV["CCACHE_SLOPPINESS"] = "time_macros,include_file_mtime,include_file_ctime"; ENV["CCACHE_MAXSIZE"] = "6G" # intel-bottles: resumable build|
+#
+# When the workflow's `diag` input names qtwebengine, it creates ccache-debug/on and
+# ccache writes per-object debug files (why it missed, what it hashed); the job keeps
+# those for misses and uploads them (scripts/ccache_debug_collect.sh).
+s|^  def install$|  def install; ENV["CCACHE_DIR"] = "#{HOMEBREW_CACHE}/ccache"; ENV["CCACHE_BASEDIR"] = HOMEBREW_TEMP.realpath.to_s; ENV["CCACHE_NOHASHDIR"] = "1"; ENV["CCACHE_COMPILERCHECK"] = "%compiler% --version"; ENV["CCACHE_SLOPPINESS"] = "time_macros,include_file_mtime,include_file_ctime"; ENV["CCACHE_MAXSIZE"] = "6G"; if File.exist?("#{HOMEBREW_CACHE}/ccache-debug/on"); ENV["CCACHE_DEBUG"] = "1"; ENV["CCACHE_DEBUGDIR"] = "#{HOMEBREW_CACHE}/ccache-debug/files"; end # intel-bottles: resumable build|
 s|^([[:space:]]*-DFEATURE_webengine_kerberos=ON)$|\1 -DCMAKE_C_COMPILER_LAUNCHER=#{HOMEBREW_PREFIX}/bin/ccache -DCMAKE_CXX_COMPILER_LAUNCHER=#{HOMEBREW_PREFIX}/bin/ccache|
