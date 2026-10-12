@@ -19,10 +19,6 @@ on:
         description: Space-separated formulae whose build pushes health snapshots to the diag branch
         required: false
         type: string
-      chain:
-        description: Follow-up number when a cached build (ccache.txt) re-queues itself; leave empty
-        required: false
-        type: string
   schedule:
     # Daily, ~74 min after sync-fork, so anything upstream bumped is bottled within a day.
     # The plan job is cheap and schedules nothing when nothing has changed.
@@ -34,8 +30,6 @@ concurrency:
 
 permissions:
   contents: write
-  # A cached build that stops at its time limit queues the next run itself (_build-stage.yml).
-  actions: write
 
 jobs:
   plan:
@@ -102,7 +96,6 @@ jobs:
       stage: wave0
       allow_failure: true
       diag: ${{ inputs.diag }}
-      chain: ${{ inputs.chain }}
     secrets:
       FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
 
@@ -118,7 +111,6 @@ jobs:
       stage: wave1
       allow_failure: true
       diag: ${{ inputs.diag }}
-      chain: ${{ inputs.chain }}
     secrets:
       FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
 
@@ -132,7 +124,6 @@ jobs:
       stage: wave2
       allow_failure: true
       diag: ${{ inputs.diag }}
-      chain: ${{ inputs.chain }}
     secrets:
       FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
 
@@ -146,7 +137,6 @@ jobs:
       stage: wave3
       allow_failure: true
       diag: ${{ inputs.diag }}
-      chain: ${{ inputs.chain }}
     secrets:
       FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
 
@@ -160,6 +150,5 @@ jobs:
       stage: wave4
       allow_failure: true
       diag: ${{ inputs.diag }}
-      chain: ${{ inputs.chain }}
     secrets:
       FORK_TOKEN: ${{ secrets.FORK_TOKEN }}

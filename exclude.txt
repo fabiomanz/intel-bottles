@@ -1,8 +1,14 @@
 # Formulae never to build, and any root whose chain needs one of them.
 #
-# qtwebengine is NOT excluded: it cannot finish inside GitHub's 6-hour job ceiling (cut
-# off at 5h50m), so it is built across several runs through a compiler cache instead --
-# see ccache.txt. Its dependents (qtwebview, ...) wait until it is bottled.
+# qtwebengine cannot finish inside GitHub's 6-hour job ceiling (cut off at 5h50m), and
+# building it across runs through a compiler cache (ccache.txt) does not converge: every
+# run starts a fresh build directory and replays all ~23,000 ninja steps, ~6,500 Python
+# generator steps are never cacheable, and ~1,000-2,400 compiles miss every run. Five
+# runs (2026-10-10..12) each stalled at ninja step 17,600-19,900 of 23,069. Excluded
+# again; dependents (qtwebview, ...) stay unbottled with it. Options: a self-hosted runner
+# (runners.json) or finding what makes those compiles miss.
+
+qtwebengine
 
 # qtquick3d fails to configure on Intel: the formula deletes Qt's bundled assimp and
 # forces -DFEATURE_system_assimp=ON, but Homebrew's assimp is 6.0.5 and Qt 6.11's probe
