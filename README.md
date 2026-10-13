@@ -130,7 +130,9 @@ jq .poured_from_bottle /usr/local/Cellar/tmux/*/INSTALL_RECEIPT.json
   `ci-patches/qtwebengine.sed` routes every compile through ccache (Qt passes
   `CMAKE_CXX_COMPILER_LAUNCHER` to Chromium's GN as `cc_wrapper`), the build step stops at
   300 minutes, and the cache is saved to the Actions cache either way, so each daily run
-  continues where the last one stopped. A Qt version bump invalidates part of the cache and
+  continues where the last one stopped. Precompiled headers are off for this build: a
+  `.gch` embeds the random build directory, so everything that used one missed the cache
+  on every run. A Qt version bump invalidates part of the cache and
   takes another run or two. `qtwebview` waits until it is bottled; `qt` and `pyside` also
   need `qtquick3d`/`qt3d`, which stay excluded (see `exclude.txt`).
 - **`llvm` is bottled without PGO.** When bottling, the formula bootstraps itself with
