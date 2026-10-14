@@ -2,10 +2,10 @@
   "qtdatavis3d": {
     "formula": {
       "name": "qtdatavis3d",
-      "pkg_version": "6.11.2",
+      "pkg_version": "6.12.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtdatavis3d.rb",
       "tap_git_path": "Formula/q/qtdatavis3d.rb",
-      "tap_git_revision": "de6f29c91962af85b2c94b4f160e208672de22d0",
+      "tap_git_revision": "142662eb89e02173f48c1aba5c71f8e7a5771076",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Provides functionality for 3D visualization",
       "license": "GPL-3.0-only AND BSD-3-Clause",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-05T18:29:23Z",
+      "date": "2026-10-14T13:20:56Z",
       "tags": {
         "tahoe": {
-          "filename": "qtdatavis3d-6.11.2.tahoe.bottle.tar.gz",
-          "local_filename": "qtdatavis3d--6.11.2.tahoe.bottle.tar.gz",
-          "sha256": "148b5d1a8f74f2ae4d92fb728fab305936455d6fe08e6e499d066fd72f8ab24e",
+          "filename": "qtdatavis3d-6.12.0.tahoe.bottle.tar.gz",
+          "local_filename": "qtdatavis3d--6.12.0.tahoe.bottle.tar.gz",
+          "sha256": "6392d6ec0af253d97aca0f80eff96739988ac689e65008b10f67ec726ee60b01",
           "tab": {
-            "homebrew_version": "6.0.22",
+            "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [
               "lib/QtDataVisualization.framework/Versions/A/QtDataVisualization",
@@ -30,7 +30,7 @@
               "share/qt/qml/QtDataVisualization/libdatavisualizationqmlplugin.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1786552498,
+            "source_modified_time": 1790444726,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -62,10 +62,10 @@
               },
               {
                 "full_name": "libpng",
-                "version": "1.6.58",
+                "version": "1.6.59",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.6.58",
+                "pkg_version": "1.6.59",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -80,10 +80,10 @@
               },
               {
                 "full_name": "pcre2",
-                "version": "10.48",
+                "version": "10.49",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "10.48",
+                "pkg_version": "10.49",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -108,17 +108,17 @@
                 "full_name": "gettext",
                 "version": "1.0",
                 "revision": 0,
-                "bottle_rebuild": 1,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "glib",
-                "version": "2.88.3",
+                "version": "2.90.1",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "2.88.3",
+                "bottle_rebuild": 0,
+                "pkg_version": "2.90.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -133,10 +133,10 @@
               },
               {
                 "full_name": "xorgproto",
-                "version": "2025.1",
+                "version": "2026.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2025.1",
+                "pkg_version": "2026.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -213,10 +213,10 @@
               },
               {
                 "full_name": "cairo",
-                "version": "1.18.4",
+                "version": "1.18.6",
                 "revision": 0,
-                "bottle_rebuild": 2,
-                "pkg_version": "1.18.4",
+                "bottle_rebuild": 0,
+                "pkg_version": "1.18.6",
                 "declared_directly": false
               },
               {
@@ -238,10 +238,10 @@
               },
               {
                 "full_name": "harfbuzz",
-                "version": "14.4.0",
+                "version": "14.6.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "14.4.0",
+                "pkg_version": "14.6.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -265,29 +265,28 @@
               },
               {
                 "full_name": "md4c",
-                "version": "0.5.3",
+                "version": "0.6.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.5.3",
+                "pkg_version": "0.6.0",
                 "declared_directly": false
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-08-13",
+                "version": "2026-09-25",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "2026-08-13",
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
-                "full_name": "openssl@3",
-                "version": "3.6.4",
+                "full_name": "openssl@4",
+                "version": "4.0.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.4",
-                "declared_directly": false,
-                "compatibility_version": 1
+                "pkg_version": "4.0.3",
+                "declared_directly": false
               },
               {
                 "full_name": "lz4",
@@ -299,10 +298,10 @@
               },
               {
                 "full_name": "xz",
-                "version": "5.8.3",
+                "version": "5.8.4",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "5.8.3",
+                "pkg_version": "5.8.4",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -317,28 +316,28 @@
               },
               {
                 "full_name": "qtbase",
-                "version": "6.11.2",
+                "version": "6.12.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.11.2",
+                "pkg_version": "6.12.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "qtsvg",
-                "version": "6.11.2",
+                "version": "6.12.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.11.2",
+                "pkg_version": "6.12.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "qtdeclarative",
-                "version": "6.11.2",
+                "version": "6.12.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.11.2",
+                "pkg_version": "6.12.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -356,45 +355,101 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-pcre2-10.48",
-              "SPDXRef-Package-SPDXRef-json-c-0.19",
-              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-xz-5.8.3",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
-              "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
-              "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+              "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+              "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+              "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+              "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+              "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+              "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
+              "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+              "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
+              "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
-                "name": "pcre2",
-                "versionInfo": "10.48",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+                "name": "libpng",
+                "versionInfo": "1.6.59",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.59.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                    "checksumValue": "983550222f14d7db234a39119dc66c0de74d9b79b74f83ecf4b81a6b694d40de"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceLocator": "pkg:brew/libpng@1.6.59",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "name": "freetype",
+                "versionInfo": "2.14.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "FTL",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.14.3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a8a2bcc65a1d21adba6797d59f4ab1c91b0a40c53aae2794b4f94780e7379837"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/freetype@2.14.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+                "name": "pcre2",
+                "versionInfo": "10.49",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.49.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7fe75e3ba297623163ee0e3a262e417d0eb36342f6cda4135ede90412ff03040"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.49",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "name": "json-c",
                 "versionInfo": "0.19",
                 "filesAnalyzed": false,
@@ -417,7 +472,168 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gettext-1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fe9d5337ff31e4f40b827b3463bd3fdc61b8f377277769f71e93baad0443bc96"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+                "name": "glib",
+                "versionInfo": "2.90.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b0aaa12be31d6f764cdca91e2a75efe6f317eabba79a48bdf1467217a0ccbab"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/glib@2.90.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+                "name": "xorgproto",
+                "versionInfo": "2026.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xorgproto-2026.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5286465a0d9c7954041bcec0ebee5641b6c8018b3f679eaa8595b029a44c2af9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xorgproto@2026.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "name": "libx11",
+                "versionInfo": "1.8.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.13.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10c0844f2a8daab11aa21bd737480e496469da1a15c37067dc34ab308f8b6285"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libx11@1.8.13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+                "name": "cairo",
+                "versionInfo": "1.18.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-only OR MPL-1.1",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/cairo-1.18.6.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "82e98b7ba1ba8aadca23d85b6ee4aaec38273d61c453dba9ad3905675cfb2a84"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/cairo@1.18.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+                "name": "harfbuzz",
+                "versionInfo": "14.6.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/harfbuzz-14.6.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "38958915ce3b608419a3e9f5c1f87f1c97be753b1f39f058317824798d26f34d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/harfbuzz@14.6.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
                 "name": "jpeg-turbo",
                 "versionInfo": "3.2.0",
                 "filesAnalyzed": false,
@@ -428,7 +644,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "5440035b2803de1d43de3c29d0df3816a2546d56fd1e3759add6138aa450820a"
+                    "checksumValue": "3c7d19c475389bbb48a07f78f52473c8f49f458bd45b4453457cfec9c01601ed"
                   }
                 ],
                 "externalRefs": [
@@ -440,53 +656,76 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
+                "name": "md4c",
+                "versionInfo": "0.6.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/md4c-0.6.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7eee913872dd63d67f6662053fdfa26bfb96516b768cace41d21d37ea37ddfe3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/md4c@0.6.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "name": "ca-certificates",
-                "versionInfo": "2026-08-13",
+                "versionInfo": "2026-09-25",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-                "name": "openssl@3",
-                "versionInfo": "3.6.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.4.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13fdc9f3d0d30296056e2685e0c989978a5ed213f34a0de174e19feb72833e73"
+                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -509,30 +748,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
-                "versionInfo": "5.8.3",
+                "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "0BSD AND GPL-2.0-or-later",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/xz/blobs/sha256:df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xz-5.8.4.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f"
+                    "checksumValue": "54a648c4197b0299ee2d37527ca6a23447abe65342f8f8c0ed68e154f4593b0f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/xz@5.8.3",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -555,70 +794,70 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
                 "name": "qtbase",
-                "versionInfo": "6.11.2",
+                "versionInfo": "6.12.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND GFDL-1.3-no-invariants-only",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.11.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.12.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "5eb65dad3cdb928010071405fc3d5139e760b32a0a57a79c5d309be6f36f0096"
+                    "checksumValue": "4e76f26f348ba8d1a3fb3b053ebdb843857652372bc58cd70442eff538fb04d0"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtbase@6.11.2",
+                    "referenceLocator": "pkg:brew/qtbase@6.12.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
                 "name": "qtsvg",
-                "versionInfo": "6.11.2",
+                "versionInfo": "6.12.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtsvg-6.11.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtsvg-6.12.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "db3fad7f3fa66cbbea91b162609e7a97f21d4f3fa33d64b70ac55c0c24022fe9"
+                    "checksumValue": "b010c19572dcf0842948a6e729921dc9f72a4c27fd7d0e7d918abd96db41c584"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtsvg@6.11.2",
+                    "referenceLocator": "pkg:brew/qtsvg@6.12.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
                 "name": "qtdeclarative",
-                "versionInfo": "6.11.2",
+                "versionInfo": "6.12.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-2-Clause AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtdeclarative-6.11.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtdeclarative-6.12.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "abd66f4f1b7624792385c9579280b902d257d5f85a6b77698ca60301dcb33b99"
+                    "checksumValue": "2ab2ca0d0da3b9892c84662b150296e576085972d0e6ee0675cd4a5bd5663804"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtdeclarative@6.11.2",
+                    "referenceLocator": "pkg:brew/qtdeclarative@6.12.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -638,57 +877,107 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtdatavis3d"
               },
@@ -704,81 +993,168 @@
             ".brew/qtdatavis3d.rb",
             "INSTALL_RECEIPT.json",
             "README",
+            "include/QtDataVisualization/Q3DBars",
+            "include/QtDataVisualization/Q3DCamera",
+            "include/QtDataVisualization/Q3DInputHandler",
+            "include/QtDataVisualization/Q3DLight",
+            "include/QtDataVisualization/Q3DObject",
+            "include/QtDataVisualization/Q3DScatter",
+            "include/QtDataVisualization/Q3DScene",
+            "include/QtDataVisualization/Q3DSurface",
+            "include/QtDataVisualization/Q3DTheme",
+            "include/QtDataVisualization/QAbstract3DAxis",
+            "include/QtDataVisualization/QAbstract3DGraph",
+            "include/QtDataVisualization/QAbstract3DInputHandler",
+            "include/QtDataVisualization/QAbstract3DSeries",
+            "include/QtDataVisualization/QAbstractDataProxy",
+            "include/QtDataVisualization/QBar3DSeries",
+            "include/QtDataVisualization/QBarDataArray",
+            "include/QtDataVisualization/QBarDataItem",
+            "include/QtDataVisualization/QBarDataProxy",
+            "include/QtDataVisualization/QBarDataRow",
+            "include/QtDataVisualization/QCategory3DAxis",
+            "include/QtDataVisualization/QCustom3DItem",
+            "include/QtDataVisualization/QCustom3DLabel",
+            "include/QtDataVisualization/QCustom3DVolume",
+            "include/QtDataVisualization/QHeightMapSurfaceDataProxy",
+            "include/QtDataVisualization/QItemModelBarDataProxy",
+            "include/QtDataVisualization/QItemModelScatterDataProxy",
+            "include/QtDataVisualization/QItemModelSurfaceDataProxy",
+            "include/QtDataVisualization/QLogValue3DAxisFormatter",
+            "include/QtDataVisualization/QScatter3DSeries",
+            "include/QtDataVisualization/QScatterDataArray",
+            "include/QtDataVisualization/QScatterDataItem",
+            "include/QtDataVisualization/QScatterDataProxy",
+            "include/QtDataVisualization/QSurface3DSeries",
+            "include/QtDataVisualization/QSurfaceDataArray",
+            "include/QtDataVisualization/QSurfaceDataItem",
+            "include/QtDataVisualization/QSurfaceDataProxy",
+            "include/QtDataVisualization/QSurfaceDataRow",
+            "include/QtDataVisualization/QTouch3DInputHandler",
+            "include/QtDataVisualization/QValue3DAxis",
+            "include/QtDataVisualization/QValue3DAxisFormatter",
+            "include/QtDataVisualization/QtDataVisualization",
+            "include/QtDataVisualization/QtDataVisualizationDepends",
+            "include/QtDataVisualization/QtDataVisualizationVersion",
+            "include/QtDataVisualization/q3dbars.h",
+            "include/QtDataVisualization/q3dcamera.h",
+            "include/QtDataVisualization/q3dinputhandler.h",
+            "include/QtDataVisualization/q3dlight.h",
+            "include/QtDataVisualization/q3dobject.h",
+            "include/QtDataVisualization/q3dscatter.h",
+            "include/QtDataVisualization/q3dscene.h",
+            "include/QtDataVisualization/q3dsurface.h",
+            "include/QtDataVisualization/q3dtheme.h",
+            "include/QtDataVisualization/qabstract3daxis.h",
+            "include/QtDataVisualization/qabstract3dgraph.h",
+            "include/QtDataVisualization/qabstract3dinputhandler.h",
+            "include/QtDataVisualization/qabstract3dseries.h",
+            "include/QtDataVisualization/qabstractdataproxy.h",
+            "include/QtDataVisualization/qbar3dseries.h",
+            "include/QtDataVisualization/qbardataitem.h",
+            "include/QtDataVisualization/qbardataproxy.h",
+            "include/QtDataVisualization/qcategory3daxis.h",
+            "include/QtDataVisualization/qcustom3ditem.h",
+            "include/QtDataVisualization/qcustom3dlabel.h",
+            "include/QtDataVisualization/qcustom3dvolume.h",
+            "include/QtDataVisualization/qdatavisualizationglobal.h",
+            "include/QtDataVisualization/qheightmapsurfacedataproxy.h",
+            "include/QtDataVisualization/qitemmodelbardataproxy.h",
+            "include/QtDataVisualization/qitemmodelscatterdataproxy.h",
+            "include/QtDataVisualization/qitemmodelsurfacedataproxy.h",
+            "include/QtDataVisualization/qlogvalue3daxisformatter.h",
+            "include/QtDataVisualization/qscatter3dseries.h",
+            "include/QtDataVisualization/qscatterdataitem.h",
+            "include/QtDataVisualization/qscatterdataproxy.h",
+            "include/QtDataVisualization/qsurface3dseries.h",
+            "include/QtDataVisualization/qsurfacedataitem.h",
+            "include/QtDataVisualization/qsurfacedataproxy.h",
+            "include/QtDataVisualization/qtdatavisualization-config.h",
+            "include/QtDataVisualization/qtdatavisualizationexports.h",
+            "include/QtDataVisualization/qtdatavisualizationversion.h",
+            "include/QtDataVisualization/qtouch3dinputhandler.h",
+            "include/QtDataVisualization/qutils.h",
+            "include/QtDataVisualization/qvalue3daxis.h",
+            "include/QtDataVisualization/qvalue3daxisformatter.h",
+            "include/QtDataVisualizationQml/QtDataVisualizationQml",
+            "include/QtDataVisualizationQml/QtDataVisualizationQmlDepends",
+            "include/QtDataVisualizationQml/QtDataVisualizationQmlVersion",
+            "include/QtDataVisualizationQml/qtdatavisualizationqmlversion.h",
             "lib/QtDataVisualization.framework/QtDataVisualization",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/abstract3dcontroller_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/abstract3drenderer_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/abstractdeclarativeinterface_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/abstractitemmodelhandler_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/abstractobjecthelper_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/abstractrenderitem_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/axisrendercache_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/baritemmodelhandler_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/barrenderitem_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/bars3dcontroller_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/bars3drenderer_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/barseriesrendercache_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/camerahelper_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/customrenderitem_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/datavisualizationglobal_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/drawer_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/labelitem_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/meshloader_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/objecthelper_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/q3dbars_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/q3dcamera_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/q3dinputhandler_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/q3dlight_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/q3dobject_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/q3dscatter_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/q3dscene_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/q3dsurface_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/q3dtheme_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qabstract3daxis_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qabstract3dgraph_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qabstract3dinputhandler_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qabstract3dseries_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qabstractdataproxy_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qbar3dseries_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qbardataitem_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qbardataproxy_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qcategory3daxis_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qcustom3ditem_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qcustom3dlabel_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qcustom3dvolume_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qheightmapsurfacedataproxy_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qitemmodelbardataproxy_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qitemmodelscatterdataproxy_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qitemmodelsurfacedataproxy_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qlogvalue3daxisformatter_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qscatter3dseries_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qscatterdataitem_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qscatterdataproxy_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qsurface3dseries_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qsurfacedataitem_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qsurfacedataproxy_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qtdatavisualization-config_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qtouch3dinputhandler_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qvalue3daxis_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/qvalue3daxisformatter_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/scatter3dcontroller_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/scatter3drenderer_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/scatteritemmodelhandler_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/scatterobjectbufferhelper_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/scatterpointbufferhelper_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/scatterrenderitem_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/scatterseriesrendercache_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/selectionpointer_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/seriesrendercache_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/shaderhelper_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/surface3dcontroller_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/surface3drenderer_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/surfaceitemmodelhandler_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/surfaceobject_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/surfaceseriesrendercache_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/texturehelper_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/thememanager_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/utils_p.h",
-            "lib/QtDataVisualization.framework/Versions/A/Headers/6.11.2/QtDataVisualization/private/vertexindexer_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/abstract3dcontroller_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/abstract3drenderer_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/abstractdeclarativeinterface_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/abstractitemmodelhandler_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/abstractobjecthelper_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/abstractrenderitem_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/axisrendercache_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/baritemmodelhandler_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/barrenderitem_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/bars3dcontroller_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/bars3drenderer_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/barseriesrendercache_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/camerahelper_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/customrenderitem_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/datavisualizationglobal_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/drawer_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/labelitem_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/meshloader_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/objecthelper_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/q3dbars_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/q3dcamera_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/q3dinputhandler_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/q3dlight_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/q3dobject_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/q3dscatter_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/q3dscene_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/q3dsurface_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/q3dtheme_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qabstract3daxis_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qabstract3dgraph_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qabstract3dinputhandler_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qabstract3dseries_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qabstractdataproxy_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qbar3dseries_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qbardataitem_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qbardataproxy_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qcategory3daxis_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qcustom3ditem_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qcustom3dlabel_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qcustom3dvolume_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qheightmapsurfacedataproxy_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qitemmodelbardataproxy_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qitemmodelscatterdataproxy_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qitemmodelsurfacedataproxy_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qlogvalue3daxisformatter_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qscatter3dseries_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qscatterdataitem_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qscatterdataproxy_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qsurface3dseries_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qsurfacedataitem_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qsurfacedataproxy_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qtdatavisualization-config_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qtouch3dinputhandler_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qvalue3daxis_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/qvalue3daxisformatter_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/scatter3dcontroller_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/scatter3drenderer_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/scatteritemmodelhandler_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/scatterobjectbufferhelper_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/scatterpointbufferhelper_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/scatterrenderitem_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/scatterseriesrendercache_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/selectionpointer_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/seriesrendercache_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/shaderhelper_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/surface3dcontroller_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/surface3drenderer_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/surfaceitemmodelhandler_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/surfaceobject_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/surfaceseriesrendercache_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/texturehelper_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/thememanager_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/utils_p.h",
+            "lib/QtDataVisualization.framework/Versions/A/Headers/6.12.0/QtDataVisualization/private/vertexindexer_p.h",
             "lib/QtDataVisualization.framework/Versions/A/Headers/Q3DBars",
             "lib/QtDataVisualization.framework/Versions/A/Headers/Q3DCamera",
             "lib/QtDataVisualization.framework/Versions/A/Headers/Q3DInputHandler",
@@ -867,19 +1243,19 @@
             "lib/QtDataVisualization.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
             "lib/QtDataVisualization.framework/Versions/A/Resources/QtDataVisualization.prl",
             "lib/QtDataVisualizationQml.framework/QtDataVisualizationQml",
-            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.11.2/QtDataVisualizationQml/private/abstractdeclarative_p.h",
-            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.11.2/QtDataVisualizationQml/private/colorgradient_p.h",
-            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.11.2/QtDataVisualizationQml/private/declarativebars_p.h",
-            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.11.2/QtDataVisualizationQml/private/declarativecolor_p.h",
-            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.11.2/QtDataVisualizationQml/private/declarativerendernode_p.h",
-            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.11.2/QtDataVisualizationQml/private/declarativescatter_p.h",
-            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.11.2/QtDataVisualizationQml/private/declarativescene_p.h",
-            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.11.2/QtDataVisualizationQml/private/declarativeseries_p.h",
-            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.11.2/QtDataVisualizationQml/private/declarativesurface_p.h",
-            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.11.2/QtDataVisualizationQml/private/declarativetheme_p.h",
-            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.11.2/QtDataVisualizationQml/private/enumtostringmap_p.h",
-            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.11.2/QtDataVisualizationQml/private/foreigntypes_p.h",
-            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.11.2/QtDataVisualizationQml/private/glstatestore_p.h",
+            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.12.0/QtDataVisualizationQml/private/abstractdeclarative_p.h",
+            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.12.0/QtDataVisualizationQml/private/colorgradient_p.h",
+            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.12.0/QtDataVisualizationQml/private/declarativebars_p.h",
+            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.12.0/QtDataVisualizationQml/private/declarativecolor_p.h",
+            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.12.0/QtDataVisualizationQml/private/declarativerendernode_p.h",
+            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.12.0/QtDataVisualizationQml/private/declarativescatter_p.h",
+            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.12.0/QtDataVisualizationQml/private/declarativescene_p.h",
+            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.12.0/QtDataVisualizationQml/private/declarativeseries_p.h",
+            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.12.0/QtDataVisualizationQml/private/declarativesurface_p.h",
+            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.12.0/QtDataVisualizationQml/private/declarativetheme_p.h",
+            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.12.0/QtDataVisualizationQml/private/enumtostringmap_p.h",
+            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.12.0/QtDataVisualizationQml/private/foreigntypes_p.h",
+            "lib/QtDataVisualizationQml.framework/Versions/A/Headers/6.12.0/QtDataVisualizationQml/private/glstatestore_p.h",
             "lib/QtDataVisualizationQml.framework/Versions/A/Headers/QtDataVisualizationQml",
             "lib/QtDataVisualizationQml.framework/Versions/A/Headers/QtDataVisualizationQmlDepends",
             "lib/QtDataVisualizationQml.framework/Versions/A/Headers/QtDataVisualizationQmlVersion",
@@ -961,9 +1337,9 @@
             "share/qt/qml/QtDataVisualization/libdatavisualizationqmlplugin.dylib",
             "share/qt/qml/QtDataVisualization/plugins.qmltypes",
             "share/qt/qml/QtDataVisualization/qmldir",
-            "share/qt/sbom/qtdatavisualization-6.11.2.spdx"
+            "share/qt/sbom/qtdatavisualization-6.12.0.spdx"
           ],
-          "installed_size": 3619743
+          "installed_size": 3627643
         }
       }
     }

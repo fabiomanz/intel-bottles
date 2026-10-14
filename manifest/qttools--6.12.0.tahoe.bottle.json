@@ -2,10 +2,10 @@
   "qttools": {
     "formula": {
       "name": "qttools",
-      "pkg_version": "6.11.2_1",
+      "pkg_version": "6.12.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qttools.rb",
       "tap_git_path": "Formula/q/qttools.rb",
-      "tap_git_revision": "c8da8fbc0394a16dbf433d4be341e653625daea9",
+      "tap_git_revision": "142662eb89e02173f48c1aba5c71f8e7a5771076",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Facilitate the design, development, testing and deployment of applications",
       "license": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND BSL-1.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-02T13:09:52Z",
+      "date": "2026-10-14T13:52:30Z",
       "tags": {
         "tahoe": {
-          "filename": "qttools-6.11.2_1.tahoe.bottle.tar.gz",
-          "local_filename": "qttools--6.11.2_1.tahoe.bottle.tar.gz",
-          "sha256": "d2be2d7c1d6c22f9d1599bd629bd0eb165bdf39434c6da5c35f3ce433bcd47ce",
+          "filename": "qttools-6.12.0.tahoe.bottle.tar.gz",
+          "local_filename": "qttools--6.12.0.tahoe.bottle.tar.gz",
+          "sha256": "2b7018c63b6998431ccdb83782d4a8b3985a751bb1cd678eccff0d100ef140e4",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [
               "bin/Assistant",
               "bin/Designer",
@@ -56,7 +56,7 @@
               "share/qt/plugins/designer/libqquickwidget.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1786498424,
+            "source_modified_time": 1790432805,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -159,10 +159,10 @@
               },
               {
                 "full_name": "glib",
-                "version": "2.90.0",
+                "version": "2.90.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.90.0",
+                "pkg_version": "2.90.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -177,10 +177,10 @@
               },
               {
                 "full_name": "xorgproto",
-                "version": "2025.1",
+                "version": "2026.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2025.1",
+                "pkg_version": "2026.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -282,10 +282,10 @@
               },
               {
                 "full_name": "harfbuzz",
-                "version": "14.5.1",
+                "version": "14.6.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "14.5.1",
+                "pkg_version": "14.6.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -325,13 +325,12 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "openssl@3",
-                "version": "3.6.5",
+                "full_name": "openssl@4",
+                "version": "4.0.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.5",
-                "declared_directly": false,
-                "compatibility_version": 1
+                "pkg_version": "4.0.3",
+                "declared_directly": false
               },
               {
                 "full_name": "lz4",
@@ -361,28 +360,28 @@
               },
               {
                 "full_name": "qtbase",
-                "version": "6.11.2",
+                "version": "6.12.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.11.2",
+                "pkg_version": "6.12.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "qtsvg",
-                "version": "6.11.2",
+                "version": "6.12.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.11.2",
+                "pkg_version": "6.12.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "qtdeclarative",
-                "version": "6.11.2",
+                "version": "6.12.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.11.2",
+                "pkg_version": "6.12.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -400,32 +399,34 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-gumbo-parser-0.14.1",
-              "SPDXRef-Package-SPDXRef-litehtml-0.10_1",
-              "SPDXRef-Package-SPDXRef-libpng-1.6.59",
-              "SPDXRef-Package-SPDXRef-pcre2-10.49",
-              "SPDXRef-Package-SPDXRef-json-c-0.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
-              "SPDXRef-Package-SPDXRef-gettext-1.0",
-              "SPDXRef-Package-SPDXRef-glib-2.90.0",
-              "SPDXRef-Package-SPDXRef-libx11-1.8.13",
-              "SPDXRef-Package-SPDXRef-cairo-1.18.6",
-              "SPDXRef-Package-SPDXRef-harfbuzz-14.5.1",
-              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
-              "SPDXRef-Package-SPDXRef-md4c-0.6.0",
+              "SPDXRef-Package-SPDXRef-gumbo-parser-0.2e.14.2e.1",
+              "SPDXRef-Package-SPDXRef-litehtml-0.2e.10.5f.1",
+              "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+              "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+              "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+              "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+              "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+              "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
+              "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
-              "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
-              "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+              "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
+              "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gumbo-parser-0.14.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gumbo-parser-0.2e.14.2e.1",
                 "name": "gumbo-parser",
                 "versionInfo": "0.14.1",
                 "filesAnalyzed": false,
@@ -448,7 +449,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-litehtml-0.10_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-litehtml-0.2e.10.5f.1",
                 "name": "litehtml",
                 "versionInfo": "0.10_1",
                 "filesAnalyzed": false,
@@ -471,7 +472,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.59",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "name": "libpng",
                 "versionInfo": "1.6.59",
                 "filesAnalyzed": false,
@@ -494,7 +495,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.49",
+                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "name": "freetype",
+                "versionInfo": "2.14.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "FTL",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.14.3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a8a2bcc65a1d21adba6797d59f4ab1c91b0a40c53aae2794b4f94780e7379837"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/freetype@2.14.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "name": "pcre2",
                 "versionInfo": "10.49",
                 "filesAnalyzed": false,
@@ -517,7 +541,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "name": "json-c",
                 "versionInfo": "0.19",
                 "filesAnalyzed": false,
@@ -540,7 +564,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
                 "name": "libunistring",
                 "versionInfo": "1.4.2",
                 "filesAnalyzed": false,
@@ -563,7 +587,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "name": "gettext",
                 "versionInfo": "1.0",
                 "filesAnalyzed": false,
@@ -586,30 +610,53 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "name": "glib",
-                "versionInfo": "2.90.0",
+                "versionInfo": "2.90.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "LGPL-2.1-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4f180b8f89781725d58c0a39d7508c0bf0e96225fc69ef630e18a9f885f61c4a"
+                    "checksumValue": "3b0aaa12be31d6f764cdca91e2a75efe6f317eabba79a48bdf1467217a0ccbab"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/glib@2.90.0",
+                    "referenceLocator": "pkg:brew/glib@2.90.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+                "name": "xorgproto",
+                "versionInfo": "2026.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xorgproto-2026.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5286465a0d9c7954041bcec0ebee5641b6c8018b3f679eaa8595b029a44c2af9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xorgproto@2026.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
                 "name": "libx11",
                 "versionInfo": "1.8.13",
                 "filesAnalyzed": false,
@@ -632,7 +679,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+                "SPDXID": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "name": "cairo",
                 "versionInfo": "1.18.6",
                 "filesAnalyzed": false,
@@ -655,30 +702,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-harfbuzz-14.5.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
                 "name": "harfbuzz",
-                "versionInfo": "14.5.1",
+                "versionInfo": "14.6.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/harfbuzz-14.5.1.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/harfbuzz-14.6.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "b879940a16dddfb56c92b986abd1d88bb902d1c3805353b8e9c5437b39781c30"
+                    "checksumValue": "38958915ce3b608419a3e9f5c1f87f1c97be753b1f39f058317824798d26f34d"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/harfbuzz@14.5.1",
+                    "referenceLocator": "pkg:brew/harfbuzz@14.6.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
                 "name": "jpeg-turbo",
                 "versionInfo": "3.2.0",
                 "filesAnalyzed": false,
@@ -701,7 +748,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-md4c-0.6.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
                 "name": "md4c",
                 "versionInfo": "0.6.0",
                 "filesAnalyzed": false,
@@ -747,30 +794,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
-                "name": "openssl@3",
-                "versionInfo": "3.6.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.5.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "9df24dab1c79c4c07958ee358ef146ebcd5b05d8180274c3db0075a28f34f7f6"
+                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.5",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -793,7 +840,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
@@ -816,7 +863,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -839,70 +886,70 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
                 "name": "qtbase",
-                "versionInfo": "6.11.2",
+                "versionInfo": "6.12.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND GFDL-1.3-no-invariants-only",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.11.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.12.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "5eb65dad3cdb928010071405fc3d5139e760b32a0a57a79c5d309be6f36f0096"
+                    "checksumValue": "4e76f26f348ba8d1a3fb3b053ebdb843857652372bc58cd70442eff538fb04d0"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtbase@6.11.2",
+                    "referenceLocator": "pkg:brew/qtbase@6.12.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
                 "name": "qtsvg",
-                "versionInfo": "6.11.2",
+                "versionInfo": "6.12.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtsvg-6.11.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtsvg-6.12.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "db3fad7f3fa66cbbea91b162609e7a97f21d4f3fa33d64b70ac55c0c24022fe9"
+                    "checksumValue": "b010c19572dcf0842948a6e729921dc9f72a4c27fd7d0e7d918abd96db41c584"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtsvg@6.11.2",
+                    "referenceLocator": "pkg:brew/qtsvg@6.12.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
                 "name": "qtdeclarative",
-                "versionInfo": "6.11.2",
+                "versionInfo": "6.12.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-2-Clause AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtdeclarative-6.11.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtdeclarative-6.12.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "abd66f4f1b7624792385c9579280b902d257d5f85a6b77698ca60301dcb33b99"
+                    "checksumValue": "2ab2ca0d0da3b9892c84662b150296e576085972d0e6ee0675cd4a5bd5663804"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtdeclarative@6.11.2",
+                    "referenceLocator": "pkg:brew/qtdeclarative@6.12.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -922,67 +969,77 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gumbo-parser-0.14.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gumbo-parser-0.2e.14.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-litehtml-0.10_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-litehtml-0.2e.10.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.59",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.49",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.5.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-md4c-0.6.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qttools"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qttools"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
@@ -992,37 +1049,37 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.11.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtdeclarative-6.11.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qttools"
               },
@@ -1072,13 +1129,146 @@
             "bin/qtdiag",
             "bin/qtdiag6",
             "bin/qtplugininfo",
+            "include/QtDesigner/QAbstractExtensionFactory",
+            "include/QtDesigner/QAbstractExtensionManager",
+            "include/QtDesigner/QAbstractFormBuilder",
+            "include/QtDesigner/QDesignerActionEditorInterface",
+            "include/QtDesigner/QDesignerComponents",
+            "include/QtDesigner/QDesignerContainerExtension",
+            "include/QtDesigner/QDesignerCustomWidgetCollectionInterface",
+            "include/QtDesigner/QDesignerCustomWidgetInterface",
+            "include/QtDesigner/QDesignerDnDItemInterface",
+            "include/QtDesigner/QDesignerDynamicPropertySheetExtension",
+            "include/QtDesigner/QDesignerExportWidget",
+            "include/QtDesigner/QDesignerExtraInfoExtension",
+            "include/QtDesigner/QDesignerFormEditorInterface",
+            "include/QtDesigner/QDesignerFormEditorPluginInterface",
+            "include/QtDesigner/QDesignerFormWindowCursorInterface",
+            "include/QtDesigner/QDesignerFormWindowInterface",
+            "include/QtDesigner/QDesignerFormWindowManagerInterface",
+            "include/QtDesigner/QDesignerFormWindowToolInterface",
+            "include/QtDesigner/QDesignerIntegration",
+            "include/QtDesigner/QDesignerIntegrationInterface",
+            "include/QtDesigner/QDesignerLanguageExtension",
+            "include/QtDesigner/QDesignerLayoutDecorationExtension",
+            "include/QtDesigner/QDesignerMemberSheetExtension",
+            "include/QtDesigner/QDesignerMetaDataBaseInterface",
+            "include/QtDesigner/QDesignerMetaDataBaseItemInterface",
+            "include/QtDesigner/QDesignerNewFormWidgetInterface",
+            "include/QtDesigner/QDesignerObjectInspectorInterface",
+            "include/QtDesigner/QDesignerOptionsPageInterface",
+            "include/QtDesigner/QDesignerPromotionInterface",
+            "include/QtDesigner/QDesignerPropertyEditorInterface",
+            "include/QtDesigner/QDesignerPropertySheetExtension",
+            "include/QtDesigner/QDesignerResourceBrowserInterface",
+            "include/QtDesigner/QDesignerSettingsInterface",
+            "include/QtDesigner/QDesignerTaskMenuExtension",
+            "include/QtDesigner/QDesignerWidgetBoxInterface",
+            "include/QtDesigner/QDesignerWidgetDataBaseInterface",
+            "include/QtDesigner/QDesignerWidgetDataBaseItemInterface",
+            "include/QtDesigner/QDesignerWidgetFactoryInterface",
+            "include/QtDesigner/QExtensionFactory",
+            "include/QtDesigner/QExtensionManager",
+            "include/QtDesigner/QFormBuilder",
+            "include/QtDesigner/QtDesigner",
+            "include/QtDesigner/QtDesignerDepends",
+            "include/QtDesigner/QtDesignerVersion",
+            "include/QtDesigner/abstractactioneditor.h",
+            "include/QtDesigner/abstractdnditem.h",
+            "include/QtDesigner/abstractformbuilder.h",
+            "include/QtDesigner/abstractformeditor.h",
+            "include/QtDesigner/abstractformeditorplugin.h",
+            "include/QtDesigner/abstractformwindow.h",
+            "include/QtDesigner/abstractformwindowcursor.h",
+            "include/QtDesigner/abstractformwindowmanager.h",
+            "include/QtDesigner/abstractformwindowtool.h",
+            "include/QtDesigner/abstractintegration.h",
+            "include/QtDesigner/abstractlanguage.h",
+            "include/QtDesigner/abstractmetadatabase.h",
+            "include/QtDesigner/abstractnewformwidget.h",
+            "include/QtDesigner/abstractobjectinspector.h",
+            "include/QtDesigner/abstractoptionspage.h",
+            "include/QtDesigner/abstractpromotioninterface.h",
+            "include/QtDesigner/abstractpropertyeditor.h",
+            "include/QtDesigner/abstractresourcebrowser.h",
+            "include/QtDesigner/abstractsettings.h",
+            "include/QtDesigner/abstractwidgetbox.h",
+            "include/QtDesigner/abstractwidgetdatabase.h",
+            "include/QtDesigner/abstractwidgetfactory.h",
+            "include/QtDesigner/container.h",
+            "include/QtDesigner/customwidget.h",
+            "include/QtDesigner/default_extensionfactory.h",
+            "include/QtDesigner/dynamicpropertysheet.h",
+            "include/QtDesigner/extension.h",
+            "include/QtDesigner/extension_global.h",
+            "include/QtDesigner/extrainfo.h",
+            "include/QtDesigner/formbuilder.h",
+            "include/QtDesigner/layoutdecoration.h",
+            "include/QtDesigner/membersheet.h",
+            "include/QtDesigner/propertysheet.h",
+            "include/QtDesigner/qdesigner_components.h",
+            "include/QtDesigner/qdesigner_components_global.h",
+            "include/QtDesigner/qdesignerexportwidget.h",
+            "include/QtDesigner/qextensionmanager.h",
+            "include/QtDesigner/qtdesignerversion.h",
+            "include/QtDesigner/sdk_global.h",
+            "include/QtDesigner/taskmenu.h",
+            "include/QtDesigner/uilib_global.h",
+            "include/QtDesignerComponents/QtDesignerComponents",
+            "include/QtDesignerComponents/QtDesignerComponentsDepends",
+            "include/QtDesignerComponents/QtDesignerComponentsVersion",
+            "include/QtDesignerComponents/qtdesignercomponentsversion.h",
+            "include/QtHelp/QCompressedHelpInfo",
+            "include/QtHelp/QHelpContentItem",
+            "include/QtHelp/QHelpContentModel",
+            "include/QtHelp/QHelpContentWidget",
+            "include/QtHelp/QHelpEngine",
+            "include/QtHelp/QHelpEngineCore",
+            "include/QtHelp/QHelpFilterData",
+            "include/QtHelp/QHelpFilterEngine",
+            "include/QtHelp/QHelpFilterSettingsWidget",
+            "include/QtHelp/QHelpGlobal",
+            "include/QtHelp/QHelpIndexModel",
+            "include/QtHelp/QHelpIndexWidget",
+            "include/QtHelp/QHelpLink",
+            "include/QtHelp/QHelpSearchEngine",
+            "include/QtHelp/QHelpSearchEngineCore",
+            "include/QtHelp/QHelpSearchQuery",
+            "include/QtHelp/QHelpSearchQueryWidget",
+            "include/QtHelp/QHelpSearchResult",
+            "include/QtHelp/QHelpSearchResultWidget",
+            "include/QtHelp/QtHelp",
+            "include/QtHelp/QtHelpDepends",
+            "include/QtHelp/QtHelpVersion",
+            "include/QtHelp/qcompressedhelpinfo.h",
+            "include/QtHelp/qhelp_global.h",
+            "include/QtHelp/qhelpcontentitem.h",
+            "include/QtHelp/qhelpcontentwidget.h",
+            "include/QtHelp/qhelpengine.h",
+            "include/QtHelp/qhelpenginecore.h",
+            "include/QtHelp/qhelpfilterdata.h",
+            "include/QtHelp/qhelpfilterengine.h",
+            "include/QtHelp/qhelpfiltersettingswidget.h",
+            "include/QtHelp/qhelpindexwidget.h",
+            "include/QtHelp/qhelplink.h",
+            "include/QtHelp/qhelpsearchengine.h",
+            "include/QtHelp/qhelpsearchenginecore.h",
+            "include/QtHelp/qhelpsearchquerywidget.h",
+            "include/QtHelp/qhelpsearchresult.h",
+            "include/QtHelp/qhelpsearchresultwidget.h",
+            "include/QtHelp/qthelpversion.h",
             "include/QtQDocCatch/QtQDocCatchDepends",
             "include/QtQDocCatch/catch/catch.hpp",
+            "include/QtQDocCatchConversions/QtQDocCatchConversions",
             "include/QtQDocCatchConversions/QtQDocCatchConversionsDepends",
+            "include/QtQDocCatchConversions/QtQDocCatchConversionsVersion",
             "include/QtQDocCatchConversions/catch_conversions/qdoc_catch_conversions.h",
             "include/QtQDocCatchConversions/catch_conversions/qt_catch_conversions.h",
             "include/QtQDocCatchConversions/catch_conversions/std_catch_conversions.h",
+            "include/QtQDocCatchConversions/qtqdoccatchconversionsversion.h",
+            "include/QtQDocCatchGenerators/QtQDocCatchGenerators",
             "include/QtQDocCatchGenerators/QtQDocCatchGeneratorsDepends",
+            "include/QtQDocCatchGenerators/QtQDocCatchGeneratorsVersion",
             "include/QtQDocCatchGenerators/catch_generators/generators/combinators/cycle_generator.h",
             "include/QtQDocCatchGenerators/catch_generators/generators/combinators/oneof_generator.h",
             "include/QtQDocCatchGenerators/catch_generators/generators/k_partition_of_r_generator.h",
@@ -1091,7 +1281,8 @@
             "include/QtQDocCatchGenerators/catch_generators/utilities/semantics/move_into_vector.h",
             "include/QtQDocCatchGenerators/catch_generators/utilities/statistics/distribution.h",
             "include/QtQDocCatchGenerators/catch_generators/utilities/statistics/percentages.h",
-            "include/QtTools/6.11.2/QtTools/private/qttools-config_p.h",
+            "include/QtQDocCatchGenerators/qtqdoccatchgeneratorsversion.h",
+            "include/QtTools/6.12.0/QtTools/private/qttools-config_p.h",
             "include/QtTools/QtTools",
             "include/QtTools/QtToolsDepends",
             "include/QtTools/QtToolsVersion",
@@ -1106,92 +1297,101 @@
             "include/QtUiPlugin/customwidget.h",
             "include/QtUiPlugin/qdesignerexportwidget.h",
             "include/QtUiPlugin/qtuipluginversion.h",
+            "include/QtUiTools/QUiLoader",
+            "include/QtUiTools/QtUiTools",
+            "include/QtUiTools/QtUiToolsDepends",
+            "include/QtUiTools/QtUiToolsVersion",
+            "include/QtUiTools/qtuitoolsglobal.h",
+            "include/QtUiTools/qtuitoolsversion.h",
+            "include/QtUiTools/quiloader.h",
             "lib/QtDesigner.framework/QtDesigner",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/abstractdialoggui_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/abstractintrospection_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/actioneditor_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/actionprovider_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/actionrepository_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/codedialog_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/connectionedit_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/csshighlighter_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/deviceprofile_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/dialoggui_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/extensionfactory_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/formbuilderextra_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/formlayoutmenu_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/formwindowbase_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/grid_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/gridpanel_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/htmlhighlighter_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/iconloader_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/iconselector_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/invisible_widget_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/layout_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/layoutinfo_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/metadatabase_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/morphmenu_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/newactiondialog_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/newformwidget_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/orderdialog_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/plaintexteditor_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/plugindialog_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/pluginmanager_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/previewconfigurationwidget_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/previewmanager_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/promotionmodel_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/promotiontaskmenu_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/properties_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/propertylineedit_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_command2_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_command_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_dnditem_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_dockwidget_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_formbuilder_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_formeditorcommand_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_formwindowcommand_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_formwindowmanager_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_introspection_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_membersheet_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_menu_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_menubar_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_objectinspector_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_promotion_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_promotiondialog_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_propertyeditor_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_propertysheet_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_qsettings_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_stackedbox_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_tabwidget_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_taskmenu_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_toolbar_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_toolbox_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_utils_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_widget_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_widgetbox_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qdesigner_widgetitem_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qlayout_widget_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qsimpleresource_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qtresourceeditordialog_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qtresourcemodel_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/qtresourceview_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/rcc_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/resourcebuilder_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/richtexteditor_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/selectsignaldialog_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/shared_enums_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/shared_global_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/shared_settings_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/sheet_delegate_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/signalslotdialog_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/spacer_widget_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/stylesheeteditor_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/textbuilder_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/textpropertyeditor_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/ui4_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/widgetdatabase_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/widgetfactory_p.h",
-            "lib/QtDesigner.framework/Versions/A/Headers/6.11.2/QtDesigner/private/zoomwidget_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/abstractdialoggui_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/abstractintrospection_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/actioneditor_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/actionprovider_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/actionrepository_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/codedialog_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/connectionedit_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/csshighlighter_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/deviceprofile_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/dialoggui_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/extensionfactory_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/formbuilderextra_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/formlayoutmenu_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/formwindowbase_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/grid_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/gridpanel_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/htmlhighlighter_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/iconloader_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/iconselector_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/invisible_widget_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/layout_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/layoutinfo_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/menuactionlineedit_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/metadatabase_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/morphmenu_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/newactiondialog_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/newformwidget_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/objectutils_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/orderdialog_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/plaintexteditor_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/plugindialog_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/pluginmanager_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/previewconfigurationwidget_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/previewmanager_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/promotionmodel_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/promotiontaskmenu_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/properties_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/propertylineedit_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_command2_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_command_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_dnditem_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_dockwidget_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_formbuilder_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_formeditorcommand_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_formwindowcommand_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_formwindowmanager_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_introspection_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_membersheet_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_menu_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_menubar_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_objectinspector_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_promotion_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_promotiondialog_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_propertyeditor_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_propertysheet_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_qsettings_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_stackedbox_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_tabwidget_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_taskmenu_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_toolbar_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_toolbox_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_utils_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_widget_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_widgetbox_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qdesigner_widgetitem_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qlayout_widget_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qsimpleresource_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qtresourceeditordialog_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qtresourcemodel_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/qtresourceview_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/rcc_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/resourcebuilder_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/richtexteditor_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/selectsignaldialog_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/shared_enums_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/shared_global_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/shared_settings_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/sheet_delegate_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/signalslotdialog_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/spacer_widget_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/stylesheeteditor_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/textbuilder_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/textpropertyeditor_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/ui4_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/widgetdatabase_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/widgetfactory_p.h",
+            "lib/QtDesigner.framework/Versions/A/Headers/6.12.0/QtDesigner/private/zoomwidget_p.h",
             "lib/QtDesigner.framework/Versions/A/Headers/QAbstractExtensionFactory",
             "lib/QtDesigner.framework/Versions/A/Headers/QAbstractExtensionManager",
             "lib/QtDesigner.framework/Versions/A/Headers/QAbstractFormBuilder",
@@ -1282,7 +1482,7 @@
             "lib/QtDesigner.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
             "lib/QtDesigner.framework/Versions/A/Resources/QtDesigner.prl",
             "lib/QtDesignerComponents.framework/QtDesignerComponents",
-            "lib/QtDesignerComponents.framework/Versions/A/Headers/6.11.2/QtDesignerComponents/private/lib_pch.h",
+            "lib/QtDesignerComponents.framework/Versions/A/Headers/6.12.0/QtDesignerComponents/private/lib_pch.h",
             "lib/QtDesignerComponents.framework/Versions/A/Headers/QtDesignerComponents",
             "lib/QtDesignerComponents.framework/Versions/A/Headers/QtDesignerComponentsDepends",
             "lib/QtDesignerComponents.framework/Versions/A/Headers/QtDesignerComponentsVersion",
@@ -1292,12 +1492,12 @@
             "lib/QtDesignerComponents.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
             "lib/QtDesignerComponents.framework/Versions/A/Resources/QtDesignerComponents.prl",
             "lib/QtHelp.framework/QtHelp",
-            "lib/QtHelp.framework/Versions/A/Headers/6.11.2/QtHelp/private/qfilternamedialog_p.h",
-            "lib/QtHelp.framework/Versions/A/Headers/6.11.2/QtHelp/private/qhelpcollectionhandler_p.h",
-            "lib/QtHelp.framework/Versions/A/Headers/6.11.2/QtHelp/private/qhelpdbreader_p.h",
-            "lib/QtHelp.framework/Versions/A/Headers/6.11.2/QtHelp/private/qhelpsearchindexreader_p.h",
-            "lib/QtHelp.framework/Versions/A/Headers/6.11.2/QtHelp/private/qhelpsearchindexwriter_p.h",
-            "lib/QtHelp.framework/Versions/A/Headers/6.11.2/QtHelp/private/qoptionswidget_p.h",
+            "lib/QtHelp.framework/Versions/A/Headers/6.12.0/QtHelp/private/qfilternamedialog_p.h",
+            "lib/QtHelp.framework/Versions/A/Headers/6.12.0/QtHelp/private/qhelpcollectionhandler_p.h",
+            "lib/QtHelp.framework/Versions/A/Headers/6.12.0/QtHelp/private/qhelpdbreader_p.h",
+            "lib/QtHelp.framework/Versions/A/Headers/6.12.0/QtHelp/private/qhelpsearchindexreader_p.h",
+            "lib/QtHelp.framework/Versions/A/Headers/6.12.0/QtHelp/private/qhelpsearchindexwriter_p.h",
+            "lib/QtHelp.framework/Versions/A/Headers/6.12.0/QtHelp/private/qoptionswidget_p.h",
             "lib/QtHelp.framework/Versions/A/Headers/QCompressedHelpInfo",
             "lib/QtHelp.framework/Versions/A/Headers/QHelpContentItem",
             "lib/QtHelp.framework/Versions/A/Headers/QHelpContentModel",
@@ -1344,7 +1544,7 @@
             "lib/QtHelp.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
             "lib/QtHelp.framework/Versions/A/Resources/QtHelp.prl",
             "lib/QtUiTools.framework/QtUiTools",
-            "lib/QtUiTools.framework/Versions/A/Headers/6.11.2/QtUiTools/private/quiloader_p.h",
+            "lib/QtUiTools.framework/Versions/A/Headers/6.12.0/QtUiTools/private/quiloader_p.h",
             "lib/QtUiTools.framework/Versions/A/Headers/QUiLoader",
             "lib/QtUiTools.framework/Versions/A/Headers/QtUiTools",
             "lib/QtUiTools.framework/Versions/A/Headers/QtUiToolsDepends",
@@ -1572,9 +1772,9 @@
             "share/qt/phrasebooks/spanish.qph",
             "share/qt/phrasebooks/swedish.qph",
             "share/qt/plugins/designer/libqquickwidget.dylib",
-            "share/qt/sbom/qttools-6.11.2.spdx"
+            "share/qt/sbom/qttools-6.12.0.spdx"
           ],
-          "installed_size": 21946530
+          "installed_size": 21976679
         }
       }
     }
