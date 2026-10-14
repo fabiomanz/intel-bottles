@@ -2,10 +2,10 @@
   "qtconnectivity": {
     "formula": {
       "name": "qtconnectivity",
-      "pkg_version": "6.11.2",
+      "pkg_version": "6.12.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtconnectivity.rb",
       "tap_git_path": "Formula/q/qtconnectivity.rb",
-      "tap_git_revision": "de6f29c91962af85b2c94b4f160e208672de22d0",
+      "tap_git_revision": "abbd7bd94e3bd6fb71856ad4176bce94b33ef160",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Provides access to Bluetooth hardware",
       "license": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
@@ -15,21 +15,21 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-05T18:22:00Z",
+      "date": "2026-10-14T11:47:10Z",
       "tags": {
         "tahoe": {
-          "filename": "qtconnectivity-6.11.2.tahoe.bottle.tar.gz",
-          "local_filename": "qtconnectivity--6.11.2.tahoe.bottle.tar.gz",
-          "sha256": "d2694f252e80976ba7c1163b7b9505e9f6f0cfcabdc56be93c6842108a1375ff",
+          "filename": "qtconnectivity-6.12.0.tahoe.bottle.tar.gz",
+          "local_filename": "qtconnectivity--6.12.0.tahoe.bottle.tar.gz",
+          "sha256": "6f2c3451f3ff413e179d2de6293fc0f982189a2c5d3196818ef49ee6960d6dca",
           "tab": {
-            "homebrew_version": "6.0.22",
+            "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [
               "lib/QtBluetooth.framework/Versions/A/QtBluetooth",
               "lib/QtNfc.framework/Versions/A/QtNfc"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1786498450,
+            "source_modified_time": 1790432821,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -61,10 +61,10 @@
               },
               {
                 "full_name": "libpng",
-                "version": "1.6.58",
+                "version": "1.6.59",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.6.58",
+                "pkg_version": "1.6.59",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -79,10 +79,10 @@
               },
               {
                 "full_name": "pcre2",
-                "version": "10.48",
+                "version": "10.49",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "10.48",
+                "pkg_version": "10.49",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -107,17 +107,17 @@
                 "full_name": "gettext",
                 "version": "1.0",
                 "revision": 0,
-                "bottle_rebuild": 1,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "glib",
-                "version": "2.88.3",
+                "version": "2.90.1",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "2.88.3",
+                "bottle_rebuild": 0,
+                "pkg_version": "2.90.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -132,10 +132,10 @@
               },
               {
                 "full_name": "xorgproto",
-                "version": "2025.1",
+                "version": "2026.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2025.1",
+                "pkg_version": "2026.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -212,10 +212,10 @@
               },
               {
                 "full_name": "cairo",
-                "version": "1.18.4",
+                "version": "1.18.6",
                 "revision": 0,
-                "bottle_rebuild": 2,
-                "pkg_version": "1.18.4",
+                "bottle_rebuild": 0,
+                "pkg_version": "1.18.6",
                 "declared_directly": false
               },
               {
@@ -237,10 +237,10 @@
               },
               {
                 "full_name": "harfbuzz",
-                "version": "14.4.0",
+                "version": "14.6.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "14.4.0",
+                "pkg_version": "14.6.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -264,29 +264,28 @@
               },
               {
                 "full_name": "md4c",
-                "version": "0.5.3",
+                "version": "0.6.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.5.3",
+                "pkg_version": "0.6.0",
                 "declared_directly": false
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-08-13",
+                "version": "2026-09-25",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "2026-08-13",
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
-                "full_name": "openssl@3",
-                "version": "3.6.4",
+                "full_name": "openssl@4",
+                "version": "4.0.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.4",
-                "declared_directly": false,
-                "compatibility_version": 1
+                "pkg_version": "4.0.3",
+                "declared_directly": false
               },
               {
                 "full_name": "lz4",
@@ -298,10 +297,10 @@
               },
               {
                 "full_name": "xz",
-                "version": "5.8.3",
+                "version": "5.8.4",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "5.8.3",
+                "pkg_version": "5.8.4",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -316,10 +315,10 @@
               },
               {
                 "full_name": "qtbase",
-                "version": "6.11.2",
+                "version": "6.12.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.11.2",
+                "pkg_version": "6.12.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -337,43 +336,99 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-pcre2-10.48",
-              "SPDXRef-Package-SPDXRef-json-c-0.19",
-              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-xz-5.8.3",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+              "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+              "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+              "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+              "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+              "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+              "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
+              "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
-                "name": "pcre2",
-                "versionInfo": "10.48",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+                "name": "libpng",
+                "versionInfo": "1.6.59",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.59.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                    "checksumValue": "983550222f14d7db234a39119dc66c0de74d9b79b74f83ecf4b81a6b694d40de"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceLocator": "pkg:brew/libpng@1.6.59",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "name": "freetype",
+                "versionInfo": "2.14.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "FTL",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.14.3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a8a2bcc65a1d21adba6797d59f4ab1c91b0a40c53aae2794b4f94780e7379837"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/freetype@2.14.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+                "name": "pcre2",
+                "versionInfo": "10.49",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.49.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7fe75e3ba297623163ee0e3a262e417d0eb36342f6cda4135ede90412ff03040"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.49",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "name": "json-c",
                 "versionInfo": "0.19",
                 "filesAnalyzed": false,
@@ -396,7 +451,168 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gettext-1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fe9d5337ff31e4f40b827b3463bd3fdc61b8f377277769f71e93baad0443bc96"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+                "name": "glib",
+                "versionInfo": "2.90.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b0aaa12be31d6f764cdca91e2a75efe6f317eabba79a48bdf1467217a0ccbab"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/glib@2.90.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+                "name": "xorgproto",
+                "versionInfo": "2026.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xorgproto-2026.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5286465a0d9c7954041bcec0ebee5641b6c8018b3f679eaa8595b029a44c2af9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xorgproto@2026.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "name": "libx11",
+                "versionInfo": "1.8.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.13.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10c0844f2a8daab11aa21bd737480e496469da1a15c37067dc34ab308f8b6285"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libx11@1.8.13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+                "name": "cairo",
+                "versionInfo": "1.18.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-only OR MPL-1.1",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/cairo-1.18.6.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "82e98b7ba1ba8aadca23d85b6ee4aaec38273d61c453dba9ad3905675cfb2a84"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/cairo@1.18.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+                "name": "harfbuzz",
+                "versionInfo": "14.6.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/harfbuzz-14.6.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "38958915ce3b608419a3e9f5c1f87f1c97be753b1f39f058317824798d26f34d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/harfbuzz@14.6.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
                 "name": "jpeg-turbo",
                 "versionInfo": "3.2.0",
                 "filesAnalyzed": false,
@@ -407,7 +623,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "5440035b2803de1d43de3c29d0df3816a2546d56fd1e3759add6138aa450820a"
+                    "checksumValue": "3c7d19c475389bbb48a07f78f52473c8f49f458bd45b4453457cfec9c01601ed"
                   }
                 ],
                 "externalRefs": [
@@ -419,53 +635,76 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
+                "name": "md4c",
+                "versionInfo": "0.6.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/md4c-0.6.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7eee913872dd63d67f6662053fdfa26bfb96516b768cace41d21d37ea37ddfe3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/md4c@0.6.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "name": "ca-certificates",
-                "versionInfo": "2026-08-13",
+                "versionInfo": "2026-09-25",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-                "name": "openssl@3",
-                "versionInfo": "3.6.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.4.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13fdc9f3d0d30296056e2685e0c989978a5ed213f34a0de174e19feb72833e73"
+                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -488,30 +727,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
-                "versionInfo": "5.8.3",
+                "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "0BSD AND GPL-2.0-or-later",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/xz/blobs/sha256:df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xz-5.8.4.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "df5011c2bf8ce426cd62fcd0b849268511cfdbf71331f7eaa07bf790bcf93a0f"
+                    "checksumValue": "54a648c4197b0299ee2d37527ca6a23447abe65342f8f8c0ed68e154f4593b0f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/xz@5.8.3",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -534,24 +773,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
                 "name": "qtbase",
-                "versionInfo": "6.11.2",
+                "versionInfo": "6.12.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND GFDL-1.3-no-invariants-only",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.11.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.12.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "5eb65dad3cdb928010071405fc3d5139e760b32a0a57a79c5d309be6f36f0096"
+                    "checksumValue": "4e76f26f348ba8d1a3fb3b053ebdb843857652372bc58cd70442eff538fb04d0"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtbase@6.11.2",
+                    "referenceLocator": "pkg:brew/qtbase@6.12.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -571,47 +810,97 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
@@ -626,46 +915,119 @@
           "all_files": [
             ".brew/qtconnectivity.rb",
             "INSTALL_RECEIPT.json",
-            "include/QtConnectivity/6.11.2/QtConnectivity/private/qtconnectivity-config_p.h",
+            "include/QtBluetooth/QBluetoothAddress",
+            "include/QtBluetooth/QBluetoothDeviceDiscoveryAgent",
+            "include/QtBluetooth/QBluetoothDeviceInfo",
+            "include/QtBluetooth/QBluetoothHostInfo",
+            "include/QtBluetooth/QBluetoothLocalDevice",
+            "include/QtBluetooth/QBluetoothServer",
+            "include/QtBluetooth/QBluetoothServiceDiscoveryAgent",
+            "include/QtBluetooth/QBluetoothServiceInfo",
+            "include/QtBluetooth/QBluetoothSocket",
+            "include/QtBluetooth/QBluetoothUuid",
+            "include/QtBluetooth/QLowEnergyAdvertisingData",
+            "include/QtBluetooth/QLowEnergyAdvertisingParameters",
+            "include/QtBluetooth/QLowEnergyCharacteristic",
+            "include/QtBluetooth/QLowEnergyCharacteristicData",
+            "include/QtBluetooth/QLowEnergyConnectionParameters",
+            "include/QtBluetooth/QLowEnergyController",
+            "include/QtBluetooth/QLowEnergyDescriptor",
+            "include/QtBluetooth/QLowEnergyDescriptorData",
+            "include/QtBluetooth/QLowEnergyHandle",
+            "include/QtBluetooth/QLowEnergyService",
+            "include/QtBluetooth/QLowEnergyServiceData",
+            "include/QtBluetooth/QtBluetooth",
+            "include/QtBluetooth/QtBluetoothDepends",
+            "include/QtBluetooth/QtBluetoothVersion",
+            "include/QtBluetooth/qbluetooth.h",
+            "include/QtBluetooth/qbluetoothaddress.h",
+            "include/QtBluetooth/qbluetoothdevicediscoveryagent.h",
+            "include/QtBluetooth/qbluetoothdeviceinfo.h",
+            "include/QtBluetooth/qbluetoothhostinfo.h",
+            "include/QtBluetooth/qbluetoothlocaldevice.h",
+            "include/QtBluetooth/qbluetoothserver.h",
+            "include/QtBluetooth/qbluetoothservicediscoveryagent.h",
+            "include/QtBluetooth/qbluetoothserviceinfo.h",
+            "include/QtBluetooth/qbluetoothsocket.h",
+            "include/QtBluetooth/qbluetoothuuid.h",
+            "include/QtBluetooth/qlowenergyadvertisingdata.h",
+            "include/QtBluetooth/qlowenergyadvertisingparameters.h",
+            "include/QtBluetooth/qlowenergycharacteristic.h",
+            "include/QtBluetooth/qlowenergycharacteristicdata.h",
+            "include/QtBluetooth/qlowenergyconnectionparameters.h",
+            "include/QtBluetooth/qlowenergycontroller.h",
+            "include/QtBluetooth/qlowenergydescriptor.h",
+            "include/QtBluetooth/qlowenergydescriptordata.h",
+            "include/QtBluetooth/qlowenergyservice.h",
+            "include/QtBluetooth/qlowenergyservicedata.h",
+            "include/QtBluetooth/qtbluetooth-config.h",
+            "include/QtBluetooth/qtbluetoothexports.h",
+            "include/QtBluetooth/qtbluetoothglobal.h",
+            "include/QtBluetooth/qtbluetoothversion.h",
+            "include/QtConnectivity/6.12.0/QtConnectivity/private/qtconnectivity-config_p.h",
             "include/QtConnectivity/QtConnectivity",
             "include/QtConnectivity/QtConnectivityDepends",
             "include/QtConnectivity/QtConnectivityVersion",
             "include/QtConnectivity/qtconnectivity-config.h",
             "include/QtConnectivity/qtconnectivityversion.h",
+            "include/QtNfc/QNdefFilter",
+            "include/QtNfc/QNdefMessage",
+            "include/QtNfc/QNdefNfcIconRecord",
+            "include/QtNfc/QNdefNfcSmartPosterRecord",
+            "include/QtNfc/QNdefNfcTextRecord",
+            "include/QtNfc/QNdefNfcUriRecord",
+            "include/QtNfc/QNdefRecord",
+            "include/QtNfc/QNearFieldManager",
+            "include/QtNfc/QNearFieldTarget",
+            "include/QtNfc/QtNfc",
+            "include/QtNfc/QtNfcDepends",
+            "include/QtNfc/QtNfcVersion",
+            "include/QtNfc/qndeffilter.h",
+            "include/QtNfc/qndefmessage.h",
+            "include/QtNfc/qndefnfcsmartposterrecord.h",
+            "include/QtNfc/qndefnfctextrecord.h",
+            "include/QtNfc/qndefnfcurirecord.h",
+            "include/QtNfc/qndefrecord.h",
+            "include/QtNfc/qnearfieldmanager.h",
+            "include/QtNfc/qnearfieldtarget.h",
+            "include/QtNfc/qtnfc-config.h",
+            "include/QtNfc/qtnfcexports.h",
+            "include/QtNfc/qtnfcglobal.h",
+            "include/QtNfc/qtnfcversion.h",
             "lib/QtBluetooth.framework/QtBluetooth",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/btcentralmanager_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/btconnectionmonitor_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/btdelegates_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/btdeviceinquiry_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/btdevicepair_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/btgcdtimer_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/btl2capchannel_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/btledeviceinquiry_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/btnotifier_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/btperipheralmanager_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/btraii_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/btrfcommchannel_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/btsdpinquiry_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/btservicerecord_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/btsocketlistener_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/btutility_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/lecmaccalculator_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/qbluetoothdevicediscoveryagent_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/qbluetoothdeviceinfo_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/qbluetoothhostinfo_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/qbluetoothlocaldevice_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/qbluetoothserver_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/qbluetoothservicediscoveryagent_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/qbluetoothserviceinfo_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/qbluetoothsocket_macos_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/qbluetoothsocketbase_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/qlowenergycontroller_darwin_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/qlowenergycontrollerbase_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/qlowenergyserviceprivate_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/qprivatelinearbuffer_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/qtbluetooth-config_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/qtbluetoothglobal_p.h",
-            "lib/QtBluetooth.framework/Versions/A/Headers/6.11.2/QtBluetooth/private/uistrings_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btcentralmanager_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btconnectionmonitor_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btdelegates_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btdeviceinquiry_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btdevicepair_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btgcdtimer_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btl2capchannel_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btledeviceinquiry_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btnotifier_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btperipheralmanager_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btraii_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btrfcommchannel_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btsdpinquiry_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btservicerecord_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btsocketlistener_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btutility_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/lecmaccalculator_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qbluetoothdevicediscoveryagent_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qbluetoothdeviceinfo_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qbluetoothhostinfo_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qbluetoothlocaldevice_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qbluetoothserver_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qbluetoothservicediscoveryagent_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qbluetoothserviceinfo_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qbluetoothsocket_macos_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qbluetoothsocketbase_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qlowenergycontroller_darwin_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qlowenergycontrollerbase_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qlowenergyserviceprivate_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qprivatelinearbuffer_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qtbluetooth-config_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qtbluetoothglobal_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/uistrings_p.h",
             "lib/QtBluetooth.framework/Versions/A/Headers/QBluetoothAddress",
             "lib/QtBluetooth.framework/Versions/A/Headers/QBluetoothDeviceDiscoveryAgent",
             "lib/QtBluetooth.framework/Versions/A/Headers/QBluetoothDeviceInfo",
@@ -720,21 +1082,21 @@
             "lib/QtBluetooth.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
             "lib/QtBluetooth.framework/Versions/A/Resources/QtBluetooth.prl",
             "lib/QtNfc.framework/QtNfc",
-            "lib/QtNfc.framework/Versions/A/Headers/6.11.2/QtNfc/private/qapduutils_p.h",
-            "lib/QtNfc.framework/Versions/A/Headers/6.11.2/QtNfc/private/qndefaccessfsm_p.h",
-            "lib/QtNfc.framework/Versions/A/Headers/6.11.2/QtNfc/private/qndefnfcsmartposterrecord_p.h",
-            "lib/QtNfc.framework/Versions/A/Headers/6.11.2/QtNfc/private/qndefrecord_p.h",
-            "lib/QtNfc.framework/Versions/A/Headers/6.11.2/QtNfc/private/qnearfieldmanager_p.h",
-            "lib/QtNfc.framework/Versions/A/Headers/6.11.2/QtNfc/private/qnearfieldmanager_pcsc_p.h",
-            "lib/QtNfc.framework/Versions/A/Headers/6.11.2/QtNfc/private/qnearfieldtarget_p.h",
-            "lib/QtNfc.framework/Versions/A/Headers/6.11.2/QtNfc/private/qnearfieldtarget_pcsc_p.h",
-            "lib/QtNfc.framework/Versions/A/Headers/6.11.2/QtNfc/private/qnfctagtype4ndeffsm_p.h",
-            "lib/QtNfc.framework/Versions/A/Headers/6.11.2/QtNfc/private/qpcsc_p.h",
-            "lib/QtNfc.framework/Versions/A/Headers/6.11.2/QtNfc/private/qpcsccard_p.h",
-            "lib/QtNfc.framework/Versions/A/Headers/6.11.2/QtNfc/private/qpcscmanager_p.h",
-            "lib/QtNfc.framework/Versions/A/Headers/6.11.2/QtNfc/private/qpcscslot_p.h",
-            "lib/QtNfc.framework/Versions/A/Headers/6.11.2/QtNfc/private/qtnfc-config_p.h",
-            "lib/QtNfc.framework/Versions/A/Headers/6.11.2/QtNfc/private/qtnfcglobal_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qapduutils_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qndefaccessfsm_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qndefnfcsmartposterrecord_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qndefrecord_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qnearfieldmanager_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qnearfieldmanager_pcsc_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qnearfieldtarget_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qnearfieldtarget_pcsc_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qnfctagtype4ndeffsm_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qpcsc_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qpcsccard_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qpcscmanager_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qpcscslot_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qtnfc-config_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qtnfcglobal_p.h",
             "lib/QtNfc.framework/Versions/A/Headers/QNdefFilter",
             "lib/QtNfc.framework/Versions/A/Headers/QNdefMessage",
             "lib/QtNfc.framework/Versions/A/Headers/QNdefNfcIconRecord",
@@ -826,9 +1188,9 @@
             "share/qt/modules/Bluetooth.json",
             "share/qt/modules/Connectivity.json",
             "share/qt/modules/Nfc.json",
-            "share/qt/sbom/qtconnectivity-6.11.2.spdx"
+            "share/qt/sbom/qtconnectivity-6.12.0.spdx"
           ],
-          "installed_size": 1642211
+          "installed_size": 1654174
         }
       }
     }

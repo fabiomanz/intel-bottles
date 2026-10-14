@@ -1,13 +1,13 @@
 {
-  "qttasktree": {
+  "qtsvg": {
     "formula": {
-      "name": "qttasktree",
-      "pkg_version": "6.11.2",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qttasktree.rb",
-      "tap_git_path": "Formula/q/qttasktree.rb",
-      "tap_git_revision": "f53e41b275b6070e94c2d7a81e645c1c05fb6bee",
+      "name": "qtsvg",
+      "pkg_version": "6.12.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtsvg.rb",
+      "tap_git_path": "Formula/q/qtsvg.rb",
+      "tap_git_revision": "abbd7bd94e3bd6fb71856ad4176bce94b33ef160",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
-      "desc": "General purpose library for asynchronous task execution",
+      "desc": "Classes for displaying the contents of SVG files",
       "license": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
       "homepage": "https://www.qt.io/"
     },
@@ -15,20 +15,23 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-01T06:42:16Z",
+      "date": "2026-10-14T11:56:43Z",
       "tags": {
         "tahoe": {
-          "filename": "qttasktree-6.11.2.tahoe.bottle.tar.gz",
-          "local_filename": "qttasktree--6.11.2.tahoe.bottle.tar.gz",
-          "sha256": "43e89737d5b478643499590b4d0b9b3e2c4c25eda35ae132824db3e97e3faf88",
+          "filename": "qtsvg-6.12.0.tahoe.bottle.tar.gz",
+          "local_filename": "qtsvg--6.12.0.tahoe.bottle.tar.gz",
+          "sha256": "b010c19572dcf0842948a6e729921dc9f72a4c27fd7d0e7d918abd96db41c584",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [
-              "lib/QtTaskTree.framework/Versions/A/QtTaskTree"
+              "lib/QtSvg.framework/Versions/A/QtSvg",
+              "lib/QtSvgWidgets.framework/Versions/A/QtSvgWidgets",
+              "share/qt/plugins/iconengines/libqsvgicon.dylib",
+              "share/qt/plugins/imageformats/libqsvg.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1786469896,
+            "source_modified_time": 1790417501,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -60,10 +63,10 @@
               },
               {
                 "full_name": "libpng",
-                "version": "1.6.58",
+                "version": "1.6.59",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.6.58",
+                "pkg_version": "1.6.59",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -78,10 +81,10 @@
               },
               {
                 "full_name": "pcre2",
-                "version": "10.48",
+                "version": "10.49",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "10.48",
+                "pkg_version": "10.49",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -113,10 +116,10 @@
               },
               {
                 "full_name": "glib",
-                "version": "2.90.0",
+                "version": "2.90.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.90.0",
+                "pkg_version": "2.90.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -131,10 +134,10 @@
               },
               {
                 "full_name": "xorgproto",
-                "version": "2025.1",
+                "version": "2026.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2025.1",
+                "pkg_version": "2026.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -236,9 +239,10 @@
               },
               {
                 "full_name": "harfbuzz",
-                "version": "14.5.0",
+                "version": "14.6.0",
                 "revision": 0,
-                "pkg_version": "14.5.0",
+                "bottle_rebuild": 0,
+                "pkg_version": "14.6.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -264,6 +268,7 @@
                 "full_name": "md4c",
                 "version": "0.6.0",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "0.6.0",
                 "declared_directly": false
               },
@@ -277,13 +282,12 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "openssl@3",
-                "version": "3.6.4",
+                "full_name": "openssl@4",
+                "version": "4.0.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.4",
-                "declared_directly": false,
-                "compatibility_version": 1
+                "pkg_version": "4.0.3",
+                "declared_directly": false
               },
               {
                 "full_name": "lz4",
@@ -313,10 +317,10 @@
               },
               {
                 "full_name": "qtbase",
-                "version": "6.11.2",
+                "version": "6.12.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.11.2",
+                "pkg_version": "6.12.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -334,72 +338,99 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-libpng-1.6.58",
-              "SPDXRef-Package-SPDXRef-pcre2-10.48",
-              "SPDXRef-Package-SPDXRef-json-c-0.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
-              "SPDXRef-Package-SPDXRef-gettext-1.0",
-              "SPDXRef-Package-SPDXRef-glib-2.90.0",
-              "SPDXRef-Package-SPDXRef-libx11-1.8.13",
-              "SPDXRef-Package-SPDXRef-cairo-1.18.6",
-              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+              "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+              "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+              "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+              "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+              "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+              "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
+              "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "name": "libpng",
-                "versionInfo": "1.6.58",
+                "versionInfo": "1.6.59",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "libpng-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.58.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.59.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "e52e7248928f76d19f4253ab672b59dde6a6f21e94b090137170bb2e971f9cc2"
+                    "checksumValue": "983550222f14d7db234a39119dc66c0de74d9b79b74f83ecf4b81a6b694d40de"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libpng@1.6.58",
+                    "referenceLocator": "pkg:brew/libpng@1.6.59",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "name": "freetype",
+                "versionInfo": "2.14.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "FTL",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.14.3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a8a2bcc65a1d21adba6797d59f4ab1c91b0a40c53aae2794b4f94780e7379837"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/freetype@2.14.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "name": "pcre2",
-                "versionInfo": "10.48",
+                "versionInfo": "10.49",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.49.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                    "checksumValue": "7fe75e3ba297623163ee0e3a262e417d0eb36342f6cda4135ede90412ff03040"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceLocator": "pkg:brew/pcre2@10.49",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "name": "json-c",
                 "versionInfo": "0.19",
                 "filesAnalyzed": false,
@@ -422,7 +453,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
                 "name": "libunistring",
                 "versionInfo": "1.4.2",
                 "filesAnalyzed": false,
@@ -433,7 +464,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "8c54c7bc4c98effd8b886213f126278f87cef9c596d9ab2ef3d52bc100c79f65"
+                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
                   }
                 ],
                 "externalRefs": [
@@ -445,7 +476,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "name": "gettext",
                 "versionInfo": "1.0",
                 "filesAnalyzed": false,
@@ -456,7 +487,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "27f00f82c225d2feafe765d37a15699352a390397bdeec1ccbc2b5fe943f7ee7"
+                    "checksumValue": "fe9d5337ff31e4f40b827b3463bd3fdc61b8f377277769f71e93baad0443bc96"
                   }
                 ],
                 "externalRefs": [
@@ -468,30 +499,53 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "name": "glib",
-                "versionInfo": "2.90.0",
+                "versionInfo": "2.90.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "LGPL-2.1-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4f180b8f89781725d58c0a39d7508c0bf0e96225fc69ef630e18a9f885f61c4a"
+                    "checksumValue": "3b0aaa12be31d6f764cdca91e2a75efe6f317eabba79a48bdf1467217a0ccbab"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/glib@2.90.0",
+                    "referenceLocator": "pkg:brew/glib@2.90.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+                "name": "xorgproto",
+                "versionInfo": "2026.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xorgproto-2026.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5286465a0d9c7954041bcec0ebee5641b6c8018b3f679eaa8595b029a44c2af9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xorgproto@2026.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
                 "name": "libx11",
                 "versionInfo": "1.8.13",
                 "filesAnalyzed": false,
@@ -502,7 +556,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "7035ebb1057ef3de675393d244db0d486f07b91aab5d24a4b2d0140c05b9724d"
+                    "checksumValue": "10c0844f2a8daab11aa21bd737480e496469da1a15c37067dc34ab308f8b6285"
                   }
                 ],
                 "externalRefs": [
@@ -514,7 +568,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+                "SPDXID": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "name": "cairo",
                 "versionInfo": "1.18.6",
                 "filesAnalyzed": false,
@@ -537,7 +591,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+                "name": "harfbuzz",
+                "versionInfo": "14.6.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/harfbuzz-14.6.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "38958915ce3b608419a3e9f5c1f87f1c97be753b1f39f058317824798d26f34d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/harfbuzz@14.6.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
                 "name": "jpeg-turbo",
                 "versionInfo": "3.2.0",
                 "filesAnalyzed": false,
@@ -555,6 +632,29 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
+                "name": "md4c",
+                "versionInfo": "0.6.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/md4c-0.6.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7eee913872dd63d67f6662053fdfa26bfb96516b768cace41d21d37ea37ddfe3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/md4c@0.6.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -583,30 +683,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-                "name": "openssl@3",
-                "versionInfo": "3.6.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.4.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13fdc9f3d0d30296056e2685e0c989978a5ed213f34a0de174e19feb72833e73"
+                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -629,7 +729,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
@@ -640,7 +740,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "b58278bdc3ee647396ba249e0d0959306231d593d2b8ce6c173f819b42192a9f"
+                    "checksumValue": "54a648c4197b0299ee2d37527ca6a23447abe65342f8f8c0ed68e154f4593b0f"
                   }
                 ],
                 "externalRefs": [
@@ -652,7 +752,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -675,24 +775,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
                 "name": "qtbase",
-                "versionInfo": "6.11.2",
+                "versionInfo": "6.12.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND GFDL-1.3-no-invariants-only",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.11.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.12.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "5eb65dad3cdb928010071405fc3d5139e760b32a0a57a79c5d309be6f36f0096"
+                    "checksumValue": "4e76f26f348ba8d1a3fb3b053ebdb843857652372bc58cd70442eff538fb04d0"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtbase@6.11.2",
+                    "referenceLocator": "pkg:brew/qtbase@6.12.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -712,151 +812,243 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qttasktree"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qttasktree"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qttasktree"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qttasktree"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qttasktree"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qttasktree"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qttasktree"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qttasktree"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qttasktree"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qttasktree"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qttasktree"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qttasktree"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qttasktree"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qttasktree"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.11.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qttasktree"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-qttasktree-src"
+                "relatedSpdxElement": "SPDXRef-Archive-qtsvg-src"
               }
             ]
           },
           "path_exec_files": [],
           "all_files": [
-            ".brew/qttasktree.rb",
+            ".brew/qtsvg.rb",
             "INSTALL_RECEIPT.json",
-            "lib/QtTaskTree.framework/QtTaskTree",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QBarrier",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QConditional",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QCustomTask",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QDefaultTaskAdapter",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QMappedTaskTreeRunner",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QNetworkReplyWrapper",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QParallelTaskTreeRunner",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QProcessTaskAdapter",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QProcessTaskDeleter",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QSequentialTaskTreeRunner",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QSingleTaskTreeRunner",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QStartedBarrier",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QSyncTask",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QTaskInterface",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QTaskTree",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QTaskTreeTaskAdapter",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QTcpSocketWrapper",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QThreadFunction",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QThreadFunctionBase",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QThreadFunctionTaskAdapter",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QTimeoutTaskAdapter",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QtTaskTree",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QtTaskTreeDepends",
-            "lib/QtTaskTree.framework/Versions/A/Headers/QtTaskTreeVersion",
-            "lib/QtTaskTree.framework/Versions/A/Headers/qbarriertask.h",
-            "lib/QtTaskTree.framework/Versions/A/Headers/qconditional.h",
-            "lib/QtTaskTree.framework/Versions/A/Headers/qnetworkreplywrappertask.h",
-            "lib/QtTaskTree.framework/Versions/A/Headers/qprocesstask.h",
-            "lib/QtTaskTree.framework/Versions/A/Headers/qtasktree.h",
-            "lib/QtTaskTree.framework/Versions/A/Headers/qtasktreerunner.h",
-            "lib/QtTaskTree.framework/Versions/A/Headers/qtcpsocketwrappertask.h",
-            "lib/QtTaskTree.framework/Versions/A/Headers/qthreadfunctiontask.h",
-            "lib/QtTaskTree.framework/Versions/A/Headers/qttasktreeexports.h",
-            "lib/QtTaskTree.framework/Versions/A/Headers/qttasktreeglobal.h",
-            "lib/QtTaskTree.framework/Versions/A/Headers/qttasktreeversion.h",
-            "lib/QtTaskTree.framework/Versions/A/QtTaskTree",
-            "lib/QtTaskTree.framework/Versions/A/Resources/Info.plist",
-            "lib/QtTaskTree.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
-            "lib/QtTaskTree.framework/Versions/A/Resources/QtTaskTree.prl",
-            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtTaskTreeTestsConfig.cmake",
-            "lib/cmake/Qt6TaskTree/Qt6TaskTreeAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6TaskTree/Qt6TaskTreeConfig.cmake",
-            "lib/cmake/Qt6TaskTree/Qt6TaskTreeConfigVersion.cmake",
-            "lib/cmake/Qt6TaskTree/Qt6TaskTreeConfigVersionImpl.cmake",
-            "lib/cmake/Qt6TaskTree/Qt6TaskTreeDependencies.cmake",
-            "lib/cmake/Qt6TaskTree/Qt6TaskTreeTargets-release.cmake",
-            "lib/cmake/Qt6TaskTree/Qt6TaskTreeTargets.cmake",
-            "lib/cmake/Qt6TaskTree/Qt6TaskTreeTargetsPrecheck.cmake",
-            "lib/cmake/Qt6TaskTree/Qt6TaskTreeVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6TaskTree/Qt6TaskTreeVersionlessTargets.cmake",
-            "lib/pkgconfig/Qt6TaskTree.pc",
+            "include/QtSvg/QSvgGenerator",
+            "include/QtSvg/QSvgRenderer",
+            "include/QtSvg/QtSvg",
+            "include/QtSvg/QtSvgDepends",
+            "include/QtSvg/QtSvgVersion",
+            "include/QtSvg/qsvggenerator.h",
+            "include/QtSvg/qsvgrenderer.h",
+            "include/QtSvg/qtsvgexports.h",
+            "include/QtSvg/qtsvgglobal.h",
+            "include/QtSvg/qtsvgversion.h",
+            "include/QtSvgWidgets/QGraphicsSvgItem",
+            "include/QtSvgWidgets/QSvgWidget",
+            "include/QtSvgWidgets/QtSvgWidgets",
+            "include/QtSvgWidgets/QtSvgWidgetsDepends",
+            "include/QtSvgWidgets/QtSvgWidgetsVersion",
+            "include/QtSvgWidgets/qgraphicssvgitem.h",
+            "include/QtSvgWidgets/qsvgwidget.h",
+            "include/QtSvgWidgets/qtsvgwidgetsexports.h",
+            "include/QtSvgWidgets/qtsvgwidgetsglobal.h",
+            "include/QtSvgWidgets/qtsvgwidgetsversion.h",
+            "lib/QtSvg.framework/QtSvg",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgabstractanimation_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvganimate_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvganimatedproperty_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvganimator_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgcssanimation_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgcsseasing_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgcsshandler_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgcssproperties_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgcssvalues_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgdocument_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgeasinginterface_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgfilter_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgfont_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvggraphics_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvghandler_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvghelper_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgnode_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgpaintserver_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgstructure_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgstyle_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgstyleselector_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgvisitor_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qtsvgglobal_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/QSvgGenerator",
+            "lib/QtSvg.framework/Versions/A/Headers/QSvgRenderer",
+            "lib/QtSvg.framework/Versions/A/Headers/QtSvg",
+            "lib/QtSvg.framework/Versions/A/Headers/QtSvgDepends",
+            "lib/QtSvg.framework/Versions/A/Headers/QtSvgVersion",
+            "lib/QtSvg.framework/Versions/A/Headers/qsvggenerator.h",
+            "lib/QtSvg.framework/Versions/A/Headers/qsvgrenderer.h",
+            "lib/QtSvg.framework/Versions/A/Headers/qtsvgexports.h",
+            "lib/QtSvg.framework/Versions/A/Headers/qtsvgglobal.h",
+            "lib/QtSvg.framework/Versions/A/Headers/qtsvgversion.h",
+            "lib/QtSvg.framework/Versions/A/QtSvg",
+            "lib/QtSvg.framework/Versions/A/Resources/Info.plist",
+            "lib/QtSvg.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtSvg.framework/Versions/A/Resources/QtSvg.prl",
+            "lib/QtSvgWidgets.framework/QtSvgWidgets",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/QGraphicsSvgItem",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/QSvgWidget",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/QtSvgWidgets",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/QtSvgWidgetsDepends",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/QtSvgWidgetsVersion",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/qgraphicssvgitem.h",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/qsvgwidget.h",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/qtsvgwidgetsexports.h",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/qtsvgwidgetsglobal.h",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/qtsvgwidgetsversion.h",
+            "lib/QtSvgWidgets.framework/Versions/A/QtSvgWidgets",
+            "lib/QtSvgWidgets.framework/Versions/A/Resources/Info.plist",
+            "lib/QtSvgWidgets.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtSvgWidgets.framework/Versions/A/Resources/QtSvgWidgets.prl",
+            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtSvgTestsConfig.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfigVersion.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-release.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgPluginConfigVersion.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgPluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-release.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgPluginTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgConfig.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgConfigVersion.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgDependencies.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgTargets-release.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgTargets.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgVersionlessTargets.cmake",
+            "lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfig.cmake",
+            "lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateDependencies.cmake",
+            "lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateTargets.cmake",
+            "lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsConfig.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsConfigVersion.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsConfigVersionImpl.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsDependencies.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsTargets-release.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsTargets.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsTargetsPrecheck.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsVersionlessTargets.cmake",
+            "lib/pkgconfig/Qt6Svg.pc",
+            "lib/pkgconfig/Qt6SvgWidgets.pc",
             "sbom.spdx.json",
-            "share/qt/metatypes/qt6tasktree_metatypes.json",
-            "share/qt/mkspecs/modules/qt_lib_tasktree.pri",
-            "share/qt/modules/TaskTree.json",
-            "share/qt/sbom/qttasktree-6.11.2.spdx",
-            "share/qttasktree/tst_qthreadfunction.cpp"
+            "share/qt/metatypes/qt6svg_metatypes.json",
+            "share/qt/metatypes/qt6svgwidgets_metatypes.json",
+            "share/qt/mkspecs/modules/qt_lib_svg.pri",
+            "share/qt/mkspecs/modules/qt_lib_svg_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_svgwidgets.pri",
+            "share/qt/modules/Svg.json",
+            "share/qt/modules/SvgWidgets.json",
+            "share/qt/plugins/iconengines/libqsvgicon.dylib",
+            "share/qt/plugins/imageformats/libqsvg.dylib",
+            "share/qt/sbom/qtsvg-6.12.0.spdx"
           ],
-          "installed_size": 553330
+          "installed_size": 1096517
         }
       }
     }
