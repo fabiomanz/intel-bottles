@@ -2,25 +2,25 @@
   "ansible-lint": {
     "formula": {
       "name": "ansible-lint",
-      "pkg_version": "26.9.0_1",
+      "pkg_version": "26.10.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/ansible-lint.rb",
       "tap_git_path": "Formula/a/ansible-lint.rb",
-      "tap_git_revision": "1df5620822602675a8447e99d239b35362d30a84",
+      "tap_git_revision": "3e1d394deefe453628c971901bfb7fa17e406bf6",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Checks ansible playbooks for practices and behaviour",
       "license": "MIT AND GPL-3.0-or-later",
-      "homepage": "https://ansible-lint.readthedocs.io/"
+      "homepage": "https://docs.ansible.com/projects/lint/"
     },
     "bottle": {
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-10T00:43:44Z",
+      "date": "2026-10-14T11:15:42Z",
       "tags": {
         "tahoe": {
-          "filename": "ansible-lint-26.9.0_1.tahoe.bottle.tar.gz",
-          "local_filename": "ansible-lint--26.9.0_1.tahoe.bottle.tar.gz",
-          "sha256": "f4b8598ca198104fd77bf69e26dc0e87098ce9daffbc90a4bb33f145ff40e3a5",
+          "filename": "ansible-lint-26.10.0.tahoe.bottle.tar.gz",
+          "local_filename": "ansible-lint--26.10.0.tahoe.bottle.tar.gz",
+          "sha256": "fd55b6a7df4544ad105789e9eedba7dba10a022c731bdd19b8be8fff05eb497b",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [
@@ -49,24 +49,24 @@
               "libexec/lib/python3.14/site-packages/yaml/_yaml.cpython-314-darwin.so"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790096734,
+            "source_modified_time": 1791796218,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "pycparser",
-                "version": "3.0",
+                "version": "3.11",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "3.0",
+                "bottle_rebuild": 0,
+                "pkg_version": "3.11",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "cffi",
                 "version": "2.1.1",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.1.1",
+                "pkg_version": "2.1.1_1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -90,9 +90,9 @@
               {
                 "full_name": "cryptography",
                 "version": "50.0.2",
-                "revision": 1,
+                "revision": 2,
                 "bottle_rebuild": 0,
-                "pkg_version": "50.0.2_1",
+                "pkg_version": "50.0.2_2",
                 "declared_directly": true,
                 "compatibility_version": 2
               },
@@ -125,10 +125,10 @@
               },
               {
                 "full_name": "sqlite",
-                "version": "3.53.4",
+                "version": "3.54.0",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "3.53.4",
+                "bottle_rebuild": 0,
+                "pkg_version": "3.54.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -161,18 +161,18 @@
               {
                 "full_name": "python@3.14",
                 "version": "3.14.8",
-                "revision": 1,
+                "revision": 2,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.14.8_1",
+                "pkg_version": "3.14.8_2",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "rpds-py",
                 "version": "2026.9.1",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026.9.1",
+                "pkg_version": "2026.9.1_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -190,64 +190,64 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-pycparser-3.2e.0",
-              "SPDXRef-Package-SPDXRef-cffi-2.2e.1.2e.1",
+              "SPDXRef-Package-SPDXRef-pycparser-3.2e.11",
+              "SPDXRef-Package-SPDXRef-cffi-2.2e.1.2e.1.5f.1",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
-              "SPDXRef-Package-SPDXRef-cryptography-50.2e.0.2e.2.5f.1",
+              "SPDXRef-Package-SPDXRef-cryptography-50.2e.0.2e.2.5f.2",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
-              "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
-              "SPDXRef-Package-SPDXRef-rpds-py-2026.2e.9.2e.1",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.2",
+              "SPDXRef-Package-SPDXRef-rpds-py-2026.2e.9.2e.1.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pycparser-3.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pycparser-3.2e.11",
                 "name": "pycparser",
-                "versionInfo": "3.0",
+                "versionInfo": "3.11",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/pycparser/blobs/sha256:a9392396176283b2a99bf53cf5ad77dee0e5c1a9318a119dd41bf13bf740a522",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/pycparser/blobs/sha256:df35b6e61bc37678856474d9c9fc0eb38cf5da68d19ac8dcabe6b7a6c05d7acc",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "a9392396176283b2a99bf53cf5ad77dee0e5c1a9318a119dd41bf13bf740a522"
+                    "checksumValue": "df35b6e61bc37678856474d9c9fc0eb38cf5da68d19ac8dcabe6b7a6c05d7acc"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/pycparser@3.0",
+                    "referenceLocator": "pkg:brew/pycparser@3.11",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-cffi-2.2e.1.2e.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-cffi-2.2e.1.2e.1.5f.1",
                 "name": "cffi",
-                "versionInfo": "2.1.1",
+                "versionInfo": "2.1.1_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT-0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/cffi/blobs/sha256:e8d3fba9e24ffa2eda3600b080d5b81f89374f94c2b9d1e81bd3f13c1f4fdf90",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/cffi-2.1.1_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "e8d3fba9e24ffa2eda3600b080d5b81f89374f94c2b9d1e81bd3f13c1f4fdf90"
+                    "checksumValue": "1209a1fb0fb4df49bf282f6f218e7e7df8149864cc4960bbd6939f06a47cb2a7"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/cffi@2.1.1",
+                    "referenceLocator": "pkg:brew/cffi@2.1.1_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -299,24 +299,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-cryptography-50.2e.0.2e.2.5f.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-cryptography-50.2e.0.2e.2.5f.2",
                 "name": "cryptography",
-                "versionInfo": "50.0.2_1",
+                "versionInfo": "50.0.2_2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0 OR BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/cryptography-50.0.2_1.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/cryptography-50.0.2_2.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4f641c2da139d3e84be1cf7b2f06917871024243d7a5ef4bef77621c9ee7b0cc"
+                    "checksumValue": "fefde079108005132d60ce764fa7fd2f02e70425e26569d0a7ea2b7185a0c294"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/cryptography@50.0.2_1",
+                    "referenceLocator": "pkg:brew/cryptography@50.0.2_2",
                     "referenceType": "purl"
                   }
                 ]
@@ -368,24 +368,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
                 "name": "sqlite",
-                "versionInfo": "3.53.4",
+                "versionInfo": "3.54.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "blessing",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/sqlite-3.54.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f"
+                    "checksumValue": "dc852ce3cc635ed216e4daf1e68736ee9d8e90327d23bf17638be27c37ed61d4"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceLocator": "pkg:brew/sqlite@3.54.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -460,47 +460,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.2",
                 "name": "python@3.14",
-                "versionInfo": "3.14.8_1",
+                "versionInfo": "3.14.8_2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Python-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/python%403.14-3.14.8_1.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/python%403.14-3.14.8_2.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "88fba8bbb502003257756ac15a0e2e6008c2ab6e7d5ad3543329b368a87183c4"
+                    "checksumValue": "30d9c51110454922fccd94256a0c88cdebf4bf9b9595141976dadac933aadd66"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/python%403.14@3.14.8_1",
+                    "referenceLocator": "pkg:brew/python%403.14@3.14.8_2",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-rpds-py-2026.2e.9.2e.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-rpds-py-2026.2e.9.2e.1.5f.1",
                 "name": "rpds-py",
-                "versionInfo": "2026.9.1",
+                "versionInfo": "2026.9.1_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/rpds-py-2026.9.1.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/rpds-py-2026.9.1_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "5b8388b69e69b6ada5413d004552a8dababb0758ac68ce53996acd593672a74e"
+                    "checksumValue": "09fe96602a7e9d19ba7c6ec5b044b6ffe0d6e36b5bf202d323de29b191002a44"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/rpds-py@2026.9.1",
+                    "referenceLocator": "pkg:brew/rpds-py@2026.9.1_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -520,12 +520,12 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pycparser-3.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pycparser-3.2e.11",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ansible-lint"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-cffi-2.2e.1.2e.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cffi-2.2e.1.2e.1.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ansible-lint"
               },
@@ -540,7 +540,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-ansible-lint"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-cryptography-50.2e.0.2e.2.5f.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cryptography-50.2e.0.2e.2.5f.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ansible-lint"
               },
@@ -555,7 +555,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-ansible-lint"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ansible-lint"
               },
@@ -575,12 +575,12 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-ansible-lint"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ansible-lint"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-rpds-py-2026.2e.9.2e.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-rpds-py-2026.2e.9.2e.1.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ansible-lint"
               },
@@ -1439,12 +1439,12 @@
             "libexec/lib/python3.14/site-packages/ansible_compat/schema.py",
             "libexec/lib/python3.14/site-packages/ansible_compat/types.py",
             "libexec/lib/python3.14/site-packages/ansible_compat/utils.py",
-            "libexec/lib/python3.14/site-packages/ansible_compat-26.9.0.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/ansible_compat-26.9.0.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/ansible_compat-26.9.0.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/ansible_compat-26.9.0.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/ansible_compat-26.9.0.dist-info/licenses/LICENSE",
-            "libexec/lib/python3.14/site-packages/ansible_compat-26.9.0.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/ansible_compat-26.10.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/ansible_compat-26.10.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/ansible_compat-26.10.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/ansible_compat-26.10.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/ansible_compat-26.10.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/ansible_compat-26.10.0.dist-info/top_level.txt",
             "libexec/lib/python3.14/site-packages/ansible_core-2.21.5.dist-info/INSTALLER",
             "libexec/lib/python3.14/site-packages/ansible_core-2.21.5.dist-info/METADATA",
             "libexec/lib/python3.14/site-packages/ansible_core-2.21.5.dist-info/REQUESTED",
@@ -1457,13 +1457,13 @@
             "libexec/lib/python3.14/site-packages/ansible_core-2.21.5.dist-info/licenses/licenses/PSF-license.txt",
             "libexec/lib/python3.14/site-packages/ansible_core-2.21.5.dist-info/licenses/licenses/simplified_bsd.txt",
             "libexec/lib/python3.14/site-packages/ansible_core-2.21.5.dist-info/top_level.txt",
-            "libexec/lib/python3.14/site-packages/ansible_lint-26.9.0.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/ansible_lint-26.9.0.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/ansible_lint-26.9.0.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/ansible_lint-26.9.0.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/ansible_lint-26.9.0.dist-info/entry_points.txt",
-            "libexec/lib/python3.14/site-packages/ansible_lint-26.9.0.dist-info/licenses/COPYING",
-            "libexec/lib/python3.14/site-packages/ansible_lint-26.9.0.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.0.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.0.dist-info/licenses/COPYING",
+            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.0.dist-info/top_level.txt",
             "libexec/lib/python3.14/site-packages/ansible_test/__init__.py",
             "libexec/lib/python3.14/site-packages/ansible_test/_data/ansible.cfg",
             "libexec/lib/python3.14/site-packages/ansible_test/_data/completion/docker.txt",
@@ -1987,12 +1987,12 @@
             "libexec/lib/python3.14/site-packages/black/schema.py",
             "libexec/lib/python3.14/site-packages/black/strings.py",
             "libexec/lib/python3.14/site-packages/black/trans.py",
-            "libexec/lib/python3.14/site-packages/black-26.10.0.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/black-26.10.0.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/black-26.10.0.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/black-26.10.0.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/black-26.10.0.dist-info/entry_points.txt",
-            "libexec/lib/python3.14/site-packages/black-26.10.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/black-26.10.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/black-26.10.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/black-26.10.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/black-26.10.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/black-26.10.1.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/black-26.10.1.dist-info/licenses/LICENSE",
             "libexec/lib/python3.14/site-packages/blackd/__init__.py",
             "libexec/lib/python3.14/site-packages/blackd/__main__.py",
             "libexec/lib/python3.14/site-packages/blackd/client.py",
@@ -2017,11 +2017,11 @@
             "libexec/lib/python3.14/site-packages/bracex/__main__.py",
             "libexec/lib/python3.14/site-packages/bracex/__meta__.py",
             "libexec/lib/python3.14/site-packages/bracex/py.typed",
-            "libexec/lib/python3.14/site-packages/bracex-3.0.1.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/bracex-3.0.1.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/bracex-3.0.1.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/bracex-3.0.1.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/bracex-3.0.1.dist-info/licenses/LICENSE.md",
+            "libexec/lib/python3.14/site-packages/bracex-3.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/bracex-3.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/bracex-3.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/bracex-3.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/bracex-3.1.dist-info/licenses/LICENSE.md",
             "libexec/lib/python3.14/site-packages/click/__init__.py",
             "libexec/lib/python3.14/site-packages/click/_compat.py",
             "libexec/lib/python3.14/site-packages/click/_termui_impl.py",
@@ -2081,11 +2081,11 @@
             "libexec/lib/python3.14/site-packages/filelock/asyncio.py",
             "libexec/lib/python3.14/site-packages/filelock/py.typed",
             "libexec/lib/python3.14/site-packages/filelock/version.py",
-            "libexec/lib/python3.14/site-packages/filelock-4.0.12.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/filelock-4.0.12.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/filelock-4.0.12.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/filelock-4.0.12.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/filelock-4.0.12.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/filelock-4.1.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/filelock-4.1.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/filelock-4.1.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/filelock-4.1.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/filelock-4.1.1.dist-info/licenses/LICENSE",
             "libexec/lib/python3.14/site-packages/homebrew_deps.pth",
             "libexec/lib/python3.14/site-packages/jinja2/__init__.py",
             "libexec/lib/python3.14/site-packages/jinja2/_identifier.py",
@@ -2290,12 +2290,12 @@
             "libexec/lib/python3.14/site-packages/platformdirs/unix.py",
             "libexec/lib/python3.14/site-packages/platformdirs/version.py",
             "libexec/lib/python3.14/site-packages/platformdirs/windows.py",
-            "libexec/lib/python3.14/site-packages/platformdirs-4.12.3.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/platformdirs-4.12.3.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/platformdirs-4.12.3.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/platformdirs-4.12.3.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/platformdirs-4.12.3.dist-info/entry_points.txt",
-            "libexec/lib/python3.14/site-packages/platformdirs-4.12.3.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/platformdirs-4.13.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/platformdirs-4.13.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/platformdirs-4.13.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/platformdirs-4.13.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/platformdirs-4.13.0.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/platformdirs-4.13.0.dist-info/licenses/LICENSE",
             "libexec/lib/python3.14/site-packages/pytokens/__init__.cpython-314-darwin.so",
             "libexec/lib/python3.14/site-packages/pytokens/__init__.py",
             "libexec/lib/python3.14/site-packages/pytokens/__main__.py",
@@ -2410,11 +2410,11 @@
             "libexec/lib/python3.14/site-packages/wcmatch/py.typed",
             "libexec/lib/python3.14/site-packages/wcmatch/util.py",
             "libexec/lib/python3.14/site-packages/wcmatch/wcmatch.py",
-            "libexec/lib/python3.14/site-packages/wcmatch-11.0.1.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/wcmatch-11.0.1.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/wcmatch-11.0.1.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/wcmatch-11.0.1.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/wcmatch-11.0.1.dist-info/licenses/LICENSE.md",
+            "libexec/lib/python3.14/site-packages/wcmatch-11.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/wcmatch-11.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/wcmatch-11.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/wcmatch-11.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/wcmatch-11.1.dist-info/licenses/LICENSE.md",
             "libexec/lib/python3.14/site-packages/yaml/__init__.py",
             "libexec/lib/python3.14/site-packages/yaml/_yaml.cpython-314-darwin.so",
             "libexec/lib/python3.14/site-packages/yaml/composer.py",
@@ -2477,7 +2477,7 @@
             "libexec/pyvenv.cfg",
             "sbom.spdx.json"
           ],
-          "installed_size": 15197138
+          "installed_size": 15287461
         }
       }
     }

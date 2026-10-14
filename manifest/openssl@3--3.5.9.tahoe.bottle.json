@@ -2,10 +2,10 @@
   "openssl@3": {
     "formula": {
       "name": "openssl@3",
-      "pkg_version": "3.6.5",
+      "pkg_version": "3.5.9",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/o/openssl@3.rb",
       "tap_git_path": "Formula/o/openssl@3.rb",
-      "tap_git_revision": "4512b0f6f75400b709fd3e7ef6041f5148922401",
+      "tap_git_revision": "3e1d394deefe453628c971901bfb7fa17e406bf6",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Cryptography and SSL/TLS Toolkit",
       "license": "Apache-2.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-02T11:45:51Z",
+      "date": "2026-10-14T10:52:21Z",
       "tags": {
         "tahoe": {
-          "filename": "openssl%403-3.6.5.tahoe.bottle.tar.gz",
-          "local_filename": "openssl@3--3.6.5.tahoe.bottle.tar.gz",
-          "sha256": "9df24dab1c79c4c07958ee358ef146ebcd5b05d8180274c3db0075a28f34f7f6",
+          "filename": "openssl%403-3.5.9.tahoe.bottle.tar.gz",
+          "local_filename": "openssl@3--3.5.9.tahoe.bottle.tar.gz",
+          "sha256": "b64449ccacff48677022cd507581e5d436caf739544e483dfabe09130b2b8050",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [
               "bin/c_rehash",
               "lib/pkgconfig/libcrypto.pc",
@@ -42,7 +42,7 @@
               "lib/libcrypto.3.dylib",
               "lib/libcrypto.a"
             ],
-            "source_modified_time": 1790690250,
+            "source_modified_time": 1790690700,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -68,68 +68,68 @@
           "binary_relocation_diagnostics": [
             {
               "path": "lib/libcrypto.a",
-              "string": "/usr/local/Cellar/openssl@3/3.6.5/lib/engines-3",
-              "offset": 3877733
+              "string": "/usr/local/Cellar/openssl@3/3.5.9/lib/engines-3",
+              "offset": 3837325
             },
             {
               "path": "lib/libcrypto.a",
-              "string": "/usr/local/Cellar/openssl@3/3.6.5/lib/ossl-modules",
-              "offset": 3877781
+              "string": "/usr/local/Cellar/openssl@3/3.5.9/lib/ossl-modules",
+              "offset": 3837373
             },
             {
               "path": "lib/libcrypto.3.dylib",
-              "string": "/usr/local/Cellar/openssl@3/3.6.5/lib/engines-3",
-              "offset": 3251180
+              "string": "/usr/local/Cellar/openssl@3/3.5.9/lib/engines-3",
+              "offset": 3192597
             },
             {
               "path": "lib/libcrypto.3.dylib",
-              "string": "/usr/local/Cellar/openssl@3/3.6.5/lib/ossl-modules",
-              "offset": 3251228
+              "string": "/usr/local/Cellar/openssl@3/3.5.9/lib/ossl-modules",
+              "offset": 3192645
             },
             {
               "path": "lib/libcrypto.a",
               "string": "/usr/local/etc/openssl@3/ct_log_list.cnf",
-              "offset": 1813277
+              "offset": 1787893
             },
             {
               "path": "lib/libcrypto.a",
               "string": "/usr/local/etc/openssl@3",
-              "offset": 6677847
+              "offset": 6641399
             },
             {
               "path": "lib/libcrypto.a",
               "string": "/usr/local/etc/openssl@3/certs",
-              "offset": 6677872
+              "offset": 6641424
             },
             {
               "path": "lib/libcrypto.a",
               "string": "/usr/local/etc/openssl@3/cert.pem",
-              "offset": 6677903
+              "offset": 6641455
             },
             {
               "path": "lib/libcrypto.3.dylib",
               "string": "/usr/local/etc/openssl@3/ct_log_list.cnf",
-              "offset": 3209942
+              "offset": 3151168
             },
             {
               "path": "lib/libcrypto.3.dylib",
               "string": "/usr/local/etc/openssl@3",
-              "offset": 3251155
+              "offset": 3192572
             },
             {
               "path": "lib/libcrypto.3.dylib",
               "string": "/usr/local/etc/openssl@3/private",
-              "offset": 3340487
+              "offset": 3282505
             },
             {
               "path": "lib/libcrypto.3.dylib",
               "string": "/usr/local/etc/openssl@3/certs",
-              "offset": 3340520
+              "offset": 3282538
             },
             {
               "path": "lib/libcrypto.3.dylib",
               "string": "/usr/local/etc/openssl@3/cert.pem",
-              "offset": 3340551
+              "offset": 3282569
             }
           ],
           "sbom": {
@@ -178,12 +178,12 @@
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openssl@3"
+                "relatedSpdxElement": "SPDXRef-Bottle-openssl.40.3"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-openssl@3-src"
+                "relatedSpdxElement": "SPDXRef-Archive-openssl.40.3-src"
               }
             ]
           },
@@ -366,7 +366,6 @@
             "share/doc/openssl/html/man1/openssl-cmds.html",
             "share/doc/openssl/html/man1/openssl-cmp.html",
             "share/doc/openssl/html/man1/openssl-cms.html",
-            "share/doc/openssl/html/man1/openssl-configutl.html",
             "share/doc/openssl/html/man1/openssl-crl.html",
             "share/doc/openssl/html/man1/openssl-crl2pkcs7.html",
             "share/doc/openssl/html/man1/openssl-dgst.html",
@@ -1172,7 +1171,6 @@
             "share/doc/openssl/html/man7/EVP_PKEY-EC.html",
             "share/doc/openssl/html/man7/EVP_PKEY-FFC.html",
             "share/doc/openssl/html/man7/EVP_PKEY-HMAC.html",
-            "share/doc/openssl/html/man7/EVP_PKEY-LMS.html",
             "share/doc/openssl/html/man7/EVP_PKEY-ML-DSA.html",
             "share/doc/openssl/html/man7/EVP_PKEY-ML-KEM.html",
             "share/doc/openssl/html/man7/EVP_PKEY-RSA.html",
@@ -1191,7 +1189,6 @@
             "share/doc/openssl/html/man7/EVP_SIGNATURE-ECDSA.html",
             "share/doc/openssl/html/man7/EVP_SIGNATURE-ED25519.html",
             "share/doc/openssl/html/man7/EVP_SIGNATURE-HMAC.html",
-            "share/doc/openssl/html/man7/EVP_SIGNATURE-LMS.html",
             "share/doc/openssl/html/man7/EVP_SIGNATURE-ML-DSA.html",
             "share/doc/openssl/html/man7/EVP_SIGNATURE-RSA.html",
             "share/doc/openssl/html/man7/EVP_SIGNATURE-SLH-DSA.html",
@@ -1301,7 +1298,6 @@
             "share/man/man1/openssl-cmds.1ssl",
             "share/man/man1/openssl-cmp.1ssl",
             "share/man/man1/openssl-cms.1ssl",
-            "share/man/man1/openssl-configutl.1ssl",
             "share/man/man1/openssl-crl.1ssl",
             "share/man/man1/openssl-crl2pkcs7.1ssl",
             "share/man/man1/openssl-dgst.1ssl",
@@ -2032,16 +2028,10 @@
             "share/man/man3/CMS_ReceiptRequest_new.3ssl",
             "share/man/man3/CMS_RecipientInfo_decrypt.3ssl",
             "share/man/man3/CMS_RecipientInfo_encrypt.3ssl",
-            "share/man/man3/CMS_RecipientInfo_kari_get0_ctx.3ssl",
             "share/man/man3/CMS_RecipientInfo_kari_set0_pkey.3ssl",
             "share/man/man3/CMS_RecipientInfo_kari_set0_pkey_and_peer.3ssl",
             "share/man/man3/CMS_RecipientInfo_kekri_get0_id.3ssl",
             "share/man/man3/CMS_RecipientInfo_kekri_id_cmp.3ssl",
-            "share/man/man3/CMS_RecipientInfo_kemri_cert_cmp.3ssl",
-            "share/man/man3/CMS_RecipientInfo_kemri_get0_ctx.3ssl",
-            "share/man/man3/CMS_RecipientInfo_kemri_get0_kdf_alg.3ssl",
-            "share/man/man3/CMS_RecipientInfo_kemri_set0_pkey.3ssl",
-            "share/man/man3/CMS_RecipientInfo_kemri_set_ukm.3ssl",
             "share/man/man3/CMS_RecipientInfo_ktri_cert_cmp.3ssl",
             "share/man/man3/CMS_RecipientInfo_ktri_get0_signer_id.3ssl",
             "share/man/man3/CMS_RecipientInfo_set0_key.3ssl",
@@ -2146,7 +2136,6 @@
             "share/man/man3/CRYPTO_THREAD_unlock.3ssl",
             "share/man/man3/CRYPTO_THREAD_write_lock.3ssl",
             "share/man/man3/CRYPTO_aligned_alloc.3ssl",
-            "share/man/man3/CRYPTO_aligned_alloc_array.3ssl",
             "share/man/man3/CRYPTO_alloc_ex_data.3ssl",
             "share/man/man3/CRYPTO_atomic_add.3ssl",
             "share/man/man3/CRYPTO_atomic_add64.3ssl",
@@ -2155,10 +2144,8 @@
             "share/man/man3/CRYPTO_atomic_load_int.3ssl",
             "share/man/man3/CRYPTO_atomic_or.3ssl",
             "share/man/man3/CRYPTO_atomic_store.3ssl",
-            "share/man/man3/CRYPTO_calloc.3ssl",
             "share/man/man3/CRYPTO_clear_free.3ssl",
             "share/man/man3/CRYPTO_clear_realloc.3ssl",
-            "share/man/man3/CRYPTO_clear_realloc_array.3ssl",
             "share/man/man3/CRYPTO_free.3ssl",
             "share/man/man3/CRYPTO_free_ex_data.3ssl",
             "share/man/man3/CRYPTO_free_ex_index.3ssl",
@@ -2168,7 +2155,6 @@
             "share/man/man3/CRYPTO_get_ex_new_index.3ssl",
             "share/man/man3/CRYPTO_get_mem_functions.3ssl",
             "share/man/man3/CRYPTO_malloc.3ssl",
-            "share/man/man3/CRYPTO_malloc_array.3ssl",
             "share/man/man3/CRYPTO_malloc_fn.3ssl",
             "share/man/man3/CRYPTO_mem_ctrl.3ssl",
             "share/man/man3/CRYPTO_mem_debug_pop.3ssl",
@@ -2177,18 +2163,13 @@
             "share/man/man3/CRYPTO_mem_leaks_cb.3ssl",
             "share/man/man3/CRYPTO_mem_leaks_fp.3ssl",
             "share/man/man3/CRYPTO_memcmp.3ssl",
-            "share/man/man3/CRYPTO_memdup.3ssl",
             "share/man/man3/CRYPTO_new_ex_data.3ssl",
             "share/man/man3/CRYPTO_realloc.3ssl",
-            "share/man/man3/CRYPTO_realloc_array.3ssl",
             "share/man/man3/CRYPTO_realloc_fn.3ssl",
-            "share/man/man3/CRYPTO_secure_actual_size.3ssl",
             "share/man/man3/CRYPTO_secure_allocated.3ssl",
-            "share/man/man3/CRYPTO_secure_calloc.3ssl",
             "share/man/man3/CRYPTO_secure_clear_free.3ssl",
             "share/man/man3/CRYPTO_secure_free.3ssl",
             "share/man/man3/CRYPTO_secure_malloc.3ssl",
-            "share/man/man3/CRYPTO_secure_malloc_array.3ssl",
             "share/man/man3/CRYPTO_secure_malloc_done.3ssl",
             "share/man/man3/CRYPTO_secure_malloc_init.3ssl",
             "share/man/man3/CRYPTO_secure_malloc_initialized.3ssl",
@@ -2917,11 +2898,9 @@
             "share/man/man3/EVP_KDF_CTX_kdf.3ssl",
             "share/man/man3/EVP_KDF_CTX_new.3ssl",
             "share/man/man3/EVP_KDF_CTX_reset.3ssl",
-            "share/man/man3/EVP_KDF_CTX_set_SKEY.3ssl",
             "share/man/man3/EVP_KDF_CTX_set_params.3ssl",
             "share/man/man3/EVP_KDF_CTX_settable_params.3ssl",
             "share/man/man3/EVP_KDF_derive.3ssl",
-            "share/man/man3/EVP_KDF_derive_SKEY.3ssl",
             "share/man/man3/EVP_KDF_do_all_provided.3ssl",
             "share/man/man3/EVP_KDF_fetch.3ssl",
             "share/man/man3/EVP_KDF_free.3ssl",
@@ -3265,7 +3244,6 @@
             "share/man/man3/EVP_PKEY_decrypt_init_ex.3ssl",
             "share/man/man3/EVP_PKEY_delete_attr.3ssl",
             "share/man/man3/EVP_PKEY_derive.3ssl",
-            "share/man/man3/EVP_PKEY_derive_SKEY.3ssl",
             "share/man/man3/EVP_PKEY_derive_init.3ssl",
             "share/man/man3/EVP_PKEY_derive_init_ex.3ssl",
             "share/man/man3/EVP_PKEY_derive_set_peer.3ssl",
@@ -3325,7 +3303,6 @@
             "share/man/man3/EVP_PKEY_get_raw_private_key.3ssl",
             "share/man/man3/EVP_PKEY_get_raw_public_key.3ssl",
             "share/man/man3/EVP_PKEY_get_security_bits.3ssl",
-            "share/man/man3/EVP_PKEY_get_security_category.3ssl",
             "share/man/man3/EVP_PKEY_get_size.3ssl",
             "share/man/man3/EVP_PKEY_get_size_t_param.3ssl",
             "share/man/man3/EVP_PKEY_get_utf8_string_param.3ssl",
@@ -3519,7 +3496,6 @@
             "share/man/man3/EVP_SKEY_get0_raw_key.3ssl",
             "share/man/man3/EVP_SKEY_get0_skeymgmt_name.3ssl",
             "share/man/man3/EVP_SKEY_import.3ssl",
-            "share/man/man3/EVP_SKEY_import_SKEYMGMT.3ssl",
             "share/man/man3/EVP_SKEY_import_raw_key.3ssl",
             "share/man/man3/EVP_SKEY_is_a.3ssl",
             "share/man/man3/EVP_SKEY_to_provider.3ssl",
@@ -3959,7 +3935,6 @@
             "share/man/man3/OPENSSL_LINE.3ssl",
             "share/man/man3/OPENSSL_MALLOC_FAILURES.3ssl",
             "share/man/man3/OPENSSL_MALLOC_FD.3ssl",
-            "share/man/man3/OPENSSL_MALLOC_SEED.3ssl",
             "share/man/man3/OPENSSL_MSTR.3ssl",
             "share/man/man3/OPENSSL_MSTR_HELPER.3ssl",
             "share/man/man3/OPENSSL_VERSION_BUILD_METADATA.3ssl",
@@ -3971,18 +3946,15 @@
             "share/man/man3/OPENSSL_VERSION_PRE_RELEASE.3ssl",
             "share/man/man3/OPENSSL_VERSION_TEXT.3ssl",
             "share/man/man3/OPENSSL_aligned_alloc.3ssl",
-            "share/man/man3/OPENSSL_aligned_alloc_array.3ssl",
             "share/man/man3/OPENSSL_armcap.3ssl",
             "share/man/man3/OPENSSL_atexit.3ssl",
             "share/man/man3/OPENSSL_buf2hexstr.3ssl",
             "share/man/man3/OPENSSL_buf2hexstr_ex.3ssl",
-            "share/man/man3/OPENSSL_calloc.3ssl",
             "share/man/man3/OPENSSL_cipher_name.3ssl",
             "share/man/man3/OPENSSL_cleanse.3ssl",
             "share/man/man3/OPENSSL_cleanup.3ssl",
             "share/man/man3/OPENSSL_clear_free.3ssl",
             "share/man/man3/OPENSSL_clear_realloc.3ssl",
-            "share/man/man3/OPENSSL_clear_realloc_array.3ssl",
             "share/man/man3/OPENSSL_config.3ssl",
             "share/man/man3/OPENSSL_fork_child.3ssl",
             "share/man/man3/OPENSSL_fork_parent.3ssl",
@@ -4008,7 +3980,6 @@
             "share/man/man3/OPENSSL_load_u64_be.3ssl",
             "share/man/man3/OPENSSL_load_u64_le.3ssl",
             "share/man/man3/OPENSSL_malloc.3ssl",
-            "share/man/man3/OPENSSL_malloc_array.3ssl",
             "share/man/man3/OPENSSL_malloc_init.3ssl",
             "share/man/man3/OPENSSL_mem_debug_pop.3ssl",
             "share/man/man3/OPENSSL_mem_debug_push.3ssl",
@@ -4016,15 +3987,12 @@
             "share/man/man3/OPENSSL_no_config.3ssl",
             "share/man/man3/OPENSSL_ppccap.3ssl",
             "share/man/man3/OPENSSL_realloc.3ssl",
-            "share/man/man3/OPENSSL_realloc_array.3ssl",
             "share/man/man3/OPENSSL_riscvcap.3ssl",
             "share/man/man3/OPENSSL_s390xcap.3ssl",
             "share/man/man3/OPENSSL_secure_actual_size.3ssl",
-            "share/man/man3/OPENSSL_secure_calloc.3ssl",
             "share/man/man3/OPENSSL_secure_clear_free.3ssl",
             "share/man/man3/OPENSSL_secure_free.3ssl",
             "share/man/man3/OPENSSL_secure_malloc.3ssl",
-            "share/man/man3/OPENSSL_secure_malloc_array.3ssl",
             "share/man/man3/OPENSSL_secure_zalloc.3ssl",
             "share/man/man3/OPENSSL_sk_deep_copy.3ssl",
             "share/man/man3/OPENSSL_sk_delete.3ssl",
@@ -4046,7 +4014,6 @@
             "share/man/man3/OPENSSL_sk_reserve.3ssl",
             "share/man/man3/OPENSSL_sk_set.3ssl",
             "share/man/man3/OPENSSL_sk_set_cmp_func.3ssl",
-            "share/man/man3/OPENSSL_sk_set_thunks.3ssl",
             "share/man/man3/OPENSSL_sk_shift.3ssl",
             "share/man/man3/OPENSSL_sk_sort.3ssl",
             "share/man/man3/OPENSSL_sk_unshift.3ssl",
@@ -4664,7 +4631,6 @@
             "share/man/man3/OSSL_PARAM_set_long.3ssl",
             "share/man/man3/OSSL_PARAM_set_octet_ptr.3ssl",
             "share/man/man3/OSSL_PARAM_set_octet_string.3ssl",
-            "share/man/man3/OSSL_PARAM_set_octet_string_or_ptr.3ssl",
             "share/man/man3/OSSL_PARAM_set_size_t.3ssl",
             "share/man/man3/OSSL_PARAM_set_time_t.3ssl",
             "share/man/man3/OSSL_PARAM_set_uint.3ssl",
@@ -4797,7 +4763,6 @@
             "share/man/man3/OSSL_STORE_LOADER_set_load.3ssl",
             "share/man/man3/OSSL_STORE_LOADER_set_open.3ssl",
             "share/man/man3/OSSL_STORE_LOADER_set_open_ex.3ssl",
-            "share/man/man3/OSSL_STORE_LOADER_settable_ctx_params.3ssl",
             "share/man/man3/OSSL_STORE_LOADER_up_ref.3ssl",
             "share/man/man3/OSSL_STORE_SEARCH.3ssl",
             "share/man/man3/OSSL_STORE_SEARCH_by_alias.3ssl",
@@ -5470,9 +5435,7 @@
             "share/man/man3/SRP_user_pwd_set1_ids.3ssl",
             "share/man/man3/SRP_user_pwd_set_gN.3ssl",
             "share/man/man3/SSL_ACCEPT_CONNECTION_NO_BLOCK.3ssl",
-            "share/man/man3/SSL_ACCEPT_STREAM_BIDI.3ssl",
             "share/man/man3/SSL_ACCEPT_STREAM_NO_BLOCK.3ssl",
-            "share/man/man3/SSL_ACCEPT_STREAM_UNI.3ssl",
             "share/man/man3/SSL_CIPHER_description.3ssl",
             "share/man/man3/SSL_CIPHER_find.3ssl",
             "share/man/man3/SSL_CIPHER_get_auth_nid.3ssl",
@@ -5943,7 +5906,6 @@
             "share/man/man3/SSL_get0_server_cert_type.3ssl",
             "share/man/man3/SSL_get0_session.3ssl",
             "share/man/man3/SSL_get0_signature_name.3ssl",
-            "share/man/man3/SSL_get0_tlsext_status_ocsp_resp_ex.3ssl",
             "share/man/man3/SSL_get0_verified_chain.3ssl",
             "share/man/man3/SSL_get0_verify_cert_store.3ssl",
             "share/man/man3/SSL_get1_builtin_sigalgs.3ssl",
@@ -6128,7 +6090,6 @@
             "share/man/man3/SSL_set0_chain_cert_store.3ssl",
             "share/man/man3/SSL_set0_rbio.3ssl",
             "share/man/man3/SSL_set0_security_ex_data.3ssl",
-            "share/man/man3/SSL_set0_tlsext_status_ocsp_resp_ex.3ssl",
             "share/man/man3/SSL_set0_tmp_dh_pkey.3ssl",
             "share/man/man3/SSL_set0_verify_cert_store.3ssl",
             "share/man/man3/SSL_set0_wbio.3ssl",
@@ -6506,7 +6467,6 @@
             "share/man/man3/X509_CRL_get0_lastUpdate.3ssl",
             "share/man/man3/X509_CRL_get0_nextUpdate.3ssl",
             "share/man/man3/X509_CRL_get0_signature.3ssl",
-            "share/man/man3/X509_CRL_get0_tbs_sigalg.3ssl",
             "share/man/man3/X509_CRL_get_REVOKED.3ssl",
             "share/man/man3/X509_CRL_get_ext.3ssl",
             "share/man/man3/X509_CRL_get_ext_by_NID.3ssl",
@@ -6774,7 +6734,6 @@
             "share/man/man3/X509_STORE_CTX_set_error_depth.3ssl",
             "share/man/man3/X509_STORE_CTX_set_ex_data.3ssl",
             "share/man/man3/X509_STORE_CTX_set_get_crl.3ssl",
-            "share/man/man3/X509_STORE_CTX_set_ocsp_resp.3ssl",
             "share/man/man3/X509_STORE_CTX_set_purpose.3ssl",
             "share/man/man3/X509_STORE_CTX_set_trust.3ssl",
             "share/man/man3/X509_STORE_CTX_set_verify.3ssl",
@@ -7433,7 +7392,6 @@
             "share/man/man3/i2d_PKCS7_bio.3ssl",
             "share/man/man3/i2d_PKCS7_bio_stream.3ssl",
             "share/man/man3/i2d_PKCS7_fp.3ssl",
-            "share/man/man3/i2d_PKCS8PrivateKey.3ssl",
             "share/man/man3/i2d_PKCS8PrivateKeyInfo_bio.3ssl",
             "share/man/man3/i2d_PKCS8PrivateKeyInfo_fp.3ssl",
             "share/man/man3/i2d_PKCS8PrivateKey_bio.3ssl",
@@ -7633,7 +7591,6 @@
             "share/man/man7/EVP_KEYMGMT-ED25519.7ssl",
             "share/man/man7/EVP_KEYMGMT-ED448.7ssl",
             "share/man/man7/EVP_KEYMGMT-HMAC.7ssl",
-            "share/man/man7/EVP_KEYMGMT-LMS.7ssl",
             "share/man/man7/EVP_KEYMGMT-ML-DSA.7ssl",
             "share/man/man7/EVP_KEYMGMT-ML-KEM-1024.7ssl",
             "share/man/man7/EVP_KEYMGMT-ML-KEM-512.7ssl",
@@ -7683,7 +7640,6 @@
             "share/man/man7/EVP_PKEY-ED448.7ssl",
             "share/man/man7/EVP_PKEY-FFC.7ssl",
             "share/man/man7/EVP_PKEY-HMAC.7ssl",
-            "share/man/man7/EVP_PKEY-LMS.7ssl",
             "share/man/man7/EVP_PKEY-ML-DSA-44.7ssl",
             "share/man/man7/EVP_PKEY-ML-DSA-65.7ssl",
             "share/man/man7/EVP_PKEY-ML-DSA-87.7ssl",
@@ -7725,7 +7681,6 @@
             "share/man/man7/EVP_SIGNATURE-ED25519.7ssl",
             "share/man/man7/EVP_SIGNATURE-ED448.7ssl",
             "share/man/man7/EVP_SIGNATURE-HMAC.7ssl",
-            "share/man/man7/EVP_SIGNATURE-LMS.7ssl",
             "share/man/man7/EVP_SIGNATURE-ML-DSA-44.7ssl",
             "share/man/man7/EVP_SIGNATURE-ML-DSA-65.7ssl",
             "share/man/man7/EVP_SIGNATURE-ML-DSA-87.7ssl",
@@ -7748,7 +7703,6 @@
             "share/man/man7/EVP_SIGNATURE-Siphash.7ssl",
             "share/man/man7/Ed25519.7ssl",
             "share/man/man7/Ed448.7ssl",
-            "share/man/man7/LMS.7ssl",
             "share/man/man7/OPENSSL_API_COMPAT.7ssl",
             "share/man/man7/OPENSSL_NO_DEPRECATED.7ssl",
             "share/man/man7/OSSL_PROVIDER-FIPS.7ssl",
@@ -7826,7 +7780,7 @@
             "share/man/man7/ssl.7ssl",
             "share/man/man7/x509.7ssl"
           ],
-          "installed_size": 38264849
+          "installed_size": 37840515
         }
       }
     }
