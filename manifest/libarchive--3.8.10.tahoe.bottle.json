@@ -1,0 +1,280 @@
+{
+  "libarchive": {
+    "formula": {
+      "name": "libarchive",
+      "pkg_version": "3.8.10",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libarchive.rb",
+      "tap_git_path": "Formula/lib/libarchive.rb",
+      "tap_git_revision": "d11f73f01ecb919029d5f418f2b37554891f79ad",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Multi-format archive and compression library",
+      "license": "BSD-2-Clause",
+      "homepage": "https://www.libarchive.org"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-15T10:31:51Z",
+      "tags": {
+        "tahoe": {
+          "filename": "libarchive-3.8.10.tahoe.bottle.tar.gz",
+          "local_filename": "libarchive--3.8.10.tahoe.bottle.tar.gz",
+          "sha256": "ef92eeb9015752a1479d578095666d7b1cafbf978c7a42f432384f43afc3509a",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "lib/pkgconfig/libarchive.pc"
+            ],
+            "linkage_files": [
+              "bin/bsdcat",
+              "bin/bsdcpio",
+              "bin/bsdtar",
+              "bin/bsdunzip",
+              "lib/libarchive.13.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1791968528,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libb2",
+                "version": "0.98.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.98.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.10.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xz-5.8.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54a648c4197b0299ee2d37527ca6a23447abe65342f8f8c0ed68e154f4593b0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libarchive"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libarchive"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libarchive"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libarchive-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/bsdcpio",
+            "bin/bsdunzip",
+            "bin/bsdtar",
+            "bin/bsdcat",
+            "bin/tar",
+            "bin/cpio"
+          ],
+          "all_files": [
+            ".brew/libarchive.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README.md",
+            "bin/bsdcat",
+            "bin/bsdcpio",
+            "bin/bsdtar",
+            "bin/bsdunzip",
+            "bin/cpio",
+            "bin/tar",
+            "include/archive.h",
+            "include/archive_entry.h",
+            "lib/libarchive.13.dylib",
+            "lib/libarchive.a",
+            "lib/libarchive.dylib",
+            "lib/pkgconfig/libarchive.pc",
+            "sbom.spdx.json",
+            "share/man/man1/bsdcat.1",
+            "share/man/man1/bsdcpio.1",
+            "share/man/man1/bsdtar.1",
+            "share/man/man1/bsdunzip.1",
+            "share/man/man1/cpio.1",
+            "share/man/man1/tar.1",
+            "share/man/man3/archive_entry.3",
+            "share/man/man3/archive_entry_acl.3",
+            "share/man/man3/archive_entry_linkify.3",
+            "share/man/man3/archive_entry_misc.3",
+            "share/man/man3/archive_entry_paths.3",
+            "share/man/man3/archive_entry_perms.3",
+            "share/man/man3/archive_entry_stat.3",
+            "share/man/man3/archive_entry_time.3",
+            "share/man/man3/archive_read.3",
+            "share/man/man3/archive_read_add_passphrase.3",
+            "share/man/man3/archive_read_data.3",
+            "share/man/man3/archive_read_disk.3",
+            "share/man/man3/archive_read_extract.3",
+            "share/man/man3/archive_read_filter.3",
+            "share/man/man3/archive_read_format.3",
+            "share/man/man3/archive_read_free.3",
+            "share/man/man3/archive_read_header.3",
+            "share/man/man3/archive_read_new.3",
+            "share/man/man3/archive_read_open.3",
+            "share/man/man3/archive_read_set_options.3",
+            "share/man/man3/archive_util.3",
+            "share/man/man3/archive_write.3",
+            "share/man/man3/archive_write_blocksize.3",
+            "share/man/man3/archive_write_data.3",
+            "share/man/man3/archive_write_disk.3",
+            "share/man/man3/archive_write_filter.3",
+            "share/man/man3/archive_write_finish_entry.3",
+            "share/man/man3/archive_write_format.3",
+            "share/man/man3/archive_write_free.3",
+            "share/man/man3/archive_write_header.3",
+            "share/man/man3/archive_write_new.3",
+            "share/man/man3/archive_write_open.3",
+            "share/man/man3/archive_write_set_options.3",
+            "share/man/man3/archive_write_set_passphrase.3",
+            "share/man/man3/libarchive.3",
+            "share/man/man3/libarchive_changes.3",
+            "share/man/man3/libarchive_internals.3",
+            "share/man/man5/cpio.5",
+            "share/man/man5/libarchive-formats.5",
+            "share/man/man5/mtree.5",
+            "share/man/man5/tar.5"
+          ],
+          "installed_size": 3962939
+        }
+      }
+    }
+  }
+}

@@ -1,38 +1,40 @@
 {
-  "simdjson": {
+  "gitlab-runner": {
     "formula": {
-      "name": "simdjson",
-      "pkg_version": "5.0.4",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/simdjson.rb",
-      "tap_git_path": "Formula/s/simdjson.rb",
-      "tap_git_revision": "107085e285d8190d170f9f802ec6105368032b64",
+      "name": "gitlab-runner",
+      "pkg_version": "19.5.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gitlab-runner.rb",
+      "tap_git_path": "Formula/g/gitlab-runner.rb",
+      "tap_git_revision": "d11f73f01ecb919029d5f418f2b37554891f79ad",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
-      "desc": "SIMD-accelerated C++ JSON parser",
-      "license": "Apache-2.0",
-      "homepage": "https://simdjson.org"
+      "desc": "Official GitLab CI runner",
+      "license": "MIT",
+      "homepage": "https://gitlab.com/gitlab-org/gitlab-runner"
     },
     "bottle": {
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
-      "cellar": "any",
+      "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-13T13:01:24Z",
+      "date": "2026-10-15T10:31:09Z",
       "tags": {
         "tahoe": {
-          "filename": "simdjson-5.0.4.tahoe.bottle.tar.gz",
-          "local_filename": "simdjson--5.0.4.tahoe.bottle.tar.gz",
-          "sha256": "3384aca0abac055bd4ab8abde61db92d269f0382066fbe4b353168f00779b4ce",
+          "filename": "gitlab-runner-19.5.0.tahoe.bottle.tar.gz",
+          "local_filename": "gitlab-runner--19.5.0.tahoe.bottle.tar.gz",
+          "sha256": "151cf3be2d8d505edbd81cff5f13dfde6510c74fcf6d2b50ad2ed6e5e174f96e",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [
-              "lib/pkgconfig/simdjson.pc"
+              "sh.brew.gitlab-runner.plist",
+              "sh.brew.gitlab-runner.service"
             ],
-            "linkage_files": [
-              "lib/libsimdjson.34.0.0.dylib"
-            ],
+            "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1791813918,
+            "source_modified_time": 1792000345,
             "compiler": "clang",
             "runtime_dependencies": [],
+            "source": {
+              "scm_revision": "70f5c12dad80bfd8ab426843f38cae72fddc4e75"
+            },
             "arch": "x86_64",
             "built_on": {
               "os": "Macintosh",
@@ -66,33 +68,26 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-simdjson-src"
+                "relatedSpdxElement": "SPDXRef-Archive-gitlab-runner-src"
               }
             ]
           },
-          "path_exec_files": [],
+          "path_exec_files": [
+            "bin/gitlab-runner"
+          ],
           "all_files": [
-            ".brew/simdjson.rb",
-            "AUTHORS",
+            ".brew/gitlab-runner.rb",
+            "CHANGELOG.md",
             "INSTALL_RECEIPT.json",
             "LICENSE",
-            "LICENSE-MIT",
+            "NOTICE",
             "README.md",
-            "include/simdjson.h",
-            "lib/cmake/simdjson/simdjson-config-version.cmake",
-            "lib/cmake/simdjson/simdjson-config.cmake",
-            "lib/cmake/simdjson/simdjsonTargets-release.cmake",
-            "lib/cmake/simdjson/simdjsonTargets.cmake",
-            "lib/cmake/simdjson/simdjson_staticTargets-release.cmake",
-            "lib/cmake/simdjson/simdjson_staticTargets.cmake",
-            "lib/libsimdjson.34.0.0.dylib",
-            "lib/libsimdjson.34.dylib",
-            "lib/libsimdjson.dylib",
-            "lib/libsimdjson_static.a",
-            "lib/pkgconfig/simdjson.pc",
-            "sbom.spdx.json"
+            "bin/gitlab-runner",
+            "sbom.spdx.json",
+            "sh.brew.gitlab-runner.plist",
+            "sh.brew.gitlab-runner.service"
           ],
-          "installed_size": 11041820
+          "installed_size": 119297049
         }
       }
     }

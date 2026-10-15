@@ -2,10 +2,10 @@
   "ansible-lint": {
     "formula": {
       "name": "ansible-lint",
-      "pkg_version": "26.10.0",
+      "pkg_version": "26.10.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/ansible-lint.rb",
       "tap_git_path": "Formula/a/ansible-lint.rb",
-      "tap_git_revision": "3e1d394deefe453628c971901bfb7fa17e406bf6",
+      "tap_git_revision": "d11f73f01ecb919029d5f418f2b37554891f79ad",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Checks ansible playbooks for practices and behaviour",
       "license": "MIT AND GPL-3.0-or-later",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-14T11:15:42Z",
+      "date": "2026-10-15T10:44:28Z",
       "tags": {
         "tahoe": {
-          "filename": "ansible-lint-26.10.0.tahoe.bottle.tar.gz",
-          "local_filename": "ansible-lint--26.10.0.tahoe.bottle.tar.gz",
-          "sha256": "fd55b6a7df4544ad105789e9eedba7dba10a022c731bdd19b8be8fff05eb497b",
+          "filename": "ansible-lint-26.10.1.tahoe.bottle.tar.gz",
+          "local_filename": "ansible-lint--26.10.1.tahoe.bottle.tar.gz",
+          "sha256": "bf045f208ccfd738c2a83789a9fe134f14b34eabd5b9125ba03332f93a133dd0",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [
@@ -49,7 +49,7 @@
               "libexec/lib/python3.14/site-packages/yaml/_yaml.cpython-314-darwin.so"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1791796218,
+            "source_modified_time": 1791895508,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -1457,13 +1457,13 @@
             "libexec/lib/python3.14/site-packages/ansible_core-2.21.5.dist-info/licenses/licenses/PSF-license.txt",
             "libexec/lib/python3.14/site-packages/ansible_core-2.21.5.dist-info/licenses/licenses/simplified_bsd.txt",
             "libexec/lib/python3.14/site-packages/ansible_core-2.21.5.dist-info/top_level.txt",
-            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.0.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.0.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.0.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.0.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.0.dist-info/entry_points.txt",
-            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.0.dist-info/licenses/COPYING",
-            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.0.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.1.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.1.dist-info/licenses/COPYING",
+            "libexec/lib/python3.14/site-packages/ansible_lint-26.10.1.dist-info/top_level.txt",
             "libexec/lib/python3.14/site-packages/ansible_test/__init__.py",
             "libexec/lib/python3.14/site-packages/ansible_test/_data/ansible.cfg",
             "libexec/lib/python3.14/site-packages/ansible_test/_data/completion/docker.txt",

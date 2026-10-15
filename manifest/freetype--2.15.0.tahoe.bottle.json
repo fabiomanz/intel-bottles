@@ -2,10 +2,10 @@
   "freetype": {
     "formula": {
       "name": "freetype",
-      "pkg_version": "2.14.3",
+      "pkg_version": "2.15.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/f/freetype.rb",
       "tap_git_path": "Formula/f/freetype.rb",
-      "tap_git_revision": "c949465655d38fac5a5f5fd6cfa7cfd784c1ac5d",
+      "tap_git_revision": "d11f73f01ecb919029d5f418f2b37554891f79ad",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Software library to render fonts",
       "license": "FTL",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-09T12:14:05Z",
+      "date": "2026-10-15T10:22:27Z",
       "tags": {
         "tahoe": {
-          "filename": "freetype-2.14.3.tahoe.bottle.tar.gz",
-          "local_filename": "freetype--2.14.3.tahoe.bottle.tar.gz",
-          "sha256": "a8a2bcc65a1d21adba6797d59f4ab1c91b0a40c53aae2794b4f94780e7379837",
+          "filename": "freetype-2.15.0.tahoe.bottle.tar.gz",
+          "local_filename": "freetype--2.15.0.tahoe.bottle.tar.gz",
+          "sha256": "df5ad00e9d611b80d19df81741a935c2d9bceef6feb79b4c322dda96507d5d36",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [
@@ -31,7 +31,7 @@
               "lib/libfreetype.6.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1774192254,
+            "source_modified_time": 1791751642,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -192,7 +192,7 @@
             "share/aclocal/freetype2.m4",
             "share/man/man1/freetype-config.1"
           ],
-          "installed_size": 2813610
+          "installed_size": 2949878
         }
       }
     }
