@@ -2,10 +2,10 @@
   "imagemagick": {
     "formula": {
       "name": "imagemagick",
-      "pkg_version": "7.1.2-33",
+      "pkg_version": "7.1.2-34",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/i/imagemagick.rb",
       "tap_git_path": "Formula/i/imagemagick.rb",
-      "tap_git_revision": "ce519c7921c7cf6fef2ba8cafc68be28ca0a39e4",
+      "tap_git_revision": "c149dea2722e15d74403c8b68602f80862a3ea60",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Tools and libraries to manipulate images in select formats",
       "license": "ImageMagick",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-11T12:02:50Z",
+      "date": "2026-10-15T11:06:41Z",
       "tags": {
         "tahoe": {
-          "filename": "imagemagick-7.1.2-33.tahoe.bottle.tar.gz",
-          "local_filename": "imagemagick--7.1.2-33.tahoe.bottle.tar.gz",
-          "sha256": "54004d692387bcfff8de01fc170adbf2944f3b7a3fdbeb9b3eb2cafd66085189",
+          "filename": "imagemagick-7.1.2-34.tahoe.bottle.tar.gz",
+          "local_filename": "imagemagick--7.1.2-34.tahoe.bottle.tar.gz",
+          "sha256": "c1d577992fd91bf63cbce955864272958b23f34f88921ec29f5565d00082a9c5",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [
@@ -328,7 +328,7 @@
               "lib/libMagickCore-7.Q16HDRI.10.dylib",
               "lib/libMagickCore-7.Q16HDRI.a"
             ],
-            "source_modified_time": 1791639371,
+            "source_modified_time": 1792009719,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -351,10 +351,10 @@
               },
               {
                 "full_name": "freetype",
-                "version": "2.14.3",
+                "version": "2.15.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.14.3",
+                "pkg_version": "2.15.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -505,79 +505,79 @@
           "binary_relocation_diagnostics": [
             {
               "path": "lib/libMagickCore-7.Q16HDRI.10.dylib",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-33/share/ImageMagick-7/",
-              "offset": 1486316
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/share/ImageMagick-7/",
+              "offset": 1486780
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.10.dylib",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-33/lib/ImageMagick//config-Q16HDRI/",
-              "offset": 1486376
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/lib/ImageMagick//config-Q16HDRI/",
+              "offset": 1486840
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.10.dylib",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-33/etc/ImageMagick-7/",
-              "offset": 1486448
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/etc/ImageMagick-7/",
+              "offset": 1486912
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.10.dylib",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-33/share/doc/ImageMagick-7/",
-              "offset": 1486506
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/share/doc/ImageMagick-7/",
+              "offset": 1486970
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.10.dylib",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-33/lib/ImageMagick//modules-Q16HDRI/coders",
-              "offset": 1533824
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/lib/ImageMagick//modules-Q16HDRI/coders",
+              "offset": 1534302
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.10.dylib",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-33/lib/ImageMagick//modules-Q16HDRI/filters",
-              "offset": 1533971
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/lib/ImageMagick//modules-Q16HDRI/filters",
+              "offset": 1534449
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.10.dylib",
-              "string": "file:///usr/local/Cellar/imagemagick/7.1.2-33/share/doc/ImageMagick-7/index.html",
-              "offset": 1571805
+              "string": "file:///usr/local/Cellar/imagemagick/7.1.2-34/share/doc/ImageMagick-7/index.html",
+              "offset": 1572285
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.a",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-33/share/ImageMagick-7/",
-              "offset": 655583
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/share/ImageMagick-7/",
+              "offset": 655607
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.a",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-33/lib/ImageMagick//config-Q16HDRI/",
-              "offset": 655643
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/lib/ImageMagick//config-Q16HDRI/",
+              "offset": 655667
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.a",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-33/etc/ImageMagick-7/",
-              "offset": 655715
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/etc/ImageMagick-7/",
+              "offset": 655739
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.a",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-33/share/doc/ImageMagick-7/",
-              "offset": 655773
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/share/doc/ImageMagick-7/",
+              "offset": 655797
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.a",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-33/lib/ImageMagick//modules-Q16HDRI/coders",
-              "offset": 1633621
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/lib/ImageMagick//modules-Q16HDRI/coders",
+              "offset": 1634701
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.a",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-33/lib/ImageMagick//modules-Q16HDRI/filters",
-              "offset": 1633768
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/lib/ImageMagick//modules-Q16HDRI/filters",
+              "offset": 1634848
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.a",
-              "string": "file:///usr/local/Cellar/imagemagick/7.1.2-33/share/doc/ImageMagick-7/index.html",
-              "offset": 2816861
+              "string": "file:///usr/local/Cellar/imagemagick/7.1.2-34/share/doc/ImageMagick-7/index.html",
+              "offset": 2817941
             }
           ],
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
-              "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+              "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
               "SPDXRef-Package-SPDXRef-libvmaf-3.2e.2.2e.1",
               "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.2",
@@ -620,24 +620,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "name": "freetype",
-                "versionInfo": "2.14.3",
+                "versionInfo": "2.15.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "FTL",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.14.3.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.15.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "a8a2bcc65a1d21adba6797d59f4ab1c91b0a40c53aae2794b4f94780e7379837"
+                    "checksumValue": "df5ad00e9d611b80d19df81741a935c2d9bceef6feb79b4c322dda96507d5d36"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/freetype@2.14.3",
+                    "referenceLocator": "pkg:brew/freetype@2.15.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -1007,7 +1007,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-imagemagick"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-imagemagick"
               },
@@ -1793,7 +1793,7 @@
             "share/man/man1/montage.1",
             "share/man/man1/stream.1"
           ],
-          "installed_size": 25989576
+          "installed_size": 25997531
         }
       }
     }
