@@ -3,8 +3,9 @@
 # qtwebengine is not excluded: it is built across runs (ccache.txt). It was excluded
 # 2026-10-12..13 because ~1,000-2,400 compiles missed the cache every run and five runs
 # stalled at ninja step 17,600-19,900 of 23,069. Those misses were the users of
-# precompiled headers, which ci-patches/qtwebengine.sed now switches off. If it still
-# stalls short of the last step, add it back here (or use a self-hosted runner).
+# precompiled headers, which ci-patches/qtwebengine.sed now switches off; it was then
+# bottled on the third run (2026-10-15). If a later version stalls short of the last
+# step, add it back here (or use a self-hosted runner).
 
 # qtquick3d fails to configure on Intel: the formula deletes Qt's bundled assimp and
 # forces -DFEATURE_system_assimp=ON, but Homebrew's assimp is 6.0.5 and Qt 6.11's probe
