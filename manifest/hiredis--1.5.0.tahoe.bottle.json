@@ -2,10 +2,10 @@
   "hiredis": {
     "formula": {
       "name": "hiredis",
-      "pkg_version": "1.4.1_1",
+      "pkg_version": "1.5.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/h/hiredis.rb",
       "tap_git_path": "Formula/h/hiredis.rb",
-      "tap_git_revision": "1df5620822602675a8447e99d239b35362d30a84",
+      "tap_git_revision": "f89e4dd72760c1e0da91bb5391e13355e0492d68",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Minimalistic client for Redis",
       "license": "BSD-3-Clause",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-10T00:08:21Z",
+      "date": "2026-10-16T10:11:52Z",
       "tags": {
         "tahoe": {
-          "filename": "hiredis-1.4.1_1.tahoe.bottle.tar.gz",
-          "local_filename": "hiredis--1.4.1_1.tahoe.bottle.tar.gz",
-          "sha256": "0dc4f473d150bba624b4cf4363b4bc974fa1d5548c4f761c1d25751a8ee7dee8",
+          "filename": "hiredis-1.5.0.tahoe.bottle.tar.gz",
+          "local_filename": "hiredis--1.5.0.tahoe.bottle.tar.gz",
+          "sha256": "eb814956f0fc02f8cbecb8dbe8548f58cea012e430c0fbf29ba6f28a83c80c16",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [
@@ -28,11 +28,11 @@
               "lib/pkgconfig/hiredis_ssl.pc"
             ],
             "linkage_files": [
-              "lib/libhiredis.1.4.0.dylib",
-              "lib/libhiredis_ssl.1.4.0.dylib"
+              "lib/libhiredis.1.5.0.dylib",
+              "lib/libhiredis_ssl.1.5.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1786027520,
+            "source_modified_time": 1792072063,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -174,11 +174,11 @@
             "include/hiredis/read.h",
             "include/hiredis/sds.h",
             "include/hiredis/sockcompat.h",
-            "lib/libhiredis.1.4.0.dylib",
+            "lib/libhiredis.1.5.0.dylib",
             "lib/libhiredis.1.dylib",
             "lib/libhiredis.a",
             "lib/libhiredis.dylib",
-            "lib/libhiredis_ssl.1.4.0.dylib",
+            "lib/libhiredis_ssl.1.5.0.dylib",
             "lib/libhiredis_ssl.1.dylib",
             "lib/libhiredis_ssl.a",
             "lib/libhiredis_ssl.dylib",
@@ -204,7 +204,7 @@
             "share/hiredis/examples/example-ssl.c",
             "share/hiredis/examples/example.c"
           ],
-          "installed_size": 477447
+          "installed_size": 480886
         }
       }
     }

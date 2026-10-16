@@ -2,10 +2,10 @@
   "nmap": {
     "formula": {
       "name": "nmap",
-      "pkg_version": "7.991_1",
+      "pkg_version": "7.992",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/n/nmap.rb",
       "tap_git_path": "Formula/n/nmap.rb",
-      "tap_git_revision": "f00814c073d8a4980e21638b275db1e2a6fd24d0",
+      "tap_git_revision": "f89e4dd72760c1e0da91bb5391e13355e0492d68",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Port scanning utility for large networks",
       "license": "LicenseRef-Homebrew-cannot-represent",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-09T13:18:03Z",
+      "date": "2026-10-16T10:16:30Z",
       "tags": {
         "tahoe": {
-          "filename": "nmap-7.991_1.tahoe.bottle.tar.gz",
-          "local_filename": "nmap--7.991_1.tahoe.bottle.tar.gz",
-          "sha256": "18e7d753a7914e133d1c3bb1a654c7af39efbdc69c67e6f2ae80d681421e2e6d",
+          "filename": "nmap-7.992.tahoe.bottle.tar.gz",
+          "local_filename": "nmap--7.992.tahoe.bottle.tar.gz",
+          "sha256": "cd5b18b8aafb1e2977cd58f61552c12d59fd10d45c4e70b2f05dfea76502f6b2",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [
@@ -40,6 +40,7 @@
               "share/man/ru/man1/nmap.1",
               "share/man/sk/man1/nmap.1",
               "share/man/zh/man1/nmap.1",
+              "share/nmap/nselib/dicom.lua",
               "share/nmap/nselib/nmap.luadoc"
             ],
             "linkage_files": [
@@ -51,7 +52,7 @@
               "bin/ncat",
               "bin/nmap"
             ],
-            "source_modified_time": 1785964333,
+            "source_modified_time": 1791832391,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -127,10 +128,10 @@
               },
               {
                 "full_name": "sqlite",
-                "version": "3.53.4",
+                "version": "3.54.0",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "3.53.4",
+                "bottle_rebuild": 0,
+                "pkg_version": "3.54.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -161,13 +162,12 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "python@3.14",
-                "version": "3.14.8",
-                "revision": 1,
+                "full_name": "python@3.15",
+                "version": "3.15.0",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.14.8_1",
-                "declared_directly": true,
-                "compatibility_version": 1
+                "pkg_version": "3.15.0",
+                "declared_directly": true
               }
             ],
             "arch": "x86_64",
@@ -183,13 +183,13 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/ncat",
-              "string": "/usr/local/Cellar/nmap/7.991_1/share/ncat/ca-bundle.crt",
-              "offset": 302192
+              "string": "/usr/local/Cellar/nmap/7.992/share/ncat/ca-bundle.crt",
+              "offset": 304589
             },
             {
               "path": "bin/nmap",
-              "string": "/usr/local/Cellar/nmap/7.991_1/share/nmap",
-              "offset": 938922
+              "string": "/usr/local/Cellar/nmap/7.992/share/nmap",
+              "offset": 941393
             }
           ],
           "sbom": {
@@ -200,11 +200,11 @@
               "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
-              "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -347,24 +347,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
                 "name": "sqlite",
-                "versionInfo": "3.53.4",
+                "versionInfo": "3.54.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "blessing",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/sqlite-3.54.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f"
+                    "checksumValue": "dc852ce3cc635ed216e4daf1e68736ee9d8e90327d23bf17638be27c37ed61d4"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceLocator": "pkg:brew/sqlite@3.54.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -439,24 +439,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
-                "name": "python@3.14",
-                "versionInfo": "3.14.8_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
+                "name": "python@3.15",
+                "versionInfo": "3.15.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Python-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/python%403.14-3.14.8_1.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/python%403.15-3.15.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "88fba8bbb502003257756ac15a0e2e6008c2ab6e7d5ad3543329b368a87183c4"
+                    "checksumValue": "75410bfc01e7db5bc47ddf00d2964eeee54fe99d4709aeea3db5b2a2c43d9161"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/python%403.14@3.14.8_1",
+                    "referenceLocator": "pkg:brew/python%403.15@3.15.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -506,7 +506,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-nmap"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-nmap"
               },
@@ -526,7 +526,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-nmap"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-nmap"
               },
@@ -553,14 +553,14 @@
             "bin/ndiff",
             "bin/nmap",
             "bin/nping",
-            "lib/python3.14/site-packages/ndiff-7.991.dist-info/INSTALLER",
-            "lib/python3.14/site-packages/ndiff-7.991.dist-info/METADATA",
-            "lib/python3.14/site-packages/ndiff-7.991.dist-info/REQUESTED",
-            "lib/python3.14/site-packages/ndiff-7.991.dist-info/WHEEL",
-            "lib/python3.14/site-packages/ndiff-7.991.dist-info/entry_points.txt",
-            "lib/python3.14/site-packages/ndiff-7.991.dist-info/licenses/LICENSE",
-            "lib/python3.14/site-packages/ndiff-7.991.dist-info/top_level.txt",
-            "lib/python3.14/site-packages/ndiff.py",
+            "lib/python3.15/site-packages/ndiff-7.992.dist-info/INSTALLER",
+            "lib/python3.15/site-packages/ndiff-7.992.dist-info/METADATA",
+            "lib/python3.15/site-packages/ndiff-7.992.dist-info/REQUESTED",
+            "lib/python3.15/site-packages/ndiff-7.992.dist-info/WHEEL",
+            "lib/python3.15/site-packages/ndiff-7.992.dist-info/entry_points.txt",
+            "lib/python3.15/site-packages/ndiff-7.992.dist-info/licenses/LICENSE",
+            "lib/python3.15/site-packages/ndiff-7.992.dist-info/top_level.txt",
+            "lib/python3.15/site-packages/ndiff.py",
             "sbom.spdx.json",
             "share/man/de/man1/nmap.1",
             "share/man/es/man1/nmap.1",
@@ -863,7 +863,15 @@
             "share/nmap/scripts/deluge-rpc-brute.nse",
             "share/nmap/scripts/dhcp-discover.nse",
             "share/nmap/scripts/dicom-brute.nse",
+            "share/nmap/scripts/dicom-cfind-ls.nse",
+            "share/nmap/scripts/dicom-cmove.nse",
+            "share/nmap/scripts/dicom-get.nse",
+            "share/nmap/scripts/dicom-info.nse",
             "share/nmap/scripts/dicom-ping.nse",
+            "share/nmap/scripts/dicom-slowloris.nse",
+            "share/nmap/scripts/dicom-store-fuzzer.nse",
+            "share/nmap/scripts/dicom-store-inject.nse",
+            "share/nmap/scripts/dicom-web-enum.nse",
             "share/nmap/scripts/dict-info.nse",
             "share/nmap/scripts/distcc-cve2004-2687.nse",
             "share/nmap/scripts/dns-blacklist.nse",
@@ -1388,7 +1396,7 @@
             "share/nmap/scripts/xmpp-brute.nse",
             "share/nmap/scripts/xmpp-info.nse"
           ],
-          "installed_size": 30615998
+          "installed_size": 30868881
         }
       }
     }

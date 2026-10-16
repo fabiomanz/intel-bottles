@@ -2,10 +2,10 @@
   "node": {
     "formula": {
       "name": "node",
-      "pkg_version": "26.11.1_1",
+      "pkg_version": "26.12.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/n/node.rb",
       "tap_git_path": "Formula/n/node.rb",
-      "tap_git_revision": "410be0e4f3e459833f45683dd1cd741fc2a03fd4",
+      "tap_git_revision": "f89e4dd72760c1e0da91bb5391e13355e0492d68",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Open-source, cross-platform JavaScript runtime environment",
       "license": "MIT",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-15T14:33:30Z",
+      "date": "2026-10-16T14:20:13Z",
       "tags": {
         "tahoe": {
-          "filename": "node-26.11.1_1.tahoe.bottle.tar.gz",
-          "local_filename": "node--26.11.1_1.tahoe.bottle.tar.gz",
-          "sha256": "6570be7227823c171f8cbe465583563ee34c2009abde4147b4c2863dd6e4f68f",
+          "filename": "node-26.12.0.tahoe.bottle.tar.gz",
+          "local_filename": "node--26.12.0.tahoe.bottle.tar.gz",
+          "sha256": "ea93904508ca02b90b70189b758da8ee3511ab1e3920d24ba70b3b4c9a88f94f",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [
@@ -33,7 +33,7 @@
             "binary_relocation_files": [
               "lib/libnode.147.dylib"
             ],
-            "source_modified_time": 1791391492,
+            "source_modified_time": 1791964253,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -262,102 +262,102 @@
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/llhttp/include",
-              "offset": 24875445
+              "offset": 24872078
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/libuv/include",
-              "offset": 24875489
+              "offset": 24872122
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/abseil/include",
-              "offset": 24875533
+              "offset": 24872166
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/ada-url/include",
-              "offset": 24875577
+              "offset": 24872210
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/simdjson/include",
-              "offset": 24875621
+              "offset": 24872254
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/simdutf/include",
-              "offset": 24875665
+              "offset": 24872298
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/brotli/include",
-              "offset": 24875709
+              "offset": 24872342
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/c-ares/include",
-              "offset": 24875753
+              "offset": 24872386
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/hdrhistogram_c/include",
-              "offset": 24875797
+              "offset": 24872430
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/highway/include",
-              "offset": 24875849
+              "offset": 24872482
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/merve/include",
-              "offset": 24875893
+              "offset": 24872526
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/nbytes/include",
-              "offset": 24875937
+              "offset": 24872570
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/libnghttp2/include",
-              "offset": 24875981
+              "offset": 24872614
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/sqlite/include",
-              "offset": 24876033
+              "offset": 24872666
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/libffi/include",
-              "offset": 24876077
+              "offset": 24872710
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/uvwasi/include",
-              "offset": 24876121
+              "offset": 24872754
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/zstd/include",
-              "offset": 24876165
+              "offset": 24872798
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/openssl@4/include",
-              "offset": 24876209
+              "offset": 24872842
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/icu4c@78/include",
-              "offset": 24876253
+              "offset": 24872886
             },
             {
               "path": "lib/libnode.147.dylib",
-              "string": "/usr/local/Cellar/node/26.11.1_1",
-              "offset": 24854317
+              "string": "/usr/local/Cellar/node/26.12.0",
+              "offset": 24850898
             }
           ],
           "sbom": {
@@ -2876,7 +2876,7 @@
             "share/doc/node/lldb_commands.py",
             "share/man/man1/node.1"
           ],
-          "installed_size": 75265036
+          "installed_size": 75337380
         }
       }
     }

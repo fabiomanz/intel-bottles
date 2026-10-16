@@ -2,10 +2,10 @@
   "ccache": {
     "formula": {
       "name": "ccache",
-      "pkg_version": "4.14.1_1",
+      "pkg_version": "4.14.1_2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/c/ccache.rb",
       "tap_git_path": "Formula/c/ccache.rb",
-      "tap_git_revision": "1df5620822602675a8447e99d239b35362d30a84",
+      "tap_git_revision": "f89e4dd72760c1e0da91bb5391e13355e0492d68",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Object-file caching compiler wrapper",
       "license": "GPL-3.0-or-later",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-10T00:19:00Z",
+      "date": "2026-10-16T10:15:04Z",
       "tags": {
         "tahoe": {
-          "filename": "ccache-4.14.1_1.tahoe.bottle.tar.gz",
-          "local_filename": "ccache--4.14.1_1.tahoe.bottle.tar.gz",
-          "sha256": "c1f28046c89a0ef1339e2472898cece9e2734a321147e12eef1a462df1ffc42f",
+          "filename": "ccache-4.14.1_2.tahoe.bottle.tar.gz",
+          "local_filename": "ccache--4.14.1_2.tahoe.bottle.tar.gz",
+          "sha256": "68e2d3407e809c2cb8bcad3a1543501deb38cfa24c13e0c10986dbeeec6bb90f",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [],
@@ -70,11 +70,11 @@
               },
               {
                 "full_name": "hiredis",
-                "version": "1.4.1",
-                "revision": 1,
-                "pkg_version": "1.4.1_1",
+                "version": "1.5.0",
+                "revision": 0,
+                "pkg_version": "1.5.0",
                 "declared_directly": true,
-                "compatibility_version": 2
+                "compatibility_version": 3
               },
               {
                 "full_name": "xxhash",
@@ -124,8 +124,8 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/ccache",
-              "string": "/usr/local/Cellar/ccache/4.14.1_1/libexec",
-              "offset": 833136
+              "string": "/usr/local/Cellar/ccache/4.14.1_2/libexec",
+              "offset": 833152
             }
           ],
           "sbom": {
@@ -422,7 +422,7 @@
             "share/doc/ccache/NEWS.html",
             "share/man/man1/ccache.1"
           ],
-          "installed_size": 2228090
+          "installed_size": 2228088
         }
       }
     }
