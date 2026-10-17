@@ -2,10 +2,10 @@
   "rust": {
     "formula": {
       "name": "rust",
-      "pkg_version": "1.99.0_1",
+      "pkg_version": "1.99.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/r/rust.rb",
       "tap_git_path": "Formula/r/rust.rb",
-      "tap_git_revision": "322dcb881692ee0dcd8bf224508bf9c3df6e462d",
+      "tap_git_revision": "c97c98af1ea21b3fca03d250db68da201b4b3cbd",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Safe, concurrent, practical language",
       "license": "Apache-2.0 OR MIT",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-09T20:20:20Z",
+      "date": "2026-10-17T15:47:19Z",
       "tags": {
         "tahoe": {
-          "filename": "rust-1.99.0_1.tahoe.bottle.tar.gz",
-          "local_filename": "rust--1.99.0_1.tahoe.bottle.tar.gz",
-          "sha256": "7beacfc87ad4d468a0838cf70b0cc6d7443650001821479a9ee17ab79e878330",
+          "filename": "rust-1.99.1.tahoe.bottle.tar.gz",
+          "local_filename": "rust--1.99.1.tahoe.bottle.tar.gz",
+          "sha256": "ab59f42b47a0ac1587abd50c72754d1152d0f5b67218d05acc7bffbe79a44c3b",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [],
@@ -31,11 +31,11 @@
               "bin/rustc",
               "bin/rustdoc",
               "bin/rustfmt",
-              "lib/librustc_driver-20c05102fe39730e.dylib",
+              "lib/librustc_driver-614cc80ad7f73362.dylib",
               "libexec/rust-analyzer-proc-macro-srv"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790619855,
+            "source_modified_time": 1791856129,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -110,28 +110,28 @@
               },
               {
                 "full_name": "z3",
-                "version": "5.1.0",
+                "version": "5.3.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "5.1.0",
+                "pkg_version": "5.3.1",
                 "declared_directly": false,
-                "compatibility_version": 4
+                "compatibility_version": 5
               },
               {
                 "full_name": "llvm",
                 "version": "23.1.3",
-                "revision": 0,
+                "revision": 2,
                 "bottle_rebuild": 0,
-                "pkg_version": "23.1.3",
+                "pkg_version": "23.1.3_2",
                 "declared_directly": true,
                 "compatibility_version": 2
               },
               {
                 "full_name": "pkgconf",
-                "version": "3.0.7",
+                "version": "3.0.8",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.0.7",
+                "pkg_version": "3.0.8",
                 "declared_directly": true,
                 "compatibility_version": 2
               },
@@ -146,10 +146,10 @@
               },
               {
                 "full_name": "sqlite",
-                "version": "3.53.4",
+                "version": "3.54.0",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "3.53.4",
+                "bottle_rebuild": 0,
+                "pkg_version": "3.54.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -174,10 +174,11 @@
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.3",
-              "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.7",
+              "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.1",
+              "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.3.5f.2",
+              "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.8",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
-              "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -343,47 +344,70 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.3",
-                "name": "llvm",
-                "versionInfo": "23.1.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.1",
+                "name": "z3",
+                "versionInfo": "5.3.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0 WITH LLVM-exception",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/llvm-23.1.3.tahoe.bottle.tar.gz",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/z3-5.3.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4f16dbbb45437551b40fff97c839a2215ee2a277ce4c592a178eae420a6e67ec"
+                    "checksumValue": "6cebcd053cc46a5595d492e8259f167a94e8eee2726915d8824efd525ba4779f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/llvm@23.1.3",
+                    "referenceLocator": "pkg:brew/z3@5.3.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.7",
-                "name": "pkgconf",
-                "versionInfo": "3.0.7",
+                "SPDXID": "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.3.5f.2",
+                "name": "llvm",
+                "versionInfo": "23.1.3_2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "ISC",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pkgconf-3.0.7.tahoe.bottle.tar.gz",
+                "licenseConcluded": "Apache-2.0 WITH LLVM-exception",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/llvm-23.1.3_2.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "112ebc0f90bf7a206447893877f8bdb5058e665ffd27de96500718ff69765938"
+                    "checksumValue": "c4e8dbe87cb39dc95fc7f3e2b5962a3f8ea5096942575b095c3df82484c6e290"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/pkgconf@3.0.7",
+                    "referenceLocator": "pkg:brew/llvm@23.1.3_2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.8",
+                "name": "pkgconf",
+                "versionInfo": "3.0.8",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "ISC",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pkgconf-3.0.8.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "bc09d8aa97c8079cae55c9aad2d10909cb52a07f45779ce4ba8ac3ed70c5458a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pkgconf@3.0.8",
                     "referenceType": "purl"
                   }
                 ]
@@ -412,24 +436,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
                 "name": "sqlite",
-                "versionInfo": "3.53.4",
+                "versionInfo": "3.54.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "blessing",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/sqlite-3.54.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f"
+                    "checksumValue": "dc852ce3cc635ed216e4daf1e68736ee9d8e90327d23bf17638be27c37ed61d4"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceLocator": "pkg:brew/sqlite@3.54.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -484,12 +508,17 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-rust"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-rust"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.7",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.3.5f.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rust"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.8",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-rust"
               },
@@ -499,7 +528,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-rust"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-rust"
               },
@@ -541,7 +570,7 @@
             "bin/rustdoc",
             "bin/rustfmt",
             "etc/bash_completion.d/cargo",
-            "lib/librustc_driver-20c05102fe39730e.dylib",
+            "lib/librustc_driver-614cc80ad7f73362.dylib",
             "lib/rustlib/components",
             "lib/rustlib/etc/gdb_load_rust_pretty_printers.py",
             "lib/rustlib/etc/gdb_lookup.py",
@@ -7870,61 +7899,61 @@
             "lib/rustlib/src/rust/src/llvm-project/libunwind/test/unwind_leaffunction.pass.cpp",
             "lib/rustlib/src/rust/src/llvm-project/libunwind/test/unwind_scalable_vectors.pass.cpp",
             "lib/rustlib/x86_64-apple-darwin/bin/rust-objcopy",
-            "lib/rustlib/x86_64-apple-darwin/lib/libaddr2line-2bb883230e5c641e.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libaddr2line-2bb883230e5c641e.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/libadler2-7d30da9347ba35b8.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libadler2-7d30da9347ba35b8.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/liballoc-e7d8dc3fceac09e7.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/liballoc-e7d8dc3fceac09e7.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/libcfg_if-6e14e2a8e61f45b7.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libcfg_if-6e14e2a8e61f45b7.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/libcompiler_builtins-446a687bc9bf1ab1.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libcompiler_builtins-446a687bc9bf1ab1.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/libcore-b338414b685206e0.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libcore-b338414b685206e0.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/libgetopts-c0b6f993af2972fe.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libgetopts-c0b6f993af2972fe.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/libgimli-019ec3a9adb50012.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libgimli-019ec3a9adb50012.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/libhashbrown-d1645809aabacf92.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libhashbrown-d1645809aabacf92.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/liblibc-337858c356d66882.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/liblibc-337858c356d66882.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/libmemchr-bcf1f93d30edca07.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libmemchr-bcf1f93d30edca07.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/libminiz_oxide-563d09d3930e490e.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libminiz_oxide-563d09d3930e490e.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/libobject-37f9fb2dbc8514f6.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libobject-37f9fb2dbc8514f6.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/libpanic_abort-e1dd53afb3e648e5.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libpanic_abort-e1dd53afb3e648e5.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/libpanic_unwind-a5e320db613d7819.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libpanic_unwind-a5e320db613d7819.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/libproc_macro-0c2e27abdd14c626.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libproc_macro-0c2e27abdd14c626.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/libprofiler_builtins-302226b7445bf77b.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libprofiler_builtins-302226b7445bf77b.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/librustc_demangle-347cd411ace00a5a.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/librustc_demangle-347cd411ace00a5a.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/librustc_literal_escaper-5fdf231488618317.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/librustc_literal_escaper-5fdf231488618317.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/librustc_std_workspace_alloc-29b7bcc73a181ea9.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/librustc_std_workspace_alloc-29b7bcc73a181ea9.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/librustc_std_workspace_core-c6ec68bd081debac.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/librustc_std_workspace_core-c6ec68bd081debac.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/librustc_std_workspace_std-9a63687b75372b4d.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/librustc_std_workspace_std-9a63687b75372b4d.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/libstd-87a7bf9345da6282.dylib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libstd-87a7bf9345da6282.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libstd-87a7bf9345da6282.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/libstd_detect-88f79689b631708c.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libstd_detect-88f79689b631708c.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/libsysroot-3333d5b654e0eb3c.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libsysroot-3333d5b654e0eb3c.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/libtest-e198971a2655bed4.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libtest-e198971a2655bed4.rmeta",
-            "lib/rustlib/x86_64-apple-darwin/lib/libunwind-d59252cc9f8eef95.rlib",
-            "lib/rustlib/x86_64-apple-darwin/lib/libunwind-d59252cc9f8eef95.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libaddr2line-5a67afa0fe1feff2.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libaddr2line-5a67afa0fe1feff2.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libadler2-e8dfa1e024c7c9d8.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libadler2-e8dfa1e024c7c9d8.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/liballoc-a574ab71bce9e811.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/liballoc-a574ab71bce9e811.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libcfg_if-6c54e9bcba1de061.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libcfg_if-6c54e9bcba1de061.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libcompiler_builtins-0649022930f7ee6e.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libcompiler_builtins-0649022930f7ee6e.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libcore-371936d2c90cedb1.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libcore-371936d2c90cedb1.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libgetopts-bd64d220805d3e48.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libgetopts-bd64d220805d3e48.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libgimli-700f7a4f0de20b7b.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libgimli-700f7a4f0de20b7b.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libhashbrown-6aa95d64eda5f678.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libhashbrown-6aa95d64eda5f678.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/liblibc-52e6d16ddf678fe4.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/liblibc-52e6d16ddf678fe4.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libmemchr-4560fa69247f5575.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libmemchr-4560fa69247f5575.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libminiz_oxide-07ff0d89ecf758ab.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libminiz_oxide-07ff0d89ecf758ab.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libobject-d7fb19fab44132cf.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libobject-d7fb19fab44132cf.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libpanic_abort-17dbf8212f035d24.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libpanic_abort-17dbf8212f035d24.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libpanic_unwind-feae6a21d2b5fc10.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libpanic_unwind-feae6a21d2b5fc10.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libproc_macro-2ae7af34c65444cb.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libproc_macro-2ae7af34c65444cb.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libprofiler_builtins-6018dc5124003292.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libprofiler_builtins-6018dc5124003292.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/librustc_demangle-06dcdbd61ff14d25.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/librustc_demangle-06dcdbd61ff14d25.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/librustc_literal_escaper-2029a884bbc89c24.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/librustc_literal_escaper-2029a884bbc89c24.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/librustc_std_workspace_alloc-bb72fd542cad3258.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/librustc_std_workspace_alloc-bb72fd542cad3258.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/librustc_std_workspace_core-17c65b48681b36a2.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/librustc_std_workspace_core-17c65b48681b36a2.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/librustc_std_workspace_std-65e57ecf06f814da.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/librustc_std_workspace_std-65e57ecf06f814da.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libstd-9e8ee13508991984.dylib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libstd-9e8ee13508991984.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libstd-9e8ee13508991984.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libstd_detect-7cc3f07f7b8c01c9.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libstd_detect-7cc3f07f7b8c01c9.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libsysroot-720afbc3cab4cd0c.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libsysroot-720afbc3cab4cd0c.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libtest-a5fcab66df9480a4.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libtest-a5fcab66df9480a4.rmeta",
+            "lib/rustlib/x86_64-apple-darwin/lib/libunwind-b8e6eb76b6dc5fa9.rlib",
+            "lib/rustlib/x86_64-apple-darwin/lib/libunwind-b8e6eb76b6dc5fa9.rmeta",
             "libexec/rust-analyzer-proc-macro-srv",
             "license-metadata.json",
             "sbom.spdx.json",
@@ -7994,7 +8023,7 @@
             "share/man/man1/rustdoc.1",
             "share/zsh/site-functions/_cargo"
           ],
-          "installed_size": 414883109
+          "installed_size": 415047674
         }
       }
     }

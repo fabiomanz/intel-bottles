@@ -1,0 +1,234 @@
+{
+  "libxtst": {
+    "formula": {
+      "name": "libxtst",
+      "pkg_version": "1.2.6",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libxtst.rb",
+      "tap_git_path": "Formula/lib/libxtst.rb",
+      "tap_git_revision": "c97c98af1ea21b3fca03d250db68da201b4b3cbd",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "X.Org: Client API for the XTEST & RECORD extensions",
+      "license": "MIT",
+      "homepage": "https://www.x.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-17T14:00:11Z",
+      "tags": {
+        "tahoe": {
+          "filename": "libxtst-1.2.6.tahoe.bottle.tar.gz",
+          "local_filename": "libxtst--1.2.6.tahoe.bottle.tar.gz",
+          "sha256": "50e3a1114434988a4cd18304d6f320e6f8cfd6911dc7fe55802c62cb05096c6f",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "lib/pkgconfig/xtst.pc"
+            ],
+            "linkage_files": [
+              "lib/libXtst.6.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1792183845,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "xorgproto",
+                "version": "2026.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxau",
+                "version": "1.0.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxdmcp",
+                "version": "1.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxcb",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.17.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libx11",
+                "version": "1.8.14",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.14",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxext",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.7",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxfixes",
+                "version": "6.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.0.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxi",
+                "version": "1.8.4",
+                "revision": 0,
+                "pkg_version": "1.8.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+                "name": "xorgproto",
+                "versionInfo": "2026.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xorgproto-2026.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5286465a0d9c7954041bcec0ebee5641b6c8018b3f679eaa8595b029a44c2af9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xorgproto@2026.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
+                "name": "libx11",
+                "versionInfo": "1.8.14",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.14.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c6d26e6032e1a786e706b9c8679d0592276fd0a3007caadf760498808e1f0163"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libx11@1.8.14",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libxtst"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libxtst"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libxtst-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libxtst.rb",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "include/X11/extensions/XTest.h",
+            "include/X11/extensions/record.h",
+            "lib/libXtst.6.dylib",
+            "lib/libXtst.a",
+            "lib/libXtst.dylib",
+            "lib/pkgconfig/xtst.pc",
+            "sbom.spdx.json",
+            "share/man/man3/XTestCompareCurrentCursorWithWindow.3",
+            "share/man/man3/XTestCompareCursorWithWindow.3",
+            "share/man/man3/XTestDiscard.3",
+            "share/man/man3/XTestFakeButtonEvent.3",
+            "share/man/man3/XTestFakeKeyEvent.3",
+            "share/man/man3/XTestFakeMotionEvent.3",
+            "share/man/man3/XTestFakeRelativeMotionEvent.3",
+            "share/man/man3/XTestGrabControl.3",
+            "share/man/man3/XTestQueryExtension.3",
+            "share/man/man3/XTestSetGContextOfGC.3",
+            "share/man/man3/XTestSetVisualIDOfVisual.3"
+          ],
+          "installed_size": 132816
+        }
+      }
+    }
+  }
+}
