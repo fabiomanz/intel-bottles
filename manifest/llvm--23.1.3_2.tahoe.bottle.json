@@ -2,10 +2,10 @@
   "llvm": {
     "formula": {
       "name": "llvm",
-      "pkg_version": "23.1.3_1",
+      "pkg_version": "23.1.3_2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/l/llvm.rb",
       "tap_git_path": "Formula/l/llvm.rb",
-      "tap_git_revision": "8067e8fdb34bd521c3d5b4cc1c52f19d22e68093",
+      "tap_git_revision": "3772bbc603142baa7b1d62a5487f135749f3c78b",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Next-gen compiler infrastructure",
       "license": "Apache-2.0 WITH LLVM-exception",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-10T16:24:38Z",
+      "date": "2026-10-17T13:51:14Z",
       "tags": {
         "tahoe": {
-          "filename": "llvm-23.1.3_1.tahoe.bottle.tar.gz",
-          "local_filename": "llvm--23.1.3_1.tahoe.bottle.tar.gz",
-          "sha256": "b6ae09f4e9b989a0594cb80294f056e96bb19574cf21d21771d1c7c9430c477e",
+          "filename": "llvm-23.1.3_2.tahoe.bottle.tar.gz",
+          "local_filename": "llvm--23.1.3_2.tahoe.bottle.tar.gz",
+          "sha256": "c4e8dbe87cb39dc95fc7f3e2b5962a3f8ea5096942575b095c3df82484c6e290",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [
@@ -115,12 +115,12 @@
               },
               {
                 "full_name": "z3",
-                "version": "5.1.0",
+                "version": "5.3.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "5.1.0",
+                "pkg_version": "5.3.1",
                 "declared_directly": true,
-                "compatibility_version": 4
+                "compatibility_version": 5
               }
             ],
             "arch": "x86_64",
@@ -139,6 +139,7 @@
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -212,6 +213,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.1",
+                "name": "z3",
+                "versionInfo": "5.3.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/z3-5.3.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6cebcd053cc46a5595d492e8259f167a94e8eee2726915d8824efd525ba4779f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/z3@5.3.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
                 "versionInfo": "26.6",
@@ -237,6 +261,11 @@
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-llvm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-llvm"
               },
