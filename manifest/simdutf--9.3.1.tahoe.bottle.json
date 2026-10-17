@@ -2,10 +2,10 @@
   "simdutf": {
     "formula": {
       "name": "simdutf",
-      "pkg_version": "9.3.0",
+      "pkg_version": "9.3.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/s/simdutf.rb",
       "tap_git_path": "Formula/s/simdutf.rb",
-      "tap_git_revision": "d11f73f01ecb919029d5f418f2b37554891f79ad",
+      "tap_git_revision": "8ba9cb82595e77e2aff43a6b7a08ce7b91f71e7d",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Unicode conversion routines, fast",
       "license": "Apache-2.0 OR MIT",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-15T10:43:23Z",
+      "date": "2026-10-17T09:52:14Z",
       "tags": {
         "tahoe": {
-          "filename": "simdutf-9.3.0.tahoe.bottle.tar.gz",
-          "local_filename": "simdutf--9.3.0.tahoe.bottle.tar.gz",
-          "sha256": "57ad6d63ca602800d693b6ab6b8b94d04967f72f3556e525bfbdb408f6f1009a",
+          "filename": "simdutf-9.3.1.tahoe.bottle.tar.gz",
+          "local_filename": "simdutf--9.3.1.tahoe.bottle.tar.gz",
+          "sha256": "74bbf15a36c74254735497e1a47cc4b0141a43f1cba792bbda5808bfef153ef6",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [
@@ -31,7 +31,7 @@
               "lib/libsimdutf.37.0.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1791937831,
+            "source_modified_time": 1792190892,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -155,7 +155,7 @@
             "share/man/man1/fastbase64.coreutils.1",
             "share/man/man1/sutf.1"
           ],
-          "installed_size": 2786424
+          "installed_size": 2786591
         }
       }
     }

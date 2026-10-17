@@ -2,10 +2,10 @@
   "libx11": {
     "formula": {
       "name": "libx11",
-      "pkg_version": "1.8.13",
+      "pkg_version": "1.8.14",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libx11.rb",
       "tap_git_path": "Formula/lib/libx11.rb",
-      "tap_git_revision": "63fa1810e68212f67bd965ae06d098906b90ff0c",
+      "tap_git_revision": "8ba9cb82595e77e2aff43a6b7a08ce7b91f71e7d",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "X.Org: Core X11 protocol client library",
       "license": "MIT",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-01T13:14:46Z",
+      "date": "2026-10-17T09:55:38Z",
       "tags": {
         "tahoe": {
-          "filename": "libx11-1.8.13.tahoe.bottle.tar.gz",
-          "local_filename": "libx11--1.8.13.tahoe.bottle.tar.gz",
-          "sha256": "10c0844f2a8daab11aa21bd737480e496469da1a15c37067dc34ab308f8b6285",
+          "filename": "libx11-1.8.14.tahoe.bottle.tar.gz",
+          "local_filename": "libx11--1.8.14.tahoe.bottle.tar.gz",
+          "sha256": "c6d26e6032e1a786e706b9c8679d0592276fd0a3007caadf760498808e1f0163",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [
               "lib/pkgconfig/x11-xcb.pc",
               "lib/pkgconfig/x11.pc",
@@ -43,11 +43,6 @@
               "share/man/man5/Compose.5"
             ],
             "linkage_files": [
-              "lib/X11/locale/common/ximcp.2.so",
-              "lib/X11/locale/common/xlcDef.2.so",
-              "lib/X11/locale/common/xlcUTF8Load.2.so",
-              "lib/X11/locale/common/xlibi18n.2.so",
-              "lib/X11/locale/common/xomGeneric.2.so",
               "lib/libX11-xcb.1.dylib",
               "lib/libX11.6.dylib"
             ],
@@ -55,15 +50,15 @@
               "lib/libX11.6.dylib",
               "lib/libX11.a"
             ],
-            "source_modified_time": 1770503217,
+            "source_modified_time": 1792178565,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "xorgproto",
-                "version": "2025.1",
+                "version": "2026.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2025.1",
+                "pkg_version": "2026.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -108,50 +103,64 @@
           "binary_relocation_diagnostics": [
             {
               "path": "lib/libX11.6.dylib",
-              "string": "/usr/local/Cellar/libx11/1.8.13/share/X11/XErrorDB",
-              "offset": 852556
+              "string": "/usr/local/Cellar/libx11/1.8.14/share/X11/XErrorDB",
+              "offset": 960060
             },
             {
               "path": "lib/libX11.6.dylib",
-              "string": "/usr/local/Cellar/libx11/1.8.13/share/X11/locale",
-              "offset": 858968
+              "string": "/usr/local/Cellar/libx11/1.8.14/share/X11/locale",
+              "offset": 966428
             },
             {
               "path": "lib/libX11.6.dylib",
-              "string": "/usr/local/Cellar/libx11/1.8.13/lib/X11/locale",
-              "offset": 859067
-            },
-            {
-              "path": "lib/libX11.6.dylib",
-              "string": "/usr/local/Cellar/libx11/1.8.13/share/X11/Xcms.txt",
-              "offset": 860364
+              "string": "/usr/local/Cellar/libx11/1.8.14/share/X11/Xcms.txt",
+              "offset": 969468
             },
             {
               "path": "lib/libX11.a",
-              "string": "/usr/local/Cellar/libx11/1.8.13/share/X11/XErrorDB",
-              "offset": 100805
+              "string": "/usr/local/Cellar/libx11/1.8.14/share/X11/XErrorDB",
+              "offset": 105653
             },
             {
               "path": "lib/libX11.a",
-              "string": "/usr/local/Cellar/libx11/1.8.13/share/X11/locale",
-              "offset": 633229
+              "string": "/usr/local/Cellar/libx11/1.8.14/share/X11/locale",
+              "offset": 804717
             },
             {
               "path": "lib/libX11.a",
-              "string": "/usr/local/Cellar/libx11/1.8.13/lib/X11/locale",
-              "offset": 633336
-            },
-            {
-              "path": "lib/libX11.a",
-              "string": "/usr/local/Cellar/libx11/1.8.13/share/X11/Xcms.txt",
-              "offset": 1281095
+              "string": "/usr/local/Cellar/libx11/1.8.14/share/X11/Xcms.txt",
+              "offset": 1523039
             }
           ],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+                "name": "xorgproto",
+                "versionInfo": "2026.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xorgproto-2026.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5286465a0d9c7954041bcec0ebee5641b6c8018b3f679eaa8595b029a44c2af9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xorgproto@2026.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
@@ -166,6 +175,11 @@
               }
             ],
             "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libx11"
+              },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
@@ -194,21 +208,6 @@
             "include/X11/Xutil.h",
             "include/X11/cursorfont.h",
             "include/X11/extensions/XKBgeom.h",
-            "lib/X11/locale/common/ximcp.2.so",
-            "lib/X11/locale/common/ximcp.a",
-            "lib/X11/locale/common/ximcp.so",
-            "lib/X11/locale/common/xlcDef.2.so",
-            "lib/X11/locale/common/xlcDef.a",
-            "lib/X11/locale/common/xlcDef.so",
-            "lib/X11/locale/common/xlcUTF8Load.2.so",
-            "lib/X11/locale/common/xlcUTF8Load.a",
-            "lib/X11/locale/common/xlcUTF8Load.so",
-            "lib/X11/locale/common/xlibi18n.2.so",
-            "lib/X11/locale/common/xlibi18n.a",
-            "lib/X11/locale/common/xlibi18n.so",
-            "lib/X11/locale/common/xomGeneric.2.so",
-            "lib/X11/locale/common/xomGeneric.a",
-            "lib/X11/locale/common/xomGeneric.so",
             "lib/libX11-xcb.1.dylib",
             "lib/libX11-xcb.a",
             "lib/libX11-xcb.dylib",
@@ -1219,7 +1218,7 @@
             "share/man/man5/Compose.5",
             "share/man/man5/XCompose.5"
           ],
-          "installed_size": 7127180
+          "installed_size": 7034335
         }
       }
     }
