@@ -2,10 +2,10 @@
   "cargo-c": {
     "formula": {
       "name": "cargo-c",
-      "pkg_version": "0.10.25_1",
+      "pkg_version": "0.10.26",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/c/cargo-c.rb",
       "tap_git_path": "Formula/c/cargo-c.rb",
-      "tap_git_revision": "6435daf1c531ff55b212e81448d0290b5e1d324f",
+      "tap_git_revision": "0a646741914e3fa5d3d48b8575e53d6383ef03d6",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Helper program to build and install c-like libraries",
       "license": "MIT",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-09T20:52:10Z",
+      "date": "2026-10-17T16:05:14Z",
       "tags": {
         "tahoe": {
-          "filename": "cargo-c-0.10.25_1.tahoe.bottle.tar.gz",
-          "local_filename": "cargo-c--0.10.25_1.tahoe.bottle.tar.gz",
-          "sha256": "ecdfc3f804db97ad5931bf332cf30c8f3e56c16427a7cf5942f9ac246113435a",
+          "filename": "cargo-c-0.10.26.tahoe.bottle.tar.gz",
+          "local_filename": "cargo-c--0.10.26.tahoe.bottle.tar.gz",
+          "sha256": "32d6f40e0539dbb9ed6d709f4ddcf517f8e688b1aaf6455c3b5fab33fd312272",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [],
@@ -251,7 +251,7 @@
             "bin/cargo-ctest",
             "sbom.spdx.json"
           ],
-          "installed_size": 127676046
+          "installed_size": 127853222
         }
       }
     }
