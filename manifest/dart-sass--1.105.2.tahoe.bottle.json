@@ -2,10 +2,10 @@
   "dart-sass": {
     "formula": {
       "name": "dart-sass",
-      "pkg_version": "1.105.1",
+      "pkg_version": "1.105.2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dart-sass.rb",
       "tap_git_path": "Formula/d/dart-sass.rb",
-      "tap_git_revision": "f53e41b275b6070e94c2d7a81e645c1c05fb6bee",
+      "tap_git_revision": "7c4fdd59e9cb7de1adee2853fe742646a4bac435",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Reference implementation of Sass, written in Dart",
       "license": "MIT",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-01T07:20:01Z",
+      "date": "2026-10-18T10:44:45Z",
       "tags": {
         "tahoe": {
-          "filename": "dart-sass-1.105.1.tahoe.bottle.tar.gz",
-          "local_filename": "dart-sass--1.105.1.tahoe.bottle.tar.gz",
-          "sha256": "64f01edc86c2d3d186937c84beefcd903f798ed461e9e7ff4ccdfbaca9839491",
+          "filename": "dart-sass-1.105.2.tahoe.bottle.tar.gz",
+          "local_filename": "dart-sass--1.105.2.tahoe.bottle.tar.gz",
+          "sha256": "1b1498dab218a5fd531fbefed1a6d86a004a8ff7235ec2f022310423dc579610",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [
               "bin/sass"
             ],
@@ -30,14 +30,15 @@
               "libexec/sass.aot"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790718406,
+            "source_modified_time": 1792110113,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "dartaotruntime",
-                "version": "3.13.4",
+                "version": "3.13.5",
                 "revision": 0,
-                "pkg_version": "3.13.4",
+                "bottle_rebuild": 0,
+                "pkg_version": "3.13.5",
                 "declared_directly": true,
                 "compatibility_version": 3
               }
@@ -55,9 +56,33 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-dartaotruntime-3.2e.13.2e.5",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-dartaotruntime-3.2e.13.2e.5",
+                "name": "dartaotruntime",
+                "versionInfo": "3.13.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/dartaotruntime-3.13.5.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "60c9e0bf2e9a7bd8f2e2656395172a6588cd68bfc7178131a68802c8bbac8f75"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/dartaotruntime@3.13.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
@@ -72,6 +97,11 @@
               }
             ],
             "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-dartaotruntime-3.2e.13.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dart-sass"
+              },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
@@ -93,7 +123,7 @@
             "libexec/sass.aot",
             "sbom.spdx.json"
           ],
-          "installed_size": 5875182
+          "installed_size": 5875306
         }
       }
     }

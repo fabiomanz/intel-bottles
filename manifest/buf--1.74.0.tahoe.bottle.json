@@ -2,10 +2,10 @@
   "buf": {
     "formula": {
       "name": "buf",
-      "pkg_version": "1.73.0",
+      "pkg_version": "1.74.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/b/buf.rb",
       "tap_git_path": "Formula/b/buf.rb",
-      "tap_git_revision": "f53e41b275b6070e94c2d7a81e645c1c05fb6bee",
+      "tap_git_revision": "7c4fdd59e9cb7de1adee2853fe742646a4bac435",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "New way of working with Protocol Buffers",
       "license": "Apache-2.0",
@@ -15,18 +15,18 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-01T05:50:03Z",
+      "date": "2026-10-18T10:43:29Z",
       "tags": {
         "tahoe": {
-          "filename": "buf-1.73.0.tahoe.bottle.tar.gz",
-          "local_filename": "buf--1.73.0.tahoe.bottle.tar.gz",
-          "sha256": "cf36eb3b669a7cf26489616489c86f70187c987c07b4e509c26841cd20ccdd20",
+          "filename": "buf-1.74.0.tahoe.bottle.tar.gz",
+          "local_filename": "buf--1.74.0.tahoe.bottle.tar.gz",
+          "sha256": "cd03a4a5c4e68dfe98d66f050ba7bef5ff0b953d2741480b967b9efa62de44b9",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1789130081,
+            "source_modified_time": 1791996597,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -199,7 +199,7 @@
             "share/pwsh/completions/_buf.ps1",
             "share/zsh/site-functions/_buf"
           ],
-          "installed_size": 108040904
+          "installed_size": 99867604
         }
       }
     }
