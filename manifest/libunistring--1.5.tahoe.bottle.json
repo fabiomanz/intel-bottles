@@ -2,10 +2,10 @@
   "libunistring": {
     "formula": {
       "name": "libunistring",
-      "pkg_version": "1.4.2",
+      "pkg_version": "1.5",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libunistring.rb",
       "tap_git_path": "Formula/lib/libunistring.rb",
-      "tap_git_revision": "f5900eedc815143778a79d3c0448054ab00be974",
+      "tap_git_revision": "9a284249924617857ca397f3f5208f69f6caf6c4",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "C string library for manipulating Unicode strings",
       "license": "GPL-2.0-or-later OR LGPL-3.0-or-later",
@@ -15,20 +15,20 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-01T12:08:13Z",
+      "date": "2026-10-18T10:07:02Z",
       "tags": {
         "tahoe": {
-          "filename": "libunistring-1.4.2.tahoe.bottle.tar.gz",
-          "local_filename": "libunistring--1.4.2.tahoe.bottle.tar.gz",
-          "sha256": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112",
+          "filename": "libunistring-1.5.tahoe.bottle.tar.gz",
+          "local_filename": "libunistring--1.5.tahoe.bottle.tar.gz",
+          "sha256": "9914a8c6c3e193c9f0b20df1d04a32f25d247f0cb62fd1501abf321e1d1d7757",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [
               "lib/libunistring.5.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1771888317,
+            "source_modified_time": 1792273851,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -130,7 +130,7 @@
             "share/doc/libunistring/libunistring_toc.html",
             "share/info/libunistring.info"
           ],
-          "installed_size": 5831202
+          "installed_size": 5913007
         }
       }
     }

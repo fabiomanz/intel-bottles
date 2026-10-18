@@ -2,10 +2,10 @@
   "sqlite": {
     "formula": {
       "name": "sqlite",
-      "pkg_version": "3.54.0",
+      "pkg_version": "3.54.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/s/sqlite.rb",
       "tap_git_path": "Formula/s/sqlite.rb",
-      "tap_git_revision": "0ffe26e2f48973f4f582be184947b5a714dbe03c",
+      "tap_git_revision": "9a284249924617857ca397f3f5208f69f6caf6c4",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Command-line interface for SQLite",
       "license": "blessing",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-11T11:44:04Z",
+      "date": "2026-10-18T09:59:07Z",
       "tags": {
         "tahoe": {
-          "filename": "sqlite-3.54.0.tahoe.bottle.tar.gz",
-          "local_filename": "sqlite--3.54.0.tahoe.bottle.tar.gz",
-          "sha256": "dc852ce3cc635ed216e4daf1e68736ee9d8e90327d23bf17638be27c37ed61d4",
+          "filename": "sqlite-3.54.1.tahoe.bottle.tar.gz",
+          "local_filename": "sqlite--3.54.1.tahoe.bottle.tar.gz",
+          "sha256": "2795e99d07b8dc3f7b2bc3b35e5d2b39f11b3e5953ffaef9211706f714ffd5cc",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [
@@ -28,10 +28,10 @@
             ],
             "linkage_files": [
               "bin/sqlite3",
-              "lib/libsqlite3.3.54.0.dylib"
+              "lib/libsqlite3.3.54.1.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1791562501,
+            "source_modified_time": 1792163983,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -121,14 +121,14 @@
             "include/sqlite3.h",
             "include/sqlite3ext.h",
             "lib/libsqlite3.0.dylib",
-            "lib/libsqlite3.3.54.0.dylib",
+            "lib/libsqlite3.3.54.1.dylib",
             "lib/libsqlite3.a",
             "lib/libsqlite3.dylib",
             "lib/pkgconfig/sqlite3.pc",
             "sbom.spdx.json",
             "share/man/man1/sqlite3.1"
           ],
-          "installed_size": 5330083
+          "installed_size": 5335275
         }
       }
     }

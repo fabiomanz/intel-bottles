@@ -2,10 +2,10 @@
   "coreutils": {
     "formula": {
       "name": "coreutils",
-      "pkg_version": "9.12",
+      "pkg_version": "9.12_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/c/coreutils.rb",
       "tap_git_path": "Formula/c/coreutils.rb",
-      "tap_git_revision": "63fa1810e68212f67bd965ae06d098906b90ff0c",
+      "tap_git_revision": "9a284249924617857ca397f3f5208f69f6caf6c4",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "GNU File, Shell, and Text utilities",
       "license": "GPL-3.0-or-later",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-01T13:04:27Z",
+      "date": "2026-10-18T10:01:27Z",
       "tags": {
         "tahoe": {
-          "filename": "coreutils-9.12.tahoe.bottle.tar.gz",
-          "local_filename": "coreutils--9.12.tahoe.bottle.tar.gz",
-          "sha256": "666d8e539f88f3f081fdc501d2edc5b5cc908d7826d22dee283402c71179ffa4",
+          "filename": "coreutils-9.12_1.tahoe.bottle.tar.gz",
+          "local_filename": "coreutils--9.12_1.tahoe.bottle.tar.gz",
+          "sha256": "3e88e1ca8551e8dc2ac77469ed3bdb4342b9caab1ab8901b0c612a136d2b0981",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [
               "bin/g[",
@@ -246,19 +246,28 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "gettext",
-                "version": "1.0",
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
                 "revision": 0,
-                "pkg_version": "1.0",
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
-                "full_name": "openssl@3",
-                "version": "3.6.4",
+                "full_name": "openssl@4",
+                "version": "4.0.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.4",
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               }
@@ -276,514 +285,516 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/gsha512sum",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 61238
             },
             {
               "path": "bin/gusers",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 54731
             },
             {
               "path": "bin/gprintenv",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 54366
             },
             {
               "path": "bin/gmknod",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 57121
             },
             {
               "path": "bin/gdd",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 77147
             },
             {
               "path": "bin/gtsort",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 55410
             },
             {
               "path": "bin/grealpath",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 62646
             },
             {
               "path": "bin/grmdir",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 54193
             },
             {
               "path": "bin/gfold",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 58020
             },
             {
               "path": "bin/gnl",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 115670
             },
             {
               "path": "bin/greadlink",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 61684
             },
             {
               "path": "bin/gshred",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 71410
             },
             {
               "path": "bin/gmv",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 111802
             },
             {
               "path": "bin/gmkdir",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 59124
             },
             {
               "path": "bin/guniq",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 61417
             },
             {
               "path": "bin/gpr",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 82715
             },
             {
               "path": "bin/ghead",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 61258
             },
             {
               "path": "bin/glink",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 53125
             },
             {
               "path": "bin/gstat",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 89976
             },
             {
               "path": "bin/gmktemp",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 56581
             },
             {
               "path": "bin/gyes",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 53301
             },
             {
               "path": "bin/gsha1sum",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 60902
             },
             {
               "path": "bin/grm",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 73788
             },
             {
               "path": "bin/gsha256sum",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 61206
             },
             {
               "path": "bin/gfalse",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 49633
             },
             {
               "path": "bin/gwho",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 61142
             },
             {
               "path": "bin/gcut",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 70746
             },
             {
               "path": "bin/gvdir",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 126503
             },
             {
               "path": "bin/gdir",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 126503
             },
             {
               "path": "bin/gchmod",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 71431
             },
             {
               "path": "bin/gbase32",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 58541
             },
             {
               "path": "bin/ghostid",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 52808
             },
             {
               "path": "bin/gnohup",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 54985
             },
             {
               "path": "bin/gtr",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 65717
             },
             {
               "path": "bin/gdirname",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 54272
             },
             {
               "path": "bin/gsha384sum",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 61218
             },
             {
               "path": "bin/gchroot",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 65490
             },
             {
               "path": "bin/gpaste",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 56411
             },
             {
               "path": "bin/gid",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 58841
             },
             {
               "path": "bin/gpinky",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 59704
             },
             {
               "path": "bin/genv",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 74211
             },
             {
               "path": "bin/gln",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 72760
             },
             {
               "path": "bin/gbasename",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 54795
             },
             {
               "path": "bin/gtruncate",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 57208
             },
             {
               "path": "bin/gcp",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 107276
             },
             {
               "path": "bin/gls",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 126503
             },
             {
               "path": "bin/gtrue",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 49633
             },
             {
               "path": "bin/gchown",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 75299
             },
             {
               "path": "bin/gsync",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 53183
             },
             {
               "path": "bin/gsum",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 59992
             },
             {
               "path": "bin/gtac",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 113912
             },
             {
               "path": "bin/gexpand",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 58392
             },
             {
               "path": "bin/gpathchk",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 54295
             },
             {
               "path": "bin/gnice",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 54983
             },
             {
               "path": "bin/gecho",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 51256
             },
             {
               "path": "bin/gdu",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 167810
             },
             {
               "path": "bin/gb2sum",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 71069
             },
             {
               "path": "bin/gtouch",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 83351
             },
             {
               "path": "bin/gmkfifo",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 54282
             },
             {
               "path": "bin/gdf",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 82480
             },
             {
               "path": "bin/gjoin",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 67664
             },
             {
               "path": "bin/gtest",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 59780
             },
             {
               "path": "bin/gmd5sum",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 60794
             },
             {
               "path": "bin/gunexpand",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 59088
             },
             {
               "path": "bin/gsort",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 108891
             },
             {
               "path": "bin/gshuf",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 66897
             },
             {
               "path": "bin/gfmt",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 59800
             },
             {
               "path": "bin/gunlink",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 52975
             },
             {
               "path": "bin/gcsplit",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 119427
             },
             {
               "path": "bin/g[",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 59780
             },
             {
               "path": "bin/gwhoami",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 52955
             },
             {
               "path": "bin/gsplit",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 74565
             },
             {
               "path": "bin/gseq",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 60844
             },
             {
               "path": "bin/gdircolors",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 67681
             },
             {
               "path": "bin/ginstall",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 112856
             },
             {
               "path": "bin/gsha224sum",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 61140
             },
             {
               "path": "bin/gcomm",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 58056
             },
             {
               "path": "bin/gtty",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 52550
             },
             {
               "path": "bin/gcksum",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 131282
             },
             {
               "path": "bin/gexpr",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 118797
             },
             {
               "path": "bin/gbase64",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 58143
             },
             {
               "path": "bin/gwc",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 74033
             },
             {
               "path": "bin/gnproc",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 54887
             },
             {
               "path": "bin/gptx",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 126407
             },
             {
               "path": "bin/gtimeout",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 58893
             },
             {
               "path": "bin/gpwd",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 57229
             },
             {
               "path": "bin/gtail",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 74056
             },
             {
               "path": "bin/glogname",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 52841
             },
             {
               "path": "bin/guname",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 54873
             },
             {
               "path": "bin/gtee",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 57228
             },
             {
               "path": "bin/gstty",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 74294
             },
             {
               "path": "bin/gchgrp",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 75299
             },
             {
               "path": "bin/gcat",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 57466
             },
             {
               "path": "bin/ggroups",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 54159
             },
             {
               "path": "bin/gsleep",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 55009
             },
             {
               "path": "bin/gfactor",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 65985
             },
             {
               "path": "bin/god",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 74584
             },
             {
               "path": "bin/gprintf",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 60074
             },
             {
               "path": "bin/gstdbuf",
-              "string": "/usr/local/Cellar/coreutils/9.12/share/locale",
+              "string": "/usr/local/Cellar/coreutils/9.12_1/share/locale",
               "offset": 57876
             },
             {
               "path": "bin/gstdbuf",
-              "string": "/usr/local/Cellar/coreutils/9.12/libexec/coreutils",
-              "offset": 58933
+              "string": "/usr/local/Cellar/coreutils/9.12_1/libexec/coreutils",
+              "offset": 58937
             }
           ],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
                 "name": "gmp",
                 "versionInfo": "6.3.0",
                 "filesAnalyzed": false,
@@ -806,24 +817,70 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-                "name": "openssl@3",
-                "versionInfo": "3.6.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.4.tahoe.bottle.tar.gz",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13fdc9f3d0d30296056e2685e0c989978a5ed213f34a0de174e19feb72833e73"
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gettext-1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fe9d5337ff31e4f40b827b3463bd3fdc61b8f377277769f71e93baad0443bc96"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -843,12 +900,22 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-coreutils"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-coreutils"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-coreutils"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-coreutils"
               },
@@ -1513,7 +1580,7 @@
             "share/man/man1/tac.1",
             "share/man/man1/timeout.1"
           ],
-          "installed_size": 24218333
+          "installed_size": 24218775
         }
       }
     }

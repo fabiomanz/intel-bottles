@@ -2,10 +2,10 @@
   "pkgconf": {
     "formula": {
       "name": "pkgconf",
-      "pkg_version": "3.0.8",
+      "pkg_version": "3.0.9",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pkgconf.rb",
       "tap_git_path": "Formula/p/pkgconf.rb",
-      "tap_git_revision": "0ffe26e2f48973f4f582be184947b5a714dbe03c",
+      "tap_git_revision": "9a284249924617857ca397f3f5208f69f6caf6c4",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Package compiler and linker metadata toolkit",
       "license": "ISC",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-11T11:42:38Z",
+      "date": "2026-10-18T09:56:48Z",
       "tags": {
         "tahoe": {
-          "filename": "pkgconf-3.0.8.tahoe.bottle.tar.gz",
-          "local_filename": "pkgconf--3.0.8.tahoe.bottle.tar.gz",
-          "sha256": "bc09d8aa97c8079cae55c9aad2d10909cb52a07f45779ce4ba8ac3ed70c5458a",
+          "filename": "pkgconf-3.0.9.tahoe.bottle.tar.gz",
+          "local_filename": "pkgconf--3.0.9.tahoe.bottle.tar.gz",
+          "sha256": "6205445804abdd62c810c3d4eac1ddacbcc1b93c7340e5d626cdda8e547c1d5c",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [
@@ -37,7 +37,7 @@
               "lib/libpkgconf.8.dylib",
               "lib/libpkgconf.a"
             ],
-            "source_modified_time": 1791489657,
+            "source_modified_time": 1792104371,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -132,7 +132,7 @@
             "share/man/man5/pkgconf-personality.5",
             "share/man/man7/pkg.m4.7"
           ],
-          "installed_size": 602978
+          "installed_size": 603215
         }
       }
     }
