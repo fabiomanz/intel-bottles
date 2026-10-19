@@ -1,34 +1,35 @@
 {
-  "qtnetworkauth": {
+  "qtconnectivity": {
     "formula": {
-      "name": "qtnetworkauth",
-      "pkg_version": "6.12.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtnetworkauth.rb",
-      "tap_git_path": "Formula/q/qtnetworkauth.rb",
-      "tap_git_revision": "abbd7bd94e3bd6fb71856ad4176bce94b33ef160",
+      "name": "qtconnectivity",
+      "pkg_version": "6.12.0_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtconnectivity.rb",
+      "tap_git_path": "Formula/q/qtconnectivity.rb",
+      "tap_git_revision": "724558a4b08eda98896e46d392e0336f97406323",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
-      "desc": "Provides support for OAuth-based authorization to online services",
-      "license": "GPL-3.0-only AND BSD-3-Clause",
+      "desc": "Provides access to Bluetooth hardware",
+      "license": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
       "homepage": "https://www.qt.io/"
     },
     "bottle": {
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-14T11:46:35Z",
+      "date": "2026-10-19T11:54:32Z",
       "tags": {
         "tahoe": {
-          "filename": "qtnetworkauth-6.12.0.tahoe.bottle.tar.gz",
-          "local_filename": "qtnetworkauth--6.12.0.tahoe.bottle.tar.gz",
-          "sha256": "6bda261073803543fcf1343412bdab3454d3aff704d298b34c6a08d3d27abb24",
+          "filename": "qtconnectivity-6.12.0_1.tahoe.bottle.tar.gz",
+          "local_filename": "qtconnectivity--6.12.0_1.tahoe.bottle.tar.gz",
+          "sha256": "18b2258f02ead0c0b0b66ac27c12d39cecdcafeb49c38972c9adf8b3ee9f08ef",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [
-              "lib/QtNetworkAuth.framework/Versions/A/QtNetworkAuth"
+              "lib/QtBluetooth.framework/Versions/A/QtBluetooth",
+              "lib/QtNfc.framework/Versions/A/QtNfc"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790417494,
+            "source_modified_time": 1790432821,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -69,10 +70,10 @@
               },
               {
                 "full_name": "freetype",
-                "version": "2.14.3",
+                "version": "2.15.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.14.3",
+                "pkg_version": "2.15.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -95,10 +96,10 @@
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -167,10 +168,10 @@
               },
               {
                 "full_name": "libx11",
-                "version": "1.8.13",
+                "version": "1.8.14",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.8.13",
+                "pkg_version": "1.8.14",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -185,10 +186,10 @@
               },
               {
                 "full_name": "libxrender",
-                "version": "0.9.12",
+                "version": "0.9.13",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.9.12",
+                "pkg_version": "0.9.13",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -315,9 +316,9 @@
               {
                 "full_name": "qtbase",
                 "version": "6.12.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
+                "pkg_version": "6.12.0_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -336,14 +337,15 @@
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
-              "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+              "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
               "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
               "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
               "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
-              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
+              "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
               "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
               "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
@@ -353,7 +355,7 @@
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -381,24 +383,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "name": "freetype",
-                "versionInfo": "2.14.3",
+                "versionInfo": "2.15.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "FTL",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.14.3.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.15.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "a8a2bcc65a1d21adba6797d59f4ab1c91b0a40c53aae2794b4f94780e7379837"
+                    "checksumValue": "df5ad00e9d611b80d19df81741a935c2d9bceef6feb79b4c322dda96507d5d36"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/freetype@2.14.3",
+                    "referenceLocator": "pkg:brew/freetype@2.15.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -450,24 +452,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.5.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
+                    "checksumValue": "9914a8c6c3e193c9f0b20df1d04a32f25d247f0cb62fd1501abf321e1d1d7757"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -542,24 +544,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "name": "libx11",
-                "versionInfo": "1.8.13",
+                "versionInfo": "1.8.14",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.13.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.14.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "10c0844f2a8daab11aa21bd737480e496469da1a15c37067dc34ab308f8b6285"
+                    "checksumValue": "c6d26e6032e1a786e706b9c8679d0592276fd0a3007caadf760498808e1f0163"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libx11@1.8.13",
+                    "referenceLocator": "pkg:brew/libx11@1.8.14",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+                "name": "libxrender",
+                "versionInfo": "0.9.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libxrender-0.9.13.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "aebc979e80b79b0064a432ebeea298ceec187e5df77855f413e6fcb51571b769"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libxrender@0.9.13",
                     "referenceType": "purl"
                   }
                 ]
@@ -772,24 +797,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
                 "name": "qtbase",
-                "versionInfo": "6.12.0",
+                "versionInfo": "6.12.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND GFDL-1.3-no-invariants-only",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.12.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.12.0_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4e76f26f348ba8d1a3fb3b053ebdb843857652372bc58cd70442eff538fb04d0"
+                    "checksumValue": "4f6789a5aaa0cc5153ee3998749fee7dac76326cc40e4a91e4c8eb0151b3c6b2"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtbase@6.12.0",
+                    "referenceLocator": "pkg:brew/qtbase@6.12.0_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -811,206 +836,390 @@
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtnetworkauth"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtnetworkauth"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtnetworkauth"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtnetworkauth"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtnetworkauth"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtnetworkauth"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtnetworkauth"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtnetworkauth"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtnetworkauth"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtnetworkauth"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtnetworkauth"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtnetworkauth"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtnetworkauth"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtnetworkauth"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtnetworkauth"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtnetworkauth"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtnetworkauth"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtnetworkauth"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtnetworkauth"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtconnectivity"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-qtnetworkauth-src"
+                "relatedSpdxElement": "SPDXRef-Archive-qtconnectivity-src"
               }
             ]
           },
           "path_exec_files": [],
           "all_files": [
-            ".brew/qtnetworkauth.rb",
+            ".brew/qtconnectivity.rb",
             "INSTALL_RECEIPT.json",
-            "include/QtNetworkAuth/QAbstractOAuth",
-            "include/QtNetworkAuth/QAbstractOAuth2",
-            "include/QtNetworkAuth/QAbstractOAuthReplyHandler",
-            "include/QtNetworkAuth/QOAuth1",
-            "include/QtNetworkAuth/QOAuth1Signature",
-            "include/QtNetworkAuth/QOAuth2AuthorizationCodeFlow",
-            "include/QtNetworkAuth/QOAuth2DeviceAuthorizationFlow",
-            "include/QtNetworkAuth/QOAuthHttpServerReplyHandler",
-            "include/QtNetworkAuth/QOAuthOobReplyHandler",
-            "include/QtNetworkAuth/QOAuthUriSchemeReplyHandler",
-            "include/QtNetworkAuth/QtNetworkAuth",
-            "include/QtNetworkAuth/QtNetworkAuthDepends",
-            "include/QtNetworkAuth/QtNetworkAuthVersion",
-            "include/QtNetworkAuth/qabstractoauth.h",
-            "include/QtNetworkAuth/qabstractoauth2.h",
-            "include/QtNetworkAuth/qabstractoauthreplyhandler.h",
-            "include/QtNetworkAuth/qoauth1.h",
-            "include/QtNetworkAuth/qoauth1signature.h",
-            "include/QtNetworkAuth/qoauth2authorizationcodeflow.h",
-            "include/QtNetworkAuth/qoauth2deviceauthorizationflow.h",
-            "include/QtNetworkAuth/qoauthglobal.h",
-            "include/QtNetworkAuth/qoauthhttpserverreplyhandler.h",
-            "include/QtNetworkAuth/qoauthoobreplyhandler.h",
-            "include/QtNetworkAuth/qoauthurischemereplyhandler.h",
-            "include/QtNetworkAuth/qtnetworkauth-config.h",
-            "include/QtNetworkAuth/qtnetworkauthversion.h",
-            "lib/QtNetworkAuth.framework/QtNetworkAuth",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/6.12.0/QtNetworkAuth/private/qabstractoauth2_p.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/6.12.0/QtNetworkAuth/private/qabstractoauth_p.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/6.12.0/QtNetworkAuth/private/qabstractoauthreplyhandler_p.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/6.12.0/QtNetworkAuth/private/qoauth1_p.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/6.12.0/QtNetworkAuth/private/qoauth1signature_p.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/6.12.0/QtNetworkAuth/private/qoauth2authorizationcodeflow_p.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/6.12.0/QtNetworkAuth/private/qoauth2deviceauthorizationflow_p.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/6.12.0/QtNetworkAuth/private/qoauthhttpserverreplyhandler_p.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/6.12.0/QtNetworkAuth/private/qoauthoobreplyhandler_p.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/6.12.0/QtNetworkAuth/private/qoauthurischemereplyhandler_p.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/6.12.0/QtNetworkAuth/private/qtnetworkauth-config_p.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/QAbstractOAuth",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/QAbstractOAuth2",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/QAbstractOAuthReplyHandler",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/QOAuth1",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/QOAuth1Signature",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/QOAuth2AuthorizationCodeFlow",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/QOAuth2DeviceAuthorizationFlow",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/QOAuthHttpServerReplyHandler",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/QOAuthOobReplyHandler",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/QOAuthUriSchemeReplyHandler",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/QtNetworkAuth",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/QtNetworkAuthDepends",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/QtNetworkAuthVersion",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/qabstractoauth.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/qabstractoauth2.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/qabstractoauthreplyhandler.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/qoauth1.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/qoauth1signature.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/qoauth2authorizationcodeflow.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/qoauth2deviceauthorizationflow.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/qoauthglobal.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/qoauthhttpserverreplyhandler.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/qoauthoobreplyhandler.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/qoauthurischemereplyhandler.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/qtnetworkauth-config.h",
-            "lib/QtNetworkAuth.framework/Versions/A/Headers/qtnetworkauthversion.h",
-            "lib/QtNetworkAuth.framework/Versions/A/QtNetworkAuth",
-            "lib/QtNetworkAuth.framework/Versions/A/Resources/Info.plist",
-            "lib/QtNetworkAuth.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
-            "lib/QtNetworkAuth.framework/Versions/A/Resources/QtNetworkAuth.prl",
-            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtNetworkAuthTestsConfig.cmake",
-            "lib/cmake/Qt6NetworkAuth/Qt6NetworkAuthAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6NetworkAuth/Qt6NetworkAuthConfig.cmake",
-            "lib/cmake/Qt6NetworkAuth/Qt6NetworkAuthConfigVersion.cmake",
-            "lib/cmake/Qt6NetworkAuth/Qt6NetworkAuthConfigVersionImpl.cmake",
-            "lib/cmake/Qt6NetworkAuth/Qt6NetworkAuthDependencies.cmake",
-            "lib/cmake/Qt6NetworkAuth/Qt6NetworkAuthTargets-release.cmake",
-            "lib/cmake/Qt6NetworkAuth/Qt6NetworkAuthTargets.cmake",
-            "lib/cmake/Qt6NetworkAuth/Qt6NetworkAuthTargetsPrecheck.cmake",
-            "lib/cmake/Qt6NetworkAuth/Qt6NetworkAuthVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6NetworkAuth/Qt6NetworkAuthVersionlessTargets.cmake",
-            "lib/cmake/Qt6NetworkAuthPrivate/Qt6NetworkAuthPrivateAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6NetworkAuthPrivate/Qt6NetworkAuthPrivateConfig.cmake",
-            "lib/cmake/Qt6NetworkAuthPrivate/Qt6NetworkAuthPrivateConfigVersion.cmake",
-            "lib/cmake/Qt6NetworkAuthPrivate/Qt6NetworkAuthPrivateConfigVersionImpl.cmake",
-            "lib/cmake/Qt6NetworkAuthPrivate/Qt6NetworkAuthPrivateDependencies.cmake",
-            "lib/cmake/Qt6NetworkAuthPrivate/Qt6NetworkAuthPrivateTargets.cmake",
-            "lib/cmake/Qt6NetworkAuthPrivate/Qt6NetworkAuthPrivateTargetsPrecheck.cmake",
-            "lib/cmake/Qt6NetworkAuthPrivate/Qt6NetworkAuthPrivateVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6NetworkAuthPrivate/Qt6NetworkAuthPrivateVersionlessTargets.cmake",
-            "lib/pkgconfig/Qt6NetworkAuth.pc",
+            "include/QtBluetooth/QBluetoothAddress",
+            "include/QtBluetooth/QBluetoothDeviceDiscoveryAgent",
+            "include/QtBluetooth/QBluetoothDeviceInfo",
+            "include/QtBluetooth/QBluetoothHostInfo",
+            "include/QtBluetooth/QBluetoothLocalDevice",
+            "include/QtBluetooth/QBluetoothServer",
+            "include/QtBluetooth/QBluetoothServiceDiscoveryAgent",
+            "include/QtBluetooth/QBluetoothServiceInfo",
+            "include/QtBluetooth/QBluetoothSocket",
+            "include/QtBluetooth/QBluetoothUuid",
+            "include/QtBluetooth/QLowEnergyAdvertisingData",
+            "include/QtBluetooth/QLowEnergyAdvertisingParameters",
+            "include/QtBluetooth/QLowEnergyCharacteristic",
+            "include/QtBluetooth/QLowEnergyCharacteristicData",
+            "include/QtBluetooth/QLowEnergyConnectionParameters",
+            "include/QtBluetooth/QLowEnergyController",
+            "include/QtBluetooth/QLowEnergyDescriptor",
+            "include/QtBluetooth/QLowEnergyDescriptorData",
+            "include/QtBluetooth/QLowEnergyHandle",
+            "include/QtBluetooth/QLowEnergyService",
+            "include/QtBluetooth/QLowEnergyServiceData",
+            "include/QtBluetooth/QtBluetooth",
+            "include/QtBluetooth/QtBluetoothDepends",
+            "include/QtBluetooth/QtBluetoothVersion",
+            "include/QtBluetooth/qbluetooth.h",
+            "include/QtBluetooth/qbluetoothaddress.h",
+            "include/QtBluetooth/qbluetoothdevicediscoveryagent.h",
+            "include/QtBluetooth/qbluetoothdeviceinfo.h",
+            "include/QtBluetooth/qbluetoothhostinfo.h",
+            "include/QtBluetooth/qbluetoothlocaldevice.h",
+            "include/QtBluetooth/qbluetoothserver.h",
+            "include/QtBluetooth/qbluetoothservicediscoveryagent.h",
+            "include/QtBluetooth/qbluetoothserviceinfo.h",
+            "include/QtBluetooth/qbluetoothsocket.h",
+            "include/QtBluetooth/qbluetoothuuid.h",
+            "include/QtBluetooth/qlowenergyadvertisingdata.h",
+            "include/QtBluetooth/qlowenergyadvertisingparameters.h",
+            "include/QtBluetooth/qlowenergycharacteristic.h",
+            "include/QtBluetooth/qlowenergycharacteristicdata.h",
+            "include/QtBluetooth/qlowenergyconnectionparameters.h",
+            "include/QtBluetooth/qlowenergycontroller.h",
+            "include/QtBluetooth/qlowenergydescriptor.h",
+            "include/QtBluetooth/qlowenergydescriptordata.h",
+            "include/QtBluetooth/qlowenergyservice.h",
+            "include/QtBluetooth/qlowenergyservicedata.h",
+            "include/QtBluetooth/qtbluetooth-config.h",
+            "include/QtBluetooth/qtbluetoothexports.h",
+            "include/QtBluetooth/qtbluetoothglobal.h",
+            "include/QtBluetooth/qtbluetoothversion.h",
+            "include/QtConnectivity/6.12.0/QtConnectivity/private/qtconnectivity-config_p.h",
+            "include/QtConnectivity/QtConnectivity",
+            "include/QtConnectivity/QtConnectivityDepends",
+            "include/QtConnectivity/QtConnectivityVersion",
+            "include/QtConnectivity/qtconnectivity-config.h",
+            "include/QtConnectivity/qtconnectivityversion.h",
+            "include/QtNfc/QNdefFilter",
+            "include/QtNfc/QNdefMessage",
+            "include/QtNfc/QNdefNfcIconRecord",
+            "include/QtNfc/QNdefNfcSmartPosterRecord",
+            "include/QtNfc/QNdefNfcTextRecord",
+            "include/QtNfc/QNdefNfcUriRecord",
+            "include/QtNfc/QNdefRecord",
+            "include/QtNfc/QNearFieldManager",
+            "include/QtNfc/QNearFieldTarget",
+            "include/QtNfc/QtNfc",
+            "include/QtNfc/QtNfcDepends",
+            "include/QtNfc/QtNfcVersion",
+            "include/QtNfc/qndeffilter.h",
+            "include/QtNfc/qndefmessage.h",
+            "include/QtNfc/qndefnfcsmartposterrecord.h",
+            "include/QtNfc/qndefnfctextrecord.h",
+            "include/QtNfc/qndefnfcurirecord.h",
+            "include/QtNfc/qndefrecord.h",
+            "include/QtNfc/qnearfieldmanager.h",
+            "include/QtNfc/qnearfieldtarget.h",
+            "include/QtNfc/qtnfc-config.h",
+            "include/QtNfc/qtnfcexports.h",
+            "include/QtNfc/qtnfcglobal.h",
+            "include/QtNfc/qtnfcversion.h",
+            "lib/QtBluetooth.framework/QtBluetooth",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btcentralmanager_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btconnectionmonitor_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btdelegates_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btdeviceinquiry_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btdevicepair_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btgcdtimer_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btl2capchannel_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btledeviceinquiry_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btnotifier_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btperipheralmanager_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btraii_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btrfcommchannel_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btsdpinquiry_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btservicerecord_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btsocketlistener_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/btutility_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/lecmaccalculator_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qbluetoothdevicediscoveryagent_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qbluetoothdeviceinfo_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qbluetoothhostinfo_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qbluetoothlocaldevice_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qbluetoothserver_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qbluetoothservicediscoveryagent_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qbluetoothserviceinfo_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qbluetoothsocket_macos_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qbluetoothsocketbase_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qlowenergycontroller_darwin_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qlowenergycontrollerbase_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qlowenergyserviceprivate_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qprivatelinearbuffer_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qtbluetooth-config_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/qtbluetoothglobal_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/6.12.0/QtBluetooth/private/uistrings_p.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QBluetoothAddress",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QBluetoothDeviceDiscoveryAgent",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QBluetoothDeviceInfo",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QBluetoothHostInfo",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QBluetoothLocalDevice",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QBluetoothServer",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QBluetoothServiceDiscoveryAgent",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QBluetoothServiceInfo",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QBluetoothSocket",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QBluetoothUuid",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QLowEnergyAdvertisingData",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QLowEnergyAdvertisingParameters",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QLowEnergyCharacteristic",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QLowEnergyCharacteristicData",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QLowEnergyConnectionParameters",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QLowEnergyController",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QLowEnergyDescriptor",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QLowEnergyDescriptorData",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QLowEnergyHandle",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QLowEnergyService",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QLowEnergyServiceData",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QtBluetooth",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QtBluetoothDepends",
+            "lib/QtBluetooth.framework/Versions/A/Headers/QtBluetoothVersion",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qbluetooth.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qbluetoothaddress.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qbluetoothdevicediscoveryagent.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qbluetoothdeviceinfo.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qbluetoothhostinfo.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qbluetoothlocaldevice.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qbluetoothserver.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qbluetoothservicediscoveryagent.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qbluetoothserviceinfo.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qbluetoothsocket.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qbluetoothuuid.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qlowenergyadvertisingdata.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qlowenergyadvertisingparameters.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qlowenergycharacteristic.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qlowenergycharacteristicdata.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qlowenergyconnectionparameters.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qlowenergycontroller.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qlowenergydescriptor.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qlowenergydescriptordata.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qlowenergyservice.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qlowenergyservicedata.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qtbluetooth-config.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qtbluetoothexports.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qtbluetoothglobal.h",
+            "lib/QtBluetooth.framework/Versions/A/Headers/qtbluetoothversion.h",
+            "lib/QtBluetooth.framework/Versions/A/QtBluetooth",
+            "lib/QtBluetooth.framework/Versions/A/Resources/Info.plist",
+            "lib/QtBluetooth.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtBluetooth.framework/Versions/A/Resources/QtBluetooth.prl",
+            "lib/QtNfc.framework/QtNfc",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qapduutils_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qndefaccessfsm_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qndefnfcsmartposterrecord_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qndefrecord_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qnearfieldmanager_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qnearfieldmanager_pcsc_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qnearfieldtarget_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qnearfieldtarget_pcsc_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qnfctagtype4ndeffsm_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qpcsc_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qpcsccard_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qpcscmanager_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qpcscslot_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qtnfc-config_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/6.12.0/QtNfc/private/qtnfcglobal_p.h",
+            "lib/QtNfc.framework/Versions/A/Headers/QNdefFilter",
+            "lib/QtNfc.framework/Versions/A/Headers/QNdefMessage",
+            "lib/QtNfc.framework/Versions/A/Headers/QNdefNfcIconRecord",
+            "lib/QtNfc.framework/Versions/A/Headers/QNdefNfcSmartPosterRecord",
+            "lib/QtNfc.framework/Versions/A/Headers/QNdefNfcTextRecord",
+            "lib/QtNfc.framework/Versions/A/Headers/QNdefNfcUriRecord",
+            "lib/QtNfc.framework/Versions/A/Headers/QNdefRecord",
+            "lib/QtNfc.framework/Versions/A/Headers/QNearFieldManager",
+            "lib/QtNfc.framework/Versions/A/Headers/QNearFieldTarget",
+            "lib/QtNfc.framework/Versions/A/Headers/QtNfc",
+            "lib/QtNfc.framework/Versions/A/Headers/QtNfcDepends",
+            "lib/QtNfc.framework/Versions/A/Headers/QtNfcVersion",
+            "lib/QtNfc.framework/Versions/A/Headers/qndeffilter.h",
+            "lib/QtNfc.framework/Versions/A/Headers/qndefmessage.h",
+            "lib/QtNfc.framework/Versions/A/Headers/qndefnfcsmartposterrecord.h",
+            "lib/QtNfc.framework/Versions/A/Headers/qndefnfctextrecord.h",
+            "lib/QtNfc.framework/Versions/A/Headers/qndefnfcurirecord.h",
+            "lib/QtNfc.framework/Versions/A/Headers/qndefrecord.h",
+            "lib/QtNfc.framework/Versions/A/Headers/qnearfieldmanager.h",
+            "lib/QtNfc.framework/Versions/A/Headers/qnearfieldtarget.h",
+            "lib/QtNfc.framework/Versions/A/Headers/qtnfc-config.h",
+            "lib/QtNfc.framework/Versions/A/Headers/qtnfcexports.h",
+            "lib/QtNfc.framework/Versions/A/Headers/qtnfcglobal.h",
+            "lib/QtNfc.framework/Versions/A/Headers/qtnfcversion.h",
+            "lib/QtNfc.framework/Versions/A/QtNfc",
+            "lib/QtNfc.framework/Versions/A/Resources/Info.plist",
+            "lib/QtNfc.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtNfc.framework/Versions/A/Resources/QtNfc.prl",
+            "lib/cmake/Qt6/FindBlueZ.cmake",
+            "lib/cmake/Qt6/FindPCSCLITE.cmake",
+            "lib/cmake/Qt6Bluetooth/Qt6BluetoothAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Bluetooth/Qt6BluetoothConfig.cmake",
+            "lib/cmake/Qt6Bluetooth/Qt6BluetoothConfigVersion.cmake",
+            "lib/cmake/Qt6Bluetooth/Qt6BluetoothConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Bluetooth/Qt6BluetoothDependencies.cmake",
+            "lib/cmake/Qt6Bluetooth/Qt6BluetoothTargets-release.cmake",
+            "lib/cmake/Qt6Bluetooth/Qt6BluetoothTargets.cmake",
+            "lib/cmake/Qt6Bluetooth/Qt6BluetoothTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Bluetooth/Qt6BluetoothVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6Bluetooth/Qt6BluetoothVersionlessTargets.cmake",
+            "lib/cmake/Qt6BluetoothPrivate/Qt6BluetoothPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6BluetoothPrivate/Qt6BluetoothPrivateConfig.cmake",
+            "lib/cmake/Qt6BluetoothPrivate/Qt6BluetoothPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6BluetoothPrivate/Qt6BluetoothPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6BluetoothPrivate/Qt6BluetoothPrivateDependencies.cmake",
+            "lib/cmake/Qt6BluetoothPrivate/Qt6BluetoothPrivateTargets.cmake",
+            "lib/cmake/Qt6BluetoothPrivate/Qt6BluetoothPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6BluetoothPrivate/Qt6BluetoothPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6BluetoothPrivate/Qt6BluetoothPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtConnectivityTestsConfig.cmake",
+            "lib/cmake/Qt6Connectivity/Qt6ConnectivityAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Connectivity/Qt6ConnectivityConfig.cmake",
+            "lib/cmake/Qt6Connectivity/Qt6ConnectivityConfigVersion.cmake",
+            "lib/cmake/Qt6Connectivity/Qt6ConnectivityConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Connectivity/Qt6ConnectivityExtraProperties.cmake",
+            "lib/cmake/Qt6Connectivity/Qt6ConnectivityTargets.cmake",
+            "lib/cmake/Qt6Connectivity/Qt6ConnectivityTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Connectivity/Qt6ConnectivityVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6Connectivity/Qt6ConnectivityVersionlessTargets.cmake",
+            "lib/cmake/Qt6Nfc/Qt6NfcAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Nfc/Qt6NfcConfig.cmake",
+            "lib/cmake/Qt6Nfc/Qt6NfcConfigVersion.cmake",
+            "lib/cmake/Qt6Nfc/Qt6NfcConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Nfc/Qt6NfcDependencies.cmake",
+            "lib/cmake/Qt6Nfc/Qt6NfcTargets-release.cmake",
+            "lib/cmake/Qt6Nfc/Qt6NfcTargets.cmake",
+            "lib/cmake/Qt6Nfc/Qt6NfcTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Nfc/Qt6NfcVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6Nfc/Qt6NfcVersionlessTargets.cmake",
+            "lib/cmake/Qt6NfcPrivate/Qt6NfcPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6NfcPrivate/Qt6NfcPrivateConfig.cmake",
+            "lib/cmake/Qt6NfcPrivate/Qt6NfcPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6NfcPrivate/Qt6NfcPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6NfcPrivate/Qt6NfcPrivateDependencies.cmake",
+            "lib/cmake/Qt6NfcPrivate/Qt6NfcPrivateTargets.cmake",
+            "lib/cmake/Qt6NfcPrivate/Qt6NfcPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6NfcPrivate/Qt6NfcPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6NfcPrivate/Qt6NfcPrivateVersionlessTargets.cmake",
+            "lib/pkgconfig/Qt6Bluetooth.pc",
+            "lib/pkgconfig/Qt6Nfc.pc",
             "sbom.spdx.json",
-            "share/qt/metatypes/qt6networkauth_metatypes.json",
-            "share/qt/mkspecs/modules/qt_lib_networkauth.pri",
-            "share/qt/mkspecs/modules/qt_lib_networkauth_private.pri",
-            "share/qt/modules/NetworkAuth.json",
-            "share/qt/sbom/qtnetworkauth-6.12.0.spdx"
+            "share/qt/metatypes/qt6bluetooth_metatypes.json",
+            "share/qt/metatypes/qt6nfc_metatypes.json",
+            "share/qt/mkspecs/modules/qt_lib_bluetooth.pri",
+            "share/qt/mkspecs/modules/qt_lib_bluetooth_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_connectivity_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_nfc.pri",
+            "share/qt/mkspecs/modules/qt_lib_nfc_private.pri",
+            "share/qt/modules/Bluetooth.json",
+            "share/qt/modules/Connectivity.json",
+            "share/qt/modules/Nfc.json",
+            "share/qt/sbom/qtconnectivity-6.12.0.spdx"
           ],
-          "installed_size": 560094
+          "installed_size": 1659390
         }
       }
     }
