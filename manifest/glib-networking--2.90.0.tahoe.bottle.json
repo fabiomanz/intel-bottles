@@ -1,0 +1,539 @@
+{
+  "glib-networking": {
+    "formula": {
+      "name": "glib-networking",
+      "pkg_version": "2.90.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/glib-networking.rb",
+      "tap_git_path": "Formula/g/glib-networking.rb",
+      "tap_git_revision": "db58bac8d6dc0bd5100b0109dca9448103ba29fd",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Network related modules for glib",
+      "license": "LGPL-2.1-or-later",
+      "homepage": "https://gitlab.gnome.org/GNOME/glib-networking"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-19T11:20:06Z",
+      "tags": {
+        "tahoe": {
+          "filename": "glib-networking-2.90.0.tahoe.bottle.tar.gz",
+          "local_filename": "glib-networking--2.90.0.tahoe.bottle.tar.gz",
+          "sha256": "d612f0233fad0fd574402420fd870151fa777ea5acf1229df71fcacc804fd79d",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/gio/modules/libgiognutls.so"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789075139,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "pcre2",
+                "version": "10.49",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.49",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.90.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.90.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libidn2",
+                "version": "2.3.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.8",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtasn1",
+                "version": "4.21.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.21.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "nettle",
+                "version": "4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "p11-kit",
+                "version": "0.26.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.26.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gnutls",
+                "version": "3.8.13",
+                "revision": 2,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.8.13_2",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "gsettings-desktop-schemas",
+                "version": "51.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "51.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+              "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+              "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.2e.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+                "name": "pcre2",
+                "versionInfo": "10.49",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.49.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7fe75e3ba297623163ee0e3a262e417d0eb36342f6cda4135ede90412ff03040"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.49",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+                "name": "libunistring",
+                "versionInfo": "1.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.5.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9914a8c6c3e193c9f0b20df1d04a32f25d247f0cb62fd1501abf321e1d1d7757"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gettext-1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fe9d5337ff31e4f40b827b3463bd3fdc61b8f377277769f71e93baad0443bc96"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+                "name": "glib",
+                "versionInfo": "2.90.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b0aaa12be31d6f764cdca91e2a75efe6f317eabba79a48bdf1467217a0ccbab"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/glib@2.90.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gmp-6.3.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b4e672215c05a94e9244d447c8dab3435d4e8a96f6135fdbf8c37ba730c98d65"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+                "name": "p11-kit",
+                "versionInfo": "0.26.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/p11-kit-0.26.5.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "28df4ce7bd92b899411a8adc39fe2c6ba25e8042fcc96718d2cb677c23720ca6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/p11-kit@0.26.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.2e.0",
+                "name": "gsettings-desktop-schemas",
+                "versionInfo": "51.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gsettings-desktop-schemas-51.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f3a5ad690831b13ba15993a8fa0a39233448f0293a88abaa526af28f57371e00"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gsettings-desktop-schemas@51.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-glib-networking"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-glib-networking"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-glib-networking"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-glib-networking"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-glib-networking"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-glib-networking"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-glib-networking"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-glib-networking"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-glib-networking"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-glib-networking-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/glib-networking.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "lib/gio/modules/libgiognutls.so",
+            "sbom.spdx.json",
+            "share/locale/ab/LC_MESSAGES/glib-networking.mo",
+            "share/locale/an/LC_MESSAGES/glib-networking.mo",
+            "share/locale/ar/LC_MESSAGES/glib-networking.mo",
+            "share/locale/as/LC_MESSAGES/glib-networking.mo",
+            "share/locale/be/LC_MESSAGES/glib-networking.mo",
+            "share/locale/bg/LC_MESSAGES/glib-networking.mo",
+            "share/locale/bn_IN/LC_MESSAGES/glib-networking.mo",
+            "share/locale/bs/LC_MESSAGES/glib-networking.mo",
+            "share/locale/ca/LC_MESSAGES/glib-networking.mo",
+            "share/locale/ca@valencia/LC_MESSAGES/glib-networking.mo",
+            "share/locale/cs/LC_MESSAGES/glib-networking.mo",
+            "share/locale/da/LC_MESSAGES/glib-networking.mo",
+            "share/locale/de/LC_MESSAGES/glib-networking.mo",
+            "share/locale/el/LC_MESSAGES/glib-networking.mo",
+            "share/locale/en_CA/LC_MESSAGES/glib-networking.mo",
+            "share/locale/en_GB/LC_MESSAGES/glib-networking.mo",
+            "share/locale/eo/LC_MESSAGES/glib-networking.mo",
+            "share/locale/es/LC_MESSAGES/glib-networking.mo",
+            "share/locale/et/LC_MESSAGES/glib-networking.mo",
+            "share/locale/eu/LC_MESSAGES/glib-networking.mo",
+            "share/locale/fa/LC_MESSAGES/glib-networking.mo",
+            "share/locale/fi/LC_MESSAGES/glib-networking.mo",
+            "share/locale/fr/LC_MESSAGES/glib-networking.mo",
+            "share/locale/fur/LC_MESSAGES/glib-networking.mo",
+            "share/locale/gd/LC_MESSAGES/glib-networking.mo",
+            "share/locale/gl/LC_MESSAGES/glib-networking.mo",
+            "share/locale/gu/LC_MESSAGES/glib-networking.mo",
+            "share/locale/he/LC_MESSAGES/glib-networking.mo",
+            "share/locale/hi/LC_MESSAGES/glib-networking.mo",
+            "share/locale/hr/LC_MESSAGES/glib-networking.mo",
+            "share/locale/hu/LC_MESSAGES/glib-networking.mo",
+            "share/locale/id/LC_MESSAGES/glib-networking.mo",
+            "share/locale/it/LC_MESSAGES/glib-networking.mo",
+            "share/locale/ja/LC_MESSAGES/glib-networking.mo",
+            "share/locale/ka/LC_MESSAGES/glib-networking.mo",
+            "share/locale/kab/LC_MESSAGES/glib-networking.mo",
+            "share/locale/kk/LC_MESSAGES/glib-networking.mo",
+            "share/locale/km/LC_MESSAGES/glib-networking.mo",
+            "share/locale/kn/LC_MESSAGES/glib-networking.mo",
+            "share/locale/ko/LC_MESSAGES/glib-networking.mo",
+            "share/locale/kw/LC_MESSAGES/glib-networking.mo",
+            "share/locale/lo/LC_MESSAGES/glib-networking.mo",
+            "share/locale/lt/LC_MESSAGES/glib-networking.mo",
+            "share/locale/lv/LC_MESSAGES/glib-networking.mo",
+            "share/locale/ml/LC_MESSAGES/glib-networking.mo",
+            "share/locale/mr/LC_MESSAGES/glib-networking.mo",
+            "share/locale/ms/LC_MESSAGES/glib-networking.mo",
+            "share/locale/nb/LC_MESSAGES/glib-networking.mo",
+            "share/locale/ne/LC_MESSAGES/glib-networking.mo",
+            "share/locale/nl/LC_MESSAGES/glib-networking.mo",
+            "share/locale/oc/LC_MESSAGES/glib-networking.mo",
+            "share/locale/or/LC_MESSAGES/glib-networking.mo",
+            "share/locale/pa/LC_MESSAGES/glib-networking.mo",
+            "share/locale/pl/LC_MESSAGES/glib-networking.mo",
+            "share/locale/pt/LC_MESSAGES/glib-networking.mo",
+            "share/locale/pt_BR/LC_MESSAGES/glib-networking.mo",
+            "share/locale/ro/LC_MESSAGES/glib-networking.mo",
+            "share/locale/ru/LC_MESSAGES/glib-networking.mo",
+            "share/locale/sk/LC_MESSAGES/glib-networking.mo",
+            "share/locale/sl/LC_MESSAGES/glib-networking.mo",
+            "share/locale/sr/LC_MESSAGES/glib-networking.mo",
+            "share/locale/sr@latin/LC_MESSAGES/glib-networking.mo",
+            "share/locale/sv/LC_MESSAGES/glib-networking.mo",
+            "share/locale/ta/LC_MESSAGES/glib-networking.mo",
+            "share/locale/te/LC_MESSAGES/glib-networking.mo",
+            "share/locale/tg/LC_MESSAGES/glib-networking.mo",
+            "share/locale/th/LC_MESSAGES/glib-networking.mo",
+            "share/locale/tr/LC_MESSAGES/glib-networking.mo",
+            "share/locale/ug/LC_MESSAGES/glib-networking.mo",
+            "share/locale/uk/LC_MESSAGES/glib-networking.mo",
+            "share/locale/uz/LC_MESSAGES/glib-networking.mo",
+            "share/locale/vi/LC_MESSAGES/glib-networking.mo",
+            "share/locale/zh_CN/LC_MESSAGES/glib-networking.mo",
+            "share/locale/zh_HK/LC_MESSAGES/glib-networking.mo",
+            "share/locale/zh_TW/LC_MESSAGES/glib-networking.mo"
+          ],
+          "installed_size": 785198
+        }
+      }
+    }
+  }
+}
