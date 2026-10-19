@@ -1,41 +1,35 @@
 {
-  "qtscxml": {
+  "qtwebsockets": {
     "formula": {
-      "name": "qtscxml",
-      "pkg_version": "6.12.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtscxml.rb",
-      "tap_git_path": "Formula/q/qtscxml.rb",
-      "tap_git_revision": "142662eb89e02173f48c1aba5c71f8e7a5771076",
+      "name": "qtwebsockets",
+      "pkg_version": "6.12.0_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtwebsockets.rb",
+      "tap_git_path": "Formula/q/qtwebsockets.rb",
+      "tap_git_revision": "6c68ff7bc7c96bfecbbb73ed9eaf4bcc77900b2f",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
-      "desc": "Provides functionality to create state machines from SCXML files",
-      "license": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause",
+      "desc": "Provides WebSocket communication compliant with RFC 6455",
+      "license": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
       "homepage": "https://www.qt.io/"
     },
     "bottle": {
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-14T13:30:54Z",
+      "date": "2026-10-19T13:26:42Z",
       "tags": {
         "tahoe": {
-          "filename": "qtscxml-6.12.0.tahoe.bottle.tar.gz",
-          "local_filename": "qtscxml--6.12.0.tahoe.bottle.tar.gz",
-          "sha256": "c38749d3ce3433792ad8b7ea77e1b72f04d438308f2180dcbb3993bb86c4beaa",
+          "filename": "qtwebsockets-6.12.0_1.tahoe.bottle.tar.gz",
+          "local_filename": "qtwebsockets--6.12.0_1.tahoe.bottle.tar.gz",
+          "sha256": "56dc00738fb8912423ce127d6a374e26d947ff77d4f92c85c0eac1ef90f31b8f",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.10",
             "changed_files": [],
             "linkage_files": [
-              "lib/QtScxml.framework/Versions/A/QtScxml",
-              "lib/QtScxmlQml.framework/Versions/A/QtScxmlQml",
-              "lib/QtStateMachine.framework/Versions/A/QtStateMachine",
-              "lib/QtStateMachineQml.framework/Versions/A/QtStateMachineQml",
-              "share/qt/libexec/qscxmlc",
-              "share/qt/plugins/scxmldatamodel/libqscxmlecmascriptdatamodel.dylib",
-              "share/qt/qml/QtQml/StateMachine/libqtqmlstatemachineplugin.dylib",
-              "share/qt/qml/QtScxml/libdeclarative_scxmlplugin.dylib"
+              "lib/QtWebSockets.framework/Versions/A/QtWebSockets",
+              "share/qt/qml/QtWebSockets/libqmlwebsocketsplugin.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790432797,
+            "source_modified_time": 1790496931,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -76,10 +70,10 @@
               },
               {
                 "full_name": "freetype",
-                "version": "2.14.3",
+                "version": "2.15.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.14.3",
+                "pkg_version": "2.15.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -102,10 +96,10 @@
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -174,10 +168,10 @@
               },
               {
                 "full_name": "libx11",
-                "version": "1.8.13",
+                "version": "1.8.14",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.8.13",
+                "pkg_version": "1.8.14",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -192,10 +186,10 @@
               },
               {
                 "full_name": "libxrender",
-                "version": "0.9.12",
+                "version": "0.9.13",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.9.12",
+                "pkg_version": "0.9.13",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -322,27 +316,27 @@
               {
                 "full_name": "qtbase",
                 "version": "6.12.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
+                "pkg_version": "6.12.0_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "qtsvg",
                 "version": "6.12.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
+                "pkg_version": "6.12.0_1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "qtdeclarative",
                 "version": "6.12.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
+                "pkg_version": "6.12.0_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -361,14 +355,15 @@
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
-              "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+              "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
               "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
               "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
               "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
-              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
+              "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
               "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
               "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
@@ -378,9 +373,9 @@
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
-              "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
-              "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
+              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -408,24 +403,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "name": "freetype",
-                "versionInfo": "2.14.3",
+                "versionInfo": "2.15.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "FTL",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.14.3.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.15.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "a8a2bcc65a1d21adba6797d59f4ab1c91b0a40c53aae2794b4f94780e7379837"
+                    "checksumValue": "df5ad00e9d611b80d19df81741a935c2d9bceef6feb79b4c322dda96507d5d36"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/freetype@2.14.3",
+                    "referenceLocator": "pkg:brew/freetype@2.15.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -477,24 +472,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.5.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
+                    "checksumValue": "9914a8c6c3e193c9f0b20df1d04a32f25d247f0cb62fd1501abf321e1d1d7757"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -569,24 +564,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "name": "libx11",
-                "versionInfo": "1.8.13",
+                "versionInfo": "1.8.14",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.13.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.14.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "10c0844f2a8daab11aa21bd737480e496469da1a15c37067dc34ab308f8b6285"
+                    "checksumValue": "c6d26e6032e1a786e706b9c8679d0592276fd0a3007caadf760498808e1f0163"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libx11@1.8.13",
+                    "referenceLocator": "pkg:brew/libx11@1.8.14",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+                "name": "libxrender",
+                "versionInfo": "0.9.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libxrender-0.9.13.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "aebc979e80b79b0064a432ebeea298ceec187e5df77855f413e6fcb51571b769"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libxrender@0.9.13",
                     "referenceType": "purl"
                   }
                 ]
@@ -799,70 +817,70 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
                 "name": "qtbase",
-                "versionInfo": "6.12.0",
+                "versionInfo": "6.12.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND GFDL-1.3-no-invariants-only",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.12.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.12.0_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4e76f26f348ba8d1a3fb3b053ebdb843857652372bc58cd70442eff538fb04d0"
+                    "checksumValue": "4f6789a5aaa0cc5153ee3998749fee7dac76326cc40e4a91e4c8eb0151b3c6b2"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtbase@6.12.0",
+                    "referenceLocator": "pkg:brew/qtbase@6.12.0_1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0.5f.1",
                 "name": "qtsvg",
-                "versionInfo": "6.12.0",
+                "versionInfo": "6.12.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtsvg-6.12.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtsvg-6.12.0_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "b010c19572dcf0842948a6e729921dc9f72a4c27fd7d0e7d918abd96db41c584"
+                    "checksumValue": "94e1d53db39a654aafcd9b73cdd0827f63fe7b40de2fd17ee2f07fc210036660"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtsvg@6.12.0",
+                    "referenceLocator": "pkg:brew/qtsvg@6.12.0_1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0.5f.1",
                 "name": "qtdeclarative",
-                "versionInfo": "6.12.0",
+                "versionInfo": "6.12.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-2-Clause AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtdeclarative-6.12.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtdeclarative-6.12.0_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "2ab2ca0d0da3b9892c84662b150296e576085972d0e6ee0675cd4a5bd5663804"
+                    "checksumValue": "d2d2e1d7f095d12cb51a0a0fe86bf44695bdf3a74ddd44cc224b60d9e383ad2e"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtdeclarative@6.12.0",
+                    "referenceLocator": "pkg:brew/qtdeclarative@6.12.0_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -884,462 +902,218 @@
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtscxml"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebsockets"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-qtscxml-src"
+                "relatedSpdxElement": "SPDXRef-Archive-qtwebsockets-src"
               }
             ]
           },
           "path_exec_files": [],
           "all_files": [
-            ".brew/qtscxml.rb",
+            ".brew/qtwebsockets.rb",
             "INSTALL_RECEIPT.json",
-            "include/QtScxml/QScxmlCompiler",
-            "include/QtScxml/QScxmlCppDataModel",
-            "include/QtScxml/QScxmlDataModel",
-            "include/QtScxml/QScxmlDynamicScxmlServiceFactory",
-            "include/QtScxml/QScxmlError",
-            "include/QtScxml/QScxmlEvent",
-            "include/QtScxml/QScxmlInvokableService",
-            "include/QtScxml/QScxmlInvokableServiceFactory",
-            "include/QtScxml/QScxmlNullDataModel",
-            "include/QtScxml/QScxmlStateMachine",
-            "include/QtScxml/QScxmlStaticScxmlServiceFactory",
-            "include/QtScxml/QScxmlTableData",
-            "include/QtScxml/QtScxml",
-            "include/QtScxml/QtScxmlDepends",
-            "include/QtScxml/QtScxmlVersion",
-            "include/QtScxml/qscxmlcompiler.h",
-            "include/QtScxml/qscxmlcppdatamodel.h",
-            "include/QtScxml/qscxmldatamodel.h",
-            "include/QtScxml/qscxmlerror.h",
-            "include/QtScxml/qscxmlevent.h",
-            "include/QtScxml/qscxmlexecutablecontent.h",
-            "include/QtScxml/qscxmlglobals.h",
-            "include/QtScxml/qscxmlinvokableservice.h",
-            "include/QtScxml/qscxmlnulldatamodel.h",
-            "include/QtScxml/qscxmlstatemachine.h",
-            "include/QtScxml/qscxmltabledata.h",
-            "include/QtScxml/qtscxmlexports.h",
-            "include/QtScxml/qtscxmlversion.h",
-            "include/QtScxmlGlobal/6.12.0/QtScxmlGlobal/private/qtscxmlglobal-config_p.h",
-            "include/QtScxmlGlobal/QtScxmlGlobal",
-            "include/QtScxmlGlobal/QtScxmlGlobalDepends",
-            "include/QtScxmlGlobal/QtScxmlGlobalVersion",
-            "include/QtScxmlGlobal/qtscxmlglobal-config.h",
-            "include/QtScxmlGlobal/qtscxmlglobalversion.h",
-            "include/QtScxmlQml/QtScxmlQml",
-            "include/QtScxmlQml/QtScxmlQmlDepends",
-            "include/QtScxmlQml/QtScxmlQmlVersion",
-            "include/QtScxmlQml/qtscxmlqmlexports.h",
-            "include/QtScxmlQml/qtscxmlqmlversion.h",
-            "include/QtStateMachine/QAbstractState",
-            "include/QtStateMachine/QAbstractTransition",
-            "include/QtStateMachine/QEventTransition",
-            "include/QtStateMachine/QFinalState",
-            "include/QtStateMachine/QHistoryState",
-            "include/QtStateMachine/QKeyEventTransition",
-            "include/QtStateMachine/QMouseEventTransition",
-            "include/QtStateMachine/QSignalTransition",
-            "include/QtStateMachine/QState",
-            "include/QtStateMachine/QStateMachine",
-            "include/QtStateMachine/QtStateMachine",
-            "include/QtStateMachine/QtStateMachineDepends",
-            "include/QtStateMachine/QtStateMachineVersion",
-            "include/QtStateMachine/qabstractstate.h",
-            "include/QtStateMachine/qabstracttransition.h",
-            "include/QtStateMachine/qeventtransition.h",
-            "include/QtStateMachine/qfinalstate.h",
-            "include/QtStateMachine/qhistorystate.h",
-            "include/QtStateMachine/qkeyeventtransition.h",
-            "include/QtStateMachine/qmouseeventtransition.h",
-            "include/QtStateMachine/qsignaltransition.h",
-            "include/QtStateMachine/qstate.h",
-            "include/QtStateMachine/qstatemachine.h",
-            "include/QtStateMachine/qstatemachineglobal.h",
-            "include/QtStateMachine/qtstatemachineexports.h",
-            "include/QtStateMachine/qtstatemachineversion.h",
-            "include/QtStateMachineQml/QtStateMachineQml",
-            "include/QtStateMachineQml/QtStateMachineQmlDepends",
-            "include/QtStateMachineQml/QtStateMachineQmlVersion",
-            "include/QtStateMachineQml/qtstatemachineqmlexports.h",
-            "include/QtStateMachineQml/qtstatemachineqmlversion.h",
-            "lib/QtScxml.framework/QtScxml",
-            "lib/QtScxml.framework/Versions/A/Headers/6.12.0/QtScxml/private/qscxmlcompiler_p.h",
-            "lib/QtScxml.framework/Versions/A/Headers/6.12.0/QtScxml/private/qscxmlcppdatamodel_p.h",
-            "lib/QtScxml.framework/Versions/A/Headers/6.12.0/QtScxml/private/qscxmldatamodel_p.h",
-            "lib/QtScxml.framework/Versions/A/Headers/6.12.0/QtScxml/private/qscxmldatamodelplugin_p.h",
-            "lib/QtScxml.framework/Versions/A/Headers/6.12.0/QtScxml/private/qscxmlevent_p.h",
-            "lib/QtScxml.framework/Versions/A/Headers/6.12.0/QtScxml/private/qscxmlexecutablecontent_p.h",
-            "lib/QtScxml.framework/Versions/A/Headers/6.12.0/QtScxml/private/qscxmlglobals_p.h",
-            "lib/QtScxml.framework/Versions/A/Headers/6.12.0/QtScxml/private/qscxmlinvokableservice_p.h",
-            "lib/QtScxml.framework/Versions/A/Headers/6.12.0/QtScxml/private/qscxmlstatemachine_p.h",
-            "lib/QtScxml.framework/Versions/A/Headers/6.12.0/QtScxml/private/qscxmlstatemachineinfo_p.h",
-            "lib/QtScxml.framework/Versions/A/Headers/6.12.0/QtScxml/private/qscxmltabledata_p.h",
-            "lib/QtScxml.framework/Versions/A/Headers/QScxmlCompiler",
-            "lib/QtScxml.framework/Versions/A/Headers/QScxmlCppDataModel",
-            "lib/QtScxml.framework/Versions/A/Headers/QScxmlDataModel",
-            "lib/QtScxml.framework/Versions/A/Headers/QScxmlDynamicScxmlServiceFactory",
-            "lib/QtScxml.framework/Versions/A/Headers/QScxmlError",
-            "lib/QtScxml.framework/Versions/A/Headers/QScxmlEvent",
-            "lib/QtScxml.framework/Versions/A/Headers/QScxmlInvokableService",
-            "lib/QtScxml.framework/Versions/A/Headers/QScxmlInvokableServiceFactory",
-            "lib/QtScxml.framework/Versions/A/Headers/QScxmlNullDataModel",
-            "lib/QtScxml.framework/Versions/A/Headers/QScxmlStateMachine",
-            "lib/QtScxml.framework/Versions/A/Headers/QScxmlStaticScxmlServiceFactory",
-            "lib/QtScxml.framework/Versions/A/Headers/QScxmlTableData",
-            "lib/QtScxml.framework/Versions/A/Headers/QtScxml",
-            "lib/QtScxml.framework/Versions/A/Headers/QtScxmlDepends",
-            "lib/QtScxml.framework/Versions/A/Headers/QtScxmlVersion",
-            "lib/QtScxml.framework/Versions/A/Headers/qscxmlcompiler.h",
-            "lib/QtScxml.framework/Versions/A/Headers/qscxmlcppdatamodel.h",
-            "lib/QtScxml.framework/Versions/A/Headers/qscxmldatamodel.h",
-            "lib/QtScxml.framework/Versions/A/Headers/qscxmlerror.h",
-            "lib/QtScxml.framework/Versions/A/Headers/qscxmlevent.h",
-            "lib/QtScxml.framework/Versions/A/Headers/qscxmlexecutablecontent.h",
-            "lib/QtScxml.framework/Versions/A/Headers/qscxmlglobals.h",
-            "lib/QtScxml.framework/Versions/A/Headers/qscxmlinvokableservice.h",
-            "lib/QtScxml.framework/Versions/A/Headers/qscxmlnulldatamodel.h",
-            "lib/QtScxml.framework/Versions/A/Headers/qscxmlstatemachine.h",
-            "lib/QtScxml.framework/Versions/A/Headers/qscxmltabledata.h",
-            "lib/QtScxml.framework/Versions/A/Headers/qtscxmlexports.h",
-            "lib/QtScxml.framework/Versions/A/Headers/qtscxmlversion.h",
-            "lib/QtScxml.framework/Versions/A/QtScxml",
-            "lib/QtScxml.framework/Versions/A/Resources/Info.plist",
-            "lib/QtScxml.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
-            "lib/QtScxml.framework/Versions/A/Resources/QtScxml.prl",
-            "lib/QtScxmlQml.framework/QtScxmlQml",
-            "lib/QtScxmlQml.framework/Versions/A/Headers/6.12.0/QtScxmlQml/private/eventconnection_p.h",
-            "lib/QtScxmlQml.framework/Versions/A/Headers/6.12.0/QtScxmlQml/private/invokedservices_p.h",
-            "lib/QtScxmlQml.framework/Versions/A/Headers/6.12.0/QtScxmlQml/private/qscxmlqmlglobals_p.h",
-            "lib/QtScxmlQml.framework/Versions/A/Headers/6.12.0/QtScxmlQml/private/statemachineextended_p.h",
-            "lib/QtScxmlQml.framework/Versions/A/Headers/6.12.0/QtScxmlQml/private/statemachineloader_p.h",
-            "lib/QtScxmlQml.framework/Versions/A/Headers/QtScxmlQml",
-            "lib/QtScxmlQml.framework/Versions/A/Headers/QtScxmlQmlDepends",
-            "lib/QtScxmlQml.framework/Versions/A/Headers/QtScxmlQmlVersion",
-            "lib/QtScxmlQml.framework/Versions/A/Headers/qtscxmlqmlexports.h",
-            "lib/QtScxmlQml.framework/Versions/A/Headers/qtscxmlqmlversion.h",
-            "lib/QtScxmlQml.framework/Versions/A/QtScxmlQml",
-            "lib/QtScxmlQml.framework/Versions/A/Resources/Info.plist",
-            "lib/QtScxmlQml.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
-            "lib/QtScxmlQml.framework/Versions/A/Resources/QtScxmlQml.prl",
-            "lib/QtStateMachine.framework/QtStateMachine",
-            "lib/QtStateMachine.framework/Versions/A/Headers/6.12.0/QtStateMachine/private/qabstractstate_p.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/6.12.0/QtStateMachine/private/qabstracttransition_p.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/6.12.0/QtStateMachine/private/qbasickeyeventtransition_p.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/6.12.0/QtStateMachine/private/qbasicmouseeventtransition_p.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/6.12.0/QtStateMachine/private/qeventtransition_p.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/6.12.0/QtStateMachine/private/qfinalstate_p.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/6.12.0/QtStateMachine/private/qhistorystate_p.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/6.12.0/QtStateMachine/private/qsignaleventgenerator_p.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/6.12.0/QtStateMachine/private/qsignaltransition_p.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/6.12.0/QtStateMachine/private/qstate_p.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/6.12.0/QtStateMachine/private/qstatemachine_p.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/6.12.0/QtStateMachine/private/qstatemachineglobal_p.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/QAbstractState",
-            "lib/QtStateMachine.framework/Versions/A/Headers/QAbstractTransition",
-            "lib/QtStateMachine.framework/Versions/A/Headers/QEventTransition",
-            "lib/QtStateMachine.framework/Versions/A/Headers/QFinalState",
-            "lib/QtStateMachine.framework/Versions/A/Headers/QHistoryState",
-            "lib/QtStateMachine.framework/Versions/A/Headers/QKeyEventTransition",
-            "lib/QtStateMachine.framework/Versions/A/Headers/QMouseEventTransition",
-            "lib/QtStateMachine.framework/Versions/A/Headers/QSignalTransition",
-            "lib/QtStateMachine.framework/Versions/A/Headers/QState",
-            "lib/QtStateMachine.framework/Versions/A/Headers/QStateMachine",
-            "lib/QtStateMachine.framework/Versions/A/Headers/QtStateMachine",
-            "lib/QtStateMachine.framework/Versions/A/Headers/QtStateMachineDepends",
-            "lib/QtStateMachine.framework/Versions/A/Headers/QtStateMachineVersion",
-            "lib/QtStateMachine.framework/Versions/A/Headers/qabstractstate.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/qabstracttransition.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/qeventtransition.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/qfinalstate.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/qhistorystate.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/qkeyeventtransition.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/qmouseeventtransition.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/qsignaltransition.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/qstate.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/qstatemachine.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/qstatemachineglobal.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/qtstatemachineexports.h",
-            "lib/QtStateMachine.framework/Versions/A/Headers/qtstatemachineversion.h",
-            "lib/QtStateMachine.framework/Versions/A/QtStateMachine",
-            "lib/QtStateMachine.framework/Versions/A/Resources/Info.plist",
-            "lib/QtStateMachine.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
-            "lib/QtStateMachine.framework/Versions/A/Resources/QtStateMachine.prl",
-            "lib/QtStateMachineQml.framework/QtStateMachineQml",
-            "lib/QtStateMachineQml.framework/Versions/A/Headers/6.12.0/QtStateMachineQml/private/childrenprivate_p.h",
-            "lib/QtStateMachineQml.framework/Versions/A/Headers/6.12.0/QtStateMachineQml/private/finalstate_p.h",
-            "lib/QtStateMachineQml.framework/Versions/A/Headers/6.12.0/QtStateMachineQml/private/qstatemachineqmlglobals_p.h",
-            "lib/QtStateMachineQml.framework/Versions/A/Headers/6.12.0/QtStateMachineQml/private/signaltransition_p.h",
-            "lib/QtStateMachineQml.framework/Versions/A/Headers/6.12.0/QtStateMachineQml/private/state_p.h",
-            "lib/QtStateMachineQml.framework/Versions/A/Headers/6.12.0/QtStateMachineQml/private/statemachine_p.h",
-            "lib/QtStateMachineQml.framework/Versions/A/Headers/6.12.0/QtStateMachineQml/private/statemachineforeign_p.h",
-            "lib/QtStateMachineQml.framework/Versions/A/Headers/6.12.0/QtStateMachineQml/private/timeouttransition_p.h",
-            "lib/QtStateMachineQml.framework/Versions/A/Headers/QtStateMachineQml",
-            "lib/QtStateMachineQml.framework/Versions/A/Headers/QtStateMachineQmlDepends",
-            "lib/QtStateMachineQml.framework/Versions/A/Headers/QtStateMachineQmlVersion",
-            "lib/QtStateMachineQml.framework/Versions/A/Headers/qtstatemachineqmlexports.h",
-            "lib/QtStateMachineQml.framework/Versions/A/Headers/qtstatemachineqmlversion.h",
-            "lib/QtStateMachineQml.framework/Versions/A/QtStateMachineQml",
-            "lib/QtStateMachineQml.framework/Versions/A/Resources/Info.plist",
-            "lib/QtStateMachineQml.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
-            "lib/QtStateMachineQml.framework/Versions/A/Resources/QtStateMachineQml.prl",
-            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtScxmlTestsConfig.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_scxmlAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_scxmlConfig.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_scxmlConfigVersion.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_scxmlConfigVersionImpl.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_scxmlTargets-release.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_scxmlTargets.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_scxmlTargetsPrecheck.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtqmlstatemachineAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtqmlstatemachineConfig.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtqmlstatemachineConfigVersion.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtqmlstatemachineConfigVersionImpl.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtqmlstatemachineTargets-release.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtqmlstatemachineTargets.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtqmlstatemachineTargetsPrecheck.cmake",
-            "lib/cmake/Qt6Scxml/Qt6QScxmlEcmaScriptDataModelPluginAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6Scxml/Qt6QScxmlEcmaScriptDataModelPluginConfig.cmake",
-            "lib/cmake/Qt6Scxml/Qt6QScxmlEcmaScriptDataModelPluginConfigVersion.cmake",
-            "lib/cmake/Qt6Scxml/Qt6QScxmlEcmaScriptDataModelPluginConfigVersionImpl.cmake",
-            "lib/cmake/Qt6Scxml/Qt6QScxmlEcmaScriptDataModelPluginTargets-release.cmake",
-            "lib/cmake/Qt6Scxml/Qt6QScxmlEcmaScriptDataModelPluginTargets.cmake",
-            "lib/cmake/Qt6Scxml/Qt6QScxmlEcmaScriptDataModelPluginTargetsPrecheck.cmake",
-            "lib/cmake/Qt6Scxml/Qt6ScxmlAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6Scxml/Qt6ScxmlConfig.cmake",
-            "lib/cmake/Qt6Scxml/Qt6ScxmlConfigVersion.cmake",
-            "lib/cmake/Qt6Scxml/Qt6ScxmlConfigVersionImpl.cmake",
-            "lib/cmake/Qt6Scxml/Qt6ScxmlDependencies.cmake",
-            "lib/cmake/Qt6Scxml/Qt6ScxmlMacros.cmake",
-            "lib/cmake/Qt6Scxml/Qt6ScxmlPlugins.cmake",
-            "lib/cmake/Qt6Scxml/Qt6ScxmlTargets-release.cmake",
-            "lib/cmake/Qt6Scxml/Qt6ScxmlTargets.cmake",
-            "lib/cmake/Qt6Scxml/Qt6ScxmlTargetsPrecheck.cmake",
-            "lib/cmake/Qt6Scxml/Qt6ScxmlVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6Scxml/Qt6ScxmlVersionlessTargets.cmake",
-            "lib/cmake/Qt6ScxmlGlobalPrivate/Qt6ScxmlGlobalPrivateAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6ScxmlGlobalPrivate/Qt6ScxmlGlobalPrivateConfig.cmake",
-            "lib/cmake/Qt6ScxmlGlobalPrivate/Qt6ScxmlGlobalPrivateConfigVersion.cmake",
-            "lib/cmake/Qt6ScxmlGlobalPrivate/Qt6ScxmlGlobalPrivateConfigVersionImpl.cmake",
-            "lib/cmake/Qt6ScxmlGlobalPrivate/Qt6ScxmlGlobalPrivateExtraProperties.cmake",
-            "lib/cmake/Qt6ScxmlGlobalPrivate/Qt6ScxmlGlobalPrivateTargets.cmake",
-            "lib/cmake/Qt6ScxmlGlobalPrivate/Qt6ScxmlGlobalPrivateTargetsPrecheck.cmake",
-            "lib/cmake/Qt6ScxmlGlobalPrivate/Qt6ScxmlGlobalPrivateVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6ScxmlGlobalPrivate/Qt6ScxmlGlobalPrivateVersionlessTargets.cmake",
-            "lib/cmake/Qt6ScxmlPrivate/Qt6ScxmlPrivateAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6ScxmlPrivate/Qt6ScxmlPrivateConfig.cmake",
-            "lib/cmake/Qt6ScxmlPrivate/Qt6ScxmlPrivateConfigVersion.cmake",
-            "lib/cmake/Qt6ScxmlPrivate/Qt6ScxmlPrivateConfigVersionImpl.cmake",
-            "lib/cmake/Qt6ScxmlPrivate/Qt6ScxmlPrivateDependencies.cmake",
-            "lib/cmake/Qt6ScxmlPrivate/Qt6ScxmlPrivateTargets.cmake",
-            "lib/cmake/Qt6ScxmlPrivate/Qt6ScxmlPrivateTargetsPrecheck.cmake",
-            "lib/cmake/Qt6ScxmlPrivate/Qt6ScxmlPrivateVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6ScxmlPrivate/Qt6ScxmlPrivateVersionlessTargets.cmake",
-            "lib/cmake/Qt6ScxmlQml/Qt6ScxmlQmlAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6ScxmlQml/Qt6ScxmlQmlConfig.cmake",
-            "lib/cmake/Qt6ScxmlQml/Qt6ScxmlQmlConfigVersion.cmake",
-            "lib/cmake/Qt6ScxmlQml/Qt6ScxmlQmlConfigVersionImpl.cmake",
-            "lib/cmake/Qt6ScxmlQml/Qt6ScxmlQmlDependencies.cmake",
-            "lib/cmake/Qt6ScxmlQml/Qt6ScxmlQmlTargets-release.cmake",
-            "lib/cmake/Qt6ScxmlQml/Qt6ScxmlQmlTargets.cmake",
-            "lib/cmake/Qt6ScxmlQml/Qt6ScxmlQmlTargetsPrecheck.cmake",
-            "lib/cmake/Qt6ScxmlQml/Qt6ScxmlQmlVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6ScxmlQml/Qt6ScxmlQmlVersionlessTargets.cmake",
-            "lib/cmake/Qt6ScxmlQmlPrivate/Qt6ScxmlQmlPrivateAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6ScxmlQmlPrivate/Qt6ScxmlQmlPrivateConfig.cmake",
-            "lib/cmake/Qt6ScxmlQmlPrivate/Qt6ScxmlQmlPrivateConfigVersion.cmake",
-            "lib/cmake/Qt6ScxmlQmlPrivate/Qt6ScxmlQmlPrivateConfigVersionImpl.cmake",
-            "lib/cmake/Qt6ScxmlQmlPrivate/Qt6ScxmlQmlPrivateDependencies.cmake",
-            "lib/cmake/Qt6ScxmlQmlPrivate/Qt6ScxmlQmlPrivateTargets.cmake",
-            "lib/cmake/Qt6ScxmlQmlPrivate/Qt6ScxmlQmlPrivateTargetsPrecheck.cmake",
-            "lib/cmake/Qt6ScxmlQmlPrivate/Qt6ScxmlQmlPrivateVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6ScxmlQmlPrivate/Qt6ScxmlQmlPrivateVersionlessTargets.cmake",
-            "lib/cmake/Qt6ScxmlTools/Qt6ScxmlToolsAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6ScxmlTools/Qt6ScxmlToolsConfig.cmake",
-            "lib/cmake/Qt6ScxmlTools/Qt6ScxmlToolsConfigVersion.cmake",
-            "lib/cmake/Qt6ScxmlTools/Qt6ScxmlToolsConfigVersionImpl.cmake",
-            "lib/cmake/Qt6ScxmlTools/Qt6ScxmlToolsDependencies.cmake",
-            "lib/cmake/Qt6ScxmlTools/Qt6ScxmlToolsTargets-release.cmake",
-            "lib/cmake/Qt6ScxmlTools/Qt6ScxmlToolsTargets.cmake",
-            "lib/cmake/Qt6ScxmlTools/Qt6ScxmlToolsTargetsPrecheck.cmake",
-            "lib/cmake/Qt6ScxmlTools/Qt6ScxmlToolsVersionlessTargets.cmake",
-            "lib/cmake/Qt6StateMachine/Qt6StateMachineAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6StateMachine/Qt6StateMachineConfig.cmake",
-            "lib/cmake/Qt6StateMachine/Qt6StateMachineConfigVersion.cmake",
-            "lib/cmake/Qt6StateMachine/Qt6StateMachineConfigVersionImpl.cmake",
-            "lib/cmake/Qt6StateMachine/Qt6StateMachineDependencies.cmake",
-            "lib/cmake/Qt6StateMachine/Qt6StateMachineTargets-release.cmake",
-            "lib/cmake/Qt6StateMachine/Qt6StateMachineTargets.cmake",
-            "lib/cmake/Qt6StateMachine/Qt6StateMachineTargetsPrecheck.cmake",
-            "lib/cmake/Qt6StateMachine/Qt6StateMachineVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6StateMachine/Qt6StateMachineVersionlessTargets.cmake",
-            "lib/cmake/Qt6StateMachinePrivate/Qt6StateMachinePrivateAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6StateMachinePrivate/Qt6StateMachinePrivateConfig.cmake",
-            "lib/cmake/Qt6StateMachinePrivate/Qt6StateMachinePrivateConfigVersion.cmake",
-            "lib/cmake/Qt6StateMachinePrivate/Qt6StateMachinePrivateConfigVersionImpl.cmake",
-            "lib/cmake/Qt6StateMachinePrivate/Qt6StateMachinePrivateDependencies.cmake",
-            "lib/cmake/Qt6StateMachinePrivate/Qt6StateMachinePrivateTargets.cmake",
-            "lib/cmake/Qt6StateMachinePrivate/Qt6StateMachinePrivateTargetsPrecheck.cmake",
-            "lib/cmake/Qt6StateMachinePrivate/Qt6StateMachinePrivateVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6StateMachinePrivate/Qt6StateMachinePrivateVersionlessTargets.cmake",
-            "lib/cmake/Qt6StateMachineQml/Qt6StateMachineQmlAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6StateMachineQml/Qt6StateMachineQmlConfig.cmake",
-            "lib/cmake/Qt6StateMachineQml/Qt6StateMachineQmlConfigVersion.cmake",
-            "lib/cmake/Qt6StateMachineQml/Qt6StateMachineQmlConfigVersionImpl.cmake",
-            "lib/cmake/Qt6StateMachineQml/Qt6StateMachineQmlDependencies.cmake",
-            "lib/cmake/Qt6StateMachineQml/Qt6StateMachineQmlTargets-release.cmake",
-            "lib/cmake/Qt6StateMachineQml/Qt6StateMachineQmlTargets.cmake",
-            "lib/cmake/Qt6StateMachineQml/Qt6StateMachineQmlTargetsPrecheck.cmake",
-            "lib/cmake/Qt6StateMachineQml/Qt6StateMachineQmlVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6StateMachineQml/Qt6StateMachineQmlVersionlessTargets.cmake",
-            "lib/cmake/Qt6StateMachineQmlPrivate/Qt6StateMachineQmlPrivateAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6StateMachineQmlPrivate/Qt6StateMachineQmlPrivateConfig.cmake",
-            "lib/cmake/Qt6StateMachineQmlPrivate/Qt6StateMachineQmlPrivateConfigVersion.cmake",
-            "lib/cmake/Qt6StateMachineQmlPrivate/Qt6StateMachineQmlPrivateConfigVersionImpl.cmake",
-            "lib/cmake/Qt6StateMachineQmlPrivate/Qt6StateMachineQmlPrivateDependencies.cmake",
-            "lib/cmake/Qt6StateMachineQmlPrivate/Qt6StateMachineQmlPrivateTargets.cmake",
-            "lib/cmake/Qt6StateMachineQmlPrivate/Qt6StateMachineQmlPrivateTargetsPrecheck.cmake",
-            "lib/cmake/Qt6StateMachineQmlPrivate/Qt6StateMachineQmlPrivateVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6StateMachineQmlPrivate/Qt6StateMachineQmlPrivateVersionlessTargets.cmake",
-            "lib/pkgconfig/Qt6Scxml.pc",
-            "lib/pkgconfig/Qt6ScxmlQml.pc",
-            "lib/pkgconfig/Qt6StateMachine.pc",
-            "lib/pkgconfig/Qt6StateMachineQml.pc",
+            "README.md",
+            "include/QtWebSockets/QMaskGenerator",
+            "include/QtWebSockets/QWebSocket",
+            "include/QtWebSockets/QWebSocketCorsAuthenticator",
+            "include/QtWebSockets/QWebSocketHandshakeOptions",
+            "include/QtWebSockets/QWebSocketProtocol",
+            "include/QtWebSockets/QWebSocketServer",
+            "include/QtWebSockets/QtWebSockets",
+            "include/QtWebSockets/QtWebSocketsDepends",
+            "include/QtWebSockets/QtWebSocketsVersion",
+            "include/QtWebSockets/qmaskgenerator.h",
+            "include/QtWebSockets/qtwebsockets-config.h",
+            "include/QtWebSockets/qtwebsocketsexports.h",
+            "include/QtWebSockets/qtwebsocketsversion.h",
+            "include/QtWebSockets/qwebsocket.h",
+            "include/QtWebSockets/qwebsocketcorsauthenticator.h",
+            "include/QtWebSockets/qwebsockethandshakeoptions.h",
+            "include/QtWebSockets/qwebsocketprotocol.h",
+            "include/QtWebSockets/qwebsockets_global.h",
+            "include/QtWebSockets/qwebsocketserver.h",
+            "lib/QtWebSockets.framework/QtWebSockets",
+            "lib/QtWebSockets.framework/Versions/A/Headers/6.12.0/QtWebSockets/private/qdefaultmaskgenerator_p.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/6.12.0/QtWebSockets/private/qtwebsockets-config_p.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/6.12.0/QtWebSockets/private/qwebsocket_p.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/6.12.0/QtWebSockets/private/qwebsocketcorsauthenticator_p.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/6.12.0/QtWebSockets/private/qwebsocketdataprocessor_p.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/6.12.0/QtWebSockets/private/qwebsocketframe_p.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/6.12.0/QtWebSockets/private/qwebsockethandshakeoptions_p.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/6.12.0/QtWebSockets/private/qwebsockethandshakerequest_p.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/6.12.0/QtWebSockets/private/qwebsockethandshakeresponse_p.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/6.12.0/QtWebSockets/private/qwebsocketprotocol_p.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/6.12.0/QtWebSockets/private/qwebsocketserver_p.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/QMaskGenerator",
+            "lib/QtWebSockets.framework/Versions/A/Headers/QWebSocket",
+            "lib/QtWebSockets.framework/Versions/A/Headers/QWebSocketCorsAuthenticator",
+            "lib/QtWebSockets.framework/Versions/A/Headers/QWebSocketHandshakeOptions",
+            "lib/QtWebSockets.framework/Versions/A/Headers/QWebSocketProtocol",
+            "lib/QtWebSockets.framework/Versions/A/Headers/QWebSocketServer",
+            "lib/QtWebSockets.framework/Versions/A/Headers/QtWebSockets",
+            "lib/QtWebSockets.framework/Versions/A/Headers/QtWebSocketsDepends",
+            "lib/QtWebSockets.framework/Versions/A/Headers/QtWebSocketsVersion",
+            "lib/QtWebSockets.framework/Versions/A/Headers/qmaskgenerator.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/qtwebsockets-config.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/qtwebsocketsexports.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/qtwebsocketsversion.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/qwebsocket.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/qwebsocketcorsauthenticator.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/qwebsockethandshakeoptions.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/qwebsocketprotocol.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/qwebsockets_global.h",
+            "lib/QtWebSockets.framework/Versions/A/Headers/qwebsocketserver.h",
+            "lib/QtWebSockets.framework/Versions/A/QtWebSockets",
+            "lib/QtWebSockets.framework/Versions/A/Resources/Info.plist",
+            "lib/QtWebSockets.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtWebSockets.framework/Versions/A/Resources/QtWebSockets.prl",
+            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtWebSocketsTestsConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlwebsocketsAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlwebsocketsConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlwebsocketsConfigVersion.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlwebsocketsConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlwebsocketsTargets-release.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlwebsocketsTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlwebsocketsTargetsPrecheck.cmake",
+            "lib/cmake/Qt6WebSockets/Qt6WebSocketsAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6WebSockets/Qt6WebSocketsConfig.cmake",
+            "lib/cmake/Qt6WebSockets/Qt6WebSocketsConfigVersion.cmake",
+            "lib/cmake/Qt6WebSockets/Qt6WebSocketsConfigVersionImpl.cmake",
+            "lib/cmake/Qt6WebSockets/Qt6WebSocketsDependencies.cmake",
+            "lib/cmake/Qt6WebSockets/Qt6WebSocketsTargets-release.cmake",
+            "lib/cmake/Qt6WebSockets/Qt6WebSocketsTargets.cmake",
+            "lib/cmake/Qt6WebSockets/Qt6WebSocketsTargetsPrecheck.cmake",
+            "lib/cmake/Qt6WebSockets/Qt6WebSocketsVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6WebSockets/Qt6WebSocketsVersionlessTargets.cmake",
+            "lib/cmake/Qt6WebSocketsPrivate/Qt6WebSocketsPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6WebSocketsPrivate/Qt6WebSocketsPrivateConfig.cmake",
+            "lib/cmake/Qt6WebSocketsPrivate/Qt6WebSocketsPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6WebSocketsPrivate/Qt6WebSocketsPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6WebSocketsPrivate/Qt6WebSocketsPrivateDependencies.cmake",
+            "lib/cmake/Qt6WebSocketsPrivate/Qt6WebSocketsPrivateTargets.cmake",
+            "lib/cmake/Qt6WebSocketsPrivate/Qt6WebSocketsPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6WebSocketsPrivate/Qt6WebSocketsPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6WebSocketsPrivate/Qt6WebSocketsPrivateVersionlessTargets.cmake",
+            "lib/pkgconfig/Qt6WebSockets.pc",
             "sbom.spdx.json",
-            "share/qt/libexec/qscxmlc",
-            "share/qt/metatypes/qt6scxml_metatypes.json",
-            "share/qt/metatypes/qt6scxmlqml_metatypes.json",
-            "share/qt/metatypes/qt6statemachine_metatypes.json",
-            "share/qt/metatypes/qt6statemachineqml_metatypes.json",
-            "share/qt/mkspecs/features/qscxmlc.prf",
-            "share/qt/mkspecs/modules/qt_lib_scxml.pri",
-            "share/qt/mkspecs/modules/qt_lib_scxml_private.pri",
-            "share/qt/mkspecs/modules/qt_lib_scxmlglobal_private.pri",
-            "share/qt/mkspecs/modules/qt_lib_scxmlqml.pri",
-            "share/qt/mkspecs/modules/qt_lib_scxmlqml_private.pri",
-            "share/qt/mkspecs/modules/qt_lib_statemachine.pri",
-            "share/qt/mkspecs/modules/qt_lib_statemachine_private.pri",
-            "share/qt/mkspecs/modules/qt_lib_statemachineqml.pri",
-            "share/qt/mkspecs/modules/qt_lib_statemachineqml_private.pri",
-            "share/qt/modules/Scxml.json",
-            "share/qt/modules/ScxmlGlobalPrivate.json",
-            "share/qt/modules/ScxmlQml.json",
-            "share/qt/modules/StateMachine.json",
-            "share/qt/modules/StateMachineQml.json",
-            "share/qt/plugins/scxmldatamodel/libqscxmlecmascriptdatamodel.dylib",
-            "share/qt/qml/QtQml/StateMachine/libqtqmlstatemachineplugin.dylib",
-            "share/qt/qml/QtQml/StateMachine/plugins.qmltypes",
-            "share/qt/qml/QtQml/StateMachine/qmldir",
-            "share/qt/qml/QtScxml/libdeclarative_scxmlplugin.dylib",
-            "share/qt/qml/QtScxml/plugins.qmltypes",
-            "share/qt/qml/QtScxml/qmldir",
-            "share/qt/sbom/qtscxml-6.12.0.spdx"
+            "share/qt/metatypes/qt6websockets_metatypes.json",
+            "share/qt/mkspecs/modules/qt_lib_websockets.pri",
+            "share/qt/mkspecs/modules/qt_lib_websockets_private.pri",
+            "share/qt/modules/WebSockets.json",
+            "share/qt/qml/QtWebSockets/libqmlwebsocketsplugin.dylib",
+            "share/qt/qml/QtWebSockets/plugins.qmltypes",
+            "share/qt/qml/QtWebSockets/qmldir",
+            "share/qt/sbom/qtwebsockets-6.12.0.spdx"
           ],
-          "installed_size": 2766309
+          "installed_size": 528414
         }
       }
     }

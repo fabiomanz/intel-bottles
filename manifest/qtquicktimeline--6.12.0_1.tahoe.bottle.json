@@ -1,39 +1,37 @@
 {
-  "qtpositioning": {
+  "qtquicktimeline": {
     "formula": {
-      "name": "qtpositioning",
-      "pkg_version": "6.12.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtpositioning.rb",
-      "tap_git_path": "Formula/q/qtpositioning.rb",
-      "tap_git_revision": "142662eb89e02173f48c1aba5c71f8e7a5771076",
+      "name": "qtquicktimeline",
+      "pkg_version": "6.12.0_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtquicktimeline.rb",
+      "tap_git_path": "Formula/q/qtquicktimeline.rb",
+      "tap_git_revision": "6c68ff7bc7c96bfecbbb73ed9eaf4bcc77900b2f",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
-      "desc": "Provides access to position, satellite info and area monitoring classes",
-      "license": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause AND BSL-1.0 AND MIT",
+      "desc": "Enables keyframe-based animations and parameterization",
+      "license": "GPL-3.0-only AND BSD-3-Clause",
       "homepage": "https://www.qt.io/"
     },
     "bottle": {
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-14T13:31:56Z",
+      "date": "2026-10-19T13:13:12Z",
       "tags": {
         "tahoe": {
-          "filename": "qtpositioning-6.12.0.tahoe.bottle.tar.gz",
-          "local_filename": "qtpositioning--6.12.0.tahoe.bottle.tar.gz",
-          "sha256": "0205a148e46dc3fe7ab8dc09ba92b2a82363f5bd31d3a4ff0e036e76e9d42e5c",
+          "filename": "qtquicktimeline-6.12.0_1.tahoe.bottle.tar.gz",
+          "local_filename": "qtquicktimeline--6.12.0_1.tahoe.bottle.tar.gz",
+          "sha256": "5f3b453253f69edb5c1940205cfc2eb7cdee6d3380746b9e5a9c6107f0eeab6c",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.10",
             "changed_files": [],
             "linkage_files": [
-              "lib/QtPositioning.framework/Versions/A/QtPositioning",
-              "lib/QtPositioningQuick.framework/Versions/A/QtPositioningQuick",
-              "share/qt/plugins/position/libqtposition_cl.dylib",
-              "share/qt/plugins/position/libqtposition_nmea.dylib",
-              "share/qt/plugins/position/libqtposition_positionpoll.dylib",
-              "share/qt/qml/QtPositioning/libpositioningquickplugin.dylib"
+              "lib/QtQuickTimeline.framework/Versions/A/QtQuickTimeline",
+              "lib/QtQuickTimelineBlendTrees.framework/Versions/A/QtQuickTimelineBlendTrees",
+              "share/qt/qml/QtQuick/Timeline/BlendTrees/libqtquicktimelineblendtreesplugin.dylib",
+              "share/qt/qml/QtQuick/Timeline/libqtquicktimelineplugin.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790432801,
+            "source_modified_time": 1790432823,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -74,10 +72,10 @@
               },
               {
                 "full_name": "freetype",
-                "version": "2.14.3",
+                "version": "2.15.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.14.3",
+                "pkg_version": "2.15.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -100,10 +98,10 @@
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -172,10 +170,10 @@
               },
               {
                 "full_name": "libx11",
-                "version": "1.8.13",
+                "version": "1.8.14",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.8.13",
+                "pkg_version": "1.8.14",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -190,10 +188,10 @@
               },
               {
                 "full_name": "libxrender",
-                "version": "0.9.12",
+                "version": "0.9.13",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.9.12",
+                "pkg_version": "0.9.13",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -320,36 +318,27 @@
               {
                 "full_name": "qtbase",
                 "version": "6.12.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
+                "pkg_version": "6.12.0_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "qtsvg",
                 "version": "6.12.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
+                "pkg_version": "6.12.0_1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "qtdeclarative",
                 "version": "6.12.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
-                "declared_directly": true,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "qtserialport",
-                "version": "6.12.0",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
+                "pkg_version": "6.12.0_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -368,14 +357,15 @@
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
-              "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+              "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
               "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
               "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
               "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
-              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
+              "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
               "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
               "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
@@ -385,10 +375,9 @@
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
-              "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
-              "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
-              "SPDXRef-Package-SPDXRef-qtserialport-6.2e.12.2e.0",
+              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -416,24 +405,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "name": "freetype",
-                "versionInfo": "2.14.3",
+                "versionInfo": "2.15.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "FTL",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.14.3.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.15.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "a8a2bcc65a1d21adba6797d59f4ab1c91b0a40c53aae2794b4f94780e7379837"
+                    "checksumValue": "df5ad00e9d611b80d19df81741a935c2d9bceef6feb79b4c322dda96507d5d36"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/freetype@2.14.3",
+                    "referenceLocator": "pkg:brew/freetype@2.15.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -485,24 +474,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.5.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
+                    "checksumValue": "9914a8c6c3e193c9f0b20df1d04a32f25d247f0cb62fd1501abf321e1d1d7757"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -577,24 +566,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "name": "libx11",
-                "versionInfo": "1.8.13",
+                "versionInfo": "1.8.14",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.13.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.14.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "10c0844f2a8daab11aa21bd737480e496469da1a15c37067dc34ab308f8b6285"
+                    "checksumValue": "c6d26e6032e1a786e706b9c8679d0592276fd0a3007caadf760498808e1f0163"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libx11@1.8.13",
+                    "referenceLocator": "pkg:brew/libx11@1.8.14",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+                "name": "libxrender",
+                "versionInfo": "0.9.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libxrender-0.9.13.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "aebc979e80b79b0064a432ebeea298ceec187e5df77855f413e6fcb51571b769"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libxrender@0.9.13",
                     "referenceType": "purl"
                   }
                 ]
@@ -807,93 +819,70 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
                 "name": "qtbase",
-                "versionInfo": "6.12.0",
+                "versionInfo": "6.12.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND GFDL-1.3-no-invariants-only",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.12.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.12.0_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4e76f26f348ba8d1a3fb3b053ebdb843857652372bc58cd70442eff538fb04d0"
+                    "checksumValue": "4f6789a5aaa0cc5153ee3998749fee7dac76326cc40e4a91e4c8eb0151b3c6b2"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtbase@6.12.0",
+                    "referenceLocator": "pkg:brew/qtbase@6.12.0_1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0.5f.1",
                 "name": "qtsvg",
-                "versionInfo": "6.12.0",
+                "versionInfo": "6.12.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtsvg-6.12.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtsvg-6.12.0_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "b010c19572dcf0842948a6e729921dc9f72a4c27fd7d0e7d918abd96db41c584"
+                    "checksumValue": "94e1d53db39a654aafcd9b73cdd0827f63fe7b40de2fd17ee2f07fc210036660"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtsvg@6.12.0",
+                    "referenceLocator": "pkg:brew/qtsvg@6.12.0_1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0.5f.1",
                 "name": "qtdeclarative",
-                "versionInfo": "6.12.0",
+                "versionInfo": "6.12.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-2-Clause AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtdeclarative-6.12.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtdeclarative-6.12.0_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "2ab2ca0d0da3b9892c84662b150296e576085972d0e6ee0675cd4a5bd5663804"
+                    "checksumValue": "d2d2e1d7f095d12cb51a0a0fe86bf44695bdf3a74ddd44cc224b60d9e383ad2e"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtdeclarative@6.12.0",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtserialport-6.2e.12.2e.0",
-                "name": "qtserialport",
-                "versionInfo": "6.12.0",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtserialport-6.12.0.tahoe.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "b7b59504f070e17bea1d851d8971f148f15cb92e111e71dd4f973f6918fbd682"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtserialport@6.12.0",
+                    "referenceLocator": "pkg:brew/qtdeclarative@6.12.0_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -915,352 +904,240 @@
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtserialport-6.2e.12.2e.0",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtpositioning"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-qtpositioning-src"
+                "relatedSpdxElement": "SPDXRef-Archive-qtquicktimeline-src"
               }
             ]
           },
           "path_exec_files": [],
           "all_files": [
-            ".brew/qtpositioning.rb",
+            ".brew/qtquicktimeline.rb",
             "INSTALL_RECEIPT.json",
-            "include/QtPositioning/QGeoAddress",
-            "include/QtPositioning/QGeoAreaMonitorInfo",
-            "include/QtPositioning/QGeoAreaMonitorSource",
-            "include/QtPositioning/QGeoCircle",
-            "include/QtPositioning/QGeoCoordinate",
-            "include/QtPositioning/QGeoLocation",
-            "include/QtPositioning/QGeoPath",
-            "include/QtPositioning/QGeoPolygon",
-            "include/QtPositioning/QGeoPositionInfo",
-            "include/QtPositioning/QGeoPositionInfoSource",
-            "include/QtPositioning/QGeoPositionInfoSourceFactory",
-            "include/QtPositioning/QGeoRectangle",
-            "include/QtPositioning/QGeoSatelliteInfo",
-            "include/QtPositioning/QGeoSatelliteInfoSource",
-            "include/QtPositioning/QGeoShape",
-            "include/QtPositioning/QNmeaPositionInfoSource",
-            "include/QtPositioning/QNmeaSatelliteInfoSource",
-            "include/QtPositioning/QtPositioning",
-            "include/QtPositioning/QtPositioningDepends",
-            "include/QtPositioning/QtPositioningVersion",
-            "include/QtPositioning/qgeoaddress.h",
-            "include/QtPositioning/qgeoareamonitorinfo.h",
-            "include/QtPositioning/qgeoareamonitorsource.h",
-            "include/QtPositioning/qgeocircle.h",
-            "include/QtPositioning/qgeocoordinate.h",
-            "include/QtPositioning/qgeolocation.h",
-            "include/QtPositioning/qgeopath.h",
-            "include/QtPositioning/qgeopolygon.h",
-            "include/QtPositioning/qgeopositioninfo.h",
-            "include/QtPositioning/qgeopositioninfosource.h",
-            "include/QtPositioning/qgeopositioninfosourcefactory.h",
-            "include/QtPositioning/qgeorectangle.h",
-            "include/QtPositioning/qgeosatelliteinfo.h",
-            "include/QtPositioning/qgeosatelliteinfosource.h",
-            "include/QtPositioning/qgeoshape.h",
-            "include/QtPositioning/qnmeapositioninfosource.h",
-            "include/QtPositioning/qnmeasatelliteinfosource.h",
-            "include/QtPositioning/qpositioningglobal.h",
-            "include/QtPositioning/qtpositioning-config.h",
-            "include/QtPositioning/qtpositioningexports.h",
-            "include/QtPositioning/qtpositioningversion.h",
-            "include/QtPositioningQuick/QtPositioningQuick",
-            "include/QtPositioningQuick/QtPositioningQuickDepends",
-            "include/QtPositioningQuick/QtPositioningQuickVersion",
-            "include/QtPositioningQuick/qpositioningquickglobal.h",
-            "include/QtPositioningQuick/qtpositioningquickexports.h",
-            "include/QtPositioningQuick/qtpositioningquickversion.h",
-            "lib/QtPositioning.framework/QtPositioning",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qclipperutils_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qdoublematrix4x4_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qdoublevector2d_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qdoublevector3d_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qgeoaddress_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qgeocircle_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qgeocoordinate_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qgeocoordinateobject_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qgeolocation_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qgeopath_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qgeopolygon_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qgeopositioninfo_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qgeopositioninfosource_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qgeorectangle_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qgeosatelliteinfo_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qgeosatelliteinfosource_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qgeoshape_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qlocationutils_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qnmeapositioninfosource_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qnmeasatelliteinfosource_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qpositioningglobal_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qtpositioning-config_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/6.12.0/QtPositioning/private/qwebmercator_p.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/QGeoAddress",
-            "lib/QtPositioning.framework/Versions/A/Headers/QGeoAreaMonitorInfo",
-            "lib/QtPositioning.framework/Versions/A/Headers/QGeoAreaMonitorSource",
-            "lib/QtPositioning.framework/Versions/A/Headers/QGeoCircle",
-            "lib/QtPositioning.framework/Versions/A/Headers/QGeoCoordinate",
-            "lib/QtPositioning.framework/Versions/A/Headers/QGeoLocation",
-            "lib/QtPositioning.framework/Versions/A/Headers/QGeoPath",
-            "lib/QtPositioning.framework/Versions/A/Headers/QGeoPolygon",
-            "lib/QtPositioning.framework/Versions/A/Headers/QGeoPositionInfo",
-            "lib/QtPositioning.framework/Versions/A/Headers/QGeoPositionInfoSource",
-            "lib/QtPositioning.framework/Versions/A/Headers/QGeoPositionInfoSourceFactory",
-            "lib/QtPositioning.framework/Versions/A/Headers/QGeoRectangle",
-            "lib/QtPositioning.framework/Versions/A/Headers/QGeoSatelliteInfo",
-            "lib/QtPositioning.framework/Versions/A/Headers/QGeoSatelliteInfoSource",
-            "lib/QtPositioning.framework/Versions/A/Headers/QGeoShape",
-            "lib/QtPositioning.framework/Versions/A/Headers/QNmeaPositionInfoSource",
-            "lib/QtPositioning.framework/Versions/A/Headers/QNmeaSatelliteInfoSource",
-            "lib/QtPositioning.framework/Versions/A/Headers/QtPositioning",
-            "lib/QtPositioning.framework/Versions/A/Headers/QtPositioningDepends",
-            "lib/QtPositioning.framework/Versions/A/Headers/QtPositioningVersion",
-            "lib/QtPositioning.framework/Versions/A/Headers/qgeoaddress.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qgeoareamonitorinfo.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qgeoareamonitorsource.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qgeocircle.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qgeocoordinate.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qgeolocation.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qgeopath.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qgeopolygon.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qgeopositioninfo.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qgeopositioninfosource.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qgeopositioninfosourcefactory.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qgeorectangle.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qgeosatelliteinfo.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qgeosatelliteinfosource.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qgeoshape.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qnmeapositioninfosource.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qnmeasatelliteinfosource.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qpositioningglobal.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qtpositioning-config.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qtpositioningexports.h",
-            "lib/QtPositioning.framework/Versions/A/Headers/qtpositioningversion.h",
-            "lib/QtPositioning.framework/Versions/A/QtPositioning",
-            "lib/QtPositioning.framework/Versions/A/Resources/Info.plist",
-            "lib/QtPositioning.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
-            "lib/QtPositioning.framework/Versions/A/Resources/QtPositioning.prl",
-            "lib/QtPositioningQuick.framework/QtPositioningQuick",
-            "lib/QtPositioningQuick.framework/Versions/A/Headers/6.12.0/QtPositioningQuick/private/locationsingleton_p.h",
-            "lib/QtPositioningQuick.framework/Versions/A/Headers/6.12.0/QtPositioningQuick/private/qdeclarativegeoaddress_p.h",
-            "lib/QtPositioningQuick.framework/Versions/A/Headers/6.12.0/QtPositioningQuick/private/qdeclarativegeolocation_p.h",
-            "lib/QtPositioningQuick.framework/Versions/A/Headers/6.12.0/QtPositioningQuick/private/qdeclarativepluginparameter_p.h",
-            "lib/QtPositioningQuick.framework/Versions/A/Headers/6.12.0/QtPositioningQuick/private/qdeclarativeposition_p.h",
-            "lib/QtPositioningQuick.framework/Versions/A/Headers/6.12.0/QtPositioningQuick/private/qdeclarativepositionsource_p.h",
-            "lib/QtPositioningQuick.framework/Versions/A/Headers/6.12.0/QtPositioningQuick/private/qdeclarativesatellitesource_p.h",
-            "lib/QtPositioningQuick.framework/Versions/A/Headers/6.12.0/QtPositioningQuick/private/qpositioningquickglobal_p.h",
-            "lib/QtPositioningQuick.framework/Versions/A/Headers/6.12.0/QtPositioningQuick/private/qpositioningquickmodule_p.h",
-            "lib/QtPositioningQuick.framework/Versions/A/Headers/6.12.0/QtPositioningQuick/private/qquickgeocoordinateanimation_p.h",
-            "lib/QtPositioningQuick.framework/Versions/A/Headers/6.12.0/QtPositioningQuick/private/qquickgeocoordinateanimation_p_p.h",
-            "lib/QtPositioningQuick.framework/Versions/A/Headers/QtPositioningQuick",
-            "lib/QtPositioningQuick.framework/Versions/A/Headers/QtPositioningQuickDepends",
-            "lib/QtPositioningQuick.framework/Versions/A/Headers/QtPositioningQuickVersion",
-            "lib/QtPositioningQuick.framework/Versions/A/Headers/qpositioningquickglobal.h",
-            "lib/QtPositioningQuick.framework/Versions/A/Headers/qtpositioningquickexports.h",
-            "lib/QtPositioningQuick.framework/Versions/A/Headers/qtpositioningquickversion.h",
-            "lib/QtPositioningQuick.framework/Versions/A/QtPositioningQuick",
-            "lib/QtPositioningQuick.framework/Versions/A/Resources/Info.plist",
-            "lib/QtPositioningQuick.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
-            "lib/QtPositioningQuick.framework/Versions/A/Resources/QtPositioningQuick.prl",
-            "lib/cmake/Qt6/FindGconf.cmake",
-            "lib/cmake/Qt6/FindGypsy.cmake",
-            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtPositioningTestsConfig.cmake",
-            "lib/cmake/Qt6Positioning/Qt6PositioningAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6Positioning/Qt6PositioningConfig.cmake",
-            "lib/cmake/Qt6Positioning/Qt6PositioningConfigVersion.cmake",
-            "lib/cmake/Qt6Positioning/Qt6PositioningConfigVersionImpl.cmake",
-            "lib/cmake/Qt6Positioning/Qt6PositioningDependencies.cmake",
-            "lib/cmake/Qt6Positioning/Qt6PositioningPlugins.cmake",
-            "lib/cmake/Qt6Positioning/Qt6PositioningTargets-release.cmake",
-            "lib/cmake/Qt6Positioning/Qt6PositioningTargets.cmake",
-            "lib/cmake/Qt6Positioning/Qt6PositioningTargetsPrecheck.cmake",
-            "lib/cmake/Qt6Positioning/Qt6PositioningVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6Positioning/Qt6PositioningVersionlessTargets.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryCLPluginAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryCLPluginConfig.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryCLPluginConfigVersion.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryCLPluginConfigVersionImpl.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryCLPluginTargets-release.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryCLPluginTargets.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryCLPluginTargetsPrecheck.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryNmeaPluginAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryNmeaPluginConfig.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryNmeaPluginConfigVersion.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryNmeaPluginConfigVersionImpl.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryNmeaPluginTargets-release.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryNmeaPluginTargets.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryNmeaPluginTargetsPrecheck.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryPollPluginAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryPollPluginConfig.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryPollPluginConfigVersion.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryPollPluginConfigVersionImpl.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryPollPluginTargets-release.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryPollPluginTargets.cmake",
-            "lib/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryPollPluginTargetsPrecheck.cmake",
-            "lib/cmake/Qt6PositioningPrivate/Qt6PositioningPrivateAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6PositioningPrivate/Qt6PositioningPrivateConfig.cmake",
-            "lib/cmake/Qt6PositioningPrivate/Qt6PositioningPrivateConfigVersion.cmake",
-            "lib/cmake/Qt6PositioningPrivate/Qt6PositioningPrivateConfigVersionImpl.cmake",
-            "lib/cmake/Qt6PositioningPrivate/Qt6PositioningPrivateDependencies.cmake",
-            "lib/cmake/Qt6PositioningPrivate/Qt6PositioningPrivateTargets.cmake",
-            "lib/cmake/Qt6PositioningPrivate/Qt6PositioningPrivateTargetsPrecheck.cmake",
-            "lib/cmake/Qt6PositioningPrivate/Qt6PositioningPrivateVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6PositioningPrivate/Qt6PositioningPrivateVersionlessTargets.cmake",
-            "lib/cmake/Qt6PositioningQuick/Qt6PositioningQuickAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6PositioningQuick/Qt6PositioningQuickConfig.cmake",
-            "lib/cmake/Qt6PositioningQuick/Qt6PositioningQuickConfigVersion.cmake",
-            "lib/cmake/Qt6PositioningQuick/Qt6PositioningQuickConfigVersionImpl.cmake",
-            "lib/cmake/Qt6PositioningQuick/Qt6PositioningQuickDependencies.cmake",
-            "lib/cmake/Qt6PositioningQuick/Qt6PositioningQuickTargets-release.cmake",
-            "lib/cmake/Qt6PositioningQuick/Qt6PositioningQuickTargets.cmake",
-            "lib/cmake/Qt6PositioningQuick/Qt6PositioningQuickTargetsPrecheck.cmake",
-            "lib/cmake/Qt6PositioningQuick/Qt6PositioningQuickVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6PositioningQuick/Qt6PositioningQuickVersionlessTargets.cmake",
-            "lib/cmake/Qt6PositioningQuickPrivate/Qt6PositioningQuickPrivateAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6PositioningQuickPrivate/Qt6PositioningQuickPrivateConfig.cmake",
-            "lib/cmake/Qt6PositioningQuickPrivate/Qt6PositioningQuickPrivateConfigVersion.cmake",
-            "lib/cmake/Qt6PositioningQuickPrivate/Qt6PositioningQuickPrivateConfigVersionImpl.cmake",
-            "lib/cmake/Qt6PositioningQuickPrivate/Qt6PositioningQuickPrivateDependencies.cmake",
-            "lib/cmake/Qt6PositioningQuickPrivate/Qt6PositioningQuickPrivateTargets.cmake",
-            "lib/cmake/Qt6PositioningQuickPrivate/Qt6PositioningQuickPrivateTargetsPrecheck.cmake",
-            "lib/cmake/Qt6PositioningQuickPrivate/Qt6PositioningQuickPrivateVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6PositioningQuickPrivate/Qt6PositioningQuickPrivateVersionlessTargets.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6positioningquickpluginAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6positioningquickpluginConfig.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6positioningquickpluginConfigVersion.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6positioningquickpluginConfigVersionImpl.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6positioningquickpluginTargets-release.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6positioningquickpluginTargets.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6positioningquickpluginTargetsPrecheck.cmake",
-            "lib/pkgconfig/Qt6Positioning.pc",
-            "lib/pkgconfig/Qt6PositioningQuick.pc",
+            "include/QtQuickTimeline/QtQuickTimeline",
+            "include/QtQuickTimeline/QtQuickTimelineDepends",
+            "include/QtQuickTimeline/QtQuickTimelineVersion",
+            "include/QtQuickTimeline/qtquicktimelineexports.h",
+            "include/QtQuickTimeline/qtquicktimelineglobal.h",
+            "include/QtQuickTimeline/qtquicktimelineversion.h",
+            "include/QtQuickTimelineBlendTrees/QtQuickTimelineBlendTrees",
+            "include/QtQuickTimelineBlendTrees/QtQuickTimelineBlendTreesDepends",
+            "include/QtQuickTimelineBlendTrees/QtQuickTimelineBlendTreesVersion",
+            "include/QtQuickTimelineBlendTrees/qtquicktimelineblendtreesexports.h",
+            "include/QtQuickTimelineBlendTrees/qtquicktimelineblendtreesglobal.h",
+            "include/QtQuickTimelineBlendTrees/qtquicktimelineblendtreesversion.h",
+            "lib/QtQuickTimeline.framework/QtQuickTimeline",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/6.12.0/QtQuickTimeline/private/qquickkeyframe_p.h",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/6.12.0/QtQuickTimeline/private/qquickkeyframedatautils_p.h",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/6.12.0/QtQuickTimeline/private/qquicktimeline_p.h",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/6.12.0/QtQuickTimeline/private/qquicktimelineanimation_p.h",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/6.12.0/QtQuickTimeline/private/qtquicktimelineglobal_p.h",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/QtQuickTimeline",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/QtQuickTimelineDepends",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/QtQuickTimelineVersion",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/qtquicktimelineexports.h",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/qtquicktimelineglobal.h",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/qtquicktimelineversion.h",
+            "lib/QtQuickTimeline.framework/Versions/A/QtQuickTimeline",
+            "lib/QtQuickTimeline.framework/Versions/A/Resources/Info.plist",
+            "lib/QtQuickTimeline.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtQuickTimeline.framework/Versions/A/Resources/QtQuickTimeline.prl",
+            "lib/QtQuickTimelineBlendTrees.framework/QtQuickTimelineBlendTrees",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/6.12.0/QtQuickTimelineBlendTrees/private/qblendanimationnode_p.h",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/6.12.0/QtQuickTimelineBlendTrees/private/qblendtreenode_p.h",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/6.12.0/QtQuickTimelineBlendTrees/private/qtimelineanimationnode_p.h",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/6.12.0/QtQuickTimelineBlendTrees/private/qtquicktimelineblendtreesglobal_p.h",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/QtQuickTimelineBlendTrees",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/QtQuickTimelineBlendTreesDepends",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/QtQuickTimelineBlendTreesVersion",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/qtquicktimelineblendtreesexports.h",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/qtquicktimelineblendtreesglobal.h",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/qtquicktimelineblendtreesversion.h",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/QtQuickTimelineBlendTrees",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Resources/Info.plist",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Resources/QtQuickTimelineBlendTrees.prl",
+            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtQuickTimelineTestsConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelineblendtreespluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelineblendtreespluginConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelineblendtreespluginConfigVersion.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelineblendtreespluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelineblendtreespluginTargets-release.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelineblendtreespluginTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelineblendtreespluginTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelinepluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelinepluginConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelinepluginConfigVersion.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelinepluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelinepluginTargets-release.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelinepluginTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelinepluginTargetsPrecheck.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineConfig.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineConfigVersion.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineConfigVersionImpl.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineDependencies.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineTargets-release.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineTargets.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineTargetsPrecheck.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineVersionlessTargets.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesConfig.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesConfigVersion.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesConfigVersionImpl.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesDependencies.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesTargets-release.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesTargets.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesTargetsPrecheck.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesVersionlessTargets.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTreesPrivate/Qt6QuickTimelineBlendTreesPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTreesPrivate/Qt6QuickTimelineBlendTreesPrivateConfig.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTreesPrivate/Qt6QuickTimelineBlendTreesPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTreesPrivate/Qt6QuickTimelineBlendTreesPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTreesPrivate/Qt6QuickTimelineBlendTreesPrivateDependencies.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTreesPrivate/Qt6QuickTimelineBlendTreesPrivateTargets.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTreesPrivate/Qt6QuickTimelineBlendTreesPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTreesPrivate/Qt6QuickTimelineBlendTreesPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTreesPrivate/Qt6QuickTimelineBlendTreesPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6QuickTimelinePrivate/Qt6QuickTimelinePrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6QuickTimelinePrivate/Qt6QuickTimelinePrivateConfig.cmake",
+            "lib/cmake/Qt6QuickTimelinePrivate/Qt6QuickTimelinePrivateConfigVersion.cmake",
+            "lib/cmake/Qt6QuickTimelinePrivate/Qt6QuickTimelinePrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6QuickTimelinePrivate/Qt6QuickTimelinePrivateDependencies.cmake",
+            "lib/cmake/Qt6QuickTimelinePrivate/Qt6QuickTimelinePrivateTargets.cmake",
+            "lib/cmake/Qt6QuickTimelinePrivate/Qt6QuickTimelinePrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6QuickTimelinePrivate/Qt6QuickTimelinePrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6QuickTimelinePrivate/Qt6QuickTimelinePrivateVersionlessTargets.cmake",
+            "lib/pkgconfig/Qt6QuickTimeline.pc",
+            "lib/pkgconfig/Qt6QuickTimelineBlendTrees.pc",
             "sbom.spdx.json",
-            "share/qt/metatypes/qt6positioning_metatypes.json",
-            "share/qt/metatypes/qt6positioningquick_metatypes.json",
-            "share/qt/mkspecs/modules/qt_lib_positioning.pri",
-            "share/qt/mkspecs/modules/qt_lib_positioning_private.pri",
-            "share/qt/mkspecs/modules/qt_lib_positioningquick.pri",
-            "share/qt/mkspecs/modules/qt_lib_positioningquick_private.pri",
-            "share/qt/modules/Positioning.json",
-            "share/qt/modules/PositioningQuick.json",
-            "share/qt/plugins/position/libqtposition_cl.dylib",
-            "share/qt/plugins/position/libqtposition_nmea.dylib",
-            "share/qt/plugins/position/libqtposition_positionpoll.dylib",
-            "share/qt/qml/QtPositioning/libpositioningquickplugin.dylib",
-            "share/qt/qml/QtPositioning/plugins.qmltypes",
-            "share/qt/qml/QtPositioning/qmldir",
-            "share/qt/sbom/qtpositioning-6.12.0.spdx"
+            "share/qt/metatypes/qt6quicktimeline_metatypes.json",
+            "share/qt/metatypes/qt6quicktimelineblendtrees_metatypes.json",
+            "share/qt/mkspecs/modules/qt_lib_quicktimeline.pri",
+            "share/qt/mkspecs/modules/qt_lib_quicktimeline_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_quicktimelineblendtrees.pri",
+            "share/qt/mkspecs/modules/qt_lib_quicktimelineblendtrees_private.pri",
+            "share/qt/modules/QuickTimeline.json",
+            "share/qt/modules/QuickTimelineBlendTrees.json",
+            "share/qt/qml/QtQuick/Timeline/BlendTrees/libqtquicktimelineblendtreesplugin.dylib",
+            "share/qt/qml/QtQuick/Timeline/BlendTrees/plugins.qmltypes",
+            "share/qt/qml/QtQuick/Timeline/BlendTrees/qmldir",
+            "share/qt/qml/QtQuick/Timeline/libqtquicktimelineplugin.dylib",
+            "share/qt/qml/QtQuick/Timeline/plugins.qmltypes",
+            "share/qt/qml/QtQuick/Timeline/qmldir",
+            "share/qt/sbom/qtquicktimeline-6.12.0.spdx"
           ],
-          "installed_size": 2345462
+          "installed_size": 549270
         }
       }
     }
