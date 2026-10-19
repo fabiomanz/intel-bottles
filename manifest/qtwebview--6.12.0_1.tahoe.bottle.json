@@ -1,34 +1,38 @@
 {
-  "qthttpserver": {
+  "qtwebview": {
     "formula": {
-      "name": "qthttpserver",
-      "pkg_version": "6.12.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qthttpserver.rb",
-      "tap_git_path": "Formula/q/qthttpserver.rb",
-      "tap_git_revision": "b19abce05ad94c1adadb205d8d2e2e9d156a7fba",
+      "name": "qtwebview",
+      "pkg_version": "6.12.0_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtwebview.rb",
+      "tap_git_path": "Formula/q/qtwebview.rb",
+      "tap_git_revision": "bfda9b5754024c36704f19417d9b731afcff91a7",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
-      "desc": "Framework for embedding an HTTP server into a Qt application",
-      "license": "GPL-3.0-only AND BSD-3-Clause",
+      "desc": "Displays web content in a QML application",
+      "license": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
       "homepage": "https://www.qt.io/"
     },
     "bottle": {
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-14T14:04:42Z",
+      "date": "2026-10-19T13:39:38Z",
       "tags": {
         "tahoe": {
-          "filename": "qthttpserver-6.12.0.tahoe.bottle.tar.gz",
-          "local_filename": "qthttpserver--6.12.0.tahoe.bottle.tar.gz",
-          "sha256": "7e2a6c0a063c48c14a2c93806eed9f473f2000b7b11cefe5535b64026c069237",
+          "filename": "qtwebview-6.12.0_1.tahoe.bottle.tar.gz",
+          "local_filename": "qtwebview--6.12.0_1.tahoe.bottle.tar.gz",
+          "sha256": "3e7e0038f4bf449afcc5480e9017e00e835a91dfbf36789f099d232c89c38558",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.10",
             "changed_files": [],
             "linkage_files": [
-              "lib/QtHttpServer.framework/Versions/A/QtHttpServer"
+              "lib/QtWebView.framework/Versions/A/QtWebView",
+              "lib/QtWebViewQuick.framework/Versions/A/QtWebViewQuick",
+              "share/qt/plugins/webview/libqtwebview_darwin.dylib",
+              "share/qt/plugins/webview/libqtwebview_webengine.dylib",
+              "share/qt/qml/QtWebView/libqtwebviewquickplugin.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790503899,
+            "source_modified_time": 1790526984,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -69,10 +73,10 @@
               },
               {
                 "full_name": "freetype",
-                "version": "2.14.3",
+                "version": "2.15.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.14.3",
+                "pkg_version": "2.15.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -95,10 +99,10 @@
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -167,10 +171,10 @@
               },
               {
                 "full_name": "libx11",
-                "version": "1.8.13",
+                "version": "1.8.14",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.8.13",
+                "pkg_version": "1.8.14",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -185,10 +189,10 @@
               },
               {
                 "full_name": "libxrender",
-                "version": "0.9.12",
+                "version": "0.9.13",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.9.12",
+                "pkg_version": "0.9.13",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -315,36 +319,89 @@
               {
                 "full_name": "qtbase",
                 "version": "6.12.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
+                "pkg_version": "6.12.0_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "qtsvg",
                 "version": "6.12.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
+                "pkg_version": "6.12.0_1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "qtdeclarative",
                 "version": "6.12.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
+                "pkg_version": "6.12.0_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtserialport",
+                "version": "6.12.0",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.12.0_1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
-                "full_name": "qtwebsockets",
+                "full_name": "qtpositioning",
                 "version": "6.12.0",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.12.0_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtwebchannel",
+                "version": "6.12.0",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.12.0_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gumbo-parser",
+                "version": "0.14.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
+                "pkg_version": "0.14.1",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "litehtml",
+                "version": "0.10",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.10_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qttools",
+                "version": "6.12.0",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.12.0_1",
+                "declared_directly": false
+              },
+              {
+                "full_name": "qtwebengine",
+                "version": "6.11.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.11.2",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -363,14 +420,15 @@
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
-              "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+              "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
               "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
               "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
               "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
-              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
+              "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
               "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
               "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
@@ -380,10 +438,16 @@
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
-              "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
-              "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
-              "SPDXRef-Package-SPDXRef-qtwebsockets-6.2e.12.2e.0",
+              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-qtserialport-6.2e.12.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-qtpositioning-6.2e.12.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-qtwebchannel-6.2e.12.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-gumbo-parser-0.2e.14.2e.1",
+              "SPDXRef-Package-SPDXRef-litehtml-0.2e.10.5f.1",
+              "SPDXRef-Package-SPDXRef-qttools-6.2e.12.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-qtwebengine-6.2e.11.2e.2",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -411,24 +475,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "name": "freetype",
-                "versionInfo": "2.14.3",
+                "versionInfo": "2.15.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "FTL",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.14.3.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.15.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "a8a2bcc65a1d21adba6797d59f4ab1c91b0a40c53aae2794b4f94780e7379837"
+                    "checksumValue": "df5ad00e9d611b80d19df81741a935c2d9bceef6feb79b4c322dda96507d5d36"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/freetype@2.14.3",
+                    "referenceLocator": "pkg:brew/freetype@2.15.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -480,24 +544,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.5.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
+                    "checksumValue": "9914a8c6c3e193c9f0b20df1d04a32f25d247f0cb62fd1501abf321e1d1d7757"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -572,24 +636,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "name": "libx11",
-                "versionInfo": "1.8.13",
+                "versionInfo": "1.8.14",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.13.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.14.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "10c0844f2a8daab11aa21bd737480e496469da1a15c37067dc34ab308f8b6285"
+                    "checksumValue": "c6d26e6032e1a786e706b9c8679d0592276fd0a3007caadf760498808e1f0163"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libx11@1.8.13",
+                    "referenceLocator": "pkg:brew/libx11@1.8.14",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+                "name": "libxrender",
+                "versionInfo": "0.9.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libxrender-0.9.13.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "aebc979e80b79b0064a432ebeea298ceec187e5df77855f413e6fcb51571b769"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libxrender@0.9.13",
                     "referenceType": "purl"
                   }
                 ]
@@ -802,93 +889,231 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
                 "name": "qtbase",
-                "versionInfo": "6.12.0",
+                "versionInfo": "6.12.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND GFDL-1.3-no-invariants-only",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.12.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtbase-6.12.0_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4e76f26f348ba8d1a3fb3b053ebdb843857652372bc58cd70442eff538fb04d0"
+                    "checksumValue": "4f6789a5aaa0cc5153ee3998749fee7dac76326cc40e4a91e4c8eb0151b3c6b2"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtbase@6.12.0",
+                    "referenceLocator": "pkg:brew/qtbase@6.12.0_1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0.5f.1",
                 "name": "qtsvg",
-                "versionInfo": "6.12.0",
+                "versionInfo": "6.12.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtsvg-6.12.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtsvg-6.12.0_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "b010c19572dcf0842948a6e729921dc9f72a4c27fd7d0e7d918abd96db41c584"
+                    "checksumValue": "94e1d53db39a654aafcd9b73cdd0827f63fe7b40de2fd17ee2f07fc210036660"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtsvg@6.12.0",
+                    "referenceLocator": "pkg:brew/qtsvg@6.12.0_1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0.5f.1",
                 "name": "qtdeclarative",
-                "versionInfo": "6.12.0",
+                "versionInfo": "6.12.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-2-Clause AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtdeclarative-6.12.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtdeclarative-6.12.0_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "2ab2ca0d0da3b9892c84662b150296e576085972d0e6ee0675cd4a5bd5663804"
+                    "checksumValue": "d2d2e1d7f095d12cb51a0a0fe86bf44695bdf3a74ddd44cc224b60d9e383ad2e"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtdeclarative@6.12.0",
+                    "referenceLocator": "pkg:brew/qtdeclarative@6.12.0_1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtwebsockets-6.2e.12.2e.0",
-                "name": "qtwebsockets",
-                "versionInfo": "6.12.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtserialport-6.2e.12.2e.0.5f.1",
+                "name": "qtserialport",
+                "versionInfo": "6.12.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtwebsockets-6.12.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtserialport-6.12.0_1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "65cb78185dd85b32745a73b798b2c9c49f87bf72131c8510920fef1ca1534495"
+                    "checksumValue": "df350f036519c69d296aa3a6135b2811fe6456a3301df103ecf0a3ad94bc5593"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtwebsockets@6.12.0",
+                    "referenceLocator": "pkg:brew/qtserialport@6.12.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtpositioning-6.2e.12.2e.0.5f.1",
+                "name": "qtpositioning",
+                "versionInfo": "6.12.0_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause AND BSL-1.0 AND MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtpositioning-6.12.0_1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "de28da0767f1ba609e4ba193b463223375337200fbb0cce9cd8839d5f927782e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtpositioning@6.12.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtwebchannel-6.2e.12.2e.0.5f.1",
+                "name": "qtwebchannel",
+                "versionInfo": "6.12.0_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtwebchannel-6.12.0_1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8243735c2823414f4d53d0b1bbaa9a744e3fed729ae5ba6e10f611660fd0810b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtwebchannel@6.12.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gumbo-parser-0.2e.14.2e.1",
+                "name": "gumbo-parser",
+                "versionInfo": "0.14.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gumbo-parser-0.14.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ebd05a6d17b0c0dd6c6c2267c2992d02e9733e255817840c58a24aa345f511b0"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gumbo-parser@0.14.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-litehtml-0.2e.10.5f.1",
+                "name": "litehtml",
+                "versionInfo": "0.10_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/litehtml-0.10_1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "462e948c9d16aac8ecc436570911330a5cd72cabbf803e988c363ee9fec68c13"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/litehtml@0.10_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qttools-6.2e.12.2e.0.5f.1",
+                "name": "qttools",
+                "versionInfo": "6.12.0_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND BSL-1.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qttools-6.12.0_1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d85ef89f463767e4c88a0677d0f007a8e144c867df7bd8681170cc02e08358b3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qttools@6.12.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtwebengine-6.2e.11.2e.2",
+                "name": "qtwebengine",
+                "versionInfo": "6.11.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND Apache-2.0 AND blessing AND BSD-2-Clause AND LGPL-2.1-or-later AND libpng-2.0 AND MIT AND MPL-1.1 AND NCL AND SGI-B-2.0 AND SunPro AND Zlib AND LicenseRef-Homebrew-public-domain",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/qtwebengine-6.11.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e4df84e96bdbafdcdfdd0afb06870b4ff4fb3328d1476e2ede8021608dbc6131"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtwebengine@6.11.2",
                     "referenceType": "purl"
                   }
                 ]
@@ -910,225 +1135,294 @@
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtwebsockets-6.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtserialport-6.2e.12.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtpositioning-6.2e.12.2e.0.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtwebchannel-6.2e.12.2e.0.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gumbo-parser-0.2e.14.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-litehtml-0.2e.10.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qttools-6.2e.12.2e.0.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtwebengine-6.2e.11.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtwebview"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-qthttpserver-src"
+                "relatedSpdxElement": "SPDXRef-Archive-qtwebview-src"
               }
             ]
           },
           "path_exec_files": [],
           "all_files": [
-            ".brew/qthttpserver.rb",
+            ".brew/qtwebview.rb",
             "INSTALL_RECEIPT.json",
-            "include/QtHttpServer/QAbstractHttpServer",
-            "include/QtHttpServer/QHttpServer",
-            "include/QtHttpServer/QHttpServerConfiguration",
-            "include/QtHttpServer/QHttpServerRequest",
-            "include/QtHttpServer/QHttpServerResponder",
-            "include/QtHttpServer/QHttpServerResponse",
-            "include/QtHttpServer/QHttpServerRouter",
-            "include/QtHttpServer/QHttpServerRouterRule",
-            "include/QtHttpServer/QHttpServerRouterViewTraits",
-            "include/QtHttpServer/QHttpServerWebSocketUpgradeResponse",
-            "include/QtHttpServer/QtHttpServer",
-            "include/QtHttpServer/QtHttpServerDepends",
-            "include/QtHttpServer/QtHttpServerVersion",
-            "include/QtHttpServer/qabstracthttpserver.h",
-            "include/QtHttpServer/qhttpserver.h",
-            "include/QtHttpServer/qhttpserverconfiguration.h",
-            "include/QtHttpServer/qhttpserverrequest.h",
-            "include/QtHttpServer/qhttpserverresponder.h",
-            "include/QtHttpServer/qhttpserverresponse.h",
-            "include/QtHttpServer/qhttpserverrouter.h",
-            "include/QtHttpServer/qhttpserverrouterrule.h",
-            "include/QtHttpServer/qhttpserverrouterviewtraits.h",
-            "include/QtHttpServer/qhttpserverviewtraits_impl.h",
-            "include/QtHttpServer/qhttpserverwebsocketupgraderesponse.h",
-            "include/QtHttpServer/qthttpserverexports.h",
-            "include/QtHttpServer/qthttpserverglobal.h",
-            "include/QtHttpServer/qthttpserverversion.h",
-            "lib/QtHttpServer.framework/QtHttpServer",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qabstracthttpserver_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserver_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverhttp1protocolhandler_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverhttp2protocolhandler_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverliterals_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverparser_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverrequest_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverrequestfilter_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverresponder_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverresponse_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverrouter_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverrouterrule_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverstream_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QAbstractHttpServer",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QHttpServer",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QHttpServerConfiguration",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QHttpServerRequest",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QHttpServerResponder",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QHttpServerResponse",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QHttpServerRouter",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QHttpServerRouterRule",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QHttpServerRouterViewTraits",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QHttpServerWebSocketUpgradeResponse",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QtHttpServer",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QtHttpServerDepends",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QtHttpServerVersion",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qabstracthttpserver.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserver.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserverconfiguration.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserverrequest.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserverresponder.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserverresponse.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserverrouter.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserverrouterrule.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserverrouterviewtraits.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserverviewtraits_impl.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserverwebsocketupgraderesponse.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qthttpserverexports.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qthttpserverglobal.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qthttpserverversion.h",
-            "lib/QtHttpServer.framework/Versions/A/QtHttpServer",
-            "lib/QtHttpServer.framework/Versions/A/Resources/Info.plist",
-            "lib/QtHttpServer.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
-            "lib/QtHttpServer.framework/Versions/A/Resources/QtHttpServer.prl",
-            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtHttpServerTestsConfig.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerConfig.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerConfigVersion.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerConfigVersionImpl.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerDependencies.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerTargets-release.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerTargets.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerTargetsPrecheck.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerVersionlessTargets.cmake",
-            "lib/cmake/Qt6HttpServerPrivate/Qt6HttpServerPrivateAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6HttpServerPrivate/Qt6HttpServerPrivateConfig.cmake",
-            "lib/cmake/Qt6HttpServerPrivate/Qt6HttpServerPrivateConfigVersion.cmake",
-            "lib/cmake/Qt6HttpServerPrivate/Qt6HttpServerPrivateConfigVersionImpl.cmake",
-            "lib/cmake/Qt6HttpServerPrivate/Qt6HttpServerPrivateDependencies.cmake",
-            "lib/cmake/Qt6HttpServerPrivate/Qt6HttpServerPrivateTargets.cmake",
-            "lib/cmake/Qt6HttpServerPrivate/Qt6HttpServerPrivateTargetsPrecheck.cmake",
-            "lib/cmake/Qt6HttpServerPrivate/Qt6HttpServerPrivateVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6HttpServerPrivate/Qt6HttpServerPrivateVersionlessTargets.cmake",
-            "lib/pkgconfig/Qt6HttpServer.pc",
+            "include/QtWebView/QWebView",
+            "include/QtWebView/QWebViewLoadingInfo",
+            "include/QtWebView/QWebViewSettings",
+            "include/QtWebView/QtWebView",
+            "include/QtWebView/QtWebViewDepends",
+            "include/QtWebView/QtWebViewVersion",
+            "include/QtWebView/qtwebview-config.h",
+            "include/QtWebView/qtwebviewfunctions.h",
+            "include/QtWebView/qtwebviewversion.h",
+            "include/QtWebView/qwebview.h",
+            "include/QtWebView/qwebview_global.h",
+            "include/QtWebView/qwebviewloadinginfo.h",
+            "include/QtWebView/qwebviewsettings.h",
+            "include/QtWebViewQuick/QtWebViewQuick",
+            "include/QtWebViewQuick/QtWebViewQuickDepends",
+            "include/QtWebViewQuick/QtWebViewQuickVersion",
+            "include/QtWebViewQuick/qtwebviewquickexports.h",
+            "include/QtWebViewQuick/qtwebviewquickversion.h",
+            "lib/QtWebView.framework/QtWebView",
+            "lib/QtWebView.framework/Versions/A/Headers/6.12.0/QtWebView/private/qtwebview-config_p.h",
+            "lib/QtWebView.framework/Versions/A/Headers/6.12.0/QtWebView/private/qwebview_p.h",
+            "lib/QtWebView.framework/Versions/A/Headers/6.12.0/QtWebView/private/qwebviewfactory_p.h",
+            "lib/QtWebView.framework/Versions/A/Headers/6.12.0/QtWebView/private/qwebviewplugin_p.h",
+            "lib/QtWebView.framework/Versions/A/Headers/QWebView",
+            "lib/QtWebView.framework/Versions/A/Headers/QWebViewLoadingInfo",
+            "lib/QtWebView.framework/Versions/A/Headers/QWebViewSettings",
+            "lib/QtWebView.framework/Versions/A/Headers/QtWebView",
+            "lib/QtWebView.framework/Versions/A/Headers/QtWebViewDepends",
+            "lib/QtWebView.framework/Versions/A/Headers/QtWebViewVersion",
+            "lib/QtWebView.framework/Versions/A/Headers/qtwebview-config.h",
+            "lib/QtWebView.framework/Versions/A/Headers/qtwebviewfunctions.h",
+            "lib/QtWebView.framework/Versions/A/Headers/qtwebviewversion.h",
+            "lib/QtWebView.framework/Versions/A/Headers/qwebview.h",
+            "lib/QtWebView.framework/Versions/A/Headers/qwebview_global.h",
+            "lib/QtWebView.framework/Versions/A/Headers/qwebviewloadinginfo.h",
+            "lib/QtWebView.framework/Versions/A/Headers/qwebviewsettings.h",
+            "lib/QtWebView.framework/Versions/A/QtWebView",
+            "lib/QtWebView.framework/Versions/A/Resources/Info.plist",
+            "lib/QtWebView.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtWebView.framework/Versions/A/Resources/QtWebView.prl",
+            "lib/QtWebViewQuick.framework/QtWebViewQuick",
+            "lib/QtWebViewQuick.framework/Versions/A/Headers/6.12.0/QtWebViewQuick/private/qquickwebview_p.h",
+            "lib/QtWebViewQuick.framework/Versions/A/Headers/6.12.0/QtWebViewQuick/private/qquickwebviewloadrequest_p.h",
+            "lib/QtWebViewQuick.framework/Versions/A/Headers/6.12.0/QtWebViewQuick/private/qquickwebviewsettings_p.h",
+            "lib/QtWebViewQuick.framework/Versions/A/Headers/6.12.0/QtWebViewQuick/private/qtwebviewquickglobal_p.h",
+            "lib/QtWebViewQuick.framework/Versions/A/Headers/QtWebViewQuick",
+            "lib/QtWebViewQuick.framework/Versions/A/Headers/QtWebViewQuickDepends",
+            "lib/QtWebViewQuick.framework/Versions/A/Headers/QtWebViewQuickVersion",
+            "lib/QtWebViewQuick.framework/Versions/A/Headers/qtwebviewquickexports.h",
+            "lib/QtWebViewQuick.framework/Versions/A/Headers/qtwebviewquickversion.h",
+            "lib/QtWebViewQuick.framework/Versions/A/QtWebViewQuick",
+            "lib/QtWebViewQuick.framework/Versions/A/Resources/Info.plist",
+            "lib/QtWebViewQuick.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtWebViewQuick.framework/Versions/A/Resources/QtWebViewQuick.prl",
+            "lib/cmake/Qt6/FindWebView2.cmake",
+            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtWebViewTestsConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtwebviewquickpluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtwebviewquickpluginConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtwebviewquickpluginConfigVersion.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtwebviewquickpluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtwebviewquickpluginTargets-release.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtwebviewquickpluginTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtwebviewquickpluginTargetsPrecheck.cmake",
+            "lib/cmake/Qt6WebView/Qt6QDarwinWebViewPluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6WebView/Qt6QDarwinWebViewPluginConfig.cmake",
+            "lib/cmake/Qt6WebView/Qt6QDarwinWebViewPluginConfigVersion.cmake",
+            "lib/cmake/Qt6WebView/Qt6QDarwinWebViewPluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6WebView/Qt6QDarwinWebViewPluginTargets-release.cmake",
+            "lib/cmake/Qt6WebView/Qt6QDarwinWebViewPluginTargets.cmake",
+            "lib/cmake/Qt6WebView/Qt6QDarwinWebViewPluginTargetsPrecheck.cmake",
+            "lib/cmake/Qt6WebView/Qt6QWebEngineWebViewPluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6WebView/Qt6QWebEngineWebViewPluginConfig.cmake",
+            "lib/cmake/Qt6WebView/Qt6QWebEngineWebViewPluginConfigVersion.cmake",
+            "lib/cmake/Qt6WebView/Qt6QWebEngineWebViewPluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6WebView/Qt6QWebEngineWebViewPluginTargets-release.cmake",
+            "lib/cmake/Qt6WebView/Qt6QWebEngineWebViewPluginTargets.cmake",
+            "lib/cmake/Qt6WebView/Qt6QWebEngineWebViewPluginTargetsPrecheck.cmake",
+            "lib/cmake/Qt6WebView/Qt6WebViewAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6WebView/Qt6WebViewConfig.cmake",
+            "lib/cmake/Qt6WebView/Qt6WebViewConfigVersion.cmake",
+            "lib/cmake/Qt6WebView/Qt6WebViewConfigVersionImpl.cmake",
+            "lib/cmake/Qt6WebView/Qt6WebViewDependencies.cmake",
+            "lib/cmake/Qt6WebView/Qt6WebViewPlugins.cmake",
+            "lib/cmake/Qt6WebView/Qt6WebViewTargets-release.cmake",
+            "lib/cmake/Qt6WebView/Qt6WebViewTargets.cmake",
+            "lib/cmake/Qt6WebView/Qt6WebViewTargetsPrecheck.cmake",
+            "lib/cmake/Qt6WebView/Qt6WebViewVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6WebView/Qt6WebViewVersionlessTargets.cmake",
+            "lib/cmake/Qt6WebViewPrivate/Qt6WebViewPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6WebViewPrivate/Qt6WebViewPrivateConfig.cmake",
+            "lib/cmake/Qt6WebViewPrivate/Qt6WebViewPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6WebViewPrivate/Qt6WebViewPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6WebViewPrivate/Qt6WebViewPrivateDependencies.cmake",
+            "lib/cmake/Qt6WebViewPrivate/Qt6WebViewPrivateTargets.cmake",
+            "lib/cmake/Qt6WebViewPrivate/Qt6WebViewPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6WebViewPrivate/Qt6WebViewPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6WebViewPrivate/Qt6WebViewPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6WebViewQuick/Qt6WebViewQuickAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6WebViewQuick/Qt6WebViewQuickConfig.cmake",
+            "lib/cmake/Qt6WebViewQuick/Qt6WebViewQuickConfigVersion.cmake",
+            "lib/cmake/Qt6WebViewQuick/Qt6WebViewQuickConfigVersionImpl.cmake",
+            "lib/cmake/Qt6WebViewQuick/Qt6WebViewQuickDependencies.cmake",
+            "lib/cmake/Qt6WebViewQuick/Qt6WebViewQuickTargets-release.cmake",
+            "lib/cmake/Qt6WebViewQuick/Qt6WebViewQuickTargets.cmake",
+            "lib/cmake/Qt6WebViewQuick/Qt6WebViewQuickTargetsPrecheck.cmake",
+            "lib/cmake/Qt6WebViewQuick/Qt6WebViewQuickVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6WebViewQuick/Qt6WebViewQuickVersionlessTargets.cmake",
+            "lib/cmake/Qt6WebViewQuickPrivate/Qt6WebViewQuickPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6WebViewQuickPrivate/Qt6WebViewQuickPrivateConfig.cmake",
+            "lib/cmake/Qt6WebViewQuickPrivate/Qt6WebViewQuickPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6WebViewQuickPrivate/Qt6WebViewQuickPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6WebViewQuickPrivate/Qt6WebViewQuickPrivateDependencies.cmake",
+            "lib/cmake/Qt6WebViewQuickPrivate/Qt6WebViewQuickPrivateTargets.cmake",
+            "lib/cmake/Qt6WebViewQuickPrivate/Qt6WebViewQuickPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6WebViewQuickPrivate/Qt6WebViewQuickPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6WebViewQuickPrivate/Qt6WebViewQuickPrivateVersionlessTargets.cmake",
+            "lib/pkgconfig/Qt6WebView.pc",
+            "lib/pkgconfig/Qt6WebViewQuick.pc",
             "sbom.spdx.json",
-            "share/qt/metatypes/qt6httpserver_metatypes.json",
-            "share/qt/mkspecs/modules/qt_lib_httpserver.pri",
-            "share/qt/mkspecs/modules/qt_lib_httpserver_private.pri",
-            "share/qt/modules/HttpServer.json",
-            "share/qt/sbom/qthttpserver-6.12.0.spdx"
+            "share/qt/metatypes/qt6webview_metatypes.json",
+            "share/qt/metatypes/qt6webviewquick_metatypes.json",
+            "share/qt/mkspecs/modules/qt_lib_webview.pri",
+            "share/qt/mkspecs/modules/qt_lib_webview_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_webviewquick.pri",
+            "share/qt/mkspecs/modules/qt_lib_webviewquick_private.pri",
+            "share/qt/modules/WebView.json",
+            "share/qt/modules/WebViewQuick.json",
+            "share/qt/plugins/webview/libqtwebview_darwin.dylib",
+            "share/qt/plugins/webview/libqtwebview_webengine.dylib",
+            "share/qt/qml/QtWebView/libqtwebviewquickplugin.dylib",
+            "share/qt/qml/QtWebView/plugins.qmltypes",
+            "share/qt/qml/QtWebView/qmldir",
+            "share/qt/sbom/qtwebview-6.12.0.spdx"
           ],
-          "installed_size": 478554
+          "installed_size": 643725
         }
       }
     }
