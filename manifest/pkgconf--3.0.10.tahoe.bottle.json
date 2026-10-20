@@ -2,10 +2,10 @@
   "pkgconf": {
     "formula": {
       "name": "pkgconf",
-      "pkg_version": "3.0.9",
+      "pkg_version": "3.0.10",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pkgconf.rb",
       "tap_git_path": "Formula/p/pkgconf.rb",
-      "tap_git_revision": "9a284249924617857ca397f3f5208f69f6caf6c4",
+      "tap_git_revision": "2fcf753205766e63aaab99c7423855477c6afb77",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Package compiler and linker metadata toolkit",
       "license": "ISC",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-18T09:56:48Z",
+      "date": "2026-10-20T10:28:20Z",
       "tags": {
         "tahoe": {
-          "filename": "pkgconf-3.0.9.tahoe.bottle.tar.gz",
-          "local_filename": "pkgconf--3.0.9.tahoe.bottle.tar.gz",
-          "sha256": "6205445804abdd62c810c3d4eac1ddacbcc1b93c7340e5d626cdda8e547c1d5c",
+          "filename": "pkgconf-3.0.10.tahoe.bottle.tar.gz",
+          "local_filename": "pkgconf--3.0.10.tahoe.bottle.tar.gz",
+          "sha256": "8748cc8eb5a7559b3cbe70c88bcc6515aa74d0ac3115f20cc091f9665fb805a8",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.10",
             "changed_files": [
               "lib/pkgconfig/libpkgconf.pc"
             ],
@@ -37,7 +37,7 @@
               "lib/libpkgconf.8.dylib",
               "lib/libpkgconf.a"
             ],
-            "source_modified_time": 1792104371,
+            "source_modified_time": 1792380762,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -54,12 +54,12 @@
             {
               "path": "lib/libpkgconf.a",
               "string": "/usr/local/lib/pkgconfig:/usr/local/share/pkgconfig:/usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/26",
-              "offset": 80455
+              "offset": 80457
             },
             {
               "path": "lib/libpkgconf.8.dylib",
               "string": "/usr/local/lib/pkgconfig:/usr/local/share/pkgconfig:/usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/26",
-              "offset": 51509
+              "offset": 51511
             }
           ],
           "sbom": {
@@ -132,7 +132,7 @@
             "share/man/man5/pkgconf-personality.5",
             "share/man/man7/pkg.m4.7"
           ],
-          "installed_size": 603215
+          "installed_size": 603394
         }
       }
     }

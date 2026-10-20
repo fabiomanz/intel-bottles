@@ -2,10 +2,10 @@
   "go": {
     "formula": {
       "name": "go",
-      "pkg_version": "1.27.2",
+      "pkg_version": "1.27.3",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/go.rb",
       "tap_git_path": "Formula/g/go.rb",
-      "tap_git_revision": "c949465655d38fac5a5f5fd6cfa7cfd784c1ac5d",
+      "tap_git_revision": "2fcf753205766e63aaab99c7423855477c6afb77",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Open source programming language to build simple/reliable/efficient software",
       "license": "BSD-3-Clause",
@@ -15,18 +15,18 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-09T12:18:41Z",
+      "date": "2026-10-20T10:43:06Z",
       "tags": {
         "tahoe": {
-          "filename": "go-1.27.2.tahoe.bottle.tar.gz",
-          "local_filename": "go--1.27.2.tahoe.bottle.tar.gz",
-          "sha256": "c8622189db1334d18d2a538e42246587d5ba27f20f60231ba905828ebe8bedef",
+          "filename": "go-1.27.3.tahoe.bottle.tar.gz",
+          "local_filename": "go--1.27.3.tahoe.bottle.tar.gz",
+          "sha256": "ca16b9a816556599bc017e395256cb4be565450ad94383546924c74773f10249",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.10",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1790972883,
+            "source_modified_time": 1792448436,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -15667,7 +15667,7 @@
             "libexec/test/zerosize.go",
             "sbom.spdx.json"
           ],
-          "installed_size": 245449752
+          "installed_size": 245451460
         }
       }
     }
