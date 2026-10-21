@@ -2,10 +2,10 @@
   "nss": {
     "formula": {
       "name": "nss",
-      "pkg_version": "3.131",
+      "pkg_version": "3.131.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/n/nss.rb",
       "tap_git_path": "Formula/n/nss.rb",
-      "tap_git_revision": "917c67484f37e8e455fe987a6e6ea373f95bccd6",
+      "tap_git_revision": "1da6686dfe3dba44aeef23f3415f6ddc9494634b",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Libraries for security-enabled client and server applications",
       "license": "MPL-2.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-07T12:05:20Z",
+      "date": "2026-10-21T10:48:59Z",
       "tags": {
         "tahoe": {
-          "filename": "nss-3.131.tahoe.bottle.tar.gz",
-          "local_filename": "nss--3.131.tahoe.bottle.tar.gz",
-          "sha256": "8587d6953d5cb6b5660dbe4299324135d7e38eb6eaf331275b03188159a4b4e8",
+          "filename": "nss-3.131.1.tahoe.bottle.tar.gz",
+          "local_filename": "nss--3.131.1.tahoe.bottle.tar.gz",
+          "sha256": "544ce88d14b9e1a5e1ef4c1d47ec8251727214320d210478e3c74b9ffcaff116",
           "tab": {
-            "homebrew_version": "7.0.8",
+            "homebrew_version": "7.0.10",
             "changed_files": [
               "lib/pkgconfig/nss.pc"
             ],
@@ -98,7 +98,7 @@
               "lib/libssl3.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1791313445,
+            "source_modified_time": 1792500309,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -423,7 +423,7 @@
             "libexec/libsoftokn3.chk",
             "sbom.spdx.json"
           ],
-          "installed_size": 17710583
+          "installed_size": 17706054
         }
       }
     }
