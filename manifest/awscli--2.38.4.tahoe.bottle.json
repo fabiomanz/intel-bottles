@@ -2,10 +2,10 @@
   "awscli": {
     "formula": {
       "name": "awscli",
-      "pkg_version": "2.38.3",
+      "pkg_version": "2.38.4",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/awscli.rb",
       "tap_git_path": "Formula/a/awscli.rb",
-      "tap_git_revision": "1da6686dfe3dba44aeef23f3415f6ddc9494634b",
+      "tap_git_revision": "57a23ff400d259b5d7d39849204a1b345d1e6dc9",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Official Amazon AWS command-line interface",
       "license": "Apache-2.0",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-21T10:43:12Z",
+      "date": "2026-10-22T11:05:50Z",
       "tags": {
         "tahoe": {
-          "filename": "awscli-2.38.3.tahoe.bottle.tar.gz",
-          "local_filename": "awscli--2.38.3.tahoe.bottle.tar.gz",
-          "sha256": "0b71e38f7fe61a12c3babf418073add93322f4442f2cebe5a36b7a3ffdd92156",
+          "filename": "awscli-2.38.4.tahoe.bottle.tar.gz",
+          "local_filename": "awscli--2.38.4.tahoe.bottle.tar.gz",
+          "sha256": "10790d3a2a322cc9d1d7e6dc4744340f95559e8e638d9560d22b8c39d1dbeef0",
           "tab": {
             "homebrew_version": "7.0.10",
             "changed_files": [
@@ -47,7 +47,7 @@
               "libexec/lib/python3.15/site-packages/_awscrt.abi3-darwin.so"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1792520097,
+            "source_modified_time": 1792606169,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -230,9 +230,8 @@
               {
                 "full_name": "python@3.15",
                 "version": "3.15.0",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "3.15.0",
+                "revision": 1,
+                "pkg_version": "3.15.0_1",
                 "declared_directly": true
               }
             ],
@@ -269,7 +268,6 @@
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -734,29 +732,6 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
-                "name": "python@3.15",
-                "versionInfo": "3.15.0",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Python-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/python%403.15-3.15.0.tahoe.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "75410bfc01e7db5bc47ddf00d2964eeee54fe99d4709aeea3db5b2a2c43d9161"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/python%403.15@3.15.0",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
                 "versionInfo": "26.6",
@@ -867,11 +842,6 @@
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-awscli"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-awscli"
               },
@@ -1679,13 +1649,6 @@
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/evs/2023-07-27/paginators-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/evs/2023-07-27/service-2.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/evs/2023-07-27/waiters-2.json",
-            "libexec/lib/python3.15/site-packages/awscli/botocore/data/finspace/2021-03-12/completions-1.json",
-            "libexec/lib/python3.15/site-packages/awscli/botocore/data/finspace/2021-03-12/endpoint-rule-set-1.json",
-            "libexec/lib/python3.15/site-packages/awscli/botocore/data/finspace/2021-03-12/paginators-1.json",
-            "libexec/lib/python3.15/site-packages/awscli/botocore/data/finspace/2021-03-12/service-2.json",
-            "libexec/lib/python3.15/site-packages/awscli/botocore/data/finspace-data/2020-07-13/endpoint-rule-set-1.json",
-            "libexec/lib/python3.15/site-packages/awscli/botocore/data/finspace-data/2020-07-13/paginators-1.json",
-            "libexec/lib/python3.15/site-packages/awscli/botocore/data/finspace-data/2020-07-13/service-2.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/firehose/2015-08-04/completions-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/firehose/2015-08-04/endpoint-rule-set-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/firehose/2015-08-04/paginators-1.json",
@@ -2210,6 +2173,7 @@
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/network-firewall/2020-11-12/paginators-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/network-firewall/2020-11-12/paginators-1.sdk-extras.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/network-firewall/2020-11-12/service-2.json",
+            "libexec/lib/python3.15/site-packages/awscli/botocore/data/network-firewall/2020-11-12/waiters-2.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/network-security-manager/2025-10-30/endpoint-rule-set-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/network-security-manager/2025-10-30/paginators-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/network-security-manager/2025-10-30/service-2.json",
@@ -2782,10 +2746,6 @@
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/timestream-write/2018-11-01/endpoint-rule-set-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/timestream-write/2018-11-01/paginators-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/timestream-write/2018-11-01/service-2.json",
-            "libexec/lib/python3.15/site-packages/awscli/botocore/data/tnb/2008-10-21/completions-1.json",
-            "libexec/lib/python3.15/site-packages/awscli/botocore/data/tnb/2008-10-21/endpoint-rule-set-1.json",
-            "libexec/lib/python3.15/site-packages/awscli/botocore/data/tnb/2008-10-21/paginators-1.json",
-            "libexec/lib/python3.15/site-packages/awscli/botocore/data/tnb/2008-10-21/service-2.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/transcribe/2017-10-26/completions-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/transcribe/2017-10-26/endpoint-rule-set-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/transcribe/2017-10-26/paginators-1.json",
@@ -9168,11 +9128,11 @@
             "libexec/lib/python3.15/site-packages/awscli/topics/topic-tags.json",
             "libexec/lib/python3.15/site-packages/awscli/topictags.py",
             "libexec/lib/python3.15/site-packages/awscli/utils.py",
-            "libexec/lib/python3.15/site-packages/awscli-2.38.3.dist-info/INSTALLER",
-            "libexec/lib/python3.15/site-packages/awscli-2.38.3.dist-info/METADATA",
-            "libexec/lib/python3.15/site-packages/awscli-2.38.3.dist-info/REQUESTED",
-            "libexec/lib/python3.15/site-packages/awscli-2.38.3.dist-info/WHEEL",
-            "libexec/lib/python3.15/site-packages/awscli-2.38.3.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.15/site-packages/awscli-2.38.4.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/awscli-2.38.4.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/awscli-2.38.4.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/awscli-2.38.4.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/awscli-2.38.4.dist-info/licenses/LICENSE.txt",
             "libexec/lib/python3.15/site-packages/awscrt/__init__.py",
             "libexec/lib/python3.15/site-packages/awscrt/_test.py",
             "libexec/lib/python3.15/site-packages/awscrt/aio/__init__.py",
@@ -9194,13 +9154,13 @@
             "libexec/lib/python3.15/site-packages/awscrt/mqtt_request_response.py",
             "libexec/lib/python3.15/site-packages/awscrt/s3.py",
             "libexec/lib/python3.15/site-packages/awscrt/websocket.py",
-            "libexec/lib/python3.15/site-packages/awscrt-0.37.0.dist-info/INSTALLER",
-            "libexec/lib/python3.15/site-packages/awscrt-0.37.0.dist-info/METADATA",
-            "libexec/lib/python3.15/site-packages/awscrt-0.37.0.dist-info/REQUESTED",
-            "libexec/lib/python3.15/site-packages/awscrt-0.37.0.dist-info/WHEEL",
-            "libexec/lib/python3.15/site-packages/awscrt-0.37.0.dist-info/licenses/LICENSE",
-            "libexec/lib/python3.15/site-packages/awscrt-0.37.0.dist-info/licenses/NOTICE",
-            "libexec/lib/python3.15/site-packages/awscrt-0.37.0.dist-info/top_level.txt",
+            "libexec/lib/python3.15/site-packages/awscrt-0.38.0.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/awscrt-0.38.0.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/awscrt-0.38.0.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/awscrt-0.38.0.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/awscrt-0.38.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/awscrt-0.38.0.dist-info/licenses/NOTICE",
+            "libexec/lib/python3.15/site-packages/awscrt-0.38.0.dist-info/top_level.txt",
             "libexec/lib/python3.15/site-packages/colorama/__init__.py",
             "libexec/lib/python3.15/site-packages/colorama/ansi.py",
             "libexec/lib/python3.15/site-packages/colorama/ansitowin32.py",
@@ -15646,7 +15606,7 @@
             "share/zsh/site-functions/_aws",
             "share/zsh/site-functions/aws_zsh_completer.sh"
           ],
-          "installed_size": 165287339
+          "installed_size": 164715029
         }
       }
     }

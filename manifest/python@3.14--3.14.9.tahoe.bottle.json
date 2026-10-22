@@ -2,10 +2,10 @@
   "python@3.14": {
     "formula": {
       "name": "python@3.14",
-      "pkg_version": "3.14.8_2",
+      "pkg_version": "3.14.9",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/python@3.14.rb",
       "tap_git_path": "Formula/p/python@3.14.rb",
-      "tap_git_revision": "cb8855e9129930a1b3be143465931a84b6ecc774",
+      "tap_git_revision": "57a23ff400d259b5d7d39849204a1b345d1e6dc9",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Interpreted, interactive, object-oriented programming language",
       "license": "Python-2.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-10T11:36:28Z",
+      "date": "2026-10-22T11:01:13Z",
       "tags": {
         "tahoe": {
-          "filename": "python%403.14-3.14.8_2.tahoe.bottle.tar.gz",
-          "local_filename": "python@3.14--3.14.8_2.tahoe.bottle.tar.gz",
-          "sha256": "30d9c51110454922fccd94256a0c88cdebf4bf9b9595141976dadac933aadd66",
+          "filename": "python%403.14-3.14.9.tahoe.bottle.tar.gz",
+          "local_filename": "python@3.14--3.14.9.tahoe.bottle.tar.gz",
+          "sha256": "53d3dc8673de9f97082c36c511d31838a9c0d148592fdf6dac2db11396aa3812",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.10",
             "changed_files": [
               "Frameworks/Python.framework/Versions/3.14/bin/idle3.14",
               "Frameworks/Python.framework/Versions/3.14/bin/pip3",
@@ -54,15 +54,15 @@
             "binary_relocation_files": [
               "Frameworks/Python.framework/Versions/3.14/Python"
             ],
-            "source_modified_time": 1790790909,
+            "source_modified_time": 1792562535,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "ca-certificates",
-                "version": "2026-09-25",
+                "version": "2026-10-20",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
+                "pkg_version": "2026-10-20",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -94,10 +94,10 @@
               },
               {
                 "full_name": "sqlite",
-                "version": "3.53.4",
+                "version": "3.54.1",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "3.53.4",
+                "bottle_rebuild": 0,
+                "pkg_version": "3.54.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -150,17 +150,17 @@
           "binary_relocation_diagnostics": [
             {
               "path": "Frameworks/Python.framework/Versions/3.14/Python",
-              "string": "/usr/local/Cellar/python@3.14/3.14.8_2/Frameworks/Python.framework/Versions/3.14",
-              "offset": 4057282
+              "string": "/usr/local/Cellar/python@3.14/3.14.9/Frameworks/Python.framework/Versions/3.14",
+              "offset": 4092764
             }
           ],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
-              "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
@@ -169,24 +169,24 @@
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "name": "ca-certificates",
-                "versionInfo": "2026-09-25",
+                "versionInfo": "2026-10-20",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
                     "referenceType": "purl"
                   }
                 ]
@@ -261,24 +261,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
                 "name": "sqlite",
-                "versionInfo": "3.53.4",
+                "versionInfo": "3.54.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "blessing",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/sqlite-3.54.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f"
+                    "checksumValue": "2795e99d07b8dc3f7b2bc3b35e5d2b39f11b3e5953ffaef9211706f714ffd5cc"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceLocator": "pkg:brew/sqlite@3.54.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -390,7 +390,7 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-python.40.3.2e.14"
               },
@@ -410,7 +410,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-python.40.3.2e.14"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-python.40.3.2e.14"
               },
@@ -1081,7 +1081,7 @@
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/encodings/zlib_codec.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/ensurepip/__init__.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/ensurepip/__main__.py",
-            "Frameworks/Python.framework/Versions/3.14/lib/python3.14/ensurepip/_bundled/pip-26.2.1-py3-none-any.whl",
+            "Frameworks/Python.framework/Versions/3.14/lib/python3.14/ensurepip/_bundled/pip-26.2.2-py3-none-any.whl",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/ensurepip/_uninstall.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/enum.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/filecmp.py",
@@ -1801,7 +1801,6 @@
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/mathdata/formatfloat_testcases.txt",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/mathdata/ieee754.txt",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/mathdata/math_testcases.txt",
-            "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/memory_watchdog.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/mime.types",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/mime.types2",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/mock_socket.py",
@@ -1953,6 +1952,7 @@
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_capi/__main__.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_capi/check_config.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_capi/test_abstract.py",
+            "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_capi/test_build.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_capi/test_bytearray.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_capi/test_bytes.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_capi/test_capsule.py",
@@ -1993,6 +1993,8 @@
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_capi/test_weakref.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_cext/__init__.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_cext/extension.c",
+            "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_cext/extension.cpp",
+            "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_cext/runtests.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_cext/setup.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_charmapcodec.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_class.py",
@@ -2045,9 +2047,6 @@
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_copy.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_copyreg.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_coroutines.py",
-            "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_cppext/__init__.py",
-            "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_cppext/extension.cpp",
-            "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_cppext/setup.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_cprofile.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_crossinterp.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_csv.py",
@@ -2275,12 +2274,14 @@
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_frame.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/__init__.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_bisect.py",
+            "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_bytes_object.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_capi.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_code.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_collections.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_context.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_cprofile.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_csv.py",
+            "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_datetime.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_dbm_gnu.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_dict.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_dict_watcher.py",
@@ -2302,6 +2303,7 @@
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_methodcaller.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_mmap.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_monitoring.py",
+            "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_os.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_pickle.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_races.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_re.py",
@@ -2317,6 +2319,7 @@
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_type.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_types.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_uuid.py",
+            "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_weakref.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_free_threading/test_zip.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_frozen.py",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/test_fstring.py",
@@ -3883,6 +3886,8 @@
             "lib/python3.14/site-packages/pip/_vendor/certifi/cacert.pem",
             "lib/python3.14/site-packages/pip/_vendor/certifi/core.py",
             "lib/python3.14/site-packages/pip/_vendor/certifi/py.typed",
+            "lib/python3.14/site-packages/pip/_vendor/certifi/tests/__init__.py",
+            "lib/python3.14/site-packages/pip/_vendor/certifi/tests/test_certify.py",
             "lib/python3.14/site-packages/pip/_vendor/distlib/LICENSE.txt",
             "lib/python3.14/site-packages/pip/_vendor/distlib/__init__.py",
             "lib/python3.14/site-packages/pip/_vendor/distlib/compat.py",
@@ -4154,33 +4159,33 @@
             "lib/python3.14/site-packages/pip/_vendor/urllib3/util/wait.py",
             "lib/python3.14/site-packages/pip/_vendor/vendor.txt",
             "lib/python3.14/site-packages/pip/py.typed",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/INSTALLER",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/METADATA",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/REQUESTED",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/WHEEL",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/entry_points.txt",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/AUTHORS.txt",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/LICENSE.txt",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/cachecontrol/LICENSE.txt",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/certifi/LICENSE",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/distlib/LICENSE.txt",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/distro/LICENSE",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/msgpack/COPYING",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/packaging/LICENSE",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.APACHE",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.BSD",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/pkg_resources/LICENSE",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/platformdirs/LICENSE",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/pygments/LICENSE",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/pyproject_hooks/LICENSE",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/requests/LICENSE",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/resolvelib/LICENSE",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/rich/LICENSE",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/tomli/LICENSE",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/tomli_w/LICENSE",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/truststore/LICENSE",
-            "lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/urllib3/LICENSE.txt",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/INSTALLER",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/METADATA",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/REQUESTED",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/WHEEL",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/entry_points.txt",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/AUTHORS.txt",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/LICENSE.txt",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/cachecontrol/LICENSE.txt",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/certifi/LICENSE",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/distlib/LICENSE.txt",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/distro/LICENSE",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/msgpack/COPYING",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/packaging/LICENSE",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.APACHE",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.BSD",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/pkg_resources/LICENSE",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/platformdirs/LICENSE",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/pygments/LICENSE",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/pyproject_hooks/LICENSE",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/requests/LICENSE",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/resolvelib/LICENSE",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/rich/LICENSE",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/tomli/LICENSE",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/tomli_w/LICENSE",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/truststore/LICENSE",
+            "lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/urllib3/LICENSE.txt",
             "lib/python3.14/site-packages/wheel/__init__.py",
             "lib/python3.14/site-packages/wheel/__main__.py",
             "lib/python3.14/site-packages/wheel/_bdist_wheel.py",
@@ -4218,7 +4223,7 @@
             "sbom.spdx.json",
             "share/man/man1/python3.14.1"
           ],
-          "installed_size": 72098224
+          "installed_size": 72346136
         }
       }
     }

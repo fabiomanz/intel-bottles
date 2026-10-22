@@ -2,10 +2,10 @@
   "python@3.15": {
     "formula": {
       "name": "python@3.15",
-      "pkg_version": "3.15.0",
+      "pkg_version": "3.15.0_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/python@3.15.rb",
       "tap_git_path": "Formula/p/python@3.15.rb",
-      "tap_git_revision": "cb8855e9129930a1b3be143465931a84b6ecc774",
+      "tap_git_revision": "57a23ff400d259b5d7d39849204a1b345d1e6dc9",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Interpreted, interactive, object-oriented programming language",
       "license": "Python-2.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-10T11:40:57Z",
+      "date": "2026-10-22T10:57:11Z",
       "tags": {
         "tahoe": {
-          "filename": "python%403.15-3.15.0.tahoe.bottle.tar.gz",
-          "local_filename": "python@3.15--3.15.0.tahoe.bottle.tar.gz",
-          "sha256": "75410bfc01e7db5bc47ddf00d2964eeee54fe99d4709aeea3db5b2a2c43d9161",
+          "filename": "python%403.15-3.15.0_1.tahoe.bottle.tar.gz",
+          "local_filename": "python@3.15--3.15.0_1.tahoe.bottle.tar.gz",
+          "sha256": "0f42beeba0da34f4e37b29bc507aaae318aec99024266646423e7981119c3951",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.10",
             "changed_files": [
               "Frameworks/Python.framework/Versions/3.15/bin/idle3.15",
               "Frameworks/Python.framework/Versions/3.15/bin/pip3",
@@ -60,10 +60,10 @@
             "runtime_dependencies": [
               {
                 "full_name": "ca-certificates",
-                "version": "2026-09-25",
+                "version": "2026-10-20",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
+                "pkg_version": "2026-10-20",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -95,10 +95,10 @@
               },
               {
                 "full_name": "sqlite",
-                "version": "3.53.4",
+                "version": "3.54.1",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "3.53.4",
+                "bottle_rebuild": 0,
+                "pkg_version": "3.54.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -151,17 +151,17 @@
           "binary_relocation_diagnostics": [
             {
               "path": "Frameworks/Python.framework/Versions/3.15/Python",
-              "string": "/usr/local/Cellar/python@3.15/3.15.0/Frameworks/Python.framework/Versions/3.15",
-              "offset": 4279616
+              "string": "/usr/local/Cellar/python@3.15/3.15.0_1/Frameworks/Python.framework/Versions/3.15",
+              "offset": 4268480
             }
           ],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
-              "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
@@ -170,24 +170,24 @@
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "name": "ca-certificates",
-                "versionInfo": "2026-09-25",
+                "versionInfo": "2026-10-20",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
                     "referenceType": "purl"
                   }
                 ]
@@ -262,24 +262,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
                 "name": "sqlite",
-                "versionInfo": "3.53.4",
+                "versionInfo": "3.54.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "blessing",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/sqlite-3.54.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f"
+                    "checksumValue": "2795e99d07b8dc3f7b2bc3b35e5d2b39f11b3e5953ffaef9211706f714ffd5cc"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceLocator": "pkg:brew/sqlite@3.54.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -391,7 +391,7 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-python.40.3.2e.15"
               },
@@ -411,7 +411,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-python.40.3.2e.15"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-python.40.3.2e.15"
               },
@@ -1111,7 +1111,7 @@
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/encodings/zlib_codec.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/ensurepip/__init__.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/ensurepip/__main__.py",
-            "Frameworks/Python.framework/Versions/3.15/lib/python3.15/ensurepip/_bundled/pip-26.2.1-py3-none-any.whl",
+            "Frameworks/Python.framework/Versions/3.15/lib/python3.15/ensurepip/_bundled/pip-26.2.2-py3-none-any.whl",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/ensurepip/_uninstall.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/enum.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/filecmp.py",
@@ -4132,6 +4132,8 @@
             "lib/python3.15/site-packages/pip/_vendor/certifi/cacert.pem",
             "lib/python3.15/site-packages/pip/_vendor/certifi/core.py",
             "lib/python3.15/site-packages/pip/_vendor/certifi/py.typed",
+            "lib/python3.15/site-packages/pip/_vendor/certifi/tests/__init__.py",
+            "lib/python3.15/site-packages/pip/_vendor/certifi/tests/test_certify.py",
             "lib/python3.15/site-packages/pip/_vendor/distlib/LICENSE.txt",
             "lib/python3.15/site-packages/pip/_vendor/distlib/__init__.py",
             "lib/python3.15/site-packages/pip/_vendor/distlib/compat.py",
@@ -4403,33 +4405,33 @@
             "lib/python3.15/site-packages/pip/_vendor/urllib3/util/wait.py",
             "lib/python3.15/site-packages/pip/_vendor/vendor.txt",
             "lib/python3.15/site-packages/pip/py.typed",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/INSTALLER",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/METADATA",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/REQUESTED",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/WHEEL",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/entry_points.txt",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/AUTHORS.txt",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/LICENSE.txt",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/cachecontrol/LICENSE.txt",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/certifi/LICENSE",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/distlib/LICENSE.txt",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/distro/LICENSE",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/msgpack/COPYING",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/packaging/LICENSE",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.APACHE",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.BSD",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/pkg_resources/LICENSE",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/platformdirs/LICENSE",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/pygments/LICENSE",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/pyproject_hooks/LICENSE",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/requests/LICENSE",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/resolvelib/LICENSE",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/rich/LICENSE",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/tomli/LICENSE",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/tomli_w/LICENSE",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/truststore/LICENSE",
-            "lib/python3.15/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/urllib3/LICENSE.txt",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/INSTALLER",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/METADATA",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/REQUESTED",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/WHEEL",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/entry_points.txt",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/AUTHORS.txt",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/LICENSE.txt",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/cachecontrol/LICENSE.txt",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/certifi/LICENSE",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/distlib/LICENSE.txt",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/distro/LICENSE",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/msgpack/COPYING",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/packaging/LICENSE",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.APACHE",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.BSD",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/pkg_resources/LICENSE",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/platformdirs/LICENSE",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/pygments/LICENSE",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/pyproject_hooks/LICENSE",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/requests/LICENSE",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/resolvelib/LICENSE",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/rich/LICENSE",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/tomli/LICENSE",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/tomli_w/LICENSE",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/truststore/LICENSE",
+            "lib/python3.15/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/urllib3/LICENSE.txt",
             "libexec/bin/idle",
             "libexec/bin/pip",
             "libexec/bin/pydoc",
@@ -4439,7 +4441,7 @@
             "share/man/man1/python3.1",
             "share/man/man1/python3.15.1"
           ],
-          "installed_size": 76668318
+          "installed_size": 76663984
         }
       }
     }
