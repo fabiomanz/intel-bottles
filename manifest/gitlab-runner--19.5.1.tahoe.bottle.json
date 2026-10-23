@@ -2,10 +2,10 @@
   "gitlab-runner": {
     "formula": {
       "name": "gitlab-runner",
-      "pkg_version": "19.5.0",
+      "pkg_version": "19.5.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gitlab-runner.rb",
       "tap_git_path": "Formula/g/gitlab-runner.rb",
-      "tap_git_revision": "d11f73f01ecb919029d5f418f2b37554891f79ad",
+      "tap_git_revision": "d9af69a168eaa52b752f86f45a7ff062ea7fc443",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Official GitLab CI runner",
       "license": "MIT",
@@ -15,25 +15,25 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-15T10:31:09Z",
+      "date": "2026-10-23T10:45:34Z",
       "tags": {
         "tahoe": {
-          "filename": "gitlab-runner-19.5.0.tahoe.bottle.tar.gz",
-          "local_filename": "gitlab-runner--19.5.0.tahoe.bottle.tar.gz",
-          "sha256": "151cf3be2d8d505edbd81cff5f13dfde6510c74fcf6d2b50ad2ed6e5e174f96e",
+          "filename": "gitlab-runner-19.5.1.tahoe.bottle.tar.gz",
+          "local_filename": "gitlab-runner--19.5.1.tahoe.bottle.tar.gz",
+          "sha256": "fb9b18bfba66d1f2f0b01b07843559a69c58f6608eaeafa6a95d2ca1cf7c62b5",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.10",
             "changed_files": [
               "sh.brew.gitlab-runner.plist",
               "sh.brew.gitlab-runner.service"
             ],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1792000345,
+            "source_modified_time": 1792672681,
             "compiler": "clang",
             "runtime_dependencies": [],
             "source": {
-              "scm_revision": "70f5c12dad80bfd8ab426843f38cae72fddc4e75"
+              "scm_revision": "f411f264f80a4870995a7c49482d02765e86c86e"
             },
             "arch": "x86_64",
             "built_on": {
@@ -87,7 +87,7 @@
             "sh.brew.gitlab-runner.plist",
             "sh.brew.gitlab-runner.service"
           ],
-          "installed_size": 119297049
+          "installed_size": 119297331
         }
       }
     }

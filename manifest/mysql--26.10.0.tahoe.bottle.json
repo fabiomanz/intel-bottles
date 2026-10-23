@@ -2,10 +2,10 @@
   "mysql": {
     "formula": {
       "name": "mysql",
-      "pkg_version": "26.7.0_4",
+      "pkg_version": "26.10.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/m/mysql.rb",
       "tap_git_path": "Formula/m/mysql.rb",
-      "tap_git_revision": "ce519c7921c7cf6fef2ba8cafc68be28ca0a39e4",
+      "tap_git_revision": "d9af69a168eaa52b752f86f45a7ff062ea7fc443",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Open source relational database management system",
       "license": "GPL-2.0-only WITH Universal-FOSS-exception-1.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-11T13:24:35Z",
+      "date": "2026-10-23T11:32:33Z",
       "tags": {
         "tahoe": {
-          "filename": "mysql-26.7.0_4.tahoe.bottle.tar.gz",
-          "local_filename": "mysql--26.7.0_4.tahoe.bottle.tar.gz",
-          "sha256": "7876e220d18d8d7dbf0d472c09a3ddcd55f4fc887a4f5d6911734b6d42b545d0",
+          "filename": "mysql-26.10.0.tahoe.bottle.tar.gz",
+          "local_filename": "mysql--26.10.0.tahoe.bottle.tar.gz",
+          "sha256": "66964f4bdbc3ea76bb8a724e26f51c6b32d3b2835bcb763ac63251d49c4fe877",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.10",
             "changed_files": [
               "bin/mysql_config",
               "bin/mysqld_multi",
@@ -115,6 +115,7 @@
               "lib/plugin/auth_test_plugin.so",
               "lib/plugin/component_classic_hashing.so",
               "lib/plugin/component_keyring_file.so",
+              "lib/plugin/component_mysql_rest_service.so",
               "lib/plugin/component_test_component_deinit.so",
               "lib/plugin/conflicting_variables.so",
               "lib/plugin/connection_control.so",
@@ -194,6 +195,7 @@
               "bin/mysqld",
               "bin/mysqldump",
               "bin/mysqlimport",
+              "bin/mysqlrouter_mrs_client",
               "bin/mysqlshow",
               "bin/mysqlslap",
               "bin/mysqltest",
@@ -201,9 +203,10 @@
               "bin/perror",
               "lib/libmysqlclient.24.dylib",
               "lib/libmysqlclient.a",
-              "lib/libmysqlrouter_mysqlclient.1.dylib"
+              "lib/libmysqlrouter_mysqlclient.1.dylib",
+              "lib/plugin/component_mysql_rest_service.so"
             ],
-            "source_modified_time": 1783684975,
+            "source_modified_time": 1791272519,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -234,10 +237,10 @@
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-09-25",
+                "version": "2026-10-20",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
+                "pkg_version": "2026-10-20",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -299,394 +302,424 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/mysqlbinlog",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/lib/plugin",
-              "offset": 3820683
+              "string": "/usr/local/Cellar/mysql/26.10.0/lib/plugin",
+              "offset": 3824950
             },
             {
               "path": "bin/mysqlbinlog",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 3832317
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 3836605
             },
             {
               "path": "bin/mysqlbinlog",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 3832362
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 3836649
             },
             {
               "path": "bin/mysql_config_editor",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 3263536
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 3263619
             },
             {
               "path": "bin/mysql_config_editor",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 3263581
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 3263663
             },
             {
               "path": "bin/mysql_migrate_keyring",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 1139019
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 1141672
             },
             {
               "path": "bin/mysql_migrate_keyring",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 1139064
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 1141716
             },
             {
               "path": "bin/mysql_migrate_keyring",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/lib/plugin",
-              "offset": 1154630
+              "string": "/usr/local/Cellar/mysql/26.10.0/lib/plugin",
+              "offset": 1157280
             },
             {
               "path": "bin/mysql_tzinfo_to_sql",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 3209305
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 3209385
             },
             {
               "path": "bin/mysql_tzinfo_to_sql",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 3209350
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 3209429
             },
             {
               "path": "bin/my_print_defaults",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 320197
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 320277
             },
             {
               "path": "bin/my_print_defaults",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 320242
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 320321
             },
             {
               "path": "bin/mysqld",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/lib/plugin",
-              "offset": 27013970
+              "string": "/usr/local/Cellar/mysql/26.10.0/lib/plugin",
+              "offset": 27443923
             },
             {
               "path": "bin/mysqld",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 27046040
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 27476099
             },
             {
               "path": "bin/mysqld",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 27046165
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 27476233
             },
             {
               "path": "bin/mysqlcheck",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/lib/plugin",
-              "offset": 493293
+              "string": "/usr/local/Cellar/mysql/26.10.0/lib/plugin",
+              "offset": 494232
             },
             {
               "path": "bin/mysqlcheck",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 504893
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 505837
             },
             {
               "path": "bin/mysqlcheck",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 504938
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 505881
             },
             {
               "path": "bin/mysql_keyring_encryption_test",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 975224
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 977061
             },
             {
               "path": "bin/mysql_keyring_encryption_test",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 975269
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 977105
             },
             {
               "path": "bin/mysqlimport",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/lib/plugin",
-              "offset": 486141
+              "string": "/usr/local/Cellar/mysql/26.10.0/lib/plugin",
+              "offset": 487048
             },
             {
               "path": "bin/mysqlimport",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 497821
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 498749
             },
             {
               "path": "bin/mysqlimport",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 497866
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 498793
             },
             {
               "path": "bin/comp_err",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 337881
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 337977
             },
             {
               "path": "bin/comp_err",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 337926
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 338021
             },
             {
               "path": "bin/perror",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 929394
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 931247
             },
             {
               "path": "bin/perror",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 929439
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 931291
             },
             {
               "path": "bin/mysql_client_test",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/lib/plugin",
-              "offset": 3923606
+              "string": "/usr/local/Cellar/mysql/26.10.0/lib/plugin",
+              "offset": 3926693
             },
             {
               "path": "bin/mysql_client_test",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 3935245
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 3938365
             },
             {
               "path": "bin/mysql_client_test",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 3935290
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 3938409
             },
             {
               "path": "bin/mysqlshow",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/lib/plugin",
-              "offset": 486667
+              "string": "/usr/local/Cellar/mysql/26.10.0/lib/plugin",
+              "offset": 487574
             },
             {
               "path": "bin/mysqlshow",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 498269
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 499181
             },
             {
               "path": "bin/mysqlshow",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 498314
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 499225
             },
             {
               "path": "bin/myisamchk",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 3534044
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 3534124
             },
             {
               "path": "bin/myisamchk",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 3534089
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 3534168
             },
             {
               "path": "bin/mysql_secure_installation",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/lib/plugin",
-              "offset": 482856
+              "string": "/usr/local/Cellar/mysql/26.10.0/lib/plugin",
+              "offset": 483763
             },
             {
               "path": "bin/mysql_secure_installation",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 494461
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 495373
             },
             {
               "path": "bin/mysql_secure_installation",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 494506
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 495417
             },
             {
               "path": "bin/mysql_test_event_tracking",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 354046
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 354142
             },
             {
               "path": "bin/mysql_test_event_tracking",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 354091
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 354186
             },
             {
               "path": "bin/mysql",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/lib/plugin",
-              "offset": 3490503
+              "string": "/usr/local/Cellar/mysql/26.10.0/lib/plugin",
+              "offset": 3491442
             },
             {
               "path": "bin/mysql",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 3502061
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 3503037
             },
             {
               "path": "bin/mysql",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 3502106
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 3503081
             },
             {
               "path": "bin/myisampack",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 3464946
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 3465026
             },
             {
               "path": "bin/myisampack",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 3464991
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 3465070
+            },
+            {
+              "path": "bin/mysqlrouter_mrs_client",
+              "string": "/usr/local/Cellar/mysql/26.10.0/lib/plugin",
+              "offset": 4491381
+            },
+            {
+              "path": "bin/mysqlrouter_mrs_client",
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 4502909
+            },
+            {
+              "path": "bin/mysqlrouter_mrs_client",
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 4502953
             },
             {
               "path": "bin/myisamlog",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 497572
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 497652
             },
             {
               "path": "bin/myisamlog",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 497617
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 497696
             },
             {
               "path": "bin/ibd2sdi",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 3333201
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 3334476
             },
             {
               "path": "bin/ibd2sdi",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 3333246
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 3334520
             },
             {
               "path": "bin/myisam_ftdump",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 3442204
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 3442300
             },
             {
               "path": "bin/myisam_ftdump",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 3442249
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 3442344
             },
             {
               "path": "bin/innochecksum",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 3274417
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 3274498
             },
             {
               "path": "bin/innochecksum",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 3274462
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 3274542
             },
             {
               "path": "bin/mysqladmin",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/lib/plugin",
-              "offset": 493809
+              "string": "/usr/local/Cellar/mysql/26.10.0/lib/plugin",
+              "offset": 494716
             },
             {
               "path": "bin/mysqladmin",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 505405
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 506317
             },
             {
               "path": "bin/mysqladmin",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 505450
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 506361
             },
             {
               "path": "bin/mysqldump",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/lib/plugin",
-              "offset": 3501912
+              "string": "/usr/local/Cellar/mysql/26.10.0/lib/plugin",
+              "offset": 3503555
             },
             {
               "path": "bin/mysqldump",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 3513581
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 3515245
             },
             {
               "path": "bin/mysqldump",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 3513626
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 3515289
             },
             {
               "path": "bin/mysqlxtest",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 1490969
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 1492934
             },
             {
               "path": "bin/mysqlxtest",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 1491014
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 1492978
             },
             {
               "path": "bin/mysqltest",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/lib/plugin",
-              "offset": 4193749
+              "string": "/usr/local/Cellar/mysql/26.10.0/lib/plugin",
+              "offset": 4196444
             },
             {
               "path": "bin/mysqltest",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 4205373
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 4208061
             },
             {
               "path": "bin/mysqltest",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 4205418
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 4208105
             },
             {
               "path": "bin/mysqlslap",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/lib/plugin",
-              "offset": 499816
+              "string": "/usr/local/Cellar/mysql/26.10.0/lib/plugin",
+              "offset": 500723
             },
             {
               "path": "bin/mysqlslap",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 511501
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 512413
             },
             {
               "path": "bin/mysqlslap",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 511546
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 512457
             },
             {
               "path": "lib/libmysqlclient.24.dylib",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/lib/plugin",
-              "offset": 3402947
+              "string": "/usr/local/Cellar/mysql/26.10.0/lib/plugin",
+              "offset": 3403886
             },
             {
               "path": "lib/libmysqlclient.24.dylib",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 3414541
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 3415501
             },
             {
               "path": "lib/libmysqlclient.24.dylib",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 3414586
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 3415545
             },
             {
               "path": "lib/libmysqlrouter_mysqlclient.1.dylib",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/lib/plugin",
-              "offset": 3397587
+              "string": "/usr/local/Cellar/mysql/26.10.0/lib/plugin",
+              "offset": 3398542
             },
             {
               "path": "lib/libmysqlrouter_mysqlclient.1.dylib",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 3398605
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 3399549
             },
             {
               "path": "lib/libmysqlrouter_mysqlclient.1.dylib",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 3398650
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 3399593
+            },
+            {
+              "path": "lib/plugin/component_mysql_rest_service.so",
+              "string": "/usr/local/Cellar/mysql/26.10.0/lib/plugin",
+              "offset": 4274916
+            },
+            {
+              "path": "lib/plugin/component_mysql_rest_service.so",
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 4286413
+            },
+            {
+              "path": "lib/plugin/component_mysql_rest_service.so",
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 4286457
             },
             {
               "path": "lib/libmysqlclient.a",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/lib/plugin",
-              "offset": 344523
+              "string": "/usr/local/Cellar/mysql/26.10.0/lib/plugin",
+              "offset": 346011
             },
             {
               "path": "lib/libmysqlclient.a",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4/share/mysql",
-              "offset": 7059648
+              "string": "/usr/local/Cellar/mysql/26.10.0/share/mysql",
+              "offset": 7061432
             },
             {
               "path": "lib/libmysqlclient.a",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 7059693
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 7061476
             },
             {
               "path": "lib/libmysqlclient.a",
-              "string": "/usr/local/Cellar/mysql/26.7.0_4",
-              "offset": 7206183
+              "string": "/usr/local/Cellar/mysql/26.10.0",
+              "offset": 7207967
             }
           ],
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
               "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
               "SPDXRef-Package-SPDXRef-zlib-ng-compat-2.2e.3.2e.3.5f.1",
@@ -719,24 +752,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "name": "ca-certificates",
-                "versionInfo": "2026-09-25",
+                "versionInfo": "2026-10-20",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
                     "referenceType": "purl"
                   }
                 ]
@@ -876,7 +909,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-mysql"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-mysql"
               },
@@ -1077,11 +1110,13 @@
             "lib/plugin/component_group_replication_elect_prefers_most_updated.so",
             "lib/plugin/component_group_replication_flow_control_stats.so",
             "lib/plugin/component_group_replication_resource_manager.so",
+            "lib/plugin/component_health_monitor.so",
             "lib/plugin/component_keyring_file.so",
             "lib/plugin/component_log_filter_dragnet.so",
             "lib/plugin/component_log_sink_json.so",
             "lib/plugin/component_log_sink_syseventlog.so",
             "lib/plugin/component_log_sink_test.so",
+            "lib/plugin/component_mysql_rest_service.so",
             "lib/plugin/component_mysqlbackup.so",
             "lib/plugin/component_mysqlx_global_reset.so",
             "lib/plugin/component_pfs_example.so",
@@ -1300,7 +1335,7 @@
             "support-files/mysql.server",
             "support-files/mysqld_multi.server"
           ],
-          "installed_size": 304198657
+          "installed_size": 329334706
         }
       }
     }
