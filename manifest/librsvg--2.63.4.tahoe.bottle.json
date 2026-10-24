@@ -2,10 +2,10 @@
   "librsvg": {
     "formula": {
       "name": "librsvg",
-      "pkg_version": "2.63.3",
+      "pkg_version": "2.63.4",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/librsvg.rb",
       "tap_git_path": "Formula/lib/librsvg.rb",
-      "tap_git_revision": "0a646741914e3fa5d3d48b8575e53d6383ef03d6",
+      "tap_git_revision": "4a43ccd711024f4f4e60a14d4cd889bdfeaefacb",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Library to render SVG files using Cairo",
       "license": "LGPL-2.1-or-later",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-17T16:12:35Z",
+      "date": "2026-10-24T10:02:43Z",
       "tags": {
         "tahoe": {
-          "filename": "librsvg-2.63.3.tahoe.bottle.tar.gz",
-          "local_filename": "librsvg--2.63.3.tahoe.bottle.tar.gz",
-          "sha256": "624ac8b08c76bf8b46cb6f7f472b654b48b1ddae2bc59b054bba8fa3e9af3893",
+          "filename": "librsvg-2.63.4.tahoe.bottle.tar.gz",
+          "local_filename": "librsvg--2.63.4.tahoe.bottle.tar.gz",
+          "sha256": "1abcee8bc9c3832ec5242682472c0c41eaa368a50d3e68bccdbe49e2590e840e",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.10",
             "changed_files": [
               "lib/pkgconfig/librsvg-2.0.pc",
               "share/thumbnailers/librsvg.thumbnailer"
@@ -33,15 +33,15 @@
               "lib/librsvg-2.2.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1792194348,
+            "source_modified_time": 1792791060,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "brotli",
-                "version": "1.2.0",
+                "version": "1.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.2.0",
+                "pkg_version": "1.2.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -73,10 +73,10 @@
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -294,10 +294,10 @@
               },
               {
                 "full_name": "harfbuzz",
-                "version": "14.6.0",
+                "version": "15.0.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "14.6.0",
+                "pkg_version": "15.0.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -350,10 +350,11 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
               "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
               "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
               "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
               "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
@@ -368,12 +369,35 @@
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
               "SPDXRef-Package-SPDXRef-libtiff-4.2e.7.2e.2",
-              "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+              "SPDXRef-Package-SPDXRef-harfbuzz-15.2e.0.2e.0",
               "SPDXRef-Package-SPDXRef-fribidi-1.2e.0.2e.17",
               "SPDXRef-Package-SPDXRef-pango-1.2e.58.2e.2",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "name": "brotli",
+                "versionInfo": "1.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/brotli-1.2.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7591babe56002fd1d796a33d695c3e8fb53605a244608fa37b03ec206f7b804e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/brotli@1.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "name": "libpng",
@@ -444,24 +468,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.5.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
+                    "checksumValue": "9914a8c6c3e193c9f0b20df1d04a32f25d247f0cb62fd1501abf321e1d1d7757"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -789,24 +813,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-harfbuzz-15.2e.0.2e.0",
                 "name": "harfbuzz",
-                "versionInfo": "14.6.0",
+                "versionInfo": "15.0.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/harfbuzz-14.6.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/harfbuzz-15.0.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "38958915ce3b608419a3e9f5c1f87f1c97be753b1f39f058317824798d26f34d"
+                    "checksumValue": "440160a73e1147b6d1368613e75dbf27d7124c21fccfb4e7a45eba7781b924d2"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/harfbuzz@14.6.0",
+                    "referenceLocator": "pkg:brew/harfbuzz@15.0.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -872,6 +896,11 @@
             ],
             "relationships": [
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-librsvg"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-librsvg"
@@ -887,7 +916,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-librsvg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-librsvg"
               },
@@ -962,7 +991,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-librsvg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-15.2e.0.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-librsvg"
               },
@@ -1009,7 +1038,7 @@
             "share/gir-1.0/Rsvg-2.0.gir",
             "share/thumbnailers/librsvg.thumbnailer"
           ],
-          "installed_size": 13436280
+          "installed_size": 13525136
         }
       }
     }

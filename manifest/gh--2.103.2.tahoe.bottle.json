@@ -2,10 +2,10 @@
   "gh": {
     "formula": {
       "name": "gh",
-      "pkg_version": "2.103.0",
+      "pkg_version": "2.103.2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gh.rb",
       "tap_git_path": "Formula/g/gh.rb",
-      "tap_git_revision": "57a23ff400d259b5d7d39849204a1b345d1e6dc9",
+      "tap_git_revision": "4a43ccd711024f4f4e60a14d4cd889bdfeaefacb",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "GitHub command-line tool",
       "license": "MIT",
@@ -15,18 +15,18 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-22T10:41:08Z",
+      "date": "2026-10-24T09:55:23Z",
       "tags": {
         "tahoe": {
-          "filename": "gh-2.103.0.tahoe.bottle.tar.gz",
-          "local_filename": "gh--2.103.0.tahoe.bottle.tar.gz",
-          "sha256": "6785704357bec06070ef8ed20087ba2b135214e0f6a112cd083a9f7424af8e9d",
+          "filename": "gh-2.103.2.tahoe.bottle.tar.gz",
+          "local_filename": "gh--2.103.2.tahoe.bottle.tar.gz",
+          "sha256": "00d2d8f2c45956352d63d8c2e98edc1a04120d302d525d066a184196e69e708a",
           "tab": {
             "homebrew_version": "7.0.10",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1792595308,
+            "source_modified_time": 1792786081,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",

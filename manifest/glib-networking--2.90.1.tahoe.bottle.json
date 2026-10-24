@@ -2,10 +2,10 @@
   "glib-networking": {
     "formula": {
       "name": "glib-networking",
-      "pkg_version": "2.90.0",
+      "pkg_version": "2.90.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/glib-networking.rb",
       "tap_git_path": "Formula/g/glib-networking.rb",
-      "tap_git_revision": "db58bac8d6dc0bd5100b0109dca9448103ba29fd",
+      "tap_git_revision": "4a43ccd711024f4f4e60a14d4cd889bdfeaefacb",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Network related modules for glib",
       "license": "LGPL-2.1-or-later",
@@ -15,20 +15,20 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-19T11:20:06Z",
+      "date": "2026-10-24T09:54:59Z",
       "tags": {
         "tahoe": {
-          "filename": "glib-networking-2.90.0.tahoe.bottle.tar.gz",
-          "local_filename": "glib-networking--2.90.0.tahoe.bottle.tar.gz",
-          "sha256": "d612f0233fad0fd574402420fd870151fa777ea5acf1229df71fcacc804fd79d",
+          "filename": "glib-networking-2.90.1.tahoe.bottle.tar.gz",
+          "local_filename": "glib-networking--2.90.1.tahoe.bottle.tar.gz",
+          "sha256": "967670f98942276757b7b748030896a611fe575cba132c2cc61f3362115368f3",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.10",
             "changed_files": [],
             "linkage_files": [
               "lib/gio/modules/libgiognutls.so"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1789075139,
+            "source_modified_time": 1792781884,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -77,10 +77,10 @@
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-09-25",
+                "version": "2026-10-20",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
+                "pkg_version": "2026-10-20",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -166,7 +166,7 @@
               "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
               "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
               "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
               "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
               "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.2e.0",
@@ -289,24 +289,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "name": "ca-certificates",
-                "versionInfo": "2026-09-25",
+                "versionInfo": "2026-10-20",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
                     "referenceType": "purl"
                   }
                 ]
@@ -420,7 +420,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-glib-networking"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-glib-networking"
               },
@@ -505,6 +505,7 @@
             "share/locale/nb/LC_MESSAGES/glib-networking.mo",
             "share/locale/ne/LC_MESSAGES/glib-networking.mo",
             "share/locale/nl/LC_MESSAGES/glib-networking.mo",
+            "share/locale/nn/LC_MESSAGES/glib-networking.mo",
             "share/locale/oc/LC_MESSAGES/glib-networking.mo",
             "share/locale/or/LC_MESSAGES/glib-networking.mo",
             "share/locale/pa/LC_MESSAGES/glib-networking.mo",
@@ -531,7 +532,7 @@
             "share/locale/zh_HK/LC_MESSAGES/glib-networking.mo",
             "share/locale/zh_TW/LC_MESSAGES/glib-networking.mo"
           ],
-          "installed_size": 785198
+          "installed_size": 799568
         }
       }
     }
