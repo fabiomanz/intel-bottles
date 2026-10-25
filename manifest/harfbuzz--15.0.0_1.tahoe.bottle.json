@@ -2,10 +2,10 @@
   "harfbuzz": {
     "formula": {
       "name": "harfbuzz",
-      "pkg_version": "15.0.0",
+      "pkg_version": "15.0.0_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/h/harfbuzz.rb",
       "tap_git_path": "Formula/h/harfbuzz.rb",
-      "tap_git_revision": "d9af69a168eaa52b752f86f45a7ff062ea7fc443",
+      "tap_git_revision": "33b6ba577a26e6c297aaef6c71da411e615e03ba",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "OpenType text shaping engine",
       "license": "MIT",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-23T10:45:57Z",
+      "date": "2026-10-25T14:19:34Z",
       "tags": {
         "tahoe": {
-          "filename": "harfbuzz-15.0.0.tahoe.bottle.tar.gz",
-          "local_filename": "harfbuzz--15.0.0.tahoe.bottle.tar.gz",
-          "sha256": "440160a73e1147b6d1368613e75dbf27d7124c21fccfb4e7a45eba7781b924d2",
+          "filename": "harfbuzz-15.0.0_1.tahoe.bottle.tar.gz",
+          "local_filename": "harfbuzz--15.0.0_1.tahoe.bottle.tar.gz",
+          "sha256": "cb48250bba2aadd2fcd1d04a22208ea2bd5a54a20b115fa39143f7f9e6e665a1",
           "tab": {
             "homebrew_version": "7.0.10",
             "changed_files": [
@@ -230,11 +230,11 @@
                 "declared_directly": true
               },
               {
-                "full_name": "icu4c@78",
-                "version": "78.3",
+                "full_name": "icu4c@79",
+                "version": "79.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "78.3",
+                "pkg_version": "79.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -264,6 +264,7 @@
               "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
               "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
               "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -544,6 +545,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/icu4c%4079-79.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e8776ada73e3c33e467cd8f6bbedb6f7d6936c25419c24086f764e681397f47b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
                 "versionInfo": "26.6",
@@ -614,6 +638,11 @@
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-harfbuzz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-harfbuzz"
               },
@@ -730,7 +759,7 @@
             "sbom.spdx.json",
             "share/gir-1.0/HarfBuzz-0.0.gir"
           ],
-          "installed_size": 17242080
+          "installed_size": 17242109
         }
       }
     }
