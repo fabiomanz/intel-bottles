@@ -2,10 +2,10 @@
   "pre-commit": {
     "formula": {
       "name": "pre-commit",
-      "pkg_version": "4.7.0_1",
+      "pkg_version": "4.7.0_2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pre-commit.rb",
       "tap_git_path": "Formula/p/pre-commit.rb",
-      "tap_git_revision": "57a23ff400d259b5d7d39849204a1b345d1e6dc9",
+      "tap_git_revision": "4c30c8f84ccef0aafd182799b3e0776676170676",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Framework for managing multi-language pre-commit hooks",
       "license": "MIT",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-22T11:11:26Z",
+      "date": "2026-10-25T11:10:38Z",
       "tags": {
         "tahoe": {
-          "filename": "pre-commit-4.7.0_1.tahoe.bottle.tar.gz",
-          "local_filename": "pre-commit--4.7.0_1.tahoe.bottle.tar.gz",
-          "sha256": "aa9262ad94511dcff1c9e390cf593539e693286ccb03a26b1c9a8beb9bfd88f4",
+          "filename": "pre-commit-4.7.0_2.tahoe.bottle.tar.gz",
+          "local_filename": "pre-commit--4.7.0_2.tahoe.bottle.tar.gz",
+          "sha256": "4276718b37ea237dcb4be41730fadf4d56ec482e6a56a91292085fad63b2d431",
           "tab": {
             "homebrew_version": "7.0.10",
             "changed_files": [
@@ -67,10 +67,10 @@
               },
               {
                 "full_name": "openssl@4",
-                "version": "4.0.3",
+                "version": "4.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.0.3",
+                "pkg_version": "4.1.0",
                 "declared_directly": false
               },
               {
@@ -119,9 +119,9 @@
               },
               {
                 "full_name": "python@3.15",
-                "version": "3.15.0",
-                "revision": 1,
-                "pkg_version": "3.15.0_1",
+                "version": "3.15.1",
+                "revision": 0,
+                "pkg_version": "3.15.1",
                 "declared_directly": true
               }
             ],
@@ -140,7 +140,7 @@
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
-              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
@@ -196,24 +196,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "name": "openssl@4",
-                "versionInfo": "4.0.3",
+                "versionInfo": "4.1.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.1.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
+                    "checksumValue": "665a16d966b1a4542d1e9dd6022bba18468402ce6a82edd578a484de82a1429f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -358,7 +358,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-pre-commit"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pre-commit"
               },
@@ -768,14 +768,14 @@
             "libexec/lib/python3.15/site-packages/virtualenv/util/text.py",
             "libexec/lib/python3.15/site-packages/virtualenv/util/zipapp.py",
             "libexec/lib/python3.15/site-packages/virtualenv/version.py",
-            "libexec/lib/python3.15/site-packages/virtualenv-21.14.12.dist-info/INSTALLER",
-            "libexec/lib/python3.15/site-packages/virtualenv-21.14.12.dist-info/METADATA",
-            "libexec/lib/python3.15/site-packages/virtualenv-21.14.12.dist-info/REQUESTED",
-            "libexec/lib/python3.15/site-packages/virtualenv-21.14.12.dist-info/WHEEL",
-            "libexec/lib/python3.15/site-packages/virtualenv-21.14.12.dist-info/entry_points.txt",
-            "libexec/lib/python3.15/site-packages/virtualenv-21.14.12.dist-info/licenses/LICENSE",
-            "libexec/lib/python3.15/site-packages/virtualenv-21.14.12.dist-info/licenses/THIRD-PARTY-NOTICES.md",
-            "libexec/lib/python3.15/site-packages/virtualenv-21.14.12.dist-info/sboms/virtualenv.cdx.json",
+            "libexec/lib/python3.15/site-packages/virtualenv-21.14.13.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/virtualenv-21.14.13.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/virtualenv-21.14.13.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/virtualenv-21.14.13.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/virtualenv-21.14.13.dist-info/entry_points.txt",
+            "libexec/lib/python3.15/site-packages/virtualenv-21.14.13.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/virtualenv-21.14.13.dist-info/licenses/THIRD-PARTY-NOTICES.md",
+            "libexec/lib/python3.15/site-packages/virtualenv-21.14.13.dist-info/sboms/virtualenv.cdx.json",
             "libexec/lib/python3.15/site-packages/yaml/__init__.py",
             "libexec/lib/python3.15/site-packages/yaml/_yaml.cpython-315-darwin.so",
             "libexec/lib/python3.15/site-packages/yaml/composer.py",
@@ -797,7 +797,7 @@
             "libexec/pyvenv.cfg",
             "sbom.spdx.json"
           ],
-          "installed_size": 11151538
+          "installed_size": 11152566
         }
       }
     }

@@ -2,10 +2,10 @@
   "gobject-introspection": {
     "formula": {
       "name": "gobject-introspection",
-      "pkg_version": "1.86.0_5",
+      "pkg_version": "1.86.0_6",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gobject-introspection.rb",
       "tap_git_path": "Formula/g/gobject-introspection.rb",
-      "tap_git_revision": "7bc7c132ffcfc1ee9077dbc476f4e247d6b9062d",
+      "tap_git_revision": "4c30c8f84ccef0aafd182799b3e0776676170676",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Generate introspection data for GObject libraries",
       "license": "GPL-2.0-or-later AND LGPL-2.0-or-later AND MIT",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-18T10:19:51Z",
+      "date": "2026-10-25T11:13:43Z",
       "tags": {
         "tahoe": {
-          "filename": "gobject-introspection-1.86.0_5.tahoe.bottle.tar.gz",
-          "local_filename": "gobject-introspection--1.86.0_5.tahoe.bottle.tar.gz",
-          "sha256": "1d7fea5ae55bd05d5487ef3650344e0944cde0105bdbb42c96e74daf36a361d2",
+          "filename": "gobject-introspection-1.86.0_6.tahoe.bottle.tar.gz",
+          "local_filename": "gobject-introspection--1.86.0_6.tahoe.bottle.tar.gz",
+          "sha256": "1abaf05fa5985f55d9ca61aaadb739f77558faf473b5260a851db51aec0bb693",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.10",
             "changed_files": [
               "bin/g-ir-annotation-tool",
               "bin/g-ir-doc-tool",
@@ -48,10 +48,10 @@
             "runtime_dependencies": [
               {
                 "full_name": "brotli",
-                "version": "1.2.0",
+                "version": "1.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.2.0",
+                "pkg_version": "1.2.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -216,19 +216,19 @@
               },
               {
                 "full_name": "pkgconf",
-                "version": "3.0.9",
+                "version": "3.0.10",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.0.9",
+                "pkg_version": "3.0.10",
                 "declared_directly": true,
                 "compatibility_version": 2
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-09-25",
+                "version": "2026-10-20",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
+                "pkg_version": "2026-10-20",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -243,10 +243,10 @@
               },
               {
                 "full_name": "openssl@4",
-                "version": "4.0.3",
+                "version": "4.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.0.3",
+                "pkg_version": "4.1.0",
                 "declared_directly": false
               },
               {
@@ -295,10 +295,9 @@
               },
               {
                 "full_name": "python@3.15",
-                "version": "3.15.0",
+                "version": "3.15.1",
                 "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "3.15.0",
+                "pkg_version": "3.15.1",
                 "declared_directly": true
               }
             ],
@@ -315,17 +314,18 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/g-ir-compiler",
-              "string": "/usr/local/Cellar/gobject-introspection/1.86.0_5/share/gir-1.0",
+              "string": "/usr/local/Cellar/gobject-introspection/1.86.0_6/share/gir-1.0",
               "offset": 130935
             },
             {
               "path": "bin/g-ir-compiler",
-              "string": "/usr/local/Cellar/gobject-introspection/1.86.0_5/share",
+              "string": "/usr/local/Cellar/gobject-introspection/1.86.0_6/share",
               "offset": 131021
             }
           ],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
               "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
               "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
@@ -337,19 +337,41 @@
               "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
               "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
               "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
-              "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.9",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.10",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
-              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "name": "brotli",
+                "versionInfo": "1.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/brotli-1.2.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7591babe56002fd1d796a33d695c3e8fb53605a244608fa37b03ec206f7b804e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/brotli@1.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "name": "libpng",
@@ -604,47 +626,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.9",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.10",
                 "name": "pkgconf",
-                "versionInfo": "3.0.9",
+                "versionInfo": "3.0.10",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "ISC",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pkgconf-3.0.9.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pkgconf-3.0.10.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "6205445804abdd62c810c3d4eac1ddacbcc1b93c7340e5d626cdda8e547c1d5c"
+                    "checksumValue": "8748cc8eb5a7559b3cbe70c88bcc6515aa74d0ac3115f20cc091f9665fb805a8"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/pkgconf@3.0.9",
+                    "referenceLocator": "pkg:brew/pkgconf@3.0.10",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "name": "ca-certificates",
-                "versionInfo": "2026-09-25",
+                "versionInfo": "2026-10-20",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
                     "referenceType": "purl"
                   }
                 ]
@@ -673,24 +695,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "name": "openssl@4",
-                "versionInfo": "4.0.3",
+                "versionInfo": "4.1.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.1.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
+                    "checksumValue": "665a16d966b1a4542d1e9dd6022bba18468402ce6a82edd578a484de82a1429f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -811,29 +833,6 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
-                "name": "python@3.15",
-                "versionInfo": "3.15.0",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Python-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/python%403.15-3.15.0.tahoe.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "75410bfc01e7db5bc47ddf00d2964eeee54fe99d4709aeea3db5b2a2c43d9161"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/python%403.15@3.15.0",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
                 "versionInfo": "26.6",
@@ -847,6 +846,11 @@
               }
             ],
             "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
+              },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
@@ -903,12 +907,12 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.9",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.10",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
               },
@@ -918,7 +922,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
               },
@@ -944,11 +948,6 @@
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gobject-introspection"
               },
@@ -1196,13 +1195,13 @@
             "libexec/lib/python3.15/site-packages/markdown/test_tools.py",
             "libexec/lib/python3.15/site-packages/markdown/treeprocessors.py",
             "libexec/lib/python3.15/site-packages/markdown/util.py",
-            "libexec/lib/python3.15/site-packages/markdown-3.11.dist-info/INSTALLER",
-            "libexec/lib/python3.15/site-packages/markdown-3.11.dist-info/METADATA",
-            "libexec/lib/python3.15/site-packages/markdown-3.11.dist-info/REQUESTED",
-            "libexec/lib/python3.15/site-packages/markdown-3.11.dist-info/WHEEL",
-            "libexec/lib/python3.15/site-packages/markdown-3.11.dist-info/entry_points.txt",
-            "libexec/lib/python3.15/site-packages/markdown-3.11.dist-info/licenses/LICENSE.md",
-            "libexec/lib/python3.15/site-packages/markdown-3.11.dist-info/top_level.txt",
+            "libexec/lib/python3.15/site-packages/markdown-3.11.2.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/markdown-3.11.2.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/markdown-3.11.2.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/markdown-3.11.2.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/markdown-3.11.2.dist-info/entry_points.txt",
+            "libexec/lib/python3.15/site-packages/markdown-3.11.2.dist-info/licenses/LICENSE.md",
+            "libexec/lib/python3.15/site-packages/markdown-3.11.2.dist-info/top_level.txt",
             "libexec/lib/python3.15/site-packages/markupsafe/__init__.py",
             "libexec/lib/python3.15/site-packages/markupsafe/_native.py",
             "libexec/lib/python3.15/site-packages/markupsafe/_speedups.c",
@@ -1385,26 +1384,31 @@
             "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/_manylinux.py",
             "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/_musllinux.py",
             "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/_parser.py",
+            "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/_ranges.py",
             "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/_structures.py",
             "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/_tokenizer.py",
+            "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/dependency_groups.py",
+            "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/direct_url.py",
+            "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/errors.py",
             "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/licenses/__init__.py",
             "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/licenses/_spdx.py",
             "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/markers.py",
             "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/metadata.py",
             "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/py.typed",
             "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/pylock.py",
+            "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/ranges.py",
             "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/requirements.py",
             "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/specifiers.py",
             "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/tags.py",
             "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/utils.py",
             "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging/version.py",
-            "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging-26.0.dist-info/INSTALLER",
-            "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging-26.0.dist-info/METADATA",
-            "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging-26.0.dist-info/REQUESTED",
-            "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging-26.0.dist-info/WHEEL",
-            "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE",
-            "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE.APACHE",
-            "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE.BSD",
+            "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging-26.3.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging-26.3.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging-26.3.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging-26.3.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging-26.3.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+            "libexec/lib/python3.15/site-packages/setuptools/_vendor/packaging-26.3.dist-info/licenses/LICENSE.BSD",
             "libexec/lib/python3.15/site-packages/setuptools/_vendor/platformdirs/__init__.py",
             "libexec/lib/python3.15/site-packages/setuptools/_vendor/platformdirs/__main__.py",
             "libexec/lib/python3.15/site-packages/setuptools/_vendor/platformdirs/android.py",
@@ -1537,13 +1541,13 @@
             "libexec/lib/python3.15/site-packages/setuptools/warnings.py",
             "libexec/lib/python3.15/site-packages/setuptools/wheel.py",
             "libexec/lib/python3.15/site-packages/setuptools/windows_support.py",
-            "libexec/lib/python3.15/site-packages/setuptools-84.0.0.dist-info/INSTALLER",
-            "libexec/lib/python3.15/site-packages/setuptools-84.0.0.dist-info/METADATA",
-            "libexec/lib/python3.15/site-packages/setuptools-84.0.0.dist-info/REQUESTED",
-            "libexec/lib/python3.15/site-packages/setuptools-84.0.0.dist-info/WHEEL",
-            "libexec/lib/python3.15/site-packages/setuptools-84.0.0.dist-info/entry_points.txt",
-            "libexec/lib/python3.15/site-packages/setuptools-84.0.0.dist-info/licenses/LICENSE",
-            "libexec/lib/python3.15/site-packages/setuptools-84.0.0.dist-info/top_level.txt",
+            "libexec/lib/python3.15/site-packages/setuptools-84.2.1.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/setuptools-84.2.1.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/setuptools-84.2.1.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/setuptools-84.2.1.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/setuptools-84.2.1.dist-info/entry_points.txt",
+            "libexec/lib/python3.15/site-packages/setuptools-84.2.1.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/setuptools-84.2.1.dist-info/top_level.txt",
             "libexec/pyvenv.cfg",
             "sbom.spdx.json",
             "share/aclocal/introspection.m4",
@@ -1569,7 +1573,7 @@
             "share/man/man1/g-ir-generate.1",
             "share/man/man1/g-ir-scanner.1"
           ],
-          "installed_size": 5525146
+          "installed_size": 5765333
         }
       }
     }

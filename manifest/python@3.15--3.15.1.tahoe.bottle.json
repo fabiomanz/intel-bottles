@@ -2,10 +2,10 @@
   "python@3.15": {
     "formula": {
       "name": "python@3.15",
-      "pkg_version": "3.15.0_1",
+      "pkg_version": "3.15.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/python@3.15.rb",
       "tap_git_path": "Formula/p/python@3.15.rb",
-      "tap_git_revision": "57a23ff400d259b5d7d39849204a1b345d1e6dc9",
+      "tap_git_revision": "4c30c8f84ccef0aafd182799b3e0776676170676",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Interpreted, interactive, object-oriented programming language",
       "license": "Python-2.0",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-22T10:57:11Z",
+      "date": "2026-10-25T11:10:29Z",
       "tags": {
         "tahoe": {
-          "filename": "python%403.15-3.15.0_1.tahoe.bottle.tar.gz",
-          "local_filename": "python@3.15--3.15.0_1.tahoe.bottle.tar.gz",
-          "sha256": "0f42beeba0da34f4e37b29bc507aaae318aec99024266646423e7981119c3951",
+          "filename": "python%403.15-3.15.1.tahoe.bottle.tar.gz",
+          "local_filename": "python@3.15--3.15.1.tahoe.bottle.tar.gz",
+          "sha256": "a4dc28859a527184d31e97aea405ed0dd7038f68683757f09b10456b74327f24",
           "tab": {
             "homebrew_version": "7.0.10",
             "changed_files": [
@@ -55,7 +55,7 @@
             "binary_relocation_files": [
               "Frameworks/Python.framework/Versions/3.15/Python"
             ],
-            "source_modified_time": 1791544601,
+            "source_modified_time": 1792562112,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -78,10 +78,10 @@
               },
               {
                 "full_name": "openssl@4",
-                "version": "4.0.3",
+                "version": "4.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.0.3",
+                "pkg_version": "4.1.0",
                 "declared_directly": true
               },
               {
@@ -151,15 +151,15 @@
           "binary_relocation_diagnostics": [
             {
               "path": "Frameworks/Python.framework/Versions/3.15/Python",
-              "string": "/usr/local/Cellar/python@3.15/3.15.0_1/Frameworks/Python.framework/Versions/3.15",
-              "offset": 4268480
+              "string": "/usr/local/Cellar/python@3.15/3.15.1/Frameworks/Python.framework/Versions/3.15",
+              "offset": 4297088
             }
           ],
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
-              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
@@ -216,24 +216,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "name": "openssl@4",
-                "versionInfo": "4.0.3",
+                "versionInfo": "4.1.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.1.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
+                    "checksumValue": "665a16d966b1a4542d1e9dd6022bba18468402ce6a82edd578a484de82a1429f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -401,7 +401,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-python.40.3.2e.15"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-python.40.3.2e.15"
               },
@@ -1882,7 +1882,6 @@
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/mathdata/formatfloat_testcases.txt",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/mathdata/ieee754.txt",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/mathdata/math_testcases.txt",
-            "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/memory_watchdog.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/mime.types",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/mime.types2",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/mock_socket.py",
@@ -2035,6 +2034,7 @@
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_capi/__main__.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_capi/check_config.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_capi/test_abstract.py",
+            "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_capi/test_build.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_capi/test_bytearray.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_capi/test_bytes.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_capi/test_capsule.py",
@@ -2066,6 +2066,7 @@
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_capi/test_pyatomic.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_capi/test_run.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_capi/test_set.py",
+            "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_capi/test_slice.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_capi/test_slots.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_capi/test_structmembers.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_capi/test_sys.py",
@@ -2077,6 +2078,8 @@
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_capi/test_weakref.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_cext/__init__.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_cext/extension.c",
+            "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_cext/extension.cpp",
+            "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_cext/runtests.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_cext/setup.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_charmapcodec.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_class.py",
@@ -2129,9 +2132,6 @@
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_copy.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_copyreg.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_coroutines.py",
-            "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_cppext/__init__.py",
-            "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_cppext/extension.cpp",
-            "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_cppext/setup.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_crossinterp.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_csv.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_ctypes/__init__.py",
@@ -2198,6 +2198,8 @@
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_curses.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_dataclasses/__init__.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_dataclasses/_types_proxy.py",
+            "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_dataclasses/dataclass_lazy_broken.py",
+            "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_dataclasses/dataclass_lazy_str.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_dataclasses/dataclass_module_1.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_dataclasses/dataclass_module_1_str.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_dataclasses/dataclass_module_2.py",
@@ -2361,6 +2363,7 @@
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_frame.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/__init__.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_bisect.py",
+            "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_bytes_object.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_bz2.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_capi.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_code.py",
@@ -2368,6 +2371,7 @@
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_context.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_cprofile.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_csv.py",
+            "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_datetime.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_dbm_gnu.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_dict.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_dict_watcher.py",
@@ -2391,6 +2395,7 @@
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_methodcaller.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_mmap.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_monitoring.py",
+            "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_os.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_pickle.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_pwd.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_races.py",
@@ -2411,6 +2416,7 @@
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_type.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_types.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_uuid.py",
+            "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_weakref.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_zip.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_free_threading/test_zlib.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_frozen.py",
@@ -2727,6 +2733,7 @@
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_lazy_import/data/module_same_name_var_order2/__init__.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_lazy_import/data/module_same_name_var_order2/bar.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_lazy_import/data/module_with_getattr.py",
+            "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_lazy_import/data/module_with_lazy_import_and_getattr.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_lazy_import/data/modules_dict.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_lazy_import/data/modules_getattr.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_lazy_import/data/modules_getattr_other.py",
@@ -2869,6 +2876,7 @@
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_profiling/test_sampling_profiler/test_live_collector_ui.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_profiling/test_sampling_profiler/test_modes.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_profiling/test_sampling_profiler/test_profiler.py",
+            "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_profiling/test_sampling_profiler/test_sync_coordinator.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_profiling/test_sampling_profiler/test_trend_tracker.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_profiling/test_tracing_profiler.py",
             "Frameworks/Python.framework/Versions/3.15/lib/python3.15/test/test_property.py",
@@ -4441,7 +4449,7 @@
             "share/man/man1/python3.1",
             "share/man/man1/python3.15.1"
           ],
-          "installed_size": 76663984
+          "installed_size": 77161704
         }
       }
     }
