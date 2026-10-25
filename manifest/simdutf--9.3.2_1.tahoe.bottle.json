@@ -2,10 +2,10 @@
   "simdutf": {
     "formula": {
       "name": "simdutf",
-      "pkg_version": "9.3.2",
+      "pkg_version": "9.3.2_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/s/simdutf.rb",
       "tap_git_path": "Formula/s/simdutf.rb",
-      "tap_git_revision": "9a284249924617857ca397f3f5208f69f6caf6c4",
+      "tap_git_revision": "e76f87634795c83c1559cbff4053ba045e697285",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Unicode conversion routines, fast",
       "license": "Apache-2.0 OR MIT",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-18T10:03:57Z",
+      "date": "2026-10-25T10:17:46Z",
       "tags": {
         "tahoe": {
-          "filename": "simdutf-9.3.2.tahoe.bottle.tar.gz",
-          "local_filename": "simdutf--9.3.2.tahoe.bottle.tar.gz",
-          "sha256": "60842d12c860d2177ba941a36701876db62d27ff9853ee4820d109a0014378fa",
+          "filename": "simdutf-9.3.2_1.tahoe.bottle.tar.gz",
+          "local_filename": "simdutf--9.3.2_1.tahoe.bottle.tar.gz",
+          "sha256": "265e5a081f08aafc109d1d3b1f27d377c0bd9f8af7b1018244450f6b165fe60a",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.10",
             "changed_files": [
               "lib/pkgconfig/simdutf.pc"
             ],
@@ -35,11 +35,10 @@
             "compiler": "clang",
             "runtime_dependencies": [
               {
-                "full_name": "icu4c@78",
-                "version": "78.3",
+                "full_name": "icu4c@79",
+                "version": "79.1",
                 "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "78.3",
+                "pkg_version": "79.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -155,7 +154,7 @@
             "share/man/man1/fastbase64.coreutils.1",
             "share/man/man1/sutf.1"
           ],
-          "installed_size": 2786591
+          "installed_size": 2786580
         }
       }
     }
