@@ -2,10 +2,10 @@
   "tesseract": {
     "formula": {
       "name": "tesseract",
-      "pkg_version": "5.5.3",
+      "pkg_version": "5.5.3_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/t/tesseract.rb",
       "tap_git_path": "Formula/t/tesseract.rb",
-      "tap_git_revision": "f53e41b275b6070e94c2d7a81e645c1c05fb6bee",
+      "tap_git_revision": "a978507fac57dc3743913cb86fd8b38a0bce2c17",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "OCR (Optical Character Recognition) engine",
       "license": "Apache-2.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-01T06:02:12Z",
+      "date": "2026-10-25T14:37:29Z",
       "tags": {
         "tahoe": {
-          "filename": "tesseract-5.5.3.tahoe.bottle.tar.gz",
-          "local_filename": "tesseract--5.5.3.tahoe.bottle.tar.gz",
-          "sha256": "a2c6442dd9fbd0e40076971141383ff1089f0eb87c0099314c076bbbb60cdb1e",
+          "filename": "tesseract-5.5.3_1.tahoe.bottle.tar.gz",
+          "local_filename": "tesseract--5.5.3_1.tahoe.bottle.tar.gz",
+          "sha256": "286cc0fdf128646d0684c04ed1d7a5f66c3378761d5d4ca92f6369fc23980390",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.10",
             "changed_files": [
               "lib/pkgconfig/tesseract.pc"
             ],
@@ -50,20 +50,29 @@
             "compiler": "clang",
             "runtime_dependencies": [
               {
-                "full_name": "libpng",
-                "version": "1.6.58",
+                "full_name": "brotli",
+                "version": "1.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.6.58",
+                "pkg_version": "1.2.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpng",
+                "version": "1.6.59",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.59",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "freetype",
-                "version": "2.14.3",
+                "version": "2.15.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.14.3",
+                "pkg_version": "2.15.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -77,10 +86,10 @@
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -104,28 +113,28 @@
               },
               {
                 "full_name": "pcre2",
-                "version": "10.48",
+                "version": "10.49",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "10.48",
+                "pkg_version": "10.49",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "glib",
-                "version": "2.90.0",
+                "version": "2.90.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.90.0",
+                "pkg_version": "2.90.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "xorgproto",
-                "version": "2025.1",
+                "version": "2026.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2025.1",
+                "pkg_version": "2026.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -158,10 +167,10 @@
               },
               {
                 "full_name": "libx11",
-                "version": "1.8.13",
+                "version": "1.8.14",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.8.13",
+                "pkg_version": "1.8.14",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -176,10 +185,10 @@
               },
               {
                 "full_name": "libxrender",
-                "version": "0.9.12",
+                "version": "0.9.13",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.9.12",
+                "pkg_version": "0.9.13",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -217,19 +226,20 @@
                 "declared_directly": false
               },
               {
-                "full_name": "icu4c@78",
-                "version": "78.3",
+                "full_name": "icu4c@79",
+                "version": "79.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "78.3",
+                "pkg_version": "79.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "harfbuzz",
-                "version": "14.5.0",
-                "revision": 0,
-                "pkg_version": "14.5.0",
+                "version": "15.0.0",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "15.0.0_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -307,9 +317,9 @@
               {
                 "full_name": "openjpeg",
                 "version": "2.5.4",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.5.4",
+                "pkg_version": "2.5.4_1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -333,10 +343,10 @@
               },
               {
                 "full_name": "libarchive",
-                "version": "3.8.9",
+                "version": "3.8.10",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.8.9",
+                "pkg_version": "3.8.10",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -370,6 +380,7 @@
                 "full_name": "pango",
                 "version": "1.58.2",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.58.2",
                 "declared_directly": true,
                 "compatibility_version": 1
@@ -388,51 +399,106 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-libpng-1.6.58",
-              "SPDXRef-Package-SPDXRef-json-c-0.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
-              "SPDXRef-Package-SPDXRef-gettext-1.0",
-              "SPDXRef-Package-SPDXRef-pcre2-10.48",
-              "SPDXRef-Package-SPDXRef-glib-2.90.0",
-              "SPDXRef-Package-SPDXRef-libx11-1.8.13",
-              "SPDXRef-Package-SPDXRef-cairo-1.18.6",
-              "SPDXRef-Package-SPDXRef-giflib-6.1.3",
-              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
-              "SPDXRef-Package-SPDXRef-webp-1.6.0",
-              "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
-              "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
-              "SPDXRef-Package-SPDXRef-fribidi-1.0.17",
+              "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+              "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+              "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+              "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+              "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
+              "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+              "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+              "SPDXRef-Package-SPDXRef-harfbuzz-15.2e.0.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
+              "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-libtiff-4.2e.7.2e.2",
+              "SPDXRef-Package-SPDXRef-little-cms2-2.2e.19.2e.1",
+              "SPDXRef-Package-SPDXRef-openjpeg-2.2e.5.2e.4.5f.1",
+              "SPDXRef-Package-SPDXRef-libarchive-3.2e.8.2e.10",
+              "SPDXRef-Package-SPDXRef-fribidi-1.2e.0.2e.17",
+              "SPDXRef-Package-SPDXRef-pango-1.2e.58.2e.2",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
-                "name": "libpng",
-                "versionInfo": "1.6.58",
+                "SPDXID": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "name": "brotli",
+                "versionInfo": "1.2.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "libpng-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.58.tahoe.bottle.tar.gz",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/brotli-1.2.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "e52e7248928f76d19f4253ab672b59dde6a6f21e94b090137170bb2e971f9cc2"
+                    "checksumValue": "7591babe56002fd1d796a33d695c3e8fb53605a244608fa37b03ec206f7b804e"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libpng@1.6.58",
+                    "referenceLocator": "pkg:brew/brotli@1.2.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+                "name": "libpng",
+                "versionInfo": "1.6.59",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.59.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "983550222f14d7db234a39119dc66c0de74d9b79b74f83ecf4b81a6b694d40de"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpng@1.6.59",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
+                "name": "freetype",
+                "versionInfo": "2.15.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "FTL",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.15.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "df5ad00e9d611b80d19df81741a935c2d9bceef6feb79b4c322dda96507d5d36"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/freetype@2.15.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "name": "json-c",
                 "versionInfo": "0.19",
                 "filesAnalyzed": false,
@@ -455,30 +521,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.5.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "8c54c7bc4c98effd8b886213f126278f87cef9c596d9ab2ef3d52bc100c79f65"
+                    "checksumValue": "9914a8c6c3e193c9f0b20df1d04a32f25d247f0cb62fd1501abf321e1d1d7757"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "name": "gettext",
                 "versionInfo": "1.0",
                 "filesAnalyzed": false,
@@ -489,7 +555,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "27f00f82c225d2feafe765d37a15699352a390397bdeec1ccbc2b5fe943f7ee7"
+                    "checksumValue": "fe9d5337ff31e4f40b827b3463bd3fdc61b8f377277769f71e93baad0443bc96"
                   }
                 ],
                 "externalRefs": [
@@ -501,76 +567,122 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "name": "pcre2",
-                "versionInfo": "10.48",
+                "versionInfo": "10.49",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.49.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                    "checksumValue": "7fe75e3ba297623163ee0e3a262e417d0eb36342f6cda4135ede90412ff03040"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceLocator": "pkg:brew/pcre2@10.49",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "name": "glib",
-                "versionInfo": "2.90.0",
+                "versionInfo": "2.90.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "LGPL-2.1-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4f180b8f89781725d58c0a39d7508c0bf0e96225fc69ef630e18a9f885f61c4a"
+                    "checksumValue": "3b0aaa12be31d6f764cdca91e2a75efe6f317eabba79a48bdf1467217a0ccbab"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/glib@2.90.0",
+                    "referenceLocator": "pkg:brew/glib@2.90.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
-                "name": "libx11",
-                "versionInfo": "1.8.13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+                "name": "xorgproto",
+                "versionInfo": "2026.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.13.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xorgproto-2026.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "7035ebb1057ef3de675393d244db0d486f07b91aab5d24a4b2d0140c05b9724d"
+                    "checksumValue": "5286465a0d9c7954041bcec0ebee5641b6c8018b3f679eaa8595b029a44c2af9"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libx11@1.8.13",
+                    "referenceLocator": "pkg:brew/xorgproto@2026.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
+                "name": "libx11",
+                "versionInfo": "1.8.14",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.14.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c6d26e6032e1a786e706b9c8679d0592276fd0a3007caadf760498808e1f0163"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libx11@1.8.14",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+                "name": "libxrender",
+                "versionInfo": "0.9.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libxrender-0.9.13.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "aebc979e80b79b0064a432ebeea298ceec187e5df77855f413e6fcb51571b769"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libxrender@0.9.13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "name": "cairo",
                 "versionInfo": "1.18.6",
                 "filesAnalyzed": false,
@@ -593,7 +705,53 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/icu4c%4079-79.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e8776ada73e3c33e467cd8f6bbedb6f7d6936c25419c24086f764e681397f47b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-harfbuzz-15.2e.0.2e.0.5f.1",
+                "name": "harfbuzz",
+                "versionInfo": "15.0.0_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/harfbuzz-15.0.0_1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "cb48250bba2aadd2fcd1d04a22208ea2bd5a54a20b115fa39143f7f9e6e665a1"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/harfbuzz@15.0.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
                 "name": "giflib",
                 "versionInfo": "6.1.3",
                 "filesAnalyzed": false,
@@ -604,7 +762,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "d5a19371b08de71cb811b2fe8114e0092c5edc439b3ba4d09f2e8a775676eb6c"
+                    "checksumValue": "974c6265c287445fb2ffa5e4ebce9e476a02eb7e29dee6da3bea1e8fc6bd7209"
                   }
                 ],
                 "externalRefs": [
@@ -616,7 +774,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
                 "name": "jpeg-turbo",
                 "versionInfo": "3.2.0",
                 "filesAnalyzed": false,
@@ -639,7 +797,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-webp-1.6.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
                 "name": "webp",
                 "versionInfo": "1.6.0",
                 "filesAnalyzed": false,
@@ -650,7 +808,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "011465e668caf64f3ce3586efcd644b520f27083580c0334eb6d7278dac2713c"
+                    "checksumValue": "28483ee31b5610606f46e0ee4706bbe9b19a4981bdfc736e9322ed6248ca79fc"
                   }
                 ],
                 "externalRefs": [
@@ -662,7 +820,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
@@ -673,7 +831,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "b58278bdc3ee647396ba249e0d0959306231d593d2b8ce6c173f819b42192a9f"
+                    "checksumValue": "54a648c4197b0299ee2d37527ca6a23447abe65342f8f8c0ed68e154f4593b0f"
                   }
                 ],
                 "externalRefs": [
@@ -685,7 +843,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -708,7 +866,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -731,7 +889,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libtiff-4.2e.7.2e.2",
                 "name": "libtiff",
                 "versionInfo": "4.7.2",
                 "filesAnalyzed": false,
@@ -754,7 +912,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-little-cms2-2.2e.19.2e.1",
                 "name": "little-cms2",
                 "versionInfo": "2.19.1",
                 "filesAnalyzed": false,
@@ -777,7 +935,53 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-fribidi-1.0.17",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openjpeg-2.2e.5.2e.4.5f.1",
+                "name": "openjpeg",
+                "versionInfo": "2.5.4_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openjpeg-2.5.4_1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "572be491fadb893f1cb8d7849555bfb840815a9a875b47ddf69da8cf4a639708"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openjpeg@2.5.4_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libarchive-3.2e.8.2e.10",
+                "name": "libarchive",
+                "versionInfo": "3.8.10",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libarchive-3.8.10.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ef92eeb9015752a1479d578095666d7b1cafbf978c7a42f432384f43afc3509a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libarchive@3.8.10",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-fribidi-1.2e.0.2e.17",
                 "name": "fribidi",
                 "versionInfo": "1.0.17",
                 "filesAnalyzed": false,
@@ -800,6 +1004,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pango-1.2e.58.2e.2",
+                "name": "pango",
+                "versionInfo": "1.58.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pango-1.58.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1b38fee636b06c2c02c74dee8d4ae84af18da7ce7857c023f35692960b707964"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pango@1.58.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
                 "versionInfo": "26.6",
@@ -814,87 +1041,132 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.8.13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.18.6",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-webp-1.6.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-15.2e.0.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-fribidi-1.0.17",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libtiff-4.2e.7.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-little-cms2-2.2e.19.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openjpeg-2.2e.5.2e.4.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libarchive-3.2e.8.2e.10",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-fribidi-1.2e.0.2e.17",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pango-1.2e.58.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
@@ -999,7 +1271,7 @@
             "share/tessdata/tessconfigs/nobatch",
             "share/tessdata/tessconfigs/segdemo"
           ],
-          "installed_size": 25897375
+          "installed_size": 25901757
         }
       }
     }
