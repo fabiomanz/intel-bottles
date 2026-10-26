@@ -2,10 +2,10 @@
   "yt-dlp": {
     "formula": {
       "name": "yt-dlp",
-      "pkg_version": "2026.10.21",
+      "pkg_version": "2026.10.21_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/y/yt-dlp.rb",
       "tap_git_path": "Formula/y/yt-dlp.rb",
-      "tap_git_revision": "0e62cc0b12f3c87e5dff09c3811c6419fe21faca",
+      "tap_git_revision": "d01288fecd765e192dd86636aaba9249eed95c87",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Feature-rich command-line audio/video downloader",
       "license": "Unlicense",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-23T17:54:13Z",
+      "date": "2026-10-26T12:13:14Z",
       "tags": {
         "tahoe": {
-          "filename": "yt-dlp-2026.10.21.tahoe.bottle.tar.gz",
-          "local_filename": "yt-dlp--2026.10.21.tahoe.bottle.tar.gz",
-          "sha256": "12e479de563c4ae2e5b718ccced4f535cd8a62e2df36d0a773de3ec580052122",
+          "filename": "yt-dlp-2026.10.21_1.tahoe.bottle.tar.gz",
+          "local_filename": "yt-dlp--2026.10.21_1.tahoe.bottle.tar.gz",
+          "sha256": "bb74af95735f91bff41b9f7a4a4ff04046d760178a83b11ea49a08d5a7ed8c17",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "libexec/bin/curl-cffi",
               "libexec/bin/idna",
@@ -54,19 +54,19 @@
               },
               {
                 "full_name": "certifi",
-                "version": "2026.10.19",
+                "version": "2026.10.23",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026.10.19",
+                "pkg_version": "2026.10.23",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "pycparser",
-                "version": "3.11",
+                "version": "3.12",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.11",
+                "pkg_version": "3.12",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -197,18 +197,18 @@
               },
               {
                 "full_name": "openssl@4",
-                "version": "4.0.3",
+                "version": "4.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.0.3",
+                "pkg_version": "4.1.0",
                 "declared_directly": false
               },
               {
                 "full_name": "python@3.15",
-                "version": "3.15.0",
-                "revision": 1,
+                "version": "3.15.1",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.15.0_1",
+                "pkg_version": "3.15.1",
                 "declared_directly": true
               }
             ],
@@ -226,8 +226,8 @@
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
-              "SPDXRef-Package-SPDXRef-certifi-2026.2e.10.2e.19",
-              "SPDXRef-Package-SPDXRef-pycparser-3.2e.11",
+              "SPDXRef-Package-SPDXRef-certifi-2026.2e.10.2e.23",
+              "SPDXRef-Package-SPDXRef-pycparser-3.2e.12",
               "SPDXRef-Package-SPDXRef-cffi-2.2e.1.2e.1.5f.1",
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
               "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
@@ -242,8 +242,8 @@
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
               "SPDXRef-Package-SPDXRef-deno-2.2e.9.2e.8",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
-              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
-              "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -271,47 +271,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-certifi-2026.2e.10.2e.19",
+                "SPDXID": "SPDXRef-Package-SPDXRef-certifi-2026.2e.10.2e.23",
                 "name": "certifi",
-                "versionInfo": "2026.10.19",
+                "versionInfo": "2026.10.23",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/certifi/blobs/sha256:45011f7d0ff99c9f4945e2c5f9da4ce5d5027ff104c69bb563a70f826cb8d186",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/certifi/blobs/sha256:6a1ad67a87b9d987dc2e62ca1bb553345e003870a4664f23063f9cb4a38b165a",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "45011f7d0ff99c9f4945e2c5f9da4ce5d5027ff104c69bb563a70f826cb8d186"
+                    "checksumValue": "6a1ad67a87b9d987dc2e62ca1bb553345e003870a4664f23063f9cb4a38b165a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/certifi@2026.10.19",
+                    "referenceLocator": "pkg:brew/certifi@2026.10.23",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pycparser-3.2e.11",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pycparser-3.2e.12",
                 "name": "pycparser",
-                "versionInfo": "3.11",
+                "versionInfo": "3.12",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/pycparser/blobs/sha256:df35b6e61bc37678856474d9c9fc0eb38cf5da68d19ac8dcabe6b7a6c05d7acc",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/pycparser/blobs/sha256:a7a56dfe603baa785cb95e964e6e726284786b4cc5ef1d61b0e6aeb016680dce",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "df35b6e61bc37678856474d9c9fc0eb38cf5da68d19ac8dcabe6b7a6c05d7acc"
+                    "checksumValue": "a7a56dfe603baa785cb95e964e6e726284786b4cc5ef1d61b0e6aeb016680dce"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/pycparser@3.11",
+                    "referenceLocator": "pkg:brew/pycparser@3.12",
                     "referenceType": "purl"
                   }
                 ]
@@ -639,47 +639,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "name": "openssl@4",
-                "versionInfo": "4.0.3",
+                "versionInfo": "4.1.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.1.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
+                    "checksumValue": "665a16d966b1a4542d1e9dd6022bba18468402ce6a82edd578a484de82a1429f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0.5f.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.1",
                 "name": "python@3.15",
-                "versionInfo": "3.15.0_1",
+                "versionInfo": "3.15.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Python-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/python%403.15-3.15.0_1.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/python%403.15-3.15.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "0f42beeba0da34f4e37b29bc507aaae318aec99024266646423e7981119c3951"
+                    "checksumValue": "a4dc28859a527184d31e97aea405ed0dd7038f68683757f09b10456b74327f24"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/python%403.15@3.15.0_1",
+                    "referenceLocator": "pkg:brew/python%403.15@3.15.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -704,12 +704,12 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-yt-dlp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-certifi-2026.2e.10.2e.19",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-certifi-2026.2e.10.2e.23",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-yt-dlp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pycparser-3.2e.11",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pycparser-3.2e.12",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-yt-dlp"
               },
@@ -784,12 +784,12 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-yt-dlp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-yt-dlp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0.5f.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-yt-dlp"
               },
@@ -1175,12 +1175,12 @@
             "libexec/lib/python3.15/site-packages/Cryptodome/__init__.pyi",
             "libexec/lib/python3.15/site-packages/Cryptodome/py.typed",
             "libexec/lib/python3.15/site-packages/_brotli.cpython-315-darwin.so",
-            "libexec/lib/python3.15/site-packages/brotli-1.2.0.dist-info/INSTALLER",
-            "libexec/lib/python3.15/site-packages/brotli-1.2.0.dist-info/METADATA",
-            "libexec/lib/python3.15/site-packages/brotli-1.2.0.dist-info/REQUESTED",
-            "libexec/lib/python3.15/site-packages/brotli-1.2.0.dist-info/WHEEL",
-            "libexec/lib/python3.15/site-packages/brotli-1.2.0.dist-info/licenses/LICENSE",
-            "libexec/lib/python3.15/site-packages/brotli-1.2.0.dist-info/top_level.txt",
+            "libexec/lib/python3.15/site-packages/brotli-1.2.1.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/brotli-1.2.1.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/brotli-1.2.1.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/brotli-1.2.1.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/brotli-1.2.1.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/brotli-1.2.1.dist-info/top_level.txt",
             "libexec/lib/python3.15/site-packages/brotli.py",
             "libexec/lib/python3.15/site-packages/charset_normalizer/__init__.py",
             "libexec/lib/python3.15/site-packages/charset_normalizer/__main__.py",
@@ -2542,7 +2542,7 @@
             "share/man/man1/yt-dlp.1",
             "share/zsh/site-functions/_yt-dlp"
           ],
-          "installed_size": 27009235
+          "installed_size": 27009270
         }
       }
     }

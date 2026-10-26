@@ -2,10 +2,10 @@
   "libsoup": {
     "formula": {
       "name": "libsoup",
-      "pkg_version": "3.8.0",
+      "pkg_version": "3.8.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libsoup.rb",
       "tap_git_path": "Formula/lib/libsoup.rb",
-      "tap_git_revision": "b2442fe3b367026a5197c984d8ba035622c8147a",
+      "tap_git_revision": "d01288fecd765e192dd86636aaba9249eed95c87",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "HTTP client/server library for GNOME",
       "license": "LGPL-2.0-or-later",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-01T20:07:16Z",
+      "date": "2026-10-26T12:15:47Z",
       "tags": {
         "tahoe": {
-          "filename": "libsoup-3.8.0.tahoe.bottle.tar.gz",
-          "local_filename": "libsoup--3.8.0.tahoe.bottle.tar.gz",
-          "sha256": "e453a9affbd474077f52cda4bfda6606c34eaf58b8568a1ec2b1d0245f17acc5",
+          "filename": "libsoup-3.8.1.tahoe.bottle.tar.gz",
+          "local_filename": "libsoup--3.8.1.tahoe.bottle.tar.gz",
+          "sha256": "0b6ff34716a3c5f50ef7265f89aeac4bc804d7764bf27a6e28ad1c168d0a077d",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "lib/pkgconfig/libsoup-3.0.pc"
             ],
@@ -32,15 +32,15 @@
             "binary_relocation_files": [
               "lib/libsoup-3.0.0.dylib"
             ],
-            "source_modified_time": 1790809942,
+            "source_modified_time": 1792948287,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "pcre2",
-                "version": "10.48",
+                "version": "10.49",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "10.48",
+                "pkg_version": "10.49",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -54,10 +54,10 @@
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -72,19 +72,19 @@
               },
               {
                 "full_name": "glib",
-                "version": "2.90.0",
+                "version": "2.90.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.90.0",
+                "pkg_version": "2.90.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-09-25",
+                "version": "2026-10-20",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
+                "pkg_version": "2026-10-20",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -153,10 +153,10 @@
               },
               {
                 "full_name": "glib-networking",
-                "version": "2.80.1",
+                "version": "2.90.1",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "2.80.1",
+                "bottle_rebuild": 0,
+                "pkg_version": "2.90.1",
                 "declared_directly": true
               },
               {
@@ -188,10 +188,10 @@
               },
               {
                 "full_name": "sqlite",
-                "version": "3.53.4",
+                "version": "3.54.1",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "3.53.4",
+                "bottle_rebuild": 0,
+                "pkg_version": "3.54.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -235,55 +235,56 @@
           "binary_relocation_diagnostics": [
             {
               "path": "lib/libsoup-3.0.0.dylib",
-              "string": "/usr/local/Cellar/libsoup/3.8.0/share/locale",
-              "offset": 361421
+              "string": "/usr/local/Cellar/libsoup/3.8.1/share/locale",
+              "offset": 362303
             }
           ],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-pcre2-10.48",
-              "SPDXRef-Package-SPDXRef-json-c-0.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
-              "SPDXRef-Package-SPDXRef-gettext-1.0",
-              "SPDXRef-Package-SPDXRef-glib-2.90.0",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
-              "SPDXRef-Package-SPDXRef-p11-kit-0.26.5",
-              "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.0",
-              "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
-              "SPDXRef-Package-SPDXRef-readline-8.3.6",
-              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+              "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+              "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.2e.0",
+              "SPDXRef-Package-SPDXRef-glib-networking-2.2e.90.2e.1",
+              "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "name": "pcre2",
-                "versionInfo": "10.48",
+                "versionInfo": "10.49",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.48.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/pcre2-10.49.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13ede60e7da74933eb9de06da16b8fee013c69c4998b650a9dfc6458a39d6350"
+                    "checksumValue": "7fe75e3ba297623163ee0e3a262e417d0eb36342f6cda4135ede90412ff03040"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceLocator": "pkg:brew/pcre2@10.49",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "name": "json-c",
                 "versionInfo": "0.19",
                 "filesAnalyzed": false,
@@ -306,30 +307,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.5.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
+                    "checksumValue": "9914a8c6c3e193c9f0b20df1d04a32f25d247f0cb62fd1501abf321e1d1d7757"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "name": "gettext",
                 "versionInfo": "1.0",
                 "filesAnalyzed": false,
@@ -352,53 +353,53 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "name": "glib",
-                "versionInfo": "2.90.0",
+                "versionInfo": "2.90.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "LGPL-2.1-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4f180b8f89781725d58c0a39d7508c0bf0e96225fc69ef630e18a9f885f61c4a"
+                    "checksumValue": "3b0aaa12be31d6f764cdca91e2a75efe6f317eabba79a48bdf1467217a0ccbab"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/glib@2.90.0",
+                    "referenceLocator": "pkg:brew/glib@2.90.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "name": "ca-certificates",
-                "versionInfo": "2026-09-25",
+                "versionInfo": "2026-10-20",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
                 "name": "gmp",
                 "versionInfo": "6.3.0",
                 "filesAnalyzed": false,
@@ -421,7 +422,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-p11-kit-0.26.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
                 "name": "p11-kit",
                 "versionInfo": "0.26.5",
                 "filesAnalyzed": false,
@@ -444,7 +445,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.2e.0",
                 "name": "gsettings-desktop-schemas",
                 "versionInfo": "51.0",
                 "filesAnalyzed": false,
@@ -467,7 +468,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-networking-2.2e.90.2e.1",
+                "name": "glib-networking",
+                "versionInfo": "2.90.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-networking-2.90.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "967670f98942276757b7b748030896a611fe575cba132c2cc61f3362115368f3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/glib-networking@2.90.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
                 "name": "libnghttp2",
                 "versionInfo": "1.70.0",
                 "filesAnalyzed": false,
@@ -490,7 +514,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "name": "readline",
                 "versionInfo": "8.3.6",
                 "filesAnalyzed": false,
@@ -513,30 +537,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
                 "name": "sqlite",
-                "versionInfo": "3.53.4",
+                "versionInfo": "3.54.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "blessing",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/sqlite-3.54.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "58c8931be9f84faf36cd62062f161dcc7c70a104761a4d0753ef4398dd9f627f"
+                    "checksumValue": "2795e99d07b8dc3f7b2bc3b35e5d2b39f11b3e5953ffaef9211706f714ffd5cc"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceLocator": "pkg:brew/sqlite@3.54.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -559,7 +583,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
@@ -582,7 +606,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -619,77 +643,82 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-p11-kit-0.26.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-networking-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libsoup"
               },
@@ -832,7 +861,7 @@
             "share/vala/vapi/libsoup-3.0.deps",
             "share/vala/vapi/libsoup-3.0.vapi"
           ],
-          "installed_size": 2323414
+          "installed_size": 2329120
         }
       }
     }
