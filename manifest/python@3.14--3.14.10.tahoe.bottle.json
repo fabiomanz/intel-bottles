@@ -2,10 +2,10 @@
   "python@3.14": {
     "formula": {
       "name": "python@3.14",
-      "pkg_version": "3.14.9",
+      "pkg_version": "3.14.10",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/python@3.14.rb",
       "tap_git_path": "Formula/p/python@3.14.rb",
-      "tap_git_revision": "57a23ff400d259b5d7d39849204a1b345d1e6dc9",
+      "tap_git_revision": "a532d0419c4130a7279bba7c8aec8c0a4c51745a",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Interpreted, interactive, object-oriented programming language",
       "license": "Python-2.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-22T11:01:13Z",
+      "date": "2026-10-26T11:46:38Z",
       "tags": {
         "tahoe": {
-          "filename": "python%403.14-3.14.9.tahoe.bottle.tar.gz",
-          "local_filename": "python@3.14--3.14.9.tahoe.bottle.tar.gz",
-          "sha256": "53d3dc8673de9f97082c36c511d31838a9c0d148592fdf6dac2db11396aa3812",
+          "filename": "python%403.14-3.14.10.tahoe.bottle.tar.gz",
+          "local_filename": "python@3.14--3.14.10.tahoe.bottle.tar.gz",
+          "sha256": "7b3adec5bf2dbfc83f7585bc8d0ace93883285d05516ffabc8c62b906f49bb65",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "Frameworks/Python.framework/Versions/3.14/bin/idle3.14",
               "Frameworks/Python.framework/Versions/3.14/bin/pip3",
@@ -54,7 +54,7 @@
             "binary_relocation_files": [
               "Frameworks/Python.framework/Versions/3.14/Python"
             ],
-            "source_modified_time": 1792562535,
+            "source_modified_time": 1792948320,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -77,10 +77,10 @@
               },
               {
                 "full_name": "openssl@4",
-                "version": "4.0.3",
+                "version": "4.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.0.3",
+                "pkg_version": "4.1.0",
                 "declared_directly": true
               },
               {
@@ -150,15 +150,15 @@
           "binary_relocation_diagnostics": [
             {
               "path": "Frameworks/Python.framework/Versions/3.14/Python",
-              "string": "/usr/local/Cellar/python@3.14/3.14.9/Frameworks/Python.framework/Versions/3.14",
-              "offset": 4092764
+              "string": "/usr/local/Cellar/python@3.14/3.14.10/Frameworks/Python.framework/Versions/3.14",
+              "offset": 4099541
             }
           ],
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
-              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
@@ -215,24 +215,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "name": "openssl@4",
-                "versionInfo": "4.0.3",
+                "versionInfo": "4.1.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.0.3.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.1.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "e596e1de7a23a2479968082dc230ad07de22c2ff31cf3ff7b307923d15fdfdcb"
+                    "checksumValue": "665a16d966b1a4542d1e9dd6022bba18468402ce6a82edd578a484de82a1429f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -400,7 +400,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-python.40.3.2e.14"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-python.40.3.2e.14"
               },
@@ -553,6 +553,7 @@
             "Frameworks/Python.framework/Versions/3.14/include/python3.14/internal/mimalloc/mimalloc/prim.h",
             "Frameworks/Python.framework/Versions/3.14/include/python3.14/internal/mimalloc/mimalloc/track.h",
             "Frameworks/Python.framework/Versions/3.14/include/python3.14/internal/mimalloc/mimalloc/types.h",
+            "Frameworks/Python.framework/Versions/3.14/include/python3.14/internal/mimalloc/mimalloc-stats.h",
             "Frameworks/Python.framework/Versions/3.14/include/python3.14/internal/mimalloc/mimalloc.h",
             "Frameworks/Python.framework/Versions/3.14/include/python3.14/internal/pycore_abstract.h",
             "Frameworks/Python.framework/Versions/3.14/include/python3.14/internal/pycore_asdl.h",
@@ -1528,6 +1529,7 @@
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/certdata/capath/b1930218.0",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/certdata/capath/ceff1710.0",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/certdata/cert3.pem",
+            "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/certdata/distrusted.zip",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/certdata/ffdh3072.pem",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/certdata/idnsans.pem",
             "Frameworks/Python.framework/Versions/3.14/lib/python3.14/test/certdata/keycert.passwd.pem",
@@ -4223,7 +4225,7 @@
             "sbom.spdx.json",
             "share/man/man1/python3.14.1"
           ],
-          "installed_size": 72346136
+          "installed_size": 72494495
         }
       }
     }
