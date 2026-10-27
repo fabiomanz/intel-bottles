@@ -2,10 +2,10 @@
   "libheif": {
     "formula": {
       "name": "libheif",
-      "pkg_version": "1.23.6",
+      "pkg_version": "1.23.7",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libheif.rb",
       "tap_git_path": "Formula/lib/libheif.rb",
-      "tap_git_revision": "3fd845574a627e757b76db2c15c370a9a528be8f",
+      "tap_git_revision": "a993d48b6e610f23c6d42d214cd65dbe6d34ee57",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "ISO/IEC 23008-12:2017 HEIF file format decoder and encoder",
       "license": "LGPL-3.0-or-later",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-06T12:29:10Z",
+      "date": "2026-10-27T11:17:14Z",
       "tags": {
         "tahoe": {
-          "filename": "libheif-1.23.6.tahoe.bottle.tar.gz",
-          "local_filename": "libheif--1.23.6.tahoe.bottle.tar.gz",
-          "sha256": "909c5c6375012858d8e1c03a64fb94fcbc7a7c1edfa0a5ca1c4359352971ee22",
+          "filename": "libheif-1.23.7.tahoe.bottle.tar.gz",
+          "local_filename": "libheif--1.23.7.tahoe.bottle.tar.gz",
+          "sha256": "710a2aea5ea465e9c252de8adb3f4810779bbd3048d3ea6919c403ccb28242ec",
           "tab": {
-            "homebrew_version": "7.0.8",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "lib/pkgconfig/libheif.pc"
             ],
@@ -30,10 +30,10 @@
               "bin/heif-dec",
               "bin/heif-enc",
               "bin/heif-thumbnailer",
-              "lib/libheif.1.23.6.dylib"
+              "lib/libheif.1.23.7.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1791216960,
+            "source_modified_time": 1793014550,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -47,10 +47,10 @@
               },
               {
                 "full_name": "aom",
-                "version": "3.15.1",
+                "version": "3.15.2",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.15.1",
+                "pkg_version": "3.15.2",
                 "declared_directly": true
               },
               {
@@ -157,7 +157,7 @@
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-libvmaf-3.2e.2.2e.1",
-              "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.1",
+              "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.2",
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
               "SPDXRef-Package-SPDXRef-libde265-1.2e.1.2e.3",
               "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
@@ -195,24 +195,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.2",
                 "name": "aom",
-                "versionInfo": "3.15.1",
+                "versionInfo": "3.15.2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aom-3.15.1.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aom-3.15.2.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "0541e25c813131d69df3b9a1cbeacdf55e05abe4700103bd0076bf443c134399"
+                    "checksumValue": "814c11733f00682ac6375f88fae3f747f9816f9422a869a27ab4b560a2957105"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/aom@3.15.1",
+                    "referenceLocator": "pkg:brew/aom@3.15.2",
                     "referenceType": "purl"
                   }
                 ]
@@ -467,7 +467,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-libheif"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libheif"
               },
@@ -576,7 +576,7 @@
             "lib/cmake/libheif/libheif-config-release.cmake",
             "lib/cmake/libheif/libheif-config-version.cmake",
             "lib/cmake/libheif/libheif-config.cmake",
-            "lib/libheif.1.23.6.dylib",
+            "lib/libheif.1.23.7.dylib",
             "lib/libheif.1.dylib",
             "lib/libheif.a",
             "lib/libheif.dylib",
@@ -590,7 +590,7 @@
             "share/man/man1/heif-thumbnailer.1",
             "share/thumbnailers/heif.thumbnailer"
           ],
-          "installed_size": 8959832
+          "installed_size": 9123905
         }
       }
     }

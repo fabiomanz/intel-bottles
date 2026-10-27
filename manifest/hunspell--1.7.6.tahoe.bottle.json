@@ -2,10 +2,10 @@
   "hunspell": {
     "formula": {
       "name": "hunspell",
-      "pkg_version": "1.7.5",
+      "pkg_version": "1.7.6",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/h/hunspell.rb",
       "tap_git_path": "Formula/h/hunspell.rb",
-      "tap_git_revision": "a9eb3f0cddc9a16651e6a46d0c1b0102499877f7",
+      "tap_git_revision": "a993d48b6e610f23c6d42d214cd65dbe6d34ee57",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Spell checker and morphological analyzer",
       "license": "MPL-1.1 OR GPL-2.0-or-later OR LGPL-2.1-or-later",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-05T12:39:13Z",
+      "date": "2026-10-27T10:58:03Z",
       "tags": {
         "tahoe": {
-          "filename": "hunspell-1.7.5.tahoe.bottle.tar.gz",
-          "local_filename": "hunspell--1.7.5.tahoe.bottle.tar.gz",
-          "sha256": "63ef4725d5bdd95041b1e6d445847439bd16d37a33896c09bda984a1aa1489e6",
+          "filename": "hunspell-1.7.6.tahoe.bottle.tar.gz",
+          "local_filename": "hunspell--1.7.6.tahoe.bottle.tar.gz",
+          "sha256": "6e388d742ee0a0f72d946d9eca3297a77ef52a14bbb604ebaad0f7b4b76ee27c",
           "tab": {
-            "homebrew_version": "7.0.8",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "lib/pkgconfig/hunspell.pc"
             ],
@@ -34,7 +34,7 @@
               "lib/libhunspell-1.7.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1791139309,
+            "source_modified_time": 1793032198,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -56,10 +56,10 @@
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -88,7 +88,7 @@
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
               "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Compiler"
             ],
@@ -140,24 +140,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.5.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
+                    "checksumValue": "9914a8c6c3e193c9f0b20df1d04a32f25d247f0cb62fd1501abf321e1d1d7757"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -210,7 +210,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-hunspell"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-hunspell"
               },
@@ -250,6 +250,7 @@
             "INSTALL_RECEIPT.json",
             "NEWS",
             "README",
+            "README.md",
             "bin/affixcompress",
             "bin/analyze",
             "bin/chmorph",
@@ -354,13 +355,14 @@
             "share/locale/zh_Hans/LC_MESSAGES/hunspell.mo",
             "share/locale/zh_Hant/LC_MESSAGES/hunspell.mo",
             "share/man/hu/man1/hunspell.1",
+            "share/man/hu/man5/hunspell.5",
             "share/man/man1/hunspell.1",
             "share/man/man1/hunzip.1",
             "share/man/man1/hzip.1",
             "share/man/man3/hunspell.3",
             "share/man/man5/hunspell.5"
           ],
-          "installed_size": 2357806
+          "installed_size": 2420247
         }
       }
     }
