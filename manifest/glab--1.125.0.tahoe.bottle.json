@@ -2,10 +2,10 @@
   "glab": {
     "formula": {
       "name": "glab",
-      "pkg_version": "1.124.0",
+      "pkg_version": "1.125.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/glab.rb",
       "tap_git_path": "Formula/g/glab.rb",
-      "tap_git_revision": "1da6686dfe3dba44aeef23f3415f6ddc9494634b",
+      "tap_git_revision": "2e1cf042f7d1e2302d82e9332dd3def6a56e0e62",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Open-source GitLab command-line tool",
       "license": "MIT",
@@ -15,22 +15,22 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-21T10:42:21Z",
+      "date": "2026-10-28T11:41:14Z",
       "tags": {
         "tahoe": {
-          "filename": "glab-1.124.0.tahoe.bottle.tar.gz",
-          "local_filename": "glab--1.124.0.tahoe.bottle.tar.gz",
-          "sha256": "1b12b3c1a56c4be32079ddcb3ba435ade6dedeedd125d2beee9028831f2eb4b3",
+          "filename": "glab-1.125.0.tahoe.bottle.tar.gz",
+          "local_filename": "glab--1.125.0.tahoe.bottle.tar.gz",
+          "sha256": "09daf8664a6fdda2f5ec798650a83bdc7e2c5e240eefc7e1119974e7690f709b",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.11",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1792467617,
+            "source_modified_time": 1793082452,
             "compiler": "clang",
             "runtime_dependencies": [],
             "source": {
-              "scm_revision": "d43ccacecb043b0c060dd13224cf993140db6c2b"
+              "scm_revision": "685c1cbd74c882e0c93d7011657adde811582ed7"
             },
             "arch": "x86_64",
             "built_on": {
@@ -84,7 +84,7 @@
             "share/fish/vendor_completions.d/glab.fish",
             "share/zsh/site-functions/_glab"
           ],
-          "installed_size": 50178234
+          "installed_size": 50303181
         }
       }
     }
