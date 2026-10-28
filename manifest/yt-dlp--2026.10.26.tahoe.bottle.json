@@ -2,10 +2,10 @@
   "yt-dlp": {
     "formula": {
       "name": "yt-dlp",
-      "pkg_version": "2026.10.21_1",
+      "pkg_version": "2026.10.26",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/y/yt-dlp.rb",
       "tap_git_path": "Formula/y/yt-dlp.rb",
-      "tap_git_revision": "d01288fecd765e192dd86636aaba9249eed95c87",
+      "tap_git_revision": "9a4c6d616c5e15a3fff477e7eb41f465a86c71ef",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Feature-rich command-line audio/video downloader",
       "license": "Unlicense",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-26T12:13:14Z",
+      "date": "2026-10-28T12:16:18Z",
       "tags": {
         "tahoe": {
-          "filename": "yt-dlp-2026.10.21_1.tahoe.bottle.tar.gz",
-          "local_filename": "yt-dlp--2026.10.21_1.tahoe.bottle.tar.gz",
-          "sha256": "bb74af95735f91bff41b9f7a4a4ff04046d760178a83b11ea49a08d5a7ed8c17",
+          "filename": "yt-dlp-2026.10.26.tahoe.bottle.tar.gz",
+          "local_filename": "yt-dlp--2026.10.26.tahoe.bottle.tar.gz",
+          "sha256": "aab97806902b5f150ecb432454320a857082a23fb926c6b75289a73c2b7a4146",
           "tab": {
             "homebrew_version": "7.0.11",
             "changed_files": [
@@ -40,7 +40,7 @@
             ],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1792619695,
+            "source_modified_time": 1793053528,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -205,10 +205,10 @@
               },
               {
                 "full_name": "python@3.15",
-                "version": "3.15.1",
+                "version": "3.15.2",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.15.1",
+                "pkg_version": "3.15.2",
                 "declared_directly": true
               }
             ],
@@ -243,7 +243,7 @@
               "SPDXRef-Package-SPDXRef-deno-2.2e.9.2e.8",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
-              "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.1",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.2",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -662,24 +662,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.2",
                 "name": "python@3.15",
-                "versionInfo": "3.15.1",
+                "versionInfo": "3.15.2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Python-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/python%403.15-3.15.1.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/python%403.15-3.15.2.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "a4dc28859a527184d31e97aea405ed0dd7038f68683757f09b10456b74327f24"
+                    "checksumValue": "9a3837095abff07a57c3ad7781c76ff4aabb4f41aacb92c0c1239dbb92abec68"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/python%403.15@3.15.1",
+                    "referenceLocator": "pkg:brew/python%403.15@3.15.2",
                     "referenceType": "purl"
                   }
                 ]
@@ -789,7 +789,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-yt-dlp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-yt-dlp"
               },
@@ -1232,13 +1232,13 @@
             "libexec/lib/python3.15/site-packages/curl_cffi/requests/utils.py",
             "libexec/lib/python3.15/site-packages/curl_cffi/requests/websockets.py",
             "libexec/lib/python3.15/site-packages/curl_cffi/utils.py",
-            "libexec/lib/python3.15/site-packages/curl_cffi-0.16.3.dist-info/INSTALLER",
-            "libexec/lib/python3.15/site-packages/curl_cffi-0.16.3.dist-info/METADATA",
-            "libexec/lib/python3.15/site-packages/curl_cffi-0.16.3.dist-info/REQUESTED",
-            "libexec/lib/python3.15/site-packages/curl_cffi-0.16.3.dist-info/WHEEL",
-            "libexec/lib/python3.15/site-packages/curl_cffi-0.16.3.dist-info/entry_points.txt",
-            "libexec/lib/python3.15/site-packages/curl_cffi-0.16.3.dist-info/licenses/LICENSE",
-            "libexec/lib/python3.15/site-packages/curl_cffi-0.16.3.dist-info/top_level.txt",
+            "libexec/lib/python3.15/site-packages/curl_cffi-0.17.0.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/curl_cffi-0.17.0.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/curl_cffi-0.17.0.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/curl_cffi-0.17.0.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/curl_cffi-0.17.0.dist-info/entry_points.txt",
+            "libexec/lib/python3.15/site-packages/curl_cffi-0.17.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/curl_cffi-0.17.0.dist-info/top_level.txt",
             "libexec/lib/python3.15/site-packages/homebrew_deps.pth",
             "libexec/lib/python3.15/site-packages/idna/__init__.py",
             "libexec/lib/python3.15/site-packages/idna/__main__.py",
@@ -1475,8 +1475,6 @@
             "libexec/lib/python3.15/site-packages/yt_dlp/compat/compat_utils.py",
             "libexec/lib/python3.15/site-packages/yt_dlp/compat/imghdr.py",
             "libexec/lib/python3.15/site-packages/yt_dlp/compat/shutil.py",
-            "libexec/lib/python3.15/site-packages/yt_dlp/compat/urllib/__init__.py",
-            "libexec/lib/python3.15/site-packages/yt_dlp/compat/urllib/request.py",
             "libexec/lib/python3.15/site-packages/yt_dlp/cookies.py",
             "libexec/lib/python3.15/site-packages/yt_dlp/dependencies/Cryptodome.py",
             "libexec/lib/python3.15/site-packages/yt_dlp/dependencies/__init__.py",
@@ -2511,12 +2509,12 @@
             "libexec/lib/python3.15/site-packages/yt_dlp/utils/traversal.py",
             "libexec/lib/python3.15/site-packages/yt_dlp/version.py",
             "libexec/lib/python3.15/site-packages/yt_dlp/webvtt.py",
-            "libexec/lib/python3.15/site-packages/yt_dlp-2026.10.21.dist-info/INSTALLER",
-            "libexec/lib/python3.15/site-packages/yt_dlp-2026.10.21.dist-info/METADATA",
-            "libexec/lib/python3.15/site-packages/yt_dlp-2026.10.21.dist-info/REQUESTED",
-            "libexec/lib/python3.15/site-packages/yt_dlp-2026.10.21.dist-info/WHEEL",
-            "libexec/lib/python3.15/site-packages/yt_dlp-2026.10.21.dist-info/entry_points.txt",
-            "libexec/lib/python3.15/site-packages/yt_dlp-2026.10.21.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/yt_dlp-2026.10.26.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/yt_dlp-2026.10.26.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/yt_dlp-2026.10.26.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/yt_dlp-2026.10.26.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/yt_dlp-2026.10.26.dist-info/entry_points.txt",
+            "libexec/lib/python3.15/site-packages/yt_dlp-2026.10.26.dist-info/licenses/LICENSE",
             "libexec/lib/python3.15/site-packages/yt_dlp_ejs/__init__.py",
             "libexec/lib/python3.15/site-packages/yt_dlp_ejs/_version.py",
             "libexec/lib/python3.15/site-packages/yt_dlp_ejs/yt/__init__.py",
@@ -2542,7 +2540,7 @@
             "share/man/man1/yt-dlp.1",
             "share/zsh/site-functions/_yt-dlp"
           ],
-          "installed_size": 27009270
+          "installed_size": 27366585
         }
       }
     }

@@ -2,10 +2,10 @@
   "awscli": {
     "formula": {
       "name": "awscli",
-      "pkg_version": "2.38.6_1",
+      "pkg_version": "2.39.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/awscli.rb",
       "tap_git_path": "Formula/a/awscli.rb",
-      "tap_git_revision": "a993d48b6e610f23c6d42d214cd65dbe6d34ee57",
+      "tap_git_revision": "9a4c6d616c5e15a3fff477e7eb41f465a86c71ef",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Official Amazon AWS command-line interface",
       "license": "Apache-2.0",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-27T11:29:03Z",
+      "date": "2026-10-28T12:17:17Z",
       "tags": {
         "tahoe": {
-          "filename": "awscli-2.38.6_1.tahoe.bottle.tar.gz",
-          "local_filename": "awscli--2.38.6_1.tahoe.bottle.tar.gz",
-          "sha256": "095848706c3ef7728507f89e37645c2952f3756cafdf50eb0bb9df1c763147f4",
+          "filename": "awscli-2.39.0.tahoe.bottle.tar.gz",
+          "local_filename": "awscli--2.39.0.tahoe.bottle.tar.gz",
+          "sha256": "cbcd5067b3d6d78e14d6339bcb8c2062493235e49ba3ba10546345095c12add6",
           "tab": {
             "homebrew_version": "7.0.11",
             "changed_files": [
@@ -47,15 +47,14 @@
               "libexec/lib/python3.15/site-packages/_awscrt.abi3-darwin.so"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1793038072,
+            "source_modified_time": 1793124776,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "aws-c-common",
-                "version": "1.0.3",
+                "version": "1.0.4",
                 "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.0.3",
+                "pkg_version": "1.0.4",
                 "declared_directly": true,
                 "compatibility_version": 2
               },
@@ -96,16 +95,16 @@
               },
               {
                 "full_name": "s2n",
-                "version": "1.7.12",
+                "version": "1.7.13",
                 "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.7.12",
+                "pkg_version": "1.7.13",
                 "declared_directly": false
               },
               {
                 "full_name": "aws-c-io",
                 "version": "1.1.1",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.1.1",
                 "declared_directly": true,
                 "compatibility_version": 3
@@ -123,6 +122,7 @@
                 "full_name": "aws-c-sdkutils",
                 "version": "1.0.1",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.0.1",
                 "declared_directly": false,
                 "compatibility_version": 2
@@ -131,6 +131,7 @@
                 "full_name": "aws-c-auth",
                 "version": "1.0.2",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.0.2",
                 "declared_directly": true,
                 "compatibility_version": 3
@@ -166,6 +167,7 @@
                 "full_name": "aws-c-s3",
                 "version": "1.4.1",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.4.1",
                 "declared_directly": true,
                 "compatibility_version": 7
@@ -227,6 +229,7 @@
                 "full_name": "python@3.15",
                 "version": "3.15.2",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "3.15.2",
                 "declared_directly": true
               }
@@ -244,48 +247,28 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-aws-c-common-1.2e.0.2e.3",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
               "SPDXRef-Package-SPDXRef-aws-c-cal-1.2e.0.2e.0.5f.1",
               "SPDXRef-Package-SPDXRef-aws-c-compression-1.2e.0.2e.0",
-              "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.12",
+              "SPDXRef-Package-SPDXRef-aws-c-io-1.2e.1.2e.1",
               "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.1.2e.1",
+              "SPDXRef-Package-SPDXRef-aws-c-sdkutils-1.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-aws-c-auth-1.2e.0.2e.2",
               "SPDXRef-Package-SPDXRef-aws-checksums-1.2e.0.2e.1",
               "SPDXRef-Package-SPDXRef-aws-c-event-stream-1.2e.0.2e.0.5f.1",
               "SPDXRef-Package-SPDXRef-aws-c-mqtt-1.2e.1.2e.2",
+              "SPDXRef-Package-SPDXRef-aws-c-s3-1.2e.4.2e.1",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.2",
               "SPDXRef-Compiler"
             ],
             "packages": [
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-common-1.2e.0.2e.3",
-                "name": "aws-c-common",
-                "versionInfo": "1.0.3",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aws-c-common-1.0.3.tahoe.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "8dda63b89de5e7525fb611ba2f0ff17d6915ca668837118e21ab6bd95c791eba"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/aws-c-common@1.0.3",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "name": "ca-certificates",
@@ -379,24 +362,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.12",
-                "name": "s2n",
-                "versionInfo": "1.7.12",
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-io-1.2e.1.2e.1",
+                "name": "aws-c-io",
+                "versionInfo": "1.1.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/s2n-1.7.12.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aws-c-io-1.1.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "499e4120e90f17674a9fe6057ff24fe381bcc0552d8b3639262fcbe361b35bc0"
+                    "checksumValue": "bd9168db2c61d375ca6db924610c625f7bda86ea8fe31e51f28b5591bbded757"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/s2n@1.7.12",
+                    "referenceLocator": "pkg:brew/aws-c-io@1.1.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -420,6 +403,52 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/aws-c-http@1.1.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-sdkutils-1.2e.0.2e.1",
+                "name": "aws-c-sdkutils",
+                "versionInfo": "1.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aws-c-sdkutils-1.0.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "556cca40ab5e0dfa7ac59952e8b366f01d8b2d5d856709752c616f508ca78019"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-sdkutils@1.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-auth-1.2e.0.2e.2",
+                "name": "aws-c-auth",
+                "versionInfo": "1.0.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aws-c-auth-1.0.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4fa19585b58b4087cc3d57b0e943b2f8c1556c6189bb8da603eb839b7fd1e533"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-auth@1.0.2",
                     "referenceType": "purl"
                   }
                 ]
@@ -489,6 +518,29 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/aws-c-mqtt@1.1.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-s3-1.2e.4.2e.1",
+                "name": "aws-c-s3",
+                "versionInfo": "1.4.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aws-c-s3-1.4.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "599e229661e88d1e5bcc21d5dbec414267751ec578452058dff5bd40e43f35be"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-s3@1.4.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -632,6 +684,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.2",
+                "name": "python@3.15",
+                "versionInfo": "3.15.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Python-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/python%403.15-3.15.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9a3837095abff07a57c3ad7781c76ff4aabb4f41aacb92c0c1239dbb92abec68"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/python%403.15@3.15.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
                 "versionInfo": "26.6",
@@ -645,11 +720,6 @@
               }
             ],
             "relationships": [
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-common-1.2e.0.2e.3",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-awscli"
-              },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
@@ -671,12 +741,22 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-awscli"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.12",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-io-1.2e.1.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-awscli"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.1.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-awscli"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-sdkutils-1.2e.0.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-awscli"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-auth-1.2e.0.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-awscli"
               },
@@ -692,6 +772,11 @@
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-mqtt-1.2e.1.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-awscli"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-s3-1.2e.4.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-awscli"
               },
@@ -722,6 +807,11 @@
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-awscli"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-awscli"
               },
@@ -2815,7 +2905,9 @@
             "libexec/lib/python3.15/site-packages/awscli/customizations/cloudformation/exceptions.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/cloudformation/package.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/cloudformation/yamlhelper.py",
-            "libexec/lib/python3.15/site-packages/awscli/customizations/cloudfront.py",
+            "libexec/lib/python3.15/site-packages/awscli/customizations/cloudfront/__init__.py",
+            "libexec/lib/python3.15/site-packages/awscli/customizations/cloudfront/arguments.py",
+            "libexec/lib/python3.15/site-packages/awscli/customizations/cloudfront/sign.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/cloudsearch.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/cloudsearchdomain.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/cloudtrail/__init__.py",
@@ -3774,6 +3866,7 @@
             "libexec/lib/python3.15/site-packages/awscli/examples/cloudfront/list-invalidations.rst",
             "libexec/lib/python3.15/site-packages/awscli/examples/cloudfront/list-public-keys.rst",
             "libexec/lib/python3.15/site-packages/awscli/examples/cloudfront/list-tags-for-resource.rst",
+            "libexec/lib/python3.15/site-packages/awscli/examples/cloudfront/sign-cookies.rst",
             "libexec/lib/python3.15/site-packages/awscli/examples/cloudfront/sign.rst",
             "libexec/lib/python3.15/site-packages/awscli/examples/cloudfront/tag-resource.rst",
             "libexec/lib/python3.15/site-packages/awscli/examples/cloudfront/untag-resource.rst",
@@ -8983,6 +9076,7 @@
             "libexec/lib/python3.15/site-packages/awscli/logger.py",
             "libexec/lib/python3.15/site-packages/awscli/paramfile.py",
             "libexec/lib/python3.15/site-packages/awscli/plugin.py",
+            "libexec/lib/python3.15/site-packages/awscli/redaction.py",
             "libexec/lib/python3.15/site-packages/awscli/s3transfer/__init__.py",
             "libexec/lib/python3.15/site-packages/awscli/s3transfer/bandwidth.py",
             "libexec/lib/python3.15/site-packages/awscli/s3transfer/checksums.py",
@@ -9014,11 +9108,11 @@
             "libexec/lib/python3.15/site-packages/awscli/topics/topic-tags.json",
             "libexec/lib/python3.15/site-packages/awscli/topictags.py",
             "libexec/lib/python3.15/site-packages/awscli/utils.py",
-            "libexec/lib/python3.15/site-packages/awscli-2.38.6.dist-info/INSTALLER",
-            "libexec/lib/python3.15/site-packages/awscli-2.38.6.dist-info/METADATA",
-            "libexec/lib/python3.15/site-packages/awscli-2.38.6.dist-info/REQUESTED",
-            "libexec/lib/python3.15/site-packages/awscli-2.38.6.dist-info/WHEEL",
-            "libexec/lib/python3.15/site-packages/awscli-2.38.6.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.15/site-packages/awscli-2.39.0.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/awscli-2.39.0.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/awscli-2.39.0.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/awscli-2.39.0.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/awscli-2.39.0.dist-info/licenses/LICENSE.txt",
             "libexec/lib/python3.15/site-packages/awscrt/__init__.py",
             "libexec/lib/python3.15/site-packages/awscrt/_test.py",
             "libexec/lib/python3.15/site-packages/awscrt/aio/__init__.py",
@@ -10288,6 +10382,7 @@
             "share/awscli/examples/cloudfront/list-invalidations.rst",
             "share/awscli/examples/cloudfront/list-public-keys.rst",
             "share/awscli/examples/cloudfront/list-tags-for-resource.rst",
+            "share/awscli/examples/cloudfront/sign-cookies.rst",
             "share/awscli/examples/cloudfront/sign.rst",
             "share/awscli/examples/cloudfront/tag-resource.rst",
             "share/awscli/examples/cloudfront/untag-resource.rst",
@@ -15492,7 +15587,7 @@
             "share/zsh/site-functions/_aws",
             "share/zsh/site-functions/aws_zsh_completer.sh"
           ],
-          "installed_size": 165483084
+          "installed_size": 165587713
         }
       }
     }

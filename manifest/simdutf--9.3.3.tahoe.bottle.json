@@ -2,10 +2,10 @@
   "simdutf": {
     "formula": {
       "name": "simdutf",
-      "pkg_version": "9.3.2_1",
+      "pkg_version": "9.3.3",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/s/simdutf.rb",
       "tap_git_path": "Formula/s/simdutf.rb",
-      "tap_git_revision": "e76f87634795c83c1559cbff4053ba045e697285",
+      "tap_git_revision": "9a4c6d616c5e15a3fff477e7eb41f465a86c71ef",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Unicode conversion routines, fast",
       "license": "Apache-2.0 OR MIT",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-25T10:17:46Z",
+      "date": "2026-10-28T12:16:02Z",
       "tags": {
         "tahoe": {
-          "filename": "simdutf-9.3.2_1.tahoe.bottle.tar.gz",
-          "local_filename": "simdutf--9.3.2_1.tahoe.bottle.tar.gz",
-          "sha256": "265e5a081f08aafc109d1d3b1f27d377c0bd9f8af7b1018244450f6b165fe60a",
+          "filename": "simdutf-9.3.3.tahoe.bottle.tar.gz",
+          "local_filename": "simdutf--9.3.3.tahoe.bottle.tar.gz",
+          "sha256": "a69dfa5d87dc2ca3eba067124e85cf25a81c715c708034852b807a08c1a0d002",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "lib/pkgconfig/simdutf.pc"
             ],
@@ -31,13 +31,14 @@
               "lib/libsimdutf.37.0.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1792206359,
+            "source_modified_time": 1793142633,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "icu4c@79",
                 "version": "79.1",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "79.1",
                 "declared_directly": true,
                 "compatibility_version": 1
@@ -56,9 +57,33 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/icu4c%4079-79.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e8776ada73e3c33e467cd8f6bbedb6f7d6936c25419c24086f764e681397f47b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
@@ -73,6 +98,11 @@
               }
             ],
             "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-simdutf"
+              },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
@@ -154,7 +184,7 @@
             "share/man/man1/fastbase64.coreutils.1",
             "share/man/man1/sutf.1"
           ],
-          "installed_size": 2786580
+          "installed_size": 2786748
         }
       }
     }

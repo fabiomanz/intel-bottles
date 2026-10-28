@@ -2,10 +2,10 @@
   "aws-c-common": {
     "formula": {
       "name": "aws-c-common",
-      "pkg_version": "1.0.3",
+      "pkg_version": "1.0.4",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/aws-c-common.rb",
       "tap_git_path": "Formula/a/aws-c-common.rb",
-      "tap_git_revision": "d98f9a2ef1367c241d0881aae9de3c3db5cb07ae",
+      "tap_git_revision": "9a4c6d616c5e15a3fff477e7eb41f465a86c71ef",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Core c99 package for AWS SDK for C",
       "license": "Apache-2.0",
@@ -15,20 +15,20 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-12T13:49:40Z",
+      "date": "2026-10-28T12:07:33Z",
       "tags": {
         "tahoe": {
-          "filename": "aws-c-common-1.0.3.tahoe.bottle.tar.gz",
-          "local_filename": "aws-c-common--1.0.3.tahoe.bottle.tar.gz",
-          "sha256": "8dda63b89de5e7525fb611ba2f0ff17d6915ca668837118e21ab6bd95c791eba",
+          "filename": "aws-c-common-1.0.4.tahoe.bottle.tar.gz",
+          "local_filename": "aws-c-common--1.0.4.tahoe.bottle.tar.gz",
+          "sha256": "070160cd6d8fcb4bf2163399f57a345b29a4f753e9dc4d3d86db4845f9768680",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.11",
             "changed_files": [],
             "linkage_files": [
               "lib/libaws-c-common.1.0.3.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1791393231,
+            "source_modified_time": 1793085826,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -86,6 +86,7 @@
             "include/aws/common/atomics_gnu.inl",
             "include/aws/common/atomics_gnu_old.inl",
             "include/aws/common/atomics_msvc.inl",
+            "include/aws/common/bignum.h",
             "include/aws/common/byte_buf.h",
             "include/aws/common/byte_order.h",
             "include/aws/common/byte_order.inl",
@@ -181,7 +182,7 @@
             "lib/libaws-c-common.dylib",
             "sbom.spdx.json"
           ],
-          "installed_size": 1034012
+          "installed_size": 1054535
         }
       }
     }
