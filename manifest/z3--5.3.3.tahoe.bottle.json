@@ -2,10 +2,10 @@
   "z3": {
     "formula": {
       "name": "z3",
-      "pkg_version": "5.3.2",
+      "pkg_version": "5.3.3",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/z/z3.rb",
       "tap_git_path": "Formula/z/z3.rb",
-      "tap_git_revision": "a532d0419c4130a7279bba7c8aec8c0a4c51745a",
+      "tap_git_revision": "f1755b40e90c30529ec736309e2543ab53ff410d",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "High-performance theorem prover",
       "license": "MIT",
@@ -15,20 +15,20 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-26T11:57:35Z",
+      "date": "2026-10-30T12:10:19Z",
       "tags": {
         "tahoe": {
-          "filename": "z3-5.3.2.tahoe.bottle.tar.gz",
-          "local_filename": "z3--5.3.2.tahoe.bottle.tar.gz",
-          "sha256": "a9352e54aaf2a80c8d267a71a39e454a93871e7ea43a8251235d522fd54a7034",
+          "filename": "z3-5.3.3.tahoe.bottle.tar.gz",
+          "local_filename": "z3--5.3.3.tahoe.bottle.tar.gz",
+          "sha256": "11826f5deb28738d718f880dc2e019fb9d8fa67a304f1b85c19556877284fecb",
           "tab": {
             "homebrew_version": "7.0.11",
             "changed_files": [],
             "linkage_files": [
-              "lib/libz3.5.3.2.0.dylib"
+              "lib/libz3.5.3.3.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1792933508,
+            "source_modified_time": 1793279065,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -97,7 +97,7 @@
             "lib/cmake/z3/Z3-shared-targets.cmake",
             "lib/cmake/z3/Z3Config.cmake",
             "lib/cmake/z3/Z3ConfigVersion.cmake",
-            "lib/libz3.5.3.2.0.dylib",
+            "lib/libz3.5.3.3.0.dylib",
             "lib/libz3.5.3.dylib",
             "lib/libz3.dylib",
             "lib/pkgconfig/z3.pc",
@@ -155,6 +155,8 @@
             "share/z3/examples/python/bincover.py",
             "share/z3/examples/python/bounded model checking/bubble_sort.py",
             "share/z3/examples/python/complex/complex.py",
+            "share/z3/examples/python/data/BubbleSort_safe_bgmc007.smt2",
+            "share/z3/examples/python/data/QF_UF_train-gate.6.prop1_ab_reg_max.smt2",
             "share/z3/examples/python/data/horn1.smt2",
             "share/z3/examples/python/data/horn2.smt2",
             "share/z3/examples/python/data/horn3.smt2",
@@ -215,7 +217,7 @@
             "share/z3/examples/userPropagator/user_propagator_subquery_maximisation.h",
             "share/z3/examples/userPropagator/user_propagator_with_theory.h"
           ],
-          "installed_size": 45484211
+          "installed_size": 45853330
         }
       }
     }

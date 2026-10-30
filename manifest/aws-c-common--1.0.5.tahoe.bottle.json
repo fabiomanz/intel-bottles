@@ -2,10 +2,10 @@
   "aws-c-common": {
     "formula": {
       "name": "aws-c-common",
-      "pkg_version": "1.0.4",
+      "pkg_version": "1.0.5",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/aws-c-common.rb",
       "tap_git_path": "Formula/a/aws-c-common.rb",
-      "tap_git_revision": "9a4c6d616c5e15a3fff477e7eb41f465a86c71ef",
+      "tap_git_revision": "f1755b40e90c30529ec736309e2543ab53ff410d",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Core c99 package for AWS SDK for C",
       "license": "Apache-2.0",
@@ -15,20 +15,20 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-28T12:07:33Z",
+      "date": "2026-10-30T11:41:37Z",
       "tags": {
         "tahoe": {
-          "filename": "aws-c-common-1.0.4.tahoe.bottle.tar.gz",
-          "local_filename": "aws-c-common--1.0.4.tahoe.bottle.tar.gz",
-          "sha256": "070160cd6d8fcb4bf2163399f57a345b29a4f753e9dc4d3d86db4845f9768680",
+          "filename": "aws-c-common-1.0.5.tahoe.bottle.tar.gz",
+          "local_filename": "aws-c-common--1.0.5.tahoe.bottle.tar.gz",
+          "sha256": "af99b89887ba8ee01692c2bbd85f4ac3d106e59a8a7f10bc2455768b7c94b74f",
           "tab": {
             "homebrew_version": "7.0.11",
             "changed_files": [],
             "linkage_files": [
-              "lib/libaws-c-common.1.0.3.dylib"
+              "lib/libaws-c-common.1.0.5.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1793085826,
+            "source_modified_time": 1793134205,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -177,7 +177,7 @@
             "lib/cmake/aws-c-common/modules/AwsTestHarness.cmake",
             "lib/cmake/aws-c-common/shared/aws-c-common-targets-release.cmake",
             "lib/cmake/aws-c-common/shared/aws-c-common-targets.cmake",
-            "lib/libaws-c-common.1.0.3.dylib",
+            "lib/libaws-c-common.1.0.5.dylib",
             "lib/libaws-c-common.1.0.dylib",
             "lib/libaws-c-common.dylib",
             "sbom.spdx.json"

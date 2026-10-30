@@ -2,10 +2,10 @@
   "libslirp": {
     "formula": {
       "name": "libslirp",
-      "pkg_version": "4.9.6",
+      "pkg_version": "4.9.7",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libslirp.rb",
       "tap_git_path": "Formula/lib/libslirp.rb",
-      "tap_git_revision": "4c30c8f84ccef0aafd182799b3e0776676170676",
+      "tap_git_revision": "f1755b40e90c30529ec736309e2543ab53ff410d",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "General purpose TCP-IP emulator",
       "license": "BSD-3-Clause",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-25T11:08:02Z",
+      "date": "2026-10-30T11:50:56Z",
       "tags": {
         "tahoe": {
-          "filename": "libslirp-4.9.6.tahoe.bottle.tar.gz",
-          "local_filename": "libslirp--4.9.6.tahoe.bottle.tar.gz",
-          "sha256": "915acb875406f8beed6631cf37b699ac416fe4851af818043dba2e9b60fd3c37",
+          "filename": "libslirp-4.9.7.tahoe.bottle.tar.gz",
+          "local_filename": "libslirp--4.9.7.tahoe.bottle.tar.gz",
+          "sha256": "47d9eff8616a35515ac9dfdd650fcabc282e8bf7610f906ab65609e091666e1d",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "lib/pkgconfig/slirp.pc"
             ],
@@ -30,7 +30,7 @@
               "lib/libslirp.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1792886998,
+            "source_modified_time": 1793323373,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -276,7 +276,7 @@
             "lib/pkgconfig/slirp.pc",
             "sbom.spdx.json"
           ],
-          "installed_size": 377511
+          "installed_size": 378055
         }
       }
     }

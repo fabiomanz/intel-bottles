@@ -2,10 +2,10 @@
   "tbb": {
     "formula": {
       "name": "tbb",
-      "pkg_version": "2023.1.0",
+      "pkg_version": "2023.2.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/t/tbb.rb",
       "tap_git_path": "Formula/t/tbb.rb",
-      "tap_git_revision": "7bc7c132ffcfc1ee9077dbc476f4e247d6b9062d",
+      "tap_git_revision": "f1755b40e90c30529ec736309e2543ab53ff410d",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Rich and complete approach to parallelism in C++",
       "license": "Apache-2.0",
@@ -15,26 +15,26 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-18T10:21:06Z",
+      "date": "2026-10-30T11:54:32Z",
       "tags": {
         "tahoe": {
-          "filename": "tbb-2023.1.0.tahoe.bottle.tar.gz",
-          "local_filename": "tbb--2023.1.0.tahoe.bottle.tar.gz",
-          "sha256": "44bfa713d51c7c96211489e9ec5584141fa783f3b49051ee54bc911bc7b96f04",
+          "filename": "tbb-2023.2.0.tahoe.bottle.tar.gz",
+          "local_filename": "tbb--2023.2.0.tahoe.bottle.tar.gz",
+          "sha256": "fdc762a1259dce0ea734fbb8236a5ecdda9a974453bd510f6db96dde34679fc8",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "lib/cmake/TBB/TBBTargets.cmake",
               "lib/pkgconfig/tbb.pc"
             ],
             "linkage_files": [
-              "lib/libtbb.12.19.dylib",
-              "lib/libtbbbind_2_5.3.19.dylib",
-              "lib/libtbbmalloc.2.19.dylib",
-              "lib/libtbbmalloc_proxy.2.19.dylib"
+              "lib/libtbb.12.20.dylib",
+              "lib/libtbbbind_2_5.3.20.dylib",
+              "lib/libtbbmalloc.2.20.dylib",
+              "lib/libtbbmalloc_proxy.2.20.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1783706837,
+            "source_modified_time": 1793205137,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -167,6 +167,8 @@
             "include/oneapi/tbb/detail/_mutex_common.h",
             "include/oneapi/tbb/detail/_namespace_injection.h",
             "include/oneapi/tbb/detail/_node_handle.h",
+            "include/oneapi/tbb/detail/_parallel_partition.h",
+            "include/oneapi/tbb/detail/_parallel_phase.h",
             "include/oneapi/tbb/detail/_pipeline_filters.h",
             "include/oneapi/tbb/detail/_pipeline_filters_deduction.h",
             "include/oneapi/tbb/detail/_range_common.h",
@@ -271,18 +273,18 @@
             "lib/cmake/TBB/TBBConfigVersion.cmake",
             "lib/cmake/TBB/TBBTargets-release.cmake",
             "lib/cmake/TBB/TBBTargets.cmake",
-            "lib/libtbb.12.19.dylib",
+            "lib/libtbb.12.20.dylib",
             "lib/libtbb.12.dylib",
             "lib/libtbb.a",
             "lib/libtbb.dylib",
-            "lib/libtbbbind_2_5.3.19.dylib",
+            "lib/libtbbbind_2_5.3.20.dylib",
             "lib/libtbbbind_2_5.3.dylib",
             "lib/libtbbbind_2_5.dylib",
-            "lib/libtbbmalloc.2.19.dylib",
+            "lib/libtbbmalloc.2.20.dylib",
             "lib/libtbbmalloc.2.dylib",
             "lib/libtbbmalloc.a",
             "lib/libtbbmalloc.dylib",
-            "lib/libtbbmalloc_proxy.2.19.dylib",
+            "lib/libtbbmalloc_proxy.2.20.dylib",
             "lib/libtbbmalloc_proxy.2.dylib",
             "lib/libtbbmalloc_proxy.dylib",
             "lib/pkgconfig/tbb.pc",
@@ -293,15 +295,15 @@
             "lib/python3.15/site-packages/tbb/api.py",
             "lib/python3.15/site-packages/tbb/pool.py",
             "lib/python3.15/site-packages/tbb/test.py",
-            "lib/python3.15/site-packages/tbb-2023.1.0.dist-info/INSTALLER",
-            "lib/python3.15/site-packages/tbb-2023.1.0.dist-info/METADATA",
-            "lib/python3.15/site-packages/tbb-2023.1.0.dist-info/REQUESTED",
-            "lib/python3.15/site-packages/tbb-2023.1.0.dist-info/WHEEL",
-            "lib/python3.15/site-packages/tbb-2023.1.0.dist-info/top_level.txt",
+            "lib/python3.15/site-packages/tbb-2023.2.0.dist-info/INSTALLER",
+            "lib/python3.15/site-packages/tbb-2023.2.0.dist-info/METADATA",
+            "lib/python3.15/site-packages/tbb-2023.2.0.dist-info/REQUESTED",
+            "lib/python3.15/site-packages/tbb-2023.2.0.dist-info/WHEEL",
+            "lib/python3.15/site-packages/tbb-2023.2.0.dist-info/top_level.txt",
             "sbom.spdx.json",
             "share/doc/TBB/README.md"
           ],
-          "installed_size": 3081452
+          "installed_size": 3114535
         }
       }
     }

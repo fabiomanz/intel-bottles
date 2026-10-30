@@ -2,10 +2,10 @@
   "fribidi": {
     "formula": {
       "name": "fribidi",
-      "pkg_version": "1.0.17",
+      "pkg_version": "1.0.18",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/f/fribidi.rb",
       "tap_git_path": "Formula/f/fribidi.rb",
-      "tap_git_revision": "52b61f5ef99b03c18032c38a4a3de85d226a0e7e",
+      "tap_git_revision": "f1755b40e90c30529ec736309e2543ab53ff410d",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Implementation of the Unicode BiDi algorithm",
       "license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-30T19:03:11Z",
+      "date": "2026-10-30T11:42:00Z",
       "tags": {
         "tahoe": {
-          "filename": "fribidi-1.0.17.tahoe.bottle.tar.gz",
-          "local_filename": "fribidi--1.0.17.tahoe.bottle.tar.gz",
-          "sha256": "23ec3a2c361a11e94f71dee17afbe55d1d8b3e3f9df16a327f84e1124e80dcd4",
+          "filename": "fribidi-1.0.18.tahoe.bottle.tar.gz",
+          "local_filename": "fribidi--1.0.18.tahoe.bottle.tar.gz",
+          "sha256": "ded625adebb06d9f8b8596eb9bb558ea35e218ef8ef25dd7fe728809ad10e4c0",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "lib/pkgconfig/fribidi.pc"
             ],
@@ -31,7 +31,7 @@
               "lib/libfribidi.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1789883576,
+            "source_modified_time": 1793312259,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -145,7 +145,7 @@
             "share/man/man3/fribidi_shape_mirroring.3",
             "share/man/man3/fribidi_unicode_to_charset.3"
           ],
-          "installed_size": 695561
+          "installed_size": 705152
         }
       }
     }

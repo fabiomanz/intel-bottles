@@ -2,10 +2,10 @@
   "glab": {
     "formula": {
       "name": "glab",
-      "pkg_version": "1.125.0",
+      "pkg_version": "1.126.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/glab.rb",
       "tap_git_path": "Formula/g/glab.rb",
-      "tap_git_revision": "2e1cf042f7d1e2302d82e9332dd3def6a56e0e62",
+      "tap_git_revision": "f1755b40e90c30529ec736309e2543ab53ff410d",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Open-source GitLab command-line tool",
       "license": "MIT",
@@ -15,22 +15,22 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-28T11:41:14Z",
+      "date": "2026-10-30T11:44:16Z",
       "tags": {
         "tahoe": {
-          "filename": "glab-1.125.0.tahoe.bottle.tar.gz",
-          "local_filename": "glab--1.125.0.tahoe.bottle.tar.gz",
-          "sha256": "09daf8664a6fdda2f5ec798650a83bdc7e2c5e240eefc7e1119974e7690f709b",
+          "filename": "glab-1.126.0.tahoe.bottle.tar.gz",
+          "local_filename": "glab--1.126.0.tahoe.bottle.tar.gz",
+          "sha256": "9e87207a6bd76c71bcc74f5014fc8c715cdccef8ef7514d9131e14590b986b3e",
           "tab": {
             "homebrew_version": "7.0.11",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1793082452,
+            "source_modified_time": 1793222018,
             "compiler": "clang",
             "runtime_dependencies": [],
             "source": {
-              "scm_revision": "685c1cbd74c882e0c93d7011657adde811582ed7"
+              "scm_revision": "4dd0d32d18361db6c1c668eb4ac691c0d6edf255"
             },
             "arch": "x86_64",
             "built_on": {
@@ -84,7 +84,7 @@
             "share/fish/vendor_completions.d/glab.fish",
             "share/zsh/site-functions/_glab"
           ],
-          "installed_size": 50303181
+          "installed_size": 50739927
         }
       }
     }
