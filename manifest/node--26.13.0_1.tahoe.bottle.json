@@ -2,10 +2,10 @@
   "node": {
     "formula": {
       "name": "node",
-      "pkg_version": "26.12.1_1",
+      "pkg_version": "26.13.0_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/n/node.rb",
       "tap_git_path": "Formula/n/node.rb",
-      "tap_git_revision": "4c30c8f84ccef0aafd182799b3e0776676170676",
+      "tap_git_revision": "f6680e7ccaf7b4ab83f4e86cc74f0e78551f2073",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Open-source, cross-platform JavaScript runtime environment",
       "license": "MIT",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-25T14:05:12Z",
+      "date": "2026-10-31T15:44:08Z",
       "tags": {
         "tahoe": {
-          "filename": "node-26.12.1_1.tahoe.bottle.tar.gz",
-          "local_filename": "node--26.12.1_1.tahoe.bottle.tar.gz",
-          "sha256": "656e2f52977d999a53367e00c02216dbe04e9514abbdfa0ead68957acc742508",
+          "filename": "node-26.13.0_1.tahoe.bottle.tar.gz",
+          "local_filename": "node--26.13.0_1.tahoe.bottle.tar.gz",
+          "sha256": "b3f12e66ecf1c9ffb9f26816d497361b084e129d0b7630488c272060043f2198",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "include/node/config.gypi"
             ],
@@ -33,7 +33,7 @@
             "binary_relocation_files": [
               "lib/libnode.147.dylib"
             ],
-            "source_modified_time": 1792567055,
+            "source_modified_time": 1793160136,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -65,10 +65,10 @@
               },
               {
                 "full_name": "simdutf",
-                "version": "9.3.2",
-                "revision": 1,
+                "version": "9.3.3",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "9.3.2_1",
+                "pkg_version": "9.3.3",
                 "declared_directly": true,
                 "compatibility_version": 7
               },
@@ -150,7 +150,8 @@
                 "revision": 4,
                 "bottle_rebuild": 0,
                 "pkg_version": "1.2.2_4",
-                "declared_directly": true
+                "declared_directly": true,
+                "compatibility_version": 1
               },
               {
                 "full_name": "nbytes",
@@ -158,7 +159,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "0.1.4",
-                "declared_directly": true
+                "declared_directly": true,
+                "compatibility_version": 1
               },
               {
                 "full_name": "ca-certificates",
@@ -175,15 +177,17 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "4.1.0",
-                "declared_directly": true
+                "declared_directly": true,
+                "compatibility_version": 1
               },
               {
                 "full_name": "simdjson",
-                "version": "5.0.5",
+                "version": "5.0.7",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "5.0.5",
-                "declared_directly": true
+                "pkg_version": "5.0.7",
+                "declared_directly": true,
+                "compatibility_version": 1
               },
               {
                 "full_name": "readline",
@@ -218,7 +222,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "1.10.0",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "xz",
@@ -262,108 +267,108 @@
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/llhttp/include",
-              "offset": 24875838
+              "offset": 24875874
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/libuv/include",
-              "offset": 24875882
+              "offset": 24875918
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/abseil/include",
-              "offset": 24875926
+              "offset": 24875962
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/ada-url/include",
-              "offset": 24875970
+              "offset": 24876006
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/simdjson/include",
-              "offset": 24876014
+              "offset": 24876050
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/simdutf/include",
-              "offset": 24876058
+              "offset": 24876094
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/brotli/include",
-              "offset": 24876102
+              "offset": 24876138
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/c-ares/include",
-              "offset": 24876146
+              "offset": 24876182
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/hdrhistogram_c/include",
-              "offset": 24876190
+              "offset": 24876226
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/highway/include",
-              "offset": 24876242
+              "offset": 24876278
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/merve/include",
-              "offset": 24876286
+              "offset": 24876322
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/nbytes/include",
-              "offset": 24876330
+              "offset": 24876366
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/libnghttp2/include",
-              "offset": 24876374
+              "offset": 24876410
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/sqlite/include",
-              "offset": 24876426
+              "offset": 24876462
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/libffi/include",
-              "offset": 24876470
+              "offset": 24876506
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/uvwasi/include",
-              "offset": 24876514
+              "offset": 24876550
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/zstd/include",
-              "offset": 24876558
+              "offset": 24876594
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/openssl@4/include",
-              "offset": 24876602
+              "offset": 24876638
             },
             {
               "path": "lib/libnode.147.dylib",
               "string": "/usr/local/opt/icu4c@79/include",
-              "offset": 24876646
+              "offset": 24876682
             },
             {
               "path": "lib/libnode.147.dylib",
-              "string": "/usr/local/Cellar/node/26.12.1_1",
-              "offset": 24854658
+              "string": "/usr/local/Cellar/node/26.13.0_1",
+              "offset": 24854694
             }
           ],
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
-              "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.2.5f.1",
+              "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.3",
               "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0.5f.1",
               "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
               "SPDXRef-Package-SPDXRef-c-ares-1.2e.34.2e.9",
@@ -373,7 +378,7 @@
               "SPDXRef-Package-SPDXRef-merve-1.2e.2.2e.2.5f.4",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
-              "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.5",
+              "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.7",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
@@ -406,24 +411,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.2.5f.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.3",
                 "name": "simdutf",
-                "versionInfo": "9.3.2_1",
+                "versionInfo": "9.3.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0 OR MIT",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/simdutf-9.3.2_1.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/simdutf-9.3.3.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "265e5a081f08aafc109d1d3b1f27d377c0bd9f8af7b1018244450f6b165fe60a"
+                    "checksumValue": "a69dfa5d87dc2ca3eba067124e85cf25a81c715c708034852b807a08c1a0d002"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/simdutf@9.3.2_1",
+                    "referenceLocator": "pkg:brew/simdutf@9.3.3",
                     "referenceType": "purl"
                   }
                 ]
@@ -636,24 +641,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.7",
                 "name": "simdjson",
-                "versionInfo": "5.0.5",
+                "versionInfo": "5.0.7",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/simdjson-5.0.5.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/simdjson-5.0.7.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "71acdd277e4e5fbadb59e81d3dbd74c175c6b3388143ba836abd3da979b5c9aa"
+                    "checksumValue": "743a74807264c6a6dfc2bd2c1d358fd6a3e8a72888619b423e53530dd54728b0"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/simdjson@5.0.5",
+                    "referenceLocator": "pkg:brew/simdjson@5.0.7",
                     "referenceType": "purl"
                   }
                 ]
@@ -793,7 +798,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-node"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.2.5f.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-node"
               },
@@ -843,7 +848,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-node"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.7",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-node"
               },
@@ -2963,7 +2968,7 @@
             "share/doc/node/lldb_commands.py",
             "share/man/man1/node.1"
           ],
-          "installed_size": 75361707
+          "installed_size": 75362288
         }
       }
     }

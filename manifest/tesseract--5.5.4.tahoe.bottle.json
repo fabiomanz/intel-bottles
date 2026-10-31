@@ -2,10 +2,10 @@
   "tesseract": {
     "formula": {
       "name": "tesseract",
-      "pkg_version": "5.5.3_1",
+      "pkg_version": "5.5.4",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/t/tesseract.rb",
       "tap_git_path": "Formula/t/tesseract.rb",
-      "tap_git_revision": "a978507fac57dc3743913cb86fd8b38a0bce2c17",
+      "tap_git_revision": "f6680e7ccaf7b4ab83f4e86cc74f0e78551f2073",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "OCR (Optical Character Recognition) engine",
       "license": "Apache-2.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-25T14:37:29Z",
+      "date": "2026-10-31T11:30:46Z",
       "tags": {
         "tahoe": {
-          "filename": "tesseract-5.5.3_1.tahoe.bottle.tar.gz",
-          "local_filename": "tesseract--5.5.3_1.tahoe.bottle.tar.gz",
-          "sha256": "286cc0fdf128646d0684c04ed1d7a5f66c3378761d5d4ca92f6369fc23980390",
+          "filename": "tesseract-5.5.4.tahoe.bottle.tar.gz",
+          "local_filename": "tesseract--5.5.4.tahoe.bottle.tar.gz",
+          "sha256": "e47428720e6b0145db6592c3091270dbfa8b9cd5d236ef2ce7b8be6b35fa832d",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "lib/pkgconfig/tesseract.pc"
             ],
@@ -46,7 +46,7 @@
               "lib/libtesseract.5.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1784917622,
+            "source_modified_time": 1793186089,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -82,7 +82,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "0.19",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "libunistring",
@@ -198,7 +199,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "2.10",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "pixman",
@@ -215,7 +217,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "1.18.6",
-                "declared_directly": true
+                "declared_directly": true,
+                "compatibility_version": 1
               },
               {
                 "full_name": "graphite2",
@@ -223,7 +226,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "1.3.15",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "icu4c@79",
@@ -254,10 +258,10 @@
               },
               {
                 "full_name": "jpeg-turbo",
-                "version": "3.2.0",
+                "version": "3.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.2.0",
+                "pkg_version": "3.2.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -285,7 +289,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "1.10.0",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "zstd",
@@ -352,11 +357,12 @@
               },
               {
                 "full_name": "fribidi",
-                "version": "1.0.17",
+                "version": "1.0.18",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.0.17",
-                "declared_directly": false
+                "pkg_version": "1.0.18",
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "libdatrie",
@@ -414,7 +420,7 @@
               "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
               "SPDXRef-Package-SPDXRef-harfbuzz-15.2e.0.2e.0.5f.1",
               "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
-              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
               "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
@@ -423,7 +429,7 @@
               "SPDXRef-Package-SPDXRef-little-cms2-2.2e.19.2e.1",
               "SPDXRef-Package-SPDXRef-openjpeg-2.2e.5.2e.4.5f.1",
               "SPDXRef-Package-SPDXRef-libarchive-3.2e.8.2e.10",
-              "SPDXRef-Package-SPDXRef-fribidi-1.2e.0.2e.17",
+              "SPDXRef-Package-SPDXRef-fribidi-1.2e.0.2e.18",
               "SPDXRef-Package-SPDXRef-pango-1.2e.58.2e.2",
               "SPDXRef-Compiler"
             ],
@@ -774,24 +780,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
                 "name": "jpeg-turbo",
-                "versionInfo": "3.2.0",
+                "versionInfo": "3.2.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "3c7d19c475389bbb48a07f78f52473c8f49f458bd45b4453457cfec9c01601ed"
+                    "checksumValue": "1bb37d07262582aba709ca3f07596fbdf0649606f690b6800e72c6e99af2f9dd"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -981,24 +987,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-fribidi-1.2e.0.2e.17",
+                "SPDXID": "SPDXRef-Package-SPDXRef-fribidi-1.2e.0.2e.18",
                 "name": "fribidi",
-                "versionInfo": "1.0.17",
+                "versionInfo": "1.0.18",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later AND LGPL-2.1-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/fribidi-1.0.17.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/fribidi-1.0.18.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "23ec3a2c361a11e94f71dee17afbe55d1d8b3e3f9df16a327f84e1124e80dcd4"
+                    "checksumValue": "ded625adebb06d9f8b8596eb9bb558ea35e218ef8ef25dd7fe728809ad10e4c0"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/fribidi@1.0.17",
+                    "referenceLocator": "pkg:brew/fribidi@1.0.18",
                     "referenceType": "purl"
                   }
                 ]
@@ -1116,7 +1122,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
@@ -1161,7 +1167,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-fribidi-1.2e.0.2e.17",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-fribidi-1.2e.0.2e.18",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-tesseract"
               },
@@ -1271,7 +1277,7 @@
             "share/tessdata/tessconfigs/nobatch",
             "share/tessdata/tessconfigs/segdemo"
           ],
-          "installed_size": 25901757
+          "installed_size": 25926337
         }
       }
     }

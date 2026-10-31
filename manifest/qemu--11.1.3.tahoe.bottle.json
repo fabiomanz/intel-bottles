@@ -2,10 +2,10 @@
   "qemu": {
     "formula": {
       "name": "qemu",
-      "pkg_version": "11.1.2",
+      "pkg_version": "11.1.3",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qemu.rb",
       "tap_git_path": "Formula/q/qemu.rb",
-      "tap_git_revision": "4712cb3bfba37772b6a281bc79998e82f5824141",
+      "tap_git_revision": "f6680e7ccaf7b4ab83f4e86cc74f0e78551f2073",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Generic machine emulator and virtualizer",
       "license": "GPL-2.0-only",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-02T12:14:59Z",
+      "date": "2026-10-31T11:43:36Z",
       "tags": {
         "tahoe": {
-          "filename": "qemu-11.1.2.tahoe.bottle.tar.gz",
-          "local_filename": "qemu--11.1.2.tahoe.bottle.tar.gz",
-          "sha256": "d57588ff590aeb360d4bc96543bf1dcdf870f09300e8dbb0e53c751cad4aa0ff",
+          "filename": "qemu-11.1.3.tahoe.bottle.tar.gz",
+          "local_filename": "qemu--11.1.3.tahoe.bottle.tar.gz",
+          "sha256": "fa15d3f81ea43fef73ba2ea8cef9ad884e2f782f52cd7c818ec30dd777138e56",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "share/qemu/firmware/50-edk2-i386-secure.json",
               "share/qemu/firmware/50-edk2-x86_64-secure.json",
@@ -106,7 +106,7 @@
               "bin/qemu-system-xtensa",
               "bin/qemu-system-xtensaeb"
             ],
-            "source_modified_time": 1790688967,
+            "source_modified_time": 1793217765,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -115,14 +115,15 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "0.19",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -173,19 +174,19 @@
               },
               {
                 "full_name": "glib",
-                "version": "2.90.0",
+                "version": "2.90.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.90.0",
+                "pkg_version": "2.90.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-09-25",
+                "version": "2026-10-20",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
+                "pkg_version": "2026-10-20",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -245,10 +246,10 @@
               },
               {
                 "full_name": "jpeg-turbo",
-                "version": "3.2.0",
+                "version": "3.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.2.0",
+                "pkg_version": "3.2.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -263,28 +264,28 @@
               },
               {
                 "full_name": "libslirp",
-                "version": "4.9.5",
+                "version": "4.9.7",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.9.5",
+                "pkg_version": "4.9.7",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
-                "full_name": "openssl@3",
-                "version": "3.6.5",
+                "full_name": "openssl@4",
+                "version": "4.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.5",
+                "pkg_version": "4.1.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "libssh",
                 "version": "0.12.2",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.12.2",
+                "pkg_version": "0.12.2_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -303,7 +304,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "2.10",
-                "declared_directly": true
+                "declared_directly": true,
+                "compatibility_version": 1
               },
               {
                 "full_name": "ncurses",
@@ -338,7 +340,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "2.3.3",
-                "declared_directly": true
+                "declared_directly": true,
+                "compatibility_version": 1
               },
               {
                 "full_name": "lz4",
@@ -346,7 +349,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "1.10.0",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "xz",
@@ -380,528 +384,529 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/qemu-system-alpha",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 4618720
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 4620704
             },
             {
               "path": "bin/qemu-system-alpha",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 5419604
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 5422268
             },
             {
               "path": "bin/qemu-system-alpha",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 5419763
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 5422427
             },
             {
               "path": "bin/qemu-system-alpha",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 5422759
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 5425423
             },
             {
               "path": "bin/qemu-system-sparc",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 3491938
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 3493474
             },
             {
               "path": "bin/qemu-system-sparc",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 4093657
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 4095665
             },
             {
               "path": "bin/qemu-system-sparc",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 4093816
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 4095824
             },
             {
               "path": "bin/qemu-system-sparc",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 4096812
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 4098820
             },
             {
               "path": "bin/qemu-storage-daemon",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 1534945
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 1535991
             },
             {
               "path": "bin/qemu-storage-daemon",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 1535104
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 1536150
             },
             {
               "path": "bin/qemu-system-sh4",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 4611819
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 4613819
             },
             {
               "path": "bin/qemu-system-sh4",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 5417082
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 5419762
             },
             {
               "path": "bin/qemu-system-sh4",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 5417241
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 5419921
             },
             {
               "path": "bin/qemu-system-sh4",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 5420237
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 5422917
             },
             {
               "path": "bin/qemu-img",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 1329705
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 1330896
             },
             {
               "path": "bin/qemu-img",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 1329864
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 1331055
             },
             {
               "path": "bin/qemu-system-xtensa",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 5092189
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5094173
             },
             {
               "path": "bin/qemu-system-xtensa",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 5965278
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 5967942
             },
             {
               "path": "bin/qemu-system-xtensa",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 5965437
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 5968101
             },
             {
               "path": "bin/qemu-system-xtensa",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 5968433
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 5971097
             },
             {
               "path": "bin/qemu-system-avr",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 3332100
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 3333076
             },
             {
               "path": "bin/qemu-system-avr",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 3884201
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 3885625
             },
             {
               "path": "bin/qemu-system-avr",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 3884360
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 3885784
             },
             {
               "path": "bin/qemu-system-avr",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 3887356
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 3888780
             },
             {
               "path": "bin/qemu-system-sparc64",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 4701662
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 4704894
             },
             {
               "path": "bin/qemu-system-sparc64",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 5507871
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 5511783
             },
             {
               "path": "bin/qemu-system-sparc64",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 5508030
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 5511942
             },
             {
               "path": "bin/qemu-system-sparc64",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 5511026
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 5514938
             },
             {
               "path": "bin/qemu-system-riscv32",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 5735917
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5738541
             },
             {
               "path": "bin/qemu-system-riscv32",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 6621025
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 6624377
             },
             {
               "path": "bin/qemu-system-riscv32",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 6621184
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 6624536
             },
             {
               "path": "bin/qemu-system-riscv32",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 6624180
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 6627532
             },
             {
               "path": "bin/qemu-system-m68k",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 3851504
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 3852512
             },
             {
               "path": "bin/qemu-system-m68k",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 4502152
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 4503600
             },
             {
               "path": "bin/qemu-system-m68k",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 4502311
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 4503759
             },
             {
               "path": "bin/qemu-system-m68k",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 4505307
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 4506755
             },
             {
               "path": "bin/qemu-system-tricore",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 3434276
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 3435284
             },
             {
               "path": "bin/qemu-system-tricore",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 3975012
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 3976468
             },
             {
               "path": "bin/qemu-system-tricore",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 3975171
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 3976627
             },
             {
               "path": "bin/qemu-system-tricore",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 3978167
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 3979623
             },
             {
               "path": "bin/qemu-system-microblaze",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 3411200
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 3412192
             },
             {
               "path": "bin/qemu-system-microblaze",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 3985855
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 3987311
             },
             {
               "path": "bin/qemu-system-microblaze",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 3986014
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 3987470
             },
             {
               "path": "bin/qemu-system-microblaze",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 3989010
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 3990466
             },
             {
               "path": "bin/qemu-system-mipsel",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 5277164
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5279132
             },
             {
               "path": "bin/qemu-system-mipsel",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 6112925
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 6115589
             },
             {
               "path": "bin/qemu-system-mipsel",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 6113084
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 6115748
             },
             {
               "path": "bin/qemu-system-mipsel",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 6116080
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 6118744
             },
             {
               "path": "bin/qemu-system-sh4eb",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 4611819
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 4613819
             },
             {
               "path": "bin/qemu-system-sh4eb",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 5417080
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 5419760
             },
             {
               "path": "bin/qemu-system-sh4eb",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 5417239
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 5419919
             },
             {
               "path": "bin/qemu-system-sh4eb",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 5420235
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 5422915
             },
             {
               "path": "bin/qemu-system-aarch64",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 8860246
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 8860422
             },
             {
               "path": "bin/qemu-system-aarch64",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 10044430
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 10045398
             },
             {
               "path": "bin/qemu-system-aarch64",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 10044589
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 10045557
             },
             {
               "path": "bin/qemu-system-aarch64",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 10047585
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 10048553
             },
             {
               "path": "bin/qemu-nbd",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 1382598
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 1383644
             },
             {
               "path": "bin/qemu-nbd",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 1382757
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 1383803
             },
             {
               "path": "bin/qemu-edid",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
               "offset": 328220
             },
             {
               "path": "bin/qemu-edid",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
               "offset": 328379
             },
             {
               "path": "bin/qemu-system-loongarch64",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 5211881
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5214105
             },
             {
               "path": "bin/qemu-system-loongarch64",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 6042845
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 6045797
             },
             {
               "path": "bin/qemu-system-loongarch64",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 6043004
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 6045956
             },
             {
               "path": "bin/qemu-system-loongarch64",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 6046000
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 6048952
             },
             {
               "path": "bin/qemu-system-ppc",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 5608992
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5610992
             },
             {
               "path": "bin/qemu-system-ppc",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 6518894
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 6521622
             },
             {
               "path": "bin/qemu-system-ppc",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 6519053
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 6521781
             },
             {
               "path": "bin/qemu-system-ppc",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 6522049
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 6524777
             },
             {
               "path": "bin/qemu-system-hppa",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 4704503
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 4706455
             },
             {
               "path": "bin/qemu-system-hppa",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 5509925
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 5512573
             },
             {
               "path": "bin/qemu-system-hppa",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 5510084
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 5512732
             },
             {
               "path": "bin/qemu-system-hppa",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 5513080
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 5515728
             },
             {
               "path": "bin/qemu-system-mips64el",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 5505750
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5507846
             },
             {
               "path": "bin/qemu-system-mips64el",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 6368755
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 6371531
             },
             {
               "path": "bin/qemu-system-mips64el",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 6368914
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 6371690
             },
             {
               "path": "bin/qemu-system-mips64el",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 6371910
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 6374686
             },
             {
               "path": "bin/qemu-system-or1k",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 4542980
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 4544900
             },
             {
               "path": "bin/qemu-system-or1k",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 5336422
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 5339038
             },
             {
               "path": "bin/qemu-system-or1k",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 5336581
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 5339197
             },
             {
               "path": "bin/qemu-system-or1k",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 5339577
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 5342193
             },
             {
               "path": "bin/qemu-system-i386",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 5525432
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5527512
             },
             {
               "path": "bin/qemu-system-i386",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 6449880
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 6452672
             },
             {
               "path": "bin/qemu-system-i386",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 6450039
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 6452831
             },
             {
               "path": "bin/qemu-system-i386",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 6453035
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 6455827
             },
             {
               "path": "bin/qemu-system-mips64",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 5344396
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5346444
             },
             {
               "path": "bin/qemu-system-mips64",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 6184916
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 6187660
             },
             {
               "path": "bin/qemu-system-mips64",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 6185075
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 6187819
             },
             {
               "path": "bin/qemu-system-mips64",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 6188071
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 6190815
             },
             {
               "path": "bin/qemu-system-rx",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 3362932
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 3364164
             },
             {
               "path": "bin/qemu-system-rx",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 3907526
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 3909206
             },
             {
               "path": "bin/qemu-system-rx",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 3907685
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 3909365
             },
             {
               "path": "bin/qemu-system-rx",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 3910681
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 3912361
             },
             {
               "path": "bin/qemu-system-riscv64",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 5804845
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5807517
             },
             {
               "path": "bin/qemu-system-riscv64",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 6697218
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 6700618
             },
             {
               "path": "bin/qemu-system-riscv64",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 6697377
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 6700777
             },
             {
               "path": "bin/qemu-system-riscv64",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 6700373
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 6703773
             },
             {
               "path": "bin/qemu-system-xtensaeb",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/icons/hicolor/512x512/apps/qemu.png",
-              "offset": 5080477
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5082461
             },
             {
               "path": "bin/qemu-system-xtensaeb",
-              "string": "/usr/local/Cellar/qemu/11.1.2/bin",
-              "offset": 5953468
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 5956132
             },
             {
               "path": "bin/qemu-system-xtensaeb",
-              "string": "/usr/local/Cellar/qemu/11.1.2",
-              "offset": 5953627
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 5956291
             },
             {
               "path": "bin/qemu-system-xtensaeb",
-              "string": "/usr/local/Cellar/qemu/11.1.2/share/qemu",
-              "offset": 5956623
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 5959287
             }
           ],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-json-c-0.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
-              "SPDXRef-Package-SPDXRef-gettext-1.0",
-              "SPDXRef-Package-SPDXRef-pcre2-10.49",
-              "SPDXRef-Package-SPDXRef-glib-2.90.0",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
-              "SPDXRef-Package-SPDXRef-p11-kit-0.26.5",
-              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
-              "SPDXRef-Package-SPDXRef-libpng-1.6.59",
-              "SPDXRef-Package-SPDXRef-libslirp-4.9.5",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
-              "SPDXRef-Package-SPDXRef-snappy-1.3.1",
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+              "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+              "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
+              "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+              "SPDXRef-Package-SPDXRef-libslirp-4.2e.9.2e.7",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+              "SPDXRef-Package-SPDXRef-libssh-0.2e.12.2e.2.5f.1",
+              "SPDXRef-Package-SPDXRef-snappy-1.2e.3.2e.1",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "name": "json-c",
                 "versionInfo": "0.19",
                 "filesAnalyzed": false,
@@ -924,30 +929,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.5.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
+                    "checksumValue": "9914a8c6c3e193c9f0b20df1d04a32f25d247f0cb62fd1501abf321e1d1d7757"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "name": "gettext",
                 "versionInfo": "1.0",
                 "filesAnalyzed": false,
@@ -970,7 +975,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.49",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "name": "pcre2",
                 "versionInfo": "10.49",
                 "filesAnalyzed": false,
@@ -993,53 +998,53 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "name": "glib",
-                "versionInfo": "2.90.0",
+                "versionInfo": "2.90.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "LGPL-2.1-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/glib-2.90.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4f180b8f89781725d58c0a39d7508c0bf0e96225fc69ef630e18a9f885f61c4a"
+                    "checksumValue": "3b0aaa12be31d6f764cdca91e2a75efe6f317eabba79a48bdf1467217a0ccbab"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/glib@2.90.0",
+                    "referenceLocator": "pkg:brew/glib@2.90.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "name": "ca-certificates",
-                "versionInfo": "2026-09-25",
+                "versionInfo": "2026-10-20",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
                 "name": "gmp",
                 "versionInfo": "6.3.0",
                 "filesAnalyzed": false,
@@ -1062,7 +1067,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-p11-kit-0.26.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
                 "name": "p11-kit",
                 "versionInfo": "0.26.5",
                 "filesAnalyzed": false,
@@ -1085,30 +1090,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
                 "name": "jpeg-turbo",
-                "versionInfo": "3.2.0",
+                "versionInfo": "3.2.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "3c7d19c475389bbb48a07f78f52473c8f49f458bd45b4453457cfec9c01601ed"
+                    "checksumValue": "1bb37d07262582aba709ca3f07596fbdf0649606f690b6800e72c6e99af2f9dd"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.59",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "name": "libpng",
                 "versionInfo": "1.6.59",
                 "filesAnalyzed": false,
@@ -1131,53 +1136,76 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libslirp-4.9.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libslirp-4.2e.9.2e.7",
                 "name": "libslirp",
-                "versionInfo": "4.9.5",
+                "versionInfo": "4.9.7",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libslirp-4.9.5.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libslirp-4.9.7.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "3ee96a5b3fbb04bc4be172497a24fbda5cc5e583021da3662b552f45d68bf253"
+                    "checksumValue": "47d9eff8616a35515ac9dfdd650fcabc282e8bf7610f906ab65609e091666e1d"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libslirp@4.9.5",
+                    "referenceLocator": "pkg:brew/libslirp@4.9.7",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
-                "name": "openssl@3",
-                "versionInfo": "3.6.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+                "name": "openssl@4",
+                "versionInfo": "4.1.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%403-3.6.5.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.1.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "9df24dab1c79c4c07958ee358ef146ebcd5b05d8180274c3db0075a28f34f7f6"
+                    "checksumValue": "665a16d966b1a4542d1e9dd6022bba18468402ce6a82edd578a484de82a1429f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.5",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-snappy-1.3.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libssh-0.2e.12.2e.2.5f.1",
+                "name": "libssh",
+                "versionInfo": "0.12.2_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libssh-0.12.2_1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6c81327405cb4509c4df714a2d71c899875443c48162610bbe42aea8aa29d441"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libssh@0.12.2_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-snappy-1.2e.3.2e.1",
                 "name": "snappy",
                 "versionInfo": "1.3.1",
                 "filesAnalyzed": false,
@@ -1200,7 +1228,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -1223,7 +1251,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
@@ -1246,7 +1274,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -1283,82 +1311,87 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qemu"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qemu"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qemu"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.49",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qemu"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qemu"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qemu"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qemu"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-p11-kit-0.26.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qemu"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qemu"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.59",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qemu"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libslirp-4.9.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libslirp-4.2e.9.2e.7",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qemu"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qemu"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-snappy-1.3.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libssh-0.2e.12.2e.2.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qemu"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-snappy-1.2e.3.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qemu"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qemu"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qemu"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-qemu"
               },
@@ -1578,7 +1611,7 @@
             "share/qemu/vof-nvram.bin",
             "share/qemu/vof.bin"
           ],
-          "installed_size": 715959986
+          "installed_size": 716061472
         }
       }
     }
