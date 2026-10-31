@@ -19,10 +19,16 @@ on:
         description: Space-separated formulae whose build pushes health snapshots to the diag branch
         required: false
         type: string
-  schedule:
-    # Daily, ~74 min after sync-fork, so anything upstream bumped is bottled within a day.
-    # The plan job is cheap and schedules nothing when nothing has changed.
-    - cron: "37 5 * * *"
+  # Straight after every sync, so anything upstream bumped is bottled within a day. This
+  # used to be a cron of its own, "~74 min after sync-fork", but GitHub starts scheduled
+  # runs hours late and not in step: on 2026-10-29 the sync started at 10:59 and hung,
+  # the build started at 11:41, planned against the unsynced fork and built nothing.
+  # Dispatching sync fork by hand now starts a build too.
+  # The plan job is cheap and schedules nothing when nothing has changed.
+  workflow_run:
+    workflows: [sync fork]
+    types: [completed]
+    branches: [main]
 
 concurrency:
   group: build-bottles
@@ -34,6 +40,10 @@ permissions:
 jobs:
   plan:
     name: plan
+    # A failed sync leaves the fork as it was (sync_fork.sh pushes once, at the end), which
+    # is still fine to plan from: whatever failed to build before gets another go. A
+    # cancelled sync was superseded by a newer one, whose completion starts its own build.
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion != 'cancelled'
     runs-on: macos-26-intel
     outputs:
       wave0: ${{ steps.plan.outputs.wave0 }}

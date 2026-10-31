@@ -202,9 +202,21 @@ jobs:
     needs: build
     if: always()
     runs-on: macos-26-intel
+    # Normally under 10 minutes. A step that hangs should hand over to publish-retry, not
+    # hold the stage for the default 6 hours.
+    timeout-minutes: 45
+    # GitHub sometimes loses the hosted runner ("lost communication", no log). On
+    # 2026-10-30 that hit publish wave1 during `brew update`, and node (3h49m), qemu and
+    # tesseract were built but never released -- no later wave existed to sweep them up,
+    # so the next day's run built them all again. A failure here is therefore not final:
+    # publish-retry runs the same steps on a fresh runner. publish.sh drops whatever is
+    # already released, so a second pass only finishes what the first left undone.
+    continue-on-error: true
+    outputs:
+      done: ${{ steps.done.outputs.done }}
     permissions:
       contents: write
-    steps:
+    steps: &publish-steps
       - uses: actions/checkout@v4
 
       - uses: actions/download-artifact@v4
@@ -260,3 +272,19 @@ jobs:
               sleep 20
             done
           fi
+
+      - name: Mark as done
+        # publish-retry reads this. A job that lost its runner never gets here, whatever
+        # GitHub then reports as its result.
+        id: done
+        run: echo "done=true" >> "$GITHUB_OUTPUT"
+
+  publish-retry:
+    name: publish ${{ inputs.stage }} (retry)
+    needs: publish
+    if: ${{ !cancelled() && needs.publish.outputs.done != 'true' }}
+    runs-on: macos-26-intel
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    steps: *publish-steps

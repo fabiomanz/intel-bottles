@@ -91,8 +91,10 @@ not bound by the 6-hour limit.
 **Security note:** GitHub advises against self-hosted runners on public repositories,
 because a fork's pull request could otherwise run arbitrary code on your machine. That
 attack does not apply here — no workflow in this repo has a `pull_request` trigger; they
-are all `workflow_dispatch`, `schedule` or `workflow_call`. Keep it that way, or move the
-repo private (which costs runner minutes for the GitHub-hosted jobs).
+are all `workflow_dispatch`, `schedule` or `workflow_call`, plus a `workflow_run` that
+starts **build bottles** when **sync fork** (itself only scheduled or dispatched) completes
+on `main`. Keep it that way, or move the repo private (which costs runner minutes for the
+GitHub-hosted jobs).
 
 ## Setup
 

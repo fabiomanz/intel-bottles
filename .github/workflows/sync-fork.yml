@@ -2,7 +2,7 @@ name: sync fork
 
 # Keeps fabiomanz/homebrew-core equal to upstream plus our bottle blocks.
 # Runs daily so new formula versions arrive; anything whose version moved loses its stale
-# bottle here and gets picked up by the next build run.
+# bottle here and gets picked up by the build run that starts when this one completes.
 
 on:
   workflow_dispatch:
@@ -19,14 +19,24 @@ permissions:
 jobs:
   sync:
     runs-on: macos-26-intel
-    env:
+    # Normally under 10 minutes; a hung step should hand over to sync-retry quickly.
+    timeout-minutes: 30
+    # GitHub sometimes loses the hosted runner ("lost communication", no log). On
+    # 2026-10-29 that hit the Sync step, and nothing synced until it was re-run by hand
+    # hours later. A failure here is therefore not final: sync-retry runs the same steps
+    # on a fresh runner. sync_fork.sh rebuilds the fork from upstream every time and
+    # pushes once at the end, so a second run is safe.
+    continue-on-error: true
+    outputs:
+      done: ${{ steps.done.outputs.done }}
+    env: &sync-env
       FORK_REPO: fabiomanz/homebrew-core
       HOMEBREW_CORE_GIT_REMOTE: https://github.com/fabiomanz/homebrew-core
       HOMEBREW_NO_INSTALL_FROM_API: 1
       HOMEBREW_NO_ANALYTICS: 1
       HOMEBREW_NO_ASK: 1
       HOMEBREW_NO_ENV_HINTS: 1
-    steps:
+    steps: &sync-steps
       - uses: actions/checkout@v4
 
       - name: Point Homebrew at the fork
@@ -47,3 +57,17 @@ jobs:
 
       - name: Sync
         run: ./scripts/sync_fork.sh
+
+      - name: Mark as done
+        # sync-retry reads this. A job that lost its runner never gets here, whatever
+        # GitHub then reports as its result.
+        id: done
+        run: echo "done=true" >> "$GITHUB_OUTPUT"
+
+  sync-retry:
+    needs: sync
+    if: ${{ !cancelled() && needs.sync.outputs.done != 'true' }}
+    runs-on: macos-26-intel
+    timeout-minutes: 30
+    env: *sync-env
+    steps: *sync-steps
