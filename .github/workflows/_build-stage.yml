@@ -280,7 +280,9 @@ jobs:
         run: echo "done=true" >> "$GITHUB_OUTPUT"
 
   publish-retry:
-    name: publish ${{ inputs.stage }} (retry)
+    # A static name: GitHub leaves expressions unevaluated in the names of skipped jobs,
+    # which this one usually is. The caller's "wave N /" prefix names the stage.
+    name: publish retry
     needs: publish
     if: ${{ !cancelled() && needs.publish.outputs.done != 'true' }}
     runs-on: macos-26-intel
