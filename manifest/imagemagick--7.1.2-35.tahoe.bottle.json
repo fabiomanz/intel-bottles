@@ -2,10 +2,10 @@
   "imagemagick": {
     "formula": {
       "name": "imagemagick",
-      "pkg_version": "7.1.2-34",
+      "pkg_version": "7.1.2-35",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/i/imagemagick.rb",
       "tap_git_path": "Formula/i/imagemagick.rb",
-      "tap_git_revision": "c149dea2722e15d74403c8b68602f80862a3ea60",
+      "tap_git_revision": "a4d6d77ecbdcfa3f6275adb1f817ffac2fd0f94c",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Tools and libraries to manipulate images in select formats",
       "license": "ImageMagick",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-15T11:06:41Z",
+      "date": "2026-11-01T11:42:18Z",
       "tags": {
         "tahoe": {
-          "filename": "imagemagick-7.1.2-34.tahoe.bottle.tar.gz",
-          "local_filename": "imagemagick--7.1.2-34.tahoe.bottle.tar.gz",
-          "sha256": "c1d577992fd91bf63cbce955864272958b23f34f88921ec29f5565d00082a9c5",
+          "filename": "imagemagick-7.1.2-35.tahoe.bottle.tar.gz",
+          "local_filename": "imagemagick--7.1.2-35.tahoe.bottle.tar.gz",
+          "sha256": "b906d9a99ca7dcb09c0cd1466ab029c92552526b856ef816cc7dee706c7ea0aa",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "bin/Magick++-config",
               "bin/MagickCore-config",
@@ -328,15 +328,15 @@
               "lib/libMagickCore-7.Q16HDRI.10.dylib",
               "lib/libMagickCore-7.Q16HDRI.a"
             ],
-            "source_modified_time": 1792009719,
+            "source_modified_time": 1793488506,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "brotli",
-                "version": "1.2.0",
+                "version": "1.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.2.0",
+                "pkg_version": "1.2.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -360,10 +360,10 @@
               },
               {
                 "full_name": "jpeg-turbo",
-                "version": "3.2.0",
+                "version": "3.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.2.0",
+                "pkg_version": "3.2.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -378,11 +378,12 @@
               },
               {
                 "full_name": "aom",
-                "version": "3.15.2",
+                "version": "3.15.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.15.2",
-                "declared_directly": false
+                "pkg_version": "3.15.3",
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "libde265",
@@ -426,7 +427,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "1.10.0",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "zstd",
@@ -457,10 +459,10 @@
               },
               {
                 "full_name": "libheif",
-                "version": "1.23.6",
+                "version": "1.23.7",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.23.6",
+                "pkg_version": "1.23.7",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -505,82 +507,83 @@
           "binary_relocation_diagnostics": [
             {
               "path": "lib/libMagickCore-7.Q16HDRI.10.dylib",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/share/ImageMagick-7/",
-              "offset": 1486780
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-35/share/ImageMagick-7/",
+              "offset": 1490577
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.10.dylib",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/lib/ImageMagick//config-Q16HDRI/",
-              "offset": 1486840
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-35/lib/ImageMagick//config-Q16HDRI/",
+              "offset": 1490637
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.10.dylib",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/etc/ImageMagick-7/",
-              "offset": 1486912
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-35/etc/ImageMagick-7/",
+              "offset": 1490709
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.10.dylib",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/share/doc/ImageMagick-7/",
-              "offset": 1486970
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-35/share/doc/ImageMagick-7/",
+              "offset": 1490767
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.10.dylib",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/lib/ImageMagick//modules-Q16HDRI/coders",
-              "offset": 1534302
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-35/lib/ImageMagick//modules-Q16HDRI/coders",
+              "offset": 1538126
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.10.dylib",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/lib/ImageMagick//modules-Q16HDRI/filters",
-              "offset": 1534449
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-35/lib/ImageMagick//modules-Q16HDRI/filters",
+              "offset": 1538273
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.10.dylib",
-              "string": "file:///usr/local/Cellar/imagemagick/7.1.2-34/share/doc/ImageMagick-7/index.html",
-              "offset": 1572285
+              "string": "file:///usr/local/Cellar/imagemagick/7.1.2-35/share/doc/ImageMagick-7/index.html",
+              "offset": 1576233
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.a",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/share/ImageMagick-7/",
-              "offset": 655607
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-35/share/ImageMagick-7/",
+              "offset": 655903
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.a",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/lib/ImageMagick//config-Q16HDRI/",
-              "offset": 655667
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-35/lib/ImageMagick//config-Q16HDRI/",
+              "offset": 655963
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.a",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/etc/ImageMagick-7/",
-              "offset": 655739
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-35/etc/ImageMagick-7/",
+              "offset": 656035
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.a",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/share/doc/ImageMagick-7/",
-              "offset": 655797
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-35/share/doc/ImageMagick-7/",
+              "offset": 656093
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.a",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/lib/ImageMagick//modules-Q16HDRI/coders",
-              "offset": 1634701
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-35/lib/ImageMagick//modules-Q16HDRI/coders",
+              "offset": 1639861
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.a",
-              "string": "/usr/local/Cellar/imagemagick/7.1.2-34/lib/ImageMagick//modules-Q16HDRI/filters",
-              "offset": 1634848
+              "string": "/usr/local/Cellar/imagemagick/7.1.2-35/lib/ImageMagick//modules-Q16HDRI/filters",
+              "offset": 1640008
             },
             {
               "path": "lib/libMagickCore-7.Q16HDRI.a",
-              "string": "file:///usr/local/Cellar/imagemagick/7.1.2-34/share/doc/ImageMagick-7/index.html",
-              "offset": 2817941
+              "string": "file:///usr/local/Cellar/imagemagick/7.1.2-35/share/doc/ImageMagick-7/index.html",
+              "offset": 2825325
             }
           ],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
               "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
               "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
-              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
               "SPDXRef-Package-SPDXRef-libvmaf-3.2e.2.2e.1",
-              "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.2",
+              "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.3",
               "SPDXRef-Package-SPDXRef-libde265-1.2e.1.2e.3",
               "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
               "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
@@ -589,13 +592,36 @@
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
               "SPDXRef-Package-SPDXRef-libtiff-4.2e.7.2e.2",
               "SPDXRef-Package-SPDXRef-x265-4.2e.3",
-              "SPDXRef-Package-SPDXRef-libheif-1.2e.23.2e.6",
+              "SPDXRef-Package-SPDXRef-libheif-1.2e.23.2e.7",
               "SPDXRef-Package-SPDXRef-m4-1.2e.4.2e.21",
               "SPDXRef-Package-SPDXRef-libtool-2.2e.6.2e.2",
               "SPDXRef-Package-SPDXRef-little-cms2-2.2e.19.2e.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "name": "brotli",
+                "versionInfo": "1.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/brotli-1.2.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7591babe56002fd1d796a33d695c3e8fb53605a244608fa37b03ec206f7b804e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/brotli@1.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "name": "libpng",
@@ -643,24 +669,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
                 "name": "jpeg-turbo",
-                "versionInfo": "3.2.0",
+                "versionInfo": "3.2.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "3c7d19c475389bbb48a07f78f52473c8f49f458bd45b4453457cfec9c01601ed"
+                    "checksumValue": "1bb37d07262582aba709ca3f07596fbdf0649606f690b6800e72c6e99af2f9dd"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -689,24 +715,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.3",
                 "name": "aom",
-                "versionInfo": "3.15.2",
+                "versionInfo": "3.15.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aom-3.15.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aom-3.15.3.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "814c11733f00682ac6375f88fae3f747f9816f9422a869a27ab4b560a2957105"
+                    "checksumValue": "6b37e110b8c9202c9277e07a6aa5deecf035a358f83b22083b7834d33a5cc5d0"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/aom@3.15.2",
+                    "referenceLocator": "pkg:brew/aom@3.15.3",
                     "referenceType": "purl"
                   }
                 ]
@@ -896,24 +922,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libheif-1.2e.23.2e.6",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libheif-1.2e.23.2e.7",
                 "name": "libheif",
-                "versionInfo": "1.23.6",
+                "versionInfo": "1.23.7",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libheif-1.23.6.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libheif-1.23.7.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "909c5c6375012858d8e1c03a64fb94fcbc7a7c1edfa0a5ca1c4359352971ee22"
+                    "checksumValue": "710a2aea5ea465e9c252de8adb3f4810779bbd3048d3ea6919c403ccb28242ec"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libheif@1.23.6",
+                    "referenceLocator": "pkg:brew/libheif@1.23.7",
                     "referenceType": "purl"
                   }
                 ]
@@ -1002,6 +1028,11 @@
             ],
             "relationships": [
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-imagemagick"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-imagemagick"
@@ -1012,7 +1043,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-imagemagick"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-imagemagick"
               },
@@ -1022,7 +1053,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-imagemagick"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-imagemagick"
               },
@@ -1067,7 +1098,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-imagemagick"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libheif-1.2e.23.2e.6",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libheif-1.2e.23.2e.7",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-imagemagick"
               },
@@ -1732,6 +1763,7 @@
             "share/doc/ImageMagick-7/www/image/wizard.jpg",
             "share/doc/ImageMagick-7/www/image/wizard.png",
             "share/doc/ImageMagick-7/www/import/index.html",
+            "share/doc/ImageMagick-7/www/index-2.html",
             "share/doc/ImageMagick-7/www/index.html",
             "share/doc/ImageMagick-7/www/install-source/index.html",
             "share/doc/ImageMagick-7/www/jp2/index.html",
@@ -1793,7 +1825,7 @@
             "share/man/man1/montage.1",
             "share/man/man1/stream.1"
           ],
-          "installed_size": 25997531
+          "installed_size": 26484924
         }
       }
     }
