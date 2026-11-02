@@ -1,0 +1,106 @@
+{
+  "svt-av1": {
+    "formula": {
+      "name": "svt-av1",
+      "pkg_version": "4.3.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/svt-av1.rb",
+      "tap_git_path": "Formula/s/svt-av1.rb",
+      "tap_git_revision": "8e7a23a3001fb8db13c9f13e3d71f6a6f0f49e78",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "AV1 encoder",
+      "license": "BSD-3-Clause",
+      "homepage": "https://gitlab.com/AOMediaCodec/SVT-AV1"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-02T12:55:02Z",
+      "tags": {
+        "tahoe": {
+          "filename": "svt-av1-4.3.0.tahoe.bottle.tar.gz",
+          "local_filename": "svt-av1--4.3.0.tahoe.bottle.tar.gz",
+          "sha256": "21904e4496b6bb9237fc8bca08260956ac08eaa98f06309dcecb1ba165187fa5",
+          "tab": {
+            "homebrew_version": "7.0.12",
+            "changed_files": [
+              "lib/pkgconfig/SvtAv1Enc.pc"
+            ],
+            "linkage_files": [
+              "lib/libSvtAv1Enc.4.3.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1793604012,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-svt-av1-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/SvtAv1EncApp"
+          ],
+          "all_files": [
+            ".brew/svt-av1.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE-BSD2.md",
+            "LICENSE.md",
+            "README.md",
+            "bin/SvtAv1EncApp",
+            "include/svt-av1/EbConfigMacros.h",
+            "include/svt-av1/EbDebugMacros.h",
+            "include/svt-av1/EbSvtAv1.h",
+            "include/svt-av1/EbSvtAv1Enc.h",
+            "include/svt-av1/EbSvtAv1ErrorCodes.h",
+            "include/svt-av1/EbSvtAv1Formats.h",
+            "include/svt-av1/EbSvtAv1Metadata.h",
+            "lib/cmake/SVT-AV1/SVT-AV1-sharedTargets-release.cmake",
+            "lib/cmake/SVT-AV1/SVT-AV1-sharedTargets.cmake",
+            "lib/cmake/SVT-AV1/SVT-AV1Config.cmake",
+            "lib/cmake/SVT-AV1/SVT-AV1ConfigVersion.cmake",
+            "lib/libSvtAv1Enc.4.3.0.dylib",
+            "lib/libSvtAv1Enc.4.dylib",
+            "lib/libSvtAv1Enc.dylib",
+            "lib/pkgconfig/SvtAv1Enc.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 5830834
+        }
+      }
+    }
+  }
+}

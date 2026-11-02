@@ -2,10 +2,10 @@
   "pv": {
     "formula": {
       "name": "pv",
-      "pkg_version": "1.12.0",
+      "pkg_version": "1.12.7",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pv.rb",
       "tap_git_path": "Formula/p/pv.rb",
-      "tap_git_revision": "52b61f5ef99b03c18032c38a4a3de85d226a0e7e",
+      "tap_git_revision": "8e7a23a3001fb8db13c9f13e3d71f6a6f0f49e78",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Monitor data's progress through a pipe",
       "license": "Artistic-2.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-09-30T19:46:10Z",
+      "date": "2026-11-02T12:54:07Z",
       "tags": {
         "tahoe": {
-          "filename": "pv-1.12.0.tahoe.bottle.tar.gz",
-          "local_filename": "pv--1.12.0.tahoe.bottle.tar.gz",
-          "sha256": "2208354f0a1c3689a59611597a954bf8cfb7eca9150aa8670d2e60ad7c093e62",
+          "filename": "pv-1.12.7.tahoe.bottle.tar.gz",
+          "local_filename": "pv--1.12.7.tahoe.bottle.tar.gz",
+          "sha256": "f31be3d6403e6e910a4114eb6314553e5d68554e032e33c0625f18e51b4b2faa",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.12",
             "changed_files": [],
             "linkage_files": [
               "bin/pv"
@@ -30,7 +30,7 @@
             "binary_relocation_files": [
               "bin/pv"
             ],
-            "source_modified_time": 1789672467,
+            "source_modified_time": 1793571977,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -39,13 +39,15 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "0.19",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
-                "pkg_version": "1.4.2",
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -53,6 +55,7 @@
                 "full_name": "gettext",
                 "version": "1.0",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.0",
                 "declared_directly": true,
                 "compatibility_version": 1
@@ -71,18 +74,20 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/pv",
-              "string": "/usr/local/Cellar/pv/1.12.0/share/locale",
-              "offset": 76924
+              "string": "/usr/local/Cellar/pv/1.12.7/share/locale",
+              "offset": 77504
             }
           ],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "name": "json-c",
                 "versionInfo": "0.19",
                 "filesAnalyzed": false,
@@ -105,6 +110,52 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+                "name": "libunistring",
+                "versionInfo": "1.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.5.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9914a8c6c3e193c9f0b20df1d04a32f25d247f0cb62fd1501abf321e1d1d7757"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gettext-1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fe9d5337ff31e4f40b827b3463bd3fdc61b8f377277769f71e93baad0443bc96"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
                 "versionInfo": "26.6",
@@ -119,7 +170,17 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pv"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pv"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-pv"
               },
@@ -140,6 +201,7 @@
             "bin/pv",
             "sbom.spdx.json",
             "share/doc/pv/ACKNOWLEDGEMENTS.md",
+            "share/doc/pv/CONTRIBUTING.md",
             "share/doc/pv/COPYING",
             "share/doc/pv/DEVELOPERS.md",
             "share/doc/pv/INSTALL",
@@ -159,7 +221,7 @@
             "share/locale/uk/LC_MESSAGES/pv.mo",
             "share/man/man1/pv.1"
           ],
-          "installed_size": 384826
+          "installed_size": 395061
         }
       }
     }
