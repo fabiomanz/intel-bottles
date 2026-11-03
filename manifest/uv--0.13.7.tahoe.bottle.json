@@ -1,37 +1,34 @@
 {
-  "glab": {
+  "uv": {
     "formula": {
-      "name": "glab",
-      "pkg_version": "1.126.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/glab.rb",
-      "tap_git_path": "Formula/g/glab.rb",
-      "tap_git_revision": "f1755b40e90c30529ec736309e2543ab53ff410d",
+      "name": "uv",
+      "pkg_version": "0.13.7",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/u/uv.rb",
+      "tap_git_path": "Formula/u/uv.rb",
+      "tap_git_revision": "fb97f8e947b06bb8a7a11935d4753ea77582c5ad",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
-      "desc": "Open-source GitLab command-line tool",
-      "license": "MIT",
-      "homepage": "https://gitlab.com/gitlab-org/cli"
+      "desc": "Extremely fast Python package installer and resolver, written in Rust",
+      "license": "Apache-2.0 OR MIT",
+      "homepage": "https://docs.astral.sh/uv/"
     },
     "bottle": {
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-30T11:44:16Z",
+      "date": "2026-11-03T12:48:03Z",
       "tags": {
         "tahoe": {
-          "filename": "glab-1.126.0.tahoe.bottle.tar.gz",
-          "local_filename": "glab--1.126.0.tahoe.bottle.tar.gz",
-          "sha256": "9e87207a6bd76c71bcc74f5014fc8c715cdccef8ef7514d9131e14590b986b3e",
+          "filename": "uv-0.13.7.tahoe.bottle.tar.gz",
+          "local_filename": "uv--0.13.7.tahoe.bottle.tar.gz",
+          "sha256": "201292a1f773afbd0ce637d57d6f2a756332ca6a5f26030335e2489e6bcae370",
           "tab": {
-            "homebrew_version": "7.0.11",
+            "homebrew_version": "7.0.12",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1793222018,
+            "source_modified_time": 1793672032,
             "compiler": "clang",
             "runtime_dependencies": [],
-            "source": {
-              "scm_revision": "4dd0d32d18361db6c1c668eb4ac691c0d6edf255"
-            },
             "arch": "x86_64",
             "built_on": {
               "os": "Macintosh",
@@ -65,26 +62,34 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-glab-src"
+                "relatedSpdxElement": "SPDXRef-Archive-uv-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/glab"
+            "bin/uvx",
+            "bin/uv"
           ],
           "all_files": [
-            ".brew/glab.rb",
+            ".brew/uv.rb",
+            ".crates.toml",
+            ".crates2.json",
             "CHANGELOG.md",
             "INSTALL_RECEIPT.json",
-            "LICENSE",
+            "LICENSE-APACHE",
+            "LICENSE-MIT",
             "README.md",
-            "bin/glab",
-            "etc/bash_completion.d/glab",
+            "bin/uv",
+            "bin/uvx",
+            "etc/bash_completion.d/uv",
+            "etc/bash_completion.d/uvx",
             "sbom.spdx.json",
-            "share/fish/vendor_completions.d/glab.fish",
-            "share/zsh/site-functions/_glab"
+            "share/fish/vendor_completions.d/uv.fish",
+            "share/fish/vendor_completions.d/uvx.fish",
+            "share/zsh/site-functions/_uv",
+            "share/zsh/site-functions/_uvx"
           ],
-          "installed_size": 50739927
+          "installed_size": 39614426
         }
       }
     }
