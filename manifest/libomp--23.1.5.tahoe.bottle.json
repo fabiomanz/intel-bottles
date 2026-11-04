@@ -2,10 +2,10 @@
   "libomp": {
     "formula": {
       "name": "libomp",
-      "pkg_version": "23.1.4",
+      "pkg_version": "23.1.5",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libomp.rb",
       "tap_git_path": "Formula/lib/libomp.rb",
-      "tap_git_revision": "1da6686dfe3dba44aeef23f3415f6ddc9494634b",
+      "tap_git_revision": "e452aea7bc70c6614c7a92ed66d8233c956973db",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "LLVM's OpenMP runtime library",
       "license": "MIT",
@@ -15,20 +15,20 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-21T10:40:14Z",
+      "date": "2026-11-04T12:41:03Z",
       "tags": {
         "tahoe": {
-          "filename": "libomp-23.1.4.tahoe.bottle.tar.gz",
-          "local_filename": "libomp--23.1.4.tahoe.bottle.tar.gz",
-          "sha256": "cf297665875c5dc2d435fff0d4f70d9807ebc2408b8033be67c19679c42173cd",
+          "filename": "libomp-23.1.5.tahoe.bottle.tar.gz",
+          "local_filename": "libomp--23.1.5.tahoe.bottle.tar.gz",
+          "sha256": "7f8a917275ab6f55d3918c5b4f8ef9511949f0409cca2b71f0f4525a6cb809f8",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.12",
             "changed_files": [],
             "linkage_files": [
               "lib/libomp.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1792454232,
+            "source_modified_time": 1793616315,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",

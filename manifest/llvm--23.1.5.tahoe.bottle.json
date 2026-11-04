@@ -2,10 +2,10 @@
   "llvm": {
     "formula": {
       "name": "llvm",
-      "pkg_version": "23.1.4",
+      "pkg_version": "23.1.5",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/l/llvm.rb",
       "tap_git_path": "Formula/l/llvm.rb",
-      "tap_git_revision": "d9af69a168eaa52b752f86f45a7ff062ea7fc443",
+      "tap_git_revision": "e452aea7bc70c6614c7a92ed66d8233c956973db",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Next-gen compiler infrastructure",
       "license": "Apache-2.0 WITH LLVM-exception",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-23T13:58:06Z",
+      "date": "2026-11-04T17:43:47Z",
       "tags": {
         "tahoe": {
-          "filename": "llvm-23.1.4.tahoe.bottle.tar.gz",
-          "local_filename": "llvm--23.1.4.tahoe.bottle.tar.gz",
-          "sha256": "d888c622a3679e9ac6e343ebbca9acc6750a6a7fd7c05de84d07868a1fd0def0",
+          "filename": "llvm-23.1.5.tahoe.bottle.tar.gz",
+          "local_filename": "llvm--23.1.5.tahoe.bottle.tar.gz",
+          "sha256": "12ade458290074f68c2dc80cec9eacb1914a9eee0d948f785537bec40a61280a",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.12",
             "changed_files": [
               "lib/python3.10/site-packages/clang/cindex.py",
               "lib/python3.11/site-packages/clang/cindex.py",
@@ -84,7 +84,7 @@
               "lib/unwind/libunwind.1.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1792454232,
+            "source_modified_time": 1793616315,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -93,7 +93,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "1.10.0",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "xz",
@@ -115,10 +116,10 @@
               },
               {
                 "full_name": "z3",
-                "version": "5.3.1",
+                "version": "5.3.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "5.3.1",
+                "pkg_version": "5.3.3",
                 "declared_directly": true,
                 "compatibility_version": 5
               }
@@ -139,7 +140,7 @@
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.1",
+              "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.3",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -213,24 +214,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.3",
                 "name": "z3",
-                "versionInfo": "5.3.1",
+                "versionInfo": "5.3.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/z3-5.3.1.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/z3-5.3.3.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "6cebcd053cc46a5595d492e8259f167a94e8eee2726915d8824efd525ba4779f"
+                    "checksumValue": "11826f5deb28738d718f880dc2e019fb9d8fa67a304f1b85c19556877284fecb"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/z3@5.3.1",
+                    "referenceLocator": "pkg:brew/z3@5.3.3",
                     "referenceType": "purl"
                   }
                 ]
@@ -265,7 +266,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-llvm"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-llvm"
               },
@@ -449,7 +450,7 @@
             "INSTALL_RECEIPT.json",
             "LICENSE.TXT",
             "README.md",
-            "Toolchains/LLVM23.1.4.xctoolchain/Info.plist",
+            "Toolchains/LLVM23.1.5.xctoolchain/Info.plist",
             "bin/FileCheck",
             "bin/UnicodeNameMappingGenerator",
             "bin/amdgpu-arch",
@@ -9783,7 +9784,7 @@
             "share/vim/vimfiles/syntax/mlir.vim",
             "share/vim/vimfiles/syntax/tablegen.vim"
           ],
-          "installed_size": 1662502111
+          "installed_size": 1662523820
         }
       }
     }
