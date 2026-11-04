@@ -194,6 +194,7 @@ libxtst
 libyaml
 litehtml
 little-cms2
+llama.cpp
 llhttp
 llvm
 llvm@22
@@ -238,6 +239,7 @@ openjph
 openssl@1.1
 openssl@3
 openssl@4
+openvpn
 opus
 orc
 p11-kit
@@ -311,6 +313,7 @@ rav1e
 rclone
 readline
 rpds-py
+rsync
 rtmpdump
 rubberband
 ruby
