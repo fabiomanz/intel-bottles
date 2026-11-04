@@ -91,14 +91,6 @@ for formula in $TODO; do
   echo "::group::build $formula"
   df -h / | tail -1
 
-  # `brew reinstall` has no --build-bottle flag, so anything already present (GitHub's
-  # runner image ships a fair few formulae preinstalled) has to be removed first --
-  # otherwise `brew install` no-ops and `brew bottle` then refuses the formula.
-  if brew list --formula --versions "$formula" >/dev/null 2>&1; then
-    echo "    already installed; removing so it can be rebuilt for bottling"
-    brew uninstall --ignore-dependencies --force "$formula"
-  fi
-
   # Formula-specific runner setup in ci-patches/<name>.setup.sh (tools the build needs that
   # the runner image lacks). A failing setup stops the build.
   ci_setup="$SCRIPT_DIR/../ci-patches/$formula.setup.sh"
@@ -159,6 +151,24 @@ for formula in $TODO; do
   if [ "$fetched" != 1 ]; then
     echo "    could not download sources for $formula" >&2
     exit 1
+  fi
+
+  # Pour dependencies now, while brew can still download. The uninstall below can break
+  # the curl brew downloads with: the runner image's Homebrew curl links libnghttp2 and
+  # libnghttp3, so on 2026-11-03 and 11-04 removing them before fetching failed every
+  # attempt with "Library not loaded", reported as a failed download. Non-fatal: the
+  # install below also handles dependencies, and it can recover from link conflicts.
+  brew install --only-dependencies --build-bottle "$formula" ||
+    echo "    WARNING: installing dependencies of $formula failed; the build will retry"
+
+  # `brew reinstall` has no --build-bottle flag, so anything already present (GitHub's
+  # runner image ships a fair few formulae preinstalled) has to be removed first --
+  # otherwise `brew install` no-ops and `brew bottle` then refuses the formula. Must stay
+  # after the fetch and dependency install above; until the rebuild finishes, nothing
+  # may need the network. No autoremove: it would remove the dependencies just poured.
+  if brew list --formula --versions "$formula" >/dev/null 2>&1; then
+    echo "    already installed; removing so it can be rebuilt for bottling"
+    HOMEBREW_NO_AUTOREMOVE=1 brew uninstall --ignore-dependencies --force "$formula"
   fi
 
   # GitHub's macOS image ships its own Python and friends in /usr/local, so pouring a
