@@ -1,0 +1,311 @@
+{
+  "openvpn": {
+    "formula": {
+      "name": "openvpn",
+      "pkg_version": "2.7.8_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/o/openvpn.rb",
+      "tap_git_path": "Formula/o/openvpn.rb",
+      "tap_git_revision": "962034ae6d29742fbf7cc98edd435e6c196da518",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "SSL/TLS VPN implementing OSI layer 2 or 3 secure network extension",
+      "license": "GPL-2.0-only WITH openvpn-openssl-exception",
+      "homepage": "https://openvpn.net/community/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-11-04T18:04:04Z",
+      "tags": {
+        "tahoe": {
+          "filename": "openvpn-2.7.8_1.tahoe.bottle.tar.gz",
+          "local_filename": "openvpn--2.7.8_1.tahoe.bottle.tar.gz",
+          "sha256": "c1cf6fac7075ef69a1940b3bcad15cb27abe9b2768f9734472b054230865bacf",
+          "tab": {
+            "homebrew_version": "7.0.12",
+            "changed_files": [
+              "share/doc/openvpn/samples/sample-config-files/openvpn-startup.sh",
+              "sh.brew.openvpn.plist",
+              "sh.brew.openvpn.service",
+              "share/doc/openvpn/samples/sample-plugins/Makefile"
+            ],
+            "linkage_files": [
+              "sbin/openvpn"
+            ],
+            "binary_relocation_files": [
+              "sbin/openvpn"
+            ],
+            "source_modified_time": 1791291556,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lzo",
+                "version": "2.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.10",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-10-20",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-10-20",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pkcs11-helper",
+                "version": "1.31.0",
+                "revision": 1,
+                "pkg_version": "1.31.0_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "sbin/openvpn",
+              "string": "/usr/local/Cellar/openvpn/2.7.8_1/libexec/openvpn/dns-updown",
+              "offset": 541037
+            },
+            {
+              "path": "sbin/openvpn",
+              "string": "/usr/local/Cellar/openvpn/2.7.8_1/lib/openvpn/plugins",
+              "offset": 572177
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.10.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "name": "ca-certificates",
+                "versionInfo": "2026-10-20",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+                "name": "openssl@4",
+                "versionInfo": "4.1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/openssl%404-4.1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "665a16d966b1a4542d1e9dd6022bba18468402ce6a82edd578a484de82a1429f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-openvpn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-openvpn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-openvpn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-openvpn-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "sbin/openvpn"
+          ],
+          "all_files": [
+            ".bottle/etc/openvpn/client.conf",
+            ".bottle/etc/openvpn/server.conf",
+            ".brew/openvpn.rb",
+            "AUTHORS",
+            "COPYING",
+            "COPYRIGHT.GPL",
+            "ChangeLog",
+            "Changes.rst",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "include/openvpn-msg.h",
+            "include/openvpn-plugin.h",
+            "lib/openvpn/plugins/openvpn-plugin-auth-pam.so",
+            "lib/openvpn/plugins/openvpn-plugin-down-root.so",
+            "libexec/openvpn/dns-updown",
+            "sbin/openvpn",
+            "sbom.spdx.json",
+            "sh.brew.openvpn.plist",
+            "sh.brew.openvpn.service",
+            "share/doc/openvpn/COPYING",
+            "share/doc/openvpn/COPYRIGHT.GPL",
+            "share/doc/openvpn/Changes.rst",
+            "share/doc/openvpn/README",
+            "share/doc/openvpn/README.auth-pam",
+            "share/doc/openvpn/README.down-root",
+            "share/doc/openvpn/gui-notes.txt",
+            "share/doc/openvpn/management-notes.txt",
+            "share/doc/openvpn/samples/sample-config-files/README",
+            "share/doc/openvpn/samples/sample-config-files/firewall.sh",
+            "share/doc/openvpn/samples/sample-config-files/loopback-client",
+            "share/doc/openvpn/samples/sample-config-files/loopback-server",
+            "share/doc/openvpn/samples/sample-config-files/openvpn-shutdown.sh",
+            "share/doc/openvpn/samples/sample-config-files/openvpn-startup.sh",
+            "share/doc/openvpn/samples/sample-keys/README",
+            "share/doc/openvpn/samples/sample-keys/ca.crt",
+            "share/doc/openvpn/samples/sample-keys/ca.key",
+            "share/doc/openvpn/samples/sample-keys/client-ec.crt",
+            "share/doc/openvpn/samples/sample-keys/client-ec.key",
+            "share/doc/openvpn/samples/sample-keys/client-pass.key",
+            "share/doc/openvpn/samples/sample-keys/client.crt",
+            "share/doc/openvpn/samples/sample-keys/client.key",
+            "share/doc/openvpn/samples/sample-keys/client.p12",
+            "share/doc/openvpn/samples/sample-keys/ffdhe2048.pem",
+            "share/doc/openvpn/samples/sample-keys/gen-sample-keys.sh",
+            "share/doc/openvpn/samples/sample-keys/openssl.cnf",
+            "share/doc/openvpn/samples/sample-keys/server-ec.crt",
+            "share/doc/openvpn/samples/sample-keys/server-ec.key",
+            "share/doc/openvpn/samples/sample-keys/server.crt",
+            "share/doc/openvpn/samples/sample-keys/server.key",
+            "share/doc/openvpn/samples/sample-keys/ta.key",
+            "share/doc/openvpn/samples/sample-plugins/Makefile",
+            "share/doc/openvpn/samples/sample-plugins/Makefile.am",
+            "share/doc/openvpn/samples/sample-plugins/Makefile.in",
+            "share/doc/openvpn/samples/sample-plugins/Makefile.plugins",
+            "share/doc/openvpn/samples/sample-plugins/README",
+            "share/doc/openvpn/samples/sample-plugins/client-connect/README",
+            "share/doc/openvpn/samples/sample-plugins/client-connect/sample-client-connect.c",
+            "share/doc/openvpn/samples/sample-plugins/defer/multi-auth.c",
+            "share/doc/openvpn/samples/sample-plugins/defer/winbuild",
+            "share/doc/openvpn/samples/sample-plugins/keying-material-exporter-demo/README",
+            "share/doc/openvpn/samples/sample-plugins/keying-material-exporter-demo/client.ovpn",
+            "share/doc/openvpn/samples/sample-plugins/keying-material-exporter-demo/http-client.py",
+            "share/doc/openvpn/samples/sample-plugins/keying-material-exporter-demo/http-server.py",
+            "share/doc/openvpn/samples/sample-plugins/keying-material-exporter-demo/keyingmaterialexporter.c",
+            "share/doc/openvpn/samples/sample-plugins/keying-material-exporter-demo/server.ovpn",
+            "share/doc/openvpn/samples/sample-plugins/log/log.c",
+            "share/doc/openvpn/samples/sample-plugins/log/log_v3.c",
+            "share/doc/openvpn/samples/sample-plugins/log/winbuild",
+            "share/doc/openvpn/samples/sample-plugins/simple/base64.c",
+            "share/doc/openvpn/samples/sample-plugins/simple/simple.c",
+            "share/doc/openvpn/samples/sample-plugins/simple/simple.def",
+            "share/doc/openvpn/samples/sample-plugins/simple/winbuild",
+            "share/doc/openvpn/samples/sample-scripts/auth-pam.pl",
+            "share/doc/openvpn/samples/sample-scripts/bridge-start",
+            "share/doc/openvpn/samples/sample-scripts/bridge-stop",
+            "share/doc/openvpn/samples/sample-scripts/totpauth.py",
+            "share/doc/openvpn/samples/sample-scripts/ucn.pl",
+            "share/doc/openvpn/samples/sample-scripts/verify-cn",
+            "share/man/man5/openvpn-examples.5",
+            "share/man/man8/openvpn.8"
+          ],
+          "installed_size": 1767106
+        }
+      }
+    }
+  }
+}
