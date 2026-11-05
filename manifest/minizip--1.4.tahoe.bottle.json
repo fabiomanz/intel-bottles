@@ -1,36 +1,36 @@
 {
-  "lz4": {
+  "minizip": {
     "formula": {
-      "name": "lz4",
-      "pkg_version": "1.10.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/l/lz4.rb",
-      "tap_git_path": "Formula/l/lz4.rb",
-      "tap_git_revision": "74ae27082c23f2c3d5690b20ee5a8dcfb2d47e13",
+      "name": "minizip",
+      "pkg_version": "1.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/m/minizip.rb",
+      "tap_git_path": "Formula/m/minizip.rb",
+      "tap_git_revision": "0883d50210e2e6ddaf510febbbacb8c0655db95d",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
-      "desc": "Extremely Fast Compression algorithm",
-      "license": "BSD-2-Clause",
-      "homepage": "https://lz4.github.io/lz4/"
+      "desc": "C library for zip/unzip via zLib",
+      "license": "Zlib",
+      "homepage": "https://www.winimage.com/zLibDll/minizip.html"
     },
     "bottle": {
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-04T19:56:47Z",
+      "date": "2026-11-05T12:50:34Z",
       "tags": {
         "tahoe": {
-          "filename": "lz4-1.10.0.tahoe.bottle.tar.gz",
-          "local_filename": "lz4--1.10.0.tahoe.bottle.tar.gz",
-          "sha256": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24",
+          "filename": "minizip-1.4.tahoe.bottle.tar.gz",
+          "local_filename": "minizip--1.4.tahoe.bottle.tar.gz",
+          "sha256": "7de91b3a27864d30332895d1c393ca3b3b36dae1af8bdfd560ea2ba2e997e520",
           "tab": {
-            "homebrew_version": "6.0.21",
+            "homebrew_version": "7.0.12",
             "changed_files": [
-              "lib/pkgconfig/liblz4.pc"
+              "lib/pkgconfig/minizip.pc"
             ],
             "linkage_files": [
-              "lib/liblz4.1.10.0.dylib"
+              "lib/libminizip.1.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1721582989,
+            "source_modified_time": 1793853130,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -66,43 +66,30 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-lz4-src"
+                "relatedSpdxElement": "SPDXRef-Archive-minizip-src"
               }
             ]
           },
-          "path_exec_files": [
-            "bin/lz4cat",
-            "bin/lz4",
-            "bin/lz4c",
-            "bin/unlz4"
-          ],
+          "path_exec_files": [],
           "all_files": [
-            ".brew/lz4.rb",
+            ".brew/minizip.rb",
+            "ChangeLog",
             "INSTALL_RECEIPT.json",
             "LICENSE",
-            "NEWS",
-            "README.md",
-            "bin/lz4",
-            "bin/lz4c",
-            "bin/lz4cat",
-            "bin/unlz4",
-            "include/lz4.h",
-            "include/lz4file.h",
-            "include/lz4frame.h",
-            "include/lz4frame_static.h",
-            "include/lz4hc.h",
-            "lib/liblz4.1.10.0.dylib",
-            "lib/liblz4.1.dylib",
-            "lib/liblz4.a",
-            "lib/liblz4.dylib",
-            "lib/pkgconfig/liblz4.pc",
-            "sbom.spdx.json",
-            "share/man/man1/lz4.1",
-            "share/man/man1/lz4c.1",
-            "share/man/man1/lz4cat.1",
-            "share/man/man1/unlz4.1"
+            "README",
+            "include/minizip/crypt.h",
+            "include/minizip/ints.h",
+            "include/minizip/ioapi.h",
+            "include/minizip/mztools.h",
+            "include/minizip/unzip.h",
+            "include/minizip/zip.h",
+            "lib/libminizip.1.dylib",
+            "lib/libminizip.a",
+            "lib/libminizip.dylib",
+            "lib/pkgconfig/minizip.pc",
+            "sbom.spdx.json"
           ],
-          "installed_size": 716411
+          "installed_size": 246785
         }
       }
     }

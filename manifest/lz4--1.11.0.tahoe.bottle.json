@@ -1,0 +1,114 @@
+{
+  "lz4": {
+    "formula": {
+      "name": "lz4",
+      "pkg_version": "1.11.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/l/lz4.rb",
+      "tap_git_path": "Formula/l/lz4.rb",
+      "tap_git_revision": "0883d50210e2e6ddaf510febbbacb8c0655db95d",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Extremely Fast Compression algorithm",
+      "license": "BSD-2-Clause",
+      "homepage": "https://lz4.github.io/lz4/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-05T12:51:30Z",
+      "tags": {
+        "tahoe": {
+          "filename": "lz4-1.11.0.tahoe.bottle.tar.gz",
+          "local_filename": "lz4--1.11.0.tahoe.bottle.tar.gz",
+          "sha256": "148579158b70e1bd8601d8e9d7a23904ed48132e7d8660ab930d8c7c3824a912",
+          "tab": {
+            "homebrew_version": "7.0.12",
+            "changed_files": [
+              "lib/pkgconfig/liblz4.pc"
+            ],
+            "linkage_files": [
+              "lib/liblz4.1.11.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1793753896,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-lz4-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/lz4cat",
+            "bin/lz4",
+            "bin/lz4c",
+            "bin/unlz4"
+          ],
+          "all_files": [
+            ".brew/lz4.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "NEWS",
+            "README.md",
+            "bin/lz4",
+            "bin/lz4c",
+            "bin/lz4cat",
+            "bin/unlz4",
+            "include/lz4.h",
+            "include/lz4file.h",
+            "include/lz4frame.h",
+            "include/lz4frame_static.h",
+            "include/lz4hc.h",
+            "lib/cmake/lz4/lz4Config.cmake",
+            "lib/cmake/lz4/lz4ConfigVersion.cmake",
+            "lib/cmake/lz4/lz4Targets-release.cmake",
+            "lib/cmake/lz4/lz4Targets.cmake",
+            "lib/liblz4.1.11.0.dylib",
+            "lib/liblz4.1.dylib",
+            "lib/liblz4.a",
+            "lib/liblz4.dylib",
+            "lib/pkgconfig/liblz4.pc",
+            "sbom.spdx.json",
+            "share/man/man1/lz4.1",
+            "share/man/man1/lz4c.1",
+            "share/man/man1/lz4cat.1",
+            "share/man/man1/unlz4.1"
+          ],
+          "installed_size": 783577
+        }
+      }
+    }
+  }
+}
