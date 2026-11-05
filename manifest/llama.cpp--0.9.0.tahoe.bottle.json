@@ -2,10 +2,10 @@
   "llama.cpp": {
     "formula": {
       "name": "llama.cpp",
-      "pkg_version": "0.8.0",
+      "pkg_version": "0.9.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/l/llama.cpp.rb",
       "tap_git_path": "Formula/l/llama.cpp.rb",
-      "tap_git_revision": "962034ae6d29742fbf7cc98edd435e6c196da518",
+      "tap_git_revision": "0d1a65a09b8ada9b2703be256f1812d8e1093fe9",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "LLM inference in C/C++",
       "license": "MIT",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-04T18:19:58Z",
+      "date": "2026-11-05T13:32:40Z",
       "tags": {
         "tahoe": {
-          "filename": "llama.cpp-0.8.0.tahoe.bottle.tar.gz",
-          "local_filename": "llama.cpp--0.8.0.tahoe.bottle.tar.gz",
-          "sha256": "7aa2534059ed42fc3923e63c15a6c372bc60398a3c07da3f86222aaff094c0c5",
+          "filename": "llama.cpp-0.9.0.tahoe.bottle.tar.gz",
+          "local_filename": "llama.cpp--0.9.0.tahoe.bottle.tar.gz",
+          "sha256": "f74f28f7b7ee366cded57a80c040c7dd13131ba6e5ab219e3c70d48ce8b053d0",
           "tab": {
             "homebrew_version": "7.0.12",
             "changed_files": [
@@ -67,17 +67,17 @@
               "lib/libllama-batched-bench-impl.dylib",
               "lib/libllama-bench-impl.dylib",
               "lib/libllama-cli-impl.dylib",
-              "lib/libllama-common.0.8.0.dylib",
+              "lib/libllama-common.0.9.0.dylib",
               "lib/libllama-completion-impl.dylib",
               "lib/libllama-fit-params-impl.dylib",
               "lib/libllama-perplexity-impl.dylib",
               "lib/libllama-quantize-impl.dylib",
               "lib/libllama-server-impl.dylib",
-              "lib/libllama.0.8.0.dylib",
-              "lib/libmtmd.0.8.0.dylib"
+              "lib/libllama.0.9.0.dylib",
+              "lib/libmtmd.0.9.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1793187038,
+            "source_modified_time": 1793793986,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -91,18 +91,18 @@
               },
               {
                 "full_name": "ggml",
-                "version": "0.28.0",
+                "version": "0.29.0",
                 "revision": 0,
-                "pkg_version": "0.28.0",
+                "pkg_version": "0.29.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-10-20",
+                "version": "2026-11-05",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-10-20",
+                "pkg_version": "2026-11-05",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -117,7 +117,7 @@
               }
             ],
             "source": {
-              "scm_revision": "8642541b255bfb5dc39cd351a178be09013a55d6"
+              "scm_revision": "cd959bae99ff4bed22bef2604f45241c09bbb8c8"
             },
             "arch": "x86_64",
             "built_on": {
@@ -133,7 +133,7 @@
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.5",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
               "SPDXRef-Compiler"
             ],
@@ -162,24 +162,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "name": "ca-certificates",
-                "versionInfo": "2026-10-20",
+                "versionInfo": "2026-11-05",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
+                    "checksumValue": "8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-11-05",
                     "referenceType": "purl"
                   }
                 ]
@@ -227,7 +227,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-llama.2e.cpp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-llama.2e.cpp"
               },
@@ -335,7 +335,7 @@
             "lib/libllama-batched-bench-impl.dylib",
             "lib/libllama-bench-impl.dylib",
             "lib/libllama-cli-impl.dylib",
-            "lib/libllama-common.0.8.0.dylib",
+            "lib/libllama-common.0.9.0.dylib",
             "lib/libllama-common.0.dylib",
             "lib/libllama-common.dylib",
             "lib/libllama-completion-impl.dylib",
@@ -343,17 +343,17 @@
             "lib/libllama-perplexity-impl.dylib",
             "lib/libllama-quantize-impl.dylib",
             "lib/libllama-server-impl.dylib",
-            "lib/libllama.0.8.0.dylib",
+            "lib/libllama.0.9.0.dylib",
             "lib/libllama.0.dylib",
             "lib/libllama.dylib",
-            "lib/libmtmd.0.8.0.dylib",
+            "lib/libmtmd.0.9.0.dylib",
             "lib/libmtmd.0.dylib",
             "lib/libmtmd.dylib",
             "lib/pkgconfig/llama.pc",
             "sbom.spdx.json",
             "share/llama.cpp/test-sampling.cpp"
           ],
-          "installed_size": 20356051
+          "installed_size": 20693709
         }
       }
     }

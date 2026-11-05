@@ -1,51 +1,51 @@
 {
-  "aws-c-io": {
+  "aws-c-mqtt": {
     "formula": {
-      "name": "aws-c-io",
-      "pkg_version": "1.1.1",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/a/aws-c-io.rb",
-      "tap_git_path": "Formula/a/aws-c-io.rb",
-      "tap_git_revision": "a993d48b6e610f23c6d42d214cd65dbe6d34ee57",
+      "name": "aws-c-mqtt",
+      "pkg_version": "1.1.2_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/a/aws-c-mqtt.rb",
+      "tap_git_path": "Formula/a/aws-c-mqtt.rb",
+      "tap_git_revision": "0d1a65a09b8ada9b2703be256f1812d8e1093fe9",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
-      "desc": "Event driven framework for implementing application protocols",
+      "desc": "C99 implementation of the MQTT 3.1.1 specification",
       "license": "Apache-2.0",
-      "homepage": "https://github.com/awslabs/aws-c-io"
+      "homepage": "https://github.com/awslabs/aws-c-mqtt"
     },
     "bottle": {
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-27T10:59:14Z",
+      "date": "2026-11-05T13:08:54Z",
       "tags": {
         "tahoe": {
-          "filename": "aws-c-io-1.1.1.tahoe.bottle.tar.gz",
-          "local_filename": "aws-c-io--1.1.1.tahoe.bottle.tar.gz",
-          "sha256": "bd9168db2c61d375ca6db924610c625f7bda86ea8fe31e51f28b5591bbded757",
+          "filename": "aws-c-mqtt-1.1.2_1.tahoe.bottle.tar.gz",
+          "local_filename": "aws-c-mqtt--1.1.2_1.tahoe.bottle.tar.gz",
+          "sha256": "d00af3bf67044c8defc52eddfc7fbdb6d5e17c37ccc114b44eba0f68f0c65b0e",
           "tab": {
-            "homebrew_version": "7.0.11",
+            "homebrew_version": "7.0.12",
             "changed_files": [],
             "linkage_files": [
-              "lib/libaws-c-io.1.1.1.dylib"
+              "lib/libaws-c-mqtt.1.1.2.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1793039012,
+            "source_modified_time": 1792093562,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "aws-c-common",
-                "version": "1.0.3",
+                "version": "1.0.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.0.3",
+                "pkg_version": "1.0.5",
                 "declared_directly": true,
                 "compatibility_version": 2
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-10-20",
+                "version": "2026-11-05",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-10-20",
+                "pkg_version": "2026-11-05",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -55,7 +55,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "4.1.0",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "aws-c-cal",
@@ -63,16 +64,42 @@
                 "revision": 1,
                 "bottle_rebuild": 0,
                 "pkg_version": "1.0.0_1",
-                "declared_directly": true,
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "aws-c-compression",
+                "version": "1.0.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.0",
+                "declared_directly": false,
                 "compatibility_version": 2
               },
               {
                 "full_name": "s2n",
-                "version": "1.7.12",
+                "version": "1.7.13",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.7.12",
-                "declared_directly": true
+                "pkg_version": "1.7.13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "aws-c-io",
+                "version": "1.1.2",
+                "revision": 0,
+                "pkg_version": "1.1.2",
+                "declared_directly": true,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "aws-c-http",
+                "version": "1.2.0",
+                "revision": 0,
+                "pkg_version": "1.2.0",
+                "declared_directly": true,
+                "compatibility_version": 4
               }
             ],
             "arch": "x86_64",
@@ -88,56 +115,57 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-aws-c-common-1.2e.0.2e.3",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-aws-c-common-1.2e.0.2e.5",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
               "SPDXRef-Package-SPDXRef-aws-c-cal-1.2e.0.2e.0.5f.1",
-              "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.12",
+              "SPDXRef-Package-SPDXRef-aws-c-compression-1.2e.0.2e.0",
+              "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.13",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-common-1.2e.0.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-common-1.2e.0.2e.5",
                 "name": "aws-c-common",
-                "versionInfo": "1.0.3",
+                "versionInfo": "1.0.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aws-c-common-1.0.3.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aws-c-common-1.0.5.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "8dda63b89de5e7525fb611ba2f0ff17d6915ca668837118e21ab6bd95c791eba"
+                    "checksumValue": "af99b89887ba8ee01692c2bbd85f4ac3d106e59a8a7f10bc2455768b7c94b74f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/aws-c-common@1.0.3",
+                    "referenceLocator": "pkg:brew/aws-c-common@1.0.5",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "name": "ca-certificates",
-                "versionInfo": "2026-10-20",
+                "versionInfo": "2026-11-05",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
+                    "checksumValue": "8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-11-05",
                     "referenceType": "purl"
                   }
                 ]
@@ -189,24 +217,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.12",
-                "name": "s2n",
-                "versionInfo": "1.7.12",
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-compression-1.2e.0.2e.0",
+                "name": "aws-c-compression",
+                "versionInfo": "1.0.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/s2n-1.7.12.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aws-c-compression-1.0.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "499e4120e90f17674a9fe6057ff24fe381bcc0552d8b3639262fcbe361b35bc0"
+                    "checksumValue": "21bd52dcaa916479b7889a79036428e2597f35d09fbe6e793689888832e9058d"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/s2n@1.7.12",
+                    "referenceLocator": "pkg:brew/aws-c-compression@1.0.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.13",
+                "name": "s2n",
+                "versionInfo": "1.7.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/s2n-1.7.13.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ac4bcf31c9ef38520d4469dd223e3501e51dd0378ab36cf47114c02578e6e800"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/s2n@1.7.13",
                     "referenceType": "purl"
                   }
                 ]
@@ -226,84 +277,68 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-common-1.2e.0.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-common-1.2e.0.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-io"
+                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-mqtt"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-io"
+                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-mqtt"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-io"
+                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-mqtt"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-cal-1.2e.0.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-io"
+                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-mqtt"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.12",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-compression-1.2e.0.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-io"
+                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-mqtt"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-mqtt"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-aws-c-io-src"
+                "relatedSpdxElement": "SPDXRef-Archive-aws-c-mqtt-src"
               }
             ]
           },
           "path_exec_files": [],
           "all_files": [
-            ".brew/aws-c-io.rb",
+            ".brew/aws-c-mqtt.rb",
             "CHANGELOG.md",
             "INSTALL_RECEIPT.json",
             "LICENSE",
             "NOTICE",
             "README.md",
-            "include/aws/io/async_stream.h",
-            "include/aws/io/channel.h",
-            "include/aws/io/channel_bootstrap.h",
-            "include/aws/io/event_loop.h",
-            "include/aws/io/exports.h",
-            "include/aws/io/file_utils.h",
-            "include/aws/io/future.h",
-            "include/aws/io/host_resolver.h",
-            "include/aws/io/io.h",
-            "include/aws/io/l4_proxy.h",
-            "include/aws/io/logging.h",
-            "include/aws/io/message_pool.h",
-            "include/aws/io/pem.h",
-            "include/aws/io/pipe.h",
-            "include/aws/io/pkcs11.h",
-            "include/aws/io/retry_strategy.h",
-            "include/aws/io/shared_library.h",
-            "include/aws/io/socket.h",
-            "include/aws/io/socket_channel_handler.h",
-            "include/aws/io/socks5.h",
-            "include/aws/io/statistics.h",
-            "include/aws/io/stream.h",
-            "include/aws/io/tls_channel_handler.h",
-            "include/aws/io/uri.h",
-            "include/aws/testing/async_stream_tester.h",
-            "include/aws/testing/echo_server.h",
-            "include/aws/testing/io_testing_channel.h",
-            "include/aws/testing/socks5_server.h",
-            "include/aws/testing/stream_tester.h",
-            "include/aws/testing/tcp_client.h",
-            "lib/cmake/aws-c-io/aws-c-io-config.cmake",
-            "lib/cmake/aws-c-io/shared/aws-c-io-targets-release.cmake",
-            "lib/cmake/aws-c-io/shared/aws-c-io-targets.cmake",
-            "lib/libaws-c-io.1.1.1.dylib",
-            "lib/libaws-c-io.1.1.dylib",
-            "lib/libaws-c-io.dylib",
+            "include/aws/mqtt/client.h",
+            "include/aws/mqtt/exports.h",
+            "include/aws/mqtt/mqtt.h",
+            "include/aws/mqtt/private/mqtt_client_test_helper.h",
+            "include/aws/mqtt/request-response/request_response_client.h",
+            "include/aws/mqtt/v5/mqtt5_client.h",
+            "include/aws/mqtt/v5/mqtt5_listener.h",
+            "include/aws/mqtt/v5/mqtt5_packet_storage.h",
+            "include/aws/mqtt/v5/mqtt5_types.h",
+            "lib/cmake/aws-c-mqtt/aws-c-mqtt-config.cmake",
+            "lib/cmake/aws-c-mqtt/shared/aws-c-mqtt-targets-release.cmake",
+            "lib/cmake/aws-c-mqtt/shared/aws-c-mqtt-targets.cmake",
+            "lib/libaws-c-mqtt.1.1.2.dylib",
+            "lib/libaws-c-mqtt.1.1.dylib",
+            "lib/libaws-c-mqtt.dylib",
             "sbom.spdx.json"
           ],
-          "installed_size": 835672
+          "installed_size": 471444
         }
       }
     }

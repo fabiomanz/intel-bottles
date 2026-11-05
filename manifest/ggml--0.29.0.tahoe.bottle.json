@@ -2,10 +2,10 @@
   "ggml": {
     "formula": {
       "name": "ggml",
-      "pkg_version": "0.28.0",
+      "pkg_version": "0.29.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/ggml.rb",
       "tap_git_path": "Formula/g/ggml.rb",
-      "tap_git_revision": "962034ae6d29742fbf7cc98edd435e6c196da518",
+      "tap_git_revision": "0d1a65a09b8ada9b2703be256f1812d8e1093fe9",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Tensor library for machine learning",
       "license": "MIT",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-11-04T18:08:49Z",
+      "date": "2026-11-05T13:19:20Z",
       "tags": {
         "tahoe": {
-          "filename": "ggml-0.28.0.tahoe.bottle.tar.gz",
-          "local_filename": "ggml--0.28.0.tahoe.bottle.tar.gz",
-          "sha256": "2c38b22693d288378664b6ba2540bb06f87e839a20105abbb4f6af5aa873ccb0",
+          "filename": "ggml-0.29.0.tahoe.bottle.tar.gz",
+          "local_filename": "ggml--0.29.0.tahoe.bottle.tar.gz",
+          "sha256": "095e07f6c427b3a8f8f59cff93ea5396b2d62760e513bfcd9b7cb909af381f23",
           "tab": {
             "homebrew_version": "7.0.12",
             "changed_files": [
@@ -28,8 +28,8 @@
               "lib/pkgconfig/ggml.pc"
             ],
             "linkage_files": [
-              "lib/libggml-base.0.28.0.dylib",
-              "lib/libggml.0.28.0.dylib",
+              "lib/libggml-base.0.29.0.dylib",
+              "lib/libggml.0.29.0.dylib",
               "libexec/libggml-cpu-alderlake.so",
               "libexec/libggml-cpu-cannonlake.so",
               "libexec/libggml-cpu-cascadelake.so",
@@ -45,9 +45,9 @@
               "libexec/libggml-cpu-zen4.so"
             ],
             "binary_relocation_files": [
-              "lib/libggml.0.28.0.dylib"
+              "lib/libggml.0.29.0.dylib"
             ],
-            "source_modified_time": 1793183094,
+            "source_modified_time": 1793784464,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -72,8 +72,8 @@
           },
           "binary_relocation_diagnostics": [
             {
-              "path": "lib/libggml.0.28.0.dylib",
-              "string": "/usr/local/Cellar/ggml/0.28.0/libexec",
+              "path": "lib/libggml.0.29.0.dylib",
+              "string": "/usr/local/Cellar/ggml/0.29.0/libexec",
               "offset": 18266
             }
           ],
@@ -159,10 +159,10 @@
             "include/gguf.h",
             "lib/cmake/ggml/ggml-config-version.cmake",
             "lib/cmake/ggml/ggml-config.cmake",
-            "lib/libggml-base.0.28.0.dylib",
+            "lib/libggml-base.0.29.0.dylib",
             "lib/libggml-base.0.dylib",
             "lib/libggml-base.dylib",
-            "lib/libggml.0.28.0.dylib",
+            "lib/libggml.0.29.0.dylib",
             "lib/libggml.0.dylib",
             "lib/libggml.dylib",
             "lib/pkgconfig/ggml.pc",
@@ -182,7 +182,7 @@
             "libexec/libggml-cpu-zen4.so",
             "sbom.spdx.json"
           ],
-          "installed_size": 10012631
+          "installed_size": 10288141
         }
       }
     }
