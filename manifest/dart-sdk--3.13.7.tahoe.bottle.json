@@ -2,10 +2,10 @@
   "dart-sdk": {
     "formula": {
       "name": "dart-sdk",
-      "pkg_version": "3.13.5",
+      "pkg_version": "3.13.7",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dart-sdk.rb",
       "tap_git_path": "Formula/d/dart-sdk.rb",
-      "tap_git_revision": "e21a79262d5bdbc28f0fa7dd6555ef3e558d0c7e",
+      "tap_git_revision": "6c7064df43cae2e1697cc08118b2dd78ba9afab8",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Dart Language SDK, including the VM, dart2js, core libraries, and more",
       "license": "BSD-3-Clause",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-04T17:44:19Z",
+      "date": "2026-11-07T12:30:57Z",
       "tags": {
         "tahoe": {
-          "filename": "dart-sdk-3.13.5.tahoe.bottle.tar.gz",
-          "local_filename": "dart-sdk--3.13.5.tahoe.bottle.tar.gz",
-          "sha256": "d70c32659002fcc0411e2de0d75e7083599f2bea7133b46062760d2595164283",
+          "filename": "dart-sdk-3.13.7.tahoe.bottle.tar.gz",
+          "local_filename": "dart-sdk--3.13.7.tahoe.bottle.tar.gz",
+          "sha256": "dc796002af271fb6fa5a2cf1afaa962f4d6f9ac4454c2f94d6b8054549419064",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.12",
             "changed_files": [],
             "linkage_files": [
               "libexec/bin/snapshots/analysis_server_aot.dart.snapshot",
@@ -38,7 +38,7 @@
               "libexec/bin/snapshots/kernel_worker_aot.dart.snapshot"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790668852,
+            "source_modified_time": 1792704537,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -1135,7 +1135,7 @@
             "libexec/version",
             "sbom.spdx.json"
           ],
-          "installed_size": 638721218
+          "installed_size": 638878789
         }
       }
     }

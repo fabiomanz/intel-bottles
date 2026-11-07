@@ -2,10 +2,10 @@
   "dartaotruntime": {
     "formula": {
       "name": "dartaotruntime",
-      "pkg_version": "3.13.5",
+      "pkg_version": "3.13.7",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dartaotruntime.rb",
       "tap_git_path": "Formula/d/dartaotruntime.rb",
-      "tap_git_revision": "e21a79262d5bdbc28f0fa7dd6555ef3e558d0c7e",
+      "tap_git_revision": "6c7064df43cae2e1697cc08118b2dd78ba9afab8",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Command-line tool for running AOT-compiled snapshots of Dart code",
       "license": "BSD-3-Clause",
@@ -15,20 +15,23 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-04T17:55:58Z",
+      "date": "2026-11-07T12:45:42Z",
       "tags": {
         "tahoe": {
-          "filename": "dartaotruntime-3.13.5.tahoe.bottle.tar.gz",
-          "local_filename": "dartaotruntime--3.13.5.tahoe.bottle.tar.gz",
-          "sha256": "60c9e0bf2e9a7bd8f2e2656395172a6588cd68bfc7178131a68802c8bbac8f75",
+          "filename": "dartaotruntime-3.13.7.tahoe.bottle.tar.gz",
+          "local_filename": "dartaotruntime--3.13.7.tahoe.bottle.tar.gz",
+          "sha256": "f8d0210fa05f07edf16c8e991b86874533e14ae9dfcec1c76591e4e699f4d19b",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.12",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1791135864,
+            "source_modified_time": 1792704537,
             "compiler": "clang",
             "runtime_dependencies": [],
+            "source": {
+              "scm_revision": "416e33b0ffaef062a60ec966bb8c82ed2b83f128"
+            },
             "arch": "x86_64",
             "built_on": {
               "os": "Macintosh",
@@ -79,7 +82,7 @@
             "bin/dartaotruntime",
             "sbom.spdx.json"
           ],
-          "installed_size": 5540671
+          "installed_size": 5591122
         }
       }
     }
