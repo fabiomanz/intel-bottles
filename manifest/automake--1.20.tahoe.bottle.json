@@ -1,0 +1,302 @@
+{
+  "automake": {
+    "formula": {
+      "name": "automake",
+      "pkg_version": "1.20",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/a/automake.rb",
+      "tap_git_path": "Formula/a/automake.rb",
+      "tap_git_revision": "f356fb963b05b0cb9c3857e0cf98bb080490be5a",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Tool for generating GNU Standards-compliant Makefiles",
+      "license": "GPL-3.0-or-later",
+      "homepage": "https://www.gnu.org/software/automake/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-11-08T11:37:15Z",
+      "tags": {
+        "tahoe": {
+          "filename": "automake-1.20.tahoe.bottle.tar.gz",
+          "local_filename": "automake--1.20.tahoe.bottle.tar.gz",
+          "sha256": "75127b3ac74eef8ba54eae28d922a56146f627e1e16e7b5814ccfd17edd8fb9d",
+          "tab": {
+            "homebrew_version": "7.0.12",
+            "changed_files": [
+              "bin/aclocal",
+              "bin/aclocal-1.20",
+              "bin/automake",
+              "bin/automake-1.20",
+              "share/automake-1.20/Automake/Config.pm"
+            ],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1794064472,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "m4",
+                "version": "1.4.21",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.21",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "autoconf",
+                "version": "2.73",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.73",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-m4-1.2e.4.2e.21",
+              "SPDXRef-Package-SPDXRef-autoconf-2.2e.73",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-m4-1.2e.4.2e.21",
+                "name": "m4",
+                "versionInfo": "1.4.21",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/m4/blobs/sha256:a7da5c29823df4a3c80723639e17153dc6fc71621d87cdc8f5e88f628764c816",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a7da5c29823df4a3c80723639e17153dc6fc71621d87cdc8f5e88f628764c816"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/m4@1.4.21",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-autoconf-2.2e.73",
+                "name": "autoconf",
+                "versionInfo": "2.73",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND (GPL-3.0-or-later WITH Autoconf-exception-3.0)",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/autoconf/blobs/sha256:bc785e044f4bec3efa3e9875f154905dad8a249e6e57d2a3ab0250eebdc866e8",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "bc785e044f4bec3efa3e9875f154905dad8a249e6e57d2a3ab0250eebdc866e8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/autoconf@2.73",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-m4-1.2e.4.2e.21",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-automake"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-autoconf-2.2e.73",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-automake"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-automake-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/aclocal",
+            "bin/automake-1.20",
+            "bin/aclocal-1.20",
+            "bin/automake"
+          ],
+          "all_files": [
+            ".brew/automake.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "bin/aclocal",
+            "bin/aclocal-1.20",
+            "bin/automake",
+            "bin/automake-1.20",
+            "sbom.spdx.json",
+            "share/aclocal/README",
+            "share/aclocal/dirlist",
+            "share/aclocal-1.20/amversion.m4",
+            "share/aclocal-1.20/ar-lib.m4",
+            "share/aclocal-1.20/as.m4",
+            "share/aclocal-1.20/auxdir.m4",
+            "share/aclocal-1.20/cond-if.m4",
+            "share/aclocal-1.20/cond.m4",
+            "share/aclocal-1.20/depend.m4",
+            "share/aclocal-1.20/depout.m4",
+            "share/aclocal-1.20/dmalloc.m4",
+            "share/aclocal-1.20/extra-recurs.m4",
+            "share/aclocal-1.20/gcj.m4",
+            "share/aclocal-1.20/init.m4",
+            "share/aclocal-1.20/install-sh.m4",
+            "share/aclocal-1.20/internal/ac-config-macro-dirs.m4",
+            "share/aclocal-1.20/jobserver.m4",
+            "share/aclocal-1.20/lead-dot.m4",
+            "share/aclocal-1.20/lex.m4",
+            "share/aclocal-1.20/lispdir.m4",
+            "share/aclocal-1.20/maintainer.m4",
+            "share/aclocal-1.20/make.m4",
+            "share/aclocal-1.20/missing.m4",
+            "share/aclocal-1.20/mkdirp.m4",
+            "share/aclocal-1.20/obsolete.m4",
+            "share/aclocal-1.20/optional.m4",
+            "share/aclocal-1.20/options.m4",
+            "share/aclocal-1.20/prog-cc-c-o.m4",
+            "share/aclocal-1.20/python.m4",
+            "share/aclocal-1.20/rmf.m4",
+            "share/aclocal-1.20/runlog.m4",
+            "share/aclocal-1.20/sanity.m4",
+            "share/aclocal-1.20/silent.m4",
+            "share/aclocal-1.20/strip.m4",
+            "share/aclocal-1.20/substnot.m4",
+            "share/aclocal-1.20/tar.m4",
+            "share/aclocal-1.20/upc.m4",
+            "share/aclocal-1.20/vala.m4",
+            "share/aclocal-1.20/xargsn.m4",
+            "share/automake-1.20/Automake/ChannelDefs.pm",
+            "share/automake-1.20/Automake/Channels.pm",
+            "share/automake-1.20/Automake/Condition.pm",
+            "share/automake-1.20/Automake/Config.pm",
+            "share/automake-1.20/Automake/Configure_ac.pm",
+            "share/automake-1.20/Automake/DisjConditions.pm",
+            "share/automake-1.20/Automake/FileUtils.pm",
+            "share/automake-1.20/Automake/General.pm",
+            "share/automake-1.20/Automake/Getopt.pm",
+            "share/automake-1.20/Automake/Item.pm",
+            "share/automake-1.20/Automake/ItemDef.pm",
+            "share/automake-1.20/Automake/Language.pm",
+            "share/automake-1.20/Automake/Location.pm",
+            "share/automake-1.20/Automake/Options.pm",
+            "share/automake-1.20/Automake/Rule.pm",
+            "share/automake-1.20/Automake/RuleDef.pm",
+            "share/automake-1.20/Automake/VarDef.pm",
+            "share/automake-1.20/Automake/Variable.pm",
+            "share/automake-1.20/Automake/Version.pm",
+            "share/automake-1.20/Automake/Wrap.pm",
+            "share/automake-1.20/Automake/XFile.pm",
+            "share/automake-1.20/COPYING",
+            "share/automake-1.20/INSTALL",
+            "share/automake-1.20/am/check.am",
+            "share/automake-1.20/am/check2.am",
+            "share/automake-1.20/am/clean-hdr.am",
+            "share/automake-1.20/am/clean.am",
+            "share/automake-1.20/am/compile.am",
+            "share/automake-1.20/am/configure.am",
+            "share/automake-1.20/am/data.am",
+            "share/automake-1.20/am/dejagnu.am",
+            "share/automake-1.20/am/depend.am",
+            "share/automake-1.20/am/depend2.am",
+            "share/automake-1.20/am/distdir.am",
+            "share/automake-1.20/am/footer.am",
+            "share/automake-1.20/am/header-vars.am",
+            "share/automake-1.20/am/header.am",
+            "share/automake-1.20/am/inst-vars.am",
+            "share/automake-1.20/am/install.am",
+            "share/automake-1.20/am/java.am",
+            "share/automake-1.20/am/lang-compile.am",
+            "share/automake-1.20/am/lex.am",
+            "share/automake-1.20/am/library.am",
+            "share/automake-1.20/am/libs.am",
+            "share/automake-1.20/am/libtool.am",
+            "share/automake-1.20/am/lisp.am",
+            "share/automake-1.20/am/ltlib.am",
+            "share/automake-1.20/am/ltlibrary.am",
+            "share/automake-1.20/am/mans-vars.am",
+            "share/automake-1.20/am/mans.am",
+            "share/automake-1.20/am/program.am",
+            "share/automake-1.20/am/progs.am",
+            "share/automake-1.20/am/python.am",
+            "share/automake-1.20/am/remake-hdr.am",
+            "share/automake-1.20/am/scripts.am",
+            "share/automake-1.20/am/subdirs.am",
+            "share/automake-1.20/am/tags.am",
+            "share/automake-1.20/am/texi-vers.am",
+            "share/automake-1.20/am/texibuild.am",
+            "share/automake-1.20/am/texinfos.am",
+            "share/automake-1.20/am/vala.am",
+            "share/automake-1.20/am/yacc.am",
+            "share/automake-1.20/ar-lib",
+            "share/automake-1.20/compile",
+            "share/automake-1.20/config.guess",
+            "share/automake-1.20/config.sub",
+            "share/automake-1.20/depcomp",
+            "share/automake-1.20/install-sh",
+            "share/automake-1.20/mdate-sh",
+            "share/automake-1.20/missing",
+            "share/automake-1.20/mkinstalldirs",
+            "share/automake-1.20/py-compile",
+            "share/automake-1.20/tap-driver.sh",
+            "share/automake-1.20/test-driver",
+            "share/automake-1.20/texinfo.tex",
+            "share/automake-1.20/ylwrap",
+            "share/doc/automake/amhello-1.0.tar.gz",
+            "share/info/automake-history.info",
+            "share/info/automake.info",
+            "share/info/automake.info-1",
+            "share/info/automake.info-2",
+            "share/info/automake.info-3",
+            "share/man/man1/aclocal-1.20.1",
+            "share/man/man1/aclocal.1",
+            "share/man/man1/automake-1.20.1",
+            "share/man/man1/automake.1"
+          ],
+          "installed_size": 3672533
+        }
+      }
+    }
+  }
+}

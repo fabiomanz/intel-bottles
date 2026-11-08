@@ -1,0 +1,112 @@
+{
+  "fmt": {
+    "formula": {
+      "name": "fmt",
+      "pkg_version": "12.2.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/f/fmt.rb",
+      "tap_git_path": "Formula/f/fmt.rb",
+      "tap_git_revision": "f356fb963b05b0cb9c3857e0cf98bb080490be5a",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Open-source formatting library for C++",
+      "license": "MIT",
+      "homepage": "https://fmt.dev/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-08T11:37:24Z",
+      "tags": {
+        "tahoe": {
+          "filename": "fmt-12.2.1.tahoe.bottle.tar.gz",
+          "local_filename": "fmt--12.2.1.tahoe.bottle.tar.gz",
+          "sha256": "d2301b5e8c37b34d767a860f96a921b914d9c01a34df30965f7af964a72718d6",
+          "tab": {
+            "homebrew_version": "7.0.12",
+            "changed_files": [
+              "lib/pkgconfig/fmt.pc"
+            ],
+            "linkage_files": [
+              "lib/libfmt.12.2.1.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1794069696,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-fmt-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/fmt.rb",
+            "ChangeLog.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "include/fmt/args.h",
+            "include/fmt/base.h",
+            "include/fmt/chrono.h",
+            "include/fmt/color.h",
+            "include/fmt/compile.h",
+            "include/fmt/core.h",
+            "include/fmt/fmt-c.h",
+            "include/fmt/format-inl.h",
+            "include/fmt/format.h",
+            "include/fmt/os.h",
+            "include/fmt/ostream.h",
+            "include/fmt/printf.h",
+            "include/fmt/ranges.h",
+            "include/fmt/std.h",
+            "include/fmt/xchar.h",
+            "lib/cmake/fmt/fmt-config-version.cmake",
+            "lib/cmake/fmt/fmt-config.cmake",
+            "lib/cmake/fmt/fmt-targets-release.cmake",
+            "lib/cmake/fmt/fmt-targets.cmake",
+            "lib/libfmt-c.a",
+            "lib/libfmt.12.2.1.dylib",
+            "lib/libfmt.12.dylib",
+            "lib/libfmt.a",
+            "lib/libfmt.dylib",
+            "lib/pkgconfig/fmt.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 1067780
+        }
+      }
+    }
+  }
+}
