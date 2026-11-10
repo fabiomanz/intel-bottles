@@ -1,0 +1,625 @@
+{
+  "rxvt-unicode": {
+    "formula": {
+      "name": "rxvt-unicode",
+      "pkg_version": "9.32",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/r/rxvt-unicode.rb",
+      "tap_git_path": "Formula/r/rxvt-unicode.rb",
+      "tap_git_revision": "f321ce63aa8babdc96158a6612e7379bdf59c511",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Rxvt fork with Unicode support",
+      "license": "GPL-3.0-only",
+      "homepage": "https://software.schmorp.de/pkg/rxvt-unicode.html"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-11-10T13:22:45Z",
+      "tags": {
+        "tahoe": {
+          "filename": "rxvt-unicode-9.32.tahoe.bottle.tar.gz",
+          "local_filename": "rxvt-unicode--9.32.tahoe.bottle.tar.gz",
+          "sha256": "556a423612585b0503145190d305cb69751ddb797249a4b2884b0b16b90790d8",
+          "tab": {
+            "homebrew_version": "7.0.13",
+            "changed_files": [
+              "lib/urxvt/perl/background",
+              "lib/urxvt/perl/bell-command",
+              "lib/urxvt/perl/block-graphics-to-ascii",
+              "lib/urxvt/perl/clickthrough",
+              "lib/urxvt/perl/clipboard-osc",
+              "lib/urxvt/perl/confirm-paste",
+              "lib/urxvt/perl/digital-clock",
+              "lib/urxvt/perl/eval",
+              "lib/urxvt/perl/example-refresh-hooks",
+              "lib/urxvt/perl/keysym-list",
+              "lib/urxvt/perl/kuake",
+              "lib/urxvt/perl/matcher",
+              "lib/urxvt/perl/option-popup",
+              "lib/urxvt/perl/overlay-osc",
+              "lib/urxvt/perl/readline",
+              "lib/urxvt/perl/remote-clipboard",
+              "lib/urxvt/perl/searchable-scrollback",
+              "lib/urxvt/perl/selection",
+              "lib/urxvt/perl/selection-autotransform",
+              "lib/urxvt/perl/selection-pastebin",
+              "lib/urxvt/perl/selection-popup",
+              "lib/urxvt/perl/selection-to-clipboard",
+              "lib/urxvt/perl/tabbed",
+              "lib/urxvt/perl/urxvt-popup",
+              "lib/urxvt/perl/xim-onthespot"
+            ],
+            "linkage_files": [
+              "bin/urclock",
+              "bin/urxvt",
+              "bin/urxvtd"
+            ],
+            "binary_relocation_files": [
+              "bin/urxvt",
+              "bin/urxvtd"
+            ],
+            "source_modified_time": 1794289460,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "brotli",
+                "version": "1.2.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpng",
+                "version": "1.6.59",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.59",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "freetype",
+                "version": "2.15.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.15.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fontconfig",
+                "version": "2.18.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.18.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xorgproto",
+                "version": "2026.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxau",
+                "version": "1.0.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxdmcp",
+                "version": "1.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxcb",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.17.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libx11",
+                "version": "1.8.14",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.14",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxext",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.7",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxrender",
+                "version": "0.9.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.9.13",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxft",
+                "version": "2.3.9",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.9",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libice",
+                "version": "1.1.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libsm",
+                "version": "1.2.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxt",
+                "version": "1.3.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxmu",
+                "version": "1.3.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/urxvt",
+              "string": "/usr/local/Cellar/rxvt-unicode/9.32/lib/urxvt",
+              "offset": 1047459
+            },
+            {
+              "path": "bin/urxvtd",
+              "string": "/usr/local/Cellar/rxvt-unicode/9.32/lib/urxvt",
+              "offset": 308589
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+              "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+              "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
+              "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "name": "brotli",
+                "versionInfo": "1.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/brotli-1.2.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7591babe56002fd1d796a33d695c3e8fb53605a244608fa37b03ec206f7b804e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/brotli@1.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+                "name": "libpng",
+                "versionInfo": "1.6.59",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.59.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "983550222f14d7db234a39119dc66c0de74d9b79b74f83ecf4b81a6b694d40de"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpng@1.6.59",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
+                "name": "freetype",
+                "versionInfo": "2.15.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "FTL",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.15.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "df5ad00e9d611b80d19df81741a935c2d9bceef6feb79b4c322dda96507d5d36"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/freetype@2.15.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+                "name": "libunistring",
+                "versionInfo": "1.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.5.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9914a8c6c3e193c9f0b20df1d04a32f25d247f0cb62fd1501abf321e1d1d7757"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gettext-1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fe9d5337ff31e4f40b827b3463bd3fdc61b8f377277769f71e93baad0443bc96"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+                "name": "xorgproto",
+                "versionInfo": "2026.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xorgproto-2026.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5286465a0d9c7954041bcec0ebee5641b6c8018b3f679eaa8595b029a44c2af9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xorgproto@2026.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
+                "name": "libx11",
+                "versionInfo": "1.8.14",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.14.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c6d26e6032e1a786e706b9c8679d0592276fd0a3007caadf760498808e1f0163"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libx11@1.8.14",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+                "name": "libxrender",
+                "versionInfo": "0.9.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libxrender-0.9.13.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "aebc979e80b79b0064a432ebeea298ceec187e5df77855f413e6fcb51571b769"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libxrender@0.9.13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rxvt-unicode"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rxvt-unicode"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rxvt-unicode"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rxvt-unicode"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rxvt-unicode"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rxvt-unicode"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rxvt-unicode"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rxvt-unicode"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rxvt-unicode"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-rxvt-unicode-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/urxvt",
+            "bin/urclock",
+            "bin/urxvtc",
+            "bin/urxvtd"
+          ],
+          "all_files": [
+            ".brew/rxvt-unicode.rb",
+            "COPYING",
+            "Changes",
+            "INSTALL_RECEIPT.json",
+            "bin/urclock",
+            "bin/urxvt",
+            "bin/urxvtc",
+            "bin/urxvtd",
+            "lib/urxvt/perl/background",
+            "lib/urxvt/perl/bell-command",
+            "lib/urxvt/perl/block-graphics-to-ascii",
+            "lib/urxvt/perl/clickthrough",
+            "lib/urxvt/perl/clipboard-osc",
+            "lib/urxvt/perl/confirm-paste",
+            "lib/urxvt/perl/digital-clock",
+            "lib/urxvt/perl/eval",
+            "lib/urxvt/perl/example-refresh-hooks",
+            "lib/urxvt/perl/keysym-list",
+            "lib/urxvt/perl/kuake",
+            "lib/urxvt/perl/matcher",
+            "lib/urxvt/perl/option-popup",
+            "lib/urxvt/perl/overlay-osc",
+            "lib/urxvt/perl/readline",
+            "lib/urxvt/perl/remote-clipboard",
+            "lib/urxvt/perl/searchable-scrollback",
+            "lib/urxvt/perl/selection",
+            "lib/urxvt/perl/selection-autotransform",
+            "lib/urxvt/perl/selection-pastebin",
+            "lib/urxvt/perl/selection-popup",
+            "lib/urxvt/perl/selection-to-clipboard",
+            "lib/urxvt/perl/tabbed",
+            "lib/urxvt/perl/urxvt-popup",
+            "lib/urxvt/perl/xim-onthespot",
+            "lib/urxvt/urxvt.pm",
+            "sbom.spdx.json",
+            "share/man/man1/urclock.1",
+            "share/man/man1/urxvt-background.1",
+            "share/man/man1/urxvt-bell-command.1",
+            "share/man/man1/urxvt-block-graphics-to-ascii.1",
+            "share/man/man1/urxvt-clickthrough.1",
+            "share/man/man1/urxvt-clipboard-osc.1",
+            "share/man/man1/urxvt-confirm-paste.1",
+            "share/man/man1/urxvt-digital-clock.1",
+            "share/man/man1/urxvt-eval.1",
+            "share/man/man1/urxvt-example-refresh-hooks.1",
+            "share/man/man1/urxvt-extensions.1",
+            "share/man/man1/urxvt-keysym-list.1",
+            "share/man/man1/urxvt-kuake.1",
+            "share/man/man1/urxvt-matcher.1",
+            "share/man/man1/urxvt-option-popup.1",
+            "share/man/man1/urxvt-overlay-osc.1",
+            "share/man/man1/urxvt-readline.1",
+            "share/man/man1/urxvt-remote-clipboard.1",
+            "share/man/man1/urxvt-searchable-scrollback.1",
+            "share/man/man1/urxvt-selection-autotransform.1",
+            "share/man/man1/urxvt-selection-pastebin.1",
+            "share/man/man1/urxvt-selection-popup.1",
+            "share/man/man1/urxvt-selection-to-clipboard.1",
+            "share/man/man1/urxvt-selection.1",
+            "share/man/man1/urxvt-tabbed.1",
+            "share/man/man1/urxvt-xim-onthespot.1",
+            "share/man/man1/urxvt.1",
+            "share/man/man1/urxvtc.1",
+            "share/man/man1/urxvtd.1",
+            "share/man/man3/urxvtperl.3",
+            "share/man/man7/urxvt.7"
+          ],
+          "installed_size": 3435499
+        }
+      }
+    }
+  }
+}
