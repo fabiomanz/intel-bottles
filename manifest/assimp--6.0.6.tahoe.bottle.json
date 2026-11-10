@@ -1,0 +1,187 @@
+{
+  "assimp": {
+    "formula": {
+      "name": "assimp",
+      "pkg_version": "6.0.6",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/a/assimp.rb",
+      "tap_git_path": "Formula/a/assimp.rb",
+      "tap_git_revision": "ea5d3deccd42c94054477f836258db2274dd6c22",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Portable library for importing many well-known 3D model formats",
+      "license": "BSD-3-Clause AND CC-PDDC AND MIT AND BSL-1.0 AND Unlicense AND Zlib",
+      "homepage": "https://www.assimp.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-10T13:09:52Z",
+      "tags": {
+        "tahoe": {
+          "filename": "assimp-6.0.6.tahoe.bottle.tar.gz",
+          "local_filename": "assimp--6.0.6.tahoe.bottle.tar.gz",
+          "sha256": "22a60386fd46a3f8af86fec9c5781c1a51a8b3a8a684c5a9cbef72c7b93baea2",
+          "tab": {
+            "homebrew_version": "7.0.13",
+            "changed_files": [
+              "lib/pkgconfig/assimp.pc"
+            ],
+            "linkage_files": [
+              "lib/libassimp.6.0.6.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1794256345,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-assimp-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/assimp"
+          ],
+          "all_files": [
+            ".brew/assimp.rb",
+            "CHANGES.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "Readme.md",
+            "bin/assimp",
+            "include/assimp/AssertHandler.h",
+            "include/assimp/Base64.hpp",
+            "include/assimp/BaseImporter.h",
+            "include/assimp/Bitmap.h",
+            "include/assimp/BlobIOSystem.h",
+            "include/assimp/ByteSwapper.h",
+            "include/assimp/ColladaMetaData.h",
+            "include/assimp/Compiler/poppack1.h",
+            "include/assimp/Compiler/pstdint.h",
+            "include/assimp/Compiler/pushpack1.h",
+            "include/assimp/CreateAnimMesh.h",
+            "include/assimp/DefaultIOStream.h",
+            "include/assimp/DefaultIOSystem.h",
+            "include/assimp/DefaultLogger.hpp",
+            "include/assimp/Exceptional.h",
+            "include/assimp/Exporter.hpp",
+            "include/assimp/GenericProperty.h",
+            "include/assimp/GltfMaterial.h",
+            "include/assimp/Hash.h",
+            "include/assimp/IOStream.hpp",
+            "include/assimp/IOStreamBuffer.h",
+            "include/assimp/IOSystem.hpp",
+            "include/assimp/Importer.hpp",
+            "include/assimp/LineSplitter.h",
+            "include/assimp/LogAux.h",
+            "include/assimp/LogStream.hpp",
+            "include/assimp/Logger.hpp",
+            "include/assimp/MathFunctions.h",
+            "include/assimp/MemoryIOWrapper.h",
+            "include/assimp/NullLogger.hpp",
+            "include/assimp/ObjMaterial.h",
+            "include/assimp/ParsingUtils.h",
+            "include/assimp/Profiler.h",
+            "include/assimp/ProgressHandler.hpp",
+            "include/assimp/RemoveComments.h",
+            "include/assimp/SGSpatialSort.h",
+            "include/assimp/SceneCombiner.h",
+            "include/assimp/SkeletonMeshBuilder.h",
+            "include/assimp/SmallVector.h",
+            "include/assimp/SmoothingGroups.h",
+            "include/assimp/SmoothingGroups.inl",
+            "include/assimp/SpatialSort.h",
+            "include/assimp/StandardShapes.h",
+            "include/assimp/StreamReader.h",
+            "include/assimp/StreamWriter.h",
+            "include/assimp/StringComparison.h",
+            "include/assimp/StringUtils.h",
+            "include/assimp/Subdivision.h",
+            "include/assimp/TinyFormatter.h",
+            "include/assimp/Vertex.h",
+            "include/assimp/XMLTools.h",
+            "include/assimp/XmlParser.h",
+            "include/assimp/ZipArchiveIOSystem.h",
+            "include/assimp/aabb.h",
+            "include/assimp/ai_assert.h",
+            "include/assimp/anim.h",
+            "include/assimp/camera.h",
+            "include/assimp/cexport.h",
+            "include/assimp/cfileio.h",
+            "include/assimp/cimport.h",
+            "include/assimp/color4.h",
+            "include/assimp/color4.inl",
+            "include/assimp/commonMetaData.h",
+            "include/assimp/config.h",
+            "include/assimp/defs.h",
+            "include/assimp/fast_atof.h",
+            "include/assimp/importerdesc.h",
+            "include/assimp/light.h",
+            "include/assimp/material.h",
+            "include/assimp/material.inl",
+            "include/assimp/matrix3x3.h",
+            "include/assimp/matrix3x3.inl",
+            "include/assimp/matrix4x4.h",
+            "include/assimp/matrix4x4.inl",
+            "include/assimp/mesh.h",
+            "include/assimp/metadata.h",
+            "include/assimp/pbrmaterial.h",
+            "include/assimp/postprocess.h",
+            "include/assimp/qnan.h",
+            "include/assimp/quaternion.h",
+            "include/assimp/quaternion.inl",
+            "include/assimp/scene.h",
+            "include/assimp/texture.h",
+            "include/assimp/types.h",
+            "include/assimp/vector2.h",
+            "include/assimp/vector2.inl",
+            "include/assimp/vector3.h",
+            "include/assimp/vector3.inl",
+            "include/assimp/version.h",
+            "lib/cmake/assimp-6.0/assimpConfig.cmake",
+            "lib/cmake/assimp-6.0/assimpConfigVersion.cmake",
+            "lib/cmake/assimp-6.0/assimpTargets-release.cmake",
+            "lib/cmake/assimp-6.0/assimpTargets.cmake",
+            "lib/libassimp.6.0.6.dylib",
+            "lib/libassimp.6.dylib",
+            "lib/libassimp.dylib",
+            "lib/pkgconfig/assimp.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 10997866
+        }
+      }
+    }
+  }
+}
