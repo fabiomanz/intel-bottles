@@ -2,10 +2,10 @@
   "z3": {
     "formula": {
       "name": "z3",
-      "pkg_version": "5.3.3",
+      "pkg_version": "5.4.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/z/z3.rb",
       "tap_git_path": "Formula/z/z3.rb",
-      "tap_git_revision": "f1755b40e90c30529ec736309e2543ab53ff410d",
+      "tap_git_revision": "03347aefbcedc5b1242906175b70c2c569ccc49e",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "High-performance theorem prover",
       "license": "MIT",
@@ -15,20 +15,20 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-30T12:10:19Z",
+      "date": "2026-11-11T12:46:54Z",
       "tags": {
         "tahoe": {
-          "filename": "z3-5.3.3.tahoe.bottle.tar.gz",
-          "local_filename": "z3--5.3.3.tahoe.bottle.tar.gz",
-          "sha256": "11826f5deb28738d718f880dc2e019fb9d8fa67a304f1b85c19556877284fecb",
+          "filename": "z3-5.4.1.tahoe.bottle.tar.gz",
+          "local_filename": "z3--5.4.1.tahoe.bottle.tar.gz",
+          "sha256": "3ad186c0fe32ccbaca2630eeb955ab10941b0431684619f0a2b4d0ef489ee63c",
           "tab": {
-            "homebrew_version": "7.0.11",
+            "homebrew_version": "7.0.13",
             "changed_files": [],
             "linkage_files": [
-              "lib/libz3.5.3.3.0.dylib"
+              "lib/libz3.5.4.1.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1793279065,
+            "source_modified_time": 1794354107,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -97,8 +97,8 @@
             "lib/cmake/z3/Z3-shared-targets.cmake",
             "lib/cmake/z3/Z3Config.cmake",
             "lib/cmake/z3/Z3ConfigVersion.cmake",
-            "lib/libz3.5.3.3.0.dylib",
-            "lib/libz3.5.3.dylib",
+            "lib/libz3.5.4.1.0.dylib",
+            "lib/libz3.5.4.dylib",
             "lib/libz3.dylib",
             "lib/pkgconfig/z3.pc",
             "lib/python3.15/site-packages/z3/__init__.py",
@@ -156,6 +156,11 @@
             "share/z3/examples/python/bounded model checking/bubble_sort.py",
             "share/z3/examples/python/complex/complex.py",
             "share/z3/examples/python/data/BubbleSort_safe_bgmc007.smt2",
+            "share/z3/examples/python/data/QF_IDL_FISCHER6-4-ninc.smt2",
+            "share/z3/examples/python/data/QF_IDL_ckt_PROP1_tf_10.smt2",
+            "share/z3/examples/python/data/QF_LIA_cut_lemma_02_002.smt2",
+            "share/z3/examples/python/data/QF_LIA_cut_lemma_03_012.smt2",
+            "share/z3/examples/python/data/QF_UF_NEQ004_size4.smt2",
             "share/z3/examples/python/data/QF_UF_train-gate.6.prop1_ab_reg_max.smt2",
             "share/z3/examples/python/data/horn1.smt2",
             "share/z3/examples/python/data/horn2.smt2",
@@ -167,6 +172,7 @@
             "share/z3/examples/python/example.py",
             "share/z3/examples/python/hamiltonian/hamiltonian.py",
             "share/z3/examples/python/hs.py",
+            "share/z3/examples/python/lean_test_support.py",
             "share/z3/examples/python/mini_ic3.py",
             "share/z3/examples/python/mini_quip.py",
             "share/z3/examples/python/mus/marco.py",
@@ -186,12 +192,19 @@
             "share/z3/examples/python/test_proof_certificate.py",
             "share/z3/examples/python/test_proof_to_lean.py",
             "share/z3/examples/python/test_proof_to_lean_arith.py",
+            "share/z3/examples/python/test_proof_to_lean_array.py",
+            "share/z3/examples/python/test_proof_to_lean_deep.py",
+            "share/z3/examples/python/test_proof_to_lean_enum.py",
             "share/z3/examples/python/test_proof_to_lean_integration.py",
             "share/z3/examples/python/test_proof_to_lean_lia.py",
+            "share/z3/examples/python/test_proof_to_lean_lira.py",
+            "share/z3/examples/python/test_proof_to_lean_pb.py",
             "share/z3/examples/python/test_proof_to_lean_uf.py",
             "share/z3/examples/python/test_proof_to_lean_uflia.py",
+            "share/z3/examples/python/test_proof_to_lean_uflira.py",
             "share/z3/examples/python/test_proof_to_lean_uflra.py",
             "share/z3/examples/python/test_proof_to_lean_wide.py",
+            "share/z3/examples/python/test_real_power.py",
             "share/z3/examples/python/trafficjam.py",
             "share/z3/examples/python/tutorial/html/advanced-examples.htm",
             "share/z3/examples/python/tutorial/html/examples/queens.png",
@@ -217,7 +230,7 @@
             "share/z3/examples/userPropagator/user_propagator_subquery_maximisation.h",
             "share/z3/examples/userPropagator/user_propagator_with_theory.h"
           ],
-          "installed_size": 45853330
+          "installed_size": 46878777
         }
       }
     }

@@ -2,10 +2,10 @@
   "awscli": {
     "formula": {
       "name": "awscli",
-      "pkg_version": "2.39.7",
+      "pkg_version": "2.40.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/awscli.rb",
       "tap_git_path": "Formula/a/awscli.rb",
-      "tap_git_revision": "f321ce63aa8babdc96158a6612e7379bdf59c511",
+      "tap_git_revision": "03347aefbcedc5b1242906175b70c2c569ccc49e",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Official Amazon AWS command-line interface",
       "license": "Apache-2.0",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-10T13:37:20Z",
+      "date": "2026-11-11T12:31:45Z",
       "tags": {
         "tahoe": {
-          "filename": "awscli-2.39.7.tahoe.bottle.tar.gz",
-          "local_filename": "awscli--2.39.7.tahoe.bottle.tar.gz",
-          "sha256": "1fa37261da9aabf13f9aa3bff07652e9774fd539e94d81d36339ca01caff19a3",
+          "filename": "awscli-2.40.0.tahoe.bottle.tar.gz",
+          "local_filename": "awscli--2.40.0.tahoe.bottle.tar.gz",
+          "sha256": "b4559e64946e51b2b119d4a4664c4653c83e3a147de0f65d7c00b0525c259e4b",
           "tab": {
             "homebrew_version": "7.0.13",
             "changed_files": [
@@ -47,7 +47,7 @@
               "libexec/lib/python3.15/site-packages/_awscrt.abi3-darwin.so"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1794253028,
+            "source_modified_time": 1794337484,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -2506,6 +2506,7 @@
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/route53profiles/2018-05-10/endpoint-rule-set-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/route53profiles/2018-05-10/paginators-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/route53profiles/2018-05-10/service-2.json",
+            "libexec/lib/python3.15/site-packages/awscli/botocore/data/route53profiles/2018-05-10/waiters-2.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/route53resolver/2018-04-01/completions-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/route53resolver/2018-04-01/endpoint-rule-set-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/route53resolver/2018-04-01/paginators-1.json",
@@ -9181,11 +9182,11 @@
             "libexec/lib/python3.15/site-packages/awscli/topics/topic-tags.json",
             "libexec/lib/python3.15/site-packages/awscli/topictags.py",
             "libexec/lib/python3.15/site-packages/awscli/utils.py",
-            "libexec/lib/python3.15/site-packages/awscli-2.39.7.dist-info/INSTALLER",
-            "libexec/lib/python3.15/site-packages/awscli-2.39.7.dist-info/METADATA",
-            "libexec/lib/python3.15/site-packages/awscli-2.39.7.dist-info/REQUESTED",
-            "libexec/lib/python3.15/site-packages/awscli-2.39.7.dist-info/WHEEL",
-            "libexec/lib/python3.15/site-packages/awscli-2.39.7.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.15/site-packages/awscli-2.40.0.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/awscli-2.40.0.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/awscli-2.40.0.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/awscli-2.40.0.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/awscli-2.40.0.dist-info/licenses/LICENSE.txt",
             "libexec/lib/python3.15/site-packages/awscrt/__init__.py",
             "libexec/lib/python3.15/site-packages/awscrt/_test.py",
             "libexec/lib/python3.15/site-packages/awscrt/aio/__init__.py",
@@ -15665,7 +15666,7 @@
             "share/zsh/site-functions/_aws",
             "share/zsh/site-functions/aws_zsh_completer.sh"
           ],
-          "installed_size": 167892690
+          "installed_size": 168032355
         }
       }
     }

@@ -2,10 +2,10 @@
   "git": {
     "formula": {
       "name": "git",
-      "pkg_version": "2.56.0_2",
+      "pkg_version": "2.56.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/git.rb",
       "tap_git_path": "Formula/g/git.rb",
-      "tap_git_revision": "f1755b40e90c30529ec736309e2543ab53ff410d",
+      "tap_git_revision": "03347aefbcedc5b1242906175b70c2c569ccc49e",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Distributed revision control system",
       "license": "GPL-2.0-only AND GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause AND MIT",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-30T11:47:39Z",
+      "date": "2026-11-11T12:21:56Z",
       "tags": {
         "tahoe": {
-          "filename": "git-2.56.0_2.tahoe.bottle.tar.gz",
-          "local_filename": "git--2.56.0_2.tahoe.bottle.tar.gz",
-          "sha256": "7a79893c00b6c402a2d54d0a859d3af37c14116c0232738c0f55311bf7dc178e",
+          "filename": "git-2.56.1.tahoe.bottle.tar.gz",
+          "local_filename": "git--2.56.1.tahoe.bottle.tar.gz",
+          "sha256": "31be83b7d44e2b975c8db25a239d8a5c42a8146b60ae6f31042fa3a3a310fab3",
           "tab": {
-            "homebrew_version": "7.0.11",
+            "homebrew_version": "7.0.13",
             "changed_files": [
               "bin/git-cvsserver",
               "libexec/git-core/git-archimport",
@@ -60,7 +60,7 @@
               "libexec/git-core/git-remote-http",
               "libexec/git-core/git-sh-i18n--envsubst"
             ],
-            "source_modified_time": 1790569855,
+            "source_modified_time": 1794284256,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -74,28 +74,28 @@
               },
               {
                 "full_name": "libnghttp2",
-                "version": "1.70.0",
+                "version": "1.71.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.70.0",
+                "pkg_version": "1.71.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "libnghttp3",
-                "version": "1.18.0",
+                "version": "1.19.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.18.0",
+                "pkg_version": "1.19.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-10-20",
+                "version": "2026-11-05",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-10-20",
+                "pkg_version": "2026-11-05",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -110,10 +110,10 @@
               },
               {
                 "full_name": "libngtcp2",
-                "version": "1.25.0",
-                "revision": 1,
+                "version": "1.26.0",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.25.0_1",
+                "pkg_version": "1.26.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -137,11 +137,12 @@
               },
               {
                 "full_name": "lz4",
-                "version": "1.10.0",
+                "version": "1.11.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.10.0",
-                "declared_directly": false
+                "pkg_version": "1.11.1",
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "xz",
@@ -165,6 +166,7 @@
                 "full_name": "curl",
                 "version": "8.23.0",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "8.23.0",
                 "declared_directly": true,
                 "compatibility_version": 1
@@ -184,7 +186,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "0.19",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "libunistring",
@@ -219,126 +222,127 @@
             {
               "path": "bin/git-shell",
               "string": "/usr/local/opt/git",
-              "offset": 1602392
+              "offset": 1603479
             },
             {
               "path": "bin/scalar",
               "string": "/usr/local/opt/git",
-              "offset": 1627552
+              "offset": 1628639
             },
             {
               "path": "bin/git",
               "string": "/usr/local/opt/git",
-              "offset": 3083289
+              "offset": 3084328
             },
             {
               "path": "libexec/git-core/git-http-push",
               "string": "/usr/local/opt/git",
-              "offset": 1661675
+              "offset": 1662938
             },
             {
               "path": "libexec/git-core/git-imap-send",
               "string": "/usr/local/opt/git",
-              "offset": 1655746
+              "offset": 1657009
             },
             {
               "path": "libexec/git-core/git-sh-i18n--envsubst",
               "string": "/usr/local/opt/git",
-              "offset": 1601827
+              "offset": 1602914
             },
             {
               "path": "libexec/git-core/git-daemon",
               "string": "/usr/local/opt/git",
-              "offset": 1613807
+              "offset": 1614894
             },
             {
               "path": "libexec/git-core/git-credential-osxkeychain",
               "string": "/usr/local/opt/git",
-              "offset": 1606958
+              "offset": 1608061
             },
             {
               "path": "libexec/git-core/git-remote-http",
               "string": "/usr/local/opt/git",
-              "offset": 1667832
+              "offset": 1669111
             },
             {
               "path": "libexec/git-core/git-http-fetch",
               "string": "/usr/local/opt/git",
-              "offset": 1651439
+              "offset": 1652702
             },
             {
               "path": "libexec/git-core/git-http-backend",
               "string": "/usr/local/opt/git",
-              "offset": 1609815
+              "offset": 1610902
             },
             {
               "path": "bin/git-shell",
               "string": "/usr/local/etc/gitconfig",
-              "offset": 1576403
+              "offset": 1577331
             },
             {
               "path": "bin/scalar",
               "string": "/usr/local/etc/gitconfig",
-              "offset": 1601600
+              "offset": 1602528
             },
             {
               "path": "bin/git",
               "string": "/usr/local/etc/gitconfig",
-              "offset": 3057566
+              "offset": 3058446
             },
             {
               "path": "libexec/git-core/git-http-push",
               "string": "/usr/local/etc/gitconfig",
-              "offset": 1634787
+              "offset": 1635891
             },
             {
               "path": "libexec/git-core/git-imap-send",
               "string": "/usr/local/etc/gitconfig",
-              "offset": 1628848
+              "offset": 1629952
             },
             {
               "path": "libexec/git-core/git-sh-i18n--envsubst",
               "string": "/usr/local/etc/gitconfig",
-              "offset": 1575833
+              "offset": 1576761
             },
             {
               "path": "libexec/git-core/git-daemon",
               "string": "/usr/local/etc/gitconfig",
-              "offset": 1587832
+              "offset": 1588760
             },
             {
               "path": "libexec/git-core/git-credential-osxkeychain",
               "string": "/usr/local/etc/gitconfig",
-              "offset": 1580920
+              "offset": 1581864
             },
             {
               "path": "libexec/git-core/git-remote-http",
               "string": "/usr/local/etc/gitconfig",
-              "offset": 1640963
+              "offset": 1642083
             },
             {
               "path": "libexec/git-core/git-http-fetch",
               "string": "/usr/local/etc/gitconfig",
-              "offset": 1624524
+              "offset": 1625628
             },
             {
               "path": "libexec/git-core/git-http-backend",
               "string": "/usr/local/etc/gitconfig",
-              "offset": 1583824
+              "offset": 1584752
             }
           ],
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
-              "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
-              "SPDXRef-Package-SPDXRef-libnghttp3-1.2e.18.2e.0",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.71.2e.0",
+              "SPDXRef-Package-SPDXRef-libnghttp3-1.2e.19.2e.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
-              "SPDXRef-Package-SPDXRef-libngtcp2-1.2e.25.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-libngtcp2-1.2e.26.2e.0",
               "SPDXRef-Package-SPDXRef-libssh2-1.2e.11.2e.1.5f.7",
-              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-curl-8.2e.23.2e.0",
               "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
               "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
@@ -370,70 +374,70 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.71.2e.0",
                 "name": "libnghttp2",
-                "versionInfo": "1.70.0",
+                "versionInfo": "1.71.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libnghttp2-1.70.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libnghttp2-1.71.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "04d57bab80ac6b535f89b1a2ede4c4c85285f8ab5617944d4aaaddd722b6e04c"
+                    "checksumValue": "9744b900b3b2fa7a12f7a86289273c15d99192b1aab0d141b0a36d778f35060f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libnghttp2@1.70.0",
+                    "referenceLocator": "pkg:brew/libnghttp2@1.71.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp3-1.2e.18.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp3-1.2e.19.2e.0",
                 "name": "libnghttp3",
-                "versionInfo": "1.18.0",
+                "versionInfo": "1.19.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libnghttp3-1.18.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libnghttp3-1.19.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "6f5c4c70edebaf13a55e2a47818c6f1dd5bfdef7a0eb7e852ccf89b6dbac8e42"
+                    "checksumValue": "03325a2bc5098064305e4790f9570ac4ae61904ec8edd6bc3e6319599084d269"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libnghttp3@1.18.0",
+                    "referenceLocator": "pkg:brew/libnghttp3@1.19.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "name": "ca-certificates",
-                "versionInfo": "2026-10-20",
+                "versionInfo": "2026-11-05",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
+                    "checksumValue": "8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-11-05",
                     "referenceType": "purl"
                   }
                 ]
@@ -462,24 +466,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libngtcp2-1.2e.25.2e.0.5f.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libngtcp2-1.2e.26.2e.0",
                 "name": "libngtcp2",
-                "versionInfo": "1.25.0_1",
+                "versionInfo": "1.26.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libngtcp2-1.25.0_1.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libngtcp2-1.26.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "8e0a1190874456dce2b4f531a4306aa35af027966cbd12658d658639998bb190"
+                    "checksumValue": "baa146c667c77f0d392b280432da34130f9a84244ac6729e21023e4ce48e939d"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libngtcp2@1.25.0_1",
+                    "referenceLocator": "pkg:brew/libngtcp2@1.26.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -508,24 +512,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
                 "name": "lz4",
-                "versionInfo": "1.10.0",
+                "versionInfo": "1.11.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.10.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.11.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24"
+                    "checksumValue": "48d8c38df9412e0a3198698367f3afe9ada2c8055a77f5468cd59d85cb408f9a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceLocator": "pkg:brew/lz4@1.11.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -572,6 +576,29 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-curl-8.2e.23.2e.0",
+                "name": "curl",
+                "versionInfo": "8.23.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "curl",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/curl-8.23.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e3056efc1d7efd109c8fd788ccd519d4fbae9ee21cf1f37d1369161e5c080c6d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/curl@8.23.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -688,17 +715,17 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-git"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.71.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-git"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp3-1.2e.18.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp3-1.2e.19.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-git"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-git"
               },
@@ -708,7 +735,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-git"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libngtcp2-1.2e.25.2e.0.5f.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libngtcp2-1.2e.26.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-git"
               },
@@ -718,7 +745,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-git"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-git"
               },
@@ -729,6 +756,11 @@
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-git"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-curl-8.2e.23.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-git"
               },
@@ -1504,15 +1536,21 @@
             "share/doc/git-doc/RelNotes/2.5.6.adoc",
             "share/doc/git-doc/RelNotes/2.50.0.adoc",
             "share/doc/git-doc/RelNotes/2.50.1.adoc",
+            "share/doc/git-doc/RelNotes/2.50.2.adoc",
             "share/doc/git-doc/RelNotes/2.51.0.adoc",
             "share/doc/git-doc/RelNotes/2.51.1.adoc",
             "share/doc/git-doc/RelNotes/2.51.2.adoc",
+            "share/doc/git-doc/RelNotes/2.51.3.adoc",
             "share/doc/git-doc/RelNotes/2.52.0.adoc",
+            "share/doc/git-doc/RelNotes/2.52.1.adoc",
             "share/doc/git-doc/RelNotes/2.53.0.adoc",
+            "share/doc/git-doc/RelNotes/2.53.1.adoc",
             "share/doc/git-doc/RelNotes/2.54.0.adoc",
             "share/doc/git-doc/RelNotes/2.54.1.adoc",
             "share/doc/git-doc/RelNotes/2.55.0.adoc",
+            "share/doc/git-doc/RelNotes/2.55.1.adoc",
             "share/doc/git-doc/RelNotes/2.56.0.adoc",
+            "share/doc/git-doc/RelNotes/2.56.1.adoc",
             "share/doc/git-doc/RelNotes/2.6.0.adoc",
             "share/doc/git-doc/RelNotes/2.6.1.adoc",
             "share/doc/git-doc/RelNotes/2.6.2.adoc",
@@ -2505,7 +2543,7 @@
             "share/zsh/site-functions/git-completion.bash",
             "share/zsh/site-functions/git-prompt.sh"
           ],
-          "installed_size": 66714592
+          "installed_size": 66728584
         }
       }
     }

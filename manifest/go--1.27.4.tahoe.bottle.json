@@ -2,10 +2,10 @@
   "go": {
     "formula": {
       "name": "go",
-      "pkg_version": "1.27.3",
+      "pkg_version": "1.27.4",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/go.rb",
       "tap_git_path": "Formula/g/go.rb",
-      "tap_git_revision": "2fcf753205766e63aaab99c7423855477c6afb77",
+      "tap_git_revision": "03347aefbcedc5b1242906175b70c2c569ccc49e",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Open source programming language to build simple/reliable/efficient software",
       "license": "BSD-3-Clause",
@@ -15,18 +15,18 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-20T10:43:06Z",
+      "date": "2026-11-11T12:27:53Z",
       "tags": {
         "tahoe": {
-          "filename": "go-1.27.3.tahoe.bottle.tar.gz",
-          "local_filename": "go--1.27.3.tahoe.bottle.tar.gz",
-          "sha256": "ca16b9a816556599bc017e395256cb4be565450ad94383546924c74773f10249",
+          "filename": "go-1.27.4.tahoe.bottle.tar.gz",
+          "local_filename": "go--1.27.4.tahoe.bottle.tar.gz",
+          "sha256": "797b9ff1be1a4813f822f685dfabc2293bcf466e344a914f33568896bc0bb81c",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.13",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1792448436,
+            "source_modified_time": 1793651780,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -1594,6 +1594,7 @@
             "libexec/src/cmd/compile/internal/types2/lookup_test.go",
             "libexec/src/cmd/compile/internal/types2/main_test.go",
             "libexec/src/cmd/compile/internal/types2/map.go",
+            "libexec/src/cmd/compile/internal/types2/methodorder_test.go",
             "libexec/src/cmd/compile/internal/types2/mono.go",
             "libexec/src/cmd/compile/internal/types2/mono_test.go",
             "libexec/src/cmd/compile/internal/types2/named.go",
@@ -14782,6 +14783,7 @@
             "libexec/test/fixedbugs/issue81612.go",
             "libexec/test/fixedbugs/issue81687.go",
             "libexec/test/fixedbugs/issue8183.go",
+            "libexec/test/fixedbugs/issue81863.go",
             "libexec/test/fixedbugs/issue8280.dir/a.go",
             "libexec/test/fixedbugs/issue8280.dir/b.go",
             "libexec/test/fixedbugs/issue8280.go",
@@ -15667,7 +15669,7 @@
             "libexec/test/zerosize.go",
             "sbom.spdx.json"
           ],
-          "installed_size": 245451460
+          "installed_size": 245654701
         }
       }
     }
