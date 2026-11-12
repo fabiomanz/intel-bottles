@@ -2,10 +2,10 @@
   "aws-c-auth": {
     "formula": {
       "name": "aws-c-auth",
-      "pkg_version": "1.0.3_1",
+      "pkg_version": "1.0.4",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/aws-c-auth.rb",
       "tap_git_path": "Formula/a/aws-c-auth.rb",
-      "tap_git_revision": "0d1a65a09b8ada9b2703be256f1812d8e1093fe9",
+      "tap_git_revision": "08f10e288242717facd5dbfce9f98256129f1d08",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "C99 library implementation of AWS client-side authentication",
       "license": "Apache-2.0",
@@ -15,20 +15,20 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-05T13:08:29Z",
+      "date": "2026-11-12T13:21:45Z",
       "tags": {
         "tahoe": {
-          "filename": "aws-c-auth-1.0.3_1.tahoe.bottle.tar.gz",
-          "local_filename": "aws-c-auth--1.0.3_1.tahoe.bottle.tar.gz",
-          "sha256": "9fdcd55f6c743f389283d8e582c8b93d86f5c3b680e8f631a4c7fd536c0a2724",
+          "filename": "aws-c-auth-1.0.4.tahoe.bottle.tar.gz",
+          "local_filename": "aws-c-auth--1.0.4.tahoe.bottle.tar.gz",
+          "sha256": "960456346d93730f52083cf99b0872ed4a6a04cb2c4a3356cd72183024279002",
           "tab": {
-            "homebrew_version": "7.0.12",
+            "homebrew_version": "7.0.13",
             "changed_files": [],
             "linkage_files": [
-              "lib/libaws-c-auth.1.0.3.dylib"
+              "lib/libaws-c-auth.1.0.4.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1793648505,
+            "source_modified_time": 1794434169,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -89,6 +89,7 @@
                 "full_name": "aws-c-io",
                 "version": "1.1.2",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.1.2",
                 "declared_directly": true,
                 "compatibility_version": 3
@@ -97,6 +98,7 @@
                 "full_name": "aws-c-http",
                 "version": "1.2.0",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.2.0",
                 "declared_directly": true,
                 "compatibility_version": 4
@@ -130,6 +132,8 @@
               "SPDXRef-Package-SPDXRef-aws-c-cal-1.2e.0.2e.0.5f.1",
               "SPDXRef-Package-SPDXRef-aws-c-compression-1.2e.0.2e.0",
               "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.13",
+              "SPDXRef-Package-SPDXRef-aws-c-io-1.2e.1.2e.2",
+              "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.2.2e.0",
               "SPDXRef-Package-SPDXRef-aws-c-sdkutils-1.2e.0.2e.1",
               "SPDXRef-Compiler"
             ],
@@ -273,6 +277,52 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-io-1.2e.1.2e.2",
+                "name": "aws-c-io",
+                "versionInfo": "1.1.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aws-c-io-1.1.2.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10124b04499ce2d751e6a8391802d5328dbf91be9a87656fc6e8d62aacb51a03"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-io@1.1.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.2.2e.0",
+                "name": "aws-c-http",
+                "versionInfo": "1.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aws-c-http-1.2.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "17386725f6f821ff01816157baf640b0a1d835f5c2476e7c418ba14c759650b5"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-http@1.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-sdkutils-1.2e.0.2e.1",
                 "name": "aws-c-sdkutils",
                 "versionInfo": "1.0.1",
@@ -340,6 +390,16 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-aws-c-auth"
               },
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-io-1.2e.1.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-auth"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.2.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-auth"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-sdkutils-1.2e.0.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-aws-c-auth"
@@ -370,12 +430,12 @@
             "lib/cmake/aws-c-auth/aws-c-auth-config.cmake",
             "lib/cmake/aws-c-auth/shared/aws-c-auth-targets-release.cmake",
             "lib/cmake/aws-c-auth/shared/aws-c-auth-targets.cmake",
-            "lib/libaws-c-auth.1.0.3.dylib",
+            "lib/libaws-c-auth.1.0.4.dylib",
             "lib/libaws-c-auth.1.0.dylib",
             "lib/libaws-c-auth.dylib",
             "sbom.spdx.json"
           ],
-          "installed_size": 371539
+          "installed_size": 376082
         }
       }
     }
