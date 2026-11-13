@@ -1,0 +1,240 @@
+{
+  "dbus": {
+    "formula": {
+      "name": "dbus",
+      "pkg_version": "1.16.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dbus.rb",
+      "tap_git_path": "Formula/d/dbus.rb",
+      "tap_git_revision": "959f4ac67c42533fc096fc5a2e83fe1809c5511a",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Message bus system, providing inter-application communication",
+      "license": "AFL-2.1 OR GPL-2.0-or-later",
+      "homepage": "https://wiki.freedesktop.org/www/Software/dbus"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-11-13T14:04:45Z",
+      "tags": {
+        "tahoe": {
+          "filename": "dbus-1.16.4.tahoe.bottle.tar.gz",
+          "local_filename": "dbus--1.16.4.tahoe.bottle.tar.gz",
+          "sha256": "464f342103647ee30b766119eb2d21b2243a1401ac54ed9a5ae258f956e641c0",
+          "tab": {
+            "homebrew_version": "7.0.13",
+            "changed_files": [
+              ".bottle/etc/dbus-1/session.conf",
+              ".bottle/etc/dbus-1/system.conf",
+              "lib/pkgconfig/dbus-1.pc",
+              "org.freedesktop.dbus-session.plist",
+              "org.freedesktop.dbus-system.plist",
+              "share/dbus-1/session.conf",
+              "share/dbus-1/system.conf",
+              "share/doc/dbus/examples/example-session-disable-stats.conf",
+              "share/doc/dbus/examples/example-system-enable-stats.conf",
+              "share/man/man1/dbus-daemon.1",
+              "share/xml/dbus-1/catalog.xml"
+            ],
+            "linkage_files": [
+              "bin/dbus-cleanup-sockets",
+              "bin/dbus-daemon",
+              "bin/dbus-launch",
+              "bin/dbus-monitor",
+              "bin/dbus-run-session",
+              "bin/dbus-send",
+              "bin/dbus-test-tool",
+              "bin/dbus-update-activation-environment",
+              "bin/dbus-uuidgen",
+              "lib/libdbus-1.3.dylib",
+              "libexec/dbus-daemon-launch-helper"
+            ],
+            "binary_relocation_files": [
+              "bin/dbus-daemon",
+              "bin/dbus-launch",
+              "libexec/dbus-daemon-launch-helper"
+            ],
+            "source_modified_time": 1794500125,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/dbus-launch",
+              "string": "/usr/local/Cellar/dbus/1.16.4/bin/dbus-daemon",
+              "offset": 11035
+            },
+            {
+              "path": "bin/dbus-daemon",
+              "string": "/usr/local/Cellar/dbus/1.16.4/share",
+              "offset": 130208
+            },
+            {
+              "path": "bin/dbus-daemon",
+              "string": "/usr/local/Cellar/dbus/1.16.4/share/dbus-1/system.conf",
+              "offset": 130285
+            },
+            {
+              "path": "bin/dbus-daemon",
+              "string": "/usr/local/Cellar/dbus/1.16.4/share/dbus-1/session.conf",
+              "offset": 130340
+            },
+            {
+              "path": "bin/dbus-daemon",
+              "string": "/usr/local/share:/usr/share:/usr/local/Cellar/dbus/1.16.4/share:/lib",
+              "offset": 132688
+            },
+            {
+              "path": "libexec/dbus-daemon-launch-helper",
+              "string": "/usr/local/Cellar/dbus/1.16.4/share/dbus-1/system.conf",
+              "offset": 25012
+            },
+            {
+              "path": "libexec/dbus-daemon-launch-helper",
+              "string": "/usr/local/Cellar/dbus/1.16.4/share",
+              "offset": 27402
+            },
+            {
+              "path": "libexec/dbus-daemon-launch-helper",
+              "string": "/usr/local/Cellar/dbus/1.16.4/share/dbus-1/session.conf",
+              "offset": 27479
+            },
+            {
+              "path": "libexec/dbus-daemon-launch-helper",
+              "string": "/usr/local/share:/usr/share:/usr/local/Cellar/dbus/1.16.4/share:/lib",
+              "offset": 28496
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-dbus-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/dbus-monitor",
+            "bin/dbus-launch",
+            "bin/dbus-test-tool",
+            "bin/dbus-send",
+            "bin/dbus-daemon",
+            "bin/dbus-update-activation-environment",
+            "bin/dbus-run-session",
+            "bin/dbus-cleanup-sockets",
+            "bin/dbus-uuidgen"
+          ],
+          "all_files": [
+            ".bottle/etc/dbus-1/session.conf",
+            ".bottle/etc/dbus-1/system.conf",
+            ".brew/dbus.rb",
+            "AUTHORS",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "bin/dbus-cleanup-sockets",
+            "bin/dbus-daemon",
+            "bin/dbus-launch",
+            "bin/dbus-monitor",
+            "bin/dbus-run-session",
+            "bin/dbus-send",
+            "bin/dbus-test-tool",
+            "bin/dbus-update-activation-environment",
+            "bin/dbus-uuidgen",
+            "include/dbus-1.0/dbus/dbus-address.h",
+            "include/dbus-1.0/dbus/dbus-bus.h",
+            "include/dbus-1.0/dbus/dbus-connection.h",
+            "include/dbus-1.0/dbus/dbus-errors.h",
+            "include/dbus-1.0/dbus/dbus-macros.h",
+            "include/dbus-1.0/dbus/dbus-memory.h",
+            "include/dbus-1.0/dbus/dbus-message.h",
+            "include/dbus-1.0/dbus/dbus-misc.h",
+            "include/dbus-1.0/dbus/dbus-pending-call.h",
+            "include/dbus-1.0/dbus/dbus-protocol.h",
+            "include/dbus-1.0/dbus/dbus-server.h",
+            "include/dbus-1.0/dbus/dbus-shared.h",
+            "include/dbus-1.0/dbus/dbus-signature.h",
+            "include/dbus-1.0/dbus/dbus-syntax.h",
+            "include/dbus-1.0/dbus/dbus-threads.h",
+            "include/dbus-1.0/dbus/dbus-types.h",
+            "include/dbus-1.0/dbus/dbus.h",
+            "lib/cmake/DBus1/DBus1Config.cmake",
+            "lib/cmake/DBus1/DBus1ConfigVersion.cmake",
+            "lib/dbus-1.0/include/dbus/dbus-arch-deps.h",
+            "lib/libdbus-1.3.dylib",
+            "lib/libdbus-1.dylib",
+            "lib/pkgconfig/dbus-1.pc",
+            "libexec/dbus-daemon-launch-helper",
+            "org.freedesktop.dbus-session.plist",
+            "org.freedesktop.dbus-system.plist",
+            "sbom.spdx.json",
+            "share/dbus-1/session.conf",
+            "share/dbus-1/system.conf",
+            "share/doc/dbus/dbus-cleanup-sockets.1.html",
+            "share/doc/dbus/dbus-daemon.1.html",
+            "share/doc/dbus/dbus-faq.html",
+            "share/doc/dbus/dbus-launch.1.html",
+            "share/doc/dbus/dbus-monitor.1.html",
+            "share/doc/dbus/dbus-run-session.1.html",
+            "share/doc/dbus/dbus-send.1.html",
+            "share/doc/dbus/dbus-specification.html",
+            "share/doc/dbus/dbus-test-plan.html",
+            "share/doc/dbus/dbus-test-tool.1.html",
+            "share/doc/dbus/dbus-tutorial.html",
+            "share/doc/dbus/dbus-update-activation-environment.1.html",
+            "share/doc/dbus/dbus-uuidgen.1.html",
+            "share/doc/dbus/diagram.png",
+            "share/doc/dbus/diagram.svg",
+            "share/doc/dbus/examples/GetAllMatchRules.py",
+            "share/doc/dbus/examples/example-session-disable-stats.conf",
+            "share/doc/dbus/examples/example-system-enable-stats.conf",
+            "share/doc/dbus/examples/example-system-hardening-without-traditional-activation.conf",
+            "share/doc/dbus/index.html",
+            "share/doc/dbus/system-activation.txt",
+            "share/man/man1/dbus-cleanup-sockets.1",
+            "share/man/man1/dbus-daemon.1",
+            "share/man/man1/dbus-launch.1",
+            "share/man/man1/dbus-monitor.1",
+            "share/man/man1/dbus-run-session.1",
+            "share/man/man1/dbus-send.1",
+            "share/man/man1/dbus-test-tool.1",
+            "share/man/man1/dbus-update-activation-environment.1",
+            "share/man/man1/dbus-uuidgen.1",
+            "share/xml/dbus-1/busconfig.dtd",
+            "share/xml/dbus-1/catalog.xml",
+            "share/xml/dbus-1/introspect.dtd"
+          ],
+          "installed_size": 1711848
+        }
+      }
+    }
+  }
+}

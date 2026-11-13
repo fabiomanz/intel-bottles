@@ -2,10 +2,10 @@
   "openexr": {
     "formula": {
       "name": "openexr",
-      "pkg_version": "3.5.3_1",
+      "pkg_version": "3.5.4",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/o/openexr.rb",
       "tap_git_path": "Formula/o/openexr.rb",
-      "tap_git_revision": "b44aabb517acdc730f8ecf8d5281a8de127de247",
+      "tap_git_revision": "959f4ac67c42533fc096fc5a2e83fe1809c5511a",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "High dynamic-range image file format",
       "license": "BSD-3-Clause",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-05T13:47:50Z",
+      "date": "2026-11-13T13:55:18Z",
       "tags": {
         "tahoe": {
-          "filename": "openexr-3.5.3_1.tahoe.bottle.tar.gz",
-          "local_filename": "openexr--3.5.3_1.tahoe.bottle.tar.gz",
-          "sha256": "f03cdf9210d839f74b3e4c4a127776bf69fd92884314dc95650a19015c6da0ba",
+          "filename": "openexr-3.5.4.tahoe.bottle.tar.gz",
+          "local_filename": "openexr--3.5.4.tahoe.bottle.tar.gz",
+          "sha256": "64bde95e1ce0ba9e3c026eb0f7612f6c2124e220fc457e429d0e5cb8526b1dc1",
           "tab": {
-            "homebrew_version": "7.0.12",
+            "homebrew_version": "7.0.13",
             "changed_files": [
               "lib/pkgconfig/OpenEXR.pc"
             ],
@@ -38,14 +38,14 @@
               "bin/exrmultipart",
               "bin/exrmultiview",
               "bin/exrstdattr",
-              "lib/libIex-3_5.34.3.5.3.dylib",
-              "lib/libIlmThread-3_5.34.3.5.3.dylib",
-              "lib/libOpenEXR-3_5.34.3.5.3.dylib",
-              "lib/libOpenEXRCore-3_5.34.3.5.3.dylib",
-              "lib/libOpenEXRUtil-3_5.34.3.5.3.dylib"
+              "lib/libIex-3_5.34.3.5.4.dylib",
+              "lib/libIlmThread-3_5.34.3.5.4.dylib",
+              "lib/libOpenEXR-3_5.34.3.5.4.dylib",
+              "lib/libOpenEXRCore-3_5.34.3.5.4.dylib",
+              "lib/libOpenEXRUtil-3_5.34.3.5.4.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1793400593,
+            "source_modified_time": 1794255691,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -113,10 +113,10 @@
               },
               {
                 "full_name": "lz4",
-                "version": "1.11.0",
+                "version": "1.11.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.11.0",
+                "pkg_version": "1.11.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -166,7 +166,7 @@
               "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
               "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
               "SPDXRef-Package-SPDXRef-libtiff-4.2e.7.2e.2",
               "SPDXRef-Package-SPDXRef-openjph-0.2e.33.2e.0",
@@ -289,24 +289,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
                 "name": "lz4",
-                "versionInfo": "1.11.0",
+                "versionInfo": "1.11.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.11.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.11.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "148579158b70e1bd8601d8e9d7a23904ed48132e7d8660ab930d8c7c3824a912"
+                    "checksumValue": "48d8c38df9412e0a3198698367f3afe9ada2c8055a77f5468cd59d85cb408f9a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/lz4@1.11.0",
+                    "referenceLocator": "pkg:brew/lz4@1.11.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -420,7 +420,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-openexr"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-openexr"
               },
@@ -630,23 +630,23 @@
             "lib/cmake/OpenEXR/OpenEXRConfigVersion.cmake",
             "lib/cmake/OpenEXR/OpenEXRTargets-release.cmake",
             "lib/cmake/OpenEXR/OpenEXRTargets.cmake",
-            "lib/libIex-3_5.34.3.5.3.dylib",
+            "lib/libIex-3_5.34.3.5.4.dylib",
             "lib/libIex-3_5.34.dylib",
             "lib/libIex-3_5.dylib",
             "lib/libIex.dylib",
-            "lib/libIlmThread-3_5.34.3.5.3.dylib",
+            "lib/libIlmThread-3_5.34.3.5.4.dylib",
             "lib/libIlmThread-3_5.34.dylib",
             "lib/libIlmThread-3_5.dylib",
             "lib/libIlmThread.dylib",
-            "lib/libOpenEXR-3_5.34.3.5.3.dylib",
+            "lib/libOpenEXR-3_5.34.3.5.4.dylib",
             "lib/libOpenEXR-3_5.34.dylib",
             "lib/libOpenEXR-3_5.dylib",
             "lib/libOpenEXR.dylib",
-            "lib/libOpenEXRCore-3_5.34.3.5.3.dylib",
+            "lib/libOpenEXRCore-3_5.34.3.5.4.dylib",
             "lib/libOpenEXRCore-3_5.34.dylib",
             "lib/libOpenEXRCore-3_5.dylib",
             "lib/libOpenEXRCore.dylib",
-            "lib/libOpenEXRUtil-3_5.34.3.5.3.dylib",
+            "lib/libOpenEXRUtil-3_5.34.3.5.4.dylib",
             "lib/libOpenEXRUtil-3_5.34.dylib",
             "lib/libOpenEXRUtil-3_5.dylib",
             "lib/libOpenEXRUtil.dylib",
@@ -675,7 +675,7 @@
             "share/doc/OpenEXR/examples/rgbaInterfaceTiledExamples.cpp",
             "share/doc/OpenEXR/examples/rgbaInterfaceTiledExamples.h"
           ],
-          "installed_size": 4675143
+          "installed_size": 4304444
         }
       }
     }
