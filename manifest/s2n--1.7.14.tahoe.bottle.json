@@ -2,10 +2,10 @@
   "s2n": {
     "formula": {
       "name": "s2n",
-      "pkg_version": "1.7.13",
+      "pkg_version": "1.7.14",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/s/s2n.rb",
       "tap_git_path": "Formula/s/s2n.rb",
-      "tap_git_revision": "9a4c6d616c5e15a3fff477e7eb41f465a86c71ef",
+      "tap_git_revision": "1ef3c84bd819e6acc759fd12f9d3b751f47c692f",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Implementation of the TLS/SSL protocols",
       "license": "Apache-2.0",
@@ -15,28 +15,28 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-28T12:09:00Z",
+      "date": "2026-11-14T11:53:42Z",
       "tags": {
         "tahoe": {
-          "filename": "s2n-1.7.13.tahoe.bottle.tar.gz",
-          "local_filename": "s2n--1.7.13.tahoe.bottle.tar.gz",
-          "sha256": "ac4bcf31c9ef38520d4469dd223e3501e51dd0378ab36cf47114c02578e6e800",
+          "filename": "s2n-1.7.14.tahoe.bottle.tar.gz",
+          "local_filename": "s2n--1.7.14.tahoe.bottle.tar.gz",
+          "sha256": "310d162d65d5797c2eb98e74bfd45e84622dea07b4598f4b84c506b887baf067",
           "tab": {
-            "homebrew_version": "7.0.11",
+            "homebrew_version": "7.0.13",
             "changed_files": [],
             "linkage_files": [
               "lib/libs2n.1.0.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1793059419,
+            "source_modified_time": 1794369655,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "ca-certificates",
-                "version": "2026-10-20",
+                "version": "2026-11-05",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-10-20",
+                "pkg_version": "2026-11-05",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -46,7 +46,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "4.1.0",
-                "declared_directly": true
+                "declared_directly": true,
+                "compatibility_version": 1
               }
             ],
             "arch": "x86_64",
@@ -62,30 +63,30 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "name": "ca-certificates",
-                "versionInfo": "2026-10-20",
+                "versionInfo": "2026-11-05",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
+                    "checksumValue": "8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-11-05",
                     "referenceType": "purl"
                   }
                 ]
@@ -128,7 +129,7 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-s2n"
               },
@@ -175,7 +176,7 @@
             "lib/s2n/cmake/static/s2n-targets.cmake",
             "sbom.spdx.json"
           ],
-          "installed_size": 2848613
+          "installed_size": 2848558
         }
       }
     }
