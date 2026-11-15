@@ -1,0 +1,99 @@
+{
+  "libffi": {
+    "formula": {
+      "name": "libffi",
+      "pkg_version": "3.8.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libffi.rb",
+      "tap_git_path": "Formula/lib/libffi.rb",
+      "tap_git_revision": "0809c119aac1daf1a4293e40ef194260c403d0c8",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Portable Foreign Function Interface library",
+      "license": "MIT",
+      "homepage": "https://sourceware.org/libffi/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-15T12:20:55Z",
+      "tags": {
+        "tahoe": {
+          "filename": "libffi-3.8.1.tahoe.bottle.tar.gz",
+          "local_filename": "libffi--3.8.1.tahoe.bottle.tar.gz",
+          "sha256": "2544af0e05cd338450c39ec36a82a757737d706cce4b7b122d0dba8a824d6051",
+          "tab": {
+            "homebrew_version": "7.0.13",
+            "changed_files": [
+              "lib/pkgconfig/libffi.pc"
+            ],
+            "linkage_files": [
+              "lib/libffi.8.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1794662566,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libffi-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libffi.rb",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "LICENSE-BUILDTOOLS",
+            "README.md",
+            "include/ffi.h",
+            "include/ffitarget.h",
+            "lib/libffi.8.dylib",
+            "lib/libffi.a",
+            "lib/libffi.dylib",
+            "lib/pkgconfig/libffi.pc",
+            "sbom.spdx.json",
+            "share/info/libffi.info",
+            "share/man/man3/ffi.3",
+            "share/man/man3/ffi_call.3",
+            "share/man/man3/ffi_prep_cif.3",
+            "share/man/man3/ffi_prep_cif_var.3"
+          ],
+          "installed_size": 960611
+        }
+      }
+    }
+  }
+}

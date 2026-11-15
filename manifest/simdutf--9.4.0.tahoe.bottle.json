@@ -2,10 +2,10 @@
   "simdutf": {
     "formula": {
       "name": "simdutf",
-      "pkg_version": "9.3.3",
+      "pkg_version": "9.4.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/s/simdutf.rb",
       "tap_git_path": "Formula/s/simdutf.rb",
-      "tap_git_revision": "9a4c6d616c5e15a3fff477e7eb41f465a86c71ef",
+      "tap_git_revision": "0809c119aac1daf1a4293e40ef194260c403d0c8",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Unicode conversion routines, fast",
       "license": "Apache-2.0 OR MIT",
@@ -15,23 +15,23 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-28T12:16:02Z",
+      "date": "2026-11-15T12:19:46Z",
       "tags": {
         "tahoe": {
-          "filename": "simdutf-9.3.3.tahoe.bottle.tar.gz",
-          "local_filename": "simdutf--9.3.3.tahoe.bottle.tar.gz",
-          "sha256": "a69dfa5d87dc2ca3eba067124e85cf25a81c715c708034852b807a08c1a0d002",
+          "filename": "simdutf-9.4.0.tahoe.bottle.tar.gz",
+          "local_filename": "simdutf--9.4.0.tahoe.bottle.tar.gz",
+          "sha256": "113d9d4e3798cf758dfc61da91ba2f5c23bea399b11a802e87054cb043cfadd6",
           "tab": {
-            "homebrew_version": "7.0.11",
+            "homebrew_version": "7.0.13",
             "changed_files": [
               "lib/pkgconfig/simdutf.pc"
             ],
             "linkage_files": [
               "bin/sutf-benchmark",
-              "lib/libsimdutf.37.0.0.dylib"
+              "lib/libsimdutf.38.0.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1793142633,
+            "source_modified_time": 1794709741,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -175,8 +175,8 @@
             "lib/cmake/simdutf/simdutf-config.cmake",
             "lib/cmake/simdutf/simdutfTargets-release.cmake",
             "lib/cmake/simdutf/simdutfTargets.cmake",
-            "lib/libsimdutf.37.0.0.dylib",
-            "lib/libsimdutf.37.dylib",
+            "lib/libsimdutf.38.0.0.dylib",
+            "lib/libsimdutf.38.dylib",
             "lib/libsimdutf.dylib",
             "lib/pkgconfig/simdutf.pc",
             "sbom.spdx.json",
@@ -184,7 +184,7 @@
             "share/man/man1/fastbase64.coreutils.1",
             "share/man/man1/sutf.1"
           ],
-          "installed_size": 2786748
+          "installed_size": 2876324
         }
       }
     }
