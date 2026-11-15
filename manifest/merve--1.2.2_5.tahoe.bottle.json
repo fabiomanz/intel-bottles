@@ -2,10 +2,10 @@
   "merve": {
     "formula": {
       "name": "merve",
-      "pkg_version": "1.2.2_4",
+      "pkg_version": "1.2.2_5",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/m/merve.rb",
       "tap_git_path": "Formula/m/merve.rb",
-      "tap_git_revision": "c149dea2722e15d74403c8b68602f80862a3ea60",
+      "tap_git_revision": "844469147f2c5fb9a68364508b45e595c6e7df01",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "C++ lexer for extracting named exports from CommonJS modules",
       "license": "Apache-2.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-15T11:00:55Z",
+      "date": "2026-11-15T14:05:19Z",
       "tags": {
         "tahoe": {
-          "filename": "merve-1.2.2_4.tahoe.bottle.tar.gz",
-          "local_filename": "merve--1.2.2_4.tahoe.bottle.tar.gz",
-          "sha256": "dc4ecc78f0f70f23b765b460fb9060dc2ba409863d6b2629c6f2e59788526fd7",
+          "filename": "merve-1.2.2_5.tahoe.bottle.tar.gz",
+          "local_filename": "merve--1.2.2_5.tahoe.bottle.tar.gz",
+          "sha256": "c862e4f123d627be5d5416b7a6dfc73aea79561e1f98616886f8ce7364e331d3",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.13",
             "changed_files": [
               "lib/pkgconfig/merve.pc"
             ],
@@ -34,22 +34,22 @@
             "compiler": "clang",
             "runtime_dependencies": [
               {
-                "full_name": "icu4c@78",
-                "version": "78.3",
+                "full_name": "icu4c@79",
+                "version": "79.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "78.3",
+                "pkg_version": "79.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "simdutf",
-                "version": "9.3.0",
+                "version": "9.4.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "9.3.0",
+                "pkg_version": "9.4.0",
                 "declared_directly": true,
-                "compatibility_version": 7
+                "compatibility_version": 8
               }
             ],
             "arch": "x86_64",
@@ -65,29 +65,53 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.0",
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+              "SPDXRef-Package-SPDXRef-simdutf-9.2e.4.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.0",
-                "name": "simdutf",
-                "versionInfo": "9.3.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0 OR MIT",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/simdutf-9.3.0.tahoe.bottle.tar.gz",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/icu4c%4079-79.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "57ad6d63ca602800d693b6ab6b8b94d04967f72f3556e525bfbdb408f6f1009a"
+                    "checksumValue": "e8776ada73e3c33e467cd8f6bbedb6f7d6936c25419c24086f764e681397f47b"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/simdutf@9.3.0",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2e.4.2e.0",
+                "name": "simdutf",
+                "versionInfo": "9.4.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 OR MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/simdutf-9.4.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "113d9d4e3798cf758dfc61da91ba2f5c23bea399b11a802e87054cb043cfadd6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/simdutf@9.4.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -107,7 +131,12 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-merve"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2e.4.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-merve"
               },
@@ -140,7 +169,7 @@
             "lib/pkgconfig/merve.pc",
             "sbom.spdx.json"
           ],
-          "installed_size": 100356
+          "installed_size": 100380
         }
       }
     }
