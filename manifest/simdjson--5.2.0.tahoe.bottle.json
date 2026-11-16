@@ -2,10 +2,10 @@
   "simdjson": {
     "formula": {
       "name": "simdjson",
-      "pkg_version": "5.1.1",
+      "pkg_version": "5.2.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/s/simdjson.rb",
       "tap_git_path": "Formula/s/simdjson.rb",
-      "tap_git_revision": "a4d6d77ecbdcfa3f6275adb1f817ffac2fd0f94c",
+      "tap_git_revision": "ff52b75e9fac35ec13d1995de6e18978f01ed24b",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "SIMD-accelerated C++ JSON parser",
       "license": "Apache-2.0",
@@ -15,22 +15,22 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-01T11:40:51Z",
+      "date": "2026-11-16T13:21:32Z",
       "tags": {
         "tahoe": {
-          "filename": "simdjson-5.1.1.tahoe.bottle.tar.gz",
-          "local_filename": "simdjson--5.1.1.tahoe.bottle.tar.gz",
-          "sha256": "0faa90e537517dbafe3dc9caa89cb81b7c815847ba07ce099edca6541bad3029",
+          "filename": "simdjson-5.2.0.tahoe.bottle.tar.gz",
+          "local_filename": "simdjson--5.2.0.tahoe.bottle.tar.gz",
+          "sha256": "b2c773dcb6882aad2d7a10bacdf238a9806814ebac5b3ca5d2c19cb7ccde4d92",
           "tab": {
-            "homebrew_version": "7.0.11",
+            "homebrew_version": "7.0.14",
             "changed_files": [
               "lib/pkgconfig/simdjson.pc"
             ],
             "linkage_files": [
-              "lib/libsimdjson.36.0.0.dylib"
+              "lib/libsimdjson.37.0.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1793512898,
+            "source_modified_time": 1794715003,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -85,14 +85,14 @@
             "lib/cmake/simdjson/simdjsonTargets.cmake",
             "lib/cmake/simdjson/simdjson_staticTargets-release.cmake",
             "lib/cmake/simdjson/simdjson_staticTargets.cmake",
-            "lib/libsimdjson.36.0.0.dylib",
-            "lib/libsimdjson.36.dylib",
+            "lib/libsimdjson.37.0.0.dylib",
+            "lib/libsimdjson.37.dylib",
             "lib/libsimdjson.dylib",
             "lib/libsimdjson_static.a",
             "lib/pkgconfig/simdjson.pc",
             "sbom.spdx.json"
           ],
-          "installed_size": 10965936
+          "installed_size": 11198932
         }
       }
     }
