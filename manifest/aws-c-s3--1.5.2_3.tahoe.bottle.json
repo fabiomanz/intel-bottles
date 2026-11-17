@@ -1,34 +1,34 @@
 {
-  "aws-c-auth": {
+  "aws-c-s3": {
     "formula": {
-      "name": "aws-c-auth",
-      "pkg_version": "1.0.4_1",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/a/aws-c-auth.rb",
-      "tap_git_path": "Formula/a/aws-c-auth.rb",
-      "tap_git_revision": "1ef3c84bd819e6acc759fd12f9d3b751f47c692f",
+      "name": "aws-c-s3",
+      "pkg_version": "1.5.2_3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/a/aws-c-s3.rb",
+      "tap_git_path": "Formula/a/aws-c-s3.rb",
+      "tap_git_revision": "c474ad3771f372e402756a2f56090790973675f3",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
-      "desc": "C99 library implementation of AWS client-side authentication",
+      "desc": "C99 library implementation for communicating with the S3 service",
       "license": "Apache-2.0",
-      "homepage": "https://github.com/awslabs/aws-c-auth"
+      "homepage": "https://github.com/awslabs/aws-c-s3"
     },
     "bottle": {
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-14T11:54:53Z",
+      "date": "2026-11-17T14:51:06Z",
       "tags": {
         "tahoe": {
-          "filename": "aws-c-auth-1.0.4_1.tahoe.bottle.tar.gz",
-          "local_filename": "aws-c-auth--1.0.4_1.tahoe.bottle.tar.gz",
-          "sha256": "ebdad5cde139986295e6a18a72e8d31a2d7328dfc56cadbd4e853801f1ed497a",
+          "filename": "aws-c-s3-1.5.2_3.tahoe.bottle.tar.gz",
+          "local_filename": "aws-c-s3--1.5.2_3.tahoe.bottle.tar.gz",
+          "sha256": "fefbbdaadc0a28bfd2014e9cdf22efe237cb6c1c43d5391101754b9c2e0cdda1",
           "tab": {
-            "homebrew_version": "7.0.13",
+            "homebrew_version": "7.0.14",
             "changed_files": [],
             "linkage_files": [
-              "lib/libaws-c-auth.1.0.4.dylib"
+              "lib/libaws-c-s3.1.5.2.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1794434169,
+            "source_modified_time": 1793646551,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -80,6 +80,7 @@
                 "full_name": "s2n",
                 "version": "1.7.14",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.7.14",
                 "declared_directly": false,
                 "compatibility_version": 1
@@ -97,12 +98,30 @@
                 "full_name": "aws-c-http",
                 "version": "1.3.0",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.3.0",
                 "declared_directly": true,
                 "compatibility_version": 5
               },
               {
                 "full_name": "aws-c-sdkutils",
+                "version": "1.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.1",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "aws-c-auth",
+                "version": "1.1.0",
+                "revision": 0,
+                "pkg_version": "1.1.0",
+                "declared_directly": true,
+                "compatibility_version": 4
+              },
+              {
+                "full_name": "aws-checksums",
                 "version": "1.0.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
@@ -129,8 +148,11 @@
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
               "SPDXRef-Package-SPDXRef-aws-c-cal-1.2e.0.2e.0.5f.1",
               "SPDXRef-Package-SPDXRef-aws-c-compression-1.2e.0.2e.0",
+              "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.14",
               "SPDXRef-Package-SPDXRef-aws-c-io-1.2e.1.2e.2",
+              "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.3.2e.0",
               "SPDXRef-Package-SPDXRef-aws-c-sdkutils-1.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-aws-checksums-1.2e.0.2e.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -250,6 +272,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.14",
+                "name": "s2n",
+                "versionInfo": "1.7.14",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/s2n-1.7.14.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "310d162d65d5797c2eb98e74bfd45e84622dea07b4598f4b84c506b887baf067"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/s2n@1.7.14",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-io-1.2e.1.2e.2",
                 "name": "aws-c-io",
                 "versionInfo": "1.1.2",
@@ -268,6 +313,29 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/aws-c-io@1.1.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.3.2e.0",
+                "name": "aws-c-http",
+                "versionInfo": "1.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aws-c-http-1.3.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9d67a3016856e17b3deafb231a22bd4241f1a83ee55679b9f1105ee06d80a252"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-http@1.3.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -296,6 +364,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-checksums-1.2e.0.2e.1",
+                "name": "aws-checksums",
+                "versionInfo": "1.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aws-checksums-1.0.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9ce4ea682b28b532766a1988771bf81923bbb74b951f1e9526177dfb3f1552da"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-checksums@1.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
                 "versionInfo": "26.6",
@@ -312,70 +403,83 @@
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-common-1.2e.0.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-auth"
+                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-s3"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-auth"
+                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-s3"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-auth"
+                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-s3"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-cal-1.2e.0.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-auth"
+                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-s3"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-compression-1.2e.0.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-auth"
+                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-s3"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.14",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-s3"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-io-1.2e.1.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-auth"
+                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-s3"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.3.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-s3"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-sdkutils-1.2e.0.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-auth"
+                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-s3"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-checksums-1.2e.0.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-aws-c-s3"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-aws-c-auth-src"
+                "relatedSpdxElement": "SPDXRef-Archive-aws-c-s3-src"
               }
             ]
           },
           "path_exec_files": [],
           "all_files": [
-            ".brew/aws-c-auth.rb",
+            ".brew/aws-c-s3.rb",
             "CHANGELOG.md",
             "INSTALL_RECEIPT.json",
             "LICENSE",
             "NOTICE",
             "README.md",
-            "include/aws/auth/auth.h",
-            "include/aws/auth/aws_imds_client.h",
-            "include/aws/auth/credentials.h",
-            "include/aws/auth/exports.h",
-            "include/aws/auth/signable.h",
-            "include/aws/auth/signing.h",
-            "include/aws/auth/signing_config.h",
-            "include/aws/auth/signing_result.h",
-            "lib/cmake/aws-c-auth/aws-c-auth-config.cmake",
-            "lib/cmake/aws-c-auth/shared/aws-c-auth-targets-release.cmake",
-            "lib/cmake/aws-c-auth/shared/aws-c-auth-targets.cmake",
-            "lib/libaws-c-auth.1.0.4.dylib",
-            "lib/libaws-c-auth.1.0.dylib",
-            "lib/libaws-c-auth.dylib",
+            "include/aws/s3/exports.h",
+            "include/aws/s3/s3.h",
+            "include/aws/s3/s3_buffer_pool.h",
+            "include/aws/s3/s3_client.h",
+            "include/aws/s3/s3_endpoint_resolver.h",
+            "include/aws/s3/s3express_credentials_provider.h",
+            "lib/cmake/aws-c-s3/aws-c-s3-config.cmake",
+            "lib/cmake/aws-c-s3/shared/aws-c-s3-targets-release.cmake",
+            "lib/cmake/aws-c-s3/shared/aws-c-s3-targets.cmake",
+            "lib/libaws-c-s3.1.5.2.dylib",
+            "lib/libaws-c-s3.1.5.dylib",
+            "lib/libaws-c-s3.dylib",
             "sbom.spdx.json"
           ],
-          "installed_size": 376041
+          "installed_size": 449561
         }
       }
     }

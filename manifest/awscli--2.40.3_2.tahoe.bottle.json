@@ -2,10 +2,10 @@
   "awscli": {
     "formula": {
       "name": "awscli",
-      "pkg_version": "2.40.3_1",
+      "pkg_version": "2.40.3_2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/awscli.rb",
       "tap_git_path": "Formula/a/awscli.rb",
-      "tap_git_revision": "1ef3c84bd819e6acc759fd12f9d3b751f47c692f",
+      "tap_git_revision": "c474ad3771f372e402756a2f56090790973675f3",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Official Amazon AWS command-line interface",
       "license": "Apache-2.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-14T12:05:03Z",
+      "date": "2026-11-17T14:58:11Z",
       "tags": {
         "tahoe": {
-          "filename": "awscli-2.40.3_1.tahoe.bottle.tar.gz",
-          "local_filename": "awscli--2.40.3_1.tahoe.bottle.tar.gz",
-          "sha256": "85a101b8ea96172dc54dfb17aa3447926de575b0c403e403384b58bcead45672",
+          "filename": "awscli-2.40.3_2.tahoe.bottle.tar.gz",
+          "local_filename": "awscli--2.40.3_2.tahoe.bottle.tar.gz",
+          "sha256": "d58d2195e8a5a2724f51cbcbde04ba8e5e877ddb83e406663d66f011e2c2f1a2",
           "tab": {
-            "homebrew_version": "7.0.13",
+            "homebrew_version": "7.0.14",
             "changed_files": [
               "libexec/bin/aws",
               "libexec/bin/aws_completer",
@@ -99,6 +99,7 @@
                 "full_name": "s2n",
                 "version": "1.7.14",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.7.14",
                 "declared_directly": false,
                 "compatibility_version": 1
@@ -116,6 +117,7 @@
                 "full_name": "aws-c-http",
                 "version": "1.3.0",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.3.0",
                 "declared_directly": true,
                 "compatibility_version": 5
@@ -131,11 +133,11 @@
               },
               {
                 "full_name": "aws-c-auth",
-                "version": "1.0.4",
-                "revision": 1,
-                "pkg_version": "1.0.4_1",
+                "version": "1.1.0",
+                "revision": 0,
+                "pkg_version": "1.1.0",
                 "declared_directly": true,
-                "compatibility_version": 3
+                "compatibility_version": 4
               },
               {
                 "full_name": "aws-checksums",
@@ -159,6 +161,7 @@
                 "full_name": "aws-c-mqtt",
                 "version": "1.1.3",
                 "revision": 1,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.1.3_1",
                 "declared_directly": true,
                 "compatibility_version": 4
@@ -166,8 +169,8 @@
               {
                 "full_name": "aws-c-s3",
                 "version": "1.5.2",
-                "revision": 2,
-                "pkg_version": "1.5.2_2",
+                "revision": 3,
+                "pkg_version": "1.5.2_3",
                 "declared_directly": true,
                 "compatibility_version": 8
               },
@@ -253,10 +256,13 @@
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
               "SPDXRef-Package-SPDXRef-aws-c-cal-1.2e.0.2e.0.5f.1",
               "SPDXRef-Package-SPDXRef-aws-c-compression-1.2e.0.2e.0",
+              "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.14",
               "SPDXRef-Package-SPDXRef-aws-c-io-1.2e.1.2e.2",
+              "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.3.2e.0",
               "SPDXRef-Package-SPDXRef-aws-c-sdkutils-1.2e.0.2e.1",
               "SPDXRef-Package-SPDXRef-aws-checksums-1.2e.0.2e.1",
               "SPDXRef-Package-SPDXRef-aws-c-event-stream-1.2e.0.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-aws-c-mqtt-1.2e.1.2e.3.5f.1",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
@@ -383,6 +389,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.14",
+                "name": "s2n",
+                "versionInfo": "1.7.14",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/s2n-1.7.14.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "310d162d65d5797c2eb98e74bfd45e84622dea07b4598f4b84c506b887baf067"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/s2n@1.7.14",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-io-1.2e.1.2e.2",
                 "name": "aws-c-io",
                 "versionInfo": "1.1.2",
@@ -401,6 +430,29 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/aws-c-io@1.1.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.3.2e.0",
+                "name": "aws-c-http",
+                "versionInfo": "1.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aws-c-http-1.3.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9d67a3016856e17b3deafb231a22bd4241f1a83ee55679b9f1105ee06d80a252"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-http@1.3.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -470,6 +522,29 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/aws-c-event-stream@1.0.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-mqtt-1.2e.1.2e.3.5f.1",
+                "name": "aws-c-mqtt",
+                "versionInfo": "1.1.3_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aws-c-mqtt-1.1.3_1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "0be7c6e5ac7da2e503055deba9735e0a3a7c7ecba49ef03412620972753d8932"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-mqtt@1.1.3_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -675,7 +750,17 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-awscli"
               },
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.14",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-awscli"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-io-1.2e.1.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-awscli"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.3.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-awscli"
               },
@@ -691,6 +776,11 @@
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-event-stream-1.2e.0.2e.0.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-awscli"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-mqtt-1.2e.1.2e.3.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-awscli"
               },
@@ -15520,7 +15610,7 @@
             "share/zsh/site-functions/_aws",
             "share/zsh/site-functions/aws_zsh_completer.sh"
           ],
-          "installed_size": 168688126
+          "installed_size": 168688205
         }
       }
     }
