@@ -2,10 +2,10 @@
   "awscli": {
     "formula": {
       "name": "awscli",
-      "pkg_version": "2.40.3_2",
+      "pkg_version": "2.41.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/awscli.rb",
       "tap_git_path": "Formula/a/awscli.rb",
-      "tap_git_revision": "c474ad3771f372e402756a2f56090790973675f3",
+      "tap_git_revision": "3bc258c5e3f72a66803c7fd117e2769715f0cf2c",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Official Amazon AWS command-line interface",
       "license": "Apache-2.0",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-17T14:58:11Z",
+      "date": "2026-11-18T13:41:41Z",
       "tags": {
         "tahoe": {
-          "filename": "awscli-2.40.3_2.tahoe.bottle.tar.gz",
-          "local_filename": "awscli--2.40.3_2.tahoe.bottle.tar.gz",
-          "sha256": "d58d2195e8a5a2724f51cbcbde04ba8e5e877ddb83e406663d66f011e2c2f1a2",
+          "filename": "awscli-2.41.0.tahoe.bottle.tar.gz",
+          "local_filename": "awscli--2.41.0.tahoe.bottle.tar.gz",
+          "sha256": "393d9afa8991b6774ac7030aefef8f9a9bc6d5f3f167f2d95562ac261c55d8e0",
           "tab": {
             "homebrew_version": "7.0.14",
             "changed_files": [
@@ -47,7 +47,7 @@
               "libexec/lib/python3.15/site-packages/_awscrt.abi3-darwin.so"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1794596685,
+            "source_modified_time": 1794944150,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -135,6 +135,7 @@
                 "full_name": "aws-c-auth",
                 "version": "1.1.0",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.1.0",
                 "declared_directly": true,
                 "compatibility_version": 4
@@ -170,6 +171,7 @@
                 "full_name": "aws-c-s3",
                 "version": "1.5.2",
                 "revision": 3,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.5.2_3",
                 "declared_directly": true,
                 "compatibility_version": 8
@@ -260,9 +262,11 @@
               "SPDXRef-Package-SPDXRef-aws-c-io-1.2e.1.2e.2",
               "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.3.2e.0",
               "SPDXRef-Package-SPDXRef-aws-c-sdkutils-1.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-aws-c-auth-1.2e.1.2e.0",
               "SPDXRef-Package-SPDXRef-aws-checksums-1.2e.0.2e.1",
               "SPDXRef-Package-SPDXRef-aws-c-event-stream-1.2e.0.2e.0.5f.1",
               "SPDXRef-Package-SPDXRef-aws-c-mqtt-1.2e.1.2e.3.5f.1",
+              "SPDXRef-Package-SPDXRef-aws-c-s3-1.2e.5.2e.2.5f.3",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
@@ -481,6 +485,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-auth-1.2e.1.2e.0",
+                "name": "aws-c-auth",
+                "versionInfo": "1.1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aws-c-auth-1.1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9edaf96c4fd81e13eacc72d8e7fbd5dad2b1ab45f474f744d0760a23fd117c05"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-auth@1.1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-aws-checksums-1.2e.0.2e.1",
                 "name": "aws-checksums",
                 "versionInfo": "1.0.1",
@@ -545,6 +572,29 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/aws-c-mqtt@1.1.3_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-s3-1.2e.5.2e.2.5f.3",
+                "name": "aws-c-s3",
+                "versionInfo": "1.5.2_3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aws-c-s3-1.5.2_3.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fefbbdaadc0a28bfd2014e9cdf22efe237cb6c1c43d5391101754b9c2e0cdda1"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-s3@1.5.2_3",
                     "referenceType": "purl"
                   }
                 ]
@@ -770,6 +820,11 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-awscli"
               },
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-auth-1.2e.1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-awscli"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-aws-checksums-1.2e.0.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-awscli"
@@ -781,6 +836,11 @@
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-mqtt-1.2e.1.2e.3.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-awscli"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-s3-1.2e.5.2e.2.5f.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-awscli"
               },
@@ -1396,6 +1456,9 @@
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/connectparticipant/2018-09-07/endpoint-rule-set-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/connectparticipant/2018-09-07/paginators-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/connectparticipant/2018-09-07/service-2.json",
+            "libexec/lib/python3.15/site-packages/awscli/botocore/data/connectscheduling/2026-07-16/endpoint-rule-set-1.json",
+            "libexec/lib/python3.15/site-packages/awscli/botocore/data/connectscheduling/2026-07-16/paginators-1.json",
+            "libexec/lib/python3.15/site-packages/awscli/botocore/data/connectscheduling/2026-07-16/service-2.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/continuum/2022-07-26/endpoint-rule-set-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/continuum/2022-07-26/paginators-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/continuum/2022-07-26/service-2.json",
@@ -2217,6 +2280,10 @@
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/opensearch/2021-01-01/endpoint-rule-set-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/opensearch/2021-01-01/paginators-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/opensearch/2021-01-01/service-2.json",
+            "libexec/lib/python3.15/site-packages/awscli/botocore/data/opensearchmemory/2026-08-24/endpoint-rule-set-1.json",
+            "libexec/lib/python3.15/site-packages/awscli/botocore/data/opensearchmemory/2026-08-24/paginators-1.json",
+            "libexec/lib/python3.15/site-packages/awscli/botocore/data/opensearchmemory/2026-08-24/service-2.json",
+            "libexec/lib/python3.15/site-packages/awscli/botocore/data/opensearchmemory/2026-08-24/waiters-2.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/opensearchserverless/2021-11-01/completions-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/opensearchserverless/2021-11-01/endpoint-rule-set-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/opensearchserverless/2021-11-01/paginators-1.json",
@@ -2512,6 +2579,9 @@
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/sagemaker-geospatial/2020-05-27/endpoint-rule-set-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/sagemaker-geospatial/2020-05-27/paginators-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/sagemaker-geospatial/2020-05-27/service-2.json",
+            "libexec/lib/python3.15/site-packages/awscli/botocore/data/sagemaker-inference-router-runtime/2026-01-01/endpoint-rule-set-1.json",
+            "libexec/lib/python3.15/site-packages/awscli/botocore/data/sagemaker-inference-router-runtime/2026-01-01/paginators-1.json",
+            "libexec/lib/python3.15/site-packages/awscli/botocore/data/sagemaker-inference-router-runtime/2026-01-01/service-2.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/sagemaker-metrics/2022-09-30/endpoint-rule-set-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/sagemaker-metrics/2022-09-30/paginators-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/sagemaker-metrics/2022-09-30/service-2.json",
@@ -2786,6 +2856,7 @@
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/wellarchitected/2020-03-31/endpoint-rule-set-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/wellarchitected/2020-03-31/paginators-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/wellarchitected/2020-03-31/service-2.json",
+            "libexec/lib/python3.15/site-packages/awscli/botocore/data/wellarchitected/2020-03-31/waiters-2.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/wickr/2024-02-01/completions-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/wickr/2024-02-01/endpoint-rule-set-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/wickr/2024-02-01/paginators-1.json",
@@ -2871,6 +2942,7 @@
             "libexec/lib/python3.15/site-packages/awscli/botocore/retries/standard.py",
             "libexec/lib/python3.15/site-packages/awscli/botocore/retries/throttling.py",
             "libexec/lib/python3.15/site-packages/awscli/botocore/serialize.py",
+            "libexec/lib/python3.15/site-packages/awscli/botocore/service_module_names.py",
             "libexec/lib/python3.15/site-packages/awscli/botocore/session.py",
             "libexec/lib/python3.15/site-packages/awscli/botocore/signers.py",
             "libexec/lib/python3.15/site-packages/awscli/botocore/stub.py",
@@ -2896,12 +2968,16 @@
             "libexec/lib/python3.15/site-packages/awscli/customizations/agenttoolkit/__init__.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/agenttoolkit/add_skill.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/agenttoolkit/agents.py",
+            "libexec/lib/python3.15/site-packages/awscli/customizations/agenttoolkit/atomic.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/agenttoolkit/check_skill_updates.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/agenttoolkit/configure.py",
+            "libexec/lib/python3.15/site-packages/awscli/customizations/agenttoolkit/filelock.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/agenttoolkit/get_skill_file.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/agenttoolkit/hint.py",
+            "libexec/lib/python3.15/site-packages/awscli/customizations/agenttoolkit/hooks.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/agenttoolkit/list_installed_skills.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/agenttoolkit/remove_skill.py",
+            "libexec/lib/python3.15/site-packages/awscli/customizations/agenttoolkit/state.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/agenttoolkit/update_skill.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/agenttoolkit/utils.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/argrename.py",
@@ -3103,6 +3179,7 @@
             "libexec/lib/python3.15/site-packages/awscli/customizations/login/__init__.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/login/login.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/login/logout.py",
+            "libexec/lib/python3.15/site-packages/awscli/customizations/login/signup.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/login/utils.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/logs/__init__.py",
             "libexec/lib/python3.15/site-packages/awscli/customizations/logs/startlivetail.py",
@@ -8508,6 +8585,7 @@
             "libexec/lib/python3.15/site-packages/awscli/examples/signer/list-signing-profiles.rst",
             "libexec/lib/python3.15/site-packages/awscli/examples/signer/put-signing-profile.rst",
             "libexec/lib/python3.15/site-packages/awscli/examples/signer/start-signing-job.rst",
+            "libexec/lib/python3.15/site-packages/awscli/examples/signup/_examples.rst",
             "libexec/lib/python3.15/site-packages/awscli/examples/snowball/get-snowball-usage.rst",
             "libexec/lib/python3.15/site-packages/awscli/examples/snowball/list-jobs.rst",
             "libexec/lib/python3.15/site-packages/awscli/examples/sns/add-permission.rst",
@@ -9126,11 +9204,11 @@
             "libexec/lib/python3.15/site-packages/awscli/topics/topic-tags.json",
             "libexec/lib/python3.15/site-packages/awscli/topictags.py",
             "libexec/lib/python3.15/site-packages/awscli/utils.py",
-            "libexec/lib/python3.15/site-packages/awscli-2.40.3.dist-info/INSTALLER",
-            "libexec/lib/python3.15/site-packages/awscli-2.40.3.dist-info/METADATA",
-            "libexec/lib/python3.15/site-packages/awscli-2.40.3.dist-info/REQUESTED",
-            "libexec/lib/python3.15/site-packages/awscli-2.40.3.dist-info/WHEEL",
-            "libexec/lib/python3.15/site-packages/awscli-2.40.3.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.15/site-packages/awscli-2.41.0.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/awscli-2.41.0.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/awscli-2.41.0.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/awscli-2.41.0.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/awscli-2.41.0.dist-info/licenses/LICENSE.txt",
             "libexec/lib/python3.15/site-packages/awscrt/__init__.py",
             "libexec/lib/python3.15/site-packages/awscrt/_test.py",
             "libexec/lib/python3.15/site-packages/awscrt/aio/__init__.py",
@@ -15029,6 +15107,7 @@
             "share/awscli/examples/signer/list-signing-profiles.rst",
             "share/awscli/examples/signer/put-signing-profile.rst",
             "share/awscli/examples/signer/start-signing-job.rst",
+            "share/awscli/examples/signup/_examples.rst",
             "share/awscli/examples/snowball/get-snowball-usage.rst",
             "share/awscli/examples/snowball/list-jobs.rst",
             "share/awscli/examples/sns/add-permission.rst",
@@ -15610,7 +15689,7 @@
             "share/zsh/site-functions/_aws",
             "share/zsh/site-functions/aws_zsh_completer.sh"
           ],
-          "installed_size": 168688205
+          "installed_size": 170541834
         }
       }
     }
