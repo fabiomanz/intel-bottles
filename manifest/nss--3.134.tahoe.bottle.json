@@ -2,10 +2,10 @@
   "nss": {
     "formula": {
       "name": "nss",
-      "pkg_version": "3.133",
+      "pkg_version": "3.134",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/n/nss.rb",
       "tap_git_path": "Formula/n/nss.rb",
-      "tap_git_revision": "0883d50210e2e6ddaf510febbbacb8c0655db95d",
+      "tap_git_revision": "6ced4dcf211c7cbf610c3cb1d4693a971c49f063",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Libraries for security-enabled client and server applications",
       "license": "MPL-2.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-05T12:57:41Z",
+      "date": "2026-11-19T14:14:02Z",
       "tags": {
         "tahoe": {
-          "filename": "nss-3.133.tahoe.bottle.tar.gz",
-          "local_filename": "nss--3.133.tahoe.bottle.tar.gz",
-          "sha256": "a9551cfc584af081d9a48597c12743a28f99741d9701b12abc3597c5f33f891d",
+          "filename": "nss-3.134.tahoe.bottle.tar.gz",
+          "local_filename": "nss--3.134.tahoe.bottle.tar.gz",
+          "sha256": "9b0e99dd8ce20b352ae0006bb8ea8650d343e2d8ee467989040c7a277a6b4bec",
           "tab": {
-            "homebrew_version": "7.0.12",
+            "homebrew_version": "7.0.15",
             "changed_files": [
               "lib/pkgconfig/nss.pc"
             ],
@@ -78,7 +78,6 @@
               "bin/secmodtest",
               "bin/selfserv",
               "bin/shlibsign",
-              "bin/signtool",
               "bin/signver",
               "bin/ssltap",
               "bin/strsclnt",
@@ -98,15 +97,15 @@
               "lib/libssl3.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1793807878,
+            "source_modified_time": 1795034783,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "nspr",
-                "version": "4.40",
+                "version": "4.41",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.40",
+                "pkg_version": "4.41",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -124,9 +123,33 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-nspr-4.2e.41",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-nspr-4.2e.41",
+                "name": "nspr",
+                "versionInfo": "4.41",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/nspr-4.41.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b7c1ae7623aacf334c5e951c192be0062f3fb52cd3b5c3179c95c315a1e5d2e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/nspr@4.41",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
@@ -141,6 +164,11 @@
               }
             ],
             "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-nspr-4.2e.41",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-nss"
+              },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
@@ -199,7 +227,6 @@
             "bin/nss-policy-check",
             "bin/ocspclnt",
             "bin/mangle",
-            "bin/signtool",
             "bin/modutil",
             "bin/nss-config",
             "bin/tstclnt",
@@ -266,7 +293,6 @@
             "bin/secmodtest",
             "bin/selfserv",
             "bin/shlibsign",
-            "bin/signtool",
             "bin/signver",
             "bin/ssltap",
             "bin/strsclnt",
@@ -289,9 +315,6 @@
             "include/nss/eccutil.h",
             "include/nss/ecl-exp.h",
             "include/nss/hasht.h",
-            "include/nss/jar-ds.h",
-            "include/nss/jar.h",
-            "include/nss/jarfile.h",
             "include/nss/key.h",
             "include/nss/keyhi.h",
             "include/nss/keyt.h",
@@ -301,6 +324,17 @@
             "include/nss/lowkeyti.h",
             "include/nss/mcom_db.h",
             "include/nss/ml_dsat.h",
+            "include/nss/mozpkix/Input.h",
+            "include/nss/mozpkix/Result.h",
+            "include/nss/mozpkix/Time.h",
+            "include/nss/mozpkix/nss_scoped_ptrs.h",
+            "include/nss/mozpkix/pkix.h",
+            "include/nss/mozpkix/pkixc.h",
+            "include/nss/mozpkix/pkixcheck.h",
+            "include/nss/mozpkix/pkixder.h",
+            "include/nss/mozpkix/pkixnss.h",
+            "include/nss/mozpkix/pkixtypes.h",
+            "include/nss/mozpkix/pkixutil.h",
             "include/nss/ncompat.h",
             "include/nss/nss.h",
             "include/nss/nssb64.h",
@@ -384,7 +418,7 @@
             "lib/libdbm.a",
             "lib/libfreebl.a",
             "lib/libfreebl3.dylib",
-            "lib/libjar.a",
+            "lib/libmozpkix.a",
             "lib/libnss.a",
             "lib/libnss3.dylib",
             "lib/libnssb.a",
@@ -423,7 +457,7 @@
             "libexec/libsoftokn3.chk",
             "sbom.spdx.json"
           ],
-          "installed_size": 17663793
+          "installed_size": 17530377
         }
       }
     }
