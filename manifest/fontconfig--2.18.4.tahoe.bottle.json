@@ -1,0 +1,415 @@
+{
+  "fontconfig": {
+    "formula": {
+      "name": "fontconfig",
+      "pkg_version": "2.18.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/f/fontconfig.rb",
+      "tap_git_path": "Formula/f/fontconfig.rb",
+      "tap_git_revision": "210e77c9cc875b9c889adeb6015a1843c74c61ed",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "XML-based font configuration API for X Windows",
+      "license": "HPND-sell-variant AND Unicode-3.0 AND MIT-Modern-Variant AND MIT AND LicenseRef-Homebrew-public-domain",
+      "homepage": "https://wiki.freedesktop.org/www/Software/fontconfig/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-11-19T13:51:57Z",
+      "tags": {
+        "tahoe": {
+          "filename": "fontconfig-2.18.4.tahoe.bottle.tar.gz",
+          "local_filename": "fontconfig--2.18.4.tahoe.bottle.tar.gz",
+          "sha256": "32c90cd9ecef3b2f192bd2ca31c8cfa38d5e2a269768e9e81e49a1f5b84a41b4",
+          "tab": {
+            "homebrew_version": "7.0.15",
+            "changed_files": [
+              "lib/pkgconfig/fontconfig.pc"
+            ],
+            "linkage_files": [
+              "bin/fc-cache",
+              "bin/fc-cat",
+              "bin/fc-conflist",
+              "bin/fc-genconf",
+              "bin/fc-list",
+              "bin/fc-match",
+              "bin/fc-pattern",
+              "bin/fc-query",
+              "bin/fc-scan",
+              "bin/fc-validate",
+              "lib/libfontconfig.1.dylib"
+            ],
+            "binary_relocation_files": [
+              "lib/libfontconfig.1.dylib"
+            ],
+            "source_modified_time": 1795002783,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "brotli",
+                "version": "1.2.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpng",
+                "version": "1.6.59",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.59",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "freetype",
+                "version": "2.15.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.15.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "lib/libfontconfig.1.dylib",
+              "string": "/usr/local/Cellar/fontconfig/2.18.4/share/fontconfig/conf.avail",
+              "offset": 158770
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+              "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+              "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "name": "brotli",
+                "versionInfo": "1.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/brotli-1.2.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7591babe56002fd1d796a33d695c3e8fb53605a244608fa37b03ec206f7b804e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/brotli@1.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+                "name": "libpng",
+                "versionInfo": "1.6.59",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libpng-1.6.59.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "983550222f14d7db234a39119dc66c0de74d9b79b74f83ecf4b81a6b694d40de"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpng@1.6.59",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
+                "name": "freetype",
+                "versionInfo": "2.15.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "FTL",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/freetype-2.15.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "df5ad00e9d611b80d19df81741a935c2d9bceef6feb79b4c322dda96507d5d36"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/freetype@2.15.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+                "name": "libunistring",
+                "versionInfo": "1.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.5.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9914a8c6c3e193c9f0b20df1d04a32f25d247f0cb62fd1501abf321e1d1d7757"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gettext-1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fe9d5337ff31e4f40b827b3463bd3fdc61b8f377277769f71e93baad0443bc96"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fontconfig"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fontconfig"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fontconfig"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fontconfig"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fontconfig"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fontconfig"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-fontconfig-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/fc-list",
+            "bin/fc-pattern",
+            "bin/fc-validate",
+            "bin/fc-query",
+            "bin/fc-genconf",
+            "bin/fc-cache",
+            "bin/fc-cat",
+            "bin/fc-match",
+            "bin/fc-conflist",
+            "bin/fc-scan"
+          ],
+          "all_files": [
+            ".brew/fontconfig.rb",
+            "AUTHORS",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README.md",
+            "bin/fc-cache",
+            "bin/fc-cat",
+            "bin/fc-conflist",
+            "bin/fc-genconf",
+            "bin/fc-list",
+            "bin/fc-match",
+            "bin/fc-pattern",
+            "bin/fc-query",
+            "bin/fc-scan",
+            "bin/fc-validate",
+            "include/fontconfig/fcfreetype.h",
+            "include/fontconfig/fcprivate.h",
+            "include/fontconfig/fontconfig.h",
+            "lib/libfontconfig.1.dylib",
+            "lib/libfontconfig.a",
+            "lib/libfontconfig.dylib",
+            "lib/pkgconfig/fontconfig.pc",
+            "sbom.spdx.json",
+            "share/fontconfig/conf.avail/05-macos.conf",
+            "share/fontconfig/conf.avail/05-reset-dirs-sample.conf",
+            "share/fontconfig/conf.avail/09-autohint-if-no-hinting.conf",
+            "share/fontconfig/conf.avail/10-autohint.conf",
+            "share/fontconfig/conf.avail/10-hinting-full.conf",
+            "share/fontconfig/conf.avail/10-hinting-medium.conf",
+            "share/fontconfig/conf.avail/10-hinting-none.conf",
+            "share/fontconfig/conf.avail/10-hinting-slight.conf",
+            "share/fontconfig/conf.avail/10-no-antialias.conf",
+            "share/fontconfig/conf.avail/10-scale-bitmap-fonts.conf",
+            "share/fontconfig/conf.avail/10-sub-pixel-bgr.conf",
+            "share/fontconfig/conf.avail/10-sub-pixel-none.conf",
+            "share/fontconfig/conf.avail/10-sub-pixel-rgb.conf",
+            "share/fontconfig/conf.avail/10-sub-pixel-vbgr.conf",
+            "share/fontconfig/conf.avail/10-sub-pixel-vrgb.conf",
+            "share/fontconfig/conf.avail/10-unhinted.conf",
+            "share/fontconfig/conf.avail/10-yes-antialias.conf",
+            "share/fontconfig/conf.avail/11-lcdfilter-default.conf",
+            "share/fontconfig/conf.avail/11-lcdfilter-legacy.conf",
+            "share/fontconfig/conf.avail/11-lcdfilter-light.conf",
+            "share/fontconfig/conf.avail/11-lcdfilter-none.conf",
+            "share/fontconfig/conf.avail/20-unhint-small-vera.conf",
+            "share/fontconfig/conf.avail/25-unhint-nonlatin.conf",
+            "share/fontconfig/conf.avail/30-metric-aliases.conf",
+            "share/fontconfig/conf.avail/35-lang-normalize.conf",
+            "share/fontconfig/conf.avail/40-nonlatin.conf",
+            "share/fontconfig/conf.avail/45-generic.conf",
+            "share/fontconfig/conf.avail/45-latin.conf",
+            "share/fontconfig/conf.avail/48-guessfamily.conf",
+            "share/fontconfig/conf.avail/48-spacing.conf",
+            "share/fontconfig/conf.avail/49-sansserif.conf",
+            "share/fontconfig/conf.avail/50-user.conf",
+            "share/fontconfig/conf.avail/51-local.conf",
+            "share/fontconfig/conf.avail/60-generic.conf",
+            "share/fontconfig/conf.avail/60-latin.conf",
+            "share/fontconfig/conf.avail/65-fonts-persian.conf",
+            "share/fontconfig/conf.avail/65-khmer.conf",
+            "share/fontconfig/conf.avail/65-nonlatin.conf",
+            "share/fontconfig/conf.avail/69-unifont.conf",
+            "share/fontconfig/conf.avail/70-no-bitmaps-and-emoji.conf",
+            "share/fontconfig/conf.avail/70-no-bitmaps-except-emoji.conf",
+            "share/fontconfig/conf.avail/70-no-bitmaps.conf",
+            "share/fontconfig/conf.avail/70-yes-bitmaps.conf",
+            "share/fontconfig/conf.avail/80-delicious.conf",
+            "share/fontconfig/conf.avail/90-synthetic.conf",
+            "share/gettext/its/fontconfig.its",
+            "share/gettext/its/fontconfig.loc",
+            "share/locale/ka/LC_MESSAGES/fontconfig-conf.mo",
+            "share/locale/ka/LC_MESSAGES/fontconfig.mo",
+            "share/locale/zh_CN/LC_MESSAGES/fontconfig-conf.mo",
+            "share/locale/zh_CN/LC_MESSAGES/fontconfig.mo",
+            "share/xml/fontconfig/fonts.dtd"
+          ],
+          "installed_size": 1530055
+        }
+      }
+    }
+  }
+}
