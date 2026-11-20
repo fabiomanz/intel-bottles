@@ -2,10 +2,10 @@
   "libksba": {
     "formula": {
       "name": "libksba",
-      "pkg_version": "1.9.0",
+      "pkg_version": "1.9.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libksba.rb",
       "tap_git_path": "Formula/lib/libksba.rb",
-      "tap_git_revision": "3bc258c5e3f72a66803c7fd117e2769715f0cf2c",
+      "tap_git_revision": "bb518c8a61706b8861a2696a2155d966e8bf9a31",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "X.509 and CMS library",
       "license": "LGPL-3.0-or-later OR GPL-2.0-or-later",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-18T13:32:58Z",
+      "date": "2026-11-20T14:04:47Z",
       "tags": {
         "tahoe": {
-          "filename": "libksba-1.9.0.tahoe.bottle.tar.gz",
-          "local_filename": "libksba--1.9.0.tahoe.bottle.tar.gz",
-          "sha256": "0a35662bf4164e93868f3e903eb2eb4387d7440f33c32f4b376947cdddb82754",
+          "filename": "libksba-1.9.1.tahoe.bottle.tar.gz",
+          "local_filename": "libksba--1.9.1.tahoe.bottle.tar.gz",
+          "sha256": "1985d45138f472b784cdd049e9d1fb7cc06f903a673f9a814c29ea195404dfbd",
           "tab": {
-            "homebrew_version": "7.0.14",
+            "homebrew_version": "7.0.15",
             "changed_files": [
               "bin/ksba-config",
               "lib/pkgconfig/ksba.pc"
@@ -31,7 +31,7 @@
               "lib/libksba.8.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1794934563,
+            "source_modified_time": 1795091256,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -219,7 +219,7 @@
             "share/aclocal/ksba.m4",
             "share/info/ksba.info"
           ],
-          "installed_size": 545492
+          "installed_size": 546000
         }
       }
     }

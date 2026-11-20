@@ -2,10 +2,10 @@
   "ada-url": {
     "formula": {
       "name": "ada-url",
-      "pkg_version": "4.0.0_2",
+      "pkg_version": "4.1.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/ada-url.rb",
       "tap_git_path": "Formula/a/ada-url.rb",
-      "tap_git_revision": "844469147f2c5fb9a68364508b45e595c6e7df01",
+      "tap_git_revision": "bb518c8a61706b8861a2696a2155d966e8bf9a31",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "WHATWG-compliant and fast URL parser written in modern C++",
       "license": "Apache-2.0 OR MIT",
@@ -15,23 +15,23 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-15T14:03:40Z",
+      "date": "2026-11-20T14:06:24Z",
       "tags": {
         "tahoe": {
-          "filename": "ada-url-4.0.0_2.tahoe.bottle.tar.gz",
-          "local_filename": "ada-url--4.0.0_2.tahoe.bottle.tar.gz",
-          "sha256": "fbedba790ca517699f34cc6a88b6009bde4a400b8207d2d34f9b71db567723f9",
+          "filename": "ada-url-4.1.1.tahoe.bottle.tar.gz",
+          "local_filename": "ada-url--4.1.1.tahoe.bottle.tar.gz",
+          "sha256": "c52a773979c4d5dfa23031ff5230ac164fc0a7988658be94e0328497667fd184",
           "tab": {
-            "homebrew_version": "7.0.13",
+            "homebrew_version": "7.0.15",
             "changed_files": [
               "lib/pkgconfig/ada.pc"
             ],
             "linkage_files": [
               "bin/adaparse",
-              "lib/libada.4.0.0.dylib"
+              "lib/libada.4.1.1.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1785183009,
+            "source_modified_time": 1795119570,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -232,6 +232,8 @@
             "include/ada/url_pattern_helpers-inl.h",
             "include/ada/url_pattern_helpers.h",
             "include/ada/url_pattern_init.h",
+            "include/ada/url_pattern_list-inl.h",
+            "include/ada/url_pattern_list.h",
             "include/ada/url_pattern_regex.h",
             "include/ada/url_search_params-inl.h",
             "include/ada/url_search_params.h",
@@ -241,13 +243,13 @@
             "lib/cmake/ada/ada-config.cmake",
             "lib/cmake/ada/ada_targets-release.cmake",
             "lib/cmake/ada/ada_targets.cmake",
-            "lib/libada.4.0.0.dylib",
+            "lib/libada.4.1.1.dylib",
             "lib/libada.4.dylib",
             "lib/libada.dylib",
             "lib/pkgconfig/ada.pc",
             "sbom.spdx.json"
           ],
-          "installed_size": 1034618
+          "installed_size": 1266479
         }
       }
     }
