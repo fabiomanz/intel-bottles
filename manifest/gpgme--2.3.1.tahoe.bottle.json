@@ -1,0 +1,611 @@
+{
+  "gpgme": {
+    "formula": {
+      "name": "gpgme",
+      "pkg_version": "2.3.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gpgme.rb",
+      "tap_git_path": "Formula/g/gpgme.rb",
+      "tap_git_revision": "a4ba8bf4fc93f1bbdb7d83baf7f8591b0087d902",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Library access to GnuPG",
+      "license": "LGPL-2.1-or-later",
+      "homepage": "https://www.gnupg.org/related_software/gpgme/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-21T13:02:55Z",
+      "tags": {
+        "tahoe": {
+          "filename": "gpgme-2.3.1.tahoe.bottle.tar.gz",
+          "local_filename": "gpgme--2.3.1.tahoe.bottle.tar.gz",
+          "sha256": "2b9b22b60ca5239d4e5f5bf4c0ab243b191fe78d87be04b98a13c87414dd0937",
+          "tab": {
+            "homebrew_version": "7.0.15",
+            "changed_files": [
+              "bin/gpgme-config",
+              "lib/pkgconfig/gpgme-glib.pc",
+              "lib/pkgconfig/gpgme.pc"
+            ],
+            "linkage_files": [
+              "bin/gnupg-key-manage",
+              "bin/gpgme-json",
+              "bin/gpgme-tool",
+              "lib/libgpgme.45.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1795108178,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-11-05",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-11-05",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libidn2",
+                "version": "2.3.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.8",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtasn1",
+                "version": "4.21.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.21.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "nettle",
+                "version": "4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "p11-kit",
+                "version": "0.26.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.26.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gnutls",
+                "version": "3.8.14",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.8.14",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "libgpg-error",
+                "version": "1.61",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.61",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libassuan",
+                "version": "3.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.0.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libgcrypt",
+                "version": "1.12.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.12.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libksba",
+                "version": "1.9.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.9.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libusb",
+                "version": "1.0.30",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.30",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "npth",
+                "version": "1.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pinentry",
+                "version": "1.3.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gnupg",
+                "version": "2.5.24",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.5.24_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
+              "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.6",
+              "SPDXRef-Package-SPDXRef-gnutls-3.2e.8.2e.14",
+              "SPDXRef-Package-SPDXRef-libgcrypt-1.2e.12.2e.4",
+              "SPDXRef-Package-SPDXRef-libksba-1.2e.9.2e.1",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-gnupg-2.2e.5.2e.24.5f.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
+                "name": "ca-certificates",
+                "versionInfo": "2026-11-05",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-11-05",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gmp-6.3.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b4e672215c05a94e9244d447c8dab3435d4e8a96f6135fdbf8c37ba730c98d65"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+                "name": "libunistring",
+                "versionInfo": "1.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.5.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9914a8c6c3e193c9f0b20df1d04a32f25d247f0cb62fd1501abf321e1d1d7757"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/json-c-0.19.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "188833fbe1b5b869c90375609885592f87f0ac77580a512e266e9b426cf0a154"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gettext-1.0.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fe9d5337ff31e4f40b827b3463bd3fdc61b8f377277769f71e93baad0443bc96"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.6",
+                "name": "p11-kit",
+                "versionInfo": "0.26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/p11-kit-0.26.6.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8d1cd54c106dc57f3b83542bd7085d27cbedc4a74e06e20d10551c7adb136682"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/p11-kit@0.26.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gnutls-3.2e.8.2e.14",
+                "name": "gnutls",
+                "versionInfo": "3.8.14",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later AND GPL-3.0-only",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gnutls-3.8.14.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d0709a7a9622755aae019742b6d8d2c56e32d0ffa608aaf3e24d0617aaa812f2"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gnutls@3.8.14",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libgcrypt-1.2e.12.2e.4",
+                "name": "libgcrypt",
+                "versionInfo": "1.12.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libgcrypt-1.12.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "efbbe3d885e7e904bba98d2d0ad0e4d93a81e9289a0af3b77c44ae8f3293218b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libgcrypt@1.12.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libksba-1.2e.9.2e.1",
+                "name": "libksba",
+                "versionInfo": "1.9.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libksba-1.9.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1985d45138f472b784cdd049e9d1fb7cc06f903a673f9a814c29ea195404dfbd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libksba@1.9.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/readline-8.3.6.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8e2d9a12817040fff1164139282e0d2f7ad2aaf388db15db8eb36a8fb00dd74a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gnupg-2.2e.5.2e.24.5f.1",
+                "name": "gnupg",
+                "versionInfo": "2.5.24_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/gnupg-2.5.24_1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "eb551e91edcfb60ae1ef7fe672f1bdbd3644fbbff1e38794677fbdaee745f1cd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gnupg@2.5.24_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gpgme"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gpgme"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gpgme"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gpgme"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gpgme"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gpgme"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gnutls-3.2e.8.2e.14",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gpgme"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libgcrypt-1.2e.12.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gpgme"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libksba-1.2e.9.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gpgme"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gpgme"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gnupg-2.2e.5.2e.24.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gpgme"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-gpgme-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/gpgme-json",
+            "bin/gnupg-key-manage",
+            "bin/gpgme-config",
+            "bin/gpgme-tool"
+          ],
+          "all_files": [
+            ".brew/gpgme.rb",
+            "AUTHORS",
+            "COPYING",
+            "COPYING.LESSER",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "TODO",
+            "bin/gnupg-key-manage",
+            "bin/gpgme-config",
+            "bin/gpgme-json",
+            "bin/gpgme-tool",
+            "include/gpgme.h",
+            "lib/libgpgme.45.dylib",
+            "lib/libgpgme.a",
+            "lib/libgpgme.dylib",
+            "lib/pkgconfig/gpgme-glib.pc",
+            "lib/pkgconfig/gpgme.pc",
+            "sbom.spdx.json",
+            "share/aclocal/gpgme.m4",
+            "share/common-lisp/source/gpgme/gpgme-grovel.lisp",
+            "share/common-lisp/source/gpgme/gpgme-package.lisp",
+            "share/common-lisp/source/gpgme/gpgme.asd",
+            "share/common-lisp/source/gpgme/gpgme.lisp",
+            "share/info/gpgme.info",
+            "share/info/gpgme.info-1",
+            "share/info/gpgme.info-2",
+            "share/man/man1/gpgme-json.1"
+          ],
+          "installed_size": 2524271
+        }
+      }
+    }
+  }
+}

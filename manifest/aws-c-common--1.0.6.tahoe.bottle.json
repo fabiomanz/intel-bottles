@@ -2,10 +2,10 @@
   "aws-c-common": {
     "formula": {
       "name": "aws-c-common",
-      "pkg_version": "1.0.5",
+      "pkg_version": "1.0.6",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/aws-c-common.rb",
       "tap_git_path": "Formula/a/aws-c-common.rb",
-      "tap_git_revision": "f1755b40e90c30529ec736309e2543ab53ff410d",
+      "tap_git_revision": "a4ba8bf4fc93f1bbdb7d83baf7f8591b0087d902",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Core c99 package for AWS SDK for C",
       "license": "Apache-2.0",
@@ -15,20 +15,20 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-30T11:41:37Z",
+      "date": "2026-11-21T13:04:26Z",
       "tags": {
         "tahoe": {
-          "filename": "aws-c-common-1.0.5.tahoe.bottle.tar.gz",
-          "local_filename": "aws-c-common--1.0.5.tahoe.bottle.tar.gz",
-          "sha256": "af99b89887ba8ee01692c2bbd85f4ac3d106e59a8a7f10bc2455768b7c94b74f",
+          "filename": "aws-c-common-1.0.6.tahoe.bottle.tar.gz",
+          "local_filename": "aws-c-common--1.0.6.tahoe.bottle.tar.gz",
+          "sha256": "4efa5ee79ca0d97ae01bdc631cb3049f899249c76aacdedfd8346522c0a20c45",
           "tab": {
-            "homebrew_version": "7.0.11",
+            "homebrew_version": "7.0.15",
             "changed_files": [],
             "linkage_files": [
-              "lib/libaws-c-common.1.0.5.dylib"
+              "lib/libaws-c-common.1.0.6.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1793134205,
+            "source_modified_time": 1795223389,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -177,7 +177,7 @@
             "lib/cmake/aws-c-common/modules/AwsTestHarness.cmake",
             "lib/cmake/aws-c-common/shared/aws-c-common-targets-release.cmake",
             "lib/cmake/aws-c-common/shared/aws-c-common-targets.cmake",
-            "lib/libaws-c-common.1.0.5.dylib",
+            "lib/libaws-c-common.1.0.6.dylib",
             "lib/libaws-c-common.1.0.dylib",
             "lib/libaws-c-common.dylib",
             "sbom.spdx.json"
