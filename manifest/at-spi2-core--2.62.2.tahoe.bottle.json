@@ -2,10 +2,10 @@
   "at-spi2-core": {
     "formula": {
       "name": "at-spi2-core",
-      "pkg_version": "2.62.1",
+      "pkg_version": "2.62.2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/at-spi2-core.rb",
       "tap_git_path": "Formula/a/at-spi2-core.rb",
-      "tap_git_revision": "107085e285d8190d170f9f802ec6105368032b64",
+      "tap_git_revision": "8af9efac78ce8708b9aa853079197e20ef529ed8",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Protocol definitions and daemon for D-Bus at-spi",
       "license": "LGPL-2.1-or-later",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-13T13:09:18Z",
+      "date": "2026-11-23T15:22:26Z",
       "tags": {
         "tahoe": {
-          "filename": "at-spi2-core-2.62.1.tahoe.bottle.tar.gz",
-          "local_filename": "at-spi2-core--2.62.1.tahoe.bottle.tar.gz",
-          "sha256": "3105cb6eb242ba295f27093800b1ccfef630d41229995a823b9fe323f87fee35",
+          "filename": "at-spi2-core-2.62.2.tahoe.bottle.tar.gz",
+          "local_filename": "at-spi2-core--2.62.2.tahoe.bottle.tar.gz",
+          "sha256": "a7f8fa86c977d3cf86f3a25d123a8b79e8692fc0f7dac4f26ff768583b72e904",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.16",
             "changed_files": [
               "etc/xdg/autostart/at-spi-dbus-bus.desktop",
               "lib/pkgconfig/atk-bridge-2.0.pc",
@@ -45,15 +45,15 @@
               "lib/libatspi.0.dylib",
               "libexec/at-spi-bus-launcher"
             ],
-            "source_modified_time": 1791647578,
+            "source_modified_time": 1795364143,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "dbus",
-                "version": "1.16.2",
-                "revision": 1,
+                "version": "1.16.4",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.16.2_1",
+                "pkg_version": "1.16.4",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -72,14 +72,15 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "0.19",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -139,10 +140,10 @@
               },
               {
                 "full_name": "libx11",
-                "version": "1.8.13",
+                "version": "1.8.14",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.8.13",
+                "pkg_version": "1.8.14",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -166,19 +167,19 @@
               },
               {
                 "full_name": "libxi",
-                "version": "1.8.3",
+                "version": "1.8.4",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.8.3",
+                "pkg_version": "1.8.4",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "libxtst",
-                "version": "1.2.5",
+                "version": "1.2.6",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.2.5",
+                "pkg_version": "1.2.6",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -201,22 +202,48 @@
             },
             {
               "path": "lib/libatspi.0.dylib",
-              "string": "/usr/local/Cellar/at-spi2-core/2.62.1/share/locale",
-              "offset": 116380
+              "string": "/usr/local/Cellar/at-spi2-core/2.62.2/share/locale",
+              "offset": 116520
             }
           ],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-dbus-1.2e.16.2e.4",
               "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
               "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
               "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
-              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
+              "SPDXRef-Package-SPDXRef-libxi-1.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-libxtst-1.2e.2.2e.6",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-dbus-1.2e.16.2e.4",
+                "name": "dbus",
+                "versionInfo": "1.16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "AFL-2.1 OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/dbus-1.16.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "464f342103647ee30b766119eb2d21b2243a1401ac54ed9a5ae258f956e641c0"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/dbus@1.16.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "name": "pcre2",
@@ -264,24 +291,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.5.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
+                    "checksumValue": "9914a8c6c3e193c9f0b20df1d04a32f25d247f0cb62fd1501abf321e1d1d7757"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -356,24 +383,70 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "name": "libx11",
-                "versionInfo": "1.8.13",
+                "versionInfo": "1.8.14",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.13.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libx11-1.8.14.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "10c0844f2a8daab11aa21bd737480e496469da1a15c37067dc34ab308f8b6285"
+                    "checksumValue": "c6d26e6032e1a786e706b9c8679d0592276fd0a3007caadf760498808e1f0163"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libx11@1.8.13",
+                    "referenceLocator": "pkg:brew/libx11@1.8.14",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libxi-1.2e.8.2e.4",
+                "name": "libxi",
+                "versionInfo": "1.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libxi-1.8.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "38d0f8be70edd14d04aa12d1cfc373f2d1ad382b3cfc6c5d8300e1918d027055"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libxi@1.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libxtst-1.2e.2.2e.6",
+                "name": "libxtst",
+                "versionInfo": "1.2.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libxtst-1.2.6.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "50e3a1114434988a4cd18304d6f320e6f8cfd6911dc7fe55802c62cb05096c6f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libxtst@1.2.6",
                     "referenceType": "purl"
                   }
                 ]
@@ -393,6 +466,11 @@
             ],
             "relationships": [
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-dbus-1.2e.16.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-at-spi2-core"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-at-spi2-core"
@@ -403,7 +481,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-at-spi2-core"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-at-spi2-core"
               },
@@ -423,7 +501,17 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-at-spi2-core"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-at-spi2-core"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libxi-1.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-at-spi2-core"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libxtst-1.2e.2.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-at-spi2-core"
               },
@@ -592,6 +680,7 @@
             "share/locale/lt/LC_MESSAGES/at-spi2-core.mo",
             "share/locale/lv/LC_MESSAGES/at-spi2-core.mo",
             "share/locale/mai/LC_MESSAGES/at-spi2-core.mo",
+            "share/locale/mi/LC_MESSAGES/at-spi2-core.mo",
             "share/locale/mk/LC_MESSAGES/at-spi2-core.mo",
             "share/locale/ml/LC_MESSAGES/at-spi2-core.mo",
             "share/locale/mn/LC_MESSAGES/at-spi2-core.mo",
@@ -639,7 +728,7 @@
             "share/locale/zh_TW/LC_MESSAGES/at-spi2-core.mo",
             "share/locale/zu/LC_MESSAGES/at-spi2-core.mo"
           ],
-          "installed_size": 4357906
+          "installed_size": 4359770
         }
       }
     }
