@@ -2,10 +2,10 @@
   "merve": {
     "formula": {
       "name": "merve",
-      "pkg_version": "1.2.2_5",
+      "pkg_version": "1.2.2_6",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/m/merve.rb",
       "tap_git_path": "Formula/m/merve.rb",
-      "tap_git_revision": "844469147f2c5fb9a68364508b45e595c6e7df01",
+      "tap_git_revision": "455342dc5680600f91d0eba1df32818eb1fa9028",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "C++ lexer for extracting named exports from CommonJS modules",
       "license": "Apache-2.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-15T14:05:19Z",
+      "date": "2026-11-24T17:56:14Z",
       "tags": {
         "tahoe": {
-          "filename": "merve-1.2.2_5.tahoe.bottle.tar.gz",
-          "local_filename": "merve--1.2.2_5.tahoe.bottle.tar.gz",
-          "sha256": "c862e4f123d627be5d5416b7a6dfc73aea79561e1f98616886f8ce7364e331d3",
+          "filename": "merve-1.2.2_6.tahoe.bottle.tar.gz",
+          "local_filename": "merve--1.2.2_6.tahoe.bottle.tar.gz",
+          "sha256": "65aee7b6888d2182197954bb08bfbf023f8627caf6303e5338f9b0713797b775",
           "tab": {
-            "homebrew_version": "7.0.13",
+            "homebrew_version": "7.0.16",
             "changed_files": [
               "lib/pkgconfig/merve.pc"
             ],
@@ -44,12 +44,12 @@
               },
               {
                 "full_name": "simdutf",
-                "version": "9.4.0",
+                "version": "9.5.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "9.4.0",
+                "pkg_version": "9.5.0",
                 "declared_directly": true,
-                "compatibility_version": 8
+                "compatibility_version": 9
               }
             ],
             "arch": "x86_64",
@@ -66,7 +66,7 @@
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
-              "SPDXRef-Package-SPDXRef-simdutf-9.2e.4.2e.0",
+              "SPDXRef-Package-SPDXRef-simdutf-9.2e.5.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -94,24 +94,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2e.4.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2e.5.2e.0",
                 "name": "simdutf",
-                "versionInfo": "9.4.0",
+                "versionInfo": "9.5.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0 OR MIT",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/simdutf-9.4.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/simdutf-9.5.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "113d9d4e3798cf758dfc61da91ba2f5c23bea399b11a802e87054cb043cfadd6"
+                    "checksumValue": "7b17a25e542dbc4b48c37e5ddff1864fffce851fa6f7a07067fb2d1b18d64ec3"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/simdutf@9.4.0",
+                    "referenceLocator": "pkg:brew/simdutf@9.5.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -136,7 +136,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-merve"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2e.4.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2e.5.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-merve"
               },
