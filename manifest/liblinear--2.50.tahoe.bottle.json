@@ -1,37 +1,36 @@
 {
-  "glab": {
+  "liblinear": {
     "formula": {
-      "name": "glab",
-      "pkg_version": "1.131.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/glab.rb",
-      "tap_git_path": "Formula/g/glab.rb",
-      "tap_git_revision": "3bc258c5e3f72a66803c7fd117e2769715f0cf2c",
+      "name": "liblinear",
+      "pkg_version": "2.50",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/liblinear.rb",
+      "tap_git_path": "Formula/lib/liblinear.rb",
+      "tap_git_revision": "26b899a85e06e6cf6930f4204ea00e18612a0a2d",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
-      "desc": "Open-source GitLab command-line tool",
-      "license": "MIT",
-      "homepage": "https://gitlab.com/gitlab-org/cli"
+      "desc": "Library for large linear classification",
+      "license": "BSD-3-Clause",
+      "homepage": "https://github.com/cjlin1/liblinear"
     },
     "bottle": {
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
-      "cellar": "any_skip_relocation",
+      "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-18T13:34:08Z",
+      "date": "2026-11-24T15:25:41Z",
       "tags": {
         "tahoe": {
-          "filename": "glab-1.131.0.tahoe.bottle.tar.gz",
-          "local_filename": "glab--1.131.0.tahoe.bottle.tar.gz",
-          "sha256": "0f7f988de39f35b4b0834433aef65b4c82b81b041efcda1a501d71487a473c1c",
+          "filename": "liblinear-2.50.tahoe.bottle.tar.gz",
+          "local_filename": "liblinear--2.50.tahoe.bottle.tar.gz",
+          "sha256": "092cb6f1d9e8038d154bdf9e78291a87f89aa2cda2a3fd2cf83eca71e8697097",
           "tab": {
-            "homebrew_version": "7.0.14",
+            "homebrew_version": "7.0.16",
             "changed_files": [],
-            "linkage_files": [],
+            "linkage_files": [
+              "lib/liblinear.6.dylib"
+            ],
             "binary_relocation_files": [],
-            "source_modified_time": 1794907289,
+            "source_modified_time": 1766110301,
             "compiler": "clang",
             "runtime_dependencies": [],
-            "source": {
-              "scm_revision": "206ebab4fc3fa590b720d2885ac890c195c46650"
-            },
             "arch": "x86_64",
             "built_on": {
               "os": "Macintosh",
@@ -65,26 +64,27 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-glab-src"
+                "relatedSpdxElement": "SPDXRef-Archive-liblinear-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/glab"
+            "bin/predict",
+            "bin/train"
           ],
           "all_files": [
-            ".brew/glab.rb",
-            "CHANGELOG.md",
+            ".brew/liblinear.rb",
+            "COPYRIGHT",
             "INSTALL_RECEIPT.json",
-            "LICENSE",
-            "README.md",
-            "bin/glab",
-            "etc/bash_completion.d/glab",
-            "sbom.spdx.json",
-            "share/fish/vendor_completions.d/glab.fish",
-            "share/zsh/site-functions/_glab"
+            "README",
+            "bin/predict",
+            "bin/train",
+            "include/linear.h",
+            "lib/liblinear.6.dylib",
+            "lib/liblinear.dylib",
+            "sbom.spdx.json"
           ],
-          "installed_size": 55998653
+          "installed_size": 242993
         }
       }
     }

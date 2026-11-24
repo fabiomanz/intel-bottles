@@ -1,38 +1,37 @@
 {
-  "simdjson": {
+  "dartaotruntime": {
     "formula": {
-      "name": "simdjson",
-      "pkg_version": "5.2.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/simdjson.rb",
-      "tap_git_path": "Formula/s/simdjson.rb",
-      "tap_git_revision": "ff52b75e9fac35ec13d1995de6e18978f01ed24b",
+      "name": "dartaotruntime",
+      "pkg_version": "3.14.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dartaotruntime.rb",
+      "tap_git_path": "Formula/d/dartaotruntime.rb",
+      "tap_git_revision": "26b899a85e06e6cf6930f4204ea00e18612a0a2d",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
-      "desc": "SIMD-accelerated C++ JSON parser",
-      "license": "Apache-2.0",
-      "homepage": "https://simdjson.org"
+      "desc": "Command-line tool for running AOT-compiled snapshots of Dart code",
+      "license": "BSD-3-Clause",
+      "homepage": "https://dart.dev/tools/dartaotruntime"
     },
     "bottle": {
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
-      "cellar": "any",
+      "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-11-16T13:21:32Z",
+      "date": "2026-11-24T17:29:19Z",
       "tags": {
         "tahoe": {
-          "filename": "simdjson-5.2.0.tahoe.bottle.tar.gz",
-          "local_filename": "simdjson--5.2.0.tahoe.bottle.tar.gz",
-          "sha256": "b2c773dcb6882aad2d7a10bacdf238a9806814ebac5b3ca5d2c19cb7ccde4d92",
+          "filename": "dartaotruntime-3.14.1.tahoe.bottle.tar.gz",
+          "local_filename": "dartaotruntime--3.14.1.tahoe.bottle.tar.gz",
+          "sha256": "8b0a8f3cbf1171d3f65c0cc7c7e9755c2fb1a9e821b302b114ebd362b3a0d9b7",
           "tab": {
-            "homebrew_version": "7.0.14",
-            "changed_files": [
-              "lib/pkgconfig/simdjson.pc"
-            ],
-            "linkage_files": [
-              "lib/libsimdjson.37.0.0.dylib"
-            ],
+            "homebrew_version": "7.0.16",
+            "changed_files": [],
+            "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1794715003,
+            "source_modified_time": 1794902484,
             "compiler": "clang",
             "runtime_dependencies": [],
+            "source": {
+              "scm_revision": "c8a0db5978a68d4037f7e5294ffc79867935c8c2"
+            },
             "arch": "x86_64",
             "built_on": {
               "os": "Macintosh",
@@ -66,33 +65,24 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-simdjson-src"
+                "relatedSpdxElement": "SPDXRef-Archive-dartaotruntime-src"
               }
             ]
           },
-          "path_exec_files": [],
+          "path_exec_files": [
+            "bin/dartaotruntime"
+          ],
           "all_files": [
-            ".brew/simdjson.rb",
+            ".brew/dartaotruntime.rb",
             "AUTHORS",
+            "CHANGELOG.md",
             "INSTALL_RECEIPT.json",
             "LICENSE",
-            "LICENSE-MIT",
             "README.md",
-            "include/simdjson.h",
-            "lib/cmake/simdjson/simdjson-config-version.cmake",
-            "lib/cmake/simdjson/simdjson-config.cmake",
-            "lib/cmake/simdjson/simdjsonTargets-release.cmake",
-            "lib/cmake/simdjson/simdjsonTargets.cmake",
-            "lib/cmake/simdjson/simdjson_staticTargets-release.cmake",
-            "lib/cmake/simdjson/simdjson_staticTargets.cmake",
-            "lib/libsimdjson.37.0.0.dylib",
-            "lib/libsimdjson.37.dylib",
-            "lib/libsimdjson.dylib",
-            "lib/libsimdjson_static.a",
-            "lib/pkgconfig/simdjson.pc",
+            "bin/dartaotruntime",
             "sbom.spdx.json"
           ],
-          "installed_size": 11198932
+          "installed_size": 5639104
         }
       }
     }

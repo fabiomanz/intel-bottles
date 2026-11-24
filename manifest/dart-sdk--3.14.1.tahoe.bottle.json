@@ -2,10 +2,10 @@
   "dart-sdk": {
     "formula": {
       "name": "dart-sdk",
-      "pkg_version": "3.13.7",
+      "pkg_version": "3.14.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dart-sdk.rb",
       "tap_git_path": "Formula/d/dart-sdk.rb",
-      "tap_git_revision": "6c7064df43cae2e1697cc08118b2dd78ba9afab8",
+      "tap_git_revision": "26b899a85e06e6cf6930f4204ea00e18612a0a2d",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Dart Language SDK, including the VM, dart2js, core libraries, and more",
       "license": "BSD-3-Clause",
@@ -15,20 +15,21 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-07T12:30:57Z",
+      "date": "2026-11-24T17:02:28Z",
       "tags": {
         "tahoe": {
-          "filename": "dart-sdk-3.13.7.tahoe.bottle.tar.gz",
-          "local_filename": "dart-sdk--3.13.7.tahoe.bottle.tar.gz",
-          "sha256": "dc796002af271fb6fa5a2cf1afaa962f4d6f9ac4454c2f94d6b8054549419064",
+          "filename": "dart-sdk-3.14.1.tahoe.bottle.tar.gz",
+          "local_filename": "dart-sdk--3.14.1.tahoe.bottle.tar.gz",
+          "sha256": "ba37ebe141630678f19263c36bacd1c736c02d7585ff5c26581e58dcb4ad5c01",
           "tab": {
-            "homebrew_version": "7.0.12",
+            "homebrew_version": "7.0.16",
             "changed_files": [],
             "linkage_files": [
               "libexec/bin/snapshots/analysis_server_aot.dart.snapshot",
               "libexec/bin/snapshots/dart2bytecode.dart.snapshot",
               "libexec/bin/snapshots/dart2js_aot.dart.snapshot",
               "libexec/bin/snapshots/dart2wasm_product.snapshot",
+              "libexec/bin/snapshots/dart_runtime_service_vm_aot.dart.snapshot",
               "libexec/bin/snapshots/dart_tooling_daemon_aot.dart.snapshot",
               "libexec/bin/snapshots/dartdev_aot.dart.snapshot",
               "libexec/bin/snapshots/dartdevc_aot.dart.snapshot",
@@ -38,9 +39,12 @@
               "libexec/bin/snapshots/kernel_worker_aot.dart.snapshot"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1792704537,
+            "source_modified_time": 1794902484,
             "compiler": "clang",
             "runtime_dependencies": [],
+            "source": {
+              "scm_revision": "c8a0db5978a68d4037f7e5294ffc79867935c8c2"
+            },
             "arch": "x86_64",
             "built_on": {
               "os": "Macintosh",
@@ -83,14 +87,10 @@
           ],
           "all_files": [
             ".brew/dart-sdk.rb",
-            "AUTHORS",
-            "CHANGELOG.md",
             "INSTALL_RECEIPT.json",
             "LICENSE",
-            "README.md",
+            "README",
             "bin/dart",
-            "libexec/LICENSE",
-            "libexec/README",
             "libexec/bin/dart",
             "libexec/bin/dart.sym",
             "libexec/bin/dartaotruntime",
@@ -545,6 +545,7 @@
             "libexec/bin/resources/devtools/assets/packages/devtools_app_shared/fonts/Roboto_Mono/RobotoMono-Medium.ttf",
             "libexec/bin/resources/devtools/assets/packages/devtools_app_shared/fonts/Roboto_Mono/RobotoMono-Regular.ttf",
             "libexec/bin/resources/devtools/assets/packages/devtools_app_shared/fonts/Roboto_Mono/RobotoMono-Thin.ttf",
+            "libexec/bin/resources/devtools/assets/packages/material_ui/shaders/ink_sparkle.frag",
             "libexec/bin/resources/devtools/assets/packages/perfetto_ui_compiled/dist/devtools/devtools_dark.css",
             "libexec/bin/resources/devtools/assets/packages/perfetto_ui_compiled/dist/devtools/devtools_light.css",
             "libexec/bin/resources/devtools/assets/packages/perfetto_ui_compiled/dist/devtools/devtools_shared.css",
@@ -608,6 +609,8 @@
             "libexec/bin/snapshots/dart2bytecode.dart.snapshot",
             "libexec/bin/snapshots/dart2js_aot.dart.snapshot",
             "libexec/bin/snapshots/dart2wasm_product.snapshot",
+            "libexec/bin/snapshots/dart_runtime_service_vm.dart.snapshot",
+            "libexec/bin/snapshots/dart_runtime_service_vm_aot.dart.snapshot",
             "libexec/bin/snapshots/dart_tooling_daemon_aot.dart.snapshot",
             "libexec/bin/snapshots/dartdev_aot.dart.snapshot",
             "libexec/bin/snapshots/dartdevc.dart.snapshot",
@@ -640,6 +643,7 @@
             "libexec/lib/_http/overrides.dart",
             "libexec/lib/_http/websocket.dart",
             "libexec/lib/_http/websocket_impl.dart",
+            "libexec/lib/_http/websocket_profiler.dart",
             "libexec/lib/_internal/allowed_experiments.json",
             "libexec/lib/_internal/dart2js_platform.dill",
             "libexec/lib/_internal/dart2js_server_platform.dill",
@@ -1135,7 +1139,7 @@
             "libexec/version",
             "sbom.spdx.json"
           ],
-          "installed_size": 638878789
+          "installed_size": 671785677
         }
       }
     }

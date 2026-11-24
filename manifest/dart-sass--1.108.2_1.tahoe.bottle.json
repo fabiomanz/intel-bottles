@@ -2,10 +2,10 @@
   "dart-sass": {
     "formula": {
       "name": "dart-sass",
-      "pkg_version": "1.108.1",
+      "pkg_version": "1.108.2_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dart-sass.rb",
       "tap_git_path": "Formula/d/dart-sass.rb",
-      "tap_git_revision": "6c7064df43cae2e1697cc08118b2dd78ba9afab8",
+      "tap_git_revision": "26b899a85e06e6cf6930f4204ea00e18612a0a2d",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Reference implementation of Sass, written in Dart",
       "license": "MIT",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-07T12:46:38Z",
+      "date": "2026-11-24T17:30:56Z",
       "tags": {
         "tahoe": {
-          "filename": "dart-sass-1.108.1.tahoe.bottle.tar.gz",
-          "local_filename": "dart-sass--1.108.1.tahoe.bottle.tar.gz",
-          "sha256": "1336e19071fbf182f053668f5456d38fb8d3ef5d6737ba9491f1069cff171a95",
+          "filename": "dart-sass-1.108.2_1.tahoe.bottle.tar.gz",
+          "local_filename": "dart-sass--1.108.2_1.tahoe.bottle.tar.gz",
+          "sha256": "aed140909c4f8436fc210257641943ac06fe15a8dc1f342dfb6e24d1ead24283",
           "tab": {
-            "homebrew_version": "7.0.12",
+            "homebrew_version": "7.0.16",
             "changed_files": [
               "bin/sass"
             ],
@@ -30,16 +30,16 @@
               "libexec/sass.aot"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1794009918,
+            "source_modified_time": 1794360953,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "dartaotruntime",
-                "version": "3.13.7",
+                "version": "3.14.1",
                 "revision": 0,
-                "pkg_version": "3.13.7",
+                "pkg_version": "3.14.1",
                 "declared_directly": true,
-                "compatibility_version": 3
+                "compatibility_version": 4
               }
             ],
             "arch": "x86_64",
@@ -93,7 +93,7 @@
             "libexec/sass.aot",
             "sbom.spdx.json"
           ],
-          "installed_size": 5920765
+          "installed_size": 5961052
         }
       }
     }
