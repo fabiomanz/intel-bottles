@@ -2,10 +2,10 @@
   "uv": {
     "formula": {
       "name": "uv",
-      "pkg_version": "0.13.9",
+      "pkg_version": "0.13.10",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/u/uv.rb",
       "tap_git_path": "Formula/u/uv.rb",
-      "tap_git_revision": "161dc6dc570e890f235fa26964a47493c3da517b",
+      "tap_git_revision": "d80cdc78e2714f6320c2e99cd0a48ecb68c8e4b7",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Extremely fast Python package installer and resolver, written in Rust",
       "license": "Apache-2.0 OR MIT",
@@ -15,18 +15,18 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-11-18T18:25:32Z",
+      "date": "2026-11-25T15:44:42Z",
       "tags": {
         "tahoe": {
-          "filename": "uv-0.13.9.tahoe.bottle.tar.gz",
-          "local_filename": "uv--0.13.9.tahoe.bottle.tar.gz",
-          "sha256": "1a977e81f5639f2e2dcbed9f7f84bdae4564e3367bb2ff53e5005fb9b3f960e9",
+          "filename": "uv-0.13.10.tahoe.bottle.tar.gz",
+          "local_filename": "uv--0.13.10.tahoe.bottle.tar.gz",
+          "sha256": "a22d7469fd9d9d16d8f3b0e54f3658e69356366e91374dcf14cbbe0894b485ab",
           "tab": {
-            "homebrew_version": "7.0.14",
+            "homebrew_version": "7.0.16",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1794906598,
+            "source_modified_time": 1795551837,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -89,7 +89,7 @@
             "share/zsh/site-functions/_uv",
             "share/zsh/site-functions/_uvx"
           ],
-          "installed_size": 39856560
+          "installed_size": 40671474
         }
       }
     }

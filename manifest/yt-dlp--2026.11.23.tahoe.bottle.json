@@ -2,10 +2,10 @@
   "yt-dlp": {
     "formula": {
       "name": "yt-dlp",
-      "pkg_version": "2026.10.26",
+      "pkg_version": "2026.11.23",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/y/yt-dlp.rb",
       "tap_git_path": "Formula/y/yt-dlp.rb",
-      "tap_git_revision": "9a4c6d616c5e15a3fff477e7eb41f465a86c71ef",
+      "tap_git_revision": "d80cdc78e2714f6320c2e99cd0a48ecb68c8e4b7",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Feature-rich command-line audio/video downloader",
       "license": "Unlicense",
@@ -13,16 +13,16 @@
     },
     "bottle": {
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
-      "cellar": "any_skip_relocation",
+      "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-28T12:16:18Z",
+      "date": "2026-11-25T15:25:00Z",
       "tags": {
         "tahoe": {
-          "filename": "yt-dlp-2026.10.26.tahoe.bottle.tar.gz",
-          "local_filename": "yt-dlp--2026.10.26.tahoe.bottle.tar.gz",
-          "sha256": "aab97806902b5f150ecb432454320a857082a23fb926c6b75289a73c2b7a4146",
+          "filename": "yt-dlp-2026.11.23.tahoe.bottle.tar.gz",
+          "local_filename": "yt-dlp--2026.11.23.tahoe.bottle.tar.gz",
+          "sha256": "782e56d1a3e77b1caa07ddc9466046a82bb377495f5bc6e0f4de8bd181fed809",
           "tab": {
-            "homebrew_version": "7.0.11",
+            "homebrew_version": "7.0.16",
             "changed_files": [
               "libexec/bin/curl-cffi",
               "libexec/bin/idna",
@@ -38,26 +38,28 @@
               "libexec/lib/python3.15/site-packages/homebrew_deps.pth",
               "libexec/pyvenv.cfg"
             ],
-            "linkage_files": [],
+            "linkage_files": [
+              "libexec/lib/python3.15/site-packages/curl_cffi/_wrapper.abi3-darwin.so"
+            ],
             "binary_relocation_files": [],
-            "source_modified_time": 1793053528,
+            "source_modified_time": 1795477804,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "ca-certificates",
-                "version": "2026-10-20",
+                "version": "2026-11-05",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-10-20",
+                "pkg_version": "2026-11-05",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "certifi",
-                "version": "2026.10.23",
+                "version": "2026.11.20",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026.10.23",
+                "pkg_version": "2026.11.20",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -80,11 +82,19 @@
                 "compatibility_version": 1
               },
               {
+                "full_name": "curl-impersonate",
+                "version": "2.3.2",
+                "revision": 0,
+                "pkg_version": "2.3.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
                 "full_name": "jpeg-turbo",
-                "version": "3.2.0",
+                "version": "3.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.2.0",
+                "pkg_version": "3.2.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -126,18 +136,19 @@
               },
               {
                 "full_name": "lz4",
-                "version": "1.10.0",
+                "version": "1.11.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.10.0",
-                "declared_directly": false
+                "pkg_version": "1.11.1",
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "zstd",
-                "version": "1.5.7",
-                "revision": 1,
+                "version": "1.6.0",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.5.7_1",
+                "pkg_version": "1.6.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -152,10 +163,10 @@
               },
               {
                 "full_name": "little-cms2",
-                "version": "2.19.1",
+                "version": "2.20",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.19.1",
+                "pkg_version": "2.20",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -201,7 +212,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "4.1.0",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "python@3.15",
@@ -209,7 +221,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "3.15.2",
-                "declared_directly": true
+                "declared_directly": true,
+                "compatibility_version": 1
               }
             ],
             "arch": "x86_64",
@@ -225,19 +238,19 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
-              "SPDXRef-Package-SPDXRef-certifi-2026.2e.10.2e.23",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
+              "SPDXRef-Package-SPDXRef-certifi-2026.2e.11.2e.20",
               "SPDXRef-Package-SPDXRef-pycparser-3.2e.12",
               "SPDXRef-Package-SPDXRef-cffi-2.2e.1.2e.1.5f.1",
-              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
               "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
               "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
               "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
-              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.6.2e.0",
               "SPDXRef-Package-SPDXRef-libtiff-4.2e.7.2e.2",
-              "SPDXRef-Package-SPDXRef-little-cms2-2.2e.19.2e.1",
+              "SPDXRef-Package-SPDXRef-little-cms2-2.2e.20",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
               "SPDXRef-Package-SPDXRef-deno-2.2e.9.2e.8",
@@ -248,47 +261,47 @@
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "name": "ca-certificates",
-                "versionInfo": "2026-10-20",
+                "versionInfo": "2026-11-05",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
+                    "checksumValue": "8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-11-05",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-certifi-2026.2e.10.2e.23",
+                "SPDXID": "SPDXRef-Package-SPDXRef-certifi-2026.2e.11.2e.20",
                 "name": "certifi",
-                "versionInfo": "2026.10.23",
+                "versionInfo": "2026.11.20",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/certifi/blobs/sha256:6a1ad67a87b9d987dc2e62ca1bb553345e003870a4664f23063f9cb4a38b165a",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/certifi/blobs/sha256:fc6558026fe24cf23dbf632639d9de6197864918170588b98bc68430ca17440b",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "6a1ad67a87b9d987dc2e62ca1bb553345e003870a4664f23063f9cb4a38b165a"
+                    "checksumValue": "fc6558026fe24cf23dbf632639d9de6197864918170588b98bc68430ca17440b"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/certifi@2026.10.23",
+                    "referenceLocator": "pkg:brew/certifi@2026.11.20",
                     "referenceType": "purl"
                   }
                 ]
@@ -340,24 +353,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
                 "name": "jpeg-turbo",
-                "versionInfo": "3.2.0",
+                "versionInfo": "3.2.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "3c7d19c475389bbb48a07f78f52473c8f49f458bd45b4453457cfec9c01601ed"
+                    "checksumValue": "1bb37d07262582aba709ca3f07596fbdf0649606f690b6800e72c6e99af2f9dd"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -455,47 +468,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
                 "name": "lz4",
-                "versionInfo": "1.10.0",
+                "versionInfo": "1.11.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.10.0.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.11.1.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "62eef88749aa17e5722eecc527fadab7bcc525375a5733f3da7507cabfd19b24"
+                    "checksumValue": "48d8c38df9412e0a3198698367f3afe9ada2c8055a77f5468cd59d85cb408f9a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceLocator": "pkg:brew/lz4@1.11.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.6.2e.0",
                 "name": "zstd",
-                "versionInfo": "1.5.7_1",
+                "versionInfo": "1.6.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/zstd-1.6.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6"
+                    "checksumValue": "349623cbea2d97e70864ff9f5edea34d0e0eb5c9f9be39e0a9b9749cf7195e9b"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceLocator": "pkg:brew/zstd@1.6.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -524,24 +537,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-little-cms2-2.2e.19.2e.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-little-cms2-2.2e.20",
                 "name": "little-cms2",
-                "versionInfo": "2.19.1",
+                "versionInfo": "2.20",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/little-cms2-2.19.1.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/little-cms2-2.20.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "e1890bcfd1f63598fa537a40b75379b1c930bdbd86164a2ef02a71858cd85185"
+                    "checksumValue": "36a35b53f5f90278ac7ea9c2083c5a48a5cd78e5d8d0e00b5a50b086e504e5a9"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/little-cms2@2.19.1",
+                    "referenceLocator": "pkg:brew/little-cms2@2.20",
                     "referenceType": "purl"
                   }
                 ]
@@ -699,12 +712,12 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-yt-dlp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-certifi-2026.2e.10.2e.23",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-certifi-2026.2e.11.2e.20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-yt-dlp"
               },
@@ -719,7 +732,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-yt-dlp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-yt-dlp"
               },
@@ -744,12 +757,12 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-yt-dlp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-yt-dlp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-yt-dlp"
               },
@@ -759,7 +772,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-yt-dlp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-little-cms2-2.2e.19.2e.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-little-cms2-2.2e.20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-yt-dlp"
               },
@@ -1195,13 +1208,13 @@
             "libexec/lib/python3.15/site-packages/charset_normalizer/py.typed",
             "libexec/lib/python3.15/site-packages/charset_normalizer/utils.py",
             "libexec/lib/python3.15/site-packages/charset_normalizer/version.py",
-            "libexec/lib/python3.15/site-packages/charset_normalizer-3.5.2.dist-info/INSTALLER",
-            "libexec/lib/python3.15/site-packages/charset_normalizer-3.5.2.dist-info/METADATA",
-            "libexec/lib/python3.15/site-packages/charset_normalizer-3.5.2.dist-info/REQUESTED",
-            "libexec/lib/python3.15/site-packages/charset_normalizer-3.5.2.dist-info/WHEEL",
-            "libexec/lib/python3.15/site-packages/charset_normalizer-3.5.2.dist-info/entry_points.txt",
-            "libexec/lib/python3.15/site-packages/charset_normalizer-3.5.2.dist-info/licenses/LICENSE",
-            "libexec/lib/python3.15/site-packages/charset_normalizer-3.5.2.dist-info/top_level.txt",
+            "libexec/lib/python3.15/site-packages/charset_normalizer-3.5.3.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/charset_normalizer-3.5.3.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/charset_normalizer-3.5.3.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/charset_normalizer-3.5.3.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/charset_normalizer-3.5.3.dist-info/entry_points.txt",
+            "libexec/lib/python3.15/site-packages/charset_normalizer-3.5.3.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/charset_normalizer-3.5.3.dist-info/top_level.txt",
             "libexec/lib/python3.15/site-packages/curl_cffi/__init__.py",
             "libexec/lib/python3.15/site-packages/curl_cffi/__main__.py",
             "libexec/lib/python3.15/site-packages/curl_cffi/__version__.py",
@@ -1322,13 +1335,13 @@
             "libexec/lib/python3.15/site-packages/mutagen-1.48.1.dist-info/entry_points.txt",
             "libexec/lib/python3.15/site-packages/mutagen-1.48.1.dist-info/licenses/COPYING",
             "libexec/lib/python3.15/site-packages/mutagen-1.48.1.dist-info/top_level.txt",
-            "libexec/lib/python3.15/site-packages/pycryptodomex-3.24.1.dist-info/INSTALLER",
-            "libexec/lib/python3.15/site-packages/pycryptodomex-3.24.1.dist-info/METADATA",
-            "libexec/lib/python3.15/site-packages/pycryptodomex-3.24.1.dist-info/REQUESTED",
-            "libexec/lib/python3.15/site-packages/pycryptodomex-3.24.1.dist-info/WHEEL",
-            "libexec/lib/python3.15/site-packages/pycryptodomex-3.24.1.dist-info/licenses/AUTHORS.rst",
-            "libexec/lib/python3.15/site-packages/pycryptodomex-3.24.1.dist-info/licenses/LICENSE.rst",
-            "libexec/lib/python3.15/site-packages/pycryptodomex-3.24.1.dist-info/top_level.txt",
+            "libexec/lib/python3.15/site-packages/pycryptodomex-3.24.2.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/pycryptodomex-3.24.2.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/pycryptodomex-3.24.2.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/pycryptodomex-3.24.2.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/pycryptodomex-3.24.2.dist-info/licenses/AUTHORS.rst",
+            "libexec/lib/python3.15/site-packages/pycryptodomex-3.24.2.dist-info/licenses/LICENSE.rst",
+            "libexec/lib/python3.15/site-packages/pycryptodomex-3.24.2.dist-info/top_level.txt",
             "libexec/lib/python3.15/site-packages/requests/__init__.py",
             "libexec/lib/python3.15/site-packages/requests/__version__.py",
             "libexec/lib/python3.15/site-packages/requests/_internal_utils.py",
@@ -1455,13 +1468,13 @@
             "libexec/lib/python3.15/site-packages/websockets/uri.py",
             "libexec/lib/python3.15/site-packages/websockets/utils.py",
             "libexec/lib/python3.15/site-packages/websockets/version.py",
-            "libexec/lib/python3.15/site-packages/websockets-17.3.dist-info/INSTALLER",
-            "libexec/lib/python3.15/site-packages/websockets-17.3.dist-info/METADATA",
-            "libexec/lib/python3.15/site-packages/websockets-17.3.dist-info/REQUESTED",
-            "libexec/lib/python3.15/site-packages/websockets-17.3.dist-info/WHEEL",
-            "libexec/lib/python3.15/site-packages/websockets-17.3.dist-info/entry_points.txt",
-            "libexec/lib/python3.15/site-packages/websockets-17.3.dist-info/licenses/LICENSE",
-            "libexec/lib/python3.15/site-packages/websockets-17.3.dist-info/top_level.txt",
+            "libexec/lib/python3.15/site-packages/websockets-17.4.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/websockets-17.4.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/websockets-17.4.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/websockets-17.4.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/websockets-17.4.dist-info/entry_points.txt",
+            "libexec/lib/python3.15/site-packages/websockets-17.4.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/websockets-17.4.dist-info/top_level.txt",
             "libexec/lib/python3.15/site-packages/yt_dlp/YoutubeDL.py",
             "libexec/lib/python3.15/site-packages/yt_dlp/__init__.py",
             "libexec/lib/python3.15/site-packages/yt_dlp/__main__.py",
@@ -2067,7 +2080,6 @@
             "libexec/lib/python3.15/site-packages/yt_dlp/extractor/peertv.py",
             "libexec/lib/python3.15/site-packages/yt_dlp/extractor/peloton.py",
             "libexec/lib/python3.15/site-packages/yt_dlp/extractor/performgroup.py",
-            "libexec/lib/python3.15/site-packages/yt_dlp/extractor/periscope.py",
             "libexec/lib/python3.15/site-packages/yt_dlp/extractor/pgatour.py",
             "libexec/lib/python3.15/site-packages/yt_dlp/extractor/philharmoniedeparis.py",
             "libexec/lib/python3.15/site-packages/yt_dlp/extractor/phoenix.py",
@@ -2509,12 +2521,12 @@
             "libexec/lib/python3.15/site-packages/yt_dlp/utils/traversal.py",
             "libexec/lib/python3.15/site-packages/yt_dlp/version.py",
             "libexec/lib/python3.15/site-packages/yt_dlp/webvtt.py",
-            "libexec/lib/python3.15/site-packages/yt_dlp-2026.10.26.dist-info/INSTALLER",
-            "libexec/lib/python3.15/site-packages/yt_dlp-2026.10.26.dist-info/METADATA",
-            "libexec/lib/python3.15/site-packages/yt_dlp-2026.10.26.dist-info/REQUESTED",
-            "libexec/lib/python3.15/site-packages/yt_dlp-2026.10.26.dist-info/WHEEL",
-            "libexec/lib/python3.15/site-packages/yt_dlp-2026.10.26.dist-info/entry_points.txt",
-            "libexec/lib/python3.15/site-packages/yt_dlp-2026.10.26.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/yt_dlp-2026.11.23.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/yt_dlp-2026.11.23.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/yt_dlp-2026.11.23.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/yt_dlp-2026.11.23.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/yt_dlp-2026.11.23.dist-info/entry_points.txt",
+            "libexec/lib/python3.15/site-packages/yt_dlp-2026.11.23.dist-info/licenses/LICENSE",
             "libexec/lib/python3.15/site-packages/yt_dlp_ejs/__init__.py",
             "libexec/lib/python3.15/site-packages/yt_dlp_ejs/_version.py",
             "libexec/lib/python3.15/site-packages/yt_dlp_ejs/yt/__init__.py",
@@ -2540,7 +2552,7 @@
             "share/man/man1/yt-dlp.1",
             "share/zsh/site-functions/_yt-dlp"
           ],
-          "installed_size": 27366585
+          "installed_size": 20231049
         }
       }
     }

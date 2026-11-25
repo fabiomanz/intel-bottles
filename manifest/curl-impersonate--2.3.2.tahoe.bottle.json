@@ -1,0 +1,264 @@
+{
+  "curl-impersonate": {
+    "formula": {
+      "name": "curl-impersonate",
+      "pkg_version": "2.3.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/curl-impersonate.rb",
+      "tap_git_path": "Formula/c/curl-impersonate.rb",
+      "tap_git_revision": "d80cdc78e2714f6320c2e99cd0a48ecb68c8e4b7",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Curl build that makes HTTP requests look like they came from a real browser",
+      "license": "MIT AND Apache-2.0 AND BSD-3-Clause AND curl AND Zlib AND (GPL-2.0-or-later OR LGPL-3.0-or-later) AND (Unicode-TOU AND Unicode-DFS-2016)",
+      "homepage": "https://curl-impersonate.readthedocs.io/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-25T15:13:38Z",
+      "tags": {
+        "tahoe": {
+          "filename": "curl-impersonate-2.3.2.tahoe.bottle.tar.gz",
+          "local_filename": "curl-impersonate--2.3.2.tahoe.bottle.tar.gz",
+          "sha256": "1da2ce8096acda17ea22f94007a01a1437b21e02a62c0de693950a1af4ae8c25",
+          "tab": {
+            "homebrew_version": "7.0.16",
+            "changed_files": [
+              "bin/curl-impersonate-config",
+              "lib/pkgconfig/libcurl-impersonate.pc"
+            ],
+            "linkage_files": [
+              "lib/libcurl-impersonate.4.8.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1793287433,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-11-05",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-11-05",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
+                "name": "ca-certificates",
+                "versionInfo": "2026-11-05",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-11-05",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-curl-impersonate"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-curl-impersonate-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/curl_safari180",
+            "bin/curl_chrome133a",
+            "bin/curl_safari172_ios",
+            "bin/curl_chrome120",
+            "bin/curl_chrome116",
+            "bin/curl_chrome142",
+            "bin/curl_chrome145",
+            "bin/curl_chrome151_macos",
+            "bin/curl_safari260",
+            "bin/curl_chrome110",
+            "bin/curl_firefox144",
+            "bin/curl_chrome119",
+            "bin/curl_chrome150",
+            "bin/curl_firefox135",
+            "bin/curl_safari270_ios",
+            "bin/curl_chrome104",
+            "bin/curl_edge101",
+            "bin/curl_firefox133",
+            "bin/curl_chrome151",
+            "bin/curl-impersonate-config",
+            "bin/curl_safari260_ios",
+            "bin/curl_chrome152_macos",
+            "bin/curl_safari2601",
+            "bin/curl_safari170",
+            "bin/curl_safari184",
+            "bin/curl_edge99",
+            "bin/curl_chrome131_android",
+            "bin/curl_chrome99_android",
+            "bin/curl_chrome146",
+            "bin/curl_chrome124",
+            "bin/curl_chrome123",
+            "bin/curl_tor145",
+            "bin/curl_firefox147",
+            "bin/curl_chrome107",
+            "bin/curl_safari270",
+            "bin/curl_chrome100",
+            "bin/curl_firefox154",
+            "bin/curl_chrome136",
+            "bin/curl_chrome99",
+            "bin/curl_chrome131",
+            "bin/curl_firefox153",
+            "bin/curl_firefox155",
+            "bin/curl_chrome101",
+            "bin/curl_chrome152",
+            "bin/curl_safari184_ios",
+            "bin/curl-impersonate",
+            "bin/curl_safari153",
+            "bin/curl_safari180_ios",
+            "bin/curl_safari155"
+          ],
+          "all_files": [
+            ".brew/curl-impersonate.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "LICENSE_BORINGSSL",
+            "LICENSE_BROTLI",
+            "LICENSE_CARES",
+            "LICENSE_CURL",
+            "LICENSE_NGHTTP2",
+            "LICENSE_NGHTTP3",
+            "LICENSE_NGTCP2",
+            "LICENSE_ZLIB",
+            "LICENSE_ZSTD",
+            "README.md",
+            "bin/curl-impersonate",
+            "bin/curl-impersonate-config",
+            "bin/curl_chrome100",
+            "bin/curl_chrome101",
+            "bin/curl_chrome104",
+            "bin/curl_chrome107",
+            "bin/curl_chrome110",
+            "bin/curl_chrome116",
+            "bin/curl_chrome119",
+            "bin/curl_chrome120",
+            "bin/curl_chrome123",
+            "bin/curl_chrome124",
+            "bin/curl_chrome131",
+            "bin/curl_chrome131_android",
+            "bin/curl_chrome133a",
+            "bin/curl_chrome136",
+            "bin/curl_chrome142",
+            "bin/curl_chrome145",
+            "bin/curl_chrome146",
+            "bin/curl_chrome150",
+            "bin/curl_chrome151",
+            "bin/curl_chrome151_macos",
+            "bin/curl_chrome152",
+            "bin/curl_chrome152_macos",
+            "bin/curl_chrome99",
+            "bin/curl_chrome99_android",
+            "bin/curl_edge101",
+            "bin/curl_edge99",
+            "bin/curl_firefox133",
+            "bin/curl_firefox135",
+            "bin/curl_firefox144",
+            "bin/curl_firefox147",
+            "bin/curl_firefox153",
+            "bin/curl_firefox154",
+            "bin/curl_firefox155",
+            "bin/curl_safari153",
+            "bin/curl_safari155",
+            "bin/curl_safari170",
+            "bin/curl_safari172_ios",
+            "bin/curl_safari180",
+            "bin/curl_safari180_ios",
+            "bin/curl_safari184",
+            "bin/curl_safari184_ios",
+            "bin/curl_safari260",
+            "bin/curl_safari2601",
+            "bin/curl_safari260_ios",
+            "bin/curl_safari270",
+            "bin/curl_safari270_ios",
+            "bin/curl_tor145",
+            "include/curl-impersonate/curl/curl.h",
+            "include/curl-impersonate/curl/curlver.h",
+            "include/curl-impersonate/curl/easy.h",
+            "include/curl-impersonate/curl/header.h",
+            "include/curl-impersonate/curl/mprintf.h",
+            "include/curl-impersonate/curl/multi.h",
+            "include/curl-impersonate/curl/options.h",
+            "include/curl-impersonate/curl/stdcheaders.h",
+            "include/curl-impersonate/curl/system.h",
+            "include/curl-impersonate/curl/typecheck-gcc.h",
+            "include/curl-impersonate/curl/urlapi.h",
+            "include/curl-impersonate/curl/websockets.h",
+            "include/curl-impersonate/webcrypto.h",
+            "lib/curl-impersonate/libbrotlicommon.a",
+            "lib/curl-impersonate/libbrotlidec.a",
+            "lib/curl-impersonate/libbrotlienc.a",
+            "lib/curl-impersonate/libcares.a",
+            "lib/curl-impersonate/libcrypto.a",
+            "lib/curl-impersonate/libnghttp2.a",
+            "lib/curl-impersonate/libnghttp3.a",
+            "lib/curl-impersonate/libngtcp2.a",
+            "lib/curl-impersonate/libngtcp2_crypto_boringssl.a",
+            "lib/curl-impersonate/libssl.a",
+            "lib/curl-impersonate/libz.a",
+            "lib/curl-impersonate/libzstd.a",
+            "lib/libcurl-impersonate.4.8.0.dylib",
+            "lib/libcurl-impersonate.4.dylib",
+            "lib/libcurl-impersonate.a",
+            "lib/libcurl-impersonate.dylib",
+            "lib/pkgconfig/libcurl-impersonate.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 17358106
+        }
+      }
+    }
+  }
+}
