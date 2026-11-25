@@ -1,0 +1,202 @@
+{
+  "zstd": {
+    "formula": {
+      "name": "zstd",
+      "pkg_version": "1.6.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/z/zstd.rb",
+      "tap_git_path": "Formula/z/zstd.rb",
+      "tap_git_revision": "c4dafd422a4861d3ff2902b59ed9474f410939f1",
+      "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
+      "desc": "Zstandard is a real-time compression algorithm",
+      "license": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+      "homepage": "https://meta.github.io/zstd/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-25T15:00:09Z",
+      "tags": {
+        "tahoe": {
+          "filename": "zstd-1.6.0.tahoe.bottle.tar.gz",
+          "local_filename": "zstd--1.6.0.tahoe.bottle.tar.gz",
+          "sha256": "349623cbea2d97e70864ff9f5edea34d0e0eb5c9f9be39e0a9b9749cf7195e9b",
+          "tab": {
+            "homebrew_version": "7.0.16",
+            "changed_files": [
+              "lib/pkgconfig/libzstd.pc"
+            ],
+            "linkage_files": [
+              "bin/zstd",
+              "lib/libzstd.1.6.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1795473652,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "lz4",
+                "version": "1.11.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.11.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 26.6",
+              "cpu_family": "ivybridge",
+              "xcode": "26.6",
+              "clt": "26.6.0.0.1781586589",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
+                "name": "lz4",
+                "versionInfo": "1.11.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/lz4-1.11.1.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "48d8c38df9412e0a3198698367f3afe9ada2c8055a77f5468cd59d85cb408f9a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.11.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/xz-5.8.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54a648c4197b0299ee2d37527ca6a23447abe65342f8f8c0ed68e154f4593b0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-zstd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-zstd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-zstd-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/unzstd",
+            "bin/pzstd",
+            "bin/zstdless",
+            "bin/zstdgrep",
+            "bin/zstd",
+            "bin/zstdcat",
+            "bin/zstdmt"
+          ],
+          "all_files": [
+            ".brew/zstd.rb",
+            "CHANGELOG",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/pzstd",
+            "bin/unzstd",
+            "bin/zstd",
+            "bin/zstdcat",
+            "bin/zstdgrep",
+            "bin/zstdless",
+            "bin/zstdmt",
+            "include/zdict.h",
+            "include/zstd.h",
+            "include/zstd_errors.h",
+            "lib/cmake/zstd/zstdConfig.cmake",
+            "lib/cmake/zstd/zstdConfigVersion.cmake",
+            "lib/cmake/zstd/zstdTargets.cmake",
+            "lib/cmake/zstd/zstdTargets_shared-release.cmake",
+            "lib/cmake/zstd/zstdTargets_shared.cmake",
+            "lib/cmake/zstd/zstdTargets_static-release.cmake",
+            "lib/cmake/zstd/zstdTargets_static.cmake",
+            "lib/libzstd.1.6.0.dylib",
+            "lib/libzstd.1.dylib",
+            "lib/libzstd.a",
+            "lib/libzstd.dylib",
+            "lib/pkgconfig/libzstd.pc",
+            "sbom.spdx.json",
+            "share/doc/zstd/zstd_manual.html",
+            "share/man/man1/unzstd.1",
+            "share/man/man1/zstd.1",
+            "share/man/man1/zstdcat.1",
+            "share/man/man1/zstdgrep.1",
+            "share/man/man1/zstdless.1"
+          ],
+          "installed_size": 2972061
+        }
+      }
+    }
+  }
+}
