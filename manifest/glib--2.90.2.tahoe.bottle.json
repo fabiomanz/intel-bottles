@@ -2,10 +2,10 @@
   "glib": {
     "formula": {
       "name": "glib",
-      "pkg_version": "2.90.1",
+      "pkg_version": "2.90.2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/glib.rb",
       "tap_git_path": "Formula/g/glib.rb",
-      "tap_git_revision": "917c67484f37e8e455fe987a6e6ea373f95bccd6",
+      "tap_git_revision": "ebeda71918cd59b4f93629bc22d157a218b4d6d2",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Core application library for C",
       "license": "LGPL-2.1-or-later",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-07T12:09:20Z",
+      "date": "2026-11-26T14:27:18Z",
       "tags": {
         "tahoe": {
-          "filename": "glib-2.90.1.tahoe.bottle.tar.gz",
-          "local_filename": "glib--2.90.1.tahoe.bottle.tar.gz",
-          "sha256": "3b0aaa12be31d6f764cdca91e2a75efe6f317eabba79a48bdf1467217a0ccbab",
+          "filename": "glib-2.90.2.tahoe.bottle.tar.gz",
+          "local_filename": "glib--2.90.2.tahoe.bottle.tar.gz",
+          "sha256": "47cd058b8abc01f0833895f19872816790313c2a48891e21ef458c3566ab55b8",
           "tab": {
-            "homebrew_version": "7.0.8",
+            "homebrew_version": "7.0.16",
             "changed_files": [
               "bin/gdbus-codegen",
               "bin/glib-gettextize",
@@ -35,8 +35,8 @@
               "lib/pkgconfig/gmodule-no-export-2.0.pc",
               "lib/pkgconfig/gobject-2.0.pc",
               "lib/pkgconfig/gthread-2.0.pc",
-              "share/gdb/auto-load/usr/local/Cellar/glib/2.90.1/lib/libglib-2.0.so.0.9000.1-gdb.py",
-              "share/gdb/auto-load/usr/local/Cellar/glib/2.90.1/lib/libgobject-2.0.so.0.9000.1-gdb.py"
+              "share/gdb/auto-load/usr/local/Cellar/glib/2.90.2/lib/libglib-2.0.so.0.9000.2-gdb.py",
+              "share/gdb/auto-load/usr/local/Cellar/glib/2.90.2/lib/libgobject-2.0.so.0.9000.2-gdb.py"
             ],
             "linkage_files": [
               "bin/gdbus",
@@ -71,7 +71,7 @@
               "lib/libglib-2.0.0.dylib",
               "lib/libglib-2.0.a"
             ],
-            "source_modified_time": 1791300164,
+            "source_modified_time": 1795616719,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -89,14 +89,15 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "0.19",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -123,82 +124,82 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/gsettings",
-              "string": "/usr/local/Cellar/glib/2.90.1/share/locale",
+              "string": "/usr/local/Cellar/glib/2.90.2/share/locale",
               "offset": 14294
             },
             {
               "path": "bin/glib-compile-schemas",
-              "string": "/usr/local/Cellar/glib/2.90.1/share/locale",
+              "string": "/usr/local/Cellar/glib/2.90.2/share/locale",
               "offset": 30675
             },
             {
               "path": "bin/glib-compile-resources",
-              "string": "/usr/local/Cellar/glib/2.90.1/share/locale",
+              "string": "/usr/local/Cellar/glib/2.90.2/share/locale",
               "offset": 29987
             },
             {
               "path": "bin/gresource",
-              "string": "/usr/local/Cellar/glib/2.90.1/share/locale",
+              "string": "/usr/local/Cellar/glib/2.90.2/share/locale",
               "offset": 9136
             },
             {
               "path": "bin/gdbus",
-              "string": "/usr/local/Cellar/glib/2.90.1/share/locale",
+              "string": "/usr/local/Cellar/glib/2.90.2/share/locale",
               "offset": 24418
             },
             {
               "path": "bin/gi-compile-repository",
-              "string": "/usr/local/Cellar/glib/2.90.1/share/gir-1.0",
+              "string": "/usr/local/Cellar/glib/2.90.2/share/gir-1.0",
               "offset": 137444
             },
             {
               "path": "bin/gi-compile-repository",
-              "string": "/usr/local/Cellar/glib/2.90.1/share",
+              "string": "/usr/local/Cellar/glib/2.90.2/share",
               "offset": 137511
             },
             {
               "path": "bin/gio",
-              "string": "/usr/local/Cellar/glib/2.90.1/share/locale",
+              "string": "/usr/local/Cellar/glib/2.90.2/share/locale",
               "offset": 36664
             },
             {
               "path": "lib/libglib-2.0.0.dylib",
-              "string": "/usr/local/Cellar/glib/2.90.1/share/locale",
-              "offset": 593609
+              "string": "/usr/local/Cellar/glib/2.90.2/share/locale",
+              "offset": 593513
             },
             {
               "path": "lib/libglib-2.0.0.dylib",
-              "string": "/usr/local/Cellar/glib/2.90.1/lib",
-              "offset": 660472
+              "string": "/usr/local/Cellar/glib/2.90.2/lib",
+              "offset": 660328
             },
             {
               "path": "lib/libglib-2.0.a",
-              "string": "/usr/local/Cellar/glib/2.90.1/lib",
+              "string": "/usr/local/Cellar/glib/2.90.2/lib",
               "offset": 60581
             },
             {
               "path": "lib/libglib-2.0.a",
-              "string": "/usr/local/Cellar/glib/2.90.1/share/locale",
-              "offset": 485259
+              "string": "/usr/local/Cellar/glib/2.90.2/share/locale",
+              "offset": 485267
             },
             {
               "path": "lib/libgirepository-2.0.a",
-              "string": "/usr/local/Cellar/glib/2.90.1/share/gir-1.0",
+              "string": "/usr/local/Cellar/glib/2.90.2/share/gir-1.0",
               "offset": 112995
             },
             {
               "path": "lib/libgirepository-2.0.a",
-              "string": "/usr/local/Cellar/glib/2.90.1/share",
+              "string": "/usr/local/Cellar/glib/2.90.2/share",
               "offset": 113062
             },
             {
               "path": "lib/libgirepository-2.0.a",
-              "string": "/usr/local/Cellar/glib/2.90.1/lib",
+              "string": "/usr/local/Cellar/glib/2.90.2/lib",
               "offset": 496507
             },
             {
               "path": "lib/libgirepository-2.0.0.dylib",
-              "string": "/usr/local/Cellar/glib/2.90.1/lib",
+              "string": "/usr/local/Cellar/glib/2.90.2/lib",
               "offset": 143517
             }
           ],
@@ -206,7 +207,7 @@
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
               "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Compiler"
             ],
@@ -258,24 +259,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.4.2.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libunistring-1.5.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "da6170b1ee63543eaabd1b417aa047c3af1a6b6ea4982178119e499fd9d1a112"
+                    "checksumValue": "9914a8c6c3e193c9f0b20df1d04a32f25d247f0cb62fd1501abf321e1d1d7757"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -328,7 +329,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-glib"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-glib"
               },
@@ -737,8 +738,8 @@
             "share/aclocal/glib-2.0.m4",
             "share/aclocal/glib-gettext.m4",
             "share/aclocal/gsettings.m4",
-            "share/gdb/auto-load/usr/local/Cellar/glib/2.90.1/lib/libglib-2.0.so.0.9000.1-gdb.py",
-            "share/gdb/auto-load/usr/local/Cellar/glib/2.90.1/lib/libgobject-2.0.so.0.9000.1-gdb.py",
+            "share/gdb/auto-load/usr/local/Cellar/glib/2.90.2/lib/libglib-2.0.so.0.9000.2-gdb.py",
+            "share/gdb/auto-load/usr/local/Cellar/glib/2.90.2/lib/libgobject-2.0.so.0.9000.2-gdb.py",
             "share/gettext/its/gschema.its",
             "share/gettext/its/gschema.loc",
             "share/gir-1.0/GIRepository-3.0.gir",
@@ -867,7 +868,7 @@
             "share/locale/zh_HK/LC_MESSAGES/glib20.mo",
             "share/locale/zh_TW/LC_MESSAGES/glib20.mo"
           ],
-          "installed_size": 39111538
+          "installed_size": 39121396
         }
       }
     }

@@ -2,10 +2,10 @@
   "awscli": {
     "formula": {
       "name": "awscli",
-      "pkg_version": "2.42.2",
+      "pkg_version": "2.42.4",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/awscli.rb",
       "tap_git_path": "Formula/a/awscli.rb",
-      "tap_git_revision": "26b899a85e06e6cf6930f4204ea00e18612a0a2d",
+      "tap_git_revision": "ebeda71918cd59b4f93629bc22d157a218b4d6d2",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Official Amazon AWS command-line interface",
       "license": "Apache-2.0",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-24T15:36:36Z",
+      "date": "2026-11-26T14:32:55Z",
       "tags": {
         "tahoe": {
-          "filename": "awscli-2.42.2.tahoe.bottle.tar.gz",
-          "local_filename": "awscli--2.42.2.tahoe.bottle.tar.gz",
-          "sha256": "03794eb026799ff8b588c259c5d0bf5c98ca95d890e437caf769f2889918f21b",
+          "filename": "awscli-2.42.4.tahoe.bottle.tar.gz",
+          "local_filename": "awscli--2.42.4.tahoe.bottle.tar.gz",
+          "sha256": "b90f74ae3768c0741768b33574f306cdc8287be09e5c1b847666fa1ef94483aa",
           "tab": {
             "homebrew_version": "7.0.16",
             "changed_files": [
@@ -47,7 +47,7 @@
               "libexec/lib/python3.15/site-packages/_awscrt.abi3-darwin.so"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1795464922,
+            "source_modified_time": 1795633748,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -162,6 +162,7 @@
                 "full_name": "aws-c-mqtt",
                 "version": "1.1.4",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.1.4",
                 "declared_directly": true,
                 "compatibility_version": 4
@@ -222,10 +223,10 @@
               },
               {
                 "full_name": "zstd",
-                "version": "1.5.7",
-                "revision": 1,
+                "version": "1.6.0",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.5.7_1",
+                "pkg_version": "1.6.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -264,13 +265,14 @@
               "SPDXRef-Package-SPDXRef-aws-c-auth-1.2e.1.2e.0",
               "SPDXRef-Package-SPDXRef-aws-checksums-1.2e.0.2e.1",
               "SPDXRef-Package-SPDXRef-aws-c-event-stream-1.2e.0.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-aws-c-mqtt-1.2e.1.2e.4",
               "SPDXRef-Package-SPDXRef-aws-c-s3-1.2e.5.2e.2.5f.3",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
-              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.6.2e.0",
               "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.2",
               "SPDXRef-Compiler"
             ],
@@ -552,6 +554,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-mqtt-1.2e.1.2e.4",
+                "name": "aws-c-mqtt",
+                "versionInfo": "1.1.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/aws-c-mqtt-1.1.4.tahoe.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "06c373351395493317d1195450dae59ee786736772fe213a6a9ab3db8b889f1e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-mqtt@1.1.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-s3-1.2e.5.2e.2.5f.3",
                 "name": "aws-c-s3",
                 "versionInfo": "1.5.2_3",
@@ -690,24 +715,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.6.2e.0",
                 "name": "zstd",
-                "versionInfo": "1.5.7_1",
+                "versionInfo": "1.6.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/zstd-1.6.0.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "90c345a174a631a157f7ea056fe41205fb77778e65d4bdc91097a3fb3a62faa6"
+                    "checksumValue": "349623cbea2d97e70864ff9f5edea34d0e0eb5c9f9be39e0a9b9749cf7195e9b"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceLocator": "pkg:brew/zstd@1.6.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -810,6 +835,11 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-awscli"
               },
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-mqtt-1.2e.1.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-awscli"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-s3-1.2e.5.2e.2.5f.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-awscli"
@@ -840,7 +870,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-awscli"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-awscli"
               },
@@ -1628,6 +1658,10 @@
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/elb/2012-06-01/paginators-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/elb/2012-06-01/service-2.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/elb/2012-06-01/waiters-2.json",
+            "libexec/lib/python3.15/site-packages/awscli/botocore/data/elb-proxy/2026-11-20/endpoint-rule-set-1.json",
+            "libexec/lib/python3.15/site-packages/awscli/botocore/data/elb-proxy/2026-11-20/paginators-1.json",
+            "libexec/lib/python3.15/site-packages/awscli/botocore/data/elb-proxy/2026-11-20/service-2.json",
+            "libexec/lib/python3.15/site-packages/awscli/botocore/data/elb-proxy/2026-11-20/waiters-2.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/elbv2/2015-12-01/completions-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/elbv2/2015-12-01/endpoint-rule-set-1.json",
             "libexec/lib/python3.15/site-packages/awscli/botocore/data/elbv2/2015-12-01/paginators-1.json",
@@ -9218,11 +9252,11 @@
             "libexec/lib/python3.15/site-packages/awscli/topics/topic-tags.json",
             "libexec/lib/python3.15/site-packages/awscli/topictags.py",
             "libexec/lib/python3.15/site-packages/awscli/utils.py",
-            "libexec/lib/python3.15/site-packages/awscli-2.42.2.dist-info/INSTALLER",
-            "libexec/lib/python3.15/site-packages/awscli-2.42.2.dist-info/METADATA",
-            "libexec/lib/python3.15/site-packages/awscli-2.42.2.dist-info/REQUESTED",
-            "libexec/lib/python3.15/site-packages/awscli-2.42.2.dist-info/WHEEL",
-            "libexec/lib/python3.15/site-packages/awscli-2.42.2.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.15/site-packages/awscli-2.42.4.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/awscli-2.42.4.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/awscli-2.42.4.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/awscli-2.42.4.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/awscli-2.42.4.dist-info/licenses/LICENSE.txt",
             "libexec/lib/python3.15/site-packages/awscrt/__init__.py",
             "libexec/lib/python3.15/site-packages/awscrt/_test.py",
             "libexec/lib/python3.15/site-packages/awscrt/aio/__init__.py",
@@ -15707,7 +15741,7 @@
             "share/zsh/site-functions/_aws",
             "share/zsh/site-functions/aws_zsh_completer.sh"
           ],
-          "installed_size": 173566578
+          "installed_size": 173662991
         }
       }
     }

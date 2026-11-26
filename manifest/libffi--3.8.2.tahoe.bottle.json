@@ -2,10 +2,10 @@
   "libffi": {
     "formula": {
       "name": "libffi",
-      "pkg_version": "3.8.1",
+      "pkg_version": "3.8.2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libffi.rb",
       "tap_git_path": "Formula/lib/libffi.rb",
-      "tap_git_revision": "0809c119aac1daf1a4293e40ef194260c403d0c8",
+      "tap_git_revision": "ebeda71918cd59b4f93629bc22d157a218b4d6d2",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Portable Foreign Function Interface library",
       "license": "MIT",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-15T12:20:55Z",
+      "date": "2026-11-26T14:25:32Z",
       "tags": {
         "tahoe": {
-          "filename": "libffi-3.8.1.tahoe.bottle.tar.gz",
-          "local_filename": "libffi--3.8.1.tahoe.bottle.tar.gz",
-          "sha256": "2544af0e05cd338450c39ec36a82a757737d706cce4b7b122d0dba8a824d6051",
+          "filename": "libffi-3.8.2.tahoe.bottle.tar.gz",
+          "local_filename": "libffi--3.8.2.tahoe.bottle.tar.gz",
+          "sha256": "fad84a3894a853f86a114606978b8deec23380962ad4dab2ba4c004c3cac1d80",
           "tab": {
-            "homebrew_version": "7.0.13",
+            "homebrew_version": "7.0.16",
             "changed_files": [
               "lib/pkgconfig/libffi.pc"
             ],
@@ -30,7 +30,7 @@
               "lib/libffi.8.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1794662566,
+            "source_modified_time": 1795638282,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -91,7 +91,7 @@
             "share/man/man3/ffi_prep_cif.3",
             "share/man/man3/ffi_prep_cif_var.3"
           ],
-          "installed_size": 960611
+          "installed_size": 999797
         }
       }
     }
