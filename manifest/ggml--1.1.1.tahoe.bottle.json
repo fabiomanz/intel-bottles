@@ -2,10 +2,10 @@
   "ggml": {
     "formula": {
       "name": "ggml",
-      "pkg_version": "1.0.0",
+      "pkg_version": "1.1.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/ggml.rb",
       "tap_git_path": "Formula/g/ggml.rb",
-      "tap_git_revision": "da11fa5d71fcf0ea2cb85a193102e8cc2e5a849f",
+      "tap_git_revision": "7ff3884394fd00b0d7baa139c8e7a16c25b0f955",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Tensor library for machine learning",
       "license": "MIT",
@@ -15,21 +15,21 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-11-14T12:43:31Z",
+      "date": "2026-11-27T14:21:30Z",
       "tags": {
         "tahoe": {
-          "filename": "ggml-1.0.0.tahoe.bottle.tar.gz",
-          "local_filename": "ggml--1.0.0.tahoe.bottle.tar.gz",
-          "sha256": "88b95d51eda561b9837a765030da98a33e9f46aebe612c77f379198599efb50c",
+          "filename": "ggml-1.1.1.tahoe.bottle.tar.gz",
+          "local_filename": "ggml--1.1.1.tahoe.bottle.tar.gz",
+          "sha256": "d0f28b8e219461c2eff3a7889a4e950b9fbc175238f5d9d46356956171a7b74e",
           "tab": {
-            "homebrew_version": "7.0.13",
+            "homebrew_version": "7.0.16",
             "changed_files": [
               "lib/cmake/ggml/ggml-config.cmake",
               "lib/pkgconfig/ggml.pc"
             ],
             "linkage_files": [
-              "lib/libggml-base.1.0.0.dylib",
-              "lib/libggml.1.0.0.dylib",
+              "lib/libggml-base.1.1.1.dylib",
+              "lib/libggml.1.1.1.dylib",
               "libexec/libggml-cpu-alderlake.so",
               "libexec/libggml-cpu-cannonlake.so",
               "libexec/libggml-cpu-cascadelake.so",
@@ -45,17 +45,17 @@
               "libexec/libggml-cpu-zen4.so"
             ],
             "binary_relocation_files": [
-              "lib/libggml.1.0.0.dylib"
+              "lib/libggml.1.1.1.dylib"
             ],
-            "source_modified_time": 1794557635,
+            "source_modified_time": 1795675209,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "libomp",
-                "version": "23.1.5",
+                "version": "23.1.6",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "23.1.5",
+                "pkg_version": "23.1.6",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -72,36 +72,36 @@
           },
           "binary_relocation_diagnostics": [
             {
-              "path": "lib/libggml.1.0.0.dylib",
-              "string": "/usr/local/Cellar/ggml/1.0.0/libexec",
+              "path": "lib/libggml.1.1.1.dylib",
+              "string": "/usr/local/Cellar/ggml/1.1.1/libexec",
               "offset": 18287
             }
           ],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.5",
+              "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.6",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.6",
                 "name": "libomp",
-                "versionInfo": "23.1.5",
+                "versionInfo": "23.1.6",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libomp-23.1.5.tahoe.bottle.tar.gz",
+                "downloadLocation": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles/libomp-23.1.6.tahoe.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "7f8a917275ab6f55d3918c5b4f8ef9511949f0409cca2b71f0f4525a6cb809f8"
+                    "checksumValue": "b5a84d0ebcbacf2be0eb309c6fb4aeb3fdab7a2b9e072747941be8083f7a25b2"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libomp@23.1.5",
+                    "referenceLocator": "pkg:brew/libomp@23.1.6",
                     "referenceType": "purl"
                   }
                 ]
@@ -121,7 +121,7 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ggml"
               },
@@ -159,10 +159,10 @@
             "include/gguf.h",
             "lib/cmake/ggml/ggml-config-version.cmake",
             "lib/cmake/ggml/ggml-config.cmake",
-            "lib/libggml-base.1.0.0.dylib",
+            "lib/libggml-base.1.1.1.dylib",
             "lib/libggml-base.1.dylib",
             "lib/libggml-base.dylib",
-            "lib/libggml.1.0.0.dylib",
+            "lib/libggml.1.1.1.dylib",
             "lib/libggml.1.dylib",
             "lib/libggml.dylib",
             "lib/pkgconfig/ggml.pc",
@@ -182,7 +182,7 @@
             "libexec/libggml-cpu-zen4.so",
             "sbom.spdx.json"
           ],
-          "installed_size": 10243728
+          "installed_size": 10424531
         }
       }
     }
