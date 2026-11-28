@@ -2,10 +2,10 @@
   "awscli": {
     "formula": {
       "name": "awscli",
-      "pkg_version": "2.42.4",
+      "pkg_version": "2.42.5",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/awscli.rb",
       "tap_git_path": "Formula/a/awscli.rb",
-      "tap_git_revision": "ebeda71918cd59b4f93629bc22d157a218b4d6d2",
+      "tap_git_revision": "bfaaaa55b76fa45ed0e71f2ccd2f920d8f3d34d6",
       "tap_git_remote": "https://github.com/fabiomanz/homebrew-core",
       "desc": "Official Amazon AWS command-line interface",
       "license": "Apache-2.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/fabiomanz/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-26T14:32:55Z",
+      "date": "2026-11-28T13:51:25Z",
       "tags": {
         "tahoe": {
-          "filename": "awscli-2.42.4.tahoe.bottle.tar.gz",
-          "local_filename": "awscli--2.42.4.tahoe.bottle.tar.gz",
-          "sha256": "b90f74ae3768c0741768b33574f306cdc8287be09e5c1b847666fa1ef94483aa",
+          "filename": "awscli-2.42.5.tahoe.bottle.tar.gz",
+          "local_filename": "awscli--2.42.5.tahoe.bottle.tar.gz",
+          "sha256": "3cd52e1a7ab48341922092df3577dcefb134ac51935516e747341f30db066c96",
           "tab": {
-            "homebrew_version": "7.0.16",
+            "homebrew_version": "7.0.17",
             "changed_files": [
               "libexec/bin/aws",
               "libexec/bin/aws_completer",
@@ -47,7 +47,7 @@
               "libexec/lib/python3.15/site-packages/_awscrt.abi3-darwin.so"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1795633748,
+            "source_modified_time": 1795806438,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -9252,11 +9252,11 @@
             "libexec/lib/python3.15/site-packages/awscli/topics/topic-tags.json",
             "libexec/lib/python3.15/site-packages/awscli/topictags.py",
             "libexec/lib/python3.15/site-packages/awscli/utils.py",
-            "libexec/lib/python3.15/site-packages/awscli-2.42.4.dist-info/INSTALLER",
-            "libexec/lib/python3.15/site-packages/awscli-2.42.4.dist-info/METADATA",
-            "libexec/lib/python3.15/site-packages/awscli-2.42.4.dist-info/REQUESTED",
-            "libexec/lib/python3.15/site-packages/awscli-2.42.4.dist-info/WHEEL",
-            "libexec/lib/python3.15/site-packages/awscli-2.42.4.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.15/site-packages/awscli-2.42.5.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/awscli-2.42.5.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/awscli-2.42.5.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/awscli-2.42.5.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/awscli-2.42.5.dist-info/licenses/LICENSE.txt",
             "libexec/lib/python3.15/site-packages/awscrt/__init__.py",
             "libexec/lib/python3.15/site-packages/awscrt/_test.py",
             "libexec/lib/python3.15/site-packages/awscrt/aio/__init__.py",
@@ -15741,7 +15741,7 @@
             "share/zsh/site-functions/_aws",
             "share/zsh/site-functions/aws_zsh_completer.sh"
           ],
-          "installed_size": 173662991
+          "installed_size": 173695746
         }
       }
     }
